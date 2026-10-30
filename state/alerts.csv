@@ -9,3 +9,5 @@ game_id,market,skipped,alerted_at_et,date,home,away,tip_et,side,line,price,open_
 401892623,moneyline,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,col,cgy,2026-10-31 22:00:00,away,,310.0,320.0,0.358,0.4678,CGY Arsenii Sergeev (expected); COL Mackenzie Blackwood (expected),True
 401892623,puck line,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,col,cgy,2026-10-31 22:00:00,away,1.5,136.0,124.0,0.5556,0.3112,CGY Arsenii Sergeev (expected); COL Mackenzie Blackwood (expected),True
 401892612,moneyline,,2026-10-30 18:55:23.915113,2026-10-30,fla,wpg,2026-10-30 19:00:00,away,,180.0,180.0,0.3915,0.0962,WPG Nico Daws (confirmed); FLA Akira Schmid (confirmed),True
+401892613,moneyline,,2026-10-30 19:55:24.225641,2026-10-30,cgy,sea,2026-10-30 20:00:00,away,,-115.0,-122.0,0.577,0.0788,SEA Philipp Grubauer (confirmed); CGY Dustin Wolf (confirmed),True
+401892613,puck line,,2026-10-30 19:55:24.225641,2026-10-30,cgy,sea,2026-10-30 20:00:00,away,-1.5,210.0,195.0,0.3553,0.1014,SEA Philipp Grubauer (confirmed); CGY Dustin Wolf (confirmed),True
