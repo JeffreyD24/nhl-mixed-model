@@ -1,0 +1,1 @@
+2026-10-30 15:45:26.243502: test alert sent OK to a topic 17 characters long, starting with 'je'
