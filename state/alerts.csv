@@ -1,0 +1,10 @@
+game_id,market,skipped,alerted_at_et,date,home,away,tip_et,side,line,price,open_price,model_prob,ev,goalies,sent
+401892612,moneyline,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-30,fla,wpg,2026-10-30 19:00:00,away,,185.0,180.0,0.3915,0.1158,WPG Nico Daws (expected); FLA Akira Schmid (confirmed),True
+401892613,moneyline,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-30,cgy,sea,2026-10-30 20:00:00,away,,-115.0,-122.0,0.577,0.0788,SEA Philipp Grubauer (expected); CGY Dustin Wolf (confirmed),True
+401892613,puck line,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-30,cgy,sea,2026-10-30 20:00:00,away,-1.5,210.0,195.0,0.3553,0.1014,SEA Philipp Grubauer (expected); CGY Dustin Wolf (confirmed),True
+401892614,puck line,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,bos,chi,2026-10-31 13:00:00,home,-1.5,114.0,110.0,0.4965,0.0625,CHI Arvid Soderblom (expected); BOS Jeremy Swayman (expected),True
+401892616,moneyline,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,nsh,tb,2026-10-31 14:00:00,home,,142.0,145.0,0.4711,0.1402,TB Andrei Vasilevskiy (expected); NSH Juuse Saros (expected),True
+401892616,puck line,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,nsh,tb,2026-10-31 14:00:00,home,1.5,-175.0,-166.0,0.6933,0.0894,TB Andrei Vasilevskiy (expected); NSH Juuse Saros (expected),True
+401892617,moneyline,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,nyi,edm,2026-10-31 14:00:00,home,,114.0,114.0,0.4972,0.064,EDM Tristan Jarry (confirmed); NYI Ilya Sorokin (expected),True
+401892623,moneyline,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,col,cgy,2026-10-31 22:00:00,away,,310.0,320.0,0.358,0.4678,CGY Arsenii Sergeev (expected); COL Mackenzie Blackwood (expected),True
+401892623,puck line,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,col,cgy,2026-10-31 22:00:00,away,1.5,136.0,124.0,0.5556,0.3112,CGY Arsenii Sergeev (expected); COL Mackenzie Blackwood (expected),True
