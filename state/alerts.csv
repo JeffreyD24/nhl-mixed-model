@@ -8,3 +8,4 @@ game_id,market,skipped,alerted_at_et,date,home,away,tip_et,side,line,price,open_
 401892617,moneyline,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,nyi,edm,2026-10-31 14:00:00,home,,114.0,114.0,0.4972,0.064,EDM Tristan Jarry (confirmed); NYI Ilya Sorokin (expected),True
 401892623,moneyline,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,col,cgy,2026-10-31 22:00:00,away,,310.0,320.0,0.358,0.4678,CGY Arsenii Sergeev (expected); COL Mackenzie Blackwood (expected),True
 401892623,puck line,starting goalies not both confirmed yet,2026-10-30 16:19:54.515213,2026-10-31,col,cgy,2026-10-31 22:00:00,away,1.5,136.0,124.0,0.5556,0.3112,CGY Arsenii Sergeev (expected); COL Mackenzie Blackwood (expected),True
+401892612,moneyline,,2026-10-30 18:55:23.915113,2026-10-30,fla,wpg,2026-10-30 19:00:00,away,,180.0,180.0,0.3915,0.0962,WPG Nico Daws (confirmed); FLA Akira Schmid (confirmed),True
