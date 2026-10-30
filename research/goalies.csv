@@ -1,0 +1,27 @@
+seen_at_et,game_id,date,side,team,goalie_id,goalie,status
+2026-10-30 15:32,401892611,2026-10-30,home,vgk,4064582,Carter Hart,Expected
+2026-10-30 15:32,401892611,2026-10-30,away,nj,3020225,Connor Hellebuyck,Expected
+2026-10-30 15:32,401892612,2026-10-30,home,fla,4587845,Akira Schmid,Confirmed
+2026-10-30 15:32,401892612,2026-10-30,away,wpg,4697683,Nico Daws,Expected
+2026-10-30 15:32,401892613,2026-10-30,home,cgy,4587952,Dustin Wolf,Confirmed
+2026-10-30 15:32,401892613,2026-10-30,away,sea,5657,Philipp Grubauer,Expected
+2026-10-30 15:35,401892614,2026-10-31,home,bos,4712036,Jeremy Swayman,Expected
+2026-10-30 15:35,401892614,2026-10-31,away,chi,4894729,Arvid Soderblom,Expected
+2026-10-30 15:35,401892615,2026-10-31,home,det,2590824,John Gibson,Confirmed
+2026-10-30 15:35,401892615,2026-10-31,away,stl,4587909,Joel Hofer,Expected
+2026-10-30 15:35,401892616,2026-10-31,home,nsh,3042109,Juuse Saros,Expected
+2026-10-30 15:35,401892616,2026-10-31,away,tb,2976847,Andrei Vasilevskiy,Expected
+2026-10-30 15:35,401892617,2026-10-31,home,nyi,3151981,Ilya Sorokin,Expected
+2026-10-30 15:35,401892617,2026-10-31,away,edm,3042020,Tristan Jarry,Confirmed
+2026-10-30 15:35,401892618,2026-10-31,home,la,2610321,Darcy Kuemper,Expected
+2026-10-30 15:35,401892618,2026-10-31,away,buf,4736758,Colten Ellis,Expected
+2026-10-30 15:35,401892619,2026-10-31,home,sj,4697394,Yaroslav Askarov,Expected
+2026-10-30 15:35,401892619,2026-10-31,away,ott,4587815,Samuel Ersson,Expected
+2026-10-30 15:35,401892620,2026-10-31,home,mtl,5188437,Jacob Fowler,Expected
+2026-10-30 15:35,401892620,2026-10-31,away,pit,4576894,Arturs Silovs,Expected
+2026-10-30 15:35,401892621,2026-10-31,home,van,4341584,Kevin Lankinen,Expected
+2026-10-30 15:35,401892621,2026-10-31,away,tor,5571,Sergei Bobrovsky,Expected
+2026-10-30 15:35,401892622,2026-10-31,home,dal,4196914,Jake Oettinger,Expected
+2026-10-30 15:35,401892622,2026-10-31,away,cbj,4894366,Jet Greaves,Expected
+2026-10-30 15:35,401892623,2026-10-31,home,col,3904177,Mackenzie Blackwood,Expected
+2026-10-30 15:35,401892623,2026-10-31,away,cgy,5104219,Arsenii Sergeev,Expected

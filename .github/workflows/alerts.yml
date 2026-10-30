@@ -1,0 +1,48 @@
+name: Line check and phone alerts
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"     # each run checks every 5 minutes for ~50 minutes; extra starts just queue behind it
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "Send a test notification instead of checking lines"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: alert-loop
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install tools
+        run: |
+          pip install -q pandas numpy scipy
+      - name: Send a test notification
+        if: ${{ inputs.test }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          python alert.py . --test
+          git config user.name "nhl-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/test_alert_result.txt && git commit -q -m "Test alert" && git pull --rebase -q && git push -q || true
+      - name: Check lines every 5 minutes and send alerts
+        if: ${{ !inputs.test }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          GH_TOKEN: ${{ github.token }}
+        run: ./alert_loop.sh

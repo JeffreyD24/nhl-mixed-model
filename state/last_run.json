@@ -1,0 +1,125 @@
+{
+ "today": [
+  {
+   "home": "bos",
+   "away": "chi",
+   "tip": "2026-10-31 13:00:00",
+   "home_win_prob": 0.666,
+   "expected_goals": "3.55-2.33 (regulation)",
+   "expected_total": 6.02
+  },
+  {
+   "home": "det",
+   "away": "stl",
+   "tip": "2026-10-31 13:00:00",
+   "home_win_prob": 0.49,
+   "expected_goals": "2.84-2.88 (regulation)",
+   "expected_total": 5.89
+  },
+  {
+   "home": "nsh",
+   "away": "tb",
+   "tip": "2026-10-31 14:00:00",
+   "home_win_prob": 0.473,
+   "expected_goals": "3.08-3.24 (regulation)",
+   "expected_total": 6.49
+  },
+  {
+   "home": "nyi",
+   "away": "edm",
+   "tip": "2026-10-31 14:00:00",
+   "home_win_prob": 0.501,
+   "expected_goals": "3.10-3.06 (regulation)",
+   "expected_total": 6.33
+  },
+  {
+   "home": "la",
+   "away": "buf",
+   "tip": "2026-10-31 16:00:00",
+   "home_win_prob": 0.492,
+   "expected_goals": "3.04-3.07 (regulation)",
+   "expected_total": 6.28
+  },
+  {
+   "home": "sj",
+   "away": "ott",
+   "tip": "2026-10-31 16:00:00",
+   "home_win_prob": 0.469,
+   "expected_goals": "3.01-3.21 (regulation)",
+   "expected_total": 6.38
+  },
+  {
+   "home": "mtl",
+   "away": "pit",
+   "tip": "2026-10-31 19:00:00",
+   "home_win_prob": 0.539,
+   "expected_goals": "3.25-2.94 (regulation)",
+   "expected_total": 6.36
+  },
+  {
+   "home": "van",
+   "away": "tor",
+   "tip": "2026-10-31 19:00:00",
+   "home_win_prob": 0.413,
+   "expected_goals": "3.14-3.77 (regulation)",
+   "expected_total": 7.07
+  },
+  {
+   "home": "dal",
+   "away": "cbj",
+   "tip": "2026-10-31 20:00:00",
+   "home_win_prob": 0.595,
+   "expected_goals": "3.13-2.45 (regulation)",
+   "expected_total": 5.75
+  },
+  {
+   "home": "col",
+   "away": "cgy",
+   "tip": "2026-10-31 22:00:00",
+   "home_win_prob": 0.643,
+   "expected_goals": "3.71-2.62 (regulation)",
+   "expected_total": 6.47
+  }
+ ],
+ "model": {
+  "train_seasons": [
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "test_season": 2027,
+  "fixed_effects": {
+   "intercept": 3.0087,
+   "home": 0.1608,
+   "b2b_offense": -0.1939,
+   "b2b_defense": 0.1237,
+   "missing_skaters": -0.1136
+  },
+  "sd_offense": 0.28937397051507274,
+  "sd_defense": 0.2646418675826436,
+  "sd_goalie": 0.30097154583376634,
+  "sd_residual": 1.6499830720969402,
+  "rho": {
+   "offense": 0.44720364574862187,
+   "defense": 0.4267262069267935,
+   "goalie": 0.20402107917816487
+  },
+  "h_ot": 0.5243317340644277,
+  "tuning_rmse_on_validation": {
+   "None": 2.403414999655884,
+   "60": 2.4005396338018468,
+   "30": 2.4014116027202324,
+   "15": 2.404440637496711
+  },
+  "chosen_halflife": 60
+ },
+ "log": [
+  "NHL tracker run on 2026-10-30 (ET), predicting games on 2026-10-31.",
+  "Schedule: 226 regular-season games through 2026-10-31; 213 finished, results through 2026-10-29; box scores on file for 213 games.",
+  "Saved the model for intraday checks (10 games, 102 goalies).",
+  "Locked 10 live picks for 2026-10-31 and 0 backfilled.",
+  "Lines: pulled DraftKings lines from ESPN for 10 games."
+ ]
+}

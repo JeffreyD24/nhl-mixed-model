@@ -1,0 +1,11 @@
+seen_at_et,game_id,date,away,home,model_home_win,lam_home,lam_away,model_total,away_goalie,home_goalie,missing
+2026-10-30 15:35,401892614,2026-10-31,chi,bos,0.6907,3.632,2.317,6.1,Arvid Soderblom (expected),Jeremy Swayman (expected),CHI: - | BOS: Brunet
+2026-10-30 15:35,401892615,2026-10-31,stl,det,0.4719,2.769,2.9,5.84,Joel Hofer (expected),John Gibson (confirmed),"STL: Stenberg, Parayko? | DET: Larkin, Johansson"
+2026-10-30 15:35,401892616,2026-10-31,tb,nsh,0.4711,3.077,3.217,6.46,Andrei Vasilevskiy (expected),Juuse Saros (expected),TB: Girgensons? | NSH: -
+2026-10-30 15:35,401892617,2026-10-31,edm,nyi,0.4972,3.07,3.039,6.27,Tristan Jarry (confirmed),Ilya Sorokin (expected),"EDM: Hyman, Walman | NYI: Kessel, Pulock?"
+2026-10-30 15:35,401892618,2026-10-31,buf,la,0.4849,2.996,3.045,6.21,Colten Ellis (expected),Darcy Kuemper (expected),"BUF: Helenius, Metsa | LA: Wright, Clarke?"
+2026-10-30 15:35,401892619,2026-10-31,ott,sj,0.4817,3.182,3.253,6.6,Samuel Ersson (expected),Yaroslav Askarov (expected),"OTT: Foegele, Yakemchuk, Burakovsky? | SJ: Ostapchuk"
+2026-10-30 15:35,401892620,2026-10-31,pit,mtl,0.5496,3.224,2.852,6.24,Arturs Silovs (expected),Jacob Fowler (expected),"PIT: Soderblom, Solovyov | MTL: Matheson?"
+2026-10-30 15:35,401892621,2026-10-31,tor,van,0.416,3.179,3.709,7.04,Sergei Bobrovsky (expected),Kevin Lankinen (expected),"TOR: Marchenko | VAN: Chytil?, Gallagher"
+2026-10-30 15:35,401892622,2026-10-31,cbj,dal,0.6187,3.218,2.42,5.8,Jet Greaves (expected),Jake Oettinger (expected),CBJ: Voronkov | DAL: Capobianco
+2026-10-30 15:35,401892623,2026-10-31,cgy,col,0.642,3.616,2.616,6.38,Arsenii Sergeev (expected),Mackenzie Blackwood (expected),"CGY: Othmann | COL: Manson, O'Connor?"
