@@ -62,3 +62,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 11:52,goals,401892618,2026-10-31,buf,la,0.4868,3.008,3.044,6.22,Colten Ellis (expected),Darcy Kuemper (expected),"BUF: Helenius, Metsa | LA: Wright"
 2026-10-31 12:02,xg,401892622,2026-10-31,cbj,dal,0.621,3.172,2.376,5.71,Jet Greaves (expected),Jake Oettinger (confirmed),CBJ: Voronkov | DAL: Capobianco
 2026-10-31 12:02,goals,401892622,2026-10-31,cbj,dal,0.6187,3.218,2.419,5.8,Jet Greaves (expected),Jake Oettinger (confirmed),CBJ: Voronkov | DAL: Capobianco
+2026-10-31 12:03,xg,401892615,2026-10-31,stl,det,0.5023,2.935,2.818,5.92,Joel Hofer (expected),John Gibson (confirmed),"STL: Stenberg, Parayko | DET: Larkin, Johansson"
+2026-10-31 12:03,goals,401892615,2026-10-31,stl,det,0.4726,2.77,2.895,5.84,Joel Hofer (expected),John Gibson (confirmed),"STL: Stenberg, Parayko | DET: Larkin, Johansson"
