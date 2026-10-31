@@ -12,3 +12,23 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-30 16:30,goals,401892621,2026-10-31,tor,van,0.4156,3.177,3.709,7.04,Sergei Bobrovsky (expected),Kevin Lankinen (expected),"TOR: Marchenko | VAN: Chytil, Gallagher"
 2026-10-30 16:35,goals,401892621,2026-10-31,tor,van,0.3967,3.049,3.709,6.91,Anthony Stolarz (confirmed),Kevin Lankinen (expected),"TOR: Marchenko | VAN: Chytil, Gallagher"
 2026-10-30 20:35,goals,401892619,2026-10-31,ott,sj,0.4819,3.182,3.251,6.59,Samuel Ersson (expected),Yaroslav Askarov (expected),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky? | SJ: Ostapchuk"
+2026-10-30 23:15,xg,401892614,2026-10-31,chi,bos,0.6971,3.774,2.397,6.31,Arvid Soderblom (expected),Jeremy Swayman (expected),CHI: - | BOS: Brunet
+2026-10-30 23:15,goals,401892614,2026-10-31,chi,bos,0.6924,3.634,2.317,6.1,Arvid Soderblom (expected),Jeremy Swayman (expected),CHI: - | BOS: Brunet
+2026-10-30 23:15,xg,401892615,2026-10-31,stl,det,0.4938,2.894,2.834,5.9,Joel Hofer (expected),John Gibson (confirmed),"STL: Stenberg, Parayko? | DET: Larkin, Johansson"
+2026-10-30 23:15,goals,401892615,2026-10-31,stl,det,0.4713,2.77,2.901,5.84,Joel Hofer (expected),John Gibson (confirmed),"STL: Stenberg, Parayko? | DET: Larkin, Johansson"
+2026-10-30 23:15,xg,401892616,2026-10-31,tb,nsh,0.3903,2.846,3.445,6.45,Andrei Vasilevskiy (expected),Juuse Saros (expected),TB: Girgensons? | NSH: -
+2026-10-30 23:15,goals,401892616,2026-10-31,tb,nsh,0.4707,3.077,3.217,6.46,Andrei Vasilevskiy (expected),Juuse Saros (expected),TB: Girgensons? | NSH: -
+2026-10-30 23:15,xg,401892617,2026-10-31,edm,nyi,0.4913,3.127,3.079,6.37,Tristan Jarry (confirmed),Ilya Sorokin (expected),"EDM: Hyman, Walman | NYI: Kessel, Pulock?"
+2026-10-30 23:15,goals,401892617,2026-10-31,edm,nyi,0.4969,3.07,3.04,6.28,Tristan Jarry (confirmed),Ilya Sorokin (expected),"EDM: Hyman, Walman | NYI: Kessel, Pulock?"
+2026-10-30 23:15,xg,401892618,2026-10-31,buf,la,0.5311,3.253,2.955,6.37,Colten Ellis (expected),Darcy Kuemper (expected),"BUF: Helenius, Metsa | LA: Wright, Clarke?"
+2026-10-30 23:15,goals,401892618,2026-10-31,buf,la,0.4846,2.996,3.045,6.21,Colten Ellis (expected),Darcy Kuemper (expected),"BUF: Helenius, Metsa | LA: Wright, Clarke?"
+2026-10-30 23:15,xg,401892619,2026-10-31,ott,sj,0.4116,2.92,3.379,6.46,Samuel Ersson (expected),Yaroslav Askarov (expected),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky? | SJ: Ostapchuk"
+2026-10-30 23:15,goals,401892619,2026-10-31,ott,sj,0.4815,3.182,3.252,6.59,Samuel Ersson (expected),Yaroslav Askarov (expected),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky? | SJ: Ostapchuk"
+2026-10-30 23:15,xg,401892620,2026-10-31,pit,mtl,0.5254,3.25,2.988,6.4,Arturs Silovs (expected),Jacob Fowler (expected),"PIT: Soderblom, Solovyov | MTL: Matheson?"
+2026-10-30 23:15,goals,401892620,2026-10-31,pit,mtl,0.5499,3.224,2.852,6.24,Arturs Silovs (expected),Jacob Fowler (expected),"PIT: Soderblom, Solovyov | MTL: Matheson?"
+2026-10-30 23:15,xg,401892621,2026-10-31,tor,van,0.3802,2.911,3.585,6.65,Anthony Stolarz (confirmed),Kevin Lankinen (expected),"TOR: Marchenko | VAN: Chytil, Gallagher"
+2026-10-30 23:15,goals,401892621,2026-10-31,tor,van,0.3956,3.049,3.71,6.91,Anthony Stolarz (confirmed),Kevin Lankinen (expected),"TOR: Marchenko | VAN: Chytil, Gallagher"
+2026-10-30 23:15,xg,401892622,2026-10-31,cbj,dal,0.6263,3.182,2.33,5.68,Jet Greaves (expected),Jake Oettinger (expected),CBJ: Voronkov | DAL: Capobianco
+2026-10-30 23:15,goals,401892622,2026-10-31,cbj,dal,0.6197,3.22,2.421,5.8,Jet Greaves (expected),Jake Oettinger (expected),CBJ: Voronkov | DAL: Capobianco
+2026-10-30 23:15,xg,401892623,2026-10-31,cgy,col,0.7132,4.012,2.483,6.63,Arsenii Sergeev (expected),Mackenzie Blackwood (expected),"CGY: Othmann | COL: Manson, O'Connor?"
+2026-10-30 23:15,goals,401892623,2026-10-31,cgy,col,0.6896,3.741,2.422,6.31,Arsenii Sergeev (expected),Mackenzie Blackwood (expected),"CGY: Othmann | COL: Manson, O'Connor?"
