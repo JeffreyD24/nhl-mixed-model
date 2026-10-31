@@ -54,13 +54,15 @@ def log_link(date, away, home, market, pick, line, odds):
     return f"https://github.com/{repo}/issues/new?" + urllib.parse.urlencode(q)
 
 
-def notify(title, body, priority="high", tags="ice_hockey", link=None):
+def notify(title, body, priority="high", tags="ice_hockey", link=None, dk=None):
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
         print("NTFY_TOPIC not set; would have sent:", title, "|", body); return False
     req = urllib.request.Request(f"https://ntfy.sh/{topic}", data=body.encode("utf-8"), method="POST",
                                  headers={"Title": title.encode("ascii", "ignore").decode(), "Priority": priority, "Tags": tags,
-                                          **({"Actions": f"view, Log this bet, {link}"} if link else {})})
+                                          **({"Actions": "; ".join(a for a in (f"view, Bet on DraftKings, {dk}" if dk else "",
+                                                                               f"view, Log this bet, {link}" if link else "") if a)}
+                                             if (link or dk) else {})})
     urllib.request.urlopen(req, timeout=20)
     return True
 
@@ -71,6 +73,28 @@ def load_models(path):
     if "models" not in M:
         M = dict(date=M["date"], made_at_et=M.get("made_at_et", ""), active="goals", models={"goals": M})
     return M
+
+
+def fill_from_action_network(L, day):
+    """ESPN can trail DraftKings by a few minutes when a line first posts. For games where ESPN has no DraftKings price
+    yet, use DraftKings' price from Action Network (as both the current and the opening price: it has just opened)."""
+    try:
+        A = pd.DataFrame(nd.an_lines(day, books=(68,)))
+    except Exception:
+        return L
+    if not len(A) or not len(L): return L
+    A = A[A.book_id == 68].set_index(["home", "away"])
+    L = L.copy()
+    for i, r in L.iterrows():
+        if not pd.isna(r.get("current_home_ml", np.nan)) or (r.home, r.away) not in A.index: continue
+        a = A.loc[(r.home, r.away)]
+        a = a.iloc[0] if isinstance(a, pd.DataFrame) else a
+        if pd.isna(a.home_ml): continue
+        for k in espn.MARKET_COLS:
+            L.at[i, f"current_{k}"] = a[k]; L.at[i, f"open_{k}"] = a[k]
+        L.at[i, "book"] = "DraftKings (via Action Network)"
+        print(f"Using Action Network's new DraftKings line for {r.away} @ {r.home} (not on ESPN yet).")
+    return L
 
 
 def threshold_for(price, oprice):
@@ -161,6 +185,7 @@ def main():
         except Exception as e:
             SB = {}; print("Scoreboard unavailable:", type(e).__name__)
         L = espn.lines([day], when=("open", "current"))
+        L = fill_from_action_network(L, day)
         for g in M["games"]:
             info[g["game_id"]] = (g, M)
             line = L[(L.home == g["home"]) & (L.away == g["away"])] if len(L) else L
@@ -286,15 +311,17 @@ def main():
                     if outs_a or outs_h: tail += f"\nMissing: {Aw} {', '.join(outs_a) or 'none'}; {H} {', '.join(outs_h) or 'none'}."
                     link = log_link(M["date"], g["away"], g["home"], mk, team if mk != "total" else side,
                                     "" if mk == "moneyline" else f"{lnum:+g}" if mk == "puck line" else f"{lnum:g}", f"{price:+.0f}")
+                    dkcol = {"moneyline": f"dk_link_{side}_ml", "puck line": f"dk_link_{side}_pl", "total": f"dk_link_{side}"}[mk]
+                    dk = ln.get(dkcol) if isinstance(ln.get(dkcol), str) else None
                     recs = "; ".join(f"{SHORT.get(n, n)} {record(n, bool(skip))}" for n, _ in pending)
                     if skip:
                         body += f"\nCAUTION: {skip}. The model may be missing news here; bet with caution." + tail + \
                                 f"\nCaution alerts so far: {recs}." + hist_txt + news_for(g)
-                        sent = notify("CAUTION " + title, body, priority="default", tags="warning,ice_hockey", link=link)
+                        sent = notify("CAUTION " + title, body, priority="default", tags="warning,ice_hockey", link=link, dk=dk)
                     else:
                         if toward: body += f"\nMarket agrees: the moneyline has moved {abs(move):.1f} win-% points toward this side since open."
                         body += tail + f"\nAlerts so far: {recs}. Tracking test: neither model has proven an edge live yet." + hist_txt + news_for(g)
-                        sent = notify(title, body, link=link)
+                        sent = notify(title, body, link=link, dk=dk)
                     for n, bt in pending:
                         new.append(dict(alerted_at_et=str(NOW), model=n, both_models=len(pending) > 1, game_id=g["game_id"], date=M["date"],
                                         home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,

@@ -2,7 +2,7 @@ name: Morning model run
 
 on:
   schedule:
-    - cron: "41 15 * * *"      # 11:41 AM EDT / 10:41 AM EST: add last night's results, grade, refresh today's games
+    - cron: "11 14 * * *"      # 10:11 AM EDT / 9:11 AM EST: results, grading, today's games, and tomorrow's picks before DraftKings opens (~11:20 AM)
   workflow_dispatch: {}
 
 permissions:
@@ -15,7 +15,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,8 +25,10 @@ jobs:
       - name: Install tools
         run: |
           pip install -q -r requirements.txt
-      - name: Run tracker
+      - name: Run tracker (today's games)
         run: python tracker.py .
+      - name: Lock tomorrow's picks before DraftKings posts its lines
+        run: python tracker.py . --tomorrow
       - name: Save results
         run: |
           git config user.name "nhl-tracker-bot"

@@ -43,7 +43,7 @@ games' shots to `state/shots_2026_27.csv`.
 | Workflow | Schedule | What it does |
 |---|---|---|
 | **Evening model run** (`evening.yml`) | Daily, 9:33 PM EST / 10:33 PM EDT | Refits the model on 2021-22 to 2025-26, walks forward through 2026-27 with no lookahead, and **locks** predictions for the **next day's** games using what's known the day before (likely goalie, skaters who missed the last game). That's the same setup the opening-line backtests used, and it happens before most opening lines are posted. Locked picks are never changed. |
-| **Morning run** (`morning.yml`) | Daily, 11:41 AM EDT / 10:41 AM EST | Adds last night's results and box scores, grades finished games, alerts and your bets, saves today's model for the line checks, and rebuilds `NHL_Live_Tracker.xlsx`. |
+| **Morning run** (`morning.yml`) | Daily, 10:11 AM EDT / 9:11 AM EST | Adds last night's results and box scores, grades finished games, alerts and your bets, refreshes today's games, then **locks tomorrow's picks**, because DraftKings posts NHL lines around 11:20 AM–12:30 PM the day before the game (about 31 hours ahead). Rebuilds `NHL_Live_Tracker.xlsx`. |
 | **Line check and phone alerts** (`alerts.yml`) | All day, every 5 minutes | Each run checks every 5 minutes for about 50 minutes by itself (`alert_loop.sh`, because GitHub starts frequent jobs 30–60 minutes apart). Each check covers today's and tomorrow's games: pulls ESPN's probable/confirmed goalies, ESPN's injury list and the current DraftKings prices, re-predicts without refitting, and sends one ntfy push per game and market when the expected value is **6%+**. |
 
 All three can also be started by hand from the **Actions** tab (**Run workflow**).
@@ -85,6 +85,11 @@ the actual price. Full tables in `backtests/`.
 
 ## Alerts
 
+- **Bet on DraftKings button:** every alert has a **Bet on DraftKings** button that opens DraftKings with that exact bet
+  (side, puck line or total) on your bet slip, plus **Log this bet**. You still confirm the bet yourself.
+- **New lines within about a minute:** between the 5-minute checks, `opener_watch.py` looks every minute for games where
+  DraftKings has just posted a line; a new line triggers a full check right away. If ESPN hasn't picked the line up yet,
+  the check uses DraftKings' price from Action Network.
 - **What an alert says:** the bet and price, the model's win chance vs. the chance the price needs, the expected value
   (and what it was at the opening price), the model's expected score, the goalies (expected / confirmed / not announced),
   which regulars the model has as missing, the moneyline or total history with times, and the latest injury news.

@@ -46,12 +46,29 @@ def lines(dates, when=("open", "close", "current")):
                 it = next((i for i in items if "draftkings" in str(i.get("provider", {}).get("name", "")).lower()), items[0] if items else None)
                 if it:
                     rec["book"] = it.get("provider", {}).get("name")
+                    for k, v in dk_links(it).items(): rec[f"dk_link_{k}"] = v
                     for w in when:
                         for k, v in parse_odds_item(it, w).items(): rec[f"{w}_{k}"] = v
             except Exception as e:
                 rec["error"] = str(e)[:80]
             out.append(rec)
     return pd.DataFrame(out)
+
+
+DK_REL = {"home": "home_ml", "away": "away_ml", "homeSpread": "home_pl", "awaySpread": "away_pl", "over": "over", "under": "under", "game": "game"}
+
+
+def dk_links(it):
+    """DraftKings bet-slip links from ESPN's odds item: opening one puts that exact bet on your DraftKings bet slip.
+    ESPN wraps them in its own referral link; the direct DraftKings address is inside (preurl=...)."""
+    import urllib.parse
+    out = {}
+    for l in it.get("links", []) or []:
+        rel = (l.get("rel") or [None])[0]; href = l.get("href") or ""
+        if rel not in DK_REL or "draftkings" not in href: continue
+        q = urllib.parse.parse_qs(urllib.parse.urlparse(href).query)
+        out[DK_REL[rel]] = q.get("preurl", [href])[0]
+    return out
 
 
 def novig_home(home_ml, away_ml):
