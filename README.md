@@ -1,8 +1,8 @@
 # NHL mixed-model tracker
 
-Two mixed models (a goals model and a shot-based expected-goals model) run side by side. The original (team offense, team defense and **goalie** random effects, home ice, back-to-backs, and missing regular
-skaters) that predicts NHL moneylines, puck lines and totals, runs itself on GitHub every day, and sends phone alerts
-when it disagrees with the posted price. It is the NHL version of
+Two mixed models, a goals model (team offense, team defense and **goalie** random effects, home ice, back-to-backs, missing
+regular skaters) and a shot-based expected-goals model, predict NHL moneylines, puck lines and totals, run themselves on
+GitHub every day, and send phone alerts when they disagree with the posted price. It is the NHL version of
 [nba-mixed-model](https://github.com/JeffreyD24/nba-mixed-model): same machinery, same daily schedule, same alerts,
 bet log, research database and workbook, adapted to hockey.
 
