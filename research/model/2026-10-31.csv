@@ -32,3 +32,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-30 23:15,goals,401892622,2026-10-31,cbj,dal,0.6197,3.22,2.421,5.8,Jet Greaves (expected),Jake Oettinger (expected),CBJ: Voronkov | DAL: Capobianco
 2026-10-30 23:15,xg,401892623,2026-10-31,cgy,col,0.7132,4.012,2.483,6.63,Arsenii Sergeev (expected),Mackenzie Blackwood (expected),"CGY: Othmann | COL: Manson, O'Connor?"
 2026-10-30 23:15,goals,401892623,2026-10-31,cgy,col,0.6896,3.741,2.422,6.31,Arsenii Sergeev (expected),Mackenzie Blackwood (expected),"CGY: Othmann | COL: Manson, O'Connor?"
+2026-10-31 09:10,xg,401892623,2026-10-31,cgy,col,0.713,4.012,2.484,6.63,Arsenii Sergeev (expected),Mackenzie Blackwood (expected),"CGY: Othmann? | COL: Manson, O'Connor?"
+2026-10-31 09:10,goals,401892623,2026-10-31,cgy,col,0.6894,3.741,2.423,6.31,Arsenii Sergeev (expected),Mackenzie Blackwood (expected),"CGY: Othmann? | COL: Manson, O'Connor?"
