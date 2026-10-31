@@ -11,3 +11,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 10:45,goals,401892628,2026-11-01,ott,ana,0.4847,3.333,3.382,6.87,Jonas Johansson (expected),Lukas Dostal (expected),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky? | ANA: Nesterenko, Helleson"
 2026-10-31 11:18,xg,401892627,2026-11-01,edm,nyr,0.4733,3.091,3.157,6.41,Matt Tomkins (expected),Dylan Garand (expected),"EDM: Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
 2026-10-31 11:18,goals,401892627,2026-11-01,edm,nyr,0.4657,3.146,3.321,6.63,Matt Tomkins (expected),Dylan Garand (expected),"EDM: Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
+2026-10-31 11:55,xg,401892625,2026-11-01,min,wsh,0.4177,3.036,3.462,6.66,Jesper Wallstedt (expected),Logan Thompson (expected),"MIN: Ek?, Spurgeon | WSH: -"
+2026-10-31 11:55,goals,401892625,2026-11-01,min,wsh,0.4645,2.822,2.997,5.99,Jesper Wallstedt (expected),Logan Thompson (expected),"MIN: Ek?, Spurgeon | WSH: -"
