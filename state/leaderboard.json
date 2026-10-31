@@ -1,5 +1,5 @@
 {
- "updated_et": "2026-10-30 23:12:38.540563",
+ "updated_et": "2026-10-31 10:42:20.549227",
  "active": "xg",
  "rule": {
   "line": "open",
@@ -21,8 +21,8 @@
    "bets_with_clv": 162,
    "live_rule_bets": 2,
    "live_units": -2.0,
-   "alerts_graded": 0,
-   "alert_units": 0.0,
+   "alerts_graded": 3,
+   "alert_units": -3.0,
    "moneyline_brier": 0.2409,
    "games_graded": 216
   },

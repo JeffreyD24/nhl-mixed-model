@@ -2,84 +2,44 @@
  "active_model": "xg",
  "today": [
   {
-   "home": "bos",
-   "away": "chi",
-   "tip": "2026-10-31 13:00:00",
-   "home_win_prob": 0.671,
-   "expected_goals": "3.64-2.41 (regulation)",
-   "expected_total": 6.19
-  },
-  {
-   "home": "det",
-   "away": "stl",
-   "tip": "2026-10-31 13:00:00",
-   "home_win_prob": 0.506,
-   "expected_goals": "2.97-2.84 (regulation)",
-   "expected_total": 5.97
-  },
-  {
-   "home": "nsh",
-   "away": "tb",
-   "tip": "2026-10-31 14:00:00",
-   "home_win_prob": 0.389,
-   "expected_goals": "2.82-3.48 (regulation)",
-   "expected_total": 6.46
-  },
-  {
-   "home": "nyi",
-   "away": "edm",
-   "tip": "2026-10-31 14:00:00",
-   "home_win_prob": 0.486,
-   "expected_goals": "3.10-3.10 (regulation)",
-   "expected_total": 6.36
-  },
-  {
-   "home": "la",
-   "away": "buf",
-   "tip": "2026-10-31 16:00:00",
-   "home_win_prob": 0.532,
-   "expected_goals": "3.29-2.99 (regulation)",
-   "expected_total": 6.44
-  },
-  {
-   "home": "sj",
-   "away": "ott",
-   "tip": "2026-10-31 16:00:00",
-   "home_win_prob": 0.4,
-   "expected_goals": "2.82-3.39 (regulation)",
-   "expected_total": 6.37
-  },
-  {
-   "home": "mtl",
-   "away": "pit",
-   "tip": "2026-10-31 19:00:00",
-   "home_win_prob": 0.518,
-   "expected_goals": "3.28-3.06 (regulation)",
+   "home": "car",
+   "away": "wpg",
+   "tip": "2026-11-01 13:00:00",
+   "home_win_prob": 0.735,
+   "expected_goals": "4.06-2.32 (regulation)",
    "expected_total": 6.5
   },
   {
-   "home": "van",
-   "away": "tor",
-   "tip": "2026-10-31 19:00:00",
-   "home_win_prob": 0.398,
-   "expected_goals": "3.00-3.60 (regulation)",
-   "expected_total": 6.75
+   "home": "wsh",
+   "away": "min",
+   "tip": "2026-11-01 15:30:00",
+   "home_win_prob": 0.425,
+   "expected_goals": "3.09-3.51 (regulation)",
+   "expected_total": 6.76
   },
   {
-   "home": "dal",
-   "away": "cbj",
-   "tip": "2026-10-31 20:00:00",
-   "home_win_prob": 0.61,
-   "expected_goals": "3.12-2.35 (regulation)",
-   "expected_total": 5.64
+   "home": "phi",
+   "away": "uta",
+   "tip": "2026-11-01 16:00:00",
+   "home_win_prob": 0.363,
+   "expected_goals": "2.65-3.47 (regulation)",
+   "expected_total": 6.28
   },
   {
-   "home": "col",
-   "away": "cgy",
-   "tip": "2026-10-31 22:00:00",
-   "home_win_prob": 0.694,
-   "expected_goals": "3.94-2.51 (regulation)",
-   "expected_total": 6.59
+   "home": "nyr",
+   "away": "edm",
+   "tip": "2026-11-01 18:00:00",
+   "home_win_prob": 0.488,
+   "expected_goals": "3.15-3.14 (regulation)",
+   "expected_total": 6.46
+  },
+  {
+   "home": "ana",
+   "away": "ott",
+   "tip": "2026-11-01 20:00:00",
+   "home_win_prob": 0.474,
+   "expected_goals": "3.26-3.34 (regulation)",
+   "expected_total": 6.76
   }
  ],
  "models": {
@@ -105,15 +65,15 @@
    "sd_residual": 1.6499830720969402,
    "rho": {
     "offense": 0.4472036457486218,
-    "defense": 0.4267262069267936,
-    "goalie": 0.20402107917816487
+    "defense": 0.4267262069267935,
+    "goalie": 0.2040210791781649
    },
    "h_ot": 0.5243317340644277,
    "tuning_rmse_on_validation": {
     "None": 2.402828504261853,
     "60": 2.400011745767145,
     "30": 2.400936601787434,
-    "15": 2.404038414222164
+    "15": 2.4040384142221636
    },
    "chosen_halflife": 60
   },
@@ -135,35 +95,35 @@
    ],
    "conv_intercept": 0.04676298236559944,
    "sd_xg_offense": 0.2851463105951843,
-   "sd_xg_defense": 0.24509685446223634,
+   "sd_xg_defense": 0.2450968544622363,
    "sd_finishing": 0.14675974820097068,
    "sd_goalie": 0.262359933331525,
    "sd_resid_xg": 0.7333068700930937,
    "sd_resid_conv": 1.5989017907088423,
    "rho": {
-    "O": 0.6740587103518051,
-    "D": 0.61214504502052,
-    "F": 0.1646436215876566,
-    "G": 0.15059107032548893
+    "O": 0.6740587103518054,
+    "D": 0.6121450450205199,
+    "F": 0.16464362158765664,
+    "G": 0.1505910703254889
    },
    "h_ot": 0.5243317340644277,
    "halflife": 60
   }
  },
  "log": [
-  "NHL tracker run on 2026-10-30 (ET), predicting games on 2026-10-31.",
-  "Schedule: 226 regular-season games through 2026-10-31; 216 finished, results through 2026-10-30; box scores on file for 216 games.",
+  "NHL tracker run on 2026-10-31 (ET), predicting games on 2026-11-01.",
+  "Schedule: 231 regular-season games through 2026-11-01; 216 finished, results through 2026-10-30; box scores on file for 216 games.",
   "Shots: 216 games with shot data; expected goals computed for 216.",
-  "[goals] Locked 0 live picks for 2026-10-31 and 213 backfilled.",
-  "Lines: pulled DraftKings lines from ESPN for 216 games.",
-  "[xg] Locked 10 live picks for 2026-10-31 and 216 backfilled.",
-  "Lines: pulled DraftKings lines from ESPN for 226 games.",
-  "Line histories 2026-10-29: 0 new price changes saved.",
-  "Line histories 2026-10-30: 2 new price changes saved.",
-  "Line histories 2026-10-31: 383 new price changes saved.",
-  "Scorecard [goals]: 68-96 on rule bets, -28.9 units (2 live), average CLV -3.57%; alerts +0.0 units on 0; moneyline Brier 0.2409.",
+  "[goals] Locked 5 live picks for 2026-11-01 and 0 backfilled.",
+  "Lines: ESPN returned no odds.",
+  "[xg] Locked 5 live picks for 2026-11-01 and 0 backfilled.",
+  "Lines: ESPN returned no odds.",
+  "Line histories 2026-10-30: 0 new price changes saved.",
+  "Line histories 2026-10-31: 0 new price changes saved.",
+  "Line histories 2026-11-01: 134 new price changes saved.",
+  "Scorecard [goals]: 68-96 on rule bets, -28.9 units (2 live), average CLV -3.57%; alerts -3.0 units on 3; moneyline Brier 0.2409.",
   "Scorecard [xg]: 63-75 on rule bets, -13.7 units (0 live), average CLV +1.00%; alerts +0.0 units on 0; moneyline Brier 0.2329.",
-  "Saved 2 models for intraday checks (10 games).",
+  "Saved 2 models for intraday checks (5 games).",
   "Alerts graded so far: 0-3, -3.00 units at the alerted prices.",
   "Your logged bets: 0-1, $-1.00 on $1.00 staked."
  ]
