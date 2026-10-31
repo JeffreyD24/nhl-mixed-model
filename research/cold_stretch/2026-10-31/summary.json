@@ -1,0 +1,54 @@
+{
+ "date": "2026-10-31",
+ "games": 216,
+ "fixed_effects": {
+  "season_only": {
+   "intercept": 3.016,
+   "home": 0.133,
+   "b2b_off": -0.322,
+   "b2b_def": 0.13
+  },
+  "goals_model": {
+   "intercept": 3.0087,
+   "home": 0.1608,
+   "b2b_offense": -0.1939,
+   "b2b_defense": 0.1237,
+   "missing_skaters": -0.1136
+  },
+  "season_reml_sd": {
+   "team_off": 0.27959639621522536,
+   "team_def": 6.070327979378433e-07,
+   "goalie": 0.30523067795031145,
+   "resid": 1.667408433371189
+  },
+  "goals_model_sd": {
+   "team_off": 0.28937397051507274,
+   "team_def": 0.2646418675826436,
+   "goalie": 0.30097154583376634
+  }
+ },
+ "accuracy": {
+  "games": 216,
+  "market_open_brier": 0.23125926722037804,
+  "goals_model_brier": 0.24104622934373104,
+  "shot_model_brier": 0.23254550628275433
+ },
+ "league": {
+  "this season": {
+   "goals_per_game": 6.343,
+   "reg_goals_per_game": 6.106,
+   "xg_per_game": 6.19,
+   "home_win_pct": 0.574,
+   "overtime_pct": 0.227,
+   "shooting_vs_xg": 0.986
+  },
+  "training seasons": {
+   "goals_per_game": 6.242,
+   "reg_goals_per_game": 6.019,
+   "xg_per_game": 6.01,
+   "home_win_pct": 0.537,
+   "overtime_pct": 0.222,
+   "shooting_vs_xg": 1.002
+  }
+ }
+}
