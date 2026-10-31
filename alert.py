@@ -21,9 +21,11 @@ import espn                                              # noqa: E402
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
 THRESHOLD_MOVED = 0.09              # needed once the price has moved more than that: in the backtests the edge mostly disappears
 NEAR_OPEN = 0.015                   #   as prices move toward the close (shot model +9% ROI at open, +2% halfway, -2% at close)
-SKIP_LONGSHOTS = {"goals": 150}      # model -> skip its alerts on bets priced at this or longer (+150). The goals model's win chances
-                                    #   for big underdogs run ~5 points high (backtests/IDEA_TESTS.md); the shot model's don't.
-                                    #   Alerts only: the scorecard rule is unchanged.
+OPEN_ONLY_LONGSHOTS = {"goals": 150}  # model -> bets priced at this or longer (+150) are alerted ONLY at/near the opening price
+                                     #   (within NEAR_OPEN), labeled "OPENING PRICE ONLY" with the shortest price still worth taking.
+                                     #   The goals model's underdog win chances run ~5 points high: its +150-and-longer bets made
+                                     #   +13.5u on 641 bets at the open but lost once the price moved (backtests/IDEA_TESTS.md).
+                                     #   The shot model's long shots are calibrated, so they get normal alerts. Scorecard unchanged.
 ALERT_MARKETS = ("moneyline", "puck line")   # add "total" to alert on totals too (they lost money in the backtests)
 MAX_MOVE = 5.0                      # caution when the home win chance implied by the moneyline moved this many points AGAINST the bet since open
 JUMP_WINDOW_MIN = 60                # a "jump" is a move within this many minutes
@@ -107,6 +109,25 @@ def threshold_for(price, oprice):
 
 
 def fmt_price(o): return "" if pd.isna(o) else f"{o:+.0f}"
+
+
+def near_open(price, oprice):
+    return not (pd.isna(oprice) or pd.isna(price)) and abs(1 / espn.nd_dec(price) - 1 / espn.nd_dec(oprice)) <= NEAR_OPEN
+
+
+def american(d):
+    return (d - 1) * 100 if d >= 2 else -100 / (d - 1)
+
+
+def open_only_floor(p, oprice):
+    """shortest price still worth taking on an opening-price-only bet: still near the opening price AND still EV >= THRESHOLD"""
+    d_near = 1 / (1 / espn.nd_dec(oprice) + NEAR_OPEN)
+    d_ev = (1 + THRESHOLD) / p
+    return american(max(d_near, d_ev))
+
+
+def is_open_only(name, price):
+    return name in OPEN_ONLY_LONGSHOTS and not pd.isna(price) and price >= OPEN_ONLY_LONGSHOTS[name]
 
 
 def main():
@@ -303,7 +324,7 @@ def main():
                 for name in order:
                     bt = best.get((name, mk))
                     if bt is None: continue
-                    if name in SKIP_LONGSHOTS and bt[2] >= SKIP_LONGSHOTS[name]: continue
+                    if name in OPEN_ONLY_LONGSHOTS and bt[2] >= OPEN_ONLY_LONGSHOTS[name] and not near_open(bt[2], bt[5]): continue
                     thr = threshold_for(bt[2], bt[5])
                     if bt[4] < thr:
                         side = bt[0]
@@ -334,6 +355,9 @@ def main():
                     what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
                             (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{side.upper()} {lnum:g} ({fmt_price(price)})"))
                     title = f"[{tag}] Bet {what}: {Aw} @ {H}, {tip}"
+                    oo = [(n, bt) for n, bt in pending if is_open_only(n, price)]
+                    if oo and len(oo) == len(pending):
+                        title = "OPENING PRICE ONLY - " + title
                     lines_ = []
                     for n, bt in pending:
                         p, ev = bt[3], bt[4]
@@ -343,6 +367,14 @@ def main():
                         lines_.append(s_ + f"; score {Aw} {la:.2f}, {H} {lh:.2f} in regulation, total {et:.2f}.")
                     body = ("DraftKings " + fmt_price(price) + (" (opening price)." if oprice == price else
                             (f" (opened {fmt_price(oprice)})." if not pd.isna(oprice) else ".")) + "\n" + "\n".join(lines_))
+                    if oo:
+                        floor = min(open_only_floor(bt[3], oprice) for _, bt in oo)
+                        who = SHORT.get(oo[0][0], oo[0][0])
+                        body = (f"OPENING PRICE ONLY ({who}): bet this only at {fmt_price(floor)} or longer. If DraftKings now shows a shorter "
+                                f"price than {fmt_price(floor)}, skip it. In the backtests the {who}'s +150-and-longer bets made money at "
+                                f"the opening price (+13.5u on 641 bets) but lost once the price moved.\n" + body)
+                        if len(oo) < len(pending):
+                            body += f"\nThe shot model's number on this bet holds at any price; only the {who}'s needs the opening price."
                     if threshold_for(price, oprice) > THRESHOLD:
                         body += f"\nThe price has moved since it opened, so this needed {THRESHOLD_MOVED:.0%}+ EV (vs {THRESHOLD:.0%} at the opening price)."
                     tail = f"\nGoalies: {goalies_txt}."
@@ -384,7 +416,8 @@ def main():
                     for n, bt in pending:
                         new.append(dict(alerted_at_et=str(NOW), model=n, both_models=len(pending) > 1, game_id=g["game_id"], date=M["date"],
                                         home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,
-                                        open_price=oprice, model_prob=round(bt[3], 4), ev=round(bt[4], 4), goalies=goalies_txt, sent=sent, skipped=skip))
+                                        open_price=oprice, model_prob=round(bt[3], 4), ev=round(bt[4], 4), goalies=goalies_txt, sent=sent, skipped=skip,
+                                        open_only=is_open_only(n, price)))
                         (skipped if skip else done).add((g["game_id"], mk, n))
                     print(("CAUTION " if skip else "") + "ALERT:", title, "|", skip or "")
     if new:
