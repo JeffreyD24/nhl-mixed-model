@@ -43,3 +43,5 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-10-31 11:04,401892620,2026-10-31,home,mtl,5188437,Jacob Fowler,Confirmed
 2026-10-31 11:55,401892625,2026-11-01,home,wsh,4272888,Logan Thompson,Expected
 2026-10-31 12:02,401892622,2026-10-31,home,dal,4196914,Jake Oettinger,Confirmed
+2026-10-31 12:24,401892614,2026-10-31,home,bos,4392765,Michael DiPietro,Confirmed
+2026-10-31 12:24,401892615,2026-10-31,away,stl,4587909,Joel Hofer,Confirmed

@@ -64,3 +64,7 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 12:02,goals,401892622,2026-10-31,cbj,dal,0.6187,3.218,2.419,5.8,Jet Greaves (expected),Jake Oettinger (confirmed),CBJ: Voronkov | DAL: Capobianco
 2026-10-31 12:03,xg,401892615,2026-10-31,stl,det,0.5023,2.935,2.818,5.92,Joel Hofer (expected),John Gibson (confirmed),"STL: Stenberg, Parayko | DET: Larkin, Johansson"
 2026-10-31 12:03,goals,401892615,2026-10-31,stl,det,0.4726,2.77,2.895,5.84,Joel Hofer (expected),John Gibson (confirmed),"STL: Stenberg, Parayko | DET: Larkin, Johansson"
+2026-10-31 12:24,xg,401892614,2026-10-31,chi,bos,0.6841,3.738,2.489,6.37,Arvid Soderblom (expected),Michael DiPietro (confirmed),CHI: - | BOS: Brunet
+2026-10-31 12:24,goals,401892614,2026-10-31,chi,bos,0.6832,3.632,2.365,6.14,Arvid Soderblom (expected),Michael DiPietro (confirmed),CHI: - | BOS: Brunet
+2026-10-31 12:24,xg,401892615,2026-10-31,stl,det,0.5023,2.935,2.818,5.92,Joel Hofer (confirmed),John Gibson (confirmed),"STL: Stenberg, Parayko | DET: Larkin, Johansson"
+2026-10-31 12:24,goals,401892615,2026-10-31,stl,det,0.4726,2.77,2.895,5.84,Joel Hofer (confirmed),John Gibson (confirmed),"STL: Stenberg, Parayko | DET: Larkin, Johansson"
