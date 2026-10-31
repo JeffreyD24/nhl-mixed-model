@@ -1,0 +1,1547 @@
+{
+ "2023": {
+  "summary": {
+   "train_seasons": [
+    2020,
+    2021,
+    2022
+   ],
+   "test_season": 2023,
+   "fixed_xg": [
+    2.8021,
+    0.2433,
+    -0.0895,
+    0.1386,
+    -0.1428
+   ],
+   "conv_intercept": 0.043790482663508934,
+   "sd_xg_offense": 0.25633532723486957,
+   "sd_xg_defense": 0.21993969904837682,
+   "sd_finishing": 0.19280603508826202,
+   "sd_goalie": 0.2630321955069503,
+   "sd_resid_xg": 0.737879826540684,
+   "sd_resid_conv": 1.5891996090859128,
+   "rho": {
+    "O": 0.788665269607449,
+    "D": 0.46252809391641964,
+    "F": 0.484303491092304,
+    "G": 0.4112881420738719
+   },
+   "h_ot": 0.48567530695770805,
+   "halflife": null,
+   "tune": {
+    "None": 2.422863721116505,
+    "60": 2.426529966382787,
+    "30": 2.43089144756834
+   }
+  },
+  "xg_coef": {
+   "const": -1.074,
+   "dist": -0.572,
+   "dist2": 0.025,
+   "angle": -0.125,
+   "pp": 0.358,
+   "sh": 0.069,
+   "en": 0.0,
+   "rebound": 0.475,
+   "rebound_angle": 0.056,
+   "ot": 0.498,
+   "leading": 0.257,
+   "trailing": 0.001,
+   "typed": 0.0,
+   "t_wrist": 0.0,
+   "t_snap": 0.0,
+   "t_slap": 0.0,
+   "t_backhand": 0.0,
+   "t_tip-in": 0.0,
+   "t_deflected": 0.0,
+   "t_wrap-around": 0.0
+  },
+  "close": {
+   "market": 0.691937484017819,
+   "xg_model": 0.6962095396597178,
+   "goals_model": 0.6942011001815602,
+   "mean_model_total": 6.366111323135343,
+   "mean_line": 6.273931623931624,
+   "mean_actual": 6.352991452991453,
+   "bets": {
+    "moneyline": [
+     {
+      "ev_threshold": 0,
+      "bets": 859,
+      "wins": 506,
+      "losses": 353,
+      "pushes": 0,
+      "win_pct": 0.5891,
+      "avg_price": -152.0,
+      "units": -5.66,
+      "roi": -0.0066
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 675,
+      "wins": 402,
+      "losses": 273,
+      "pushes": 0,
+      "win_pct": 0.5956,
+      "avg_price": -157.0,
+      "units": 1.73,
+      "roi": 0.0026
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 510,
+      "wins": 309,
+      "losses": 201,
+      "pushes": 0,
+      "win_pct": 0.6059,
+      "avg_price": -154.0,
+      "units": 15.29,
+      "roi": 0.03
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 357,
+      "wins": 218,
+      "losses": 139,
+      "pushes": 0,
+      "win_pct": 0.6106,
+      "avg_price": -136.0,
+      "units": 17.79,
+      "roi": 0.0498
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 244,
+      "wins": 148,
+      "losses": 96,
+      "pushes": 0,
+      "win_pct": 0.6066,
+      "avg_price": -130.0,
+      "units": 18.15,
+      "roi": 0.0744
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 155,
+      "wins": 90,
+      "losses": 65,
+      "pushes": 0,
+      "win_pct": 0.5806,
+      "avg_price": -120.0,
+      "units": 9.4,
+      "roi": 0.0607
+     }
+    ],
+    "puck line": [
+     {
+      "ev_threshold": 0,
+      "bets": 763,
+      "wins": 361,
+      "losses": 402,
+      "pushes": 0,
+      "win_pct": 0.4731,
+      "avg_price": 116.0,
+      "units": -12.4,
+      "roi": -0.0162
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 601,
+      "wins": 279,
+      "losses": 322,
+      "pushes": 0,
+      "win_pct": 0.4642,
+      "avg_price": 125.0,
+      "units": -3.93,
+      "roi": -0.0065
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 460,
+      "wins": 204,
+      "losses": 256,
+      "pushes": 0,
+      "win_pct": 0.4435,
+      "avg_price": 130.0,
+      "units": -12.51,
+      "roi": -0.0272
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 348,
+      "wins": 156,
+      "losses": 192,
+      "pushes": 0,
+      "win_pct": 0.4483,
+      "avg_price": 130.0,
+      "units": -5.73,
+      "roi": -0.0165
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 259,
+      "wins": 117,
+      "losses": 142,
+      "pushes": 0,
+      "win_pct": 0.4517,
+      "avg_price": 135.0,
+      "units": 0.12,
+      "roi": 0.0005
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 198,
+      "wins": 79,
+      "losses": 119,
+      "pushes": 0,
+      "win_pct": 0.399,
+      "avg_price": 138.0,
+      "units": -21.55,
+      "roi": -0.1088
+     }
+    ],
+    "total": [
+     {
+      "ev_threshold": 0,
+      "bets": 796,
+      "wins": 392,
+      "losses": 404,
+      "pushes": 50,
+      "win_pct": 0.4925,
+      "avg_price": -110.0,
+      "units": -47.4,
+      "roi": -0.0595
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 608,
+      "wins": 299,
+      "losses": 309,
+      "pushes": 42,
+      "win_pct": 0.4918,
+      "avg_price": -110.0,
+      "units": -35.74,
+      "roi": -0.0588
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 442,
+      "wins": 220,
+      "losses": 222,
+      "pushes": 33,
+      "win_pct": 0.4977,
+      "avg_price": -109.0,
+      "units": -19.71,
+      "roi": -0.0446
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 314,
+      "wins": 158,
+      "losses": 156,
+      "pushes": 18,
+      "win_pct": 0.5032,
+      "avg_price": -107.0,
+      "units": -9.73,
+      "roi": -0.031
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 205,
+      "wins": 105,
+      "losses": 100,
+      "pushes": 11,
+      "win_pct": 0.5122,
+      "avg_price": -105.0,
+      "units": -1.76,
+      "roi": -0.0086
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 110,
+      "wins": 62,
+      "losses": 48,
+      "pushes": 8,
+      "win_pct": 0.5636,
+      "avg_price": -105.0,
+      "units": 10.28,
+      "roi": 0.0934
+     }
+    ]
+   },
+   "total_sides_6": "321 over / 11 under"
+  },
+  "ml_brier": {
+   "xg": 0.23108865799352651,
+   "goals": 0.23239488473916142
+  }
+ },
+ "2024": {
+  "summary": {
+   "train_seasons": [
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "test_season": 2024,
+   "fixed_xg": [
+    2.8399,
+    0.2331,
+    -0.112,
+    0.1419,
+    -0.1359
+   ],
+   "conv_intercept": 0.051396817405031346,
+   "sd_xg_offense": 0.29055148422417165,
+   "sd_xg_defense": 0.2521768901862397,
+   "sd_finishing": 0.19967830304821754,
+   "sd_goalie": 0.2703444569597236,
+   "sd_resid_xg": 0.7498875490607467,
+   "sd_resid_conv": 1.5803759195452818,
+   "rho": {
+    "O": 0.8524292877766892,
+    "D": 0.6608100163125276,
+    "F": 0.29741213356386315,
+    "G": 0.2936996295595941
+   },
+   "h_ot": 0.4956521739130435,
+   "halflife": null,
+   "tune": {
+    "None": 2.3604308592545062,
+    "60": 2.365191849738516,
+    "30": 2.369896838234502
+   }
+  },
+  "xg_coef": {
+   "const": -1.126,
+   "dist": -0.508,
+   "dist2": 0.012,
+   "angle": -0.126,
+   "pp": 0.36,
+   "sh": 0.088,
+   "en": 12.162,
+   "rebound": 0.382,
+   "rebound_angle": 0.055,
+   "ot": 0.519,
+   "leading": 0.224,
+   "trailing": 0.016,
+   "typed": -0.007,
+   "t_wrist": -0.04,
+   "t_snap": 0.359,
+   "t_slap": 0.269,
+   "t_backhand": -0.482,
+   "t_tip-in": -0.417,
+   "t_deflected": -0.357,
+   "t_wrap-around": -1.067
+  },
+  "close": {
+   "market": 0.6920747500017155,
+   "xg_model": 0.6893893920284343,
+   "goals_model": 0.6933019150301207,
+   "mean_model_total": 6.263854603665943,
+   "mean_line": 6.251428571428572,
+   "mean_actual": 6.211428571428572,
+   "bets": {
+    "moneyline": [
+     {
+      "ev_threshold": 0,
+      "bets": 782,
+      "wins": 377,
+      "losses": 405,
+      "pushes": 0,
+      "win_pct": 0.4821,
+      "avg_price": -100.0,
+      "units": -36.45,
+      "roi": -0.0466
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 574,
+      "wins": 256,
+      "losses": 318,
+      "pushes": 0,
+      "win_pct": 0.446,
+      "avg_price": 110.0,
+      "units": -49.52,
+      "roi": -0.0863
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 419,
+      "wins": 183,
+      "losses": 236,
+      "pushes": 0,
+      "win_pct": 0.4368,
+      "avg_price": 115.0,
+      "units": -28.63,
+      "roi": -0.0683
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 305,
+      "wins": 135,
+      "losses": 170,
+      "pushes": 0,
+      "win_pct": 0.4426,
+      "avg_price": 124.0,
+      "units": -4.92,
+      "roi": -0.0161
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 218,
+      "wins": 95,
+      "losses": 123,
+      "pushes": 0,
+      "win_pct": 0.4358,
+      "avg_price": 126.0,
+      "units": -5.08,
+      "roi": -0.0233
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 159,
+      "wins": 68,
+      "losses": 91,
+      "pushes": 0,
+      "win_pct": 0.4277,
+      "avg_price": 130.0,
+      "units": -1.19,
+      "roi": -0.0075
+     }
+    ],
+    "puck line": [
+     {
+      "ev_threshold": 0,
+      "bets": 741,
+      "wins": 400,
+      "losses": 341,
+      "pushes": 0,
+      "win_pct": 0.5398,
+      "avg_price": -150.0,
+      "units": -40.82,
+      "roi": -0.0551
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 544,
+      "wins": 293,
+      "losses": 251,
+      "pushes": 0,
+      "win_pct": 0.5386,
+      "avg_price": -150.0,
+      "units": -34.09,
+      "roi": -0.0627
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 373,
+      "wins": 192,
+      "losses": 181,
+      "pushes": 0,
+      "win_pct": 0.5147,
+      "avg_price": -143.0,
+      "units": -34.08,
+      "roi": -0.0914
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 251,
+      "wins": 128,
+      "losses": 123,
+      "pushes": 0,
+      "win_pct": 0.51,
+      "avg_price": -130.0,
+      "units": -19.26,
+      "roi": -0.0767
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 154,
+      "wins": 79,
+      "losses": 75,
+      "pushes": 0,
+      "win_pct": 0.513,
+      "avg_price": -111.0,
+      "units": -4.92,
+      "roi": -0.0319
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 99,
+      "wins": 56,
+      "losses": 43,
+      "pushes": 0,
+      "win_pct": 0.5657,
+      "avg_price": -108.0,
+      "units": 9.05,
+      "roi": 0.0914
+     }
+    ],
+    "total": [
+     {
+      "ev_threshold": 0,
+      "bets": 600,
+      "wins": 324,
+      "losses": 276,
+      "pushes": 29,
+      "win_pct": 0.54,
+      "avg_price": -105.0,
+      "units": 33.17,
+      "roi": 0.0553
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 370,
+      "wins": 199,
+      "losses": 171,
+      "pushes": 20,
+      "win_pct": 0.5378,
+      "avg_price": -105.0,
+      "units": 21.69,
+      "roi": 0.0586
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 231,
+      "wins": 124,
+      "losses": 107,
+      "pushes": 10,
+      "win_pct": 0.5368,
+      "avg_price": -102.0,
+      "units": 16.49,
+      "roi": 0.0714
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 123,
+      "wins": 67,
+      "losses": 56,
+      "pushes": 7,
+      "win_pct": 0.5447,
+      "avg_price": 100.0,
+      "units": 11.28,
+      "roi": 0.0917
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 67,
+      "wins": 42,
+      "losses": 25,
+      "pushes": 5,
+      "win_pct": 0.6269,
+      "avg_price": -100.0,
+      "units": 16.98,
+      "roi": 0.2534
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 31,
+      "wins": 18,
+      "losses": 13,
+      "pushes": 4,
+      "win_pct": 0.5806,
+      "avg_price": -100.0,
+      "units": 4.76,
+      "roi": 0.1534
+     }
+    ]
+   },
+   "total_sides_6": "7 over / 123 under"
+  },
+  "ml_brier": {
+   "xg": 0.23328791519125536,
+   "goals": 0.23593682643225827
+  }
+ },
+ "2025": {
+  "summary": {
+   "train_seasons": [
+    2021,
+    2022,
+    2023,
+    2024
+   ],
+   "test_season": 2025,
+   "fixed_xg": [
+    2.8777,
+    0.216,
+    -0.122,
+    0.1572,
+    -0.132
+   ],
+   "conv_intercept": 0.056550147474307574,
+   "sd_xg_offense": 0.3089879073934348,
+   "sd_xg_defense": 0.2574104403069998,
+   "sd_finishing": 0.16114793252479015,
+   "sd_goalie": 0.2790068130568673,
+   "sd_resid_xg": 0.763975515034526,
+   "sd_resid_conv": 1.581982352937889,
+   "rho": {
+    "O": 0.676914797317728,
+    "D": 0.5293510398060309,
+    "F": 0.21824120157797552,
+    "G": 0.18745033739151223
+   },
+   "h_ot": 0.521286660359508,
+   "halflife": null,
+   "tune": {
+    "None": 2.4231408581420437,
+    "60": 2.4235042164703273,
+    "30": 2.4260621470911046
+   }
+  },
+  "xg_coef": {
+   "const": -1.027,
+   "dist": -0.491,
+   "dist2": 0.003,
+   "angle": -0.139,
+   "pp": 0.332,
+   "sh": 0.081,
+   "en": 12.448,
+   "rebound": 0.183,
+   "rebound_angle": 0.056,
+   "ot": 0.523,
+   "leading": 0.19,
+   "trailing": 0.017,
+   "typed": -0.051,
+   "t_wrist": 0.023,
+   "t_snap": 0.471,
+   "t_slap": 0.405,
+   "t_backhand": -0.363,
+   "t_tip-in": -0.453,
+   "t_deflected": -0.469,
+   "t_wrap-around": -0.672
+  },
+  "open": {
+   "market": 0.6875137503313681,
+   "xg_model": 0.6897735823944118,
+   "goals_model": 0.6917465171467428,
+   "mean_model_total": 6.119500634250208,
+   "mean_line": 5.955940204563336,
+   "mean_actual": 6.091266719118804,
+   "bets": {
+    "moneyline": [
+     {
+      "ev_threshold": 0,
+      "bets": 833,
+      "wins": 425,
+      "losses": 408,
+      "pushes": 0,
+      "win_pct": 0.5102,
+      "avg_price": -100.0,
+      "units": 3.5,
+      "roi": 0.0042
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 661,
+      "wins": 338,
+      "losses": 323,
+      "pushes": 0,
+      "win_pct": 0.5113,
+      "avg_price": 105.0,
+      "units": 14.68,
+      "roi": 0.0222
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 521,
+      "wins": 270,
+      "losses": 251,
+      "pushes": 0,
+      "win_pct": 0.5182,
+      "avg_price": 110.0,
+      "units": 26.99,
+      "roi": 0.0518
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 379,
+      "wins": 190,
+      "losses": 189,
+      "pushes": 0,
+      "win_pct": 0.5013,
+      "avg_price": 115.0,
+      "units": 15.91,
+      "roi": 0.042
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 313,
+      "wins": 157,
+      "losses": 156,
+      "pushes": 0,
+      "win_pct": 0.5016,
+      "avg_price": 118.0,
+      "units": 19.5,
+      "roi": 0.0623
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 229,
+      "wins": 110,
+      "losses": 119,
+      "pushes": 0,
+      "win_pct": 0.4803,
+      "avg_price": 120.0,
+      "units": 9.84,
+      "roi": 0.043
+     }
+    ],
+    "puck line": [
+     {
+      "ev_threshold": 0,
+      "bets": 750,
+      "wins": 389,
+      "losses": 361,
+      "pushes": 0,
+      "win_pct": 0.5187,
+      "avg_price": -100.0,
+      "units": 21.81,
+      "roi": 0.0291
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 562,
+      "wins": 285,
+      "losses": 277,
+      "pushes": 0,
+      "win_pct": 0.5071,
+      "avg_price": 117.0,
+      "units": 17.61,
+      "roi": 0.0313
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 390,
+      "wins": 190,
+      "losses": 200,
+      "pushes": 0,
+      "win_pct": 0.4872,
+      "avg_price": 137.0,
+      "units": 7.73,
+      "roi": 0.0198
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 277,
+      "wins": 130,
+      "losses": 147,
+      "pushes": 0,
+      "win_pct": 0.4693,
+      "avg_price": 154.0,
+      "units": 3.2,
+      "roi": 0.0116
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 198,
+      "wins": 93,
+      "losses": 105,
+      "pushes": 0,
+      "win_pct": 0.4697,
+      "avg_price": 160.0,
+      "units": 9.72,
+      "roi": 0.0491
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 160,
+      "wins": 71,
+      "losses": 89,
+      "pushes": 0,
+      "win_pct": 0.4437,
+      "avg_price": 160.0,
+      "units": 4.06,
+      "roi": 0.0254
+     }
+    ],
+    "total": [
+     {
+      "ev_threshold": 0,
+      "bets": 569,
+      "wins": 276,
+      "losses": 293,
+      "pushes": 12,
+      "win_pct": 0.4851,
+      "avg_price": -115.0,
+      "units": -47.45,
+      "roi": -0.0834
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 371,
+      "wins": 193,
+      "losses": 178,
+      "pushes": 9,
+      "win_pct": 0.5202,
+      "avg_price": -114.0,
+      "units": -7.12,
+      "roi": -0.0192
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 222,
+      "wins": 119,
+      "losses": 103,
+      "pushes": 8,
+      "win_pct": 0.536,
+      "avg_price": -112.0,
+      "units": 2.18,
+      "roi": 0.0098
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 126,
+      "wins": 67,
+      "losses": 59,
+      "pushes": 3,
+      "win_pct": 0.5317,
+      "avg_price": -111.0,
+      "units": 1.28,
+      "roi": 0.0102
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 60,
+      "wins": 40,
+      "losses": 20,
+      "pushes": 1,
+      "win_pct": 0.6667,
+      "avg_price": -110.0,
+      "units": 16.47,
+      "roi": 0.2745
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 30,
+      "wins": 20,
+      "losses": 10,
+      "pushes": 1,
+      "win_pct": 0.6667,
+      "avg_price": -110.0,
+      "units": 8.61,
+      "roi": 0.2869
+     }
+    ]
+   },
+   "total_sides_6": "79 over / 50 under"
+  },
+  "close": {
+   "market": 0.6947135248517032,
+   "xg_model": 0.6959568568760341,
+   "goals_model": 0.6958325189722987,
+   "mean_model_total": 6.118185981492126,
+   "mean_line": 5.9573365231259965,
+   "mean_actual": 6.086921850079745,
+   "bets": {
+    "moneyline": [
+     {
+      "ev_threshold": 0,
+      "bets": 880,
+      "wins": 395,
+      "losses": 485,
+      "pushes": 0,
+      "win_pct": 0.4489,
+      "avg_price": 120.0,
+      "units": -63.83,
+      "roi": -0.0725
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 699,
+      "wins": 303,
+      "losses": 396,
+      "pushes": 0,
+      "win_pct": 0.4335,
+      "avg_price": 124.0,
+      "units": -50.48,
+      "roi": -0.0722
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 567,
+      "wins": 244,
+      "losses": 323,
+      "pushes": 0,
+      "win_pct": 0.4303,
+      "avg_price": 130.0,
+      "units": -33.39,
+      "roi": -0.0589
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 451,
+      "wins": 189,
+      "losses": 262,
+      "pushes": 0,
+      "win_pct": 0.4191,
+      "avg_price": 130.0,
+      "units": -28.38,
+      "roi": -0.0629
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 353,
+      "wins": 137,
+      "losses": 216,
+      "pushes": 0,
+      "win_pct": 0.3881,
+      "avg_price": 130.0,
+      "units": -33.26,
+      "roi": -0.0942
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 272,
+      "wins": 104,
+      "losses": 168,
+      "pushes": 0,
+      "win_pct": 0.3824,
+      "avg_price": 136.0,
+      "units": -25.14,
+      "roi": -0.0924
+     }
+    ],
+    "puck line": [
+     {
+      "ev_threshold": 0,
+      "bets": 816,
+      "wins": 412,
+      "losses": 404,
+      "pushes": 0,
+      "win_pct": 0.5049,
+      "avg_price": -112.0,
+      "units": -13.39,
+      "roi": -0.0164
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 616,
+      "wins": 305,
+      "losses": 311,
+      "pushes": 0,
+      "win_pct": 0.4951,
+      "avg_price": -105.0,
+      "units": -8.59,
+      "roi": -0.0139
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 456,
+      "wins": 224,
+      "losses": 232,
+      "pushes": 0,
+      "win_pct": 0.4912,
+      "avg_price": 110.0,
+      "units": 2.71,
+      "roi": 0.0059
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 317,
+      "wins": 151,
+      "losses": 166,
+      "pushes": 0,
+      "win_pct": 0.4763,
+      "avg_price": 124.0,
+      "units": 3.63,
+      "roi": 0.0115
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 237,
+      "wins": 115,
+      "losses": 122,
+      "pushes": 0,
+      "win_pct": 0.4852,
+      "avg_price": 140.0,
+      "units": 16.96,
+      "roi": 0.0716
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 160,
+      "wins": 75,
+      "losses": 85,
+      "pushes": 0,
+      "win_pct": 0.4688,
+      "avg_price": 154.0,
+      "units": 11.12,
+      "roi": 0.0695
+     }
+    ],
+    "total": [
+     {
+      "ev_threshold": 0,
+      "bets": 691,
+      "wins": 346,
+      "losses": 345,
+      "pushes": 24,
+      "win_pct": 0.5007,
+      "avg_price": -110.0,
+      "units": -20.31,
+      "roi": -0.0294
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 495,
+      "wins": 247,
+      "losses": 248,
+      "pushes": 16,
+      "win_pct": 0.499,
+      "avg_price": -108.0,
+      "units": -13.41,
+      "roi": -0.0271
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 328,
+      "wins": 169,
+      "losses": 159,
+      "pushes": 13,
+      "win_pct": 0.5152,
+      "avg_price": -105.0,
+      "units": 5.36,
+      "roi": 0.0163
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 203,
+      "wins": 109,
+      "losses": 94,
+      "pushes": 8,
+      "win_pct": 0.5369,
+      "avg_price": -105.0,
+      "units": 15.69,
+      "roi": 0.0773
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 117,
+      "wins": 64,
+      "losses": 53,
+      "pushes": 3,
+      "win_pct": 0.547,
+      "avg_price": 102.0,
+      "units": 14.82,
+      "roi": 0.1267
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 75,
+      "wins": 40,
+      "losses": 35,
+      "pushes": 2,
+      "win_pct": 0.5333,
+      "avg_price": 102.0,
+      "units": 8.72,
+      "roi": 0.1163
+     }
+    ]
+   },
+   "total_sides_6": "127 over / 84 under"
+  },
+  "ml_brier": {
+   "xg": 0.23633491842045992,
+   "goals": 0.2370359310341002
+  }
+ },
+ "2026": {
+  "summary": {
+   "train_seasons": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "test_season": 2026,
+   "fixed_xg": [
+    2.9094,
+    0.219,
+    -0.1257,
+    0.1466,
+    -0.1046
+   ],
+   "conv_intercept": 0.05944989395470699,
+   "sd_xg_offense": 0.2932926475209899,
+   "sd_xg_defense": 0.24354727339913598,
+   "sd_finishing": 0.15699112254351022,
+   "sd_goalie": 0.2899063422148184,
+   "sd_resid_xg": 0.7791142105746164,
+   "sd_resid_conv": 1.5823086587260629,
+   "rho": {
+    "O": 0.6738859035663266,
+    "D": 0.5851631324265287,
+    "F": 0.0766054223877709,
+    "G": 0.1532990066195712
+   },
+   "h_ot": 0.5339805825242718,
+   "halflife": null,
+   "tune": {
+    "None": 2.4236624510181675,
+    "60": 2.425867683561593,
+    "30": 2.4283465522693257
+   }
+  },
+  "xg_coef": {
+   "const": -0.959,
+   "dist": -0.468,
+   "dist2": -0.007,
+   "angle": -0.146,
+   "pp": 0.324,
+   "sh": 0.082,
+   "en": 12.656,
+   "rebound": -0.01,
+   "rebound_angle": 0.06,
+   "ot": 0.521,
+   "leading": 0.142,
+   "trailing": 0.003,
+   "typed": -0.104,
+   "t_wrist": 0.117,
+   "t_snap": 0.52,
+   "t_slap": 0.532,
+   "t_backhand": -0.266,
+   "t_tip-in": -0.461,
+   "t_deflected": -0.37,
+   "t_wrap-around": -0.666
+  },
+  "open": {
+   "market": 0.6879239596670595,
+   "xg_model": 0.6922979188820585,
+   "goals_model": 0.6912712243512952,
+   "mean_model_total": 6.268161244035178,
+   "mean_line": 6.0490956072351425,
+   "mean_actual": 6.311800172265288,
+   "bets": {
+    "moneyline": [
+     {
+      "ev_threshold": 0,
+      "bets": 787,
+      "wins": 424,
+      "losses": 363,
+      "pushes": 0,
+      "win_pct": 0.5388,
+      "avg_price": -111.0,
+      "units": 45.22,
+      "roi": 0.0575
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 614,
+      "wins": 342,
+      "losses": 272,
+      "pushes": 0,
+      "win_pct": 0.557,
+      "avg_price": -111.0,
+      "units": 65.42,
+      "roi": 0.1065
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 480,
+      "wins": 262,
+      "losses": 218,
+      "pushes": 0,
+      "win_pct": 0.5458,
+      "avg_price": -105.0,
+      "units": 52.55,
+      "roi": 0.1095
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 349,
+      "wins": 189,
+      "losses": 160,
+      "pushes": 0,
+      "win_pct": 0.5415,
+      "avg_price": -100.0,
+      "units": 42.53,
+      "roi": 0.1219
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 272,
+      "wins": 142,
+      "losses": 130,
+      "pushes": 0,
+      "win_pct": 0.5221,
+      "avg_price": 108.0,
+      "units": 30.66,
+      "roi": 0.1127
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 195,
+      "wins": 102,
+      "losses": 93,
+      "pushes": 0,
+      "win_pct": 0.5231,
+      "avg_price": 115.0,
+      "units": 26.29,
+      "roi": 0.1348
+     }
+    ],
+    "puck line": [
+     {
+      "ev_threshold": 0,
+      "bets": 683,
+      "wins": 328,
+      "losses": 355,
+      "pushes": 0,
+      "win_pct": 0.4802,
+      "avg_price": 155.0,
+      "units": 17.03,
+      "roi": 0.0249
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 523,
+      "wins": 243,
+      "losses": 280,
+      "pushes": 0,
+      "win_pct": 0.4646,
+      "avg_price": 170.0,
+      "units": 17.56,
+      "roi": 0.0336
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 405,
+      "wins": 185,
+      "losses": 220,
+      "pushes": 0,
+      "win_pct": 0.4568,
+      "avg_price": 180.0,
+      "units": 25.76,
+      "roi": 0.0636
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 296,
+      "wins": 132,
+      "losses": 164,
+      "pushes": 0,
+      "win_pct": 0.4459,
+      "avg_price": 180.0,
+      "units": 25.0,
+      "roi": 0.0845
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 229,
+      "wins": 95,
+      "losses": 134,
+      "pushes": 0,
+      "win_pct": 0.4148,
+      "avg_price": 190.0,
+      "units": 14.13,
+      "roi": 0.0617
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 187,
+      "wins": 78,
+      "losses": 109,
+      "pushes": 0,
+      "win_pct": 0.4171,
+      "avg_price": 195.0,
+      "units": 23.83,
+      "roi": 0.1275
+     }
+    ],
+    "total": [
+     {
+      "ev_threshold": 0,
+      "bets": 661,
+      "wins": 333,
+      "losses": 328,
+      "pushes": 0,
+      "win_pct": 0.5038,
+      "avg_price": -116.0,
+      "units": -34.28,
+      "roi": -0.0519
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 496,
+      "wins": 247,
+      "losses": 249,
+      "pushes": 0,
+      "win_pct": 0.498,
+      "avg_price": -116.0,
+      "units": -30.74,
+      "roi": -0.062
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 326,
+      "wins": 160,
+      "losses": 166,
+      "pushes": 0,
+      "win_pct": 0.4908,
+      "avg_price": -110.0,
+      "units": -20.3,
+      "roi": -0.0623
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 203,
+      "wins": 91,
+      "losses": 112,
+      "pushes": 0,
+      "win_pct": 0.4483,
+      "avg_price": -105.0,
+      "units": -24.8,
+      "roi": -0.1221
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 154,
+      "wins": 68,
+      "losses": 86,
+      "pushes": 0,
+      "win_pct": 0.4416,
+      "avg_price": -100.0,
+      "units": -18.61,
+      "roi": -0.1208
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 127,
+      "wins": 55,
+      "losses": 72,
+      "pushes": 0,
+      "win_pct": 0.4331,
+      "avg_price": -100.0,
+      "units": -16.35,
+      "roi": -0.1288
+     }
+    ]
+   },
+   "total_sides_6": "5 over / 198 under"
+  },
+  "close": {
+   "market": 0.6919566390959381,
+   "xg_model": 0.6993702836042106,
+   "goals_model": 0.6960795859099268,
+   "mean_model_total": 6.2728194190763045,
+   "mean_line": 6.084077985377742,
+   "mean_actual": 6.285134037367993,
+   "bets": {
+    "moneyline": [
+     {
+      "ev_threshold": 0,
+      "bets": 856,
+      "wins": 436,
+      "losses": 420,
+      "pushes": 0,
+      "win_pct": 0.5093,
+      "avg_price": -108.0,
+      "units": -7.75,
+      "roi": -0.0091
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 664,
+      "wins": 337,
+      "losses": 327,
+      "pushes": 0,
+      "win_pct": 0.5075,
+      "avg_price": -105.0,
+      "units": -2.46,
+      "roi": -0.0037
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 514,
+      "wins": 258,
+      "losses": 256,
+      "pushes": 0,
+      "win_pct": 0.5019,
+      "avg_price": -102.0,
+      "units": 2.18,
+      "roi": 0.0042
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 388,
+      "wins": 193,
+      "losses": 195,
+      "pushes": 0,
+      "win_pct": 0.4974,
+      "avg_price": 104.0,
+      "units": 7.99,
+      "roi": 0.0206
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 289,
+      "wins": 143,
+      "losses": 146,
+      "pushes": 0,
+      "win_pct": 0.4948,
+      "avg_price": 110.0,
+      "units": 12.28,
+      "roi": 0.0425
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 210,
+      "wins": 103,
+      "losses": 107,
+      "pushes": 0,
+      "win_pct": 0.4905,
+      "avg_price": 114.0,
+      "units": 13.0,
+      "roi": 0.0619
+     }
+    ],
+    "puck line": [
+     {
+      "ev_threshold": 0,
+      "bets": 720,
+      "wins": 330,
+      "losses": 390,
+      "pushes": 0,
+      "win_pct": 0.4583,
+      "avg_price": 145.0,
+      "units": -26.91,
+      "roi": -0.0374
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 523,
+      "wins": 231,
+      "losses": 292,
+      "pushes": 0,
+      "win_pct": 0.4417,
+      "avg_price": 154.0,
+      "units": -15.73,
+      "roi": -0.0301
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 387,
+      "wins": 169,
+      "losses": 218,
+      "pushes": 0,
+      "win_pct": 0.4367,
+      "avg_price": 164.0,
+      "units": -8.91,
+      "roi": -0.023
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 279,
+      "wins": 106,
+      "losses": 173,
+      "pushes": 0,
+      "win_pct": 0.3799,
+      "avg_price": 170.0,
+      "units": -33.81,
+      "roi": -0.1212
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 201,
+      "wins": 76,
+      "losses": 125,
+      "pushes": 0,
+      "win_pct": 0.3781,
+      "avg_price": 170.0,
+      "units": -17.84,
+      "roi": -0.0888
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 140,
+      "wins": 52,
+      "losses": 88,
+      "pushes": 0,
+      "win_pct": 0.3714,
+      "avg_price": 180.0,
+      "units": -10.79,
+      "roi": -0.0771
+     }
+    ],
+    "total": [
+     {
+      "ev_threshold": 0,
+      "bets": 853,
+      "wins": 429,
+      "losses": 424,
+      "pushes": 7,
+      "win_pct": 0.5029,
+      "avg_price": -115.0,
+      "units": -38.91,
+      "roi": -0.0456
+     },
+     {
+      "ev_threshold": 0.02,
+      "bets": 663,
+      "wins": 337,
+      "losses": 326,
+      "pushes": 6,
+      "win_pct": 0.5083,
+      "avg_price": -112.0,
+      "units": -22.09,
+      "roi": -0.0333
+     },
+     {
+      "ev_threshold": 0.04,
+      "bets": 465,
+      "wins": 226,
+      "losses": 239,
+      "pushes": 2,
+      "win_pct": 0.486,
+      "avg_price": -108.0,
+      "units": -28.81,
+      "roi": -0.062
+     },
+     {
+      "ev_threshold": 0.06,
+      "bets": 314,
+      "wins": 146,
+      "losses": 168,
+      "pushes": 0,
+      "win_pct": 0.465,
+      "avg_price": -105.0,
+      "units": -26.68,
+      "roi": -0.085
+     },
+     {
+      "ev_threshold": 0.08,
+      "bets": 217,
+      "wins": 96,
+      "losses": 121,
+      "pushes": 0,
+      "win_pct": 0.4424,
+      "avg_price": 100.0,
+      "units": -24.75,
+      "roi": -0.114
+     },
+     {
+      "ev_threshold": 0.1,
+      "bets": 166,
+      "wins": 67,
+      "losses": 99,
+      "pushes": 0,
+      "win_pct": 0.4036,
+      "avg_price": 105.0,
+      "units": -29.42,
+      "roi": -0.1772
+     }
+    ]
+   },
+   "total_sides_6": "21 over / 293 under"
+  },
+  "ml_brier": {
+   "xg": 0.2455440555830392,
+   "goals": 0.24817584085328517
+  }
+ }
+}

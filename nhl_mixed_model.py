@@ -159,7 +159,15 @@ def over_prob(lh, la, T, h_ot, cal):
     T = np.asarray(T, float)
     po = (M * (final[None] > T[:, None, None])).sum((1, 2)); pp = (M * (final[None] == T[:, None, None])).sum((1, 2))
     pu = 1 - po - pp
-    po_c = calibrate(po / np.clip(po + pu, 1e-9, None), cal["over"]) * (1 - pp)
+    cond = po / np.clip(po + pu, 1e-9, None)
+    if cal.get("over_lines"):                      # separate calibration for each common line (nearest one for others)
+        keys = np.array(sorted(float(k) for k in cal["over_lines"]))
+        near = keys[np.abs(T[:, None] - keys[None, :]).argmin(1)]
+        cc = np.array([cal["over_lines"][str(k)] for k in near])
+        cond = expit(cc[:, 0] + cc[:, 1] * logit(cond))
+    elif cal.get("over"):
+        cond = calibrate(cond, cal["over"])
+    po_c = cond * (1 - pp)
     return po_c, (1 - pp) - po_c, pp
 
 
