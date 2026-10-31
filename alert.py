@@ -25,6 +25,7 @@ JUMP_WINDOW_MIN = 60                # a "jump" is a move within this many minute
 JUMP_LOG_PROB = 3.0                 # log moneyline moves of at least this many win-probability points (and any change in the total)
 JUMP_ALERT_PROB = 5.0               # send a "Line jump" notification at this size (and for totals moving a full goal)
 P_MISS = {"Out": 1.0, "Injured Reserve": 1.0, "Long Term Injured Reserve": 1.0, "Suspension": 1.0, "Suspended": 1.0, "Day-To-Day": 0.5}
+SHORT = {"xg": "Shot model", "goals": "Goals model"}
 WINDOW = None                       # None = check all day; or (16, 0, 19, 0) for 4:00-7:00 PM ET
 ET = ZoneInfo("America/New_York")
 STATE = os.path.join(W, "state")
@@ -62,6 +63,14 @@ def notify(title, body, priority="high", tags="ice_hockey", link=None):
     return True
 
 
+def load_models(path):
+    """model file for one day; older single-model files are wrapped as the goals model"""
+    M = json.load(open(path))
+    if "models" not in M:
+        M = dict(date=M["date"], made_at_et=M.get("made_at_et", ""), active="goals", models={"goals": M})
+    return M
+
+
 def fmt_price(o): return "" if pd.isna(o) else f"{o:+.0f}"
 
 
@@ -91,15 +100,18 @@ def main():
             if pid: status_of[pid] = st
 
     apath = os.path.join(STATE, "alerts.csv")
-    A = pd.read_csv(apath) if os.path.exists(apath) else pd.DataFrame(columns=["game_id", "market", "skipped"])
+    A = pd.read_csv(apath) if os.path.exists(apath) else pd.DataFrame(columns=["game_id", "market", "skipped", "model"])
+    if "model" not in A: A["model"] = "goals"                 # alerts from before both models ran
+    A["model"] = A.model.fillna("goals")
     if len(A) and "sent" in A:          # an alert that couldn't be delivered (e.g. no ntfy topic yet) is tried again next check
         A = A[A.sent.astype(str) == "True"].reset_index(drop=True)
-    done = set(zip(A[A.skipped.isna()].game_id, A[A.skipped.isna()].market)) if len(A) else set()
-    skipped = set(zip(A[A.skipped.notna()].game_id, A[A.skipped.notna()].market)) if len(A) else set()
-    graded = A[A.result.isin(["W", "L"]) & A.skipped.isna()] if "result" in A else A.iloc[:0]
-    rec = (f"{int((graded.result == 'W').sum())}-{int((graded.result == 'L').sum())}, {graded.profit.sum():+.1f}u" if len(graded) else "no graded alerts yet")
-    cg = A[A.result.isin(["W", "L"]) & A.skipped.notna()] if "result" in A else A.iloc[:0]
-    crec = f"{int((cg.result == 'W').sum())}-{int((cg.result == 'L').sum())}" if len(cg) else "none graded yet"
+    done = set(zip(A[A.skipped.isna()].game_id, A[A.skipped.isna()].market, A[A.skipped.isna()].model)) if len(A) else set()
+    skipped = set(zip(A[A.skipped.notna()].game_id, A[A.skipped.notna()].market, A[A.skipped.notna()].model)) if len(A) else set()
+
+    def record(name, caution):
+        g = A[(A.model == name) & (A.skipped.notna() if caution else A.skipped.isna())]
+        g = g[g.result.isin(["W", "L"])] if "result" in g else g.iloc[:0]
+        return (f"{int((g.result == 'W').sum())}-{int((g.result == 'L').sum())}, {g.profit.sum():+.1f}u" if len(g) else "none graded yet")
     new, n_games, model_rows = [], 0, []
     hpath = os.path.join(STATE, "line_history.csv")
     H_ = pd.read_csv(hpath) if os.path.exists(hpath) else pd.DataFrame(columns=["game_id", "market", "seen_at_et", "line", "prices", "prob"])
@@ -130,13 +142,11 @@ def main():
     info = {}
 
     for mf in models:
-        Mall = json.load(open(os.path.join(STATE, mf)))
-        lb = os.path.join(STATE, "leaderboard.json")
-        act = json.load(open(lb)).get("active") if os.path.exists(lb) else None
-        act = act if act in Mall["models"] else Mall["active"]
-        M = dict(Mall["models"][act], date=Mall["date"], made_at_et=Mall["made_at_et"], name=act)
-        others = {k: v for k, v in Mall["models"].items() if k != act}
-        day = pd.Timestamp(M["date"]); gval = {int(k): v for k, v in M["goalies"].items()}
+        Mall = load_models(os.path.join(STATE, mf))
+        order = [k for k in ("xg", "goals") if k in Mall["models"]] + [k for k in Mall["models"] if k not in ("xg", "goals")]
+        lead = order[0]
+        M = dict(Mall["models"][lead], date=Mall["date"], made_at_et=Mall["made_at_et"])
+        day = pd.Timestamp(M["date"])
         gname = {int(k): v for k, v in M.get("goalie_names", {}).items()}
         try:
             SB = {(r["home"], r["away"]): r for r in nd.scoreboard(day)}
@@ -151,9 +161,8 @@ def main():
             ln = line.iloc[0]
             pr = SB.get((g["home"], g["away"]), {}).get("probables", {})
 
-            def goalie(def_side, gv=None):
-                """(effect, label, confirmed) for the goalie facing the other team"""
-                gv = gval if gv is None else gv
+            def goalie(def_side, gv):
+                """(effect, label, confirmed, known) for the goalie facing the other team, using one model's goalie effects"""
                 p = pr.get(def_side)
                 if p:
                     pid, name, st = p
@@ -170,110 +179,115 @@ def main():
                     pm = P_MISS.get(st, 0.0) if st else (1.0 if missed_last else 0.0)
                     if pm > 0: tot += pm * val; out.append(name.split()[-1] + ("" if pm == 1 else "?"))
                 return tot, out
-            gh_v, gh_lab, gh_conf, gh_known = goalie("home"); ga_v, ga_lab, ga_conf, ga_known = goalie("away")
+            _, gh_lab, gh_conf, gh_known = goalie("home", {}); _, ga_lab, ga_conf, ga_known = goalie("away", {})
             mh, outs_h = missing("home"); ma, outs_a = missing("away")
-            lam_h = g["base_home"] + M["c_miss"] * mh + ga_v
-            lam_a = g["base_away"] + M["c_miss"] * ma + gh_v
-            cal = M["cal"]["pretip" if (gh_known and ga_known) else "open"]
-            mp = nm.market_probs(np.array([lam_h]), np.array([lam_a]), M["h_ot"], cal)
-            p_home, p_hby2, p_aby2 = float(mp["home_win"][0]), float(mp["home_by2"][0]), float(mp["away_by2"][0])
-            exp_total = float(lam_h + lam_a + nm.raw_probs(np.array([lam_h]), np.array([lam_a]), M["h_ot"])["tie"][0])
             goalies_txt = f"{g['away'].upper()} {ga_lab}; {g['home'].upper()} {gh_lab}"
-            for oname, OM in others.items():          # the other models' numbers, recorded for comparison (no alerts)
-                og = next((x for x in OM["games"] if x["game_id"] == g["game_id"]), None)
-                if og is None: continue
-                ogv = {int(k): v for k, v in OM["goalies"].items()}
-                lh2 = og["base_home"] + OM["c_miss"] * mh + goalie("away", ogv)[0]
-                la2 = og["base_away"] + OM["c_miss"] * ma + goalie("home", ogv)[0]
-                mp2 = nm.market_probs(np.array([lh2]), np.array([la2]), OM["h_ot"], OM["cal"]["pretip" if (gh_known and ga_known) else "open"])
-                t2 = float(lh2 + la2 + nm.raw_probs(np.array([lh2]), np.array([la2]), OM["h_ot"])["tie"][0])
-                model_rows.append(dict(seen_at_et=str(NOW)[:16], model=oname, game_id=g["game_id"], date=M["date"], away=g["away"], home=g["home"],
-                                       model_home_win=round(float(mp2["home_win"][0]), 4), lam_home=round(lh2, 3), lam_away=round(la2, 3),
-                                       model_total=round(t2, 2), away_goalie=ga_lab, home_goalie=gh_lab,
-                                       missing=f"{g['away'].upper()}: {', '.join(outs_a) or '-'} | {g['home'].upper()}: {', '.join(outs_h) or '-'}"))
-            model_rows.append(dict(seen_at_et=str(NOW)[:16], model=act, game_id=g["game_id"], date=M["date"], away=g["away"], home=g["home"],
-                                   model_home_win=round(p_home, 4), lam_home=round(lam_h, 3), lam_away=round(lam_a, 3),
-                                   model_total=round(exp_total, 2), away_goalie=ga_lab, home_goalie=gh_lab,
-                                   missing=f"{g['away'].upper()}: {', '.join(outs_a) or '-'} | {g['home'].upper()}: {', '.join(outs_h) or '-'}"))
+            missing_txt = f"{g['away'].upper()}: {', '.join(outs_a) or '-'} | {g['home'].upper()}: {', '.join(outs_h) or '-'}"
             c, o = {k: ln.get(f"current_{k}") for k in espn.MARKET_COLS}, {k: ln.get(f"open_{k}") for k in espn.MARKET_COLS}
             ph_now, ph_open = fair(c["home_ml"], c["away_ml"]), fair(o["home_ml"], o["away_ml"])
             record_line(g["game_id"], "moneyline", c["home_ml"], f"{g['away'].upper()} {fmt_price(c['away_ml'])} / {g['home'].upper()} {fmt_price(c['home_ml'])}", 100 * ph_now)
             record_line(g["game_id"], "total", c["total"], f"o{fmt_price(c['over_odds'])}/u{fmt_price(c['under_odds'])}", 100 * fair(c["over_odds"], c["under_odds"]))
             tip = pd.Timestamp(g["tip_et"]).strftime("%a %-I:%M %p")
             H, Aw = g["home"].upper(), g["away"].upper()
-            # candidate bets at the current prices
-            cands = []
-            if not pd.isna(c["home_ml"]):
-                for side, p, price in (("home", p_home, c["home_ml"]), ("away", 1 - p_home, c["away_ml"])):
-                    cands.append(("moneyline", side, np.nan, price, p, o[f"{side}_ml"]))
-            if not pd.isna(c["home_pl"]):
-                hl = c["home_pl"]; p_hc = p_hby2 if hl < 0 else 1 - p_aby2
-                cands += [("puck line", "home", hl, c["home_pl_odds"], p_hc, o["home_pl_odds"] if o["home_pl"] == hl else np.nan),
-                          ("puck line", "away", -hl, c["away_pl_odds"], 1 - p_hc, o["away_pl_odds"] if o["home_pl"] == hl else np.nan)]
-            if not pd.isna(c["total"]):
-                po, pu, pp = nm.over_prob(np.array([lam_h]), np.array([lam_a]), np.array([c["total"]]), M["h_ot"], cal)
-                same = o["total"] == c["total"]
-                cands += [("total", "over", c["total"], c["over_odds"], float(po[0]), o["over_odds"] if same else np.nan),
-                          ("total", "under", c["total"], c["under_odds"], float(pu[0]), o["under_odds"] if same else np.nan)]
-            best = {}
-            for mk, side, lnum, price, p, oprice in cands:
-                if pd.isna(price): continue
-                ev = p * espn.nd_dec(price) - 1
-                if mk not in best or ev > best[mk][4]: best[mk] = (side, lnum, price, p, ev, oprice)
-            for mk in ("moneyline", "puck line", "total"):
+            move = 100 * (ph_now - ph_open) if not (pd.isna(ph_now) or pd.isna(ph_open)) else 0.0
+            # ---- every model's numbers and best bet per market at the current prices
+            best, est = {}, {}
+            for name in order:
+                OM = Mall["models"][name]
+                og = next((x for x in OM["games"] if x["game_id"] == g["game_id"]), None)
+                if og is None: continue
+                gv = {int(k): v for k, v in OM["goalies"].items()}
+                lam_h = og["base_home"] + OM["c_miss"] * mh + goalie("away", gv)[0]
+                lam_a = og["base_away"] + OM["c_miss"] * ma + goalie("home", gv)[0]
+                cal = OM["cal"]["pretip" if (gh_known and ga_known) else "open"]
+                mp = nm.market_probs(np.array([lam_h]), np.array([lam_a]), OM["h_ot"], cal)
+                p_home, p_hby2, p_aby2 = float(mp["home_win"][0]), float(mp["home_by2"][0]), float(mp["away_by2"][0])
+                exp_total = float(lam_h + lam_a + nm.raw_probs(np.array([lam_h]), np.array([lam_a]), OM["h_ot"])["tie"][0])
+                est[name] = (lam_h, lam_a, exp_total, p_home)
+                model_rows.append(dict(seen_at_et=str(NOW)[:16], model=name, game_id=g["game_id"], date=M["date"], away=g["away"], home=g["home"],
+                                       model_home_win=round(p_home, 4), lam_home=round(lam_h, 3), lam_away=round(lam_a, 3),
+                                       model_total=round(exp_total, 2), away_goalie=ga_lab, home_goalie=gh_lab, missing=missing_txt))
+                cands = []
+                if not pd.isna(c["home_ml"]):
+                    for side, p, price in (("home", p_home, c["home_ml"]), ("away", 1 - p_home, c["away_ml"])):
+                        cands.append(("moneyline", side, np.nan, price, p, o[f"{side}_ml"]))
+                if not pd.isna(c["home_pl"]):
+                    hl = c["home_pl"]; p_hc = p_hby2 if hl < 0 else 1 - p_aby2
+                    cands += [("puck line", "home", hl, c["home_pl_odds"], p_hc, o["home_pl_odds"] if o["home_pl"] == hl else np.nan),
+                              ("puck line", "away", -hl, c["away_pl_odds"], 1 - p_hc, o["away_pl_odds"] if o["home_pl"] == hl else np.nan)]
+                if not pd.isna(c["total"]):
+                    po, pu, pp = nm.over_prob(np.array([lam_h]), np.array([lam_a]), np.array([c["total"]]), OM["h_ot"], cal)
+                    same = o["total"] == c["total"]
+                    cands += [("total", "over", c["total"], c["over_odds"], float(po[0]), o["over_odds"] if same else np.nan),
+                              ("total", "under", c["total"], c["under_odds"], float(pu[0]), o["under_odds"] if same else np.nan)]
+                for mk, side, lnum, price, p, oprice in cands:
+                    if pd.isna(price): continue
+                    ev = p * espn.nd_dec(price) - 1
+                    if (name, mk) not in best or ev > best[(name, mk)][4]: best[(name, mk)] = (side, lnum, price, p, ev, oprice)
+            # ---- alerts: one per side; both models in one alert when they agree
+            for mk in ALERT_MARKETS:
                 hist_txt = history_text(g["game_id"], "total" if mk == "total" else "moneyline")
-                if mk not in best or mk not in ALERT_MARKETS or (g["game_id"], mk) in done: continue
-                side, lnum, price, p, ev, oprice = best[mk]
-                team = H if side == "home" else (Aw if side == "away" else side.upper())
-                what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
-                        (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{side.upper()} {lnum:g} ({fmt_price(price)})"))
-                title = f"Bet {what}: {Aw} @ {H}, {tip}"
-                body = (f"Model: {team if mk != 'total' else side} {p:.1%} to win this bet; DraftKings {fmt_price(price)} needs {1 / espn.nd_dec(price):.1%}. "
-                        f"Expected value {ev:+.1%}.")
-                if not pd.isna(oprice):
-                    ev_o = p * espn.nd_dec(oprice) - 1
-                    body += (" (opening price)" if oprice == price else f" Opened {fmt_price(oprice)} (EV then {ev_o:+.1%}).")
-                body += f" Model score: {Aw} {lam_a:.2f}, {H} {lam_h:.2f} in regulation; total {exp_total:.2f}."
-                # moneyline movement since open, from the home side, in win-probability points
-                move = 100 * (ph_now - ph_open) if not (pd.isna(ph_now) or pd.isna(ph_open)) else 0.0
-                bet_home = side == "home" or (mk == "total" and False)
-                toward = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) == bet_home)
-                against = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) != bet_home)
-                if ev < THRESHOLD:
-                    if toward and (g["game_id"], mk) not in moved_done:
-                        notify(f"Market agrees: {Aw} @ {H} {mk}, {tip}",
-                               f"The moneyline moved {abs(move):.1f} win-% points toward the model's side ({team}) since open. "
-                               f"EV left at {what}: {ev:+.1%} (under {THRESHOLD:.0%}, so no bet). Info only." + hist_txt + news_for(g),
-                               priority="low", tags="chart_with_upwards_trend")
-                        moves_new.append(dict(at_et=str(NOW), game_id=g["game_id"], date=M["date"], home=g["home"], away=g["away"], market=mk,
-                                              model_side=side, open_home_prob=round(100 * ph_open, 1), home_prob=round(100 * ph_now, 1),
-                                              move=round(move, 1), model_home_prob=round(100 * p_home, 1), ev_left=round(ev, 4)))
-                        moved_done.add((g["game_id"], mk))
-                    continue
-                skip = None
-                if not (gh_conf and ga_conf): skip = "starting goalies not both confirmed yet"
-                elif against: skip = f"the moneyline moved {abs(move):.1f} win-% points against this side since open"
-                odds_s = f"{price:+.0f}"
-                link = log_link(M["date"], g["away"], g["home"], mk, team if mk != "total" else side,
-                                "" if mk == "moneyline" else f"{lnum:+g}" if mk == "puck line" else f"{lnum:g}", odds_s)
-                row = dict(alerted_at_et=str(NOW), model=act, game_id=g["game_id"], date=M["date"], home=g["home"], away=g["away"], tip_et=g["tip_et"],
-                           market=mk, side=side, line=lnum, price=price, open_price=oprice, model_prob=round(p, 4), ev=round(ev, 4),
-                           goalies=goalies_txt, sent=False, skipped=skip)
-                tail = f"\nGoalies: {goalies_txt}.\nFrom the {act} model ({M.get('label', '')}), the current leader."
-                if outs_a or outs_h: tail += f"\nMissing: {Aw} {', '.join(outs_a) or 'none'}; {H} {', '.join(outs_h) or 'none'}."
-                if skip:
-                    if (g["game_id"], mk) not in skipped:
-                        cbody = body + f"\nCAUTION: {skip}. The model may be missing news here; bet with caution." + tail + \
-                                f"\nCaution alerts so far: {crec}." + hist_txt + news_for(g)
-                        row["sent"] = notify("CAUTION - " + title, cbody, priority="default", tags="warning,ice_hockey", link=link)
-                        new.append(row); skipped.add((g["game_id"], mk)); print("CAUTION ALERT:", title, "|", skip)
-                    continue
-                if toward:
-                    body += f" Market agrees: the moneyline has moved {abs(move):.1f} win-% points toward this side since open."
-                    moved_done.add((g["game_id"], mk))
-                body += tail + f"\nAlerts so far: {rec}. Tracking test: the model has not yet proven an edge live." + hist_txt + news_for(g)
-                row["sent"] = notify(title, body, link=link)
-                new.append(row); done.add((g["game_id"], mk)); print("ALERT:", title, "|", body)
+                groups = {}
+                for name in order:
+                    bt = best.get((name, mk))
+                    if bt is None: continue
+                    if bt[4] < THRESHOLD:
+                        side = bt[0]
+                        toward = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) == (side == "home"))
+                        if name == lead and toward and (g["game_id"], mk) not in moved_done:
+                            team = H if side == "home" else Aw
+                            notify(f"Market agrees: {Aw} @ {H} {mk}, {tip}",
+                                   f"The moneyline moved {abs(move):.1f} win-% points toward the {SHORT.get(name, name)}'s side ({team}) since open. "
+                                   f"EV left: {bt[4]:+.1%} (under {THRESHOLD:.0%}, so no bet). Info only." + hist_txt + news_for(g),
+                                   priority="low", tags="chart_with_upwards_trend")
+                            moves_new.append(dict(at_et=str(NOW), game_id=g["game_id"], date=M["date"], home=g["home"], away=g["away"], market=mk,
+                                                  model=name, model_side=side, open_home_prob=round(100 * ph_open, 1), home_prob=round(100 * ph_now, 1),
+                                                  move=round(move, 1), model_home_prob=round(100 * est[name][3], 1), ev_left=round(bt[4], 4)))
+                            moved_done.add((g["game_id"], mk))
+                        continue
+                    groups.setdefault((bt[0], bt[1], bt[2]), []).append((name, bt))
+                for (side, lnum, price), members in groups.items():
+                    oprice = members[0][1][5]
+                    team = H if side == "home" else (Aw if side == "away" else side.upper())
+                    against = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) != (side == "home"))
+                    toward = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) == (side == "home"))
+                    skip = None
+                    if not (gh_conf and ga_conf): skip = "starting goalies not both confirmed yet"
+                    elif against: skip = f"the moneyline moved {abs(move):.1f} win-% points against this side since open"
+                    pending = [(n, bt) for n, bt in members if (g["game_id"], mk, n) not in (skipped if skip else done)]
+                    if not pending: continue
+                    tag = "Both models" if len(pending) > 1 else SHORT.get(pending[0][0], pending[0][0])
+                    what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
+                            (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{side.upper()} {lnum:g} ({fmt_price(price)})"))
+                    title = f"[{tag}] Bet {what}: {Aw} @ {H}, {tip}"
+                    lines_ = []
+                    for n, bt in pending:
+                        p, ev = bt[3], bt[4]
+                        s_ = f"{SHORT.get(n, n)}: {p:.1%} to win (needs {1 / espn.nd_dec(price):.1%}), EV {ev:+.1%}"
+                        if not pd.isna(oprice) and oprice != price: s_ += f" (EV at the opening {fmt_price(oprice)}: {p * espn.nd_dec(oprice) - 1:+.1%})"
+                        lh, la, et, _ = est[n]
+                        lines_.append(s_ + f"; score {Aw} {la:.2f}, {H} {lh:.2f} in regulation, total {et:.2f}.")
+                    body = ("DraftKings " + fmt_price(price) + (" (opening price)." if oprice == price else
+                            (f" (opened {fmt_price(oprice)})." if not pd.isna(oprice) else ".")) + "\n" + "\n".join(lines_))
+                    tail = f"\nGoalies: {goalies_txt}."
+                    if outs_a or outs_h: tail += f"\nMissing: {Aw} {', '.join(outs_a) or 'none'}; {H} {', '.join(outs_h) or 'none'}."
+                    link = log_link(M["date"], g["away"], g["home"], mk, team if mk != "total" else side,
+                                    "" if mk == "moneyline" else f"{lnum:+g}" if mk == "puck line" else f"{lnum:g}", f"{price:+.0f}")
+                    recs = "; ".join(f"{SHORT.get(n, n)} {record(n, bool(skip))}" for n, _ in pending)
+                    if skip:
+                        body += f"\nCAUTION: {skip}. The model may be missing news here; bet with caution." + tail + \
+                                f"\nCaution alerts so far: {recs}." + hist_txt + news_for(g)
+                        sent = notify("CAUTION " + title, body, priority="default", tags="warning,ice_hockey", link=link)
+                    else:
+                        if toward: body += f"\nMarket agrees: the moneyline has moved {abs(move):.1f} win-% points toward this side since open."
+                        body += tail + f"\nAlerts so far: {recs}. Tracking test: neither model has proven an edge live yet." + hist_txt + news_for(g)
+                        sent = notify(title, body, link=link)
+                    for n, bt in pending:
+                        new.append(dict(alerted_at_et=str(NOW), model=n, both_models=len(pending) > 1, game_id=g["game_id"], date=M["date"],
+                                        home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,
+                                        open_price=oprice, model_prob=round(bt[3], 4), ev=round(bt[4], 4), goalies=goalies_txt, sent=sent, skipped=skip))
+                        (skipped if skip else done).add((g["game_id"], mk, n))
+                    print(("CAUTION " if skip else "") + "ALERT:", title, "|", skip or "")
     if new:
         pd.concat([A, pd.DataFrame(new)], ignore_index=True).to_csv(apath, index=False)
     # ---- line jumps: fast moves, logged for research and alerted when large
@@ -337,7 +351,7 @@ def main():
         research.init(W)
         n_odds = n_pred = n_spl = n_bk = n_g = 0
         for mf in models:
-            M3 = json.load(open(os.path.join(STATE, mf))); M3 = dict(date=M3["date"], games=M3["models"][M3["active"]]["games"])
+            M3 = load_models(os.path.join(STATE, mf)); M3 = dict(date=M3["date"], games=next(iter(M3["models"].values()))["games"])
             try:
                 k, rows = research.odds_snapshot(NOW, M3["date"], M3["games"]); n_odds += k
                 n_pred += research.predictor_snapshot(NOW, M3["date"], rows)

@@ -147,28 +147,23 @@ def picks_and_summary(wb, df, rule, sheet, summ_name, pos):
 
 def models_sheet(wb, board):
     ws = wb.create_sheet("Models", 1)
-    ws["A1"] = "Model leaderboard (alerts come from the active model)"; ws["A1"].font = f_title
-    ws["A2"] = (f"Active: {board['active']}. Why: {board['reason']}. Deciding number: average closing line value of each model's rule bets "
-                f"(needs {board['min_bets']} graded bets per model; a challenger must lead by {board['switch_margin']:.1%}). Season to date, live + backfilled picks.")
+    ws["A1"] = "Model scorecard: both models run and alert side by side"; ws["A1"].font = f_title
+    ws["A2"] = ("Season to date. Rule bets = each model's locked picks with EV ≥ 6% at the opening DraftKings price (live + backfilled). "
+                "Alerts = phone alerts each model sent (an alert marked 'both models' counts for both). Lower Brier = more accurate win chances.")
     ws["A2"].font = f_note
-    cols = [("Model", None), ("Description", "label"), ("Rule bets", "rule_bets"), ("Units", "units"), ("Return/bet", "return_per_bet"),
-            ("Bets with CLV", "bets_with_clv"), ("Average CLV", "avg_clv"), ("Beat the close", "beat_close_pct"),
-            ("Live rule bets", "live_rule_bets"), ("Live units", "live_units"), ("Moneyline Brier", "moneyline_brier"), ("Games graded", "games_graded")]
+    cols = [("Model", None), ("Description", "label"), ("Rule bets", "rule_bets"), ("W", "wins"), ("L", "losses"), ("Units", "units"),
+            ("Return/bet", "return_per_bet"), ("Avg CLV", "avg_clv"), ("Live rule bets", "live_rule_bets"), ("Live units", "live_units"),
+            ("Alerts graded", "alerts_graded"), ("Alert units", "alert_units"), ("Moneyline Brier", "moneyline_brier"), ("Games graded", "games_graded")]
     for k, (t, _) in enumerate(cols): hdr(ws, 4, k + 1, t)
     r = 5
     for name, m in board["models"].items():
-        vals = [name + (" (active)" if name == board["active"] else "")] + [m.get(c) for _, c in cols[1:]]
-        for k, v in enumerate(vals):
-            x = ws.cell(r, k + 1, v); x.font = f_bold if name == board["active"] else f_norm; x.border = box
-            if cols[k][1] in ("return_per_bet", "avg_clv", "beat_close_pct"): x.number_format = "+0.0%;-0.0%;0.0%"
-            if name == board["active"]: x.fill = fill_rule
+        for k, v in enumerate([name] + [m.get(c) for _, c in cols[1:]]):
+            x = ws.cell(r, k + 1, v); x.font = f_norm; x.border = box
+            if cols[k][1] in ("return_per_bet", "avg_clv"): x.number_format = "+0.0%;-0.0%;0.0%"
+            if cols[k][1] in ("units", "live_units", "alert_units"): x.number_format = "+0.0;-0.0;0.0"
         r += 1
-    ws.column_dimensions["A"].width = 14; ws.column_dimensions["B"].width = 52
-    for k in range(3, len(cols) + 1): ws.column_dimensions[CL(k)].width = 12
-    if board.get("history"):
-        r += 1; ws.cell(r, 1, "Switches").font = f_h; r += 1
-        for h in board["history"]:
-            ws.cell(r, 1, f"{h['at_et'][:16]}: {h['from_model']} -> {h['to_model']} ({h['reason']})").font = f_norm; r += 1
+    ws.column_dimensions["A"].width = 10; ws.column_dimensions["B"].width = 50
+    for k in range(3, len(cols) + 1): ws.column_dimensions[CL(k)].width = 11
 
 
 def build(log_csvs, out_xlsx, rule, run_log, board):
@@ -180,7 +175,7 @@ def build(log_csvs, out_xlsx, rule, run_log, board):
     wb = Workbook(); notes = wb.active; notes.title = "Notes"
 
     table_sheet(wb, "Alerts", A, [("Alerted at (ET)", "alerted_at_et"), ("Away", "away"), ("Home", "home"), ("Puck drop", "tip_et"),
-                                  ("Market", "market"), ("Bet", "side"), ("Line", "line"), ("Price", "price"), ("Opening price", "open_price"),
+                                  ("Market", "market"), ("Model", "model"), ("Both models", "both_models"), ("Bet", "side"), ("Line", "line"), ("Price", "price"), ("Opening price", "open_price"),
                                   ("Model win prob", "model_prob"), ("EV", "ev"), ("Goalies", "goalies"), ("Caution (reason)", "skipped"),
                                   ("Result", "result"), ("Units", "profit"), ("CLV", "clv")], upper=("away", "home"))
     table_sheet(wb, "Line Jumps", JJ, [("Detected (ET)", "detected_at_et"), ("Game date", "date"), ("Away", "away"), ("Home", "home"),
@@ -231,8 +226,8 @@ def build(log_csvs, out_xlsx, rule, run_log, board):
     lines = [
         ("h", "What this is"),
         ("t", f"Two models run side by side and keep separate locked picks: {'; '.join(f'{k} = {v}' for k, v in ((k, m['label']) for k, m in board['models'].items()))}. "
-              f"Phone alerts come from the active model, now **{board['active']}** ({board['reason']}). The Models sheet has the leaderboard; "
-              "the notes below are about the active model."),
+              f"Both send phone alerts, labeled with the model (one alert when they agree), and each is graded separately. "
+              f"The Models sheet compares them; the notes below are about the {board['active']} model."),
         ("t", "Every evening (about 9:30 PM ET) GitHub refits the NHL mixed model (team offense, team defense and goalie random effects, home ice, "
               "back-to-backs, missing regular skaters; trained on 2021-22 through 2025-26) and locks its predictions for the next day's games, using what is "
               "known the day before: each team's likely goalie from its recent starts and the skaters who missed its last game. That is the same setup the "

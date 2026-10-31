@@ -1,10 +1,29 @@
 # NHL mixed-model tracker
 
-A mixed model (team offense, team defense and **goalie** random effects, home ice, back-to-backs, and missing regular
+Two mixed models (a goals model and a shot-based expected-goals model) run side by side. The original (team offense, team defense and **goalie** random effects, home ice, back-to-backs, and missing regular
 skaters) that predicts NHL moneylines, puck lines and totals, runs itself on GitHub every day, and sends phone alerts
 when it disagrees with the posted price. It is the NHL version of
 [nba-mixed-model](https://github.com/JeffreyD24/nba-mixed-model): same machinery, same daily schedule, same alerts,
 bet log, research database and workbook, adapted to hockey.
+
+## Two models, side by side
+
+Two models run every day, keep separate locked picks and both send phone alerts. Each alert is labeled **[Shot model]**,
+**[Goals model]** or **[Both models]** (one alert when they want the same bet), and each model's alerts and picks are graded
+separately, so the season shows which one actually wins. The **Models** sheet of `NHL_Live_Tracker.xlsx` and
+`state/leaderboard.json` hold the side-by-side scorecard.
+
+| | Goals model (`nhl_mixed_model.py`) | Shot model (`nhl_xg_model.py`) |
+|---|---|---|
+| Learns from | goals | expected goals (xG): every shot's chance of scoring from its distance, angle, power play, rebound, shot type and score state |
+| Random effects | team offense, team defense, starting goalie | team chance creation, team chance prevention, team finishing, goalie goals saved above expected |
+| Locked picks | `state/picks_log.csv` | `state/picks_log_xg.csv` |
+| Backtest, opening prices, EV ≥ 6%, ML + puck line (2024-25 and 2025-26) | +60.1 units on 1,779 bets (+3.4%) | **+111.0 units on 1,237 bets (+9.0%)** |
+| Moneyline accuracy (Brier, 4 backtest seasons) | 0.2324 / 0.2359 / 0.2370 / 0.2482 | **0.2311 / 0.2331 / 0.2358 / 0.2452** |
+
+Full shot-model backtests: `backtests/XG_MODEL.md`. Shot data comes from ESPN's play-by-play (`build_shots.py`); the xG
+coefficients are fit once on 2021-22..2025-26 (`make_xg_inputs.py` → `data/xg_model.json`), and each run adds the new
+games' shots to `state/shots_2026_27.csv`.
 
 ## What's different from the NBA version, and why
 
