@@ -19,3 +19,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 12:30,goals,401892625,2026-11-01,min,wsh,0.4623,2.822,3.011,6.0,Jesper Wallstedt (confirmed),Logan Thompson (expected),MIN: Spurgeon | WSH: -
 2026-10-31 14:40,xg,401892628,2026-11-01,ott,ana,0.4694,3.229,3.32,6.71,Jonas Johansson (expected),Lukas Dostal (expected),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky | ANA: Nesterenko, Helleson"
 2026-10-31 14:40,goals,401892628,2026-11-01,ott,ana,0.485,3.333,3.38,6.87,Jonas Johansson (expected),Lukas Dostal (expected),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky | ANA: Nesterenko, Helleson"
+2026-10-31 15:27,xg,401892628,2026-11-01,ott,ana,0.471,3.229,3.309,6.7,Jonas Johansson (expected),Laurent Brossoit (confirmed),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky | ANA: Nesterenko, Helleson"
+2026-10-31 15:27,goals,401892628,2026-11-01,ott,ana,0.4899,3.333,3.347,6.84,Jonas Johansson (expected),Laurent Brossoit (confirmed),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky | ANA: Nesterenko, Helleson"
