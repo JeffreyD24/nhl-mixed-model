@@ -113,6 +113,11 @@ the actual price. Full tables in `backtests/`.
 
   If a caution clears later (goalies confirmed, edge still there), a regular alert follows, titled **UPDATE**, saying what
   cleared and how the expected value changed since the caution.
+- **Reminder if you haven't logged the bet** (ported from the NBA tracker, Oct 31, 2026): 30 minutes after an alert
+  (`REMIND_AFTER_MIN`), if no bet is logged for that game and market, one **REMINDER** goes out before puck drop with the price
+  now and a verdict: **[BET]** if the expected value at today's price still meets the bar (6% near the opening price, 9% once it
+  has moved; opening-price-only long shots need the price still near the open), **[PASS]** if not. It also says whether both
+  goalies are confirmed yet. Only alerts sent since this change get reminders; it relies on you logging every bet you place.
 - **Your logged bets are checked** (ported from the NBA tracker, Oct 31, 2026). If you already logged a bet on that game and
   market on the same side, the title starts with **ALREADY BET**, shows your bet, and comes at normal priority. If your logged
   bet is on the **other** side, the title starts with **YOU BET THE OTHER SIDE**. Bets on other markets of the game are listed at the end.

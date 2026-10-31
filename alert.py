@@ -20,6 +20,7 @@ import espn                                              # noqa: E402
 
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
 THRESHOLD_MOVED = 0.09              # needed once the price has moved more than that: in the backtests the edge mostly disappears
+REMIND_AFTER_MIN = 30              # reminder if an alert's bet still isn't logged this many minutes later (once, before puck drop)
 NEAR_OPEN = 0.015                   #   as prices move toward the close (shot model +9% ROI at open, +2% halfway, -2% at close)
 OPEN_ONLY_LONGSHOTS = {"goals": 150}  # model -> bets priced at this or longer (+150) are alerted ONLY at/near the opening price
                                      #   (within NEAR_OPEN), labeled "OPENING PRICE ONLY" with the shortest price still worth taking.
@@ -230,6 +231,7 @@ def main():
     MV = pd.read_csv(mpath) if os.path.exists(mpath) else pd.DataFrame(columns=["game_id", "market"])
     moved_done = set(zip(MV.game_id, MV.market)); moves_new = []
     info = {}
+    NOWC, GINFO = {}, {}   # this check's price and EV for every (game, market, side, model), and game details, for reminders
 
     for mf in models:
         Mall = load_models(os.path.join(STATE, mf))
@@ -316,7 +318,9 @@ def main():
                 for mk, side, lnum, price, p, oprice in cands:
                     if pd.isna(price): continue
                     ev = p * espn.nd_dec(price) - 1
+                    NOWC[(g["game_id"], mk, side, name)] = (lnum, price, p, ev, oprice)
                     if (name, mk) not in best or ev > best[(name, mk)][4]: best[(name, mk)] = (side, lnum, price, p, ev, oprice)
+            GINFO[g["game_id"]] = dict(H=H, Aw=Aw, tip=tip, tip_et=g["tip_et"], goalies=goalies_txt, conf=gh_conf and ga_conf)
             # ---- alerts: one per side; both models in one alert when they agree
             for mk in ALERT_MARKETS:
                 hist_txt = history_text(g["game_id"], "total" if mk == "total" else "moneyline")
@@ -417,11 +421,47 @@ def main():
                         new.append(dict(alerted_at_et=str(NOW), model=n, both_models=len(pending) > 1, game_id=g["game_id"], date=M["date"],
                                         home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,
                                         open_price=oprice, model_prob=round(bt[3], 4), ev=round(bt[4], 4), goalies=goalies_txt, sent=sent, skipped=skip,
-                                        open_only=is_open_only(n, price)))
+                                        open_only=is_open_only(n, price), remind_ok=True))
                         (skipped if skip else done).add((g["game_id"], mk, n))
                     print(("CAUTION " if skip else "") + "ALERT:", title, "|", skip or "")
-    if new:
-        pd.concat([A, pd.DataFrame(new)], ignore_index=True).to_csv(apath, index=False)
+    # ---- reminders: an alert's bet still not logged REMIND_AFTER_MIN later (every placed bet gets logged). Ported from the NBA tracker.
+    A2 = pd.concat([A, pd.DataFrame(new)], ignore_index=True) if new else A.copy()
+    n_rem = 0
+    if len(A2) and "remind_ok" in A2:
+        if "reminded_at_et" not in A2: A2["reminded_at_et"] = np.nan
+        A2["reminded_at_et"] = A2["reminded_at_et"].astype(object)
+        ok_ = A2.remind_ok.astype(str).isin(["True", "1", "1.0"]) & A2.sent.astype(str).isin(["True", "1", "1.0"])
+        for (gid, mk), grp in A2[ok_].groupby(["game_id", "market"]):
+            if A2[(A2.game_id == gid) & (A2.market == mk)].reminded_at_et.astype(str).str.len().gt(3).any(): continue
+            t_last = grp.alerted_at_et.max(); rows = grp[grp.alerted_at_et == t_last]; r = rows.iloc[0]
+            gi = GINFO.get(gid)
+            if gi is None or pd.Timestamp(gi["tip_et"]) <= NOW: continue
+            if NOW - pd.Timestamp(t_last) < pd.Timedelta(minutes=REMIND_AFTER_MIN): continue
+            logged = len(MYB) and ((MYB.date.astype(str) == str(r.date)) & (MYB.home.astype(str).str.lower() == r.home) &
+                                   (MYB.away.astype(str).str.lower() == r.away) & (MYB.market == mk)).any()
+            if logged: continue
+            nowv = [(m, NOWC.get((gid, mk, r.side, m))) for m in rows.model]
+            nowv = [(m, v) for m, v in nowv if v is not None]
+            if not nowv: continue
+            m_best, (lnum, price, p, ev, oprice) = max(nowv, key=lambda x: x[1][3])
+            thr = threshold_for(price, oprice)
+            longshot_gone = m_best in OPEN_ONLY_LONGSHOTS and price >= OPEN_ONLY_LONGSHOTS[m_best] and not near_open(price, oprice)
+            ok_now = ev >= thr and not longshot_gone
+            vd = "BET" if ok_now else "PASS"
+            team = gi["H"] if r.side == "home" else (gi["Aw"] if r.side == "away" else str(r.side).upper())
+            what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
+                    (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{str(r.side).upper()} {lnum:g} ({fmt_price(price)})"))
+            why = (f"EV now {ev:+.1%} at {fmt_price(price)}, " + ("still meets" if ok_now else "below") + f" the {thr:.0%} bar"
+                   + (" (opening-price-only long shot and the price has moved)" if longshot_gone else ""))
+            body = (f"{vd}: {why}.\nNo bet logged yet for the alert at {pd.Timestamp(t_last):%-I:%M %p} (price then {fmt_price(r.price)}, "
+                    f"EV {float(r.ev):+.1%}). [{SHORT.get(m_best, m_best)}] win chance {p:.1%}.\nGoalies: {gi['goalies']}."
+                    + (" Both confirmed." if gi["conf"] else " Not both confirmed yet."))
+            notify(f"[{vd}] REMINDER - {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body,
+                   priority="default" if vd == "BET" else "low", tags="alarm_clock")
+            A2.loc[rows.index, "reminded_at_et"] = str(NOW)[:16]; n_rem += 1
+            print("REMINDER:", what, vd, why)
+    if new or n_rem:
+        A2.to_csv(apath, index=False)
     # ---- line jumps: fast moves, logged for research and alerted when large
     jpath = os.path.join(STATE, "line_jumps.csv")
     J = pd.read_csv(jpath) if os.path.exists(jpath) else pd.DataFrame(columns=["game_id", "market", "detected_at_et"])
