@@ -31,6 +31,6 @@ jobs:
         run: |
           git config user.name "nhl-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state NHL_Live_Tracker.xlsx
+          git add state research NHL_Live_Tracker.xlsx
           git diff --cached --quiet || git commit -m "Evening run $(TZ=America/New_York date +%F)"
           git pull --rebase -q && git push -q

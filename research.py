@@ -178,3 +178,57 @@ def splits_snapshot(now, day, games):
                          ["home_pl", "home_pl_odds", "away_pl_odds", "total", "over_odds", "under_odds",
                           "home_ml", "away_ml"])
     return n1, n2
+
+
+# ---------------- complete line histories (every price change at every book, with exact times) ----------------
+HIST_BOOKS = (15, 30, 68, 69, 71, 75, 79, 123, 2988)
+
+
+def line_moves(day, ids):
+    """Every recorded change to the moneyline, puck line and total at each book for the games on `day`, from Action
+    Network's line history (kept only about a day after the game, so the tracker saves it daily).
+    ids: {(home, away): (game_id, puck drop ET)}. Writes research/line_moves/YYYY-MM-DD.csv; returns rows added.
+    pre_game = 1 for changes before puck drop (the rest are in-game prices some books keep in the same history)."""
+    from zoneinfo import ZoneInfo
+    sb = _an_get(f"https://api.actionnetwork.com/web/v2/scoreboard/nhl?bookIds=68&date={pd.Timestamp(day):%Y%m%d}")
+    rows = []
+    for g in sb.get("games", []):
+        t = {x["id"]: (nd.FULL.get(x.get("full_name")) or nd.code(x.get("abbr"))) for x in g.get("teams", [])}
+        home, away = t.get(g["home_team_id"]), t.get(g["away_team_id"])
+        gid = ids.get((home, away))
+        if gid is None: continue
+        gid, tip = gid if isinstance(gid, tuple) else (gid, None)
+        try:
+            h = _an_get(f"https://api.actionnetwork.com/web/v2/markets/event/{g['id']}/history?bookIds={','.join(map(str, HIST_BOOKS))}")
+        except Exception:
+            continue
+        for bid, m in (h or {}).items():
+            ev = (m or {}).get("event") or {}
+            for mk, name in (("moneyline", "moneyline"), ("spread", "puck line"), ("total", "total")):
+                for o in ev.get(mk, []):
+                    for x in (o.get("history") or []) + [dict(odds=o.get("odds"), value=o.get("value"), updated_at=None, line_status=o.get("line_status"))]:
+                        when = pd.to_datetime(x.get("updated_at"), utc=True, errors="coerce")
+                        rows.append(dict(game_id=gid, date=str(pd.Timestamp(day).date()), away=away, home=home,
+                                         book=AN_BOOKS.get(int(bid), bid), market=name, side=o.get("side"),
+                                         line=_num(x.get("value")) if name != "moneyline" else np.nan, price=_num(x.get("odds")),
+                                         changed_at_et=str(when.tz_convert(ZoneInfo("America/New_York")).tz_localize(None))[:19] if when is not pd.NaT else "",
+                                         status=x.get("line_status"), puck_drop_et=str(tip)[:16] if tip is not None else "",
+                                         an_game_id=g["id"]))
+    if not rows: return 0
+    new = pd.DataFrame(rows)
+    new = new[~((new.changed_at_et == "") & new.duplicated(["game_id", "book", "market", "side", "line", "price"], keep=False))]
+    new = new[new.changed_at_et != ""] if (new.changed_at_et != "").any() else new
+    if new.market.eq("total").any():
+        tl = new.market == "total"
+        new = new[~tl | new.line.between(3.5, 9.5)]                               # drop period/team totals
+    os.makedirs(os.path.join(R, "line_moves"), exist_ok=True)
+    path = os.path.join(R, "line_moves", f"{pd.Timestamp(day).date()}.csv")
+    old = pd.read_csv(path) if os.path.exists(path) else pd.DataFrame(columns=new.columns)
+    key = ["game_id", "book", "market", "side", "line", "price", "changed_at_et"]
+    allr = pd.concat([old, new], ignore_index=True)
+    allr["line"] = pd.to_numeric(allr.line, errors="coerce")
+    allr = allr.drop_duplicates(key).sort_values(["game_id", "book", "market", "side", "changed_at_et"])
+    t = pd.to_datetime(allr.changed_at_et, errors="coerce"); tp = pd.to_datetime(allr.puck_drop_et, errors="coerce")
+    allr["pre_game"] = np.where(tp.isna() | t.isna(), np.nan, (t < tp).astype(float))
+    allr.to_csv(path, index=False)
+    return len(allr) - len(old)

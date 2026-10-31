@@ -88,8 +88,11 @@ the actual price. Full tables in `backtests/`.
 - **What an alert says:** the bet and price, the model's win chance vs. the chance the price needs, the expected value
   (and what it was at the opening price), the model's expected score, the goalies (expected / confirmed / not announced),
   which regulars the model has as missing, the moneyline or total history with times, and the latest injury news.
-- **Rule:** moneyline and puck line, expected value 6%+ at the current DraftKings price. One alert per game per market.
-  Settings at the top of `alert.py`: `THRESHOLD`, `ALERT_MARKETS` (add `"total"` to get totals alerts), `MAX_MOVE`, `WINDOW`.
+- **Rule:** moneyline and puck line. Expected value **6%+** while the DraftKings price is at (or within 1.5 win-% points of) its
+  opening price; **9%+** once it has moved further or the line number changed. In the backtests most of the edge was gone
+  by halfway between open and close (shot model +9.0% per bet at the open, +2.3% halfway, −2.2% at the close;
+  `backtests/midpoint_prices.csv`), and bigger edges held up better. One alert per game, market and model.
+  Settings at the top of `alert.py`: `THRESHOLD`, `THRESHOLD_MOVED`, `NEAR_OPEN`, `ALERT_MARKETS` (add `"total"` for totals), `MAX_MOVE`, `WINDOW`.
 - **Caution alerts.** Sent with **CAUTION** in the title, at normal priority, when the edge is there but:
   - the starting goalies aren't both **confirmed** yet (ESPN lists them as "expected" for most of the day), or
   - the moneyline has moved 5+ win-% points **against** the bet since it opened (the market knows something).
@@ -115,7 +118,9 @@ the actual price. Full tables in `backtests/`.
 
 ## Research database
 
-Each 5-minute check also records market data that can't be recovered later, in `research/`: the full DraftKings market
+**Every line change is saved:** each morning and evening run stores the complete, to-the-second price history of every
+game at nine sportsbooks (`research/line_moves/`), which Action Network only keeps for about a day. Each 5-minute check also
+records market data that can't be recovered later, in `research/`: the full DraftKings market
 with prices (`research/odds/`), ESPN's matchup predictor, the share of bets and money on each side and lines at nine
 sportsbooks (Action Network), every injury note with the time first seen, **every change in the probable/confirmed
 starting goalies** (`research/goalies.csv`), and the model's number whenever it changes. See

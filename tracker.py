@@ -424,6 +424,14 @@ def main():
         logdf = grade_picks(logdf.reset_index(drop=True), games, extra)
         logdf.sort_values(["date", "tip_et"]).to_csv(picks_path(name), index=False)
         logs[name] = logdf
+    try:                                    # full line histories: Action Network only keeps them about a day, so save them now
+        import research
+        research.init(W)
+        tips = {(r.home, r.away): (int(r.game_id), r.tip_et) for r in games.itertuples()}
+        for d in sorted({TODAY - pd.Timedelta(days=1), TODAY, TARGET}):
+            say(f"Line histories {d.date()}: {research.line_moves(d, tips)} new price changes saved.")
+    except Exception as e:
+        say(f"Line histories skipped ({type(e).__name__}: {str(e)[:80]}).")
     active, board = leaderboard(logs)
     export_today_model(results, rosters, names, active)
     EXTRA.update(results[active][2])

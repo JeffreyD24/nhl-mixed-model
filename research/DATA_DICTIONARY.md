@@ -57,12 +57,21 @@ usually sharper bettors. A price moving against the popular side is "reverse lin
 for Consensus, Open, DraftKings, FanDuel, BetRivers, BetMGM, bet365, Caesars and Fanatics. Shows which book moves first and
 which lag (the place to shop a price). Totals outside 3.5–9.5 (period or team totals) are left blank.
 
+### `research/line_moves/YYYY-MM-DD.csv`: every price change at every book, with exact times
+`game_id, date, away, home, book, market, side, line, price, changed_at_et, status, puck_drop_et, pre_game, an_game_id`.
+One row per change to the moneyline, puck line or total at Consensus, Open, DraftKings, FanDuel, BetRivers, BetMGM, bet365,
+Caesars and Fanatics, from Action Network's line history, timed to the second (not limited to our 5-minute checks). Action
+Network keeps these only about a day after the game, so the morning and evening runs save yesterday's, today's and
+tomorrow's games each time. `pre_game = 0` rows are in-game prices some books keep in the same history; filter them out
+for pre-game work. This is the dataset for testing what a bet would have gotten at any time of day (for example, how much
+of the opening-price edge is left two hours later).
+
 ## state/ (tracker records that also feed the research)
 
 | file | what it holds |
 |---|---|
 | `picks_log.csv` | one row per game: locked model numbers (expected goals, win %, win-by-2 %), expected goalies, opening and closing DraftKings markets, and for each of moneyline / puck line / total at the open and at the close: the side the model prefers, price, expected value, result, units won, and (opening bets) **closing line value** |
-| `line_history.csv` | every moneyline and total change with the time first seen (`prob` = no-vig home win % or over %) |
+| `line_history.csv` | every DraftKings moneyline, puck line and total change seen by the 5-minute checks, with the time first seen (`prob` = no-vig home win %, home puck line %, or over %) |
 | `line_jumps.csv` | moneyline moves of 3+ win-% points (or any total change) within 60 minutes, with news in the window, then graded |
 | `market_moves.csv` | moves of 5+ win-% points toward the model's side ("Market agrees") |
 | `alerts.csv` | every phone alert, including caution alerts with reasons, graded at the alerted price, with closing line value |

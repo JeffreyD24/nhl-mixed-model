@@ -18,7 +18,9 @@ import nhl_data as nd                                    # noqa: E402
 import nhl_mixed_model as nm                             # noqa: E402
 import espn                                              # noqa: E402
 
-THRESHOLD = 0.06                    # expected value at the current price (6% = +0.06 units per unit risked)
+THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
+THRESHOLD_MOVED = 0.09              # needed once the price has moved more than that: in the backtests the edge mostly disappears
+NEAR_OPEN = 0.015                   #   as prices move toward the close (shot model +9% ROI at open, +2% halfway, -2% at close)
 ALERT_MARKETS = ("moneyline", "puck line")   # add "total" to alert on totals too (they lost money in the backtests)
 MAX_MOVE = 5.0                      # caution when the home win chance implied by the moneyline moved this many points AGAINST the bet since open
 JUMP_WINDOW_MIN = 60                # a "jump" is a move within this many minutes
@@ -69,6 +71,12 @@ def load_models(path):
     if "models" not in M:
         M = dict(date=M["date"], made_at_et=M.get("made_at_et", ""), active="goals", models={"goals": M})
     return M
+
+
+def threshold_for(price, oprice):
+    """EV bar for a bet: THRESHOLD near the opening price, THRESHOLD_MOVED once it has moved (or the line number changed)"""
+    if pd.isna(oprice) or pd.isna(price): return THRESHOLD_MOVED
+    return THRESHOLD if abs(1 / espn.nd_dec(price) - 1 / espn.nd_dec(oprice)) <= NEAR_OPEN else THRESHOLD_MOVED
 
 
 def fmt_price(o): return "" if pd.isna(o) else f"{o:+.0f}"
@@ -186,6 +194,8 @@ def main():
             c, o = {k: ln.get(f"current_{k}") for k in espn.MARKET_COLS}, {k: ln.get(f"open_{k}") for k in espn.MARKET_COLS}
             ph_now, ph_open = fair(c["home_ml"], c["away_ml"]), fair(o["home_ml"], o["away_ml"])
             record_line(g["game_id"], "moneyline", c["home_ml"], f"{g['away'].upper()} {fmt_price(c['away_ml'])} / {g['home'].upper()} {fmt_price(c['home_ml'])}", 100 * ph_now)
+            record_line(g["game_id"], "puck line", c["home_pl"], f"{g['home'].upper()} {c['home_pl']:+g} {fmt_price(c['home_pl_odds'])} / {g['away'].upper()} {fmt_price(c['away_pl_odds'])}" if not pd.isna(c["home_pl"]) else "",
+                        100 * fair(c["home_pl_odds"], c["away_pl_odds"]))
             record_line(g["game_id"], "total", c["total"], f"o{fmt_price(c['over_odds'])}/u{fmt_price(c['under_odds'])}", 100 * fair(c["over_odds"], c["under_odds"]))
             tip = pd.Timestamp(g["tip_et"]).strftime("%a %-I:%M %p")
             H, Aw = g["home"].upper(), g["away"].upper()
@@ -231,14 +241,15 @@ def main():
                 for name in order:
                     bt = best.get((name, mk))
                     if bt is None: continue
-                    if bt[4] < THRESHOLD:
+                    thr = threshold_for(bt[2], bt[5])
+                    if bt[4] < thr:
                         side = bt[0]
                         toward = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) == (side == "home"))
                         if name == lead and toward and (g["game_id"], mk) not in moved_done:
                             team = H if side == "home" else Aw
                             notify(f"Market agrees: {Aw} @ {H} {mk}, {tip}",
                                    f"The moneyline moved {abs(move):.1f} win-% points toward the {SHORT.get(name, name)}'s side ({team}) since open. "
-                                   f"EV left: {bt[4]:+.1%} (under {THRESHOLD:.0%}, so no bet). Info only." + hist_txt + news_for(g),
+                                   f"EV left: {bt[4]:+.1%} (under {thr:.0%}, so no bet). Info only." + hist_txt + news_for(g),
                                    priority="low", tags="chart_with_upwards_trend")
                             moves_new.append(dict(at_et=str(NOW), game_id=g["game_id"], date=M["date"], home=g["home"], away=g["away"], market=mk,
                                                   model=name, model_side=side, open_home_prob=round(100 * ph_open, 1), home_prob=round(100 * ph_now, 1),
@@ -269,6 +280,8 @@ def main():
                         lines_.append(s_ + f"; score {Aw} {la:.2f}, {H} {lh:.2f} in regulation, total {et:.2f}.")
                     body = ("DraftKings " + fmt_price(price) + (" (opening price)." if oprice == price else
                             (f" (opened {fmt_price(oprice)})." if not pd.isna(oprice) else ".")) + "\n" + "\n".join(lines_))
+                    if threshold_for(price, oprice) > THRESHOLD:
+                        body += f"\nThe price has moved since it opened, so this needed {THRESHOLD_MOVED:.0%}+ EV (vs {THRESHOLD:.0%} at the opening price)."
                     tail = f"\nGoalies: {goalies_txt}."
                     if outs_a or outs_h: tail += f"\nMissing: {Aw} {', '.join(outs_a) or 'none'}; {H} {', '.join(outs_h) or 'none'}."
                     link = log_link(M["date"], g["away"], g["home"], mk, team if mk != "total" else side,
@@ -298,7 +311,7 @@ def main():
     if len(allh):
         allh["t"] = pd.to_datetime(allh.seen_at_et)
         for (gid, market), rows in allh.groupby(["game_id", "market"]):
-            if gid not in info: continue
+            if gid not in info or market == "puck line": continue      # puck line moves follow the moneyline
             rows = rows.sort_values("t"); t_cur = rows.t.iloc[-1]
             val = (lambda r: float(r.prob)) if market == "moneyline" else (lambda r: float(r.line))
             cur = val(rows.iloc[-1]); start = NOW - pd.Timedelta(minutes=JUMP_WINDOW_MIN)
