@@ -2364,6 +2364,7 @@ game_id,date,away,home,book,market,side,line,price,changed_at_et,status,puck_dro
 401892613,2026-10-30,sea,cgy,Consensus,moneyline,home,,-108.0,2026-10-30 20:46:55,normal,2026-10-30 20:00,293514,0.0
 401892613,2026-10-30,sea,cgy,Consensus,moneyline,home,,-106.0,2026-10-30 21:06:56,normal,2026-10-30 20:00,293514,0.0
 401892613,2026-10-30,sea,cgy,Consensus,moneyline,home,,-103.0,2026-10-30 21:10:55,normal,2026-10-30 20:00,293514,0.0
+401892613,2026-10-30,sea,cgy,Consensus,moneyline,home,,-105.0,2026-10-30 22:14:55,normal,2026-10-30 20:00,293514,0.0
 401892613,2026-10-30,sea,cgy,Consensus,puck line,away,-1.5,225.0,2026-10-28 10:43:25,normal,2026-10-30 20:00,293514,1.0
 401892613,2026-10-30,sea,cgy,Consensus,puck line,away,-1.5,217.0,2026-10-29 12:34:56,normal,2026-10-30 20:00,293514,1.0
 401892613,2026-10-30,sea,cgy,Consensus,puck line,away,-1.5,260.0,2026-10-29 12:47:25,normal,2026-10-30 20:00,293514,1.0
@@ -2830,6 +2831,7 @@ game_id,date,away,home,book,market,side,line,price,changed_at_et,status,puck_dro
 401892613,2026-10-30,sea,cgy,Open,moneyline,home,,-102.0,2026-10-30 14:54:25,normal,2026-10-30 20:00,293514,1.0
 401892613,2026-10-30,sea,cgy,Open,moneyline,home,,-105.0,2026-10-30 15:07:25,normal,2026-10-30 20:00,293514,1.0
 401892613,2026-10-30,sea,cgy,Open,moneyline,home,,-104.0,2026-10-30 20:34:55,normal,2026-10-30 20:00,293514,0.0
+401892613,2026-10-30,sea,cgy,Open,moneyline,home,,-105.0,2026-10-30 22:14:55,normal,2026-10-30 20:00,293514,0.0
 401892613,2026-10-30,sea,cgy,Open,puck line,away,-1.5,225.0,2026-10-28 10:43:25,normal,2026-10-30 20:00,293514,1.0
 401892613,2026-10-30,sea,cgy,Open,puck line,away,-1.5,217.0,2026-10-29 12:34:56,normal,2026-10-30 20:00,293514,1.0
 401892613,2026-10-30,sea,cgy,Open,puck line,away,-1.5,260.0,2026-10-29 12:47:25,normal,2026-10-30 20:00,293514,1.0

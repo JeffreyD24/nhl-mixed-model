@@ -1,0 +1,46 @@
+{
+ "updated_et": "2026-10-30 23:12:38.540563",
+ "active": "xg",
+ "rule": {
+  "line": "open",
+  "markets": [
+   "moneyline",
+   "puck line"
+  ],
+  "ev": 0.06
+ },
+ "models": {
+  "goals": {
+   "label": "Goals model (team offense/defense + goalie, on goals)",
+   "rule_bets": 164,
+   "wins": 68,
+   "losses": 96,
+   "units": -28.94,
+   "return_per_bet": -0.1765,
+   "avg_clv": -0.0357,
+   "bets_with_clv": 162,
+   "live_rule_bets": 2,
+   "live_units": -2.0,
+   "alerts_graded": 0,
+   "alert_units": 0.0,
+   "moneyline_brier": 0.2409,
+   "games_graded": 216
+  },
+  "xg": {
+   "label": "Shot model (expected goals from shot location + finishing + goalie)",
+   "rule_bets": 138,
+   "wins": 63,
+   "losses": 75,
+   "units": -13.69,
+   "return_per_bet": -0.0992,
+   "avg_clv": 0.01,
+   "bets_with_clv": 131,
+   "live_rule_bets": 0,
+   "live_units": 0.0,
+   "alerts_graded": 0,
+   "alert_units": 0.0,
+   "moneyline_brier": 0.2329,
+   "games_graded": 216
+  }
+ }
+}
