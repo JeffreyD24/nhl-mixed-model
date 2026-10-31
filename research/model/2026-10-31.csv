@@ -56,3 +56,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 10:45,goals,401892623,2026-10-31,cgy,col,0.6763,3.719,2.48,6.34,Arsenii Sergeev (expected),Mackenzie Blackwood (expected),"CGY: Othmann? | COL: Manson, O'Connor?"
 2026-10-31 11:04,xg,401892620,2026-10-31,pit,mtl,0.5281,3.263,2.985,6.41,Arturs Silovs (expected),Jacob Fowler (confirmed),"PIT: Soderblom, Solovyov | MTL: Matheson?"
 2026-10-31 11:04,goals,401892620,2026-10-31,pit,mtl,0.5496,3.223,2.851,6.24,Arturs Silovs (expected),Jacob Fowler (confirmed),"PIT: Soderblom, Solovyov | MTL: Matheson?"
+2026-10-31 11:37,xg,401892620,2026-10-31,pit,mtl,0.5262,3.252,2.985,6.4,Arturs Silovs (expected),Jacob Fowler (confirmed),"PIT: Soderblom, Solovyov | MTL: Matheson"
+2026-10-31 11:37,goals,401892620,2026-10-31,pit,mtl,0.5482,3.213,2.851,6.23,Arturs Silovs (expected),Jacob Fowler (confirmed),"PIT: Soderblom, Solovyov | MTL: Matheson"
