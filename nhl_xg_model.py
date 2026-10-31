@@ -184,7 +184,7 @@ def fit_block(df, train_seasons):
     return fa, fb, E, rho
 
 
-def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "open"), lag_days=0):
+def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "open"), lag_days=0, adapt=None):
     G = G.sort_values("date").reset_index(drop=True)
     last = lambda name: {k[1]: v for k, v in E[name].items() if k[0] == prev_season}
     teams = sorted(set(G.home) | set(G.away)); ti = {t: i for i, t in enumerate(teams)}; q = len(teams)
@@ -196,6 +196,7 @@ def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "op
     pa = np.r_[[rho["O"] * last("O").get(t, 0) for t in teams], [rho["D"] * last("D").get(t, 0) for t in teams]]
     pb = np.r_[[rho["F"] * last("F").get(t, 0) for t in teams], [rho["G"] * last("G").get(k, 0) for k in goalies]]
     Lm = {m: rows(G, m) for m in modes}; Lp = Lm["pretip"]
+    b_cur = np.array(fa["b"], dtype=float)
     preds = []
     for d in sorted(G.date.unique()):
         past = Lp[(Lp.date < d - pd.Timedelta(days=lag_days)) & Lp.goals.notna() & Lp.xg.notna()]
@@ -206,7 +207,12 @@ def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "op
             Zg = np.zeros((n, len(goalies))); ok = past.goalie.notna().values
             Zg[r[ok], past.goalie[ok].astype(int).map(gi).values] = 1
             w = 0.5 ** ((d - past.date).dt.days.values / half_life) if half_life else None
-            ua = solve_known_b(X_a(past), [Zo, Zd], past.xg.values.astype(float), fa["a"], fa["b"], pa, w)
+            if adapt is None or adapt[1] is None:
+                ua = solve_known_b(X_a(past), [Zo, Zd], past.xg.values.astype(float), fa["a"], fa["b"], pa, w)
+            else:          # re-estimate some chance-creation fixed effects (1 home, 2/3 back-to-back) during the season
+                pen = np.r_[np.full(q, fa["a"][0]), np.full(q, fa["a"][1])]
+                ba, ua = nm.solve_partial(X_a(past), np.hstack([Zo, Zd]), past.xg.values.astype(float), pen, np.asarray(fa["b"]), adapt[0], adapt[1], w, pa)
+                b_cur[:] = ba
             ub = solve_known_b(X_b(past), [Zo, Zg], (past.goals - past.xg).values.astype(float), fb["a"], fb["b"], pb, w)
         else:
             ua, ub = pa, pb
@@ -215,7 +221,7 @@ def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "op
         day = {}
         for m in modes:
             T = Lm[m][Lm[m].date == d]
-            xa = X_a(T) @ fa["b"]
+            xa = X_a(T) @ b_cur
             for gid, ih, v, off, df_, gk, gm in zip(T.gid, T.home, xa, T.off, T["def"], T.goalie, T.gmix):
                 if m == "pretip" and not pd.isna(gk): gv = gval(gk)
                 else:
@@ -234,7 +240,7 @@ def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "op
                                                            O=dict(zip(teams, O)), D=dict(zip(teams, D)))
 
 
-def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="none", lag_days=0):
+def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="none", lag_days=0, adapt_idx=None, adapt_grid=(None,), cal_seasons=1):
     """df: training_games rows plus home_xg/away_xg columns. Same outputs as nhl_mixed_model.run."""
     df = df.copy(); df["date"] = pd.to_datetime(df.date)
     df = pd.concat([nm.add_rest(df[df.season == s]) for s in sorted(df.season.unique())], ignore_index=True)
@@ -245,11 +251,17 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="none"
     val_s = ss[-1]
     # validation walk-forward uses effects estimated with the validation season included (as the original model does)
     tune, val = {}, {}
-    for hl in halflives:
-        Pv, _ = walk_forward(df[df.season == val_s], E, rho, fa, fb, ss[-2], hl, lag_days=lag_days)
-        tune[str(hl)] = float((((Pv.lam_home - Pv.home_reg) ** 2).mean() + ((Pv.lam_away - Pv.away_reg) ** 2).mean()) ** .5)
-        val[hl] = Pv
-    hl = min(halflives, key=lambda h: tune[str(h)]); Pv = val[hl]
+    for h_ in halflives:
+        for n0 in adapt_grid:
+            ad = (adapt_idx, n0) if adapt_idx else None
+            Pv, _ = walk_forward(df[df.season == val_s], E, rho, fa, fb, ss[-2], h_, lag_days=lag_days, adapt=ad)
+            tune[f"{h_}|{n0}"] = float((((Pv.lam_home - Pv.home_reg) ** 2).mean() + ((Pv.lam_away - Pv.away_reg) ** 2).mean()) ** .5)
+            val[(h_, n0)] = Pv
+    hl, n0_best = min(val, key=lambda k: tune[f"{k[0]}|{k[1]}"]); Pv = val[(hl, n0_best)]
+    adapt = (adapt_idx, n0_best) if adapt_idx else None
+    if cal_seasons >= 2 and len(ss) >= 3:
+        Pv2, _ = walk_forward(df[df.season == ss[-2]], E, rho, fa, fb, ss[-3], hl, lag_days=lag_days, adapt=adapt)
+        Pv = pd.concat([Pv2, Pv], ignore_index=True)
     cal = {}
     for suf, m in (("", "pretip"), ("_open", "open")):
         r = nm.raw_probs(Pv[f"lam_home{suf}"].values, Pv[f"lam_away{suf}"].values, h_ot)
@@ -258,9 +270,9 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="none"
                       by2=nm.fit_calibration(np.r_[r["home_by2"], r["away_by2"]], np.r_[mg >= 2, mg <= -2]),
                       over=nm.fit_calibration(np.r_[r["over_5.5"], r["over_6.5"]], np.r_[tot > 5.5, tot > 6.5]) if tot_cal == "pooled" else None,
                       over_lines={str(T): nm.fit_calibration(r[f"over_{T}"], tot > T) for T in (5.5, 6.5)} if tot_cal == "per_line" else None)
-    Pt, eff_now = walk_forward(df[df.season == test_season], E, rho, fa, fb, val_s, hl, lag_days=lag_days)
+    Pt, eff_now = walk_forward(df[df.season == test_season], E, rho, fa, fb, val_s, hl, lag_days=lag_days, adapt=adapt)
     Pt = nm.add_probs(Pt, h_ot, cal)
     summary = dict(train_seasons=ss, test_season=test_season, fixed_xg=np.round(fa["b"], 4).tolist(), conv_intercept=float(fb["b"][0]),
                    sd_xg_offense=fa["sd"][0], sd_xg_defense=fa["sd"][1], sd_finishing=fb["sd"][0], sd_goalie=fb["sd"][1],
-                   sd_resid_xg=fa["s2e"] ** .5, sd_resid_conv=fb["s2e"] ** .5, rho=rho, h_ot=h_ot, halflife=hl, tune=tune)
+                   sd_resid_xg=fa["s2e"] ** .5, sd_resid_conv=fb["s2e"] ** .5, rho=rho, h_ot=h_ot, halflife=hl, adapt_n0=n0_best, tune=tune)
     return summary, Pt, dict(h_ot=h_ot, cal=cal, c_miss=float(fa["b"][4]), effects=eff_now, hl=hl)

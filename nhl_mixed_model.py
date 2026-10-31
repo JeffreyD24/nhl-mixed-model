@@ -115,6 +115,21 @@ def fit_reml(X, Z, y, q):
     return dict(a=a, s2e=s2e, s2=(s2e / a).tolist(), b=b, u=u)
 
 
+def solve_partial(X, Z, y, pen, b0, idx, n0, w=None, prior=None):
+    """Random effects plus SOME fixed effects re-estimated from these games (columns idx, e.g. home ice and back-to-backs),
+    each shrunk toward its training value b0 with the weight of n0 team-game rows; the other fixed effects stay at b0.
+    Lets in-season home-ice or fatigue effects drift from the training seasons' values as evidence builds."""
+    w = np.ones(len(y)) if w is None else w
+    idx = list(idx); keep = [j for j in range(X.shape[1]) if j not in idx]
+    yy = y - X[:, keep] @ b0[keep] - (Z @ prior if prior is not None else 0)
+    Wm = np.hstack([X[:, idx], Z]); C = (Wm.T * w) @ Wm
+    k = len(idx); C[:k, :k] += np.eye(k) * n0; C[k:, k:] += np.diag(pen)
+    rhs = (Wm.T * w) @ yy; rhs[:k] += n0 * b0[idx]
+    sol = np.linalg.solve(C, rhs)
+    b = b0.copy(); b[idx] = sol[:k]
+    return b, sol[k:] + (0 if prior is None else prior)
+
+
 # ---------------------------------------------------------------- probabilities
 def score_matrix(lh, la):
     """P(home regulation goals = i, away = j), arrays of shape (n, MAXG, MAXG)"""
@@ -178,7 +193,7 @@ def market_probs(lh, la, h_ot, cal):
 
 
 # ---------------------------------------------------------------- walk-forward season
-def walk_forward(G, prev_O, prev_D, prev_G, fit, rho, half_life, modes=("pretip", "open"), lag_days=0):
+def walk_forward(G, prev_O, prev_D, prev_G, fit, rho, half_life, modes=("pretip", "open"), lag_days=0, adapt=None):
     """Predict each game of one season using only earlier games of that season, shrinking toward
     rho * last season's effects. Returns lam_home/lam_away for each mode."""
     G = G.sort_values("date").reset_index(drop=True)
@@ -190,7 +205,7 @@ def walk_forward(G, prev_O, prev_D, prev_G, fit, rho, half_life, modes=("pretip"
     goalies = sorted(gl); g_idx = {k: i for i, k in enumerate(goalies)}; qg = len(goalies)
     prior = np.r_[[rho[0] * prev_O.get(t, 0.0) for t in teams], [rho[1] * prev_D.get(t, 0.0) for t in teams],
                   [rho[2] * prev_G.get(k, 0.0) for k in goalies]]
-    b = fit["b"]
+    b = fit["b"].copy(); b0 = fit["b"].copy()
     L = {m: long_rows(G, m) for m in modes}
     Lp = L["pretip"] if "pretip" in L else long_rows(G, "pretip")
     preds = []
@@ -203,7 +218,10 @@ def walk_forward(G, prev_O, prev_D, prev_G, fit, rho, half_life, modes=("pretip"
             Z[r[ok], 2 * q + past.goalie[ok].astype(int).map(g_idx).values] = 1
             age = (d - past.date).dt.days.values
             w = 0.5 ** (age / half_life) if half_life else None
-            _, u = solve_mme(xmat(past), Z, past.goals.values.astype(float), q, fit["a"], w=w, z_prior=prior, fixed=b)
+            if adapt is None or adapt[1] is None:
+                _, u = solve_mme(xmat(past), Z, past.goals.values.astype(float), q, fit["a"], w=w, z_prior=prior, fixed=b0)
+            else:            # adapt = (fixed-effect columns to re-estimate in season, shrinkage weight n0)
+                b, u = solve_partial(xmat(past), Z, past.goals.values.astype(float), penalty(q, qg, fit["a"]), b0, adapt[0], adapt[1], w, prior)
         else:
             u = prior
         O, D, GG = u[:q], u[q:2 * q], u[2 * q:]
@@ -317,7 +335,11 @@ def slope(p):
     p = np.array(p); return float(p[:, 0] @ p[:, 1] / (p[:, 0] @ p[:, 0])) if len(p) else 0.0
 
 
-def run(df, train_seasons, test_season, halflives=(None, 60, 30, 15), lines=("open", "close"), lag_days=0):
+def run(df, train_seasons, test_season, halflives=(None, 60, 30, 15), lines=("open", "close"), lag_days=0,
+        adapt_idx=None, adapt_grid=(None,), cal_seasons=1):
+    """adapt_idx: fixed effects (column numbers in xmat: 1 home, 2/3 back-to-back) to re-estimate during the season,
+    with the shrinkage weight chosen from adapt_grid on the last training season. cal_seasons: how many of the last
+    training seasons' walk-forward predictions the probability calibration is fit on (1 or 2)."""
     df = df.copy(); df["date"] = pd.to_datetime(df.date)
     df = pd.concat([add_rest(df[df.season == s]) for s in sorted(df.season.unique())], ignore_index=True)
     ss = sorted(train_seasons)
@@ -336,11 +358,17 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30, 15), lines=("op
     val_s, prev_s = ss[-1], ss[-2]
     tune, val = {}, {}
     for hl in halflives:
-        Pv, _ = walk_forward(df[df.season == val_s], eff(O, prev_s), eff(D, prev_s), eff(GG, prev_s), fit, rho, hl, lag_days=lag_days)
-        tune[str(hl)] = float((((Pv.lam_home - Pv.home_reg) ** 2).mean() + ((Pv.lam_away - Pv.away_reg) ** 2).mean()) ** .5)
-        val[hl] = Pv
-    best_hl = min(halflives, key=lambda h: tune[str(h)])
-    Pv = val[best_hl]
+        for n0 in adapt_grid:
+            ad = (adapt_idx, n0) if adapt_idx else None
+            Pv, _ = walk_forward(df[df.season == val_s], eff(O, prev_s), eff(D, prev_s), eff(GG, prev_s), fit, rho, hl, lag_days=lag_days, adapt=ad)
+            tune[f"{hl}|{n0}"] = float((((Pv.lam_home - Pv.home_reg) ** 2).mean() + ((Pv.lam_away - Pv.away_reg) ** 2).mean()) ** .5)
+            val[(hl, n0)] = Pv
+    best_hl, best_n0 = min(val, key=lambda k: tune[f"{k[0]}|{k[1]}"])
+    adapt = (adapt_idx, best_n0) if adapt_idx else None
+    Pv = val[(best_hl, best_n0)]
+    if cal_seasons >= 2 and len(ss) >= 3:
+        Pv2, _ = walk_forward(df[df.season == prev_s], eff(O, ss[-3]), eff(D, ss[-3]), eff(GG, ss[-3]), fit, rho, best_hl, lag_days=lag_days, adapt=adapt)
+        Pv = pd.concat([Pv2, Pv], ignore_index=True)
     cal = {}
     for suf, m in (("", "pretip"), ("_open", "open")):
         r = raw_probs(Pv[f"lam_home{suf}"].values, Pv[f"lam_away{suf}"].values, h_ot)
@@ -350,7 +378,7 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30, 15), lines=("op
                  over=fit_calibration(np.r_[r["over_5.5"], r["over_6.5"]], np.r_[tot > 5.5, tot > 6.5]))
         cal[m] = c
     # TEST: one pass on the held-out season
-    Pt, eff_now = walk_forward(df[df.season == test_season], eff(O, val_s), eff(D, val_s), eff(GG, val_s), fit, rho, best_hl, lag_days=lag_days)
+    Pt, eff_now = walk_forward(df[df.season == test_season], eff(O, val_s), eff(D, val_s), eff(GG, val_s), fit, rho, best_hl, lag_days=lag_days, adapt=adapt)
     Pt = add_probs(Pt, h_ot, cal)
     res = {}
     if Pt.home_goals.notna().any():
@@ -369,7 +397,7 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30, 15), lines=("op
                    fixed_effects=dict(zip(["intercept", "home", "b2b_offense", "b2b_defense", "missing_skaters"], np.round(fit["b"], 4).tolist())),
                    sd_offense=fit["s2"][0] ** .5, sd_defense=fit["s2"][1] ** .5, sd_goalie=fit["s2"][2] ** .5,
                    sd_residual=fit["s2e"] ** .5, rho=dict(offense=rho[0], defense=rho[1], goalie=rho[2]), h_ot=h_ot,
-                   calibration=cal, tuning_rmse_on_validation=tune, chosen_halflife=best_hl, test=res)
+                   calibration=cal, tuning_rmse_on_validation=tune, chosen_halflife=best_hl, chosen_adapt_n0=best_n0, test=res)
     return summary, Pt, dict(fit=fit, rho=rho, h_ot=h_ot, cal=cal, hl=best_hl, effects=eff_now)
 
 
