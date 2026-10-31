@@ -101,7 +101,10 @@ the actual price. Full tables in `backtests/`.
   opening price; **9%+** once it has moved further or the line number changed. In the backtests most of the edge was gone
   by halfway between open and close (shot model +9.0% per bet at the open, +2.3% halfway, −2.2% at the close;
   `backtests/midpoint_prices.csv`), and bigger edges held up better. One alert per game, market and model.
-  Settings at the top of `alert.py`: `THRESHOLD`, `THRESHOLD_MOVED`, `NEAR_OPEN`, `ALERT_MARKETS` (add `"total"` for totals), `MAX_MOVE`, `WINDOW`.
+  **Goals model: no alerts on bets priced +150 or longer** (since Oct 31). Its win chances for big underdogs run about 5
+  points high; skipping them helped most at later prices (halfway +19.4u vs +5.4u, close −35.5u vs −176.4u; open +58.5u
+  on 1,155 bets vs +72.0u on 1,796). The shot model keeps its long shots (they're calibrated), and the scorecard rule is unchanged.
+  Settings at the top of `alert.py`: `THRESHOLD`, `THRESHOLD_MOVED`, `NEAR_OPEN`, `SKIP_LONGSHOTS`, `ALERT_MARKETS` (add `"total"` for totals), `MAX_MOVE`, `WINDOW`.
 - **Caution alerts.** Sent with **CAUTION** in the title, at normal priority, when the edge is there but:
   - the starting goalies aren't both **confirmed** yet (ESPN lists them as "expected" for most of the day), or
   - the moneyline has moved 5+ win-% points **against** the bet since it opened (the market knows something).

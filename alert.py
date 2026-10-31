@@ -21,6 +21,9 @@ import espn                                              # noqa: E402
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
 THRESHOLD_MOVED = 0.09              # needed once the price has moved more than that: in the backtests the edge mostly disappears
 NEAR_OPEN = 0.015                   #   as prices move toward the close (shot model +9% ROI at open, +2% halfway, -2% at close)
+SKIP_LONGSHOTS = {"goals": 150}      # model -> skip its alerts on bets priced at this or longer (+150). The goals model's win chances
+                                    #   for big underdogs run ~5 points high (backtests/IDEA_TESTS.md); the shot model's don't.
+                                    #   Alerts only: the scorecard rule is unchanged.
 ALERT_MARKETS = ("moneyline", "puck line")   # add "total" to alert on totals too (they lost money in the backtests)
 MAX_MOVE = 5.0                      # caution when the home win chance implied by the moneyline moved this many points AGAINST the bet since open
 JUMP_WINDOW_MIN = 60                # a "jump" is a move within this many minutes
@@ -300,6 +303,7 @@ def main():
                 for name in order:
                     bt = best.get((name, mk))
                     if bt is None: continue
+                    if name in SKIP_LONGSHOTS and bt[2] >= SKIP_LONGSHOTS[name]: continue
                     thr = threshold_for(bt[2], bt[5])
                     if bt[4] < thr:
                         side = bt[0]
