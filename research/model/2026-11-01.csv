@@ -1,0 +1,11 @@
+seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_total,away_goalie,home_goalie,missing
+2026-10-31 10:45,xg,401892624,2026-11-01,wpg,car,0.7393,3.954,2.266,6.35,Stuart Skinner (expected),Pyotr Kochetkov (expected),WPG: Lambert | CAR: -
+2026-10-31 10:45,goals,401892624,2026-11-01,wpg,car,0.6467,3.353,2.371,5.88,Stuart Skinner (expected),Pyotr Kochetkov (expected),WPG: Lambert | CAR: -
+2026-10-31 10:45,xg,401892625,2026-11-01,min,wsh,0.403,3.036,3.563,6.75,Jesper Wallstedt (expected),Charlie Lindgren (expected),"MIN: Ek?, Spurgeon | WSH: -"
+2026-10-31 10:45,goals,401892625,2026-11-01,min,wsh,0.452,2.822,3.078,6.07,Jesper Wallstedt (expected),Charlie Lindgren (expected),"MIN: Ek?, Spurgeon | WSH: -"
+2026-10-31 10:45,xg,401892626,2026-11-01,uta,phi,0.3458,2.591,3.471,6.22,Karel Vejmelka (expected),Dan Vladar (expected),UTA: DeSimone | PHI: -
+2026-10-31 10:45,goals,401892626,2026-11-01,uta,phi,0.4609,2.85,3.049,6.07,Karel Vejmelka (expected),Dan Vladar (expected),UTA: DeSimone | PHI: -
+2026-10-31 10:45,xg,401892627,2026-11-01,edm,nyr,0.4753,3.104,3.157,6.42,Matt Tomkins (expected),Dylan Garand (expected),"EDM: Hyman, Walman | NYR: Dowling, Tolvanen?"
+2026-10-31 10:45,goals,401892627,2026-11-01,edm,nyr,0.4674,3.157,3.321,6.64,Matt Tomkins (expected),Dylan Garand (expected),"EDM: Hyman, Walman | NYR: Dowling, Tolvanen?"
+2026-10-31 10:45,xg,401892628,2026-11-01,ott,ana,0.4691,3.229,3.322,6.71,Jonas Johansson (expected),Lukas Dostal (expected),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky? | ANA: Nesterenko, Helleson"
+2026-10-31 10:45,goals,401892628,2026-11-01,ott,ana,0.4847,3.333,3.382,6.87,Jonas Johansson (expected),Lukas Dostal (expected),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky? | ANA: Nesterenko, Helleson"

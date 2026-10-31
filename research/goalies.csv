@@ -30,3 +30,13 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-10-30 17:55,401892611,2026-10-30,home,vgk,3939714,Adin Hill,Confirmed
 2026-10-30 18:55,401892612,2026-10-30,away,wpg,4697683,Nico Daws,Confirmed
 2026-10-30 19:55,401892613,2026-10-30,away,sea,5657,Philipp Grubauer,Confirmed
+2026-10-31 10:45,401892624,2026-11-01,home,car,4565259,Pyotr Kochetkov,Expected
+2026-10-31 10:45,401892624,2026-11-01,away,wpg,4268767,Stuart Skinner,Expected
+2026-10-31 10:45,401892625,2026-11-01,home,wsh,3095975,Charlie Lindgren,Expected
+2026-10-31 10:45,401892625,2026-11-01,away,min,4874737,Jesper Wallstedt,Expected
+2026-10-31 10:45,401892626,2026-11-01,home,phi,3942459,Dan Vladar,Expected
+2026-10-31 10:45,401892626,2026-11-01,away,uta,3942065,Karel Vejmelka,Expected
+2026-10-31 10:45,401892627,2026-11-01,home,nyr,4697705,Dylan Garand,Expected
+2026-10-31 10:45,401892627,2026-11-01,away,edm,3069614,Matt Tomkins,Expected
+2026-10-31 10:45,401892628,2026-11-01,home,ana,4588165,Lukas Dostal,Expected
+2026-10-31 10:45,401892628,2026-11-01,away,ott,3115546,Jonas Johansson,Expected
