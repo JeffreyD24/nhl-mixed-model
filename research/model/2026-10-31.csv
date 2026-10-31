@@ -100,3 +100,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 15:54,goals,401892618,2026-10-31,buf,la,0.4788,3.018,3.107,6.29,Ukko-Pekka Luukkonen (confirmed),Anton Forsberg (confirmed),"BUF: Helenius, Metsa | LA: Kempe, Wright"
 2026-10-31 18:55,xg,401892621,2026-10-31,tor,van,0.3827,2.931,3.549,6.64,Anthony Stolarz (confirmed),Leevi Merilainen (confirmed),"TOR: Marchenko | VAN: Chytil, Gallagher"
 2026-10-31 18:55,goals,401892621,2026-10-31,tor,van,0.3848,3.048,3.797,7.0,Anthony Stolarz (confirmed),Leevi Merilainen (confirmed),"TOR: Marchenko | VAN: Chytil, Gallagher"
+2026-10-31 19:09,xg,401892620,2026-10-31,pit,mtl,0.5446,3.366,2.985,6.51,Sergei Murashov (confirmed),Jacob Fowler (confirmed),"PIT: Soderblom, Solovyov | MTL: Dach, Matheson"
+2026-10-31 19:09,goals,401892620,2026-10-31,pit,mtl,0.5668,3.34,2.851,6.35,Sergei Murashov (confirmed),Jacob Fowler (confirmed),"PIT: Soderblom, Solovyov | MTL: Dach, Matheson"
