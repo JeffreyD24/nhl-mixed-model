@@ -139,6 +139,40 @@ def main():
         A = A[A.sent.astype(str) == "True"].reset_index(drop=True)
     done = set(zip(A[A.skipped.isna()].game_id, A[A.skipped.isna()].market, A[A.skipped.isna()].model)) if len(A) else set()
     skipped = set(zip(A[A.skipped.notna()].game_id, A[A.skipped.notna()].market, A[A.skipped.notna()].model)) if len(A) else set()
+    bpath = os.path.join(STATE, "my_bets.csv")
+    try:
+        MYB = pd.read_csv(bpath) if os.path.exists(bpath) else pd.DataFrame(columns=["date", "home", "away", "market"])
+    except Exception:
+        MYB = pd.DataFrame(columns=["date", "home", "away", "market"])
+
+    def bets_note(date, home, away, market, want=None):
+        """('same market' text, 'other markets' text) for bets already logged on this game (ported from the NBA tracker)"""
+        if not len(MYB): return "", ""
+        x = MYB[(MYB.date.astype(str) == str(date)) & (MYB.home.astype(str).str.lower() == home) & (MYB.away.astype(str).str.lower() == away)]
+        def desc(r):
+            try:
+                pick = str(r.pick).upper(); mk_ = str(r.market)
+                ln_ = "" if mk_ == "moneyline" or pd.isna(r.line) else (f" {float(r.line):+g}" if mk_ == "puck line" else f" {float(r.line):g}")
+                st = float(r.stake); stake = f"${st:.0f}" if st == int(st) else f"${st:.2f}"
+                when = pd.Timestamp(r.logged_at_et).strftime("%-I:%M %p") if isinstance(r.logged_at_et, str) else "earlier"
+                book = f", {r.book}" if isinstance(r.book, str) and r.book else ""
+                return f"{pick}{' ML' if mk_ == 'moneyline' else ''}{ln_} ({float(r.odds):+g}, {stake}{book}, logged {when})"
+            except Exception:
+                return "a bet (see My Bets)"
+        sm = x[x.market == market]
+        if want is not None:            # bets on the same market but the OTHER side are reported separately
+            opp = sm[sm.pick.astype(str).str.lower() != str(want).lower()]
+            sm = sm[sm.pick.astype(str).str.lower() == str(want).lower()]
+        else:
+            opp = sm.iloc[:0]
+        return ("; ".join(desc(r) for r in sm.itertuples()),
+                "; ".join(desc(r) for r in x[x.market != market].itertuples()) +
+                (("; " if (x.market != market).any() else "") + "OTHER SIDE: " + "; ".join(desc(r) for r in opp.itertuples()) if len(opp) else ""))
+
+    def caution_before(gid, market, names):
+        """the latest caution alert sent earlier for this game, market and any of these models"""
+        c = A[(A.game_id == gid) & (A.market == market) & A.skipped.notna() & A.model.isin(names)] if len(A) else A.iloc[:0]
+        return c.iloc[-1] if len(c) else None
 
     def record(name, caution):
         g = A[(A.model == name) & (A.skipped.notna() if caution else A.skipped.isna())]
@@ -317,11 +351,32 @@ def main():
                     if skip:
                         body += f"\nCAUTION: {skip}. The model may be missing news here; bet with caution." + tail + \
                                 f"\nCaution alerts so far: {recs}." + hist_txt + news_for(g)
-                        sent = notify("CAUTION " + title, body, priority="default", tags="warning,ice_hockey", link=link, dk=dk)
+                        same, other = bets_note(M["date"], g["home"], g["away"], mk, (team if mk != "total" else side))
+                        ctitle = "CAUTION " + title
+                        if same: body = f"ALREADY BET: you logged {same}.\n" + body; ctitle = "ALREADY BET - " + ctitle
+                        if other: body += f"\nYour other bets on this game: {other}."
+                        if "OTHER SIDE" in other: ctitle = "YOU BET THE OTHER SIDE - " + ctitle
+                        sent = notify(ctitle, body, priority="default", tags="warning,ice_hockey", link=link, dk=dk)
                     else:
                         if toward: body += f"\nMarket agrees: the moneyline has moved {abs(move):.1f} win-% points toward this side since open."
                         body += tail + f"\nAlerts so far: {recs}. Tracking test: neither model has proven an edge live yet." + hist_txt + news_for(g)
-                        sent = notify(title, body, link=link, dk=dk)
+                        prio = "high"; why = ""
+                        cb = caution_before(g["game_id"], mk, [n for n, _ in pending])
+                        if cb is not None:      # a caution went out earlier: say why this one follows it
+                            reason = str(cb.skipped)
+                            cleared = ("both starting goalies are now confirmed" if "goalies" in reason else
+                                       "the moneyline is no longer moving against this side" if "against" in reason else
+                                       "the caution no longer applies")
+                            why = (f"UPDATE to the CAUTION alert at {pd.Timestamp(cb.alerted_at_et):%-I:%M %p}: {cleared}. "
+                                   f"EV now {max(bt[4] for _, bt in pending):+.1%} (was {float(cb.ev):+.1%} at {fmt_price(cb.price)}).\n")
+                            title = "UPDATE - " + title
+                        same, other = bets_note(M["date"], g["home"], g["away"], mk, (team if mk != "total" else side))
+                        if same:
+                            why = f"ALREADY BET: you logged {same}. Only add to it if you mean to.\n" + why
+                            title = "ALREADY BET - " + title; prio = "default"
+                        if other: body += f"\nYour other bets on this game: {other}."
+                        if "OTHER SIDE" in other: title = "YOU BET THE OTHER SIDE - " + title
+                        sent = notify(title, why + body, priority=prio, link=link, dk=dk)
                     for n, bt in pending:
                         new.append(dict(alerted_at_et=str(NOW), model=n, both_models=len(pending) > 1, game_id=g["game_id"], date=M["date"],
                                         home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,

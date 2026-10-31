@@ -106,7 +106,11 @@ the actual price. Full tables in `backtests/`.
   - the starting goalies aren't both **confirmed** yet (ESPN lists them as "expected" for most of the day), or
   - the moneyline has moved 5+ win-% points **against** the bet since it opened (the market knows something).
 
-  If a caution clears later (goalies confirmed, edge still there), a regular alert follows.
+  If a caution clears later (goalies confirmed, edge still there), a regular alert follows, titled **UPDATE**, saying what
+  cleared and how the expected value changed since the caution.
+- **Your logged bets are checked** (ported from the NBA tracker, Oct 31, 2026). If you already logged a bet on that game and
+  market on the same side, the title starts with **ALREADY BET**, shows your bet, and comes at normal priority. If your logged
+  bet is on the **other** side, the title starts with **YOU BET THE OTHER SIDE**. Bets on other markets of the game are listed at the end.
 - **"Market agrees" alerts.** When the moneyline moves 5+ win-% points toward the model's side, you get a low-priority
   heads-up once per game and market (`state/market_moves.csv`).
 - **Line history and line jumps.** Every 5-minute check records each price change with the time first seen
