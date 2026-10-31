@@ -56,6 +56,13 @@ the actual price. Full tables in `backtests/`.
   if any, is in prices that haven't caught up yet.
 - The 6% threshold and the decision to leave totals out were chosen after seeing both opening-line seasons, so the
   backtest numbers above flatter the rule somewhat. The live season is the real test.
+- **Totals, checked further (Oct 30):** the 2025-26 backtest bet 221 unders and 7 overs, so I tested two fixes on every
+  backtest season: letting the scoring baseline update during the season, and changing how the total probabilities are
+  calibrated (one shared correction, one per line, or none). None of them gave the model real information about totals.
+  Its log-loss against the over/under outcome was 0.690-0.699 in every version, about a coin flip (0.693) and worse than
+  the market's own prices (0.688 at the open). Which way it leaned, and whether it made or lost money, depended only on the
+  calibration choice. That's noise, not an edge, so totals stay out of the rule and the alerts. Results:
+  `backtests/totals_variants.csv`; code on the `totals-fix` branch (not merged).
 
 ## Alerts
 
