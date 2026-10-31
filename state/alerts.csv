@@ -30,3 +30,4 @@ game_id,market,skipped,alerted_at_et,date,home,away,tip_et,side,line,price,open_
 401892616,moneyline,,2026-10-31 13:54:29.936201,2026-10-31,nsh,tb,2026-10-31 14:00:00,home,,150.0,145.0,0.4546,0.1366,TB Andrei Vasilevskiy (confirmed); NSH Justus Annunen (confirmed),True,,,,goals,False
 401892616,puck line,,2026-10-31 13:54:29.936201,2026-10-31,nsh,tb,2026-10-31 14:00:00,home,1.5,-166.0,-166.0,0.6745,0.0808,TB Andrei Vasilevskiy (confirmed); NSH Justus Annunen (confirmed),True,,,,goals,False
 401892619,puck line,starting goalies not both confirmed yet,2026-10-31 13:56:38.671063,2026-10-31,sj,ott,2026-10-31 16:00:00,home,1.5,-192.0,-230.0,0.7209,0.0964,OTT Samuel Ersson (expected); SJ Alex Nedeljkovic (confirmed),True,,,,goals,False
+401892618,puck line,starting goalies not both confirmed yet,2026-10-31 14:17:38.134845,2026-10-31,la,buf,2026-10-31 16:00:00,home,1.5,-225.0,,0.7599,0.0977,BUF Colten Ellis (expected); LA Darcy Kuemper (expected),True,,,,xg,False
