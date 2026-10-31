@@ -47,3 +47,5 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-10-31 12:24,401892615,2026-10-31,away,stl,4587909,Joel Hofer,Confirmed
 2026-10-31 12:29,401892625,2026-11-01,away,min,4874737,Jesper Wallstedt,Confirmed
 2026-10-31 12:34,401892620,2026-10-31,away,pit,5188366,Sergei Murashov,Confirmed
+2026-10-31 12:54,401892614,2026-10-31,away,chi,4894729,Arvid Soderblom,Confirmed
+2026-10-31 12:54,401892617,2026-10-31,home,nyi,3151981,Ilya Sorokin,Confirmed
