@@ -36,12 +36,10 @@ SEASON = 2027; SEASON_START = pd.Timestamp("2026-09-25")
 TRAIN = [2022, 2023, 2024, 2025, 2026]
 MARKETS = ("moneyline", "puck line", "total")
 RULE = dict(line="open", markets=("moneyline", "puck line"), ev=0.06)   # the tracked rule
-# Every model runs every day and keeps its own locked picks; alerts come from the active model (see leaderboard()).
+# Every model runs every day, keeps its own locked picks and sends its own alerts (labeled; one alert when they agree).
 MODELS = {"goals": "Goals model (team offense/defense + goalie, on goals)",
           "xg": "Shot model (expected goals from shot location + finishing + goalie)"}
-PRIOR_ACTIVE = "xg"         # leads until there is enough live evidence: better moneyline accuracy in all 4 backtest seasons
-MIN_BETS = 200              # each model needs this many graded rule bets with closing line value before live results decide
-SWITCH_MARGIN = 0.005       # a challenger must beat the active model's average CLV by 0.5 percentage points to take over
+PRIMARY = "xg"              # the model the workbook notes and the bet-log probabilities lead with (better in the backtests)
 def picks_path(name): return os.path.join(STATE, "picks_log.csv" if name == "goals" else f"picks_log_{name}.csv")
 log = []
 def say(*a):
@@ -261,19 +259,15 @@ def export_today_model(results, rosters, names, active):
         if f.startswith("model_") and f[6:16] < str(TODAY.date()): os.remove(os.path.join(STATE, f))
     json.dump(dict(date=str(TARGET.date()), made_at_et=str(now_et()), active=active, models=models),
               open(os.path.join(STATE, f"model_{TARGET.date()}.json"), "w"))
-    say(f"Saved {len(models)} models for intraday checks ({len(out)} games); alerts come from the {active} model.")
+    say(f"Saved {len(models)} models for intraday checks ({len(out)} games).")
 
 
 def leaderboard(logs):
-    """Season-to-date scorecard for every model, and which one sends alerts.
-    The deciding number is average closing line value (CLV) of each model's rule bets: how much better the opening price it
-    bet was than the fair closing price. It settles far faster than wins and losses (hockey prices swing a lot), so it is
-    the fairest quick test. Until every model has MIN_BETS graded rule bets with CLV, the backtest leader (PRIOR_ACTIVE)
-    stays active. After that a challenger takes over only if its average CLV beats the active model's by SWITCH_MARGIN."""
-    path = os.path.join(STATE, "leaderboard.json")
-    prev = json.load(open(path)) if os.path.exists(path) else {}
-    active = prev.get("active", PRIOR_ACTIVE)
-    if active not in logs: active = PRIOR_ACTIVE
+    """Season-to-date scorecard for every model: rule bets at opening prices (units, return, closing line value),
+    moneyline accuracy, and each model's phone alerts. Nothing switches automatically; both models keep alerting."""
+    apath = os.path.join(STATE, "alerts.csv")
+    A = pd.read_csv(apath) if os.path.exists(apath) else pd.DataFrame()
+    if len(A) and "model" not in A: A["model"] = "goals"
     rows = {}
     for name, df in logs.items():
         parts = []
@@ -285,33 +279,21 @@ def leaderboard(logs):
         B = pd.concat(parts)
         fin = df[df.home_goals.notna()]
         y = (fin.home_goals > fin.away_goals).astype(float)
-        brier = float(((fin.p_home_win - y) ** 2).mean()) if len(fin) else None
         live = B[B.type == "live"]
-        rows[name] = dict(label=MODELS[name], rule_bets=int(len(B)), units=round(float(B.profit.sum()), 2),
-                          return_per_bet=round(float(B.profit.mean()), 4) if len(B) else None,
-                          bets_with_clv=int(B.clv.notna().sum()), avg_clv=round(float(B.clv.mean()), 4) if B.clv.notna().any() else None,
-                          beat_close_pct=round(float((B.clv.dropna() > 0).mean()), 3) if B.clv.notna().any() else None,
+        al = A[(A.model.fillna("goals") == name) & A.skipped.isna()] if len(A) and "skipped" in A else pd.DataFrame()
+        alg = al[al.result.isin(["W", "L", "P"])] if len(al) and "result" in al else pd.DataFrame()
+        rows[name] = dict(label=MODELS[name], rule_bets=int(len(B)), wins=int((B.profit > 0).sum()), losses=int((B.profit < 0).sum()),
+                          units=round(float(B.profit.sum()), 2), return_per_bet=round(float(B.profit.mean()), 4) if len(B) else None,
+                          avg_clv=round(float(B.clv.mean()), 4) if B.clv.notna().any() else None, bets_with_clv=int(B.clv.notna().sum()),
                           live_rule_bets=int(len(live)), live_units=round(float(live.profit.sum()), 2),
-                          moneyline_brier=round(brier, 4) if brier is not None else None, games_graded=int(len(fin)))
-    reason = f"backtest leader; waiting until every model has {MIN_BETS} graded rule bets with closing line value"
-    if all(r["bets_with_clv"] >= MIN_BETS for r in rows.values()):
-        best = max(rows, key=lambda k: rows[k]["avg_clv"])
-        if best != active and rows[best]["avg_clv"] >= rows[active]["avg_clv"] + SWITCH_MARGIN:
-            reason = f"switched from {active}: average CLV {rows[best]['avg_clv']:+.2%} vs {rows[active]['avg_clv']:+.2%}"
-            say(f"Leaderboard: alerts now come from the {best} model ({reason}).")
-            prev.setdefault("history", []).append(dict(at_et=str(now_et()), from_model=active, to_model=best, reason=reason))
-            active = best
-        else:
-            reason = f"highest average CLV, or within {SWITCH_MARGIN:.1%} of the best" if best == active else \
-                     f"keeps the lead: {best} is ahead by less than {SWITCH_MARGIN:.1%} CLV"
-    board = dict(updated_et=str(now_et()), active=active, reason=reason, rule=RULE, min_bets=MIN_BETS, switch_margin=SWITCH_MARGIN,
-                 models=rows, history=prev.get("history", []))
-    json.dump(board, open(path, "w"), indent=1)
+                          alerts_graded=int(len(alg)), alert_units=round(float(pd.to_numeric(alg.profit, errors="coerce").sum()), 2) if len(alg) else 0.0,
+                          moneyline_brier=round(float(((fin.p_home_win - y) ** 2).mean()), 4) if len(fin) else None, games_graded=int(len(fin)))
+    board = dict(updated_et=str(now_et()), active=PRIMARY, rule=RULE, models=rows)
+    json.dump(board, open(os.path.join(STATE, "leaderboard.json"), "w"), indent=1)
     for k, r in rows.items():
-        say(f"Leaderboard [{k}]: {r['rule_bets']} rule bets, {r['units']:+.1f} units, average CLV "
-            + (f"{r['avg_clv']:+.2%}" if r["avg_clv"] is not None else "n/a") + f" (n={r['bets_with_clv']}), moneyline Brier {r['moneyline_brier']}.")
-    say(f"Active model for alerts: {active} ({reason}).")
-    return active, board
+        say(f"Scorecard [{k}]: {r['wins']}-{r['losses']} on rule bets, {r['units']:+.1f} units ({r['live_rule_bets']} live), average CLV "
+            + (f"{r['avg_clv']:+.2%}" if r["avg_clv"] is not None else "n/a") + f"; alerts {r['alert_units']:+.1f} units on {r['alerts_graded']}; moneyline Brier {r['moneyline_brier']}.")
+    return PRIMARY, board
 
 
 def grade_alerts(games, logdf):
