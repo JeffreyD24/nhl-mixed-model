@@ -74,3 +74,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 12:55,goals,401892614,2026-10-31,chi,bos,0.6832,3.632,2.365,6.14,Arvid Soderblom (confirmed),Michael DiPietro (confirmed),CHI: - | BOS: Brunet
 2026-10-31 12:55,xg,401892617,2026-10-31,edm,nyi,0.4883,3.142,3.104,6.41,Tristan Jarry (confirmed),Ilya Sorokin (confirmed),"EDM: Hyman, Walman | NYI: Kessel, Pulock?"
 2026-10-31 12:55,goals,401892617,2026-10-31,edm,nyi,0.4969,3.068,3.039,6.27,Tristan Jarry (confirmed),Ilya Sorokin (confirmed),"EDM: Hyman, Walman | NYI: Kessel, Pulock?"
+2026-10-31 13:07,xg,401892617,2026-10-31,edm,nyi,0.4873,3.136,3.104,6.4,Tristan Jarry (confirmed),Ilya Sorokin (confirmed),"EDM: Hyman, Walman | NYI: Kessel, Pulock"
+2026-10-31 13:07,goals,401892617,2026-10-31,edm,nyi,0.4961,3.063,3.039,6.27,Tristan Jarry (confirmed),Ilya Sorokin (confirmed),"EDM: Hyman, Walman | NYI: Kessel, Pulock"
