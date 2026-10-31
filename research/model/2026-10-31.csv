@@ -68,3 +68,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 12:24,goals,401892614,2026-10-31,chi,bos,0.6832,3.632,2.365,6.14,Arvid Soderblom (expected),Michael DiPietro (confirmed),CHI: - | BOS: Brunet
 2026-10-31 12:24,xg,401892615,2026-10-31,stl,det,0.5023,2.935,2.818,5.92,Joel Hofer (confirmed),John Gibson (confirmed),"STL: Stenberg, Parayko | DET: Larkin, Johansson"
 2026-10-31 12:24,goals,401892615,2026-10-31,stl,det,0.4726,2.77,2.895,5.84,Joel Hofer (confirmed),John Gibson (confirmed),"STL: Stenberg, Parayko | DET: Larkin, Johansson"
+2026-10-31 12:34,xg,401892620,2026-10-31,pit,mtl,0.546,3.375,2.985,6.52,Sergei Murashov (confirmed),Jacob Fowler (confirmed),"PIT: Soderblom, Solovyov | MTL: Matheson"
+2026-10-31 12:34,goals,401892620,2026-10-31,pit,mtl,0.5679,3.348,2.851,6.36,Sergei Murashov (confirmed),Jacob Fowler (confirmed),"PIT: Soderblom, Solovyov | MTL: Matheson"
