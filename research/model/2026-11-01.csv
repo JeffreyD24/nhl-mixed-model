@@ -25,3 +25,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 15:28,goals,401892627,2026-11-01,edm,nyr,0.4657,3.146,3.321,6.63,Matt Tomkins (expected),Dylan Garand (expected),"EDM: Howard?, Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
 2026-10-31 17:26,xg,401892627,2026-11-01,edm,nyr,0.4733,3.091,3.157,6.41,Matt Tomkins (confirmed),Dylan Garand (expected),"EDM: Howard?, Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
 2026-10-31 17:26,goals,401892627,2026-11-01,edm,nyr,0.4657,3.146,3.321,6.63,Matt Tomkins (confirmed),Dylan Garand (expected),"EDM: Howard?, Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
+2026-10-31 17:29,xg,401892627,2026-11-01,edm,nyr,0.4733,3.091,3.156,6.41,Matt Tomkins (confirmed),Dylan Garand (expected),"EDM: Howard, Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
+2026-10-31 17:29,goals,401892627,2026-11-01,edm,nyr,0.4657,3.146,3.321,6.63,Matt Tomkins (confirmed),Dylan Garand (expected),"EDM: Howard, Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
