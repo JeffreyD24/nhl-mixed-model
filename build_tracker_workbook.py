@@ -97,9 +97,84 @@ def table_sheet(wb, title, frame, cols, widths=12, index=None, upper=()):
     return ws
 
 
-def build(log_csv, out_xlsx, rule, run_log):
-    df = pd.read_csv(log_csv, parse_dates=["date", "tip_et", "locked_at_et"]).sort_values(["date", "tip_et"])
-    st = os.path.dirname(log_csv)
+def picks_and_summary(wb, df, rule, sheet, summ_name, pos):
+    ps = table_sheet(wb, sheet, df, COLS, widths=11, upper=("away", "home"))
+    ps.row_dimensions[1].height = 42
+    N = max(ps.max_row, 2)
+    for c in ("tip_et", "locked_at_et"):
+        for row in range(2, N + 1): ps[f"{CIDX[c]}{row}"].number_format = "m/d h:mm"
+    for c in [c for _, c in COLS if c.endswith("_ev") or c == "p_home_win"]:
+        for row in range(2, N + 1): ps[f"{CIDX[c]}{row}"].number_format = "0.0%"
+    for c in ("lam_home", "lam_away", "pred_total"):
+        for row in range(2, N + 1): ps[f"{CIDX[c]}{row}"].number_format = "0.00"
+    ps.freeze_panes = "E2"; ps.auto_filter.ref = f"A1:{CL(len(COLS))}{N}"
+    sm = wb.create_sheet(summ_name, pos)
+    ref = f"'{sheet}'"
+    sm["A1"] = f"2026-27 results: {sheet[7:-1] if sheet.startswith('Picks (') else sheet} (formulas on the {sheet} sheet)"; sm["A1"].font = f_title
+    sm["A2"] = (f"The tracked rule (highlighted): every {' and '.join(rule['markets'])} bet where the locked model's expected value at the "
+                f"{rule['line']}ing DraftKings price is ≥ {rule['ev']:.0%}, graded at that price. EV = model win probability × decimal odds − 1. "
+                "Units = profit per 1 unit risked. 'Live' = locked before puck drop. 'Backfilled' = games before tracking started, same no-lookahead method.")
+    sm["A2"].font = f_note
+    r = 4
+    pt = CIDX["pick_type"]
+    for scope, crit in [("Live picks only", '"live"'), ("Live + backfilled", '"*"')]:
+        sm.cell(r, 1, scope).font = f_h; r += 1
+        for k, t in enumerate(["Line", "Market", "EV ≥", "W", "L", "Win %", "Units", "Return/bet"]): hdr(sm, r, k + 1, t)
+        r += 1; start = r
+        for line in ("open", "close"):
+            for mk in MARKETS:
+                ec, rc, uc = CIDX[f"{line}_{mk}_ev"], CIDX[f"{line}_{mk}_result"], CIDX[f"{line}_{mk}_profit"]
+                for th in (0, 0.03, 0.06, 0.09):
+                    is_rule = line == rule["line"] and mk in rule["markets"] and abs(th - rule["ev"]) < 1e-9
+                    for k, v in enumerate([line, mk, th]):
+                        x = sm.cell(r, k + 1, v); x.font = f_bold if is_rule else f_norm; x.alignment = center; x.border = box
+                        if k == 2: x.number_format = "0%"
+                    base = f"{ref}!${pt}$2:${pt}${N},{crit},{ref}!${ec}$2:${ec}${N},\">=\"&$C{r}"
+                    cells = [sm.cell(r, 4, f'=COUNTIFS({base},{ref}!${rc}$2:${rc}${N},"W")'),
+                             sm.cell(r, 5, f'=COUNTIFS({base},{ref}!${rc}$2:${rc}${N},"L")'),
+                             sm.cell(r, 6, f'=IFERROR(D{r}/(D{r}+E{r}),"")'),
+                             sm.cell(r, 7, f"=SUMIFS({ref}!${uc}$2:${uc}${N},{base})"),
+                             sm.cell(r, 8, f'=IFERROR(G{r}/(D{r}+E{r}),"")')]
+                    cells[2].number_format = "0.0%"; cells[3].number_format = '+0.0;-0.0;0.0'; cells[4].number_format = '+0.0%;-0.0%;0.0%'
+                    for x in cells:
+                        x.font = f_bold if is_rule else f_norm; x.alignment = center; x.border = box
+                        if is_rule: x.fill = fill_rule
+                    r += 1
+        sm.conditional_formatting.add(f"G{start}:G{r - 1}", FormulaRule(formula=[f"AND(ISNUMBER(G{start}),G{start}>0)"], fill=fill_green))
+        r += 1
+    for c, w in zip(range(1, 9), [9, 11, 8, 7, 7, 9, 9, 11]): sm.column_dimensions[CL(c)].width = w
+
+
+def models_sheet(wb, board):
+    ws = wb.create_sheet("Models", 1)
+    ws["A1"] = "Model leaderboard (alerts come from the active model)"; ws["A1"].font = f_title
+    ws["A2"] = (f"Active: {board['active']}. Why: {board['reason']}. Deciding number: average closing line value of each model's rule bets "
+                f"(needs {board['min_bets']} graded bets per model; a challenger must lead by {board['switch_margin']:.1%}). Season to date, live + backfilled picks.")
+    ws["A2"].font = f_note
+    cols = [("Model", None), ("Description", "label"), ("Rule bets", "rule_bets"), ("Units", "units"), ("Return/bet", "return_per_bet"),
+            ("Bets with CLV", "bets_with_clv"), ("Average CLV", "avg_clv"), ("Beat the close", "beat_close_pct"),
+            ("Live rule bets", "live_rule_bets"), ("Live units", "live_units"), ("Moneyline Brier", "moneyline_brier"), ("Games graded", "games_graded")]
+    for k, (t, _) in enumerate(cols): hdr(ws, 4, k + 1, t)
+    r = 5
+    for name, m in board["models"].items():
+        vals = [name + (" (active)" if name == board["active"] else "")] + [m.get(c) for _, c in cols[1:]]
+        for k, v in enumerate(vals):
+            x = ws.cell(r, k + 1, v); x.font = f_bold if name == board["active"] else f_norm; x.border = box
+            if cols[k][1] in ("return_per_bet", "avg_clv", "beat_close_pct"): x.number_format = "+0.0%;-0.0%;0.0%"
+            if name == board["active"]: x.fill = fill_rule
+        r += 1
+    ws.column_dimensions["A"].width = 14; ws.column_dimensions["B"].width = 52
+    for k in range(3, len(cols) + 1): ws.column_dimensions[CL(k)].width = 12
+    if board.get("history"):
+        r += 1; ws.cell(r, 1, "Switches").font = f_h; r += 1
+        for h in board["history"]:
+            ws.cell(r, 1, f"{h['at_et'][:16]}: {h['from_model']} -> {h['to_model']} ({h['reason']})").font = f_norm; r += 1
+
+
+def build(log_csvs, out_xlsx, rule, run_log, board):
+    dfs = {k: pd.read_csv(p, parse_dates=["date", "tip_et", "locked_at_et"]).sort_values(["date", "tip_et"]) for k, p in log_csvs.items()}
+    df = dfs[board["active"]]
+    st = os.path.dirname(list(log_csvs.values())[0])
     rd = lambda f: pd.read_csv(os.path.join(st, f)) if os.path.exists(os.path.join(st, f)) else pd.DataFrame()
     A, JJ, MB = rd("alerts.csv"), rd("line_jumps.csv"), rd("my_bets.csv")
     wb = Workbook(); notes = wb.active; notes.title = "Notes"
@@ -132,51 +207,9 @@ def build(log_csv, out_xlsx, rule, run_log):
         if "($)" in lab: x.number_format = '$#,##0.00;-$#,##0.00'
         if lab.startswith("Return"): x.number_format = "0.0%"
 
-    ps = table_sheet(wb, "Picks", df, COLS, widths=11, upper=("away", "home"))
-    ps.row_dimensions[1].height = 42
-    N = max(ps.max_row, 2)
-    for c in ("tip_et", "locked_at_et"):
-        for row in range(2, N + 1): ps[f"{CIDX[c]}{row}"].number_format = "m/d h:mm"
-    for c in [c for _, c in COLS if c.endswith("_ev") or c == "p_home_win"]:
-        for row in range(2, N + 1): ps[f"{CIDX[c]}{row}"].number_format = "0.0%"
-    for c in ("lam_home", "lam_away", "pred_total"):
-        for row in range(2, N + 1): ps[f"{CIDX[c]}{row}"].number_format = "0.00"
-    ps.freeze_panes = "E2"; ps.auto_filter.ref = f"A1:{CL(len(COLS))}{N}"
-
-    sm = wb.create_sheet("Summary", 1)
-    sm["A1"] = "2026-27 tracker results (formulas on the Picks sheet)"; sm["A1"].font = f_title
-    sm["A2"] = (f"The tracked rule (highlighted): every {' and '.join(rule['markets'])} bet where the locked model's expected value at the "
-                f"{rule['line']}ing DraftKings price is ≥ {rule['ev']:.0%}, graded at that price. EV = model win probability × decimal odds − 1. "
-                "Units = profit per 1 unit risked. 'Live' = locked before puck drop. 'Backfilled' = games before tracking started, same no-lookahead method.")
-    sm["A2"].font = f_note
-    r = 4
-    pt = CIDX["pick_type"]
-    for scope, crit in [("Live picks only", '"live"'), ("Live + backfilled", '"*"')]:
-        sm.cell(r, 1, scope).font = f_h; r += 1
-        for k, t in enumerate(["Line", "Market", "EV ≥", "W", "L", "Win %", "Units", "Return/bet"]): hdr(sm, r, k + 1, t)
-        r += 1; start = r
-        for line in ("open", "close"):
-            for mk in MARKETS:
-                ec, rc, uc = CIDX[f"{line}_{mk}_ev"], CIDX[f"{line}_{mk}_result"], CIDX[f"{line}_{mk}_profit"]
-                for th in (0, 0.03, 0.06, 0.09):
-                    is_rule = line == rule["line"] and mk in rule["markets"] and abs(th - rule["ev"]) < 1e-9
-                    for k, v in enumerate([line, mk, th]):
-                        x = sm.cell(r, k + 1, v); x.font = f_bold if is_rule else f_norm; x.alignment = center; x.border = box
-                        if k == 2: x.number_format = "0%"
-                    base = f"Picks!${pt}$2:${pt}${N},{crit},Picks!${ec}$2:${ec}${N},\">=\"&$C{r}"
-                    cells = [sm.cell(r, 4, f'=COUNTIFS({base},Picks!${rc}$2:${rc}${N},"W")'),
-                             sm.cell(r, 5, f'=COUNTIFS({base},Picks!${rc}$2:${rc}${N},"L")'),
-                             sm.cell(r, 6, f'=IFERROR(D{r}/(D{r}+E{r}),"")'),
-                             sm.cell(r, 7, f"=SUMIFS(Picks!${uc}$2:${uc}${N},{base})"),
-                             sm.cell(r, 8, f'=IFERROR(G{r}/(D{r}+E{r}),"")')]
-                    cells[2].number_format = "0.0%"; cells[3].number_format = '+0.0;-0.0;0.0'; cells[4].number_format = '+0.0%;-0.0%;0.0%'
-                    for x in cells:
-                        x.font = f_bold if is_rule else f_norm; x.alignment = center; x.border = box
-                        if is_rule: x.fill = fill_rule
-                    r += 1
-        sm.conditional_formatting.add(f"G{start}:G{r - 1}", FormulaRule(formula=[f"AND(ISNUMBER(G{start}),G{start}>0)"], fill=fill_green))
-        r += 1
-    for c, w in zip(range(1, 9), [9, 11, 8, 7, 7, 9, 9, 11]): sm.column_dimensions[CL(c)].width = w
+    for k in list(dfs)[::-1]:
+        picks_and_summary(wb, dfs[k], rule, f"Picks ({k})", f"Summary ({k})", 1)
+    models_sheet(wb, board)
 
     # ---- notes
     status, adv = interpret(rule_bets(df, rule))
@@ -197,6 +230,9 @@ def build(log_csv, out_xlsx, rule, run_log):
             if len(x): clv_parts.append(f"{nm_} {x.mean():+.1%} avg (n={len(x)})")
     lines = [
         ("h", "What this is"),
+        ("t", f"Two models run side by side and keep separate locked picks: {'; '.join(f'{k} = {v}' for k, v in ((k, m['label']) for k, m in board['models'].items()))}. "
+              f"Phone alerts come from the active model, now **{board['active']}** ({board['reason']}). The Models sheet has the leaderboard; "
+              "the notes below are about the active model."),
         ("t", "Every evening (about 9:30 PM ET) GitHub refits the NHL mixed model (team offense, team defense and goalie random effects, home ice, "
               "back-to-backs, missing regular skaters; trained on 2021-22 through 2025-26) and locks its predictions for the next day's games, using what is "
               "known the day before: each team's likely goalie from its recent starts and the skaters who missed its last game. That is the same setup the "

@@ -14,8 +14,8 @@ for test, train in SPLITS:
     xmod = xm.xg_model(S, T, train)
     F = xm.apply_xg(S, T, xmod)
     TG = xm.team_game_xg(F, T)
-    D = T.merge(TG, on="game_id", how="left")
-    s, P, x = xm.run(D, train, test)
+    D = T.drop(columns=[c for c in TG.columns if c != "game_id" and c in T]).merge(TG, on="game_id", how="left")
+    s, P, x = xm.run(D, train, test, tot_cal="none")
     P.to_csv(os.path.join(W, "_tmp", f"xg_backtest_{test}.csv"), index=False)
     O = pd.read_csv(os.path.join(W, "_tmp", f"backtest_{test}.csv"))          # original model's backtest predictions
     s_old = json.load(open(os.path.join(W, "backtests", f"backtest_{test}.json")))

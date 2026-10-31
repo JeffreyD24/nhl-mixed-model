@@ -230,10 +230,11 @@ def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "op
                 rec[f"lam_home{s}"], rec[f"xg_home{s}"] = day[(m, i, 1)]
                 rec[f"lam_away{s}"], rec[f"xg_away{s}"] = day[(m, i, 0)]
             preds.append(rec)
-    return G.join(pd.DataFrame(preds).set_index("i"))
+    return G.join(pd.DataFrame(preds).set_index("i")), dict(goalies=dict(zip(goalies, GG)), F=dict(zip(teams, Fi)),
+                                                           O=dict(zip(teams, O)), D=dict(zip(teams, D)))
 
 
-def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="per_line"):
+def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="none"):
     """df: training_games rows plus home_xg/away_xg columns. Same outputs as nhl_mixed_model.run."""
     df = df.copy(); df["date"] = pd.to_datetime(df.date)
     df = pd.concat([nm.add_rest(df[df.season == s]) for s in sorted(df.season.unique())], ignore_index=True)
@@ -245,7 +246,7 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="per_l
     # validation walk-forward uses effects estimated with the validation season included (as the original model does)
     tune, val = {}, {}
     for hl in halflives:
-        Pv = walk_forward(df[df.season == val_s], E, rho, fa, fb, ss[-2], hl)
+        Pv, _ = walk_forward(df[df.season == val_s], E, rho, fa, fb, ss[-2], hl)
         tune[str(hl)] = float((((Pv.lam_home - Pv.home_reg) ** 2).mean() + ((Pv.lam_away - Pv.away_reg) ** 2).mean()) ** .5)
         val[hl] = Pv
     hl = min(halflives, key=lambda h: tune[str(h)]); Pv = val[hl]
@@ -257,9 +258,9 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="per_l
                       by2=nm.fit_calibration(np.r_[r["home_by2"], r["away_by2"]], np.r_[mg >= 2, mg <= -2]),
                       over=nm.fit_calibration(np.r_[r["over_5.5"], r["over_6.5"]], np.r_[tot > 5.5, tot > 6.5]) if tot_cal == "pooled" else None,
                       over_lines={str(T): nm.fit_calibration(r[f"over_{T}"], tot > T) for T in (5.5, 6.5)} if tot_cal == "per_line" else None)
-    Pt = walk_forward(df[df.season == test_season], E, rho, fa, fb, val_s, hl)
+    Pt, eff_now = walk_forward(df[df.season == test_season], E, rho, fa, fb, val_s, hl)
     Pt = nm.add_probs(Pt, h_ot, cal)
     summary = dict(train_seasons=ss, test_season=test_season, fixed_xg=np.round(fa["b"], 4).tolist(), conv_intercept=float(fb["b"][0]),
                    sd_xg_offense=fa["sd"][0], sd_xg_defense=fa["sd"][1], sd_finishing=fb["sd"][0], sd_goalie=fb["sd"][1],
                    sd_resid_xg=fa["s2e"] ** .5, sd_resid_conv=fb["s2e"] ** .5, rho=rho, h_ot=h_ot, halflife=hl, tune=tune)
-    return summary, Pt, dict(h_ot=h_ot, cal=cal)
+    return summary, Pt, dict(h_ot=h_ot, cal=cal, c_miss=float(fa["b"][4]), effects=eff_now, hl=hl)

@@ -115,12 +115,17 @@ def news_log(now, news):
 
 
 def model_snapshot(now, model_rows):
-    """the model's number for each game whenever it changes"""
+    """every model's number for each game whenever it changes"""
+    for r in model_rows: r.setdefault("model", "goals")
+    for f in os.listdir(os.path.join(R, "model")):          # files from before there were several models
+        p = os.path.join(R, "model", f)
+        old = pd.read_csv(p)
+        if "model" not in old: old.insert(1, "model", "goals"); old.to_csv(p, index=False)
     by_day = {}
     for r in model_rows: by_day.setdefault(r["date"], []).append(r)
     n = 0
     for day, rows in by_day.items():
-        n += _append_changed(os.path.join(R, "model", f"{day}.csv"), rows, ["game_id"], ["model_home_win", "model_total", "away_goalie", "home_goalie", "missing"])
+        n += _append_changed(os.path.join(R, "model", f"{day}.csv"), rows, ["game_id", "model"], ["model_home_win", "model_total", "away_goalie", "home_goalie", "missing"])
     return n
 
 
