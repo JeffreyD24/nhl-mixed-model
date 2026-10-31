@@ -130,7 +130,12 @@ def main():
     info = {}
 
     for mf in models:
-        M = json.load(open(os.path.join(STATE, mf)))
+        Mall = json.load(open(os.path.join(STATE, mf)))
+        lb = os.path.join(STATE, "leaderboard.json")
+        act = json.load(open(lb)).get("active") if os.path.exists(lb) else None
+        act = act if act in Mall["models"] else Mall["active"]
+        M = dict(Mall["models"][act], date=Mall["date"], made_at_et=Mall["made_at_et"], name=act)
+        others = {k: v for k, v in Mall["models"].items() if k != act}
         day = pd.Timestamp(M["date"]); gval = {int(k): v for k, v in M["goalies"].items()}
         gname = {int(k): v for k, v in M.get("goalie_names", {}).items()}
         try:
@@ -146,15 +151,16 @@ def main():
             ln = line.iloc[0]
             pr = SB.get((g["home"], g["away"]), {}).get("probables", {})
 
-            def goalie(def_side):
+            def goalie(def_side, gv=None):
                 """(effect, label, confirmed) for the goalie facing the other team"""
+                gv = gval if gv is None else gv
                 p = pr.get(def_side)
                 if p:
                     pid, name, st = p
-                    return gval.get(int(pid), 0.0), f"{name} ({(st or 'listed').lower()})", st == "Confirmed", True
+                    return gv.get(int(pid), 0.0), f"{name} ({(st or 'listed').lower()})", st == "Confirmed", True
                 mix = {int(k): w for k, w in g[f"{def_side}_gmix"].items()}
                 top = max(mix.items(), key=lambda x: x[1]) if mix else (None, 0)
-                return (sum(w * gval.get(k, 0.0) for k, w in mix.items()),
+                return (sum(w * gv.get(k, 0.0) for k, w in mix.items()),
                         f"{gname.get(top[0], 'unknown')} ({top[1]:.0%} likely, not announced)" if top[0] else "unknown", False, False)
 
             def missing(side):
@@ -173,7 +179,19 @@ def main():
             p_home, p_hby2, p_aby2 = float(mp["home_win"][0]), float(mp["home_by2"][0]), float(mp["away_by2"][0])
             exp_total = float(lam_h + lam_a + nm.raw_probs(np.array([lam_h]), np.array([lam_a]), M["h_ot"])["tie"][0])
             goalies_txt = f"{g['away'].upper()} {ga_lab}; {g['home'].upper()} {gh_lab}"
-            model_rows.append(dict(seen_at_et=str(NOW)[:16], game_id=g["game_id"], date=M["date"], away=g["away"], home=g["home"],
+            for oname, OM in others.items():          # the other models' numbers, recorded for comparison (no alerts)
+                og = next((x for x in OM["games"] if x["game_id"] == g["game_id"]), None)
+                if og is None: continue
+                ogv = {int(k): v for k, v in OM["goalies"].items()}
+                lh2 = og["base_home"] + OM["c_miss"] * mh + goalie("away", ogv)[0]
+                la2 = og["base_away"] + OM["c_miss"] * ma + goalie("home", ogv)[0]
+                mp2 = nm.market_probs(np.array([lh2]), np.array([la2]), OM["h_ot"], OM["cal"]["pretip" if (gh_known and ga_known) else "open"])
+                t2 = float(lh2 + la2 + nm.raw_probs(np.array([lh2]), np.array([la2]), OM["h_ot"])["tie"][0])
+                model_rows.append(dict(seen_at_et=str(NOW)[:16], model=oname, game_id=g["game_id"], date=M["date"], away=g["away"], home=g["home"],
+                                       model_home_win=round(float(mp2["home_win"][0]), 4), lam_home=round(lh2, 3), lam_away=round(la2, 3),
+                                       model_total=round(t2, 2), away_goalie=ga_lab, home_goalie=gh_lab,
+                                       missing=f"{g['away'].upper()}: {', '.join(outs_a) or '-'} | {g['home'].upper()}: {', '.join(outs_h) or '-'}"))
+            model_rows.append(dict(seen_at_et=str(NOW)[:16], model=act, game_id=g["game_id"], date=M["date"], away=g["away"], home=g["home"],
                                    model_home_win=round(p_home, 4), lam_home=round(lam_h, 3), lam_away=round(lam_a, 3),
                                    model_total=round(exp_total, 2), away_goalie=ga_lab, home_goalie=gh_lab,
                                    missing=f"{g['away'].upper()}: {', '.join(outs_a) or '-'} | {g['home'].upper()}: {', '.join(outs_h) or '-'}"))
@@ -238,10 +256,10 @@ def main():
                 odds_s = f"{price:+.0f}"
                 link = log_link(M["date"], g["away"], g["home"], mk, team if mk != "total" else side,
                                 "" if mk == "moneyline" else f"{lnum:+g}" if mk == "puck line" else f"{lnum:g}", odds_s)
-                row = dict(alerted_at_et=str(NOW), game_id=g["game_id"], date=M["date"], home=g["home"], away=g["away"], tip_et=g["tip_et"],
+                row = dict(alerted_at_et=str(NOW), model=act, game_id=g["game_id"], date=M["date"], home=g["home"], away=g["away"], tip_et=g["tip_et"],
                            market=mk, side=side, line=lnum, price=price, open_price=oprice, model_prob=round(p, 4), ev=round(ev, 4),
                            goalies=goalies_txt, sent=False, skipped=skip)
-                tail = f"\nGoalies: {goalies_txt}."
+                tail = f"\nGoalies: {goalies_txt}.\nFrom the {act} model ({M.get('label', '')}), the current leader."
                 if outs_a or outs_h: tail += f"\nMissing: {Aw} {', '.join(outs_a) or 'none'}; {H} {', '.join(outs_h) or 'none'}."
                 if skip:
                     if (g["game_id"], mk) not in skipped:
@@ -319,7 +337,7 @@ def main():
         research.init(W)
         n_odds = n_pred = n_spl = n_bk = n_g = 0
         for mf in models:
-            M3 = json.load(open(os.path.join(STATE, mf)))
+            M3 = json.load(open(os.path.join(STATE, mf))); M3 = dict(date=M3["date"], games=M3["models"][M3["active"]]["games"])
             try:
                 k, rows = research.odds_snapshot(NOW, M3["date"], M3["games"]); n_odds += k
                 n_pred += research.predictor_snapshot(NOW, M3["date"], rows)

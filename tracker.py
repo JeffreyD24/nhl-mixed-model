@@ -29,12 +29,20 @@ sys.path.insert(0, W)
 import nhl_data as nd                                            # noqa: E402
 import build_features as bf                                      # noqa: E402
 import nhl_mixed_model as nm                                     # noqa: E402
+import nhl_xg_model as xm                                        # noqa: E402
 
 STATE = os.path.join(W, "state"); os.makedirs(STATE, exist_ok=True)
 SEASON = 2027; SEASON_START = pd.Timestamp("2026-09-25")
 TRAIN = [2022, 2023, 2024, 2025, 2026]
 MARKETS = ("moneyline", "puck line", "total")
 RULE = dict(line="open", markets=("moneyline", "puck line"), ev=0.06)   # the tracked rule
+# Every model runs every day and keeps its own locked picks; alerts come from the active model (see leaderboard()).
+MODELS = {"goals": "Goals model (team offense/defense + goalie, on goals)",
+          "xg": "Shot model (expected goals from shot location + finishing + goalie)"}
+PRIOR_ACTIVE = "xg"         # leads until there is enough live evidence: better moneyline accuracy in all 4 backtest seasons
+MIN_BETS = 200              # each model needs this many graded rule bets with closing line value before live results decide
+SWITCH_MARGIN = 0.005       # a challenger must beat the active model's average CLV by 0.5 percentage points to take over
+def picks_path(name): return os.path.join(STATE, "picks_log.csv" if name == "goals" else f"picks_log_{name}.csv")
 log = []
 def say(*a):
     s = " ".join(str(x) for x in a); print(s, flush=True); log.append(s)
@@ -70,6 +78,29 @@ def load_season_data():
     return games, box
 
 
+# ------------------------------------------------------------------ 1b. shots -> expected goals (for the shot model)
+def add_xg(games):
+    import build_shots as bs
+    spath = os.path.join(STATE, "shots_2026_27.csv")
+    S = pd.read_csv(spath, low_memory=False) if os.path.exists(spath) else pd.DataFrame(columns=["game_id"])
+    fin = games[games.home_goals.notna()]
+    need = sorted(set(fin.game_id) - set(S.game_id))
+    if need:
+        with ThreadPoolExecutor(12) as ex:
+            rows = list(ex.map(bs.shots, need))
+        new = pd.DataFrame([r for rs in rows for r in rs])
+        if len(new):
+            S = pd.concat([S, new], ignore_index=True) if len(S) else new
+            S.to_csv(spath, index=False)
+    for c in ("home_xg", "away_xg", "home_att", "away_att"): games[c] = np.nan
+    if len(S):
+        mod = json.load(open(os.path.join(W, "data", "xg_model.json")))
+        TG = xm.team_game_xg(xm.apply_xg(S, games, mod), games).set_index("game_id")
+        for c in ("home_xg", "away_xg", "home_att", "away_att"): games[c] = games.game_id.map(TG[c])
+    say(f"Shots: {S.game_id.nunique() if len(S) else 0} games with shot data; expected goals computed for {games.home_xg.notna().sum()}.")
+    return games
+
+
 # ------------------------------------------------------------------ 2. features
 def build_features(games, box):
     prior = pd.read_csv(os.path.join(W, "data", "box_2025_26.csv"))
@@ -85,12 +116,16 @@ def build_features(games, box):
 
 
 # ------------------------------------------------------------------ 3/4. model + locked picks
-def predict(games):
+def predict(games, name):
     tr = pd.read_csv(os.path.join(W, "data", "training_games.csv"))
     games = games[(games.date == TARGET) | ((games.date < TARGET) & games.home_goals.notna())].reset_index(drop=True)
     cur = games.drop(columns=["tip_et", "probables", "state", "detail"], errors="ignore").copy()
     df = pd.concat([tr, cur], ignore_index=True)
-    summ, P, extra = nm.run(df, TRAIN, SEASON)
+    if name == "xg":
+        summ, P, extra = xm.run(df, TRAIN, SEASON)
+    else:
+        summ, P, extra = nm.run(df, TRAIN, SEASON)
+        extra["c_miss"] = float(extra["fit"]["b"][4])
     P = P.set_index("game_id")
     g = games.copy()
     for c in ("lam_home_open", "lam_away_open", "p_home_win_open", "p_home_by2_open", "p_away_by2_open", "pred_margin_open", "pred_total_open",
@@ -106,8 +141,8 @@ def top_goalie(mix, names):
     return f"{names.get(int(k), k)} ({w:.0%})"
 
 
-def lock_picks(g, games_through, names):
-    path = os.path.join(STATE, "picks_log.csv")
+def lock_picks(g, games_through, names, name):
+    path = picks_path(name)
     logdf = pd.read_csv(path, parse_dates=["date", "tip_et", "locked_at_et"]) if os.path.exists(path) else pd.DataFrame()
     locked = set(logdf.game_id) if len(logdf) else set()
     now = now_et()
@@ -126,7 +161,7 @@ def lock_picks(g, games_through, names):
             "home_goalie_exp", "away_goalie_exp", "home_n_out_open", "away_n_out_open"]
     new = new[keep]
     logdf = pd.concat([logdf, new], ignore_index=True) if len(logdf) else new
-    say(f"Locked {int((new.pick_type == 'live').sum())} live picks for {TARGET.date()} and {int((new.pick_type == 'backfilled').sum())} backfilled.")
+    say(f"[{name}] Locked {int((new.pick_type == 'live').sum())} live picks for {TARGET.date()} and {int((new.pick_type == 'backfilled').sum())} backfilled.")
     return logdf
 
 
@@ -201,30 +236,82 @@ def grade_picks(logdf, games, extra):
 
 
 # ------------------------------------------------------------------ for the intraday alert checks
-def export_today_model(g, summ, extra, rosters, names):
-    """Everything alert.py needs to re-predict today's games without refitting: each side's expected goals before
-    the goalie and missing-skater terms, the goalie effects, the regular skaters with their values, calibration."""
-    b = extra["fit"]["b"]; c_miss = float(b[4]); eff = extra["effects"]
-    gval = {int(k): round(float(v), 4) for k, v in eff["goalies"].items()}
-    today = g[g.date == TARGET]
-    out = []
-    for r in today.itertuples():
-        def mixval(m):
-            m = json.loads(m) if isinstance(m, str) else {}
-            return sum(w * gval.get(int(k), 0.0) for k, w in m.items())
-        base_h = r.lam_home_open - c_miss * r.home_miss_off_open - mixval(r.away_gmix)
-        base_a = r.lam_away_open - c_miss * r.away_miss_off_open - mixval(r.home_gmix)
-        out.append(dict(game_id=int(r.game_id), home=r.home, away=r.away, tip_et=str(r.tip_et), base_home=base_h, base_away=base_a,
-                        morning_lam_home=r.lam_home_open, morning_lam_away=r.lam_away_open,
-                        home_gmix=json.loads(r.home_gmix), away_gmix=json.loads(r.away_gmix),
-                        home_regulars=rosters.get((r.game_id, "home"), {}), away_regulars=rosters.get((r.game_id, "away"), {}),
-                        home_miss_open=r.home_miss_off_open, away_miss_open=r.away_miss_off_open))
+def export_today_model(results, rosters, names, active):
+    """Everything alert.py needs to re-predict today's games without refitting, for every model: each side's expected
+    goals before the goalie and missing-skater terms, the goalie effects, the regular skaters, calibration."""
+    models = {}
+    for name, (g, summ, extra) in results.items():
+        c_miss = extra["c_miss"]
+        gval = {int(k): round(float(v), 4) for k, v in extra["effects"]["goalies"].items()}
+        out = []
+        for r in g[g.date == TARGET].itertuples():
+            def mixval(m):
+                m = json.loads(m) if isinstance(m, str) else {}
+                return sum(w * gval.get(int(k), 0.0) for k, w in m.items())
+            out.append(dict(game_id=int(r.game_id), home=r.home, away=r.away, tip_et=str(r.tip_et),
+                            base_home=r.lam_home_open - c_miss * r.home_miss_off_open - mixval(r.away_gmix),
+                            base_away=r.lam_away_open - c_miss * r.away_miss_off_open - mixval(r.home_gmix),
+                            morning_lam_home=r.lam_home_open, morning_lam_away=r.lam_away_open,
+                            home_gmix=json.loads(r.home_gmix), away_gmix=json.loads(r.away_gmix),
+                            home_regulars=rosters.get((r.game_id, "home"), {}), away_regulars=rosters.get((r.game_id, "away"), {}),
+                            home_miss_open=r.home_miss_off_open, away_miss_open=r.away_miss_off_open))
+        models[name] = dict(label=MODELS[name], c_miss=c_miss, h_ot=extra["h_ot"], cal=extra["cal"], goalies=gval,
+                            goalie_names={int(k): names.get(int(k), "") for k in gval}, games=out)
     for f in os.listdir(STATE):
         if f.startswith("model_") and f[6:16] < str(TODAY.date()): os.remove(os.path.join(STATE, f))
-    json.dump(dict(date=str(TARGET.date()), made_at_et=str(now_et()), c_miss=c_miss, h_ot=extra["h_ot"], cal=extra["cal"],
-                   goalies=gval, goalie_names={int(k): names.get(int(k), "") for k in gval}, games=out),
+    json.dump(dict(date=str(TARGET.date()), made_at_et=str(now_et()), active=active, models=models),
               open(os.path.join(STATE, f"model_{TARGET.date()}.json"), "w"))
-    say(f"Saved the model for intraday checks ({len(out)} games, {len(gval)} goalies).")
+    say(f"Saved {len(models)} models for intraday checks ({len(out)} games); alerts come from the {active} model.")
+
+
+def leaderboard(logs):
+    """Season-to-date scorecard for every model, and which one sends alerts.
+    The deciding number is average closing line value (CLV) of each model's rule bets: how much better the opening price it
+    bet was than the fair closing price. It settles far faster than wins and losses (hockey prices swing a lot), so it is
+    the fairest quick test. Until every model has MIN_BETS graded rule bets with CLV, the backtest leader (PRIOR_ACTIVE)
+    stays active. After that a challenger takes over only if its average CLV beats the active model's by SWITCH_MARGIN."""
+    path = os.path.join(STATE, "leaderboard.json")
+    prev = json.load(open(path)) if os.path.exists(path) else {}
+    active = prev.get("active", PRIOR_ACTIVE)
+    if active not in logs: active = PRIOR_ACTIVE
+    rows = {}
+    for name, df in logs.items():
+        parts = []
+        for mk in RULE["markets"]:
+            ev = pd.to_numeric(df[f"open_{mk}_ev"], errors="coerce")
+            sel = df[(ev >= RULE["ev"]) & df[f"open_{mk}_result"].isin(["W", "L", "P"])]
+            parts.append(pd.DataFrame({"profit": pd.to_numeric(sel[f"open_{mk}_profit"], errors="coerce"),
+                                       "clv": pd.to_numeric(sel[f"open_{mk}_clv"], errors="coerce"), "type": sel.pick_type}))
+        B = pd.concat(parts)
+        fin = df[df.home_goals.notna()]
+        y = (fin.home_goals > fin.away_goals).astype(float)
+        brier = float(((fin.p_home_win - y) ** 2).mean()) if len(fin) else None
+        live = B[B.type == "live"]
+        rows[name] = dict(label=MODELS[name], rule_bets=int(len(B)), units=round(float(B.profit.sum()), 2),
+                          return_per_bet=round(float(B.profit.mean()), 4) if len(B) else None,
+                          bets_with_clv=int(B.clv.notna().sum()), avg_clv=round(float(B.clv.mean()), 4) if B.clv.notna().any() else None,
+                          beat_close_pct=round(float((B.clv.dropna() > 0).mean()), 3) if B.clv.notna().any() else None,
+                          live_rule_bets=int(len(live)), live_units=round(float(live.profit.sum()), 2),
+                          moneyline_brier=round(brier, 4) if brier is not None else None, games_graded=int(len(fin)))
+    reason = f"backtest leader; waiting until every model has {MIN_BETS} graded rule bets with closing line value"
+    if all(r["bets_with_clv"] >= MIN_BETS for r in rows.values()):
+        best = max(rows, key=lambda k: rows[k]["avg_clv"])
+        if best != active and rows[best]["avg_clv"] >= rows[active]["avg_clv"] + SWITCH_MARGIN:
+            reason = f"switched from {active}: average CLV {rows[best]['avg_clv']:+.2%} vs {rows[active]['avg_clv']:+.2%}"
+            say(f"Leaderboard: alerts now come from the {best} model ({reason}).")
+            prev.setdefault("history", []).append(dict(at_et=str(now_et()), from_model=active, to_model=best, reason=reason))
+            active = best
+        else:
+            reason = f"highest average CLV, or within {SWITCH_MARGIN:.1%} of the best" if best == active else \
+                     f"keeps the lead: {best} is ahead by less than {SWITCH_MARGIN:.1%} CLV"
+    board = dict(updated_et=str(now_et()), active=active, reason=reason, rule=RULE, min_bets=MIN_BETS, switch_margin=SWITCH_MARGIN,
+                 models=rows, history=prev.get("history", []))
+    json.dump(board, open(path, "w"), indent=1)
+    for k, r in rows.items():
+        say(f"Leaderboard [{k}]: {r['rule_bets']} rule bets, {r['units']:+.1f} units, average CLV "
+            + (f"{r['avg_clv']:+.2%}" if r["avg_clv"] is not None else "n/a") + f" (n={r['bets_with_clv']}), moneyline Brier {r['moneyline_brier']}.")
+    say(f"Active model for alerts: {active} ({reason}).")
+    return active, board
 
 
 def grade_alerts(games, logdf):
@@ -341,27 +428,34 @@ def main():
     say(f"NHL tracker run on {TODAY.date()} (ET), predicting games on {TARGET.date()}.")
     games, box = load_season_data()
     games, rosters, allb = build_features(games, box)
+    games = add_xg(games)
     names = dict(zip(allb.playerid.astype(int), allb.player))
     if not (games.date == TARGET).any():
         say(f"No regular-season games on {TARGET.date()}; grading earlier picks only.")
-    g, summ, extra = predict(games)
-    EXTRA.update(extra)
-    export_today_model(g, summ, extra, rosters, names)
     played = games.dropna(subset=["home_goals"])
-    logdf = lock_picks(g, str(played.date.max().date()) if len(played) else "none", names)
-    logdf = grade_picks(logdf.reset_index(drop=True), games, extra)
-    grade_alerts(games, logdf)
-    grade_my_bets(games, logdf)
-    grade_jumps(games, logdf)
-    logdf.sort_values(["date", "tip_et"]).to_csv(os.path.join(STATE, "picks_log.csv"), index=False)
-    today = logdf[(logdf.date == TARGET) & (logdf.pick_type == "live")]
-    json.dump({"today": [dict(home=r.home, away=r.away, tip=str(r.tip_et), home_win_prob=round(r.p_home_win, 3),
+    through = str(played.date.max().date()) if len(played) else "none"
+    results, logs = {}, {}
+    for name in MODELS:
+        g, summ, extra = predict(games, name)
+        results[name] = (g, summ, extra)
+        logdf = lock_picks(g, through, names, name)
+        logdf = grade_picks(logdf.reset_index(drop=True), games, extra)
+        logdf.sort_values(["date", "tip_et"]).to_csv(picks_path(name), index=False)
+        logs[name] = logdf
+    active, board = leaderboard(logs)
+    export_today_model(results, rosters, names, active)
+    EXTRA.update(results[active][2])
+    grade_alerts(games, logs["goals"])
+    grade_my_bets(games, logs[active])
+    grade_jumps(games, logs["goals"])
+    today = logs[active][(logs[active].date == TARGET) & (logs[active].pick_type == "live")]
+    json.dump({"active_model": active, "today": [dict(home=r.home, away=r.away, tip=str(r.tip_et), home_win_prob=round(r.p_home_win, 3),
                               expected_goals=f"{r.lam_home:.2f}-{r.lam_away:.2f} (regulation)", expected_total=round(r.pred_total, 2))
                          for r in today.itertuples()],
-               "model": {k: v for k, v in summ.items() if k not in ("test", "calibration")}, "log": log},
-              open(os.path.join(STATE, "last_run.json"), "w"), indent=1, default=float)
+               "models": {k: {kk: vv for kk, vv in v[1].items() if kk not in ("test", "calibration", "tune")} for k, v in results.items()},
+               "log": log}, open(os.path.join(STATE, "last_run.json"), "w"), indent=1, default=float)
     import build_tracker_workbook
-    build_tracker_workbook.build(os.path.join(STATE, "picks_log.csv"), os.path.join(W, "NHL_Live_Tracker.xlsx"), RULE, log)
+    build_tracker_workbook.build({k: picks_path(k) for k in MODELS}, os.path.join(W, "NHL_Live_Tracker.xlsx"), RULE, log, board)
     say("Done.")
 
 
