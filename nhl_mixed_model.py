@@ -178,7 +178,7 @@ def market_probs(lh, la, h_ot, cal):
 
 
 # ---------------------------------------------------------------- walk-forward season
-def walk_forward(G, prev_O, prev_D, prev_G, fit, rho, half_life, modes=("pretip", "open")):
+def walk_forward(G, prev_O, prev_D, prev_G, fit, rho, half_life, modes=("pretip", "open"), lag_days=0):
     """Predict each game of one season using only earlier games of that season, shrinking toward
     rho * last season's effects. Returns lam_home/lam_away for each mode."""
     G = G.sort_values("date").reset_index(drop=True)
@@ -195,7 +195,7 @@ def walk_forward(G, prev_O, prev_D, prev_G, fit, rho, half_life, modes=("pretip"
     Lp = L["pretip"] if "pretip" in L else long_rows(G, "pretip")
     preds = []
     for d in sorted(G.date.unique()):
-        past = Lp[(Lp.date < d) & Lp.goals.notna()]
+        past = Lp[(Lp.date < d - pd.Timedelta(days=lag_days)) & Lp.goals.notna()]     # lag_days=1: results known when the line opens
         if len(past):
             Z = np.zeros((len(past), 2 * q + qg)); r = np.arange(len(past))
             Z[r, past.off.map(t_idx).values] = 1; Z[r, q + past["def"].map(t_idx).values] = 1
@@ -317,7 +317,7 @@ def slope(p):
     p = np.array(p); return float(p[:, 0] @ p[:, 1] / (p[:, 0] @ p[:, 0])) if len(p) else 0.0
 
 
-def run(df, train_seasons, test_season, halflives=(None, 60, 30, 15), lines=("open", "close")):
+def run(df, train_seasons, test_season, halflives=(None, 60, 30, 15), lines=("open", "close"), lag_days=0):
     df = df.copy(); df["date"] = pd.to_datetime(df.date)
     df = pd.concat([add_rest(df[df.season == s]) for s in sorted(df.season.unique())], ignore_index=True)
     ss = sorted(train_seasons)
@@ -336,7 +336,7 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30, 15), lines=("op
     val_s, prev_s = ss[-1], ss[-2]
     tune, val = {}, {}
     for hl in halflives:
-        Pv, _ = walk_forward(df[df.season == val_s], eff(O, prev_s), eff(D, prev_s), eff(GG, prev_s), fit, rho, hl)
+        Pv, _ = walk_forward(df[df.season == val_s], eff(O, prev_s), eff(D, prev_s), eff(GG, prev_s), fit, rho, hl, lag_days=lag_days)
         tune[str(hl)] = float((((Pv.lam_home - Pv.home_reg) ** 2).mean() + ((Pv.lam_away - Pv.away_reg) ** 2).mean()) ** .5)
         val[hl] = Pv
     best_hl = min(halflives, key=lambda h: tune[str(h)])
@@ -350,7 +350,7 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30, 15), lines=("op
                  over=fit_calibration(np.r_[r["over_5.5"], r["over_6.5"]], np.r_[tot > 5.5, tot > 6.5]))
         cal[m] = c
     # TEST: one pass on the held-out season
-    Pt, eff_now = walk_forward(df[df.season == test_season], eff(O, val_s), eff(D, val_s), eff(GG, val_s), fit, rho, best_hl)
+    Pt, eff_now = walk_forward(df[df.season == test_season], eff(O, val_s), eff(D, val_s), eff(GG, val_s), fit, rho, best_hl, lag_days=lag_days)
     Pt = add_probs(Pt, h_ot, cal)
     res = {}
     if Pt.home_goals.notna().any():

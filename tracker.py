@@ -25,6 +25,9 @@ _args = [a for a in sys.argv[2:] if not a.startswith("--")]
 TODAY = pd.Timestamp(_args[0]) if _args else now_et().normalize()
 # morning run: today's games.  evening run (--tomorrow): tomorrow's games, locked before most opening lines are posted
 TARGET = TODAY + pd.Timedelta(days=1) if "--tomorrow" in sys.argv else TODAY
+# Tomorrow's picks use only results through yesterday: today's games aren't played yet when DraftKings posts tomorrow's
+# lines (~11:20 AM the day before). The backtests use the same one-day lag (dev/lag_backtest.py).
+LAG = 1 if TARGET > TODAY else 0
 sys.path.insert(0, W)
 import nhl_data as nd                                            # noqa: E402
 import build_features as bf                                      # noqa: E402
@@ -106,7 +109,7 @@ def build_features(games, box):
     allg = pd.concat([tr[tr.season == 2026], games[["game_id", "date", "season", "home", "away"]]], ignore_index=True)
     allg["date"] = pd.to_datetime(allg.date)
     allb = pd.concat([prior, box], ignore_index=True)
-    F, rosters = bf.build(allg, allb)
+    F, rosters = bf.build(allg, allb, lag_days=LAG)
     F = F[F.season == SEASON].set_index("game_id")
     for c in F.columns:
         if c.startswith(("home_", "away_")) and c not in games: games[c] = games.game_id.map(F[c])
@@ -120,9 +123,9 @@ def predict(games, name):
     cur = games.drop(columns=["tip_et", "probables", "state", "detail"], errors="ignore").copy()
     df = pd.concat([tr, cur], ignore_index=True)
     if name == "xg":
-        summ, P, extra = xm.run(df, TRAIN, SEASON)
+        summ, P, extra = xm.run(df, TRAIN, SEASON, lag_days=LAG)
     else:
-        summ, P, extra = nm.run(df, TRAIN, SEASON)
+        summ, P, extra = nm.run(df, TRAIN, SEASON, lag_days=LAG)
         extra["c_miss"] = float(extra["fit"]["b"][4])
     P = P.set_index("game_id")
     g = games.copy()

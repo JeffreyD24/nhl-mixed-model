@@ -73,6 +73,10 @@ the actual price. Full tables in `backtests/`.
 - With the confirmed goalie and actual lineup, the model did much better against opening prices (ML +41.6u and +49.3u),
   but not against closing prices, which already know the goalie. That is why the alerts watch for goalie news: the edge,
   if any, is in prices that haven't caught up yet.
+- **Information timing:** DraftKings posts lines about 31 hours before the game, before the previous day's games are
+  played. Since Oct 30, both the backtests and the live picks use only results through two days before the game
+  (`dev/lag_backtest.py`, `backtests/lag_backtests.csv`). Results held up: at opening prices, shot model +119.0 units on
+  1,295 bets (+9.2%), goals model +72.0 on 1,796 (+4.0%); halfway prices +3.8% and +0.3%.
 - The 6% threshold and the decision to leave totals out were chosen after seeing both opening-line seasons, so the
   backtest numbers above flatter the rule somewhat. The live season is the real test.
 - **Totals, checked further (Oct 30):** the 2025-26 backtest bet 221 unders and 7 overs, so I tested two fixes on every

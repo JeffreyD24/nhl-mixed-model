@@ -184,7 +184,7 @@ def fit_block(df, train_seasons):
     return fa, fb, E, rho
 
 
-def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "open")):
+def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "open"), lag_days=0):
     G = G.sort_values("date").reset_index(drop=True)
     last = lambda name: {k[1]: v for k, v in E[name].items() if k[0] == prev_season}
     teams = sorted(set(G.home) | set(G.away)); ti = {t: i for i, t in enumerate(teams)}; q = len(teams)
@@ -198,7 +198,7 @@ def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "op
     Lm = {m: rows(G, m) for m in modes}; Lp = Lm["pretip"]
     preds = []
     for d in sorted(G.date.unique()):
-        past = Lp[(Lp.date < d) & Lp.goals.notna() & Lp.xg.notna()]
+        past = Lp[(Lp.date < d - pd.Timedelta(days=lag_days)) & Lp.goals.notna() & Lp.xg.notna()]
         if len(past):
             n = len(past); r = np.arange(n)
             Zo = np.zeros((n, q)); Zo[r, past.off.map(ti).values] = 1
@@ -234,7 +234,7 @@ def walk_forward(G, E, rho, fa, fb, prev_season, half_life, modes=("pretip", "op
                                                            O=dict(zip(teams, O)), D=dict(zip(teams, D)))
 
 
-def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="none"):
+def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="none", lag_days=0):
     """df: training_games rows plus home_xg/away_xg columns. Same outputs as nhl_mixed_model.run."""
     df = df.copy(); df["date"] = pd.to_datetime(df.date)
     df = pd.concat([nm.add_rest(df[df.season == s]) for s in sorted(df.season.unique())], ignore_index=True)
@@ -246,7 +246,7 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="none"
     # validation walk-forward uses effects estimated with the validation season included (as the original model does)
     tune, val = {}, {}
     for hl in halflives:
-        Pv, _ = walk_forward(df[df.season == val_s], E, rho, fa, fb, ss[-2], hl)
+        Pv, _ = walk_forward(df[df.season == val_s], E, rho, fa, fb, ss[-2], hl, lag_days=lag_days)
         tune[str(hl)] = float((((Pv.lam_home - Pv.home_reg) ** 2).mean() + ((Pv.lam_away - Pv.away_reg) ** 2).mean()) ** .5)
         val[hl] = Pv
     hl = min(halflives, key=lambda h: tune[str(h)]); Pv = val[hl]
@@ -258,7 +258,7 @@ def run(df, train_seasons, test_season, halflives=(None, 60, 30), tot_cal="none"
                       by2=nm.fit_calibration(np.r_[r["home_by2"], r["away_by2"]], np.r_[mg >= 2, mg <= -2]),
                       over=nm.fit_calibration(np.r_[r["over_5.5"], r["over_6.5"]], np.r_[tot > 5.5, tot > 6.5]) if tot_cal == "pooled" else None,
                       over_lines={str(T): nm.fit_calibration(r[f"over_{T}"], tot > T) for T in (5.5, 6.5)} if tot_cal == "per_line" else None)
-    Pt, eff_now = walk_forward(df[df.season == test_season], E, rho, fa, fb, val_s, hl)
+    Pt, eff_now = walk_forward(df[df.season == test_season], E, rho, fa, fb, val_s, hl, lag_days=lag_days)
     Pt = nm.add_probs(Pt, h_ot, cal)
     summary = dict(train_seasons=ss, test_season=test_season, fixed_xg=np.round(fa["b"], 4).tolist(), conv_intercept=float(fb["b"][0]),
                    sd_xg_offense=fa["sd"][0], sd_xg_defense=fa["sd"][1], sd_finishing=fb["sd"][0], sd_goalie=fb["sd"][1],

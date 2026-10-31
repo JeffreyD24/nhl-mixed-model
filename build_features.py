@@ -37,9 +37,13 @@ def player_rates(box):
     return pd.concat(out).set_index(["playerid", "season"]).value60.to_dict()
 
 
-def build(games, box, overrides=None):
+def build(games, box, overrides=None, lag_days=0):
     """games: game_id, date, season, home, away (all games, past and to predict). box: player rows of finished games.
     overrides: {(game_id, side): dict(goalie=id, missing={pid: p_miss})} newer info for unfinished games.
+    lag_days: the 'open' features (goalie mix, regulars who missed the last game) use only games played at least
+    lag_days before the previous day. lag_days=1 matches what is known when DraftKings posts its line, about 31 hours
+    before the game: the previous day's games haven't been played yet. On a back-to-back, the goalie expected to start
+    that previous-day game (the most likely one) is the one down-weighted.
     Returns games with feature columns and a dict of team rosters (for intraday re-prediction)."""
     games = games.copy(); games["date"] = pd.to_datetime(games.date)
     box = box.copy()
@@ -54,8 +58,11 @@ def build(games, box, overrides=None):
     feats, rosters = {}, {}
     for team, g in tg.groupby("team"):
         hist = []                   # (date, lineup dict, starter) of finished games
+        prev_date = None
         for r in g.itertuples():
             ov = (overrides or {}).get((r.game_id, r.side), {})
+            full = hist
+            hist = [h for h in full if h[0] < r.date - pd.Timedelta(days=lag_days)] if lag_days else full
             last5 = hist[-5:]
             cnt = {}
             for _, lu, _ in last5:
@@ -81,6 +88,9 @@ def build(games, box, overrides=None):
             for s in st: w[s] = w.get(s, 0) + 1
             if hist and (r.date - hist[-1][0]).days == 1 and hist[-1][2] in w:
                 w[hist[-1][2]] *= B2B_SAME_FACTOR
+            elif lag_days and prev_date is not None and (r.date - prev_date).days == 1 and w:
+                likely = max(w, key=w.get)            # yesterday's starter isn't known yet: assume the usual starter
+                w[likely] *= B2B_SAME_FACTOR
             tot = sum(w.values()) or 1
             gmix = {int(k): v / tot for k, v in w.items()}
             goalie = starters.get((r.game_id, team), ov.get("goalie"))
@@ -89,8 +99,10 @@ def build(games, box, overrides=None):
                 miss_off=sum(val[p] * pm for p, pm in miss_pre.items()), n_out=int(round(sum(miss_pre.values()))),
                 miss_off_open=sum(val[p] for p in miss_open), n_out_open=len(miss_open))
             rosters[(r.game_id, r.side)] = {int(p): [names.get(p, ""), round(val[p], 4), int(p in miss_open)] for p in regs}
+            hist = full
             if cur is not None:
                 hist.append((r.date, cur, starters.get((r.game_id, team))))
+            prev_date = r.date
     for side in ("home", "away"):
         for c in ("goalie", "gmix", "miss_off", "n_out", "miss_off_open", "n_out_open"):
             games[f"{side}_{c}"] = [feats[(i, side)][c] for i in games.game_id]
