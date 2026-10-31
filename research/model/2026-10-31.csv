@@ -92,3 +92,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 14:25,goals,401892619,2026-10-31,ott,sj,0.4998,3.181,3.132,6.47,Samuel Ersson (confirmed),Alex Nedeljkovic (confirmed),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky? | SJ: Ostapchuk"
 2026-10-31 14:40,xg,401892619,2026-10-31,ott,sj,0.4043,2.924,3.399,6.48,Samuel Ersson (confirmed),Alex Nedeljkovic (confirmed),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky | SJ: Ostapchuk"
 2026-10-31 14:40,goals,401892619,2026-10-31,ott,sj,0.5001,3.181,3.13,6.47,Samuel Ersson (confirmed),Alex Nedeljkovic (confirmed),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky | SJ: Ostapchuk"
+2026-10-31 14:55,xg,401892623,2026-10-31,cgy,col,0.7081,3.92,2.489,6.55,Arsenii Sergeev (expected),Mackenzie Blackwood (confirmed),"CGY: Othmann | COL: Manson, O'Connor"
+2026-10-31 14:55,goals,401892623,2026-10-31,cgy,col,0.6763,3.717,2.479,6.34,Arsenii Sergeev (expected),Mackenzie Blackwood (confirmed),"CGY: Othmann | COL: Manson, O'Connor"
