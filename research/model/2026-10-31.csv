@@ -60,3 +60,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 11:37,goals,401892620,2026-10-31,pit,mtl,0.5482,3.213,2.851,6.23,Arturs Silovs (expected),Jacob Fowler (confirmed),"PIT: Soderblom, Solovyov | MTL: Matheson"
 2026-10-31 11:52,xg,401892618,2026-10-31,buf,la,0.5358,3.298,2.973,6.43,Colten Ellis (expected),Darcy Kuemper (expected),"BUF: Helenius, Metsa | LA: Wright"
 2026-10-31 11:52,goals,401892618,2026-10-31,buf,la,0.4868,3.008,3.044,6.22,Colten Ellis (expected),Darcy Kuemper (expected),"BUF: Helenius, Metsa | LA: Wright"
+2026-10-31 12:02,xg,401892622,2026-10-31,cbj,dal,0.621,3.172,2.376,5.71,Jet Greaves (expected),Jake Oettinger (confirmed),CBJ: Voronkov | DAL: Capobianco
+2026-10-31 12:02,goals,401892622,2026-10-31,cbj,dal,0.6187,3.218,2.419,5.8,Jet Greaves (expected),Jake Oettinger (confirmed),CBJ: Voronkov | DAL: Capobianco
