@@ -40,7 +40,11 @@ def day(d):
     rows = []
     for g in sc.get("games", []):
         if g.get("gameType") not in (2, 3) or g.get("gameState") not in ("OFF", "FINAL") or int(g["id"]) in have: continue
-        js = get(f"https://api.nhle.com/stats/rest/en/shiftcharts?cayenneExp=gameId={g['id']}")
+        js = None
+        for k in range(3):      # the API sometimes answers with an empty list when asked too quickly: wait and retry
+            js = get(f"https://api.nhle.com/stats/rest/en/shiftcharts?cayenneExp=gameId={g['id']}")
+            if js and js.get("data"): break
+            time.sleep(8 * (k + 1))
         if not js or not js.get("data"): print(f"  {d.date()} game {g['id']}: no shift chart yet"); continue
         home, away = g["homeTeam"]["abbrev"].lower(), g["awayTeam"]["abbrev"].lower()
         for x in js["data"]:
@@ -50,7 +54,7 @@ def day(d):
                              shift_number=x.get("shiftNumber"), start=x.get("startTime"), end=x.get("endTime"),
                              start_sec=secs(x.get("startTime")), end_sec=secs(x.get("endTime")), duration_sec=secs(x.get("duration")),
                              type_code=x.get("typeCode"), event=x.get("eventDescription"), event_detail=x.get("detailCode")))
-        time.sleep(0.3)
+        time.sleep(1.5)
     if rows:
         D = pd.concat([old, pd.DataFrame(rows)], ignore_index=True) if len(old) else pd.DataFrame(rows)
         D.to_csv(path, index=False)
