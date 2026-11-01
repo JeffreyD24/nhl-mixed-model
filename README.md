@@ -185,3 +185,36 @@ starting goalies** (`research/goalies.csv`), and the model's number whenever it 
 - 2019-20 and 2020-21 are only used as earlier seasons in the oldest backtests; the live model trains on 2021-22 to 2025-26.
 - Arizona (through 2023-24) is treated as the same franchise as Utah so team effects carry over.
 - GitHub pauses scheduled workflows in public repos after 60 days without activity; the daily commits count as activity.
+
+## Polymarket US tracking (paper trades only)
+
+`polymarket.py` (the same file in the NHL, NBA and NFL repos) watches **Polymarket US**, the CFTC-regulated exchange, and
+records what the model would do there. **It never trades.** Connecticut has ordered Polymarket to stop offering sports
+contracts there, so this builds the record now for use from a state where it's allowed.
+
+**Why an exchange is different:** you trade against other people, not a book, so winners don't get limited, and you can post
+your own price (a limit order, no fee) instead of taking the best offer (taker fee ≈ 5% × price × (1 − price) per contract,
+about 1.25¢ at 50¢; set in `TAKER_FEE_RATE`).
+
+**What runs:** right after each 5-minute `alert.py` check (`alert_loop.sh`), so it uses the number alert.py just computed:
+1. pulls this league's games from Polymarket's public data API (`gateway.polymarket.us`, no key) and matches them to
+   `state/model_*.json`;
+2. saves the best bid, best offer and depth of every moneyline, spread and total contract to
+   `research/polymarket/YYYY-MM-DD.csv` (only when something changed);
+3. turns the model's number into a probability for each contract: the repo's own Poisson model on the live expected goals, for **both** models (each gets its own paper trades). Only the ±1.5 puck line is priced.
+4. logs paper trades on the moneyline and puck line (totals are saved but not traded, same as the alerts) to `state/poly_paper.csv`, one per game, market and model:
+   - **taker**: buy at the best offer the first time expected value after the fee is **6%+**;
+   - **maker**: a limit bid at the highest price that still has 6% expected value, counted as filled if the best
+     offer later falls to it before the game (approximate: ignores who was first in line);
+   - each with DraftKings' price on the same bet at that moment (from `research/odds/`), to see which is cheaper.
+
+The **morning run** grades finished trades from Polymarket's settlement prices (`--grade`), adds closing line value (last mid
+price before the start minus the price paid, in cents) and rewrites `research/polymarket/REPORT.md`.
+
+**First runs:** this was built from Polymarket US's documentation and tested against mock responses; it had not yet seen real
+data. Each day it saves one raw event and one price reply to `research/polymarket/samples/`, and anything it can't read goes
+to `research/polymarket/unmatched.csv` (the `line_source` column in the snapshots says whether a spread's sign came from the
+side's own text or had to be assumed). Check those after the first day. To pause it, add a repository variable
+`POLYMARKET_OFF` = `1` (Settings → Secrets and variables → Actions → Variables); delete it to resume.
+
+Settings at the top of `polymarket.py`: `THRESHOLD`, `PAPER_MARKETS`, `TAKER_FEE_RATE`, `MAKER`, `MIN_DEPTH` (20 contracts).
