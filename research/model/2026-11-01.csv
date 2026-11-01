@@ -55,3 +55,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-01 14:25,goals,401892626,2026-11-01,uta,phi,0.4611,2.848,3.049,6.06,Karel Vejmelka (expected),Dan Vladar (confirmed),UTA: DeSimone | PHI: -
 2026-11-01 15:49,xg,401892626,2026-11-01,uta,phi,0.3664,2.672,3.372,6.2,Karel Vejmelka (expected),Dan Vladar (confirmed),"UTA: Yamamoto, DeSimone | PHI: -"
 2026-11-01 15:49,goals,401892626,2026-11-01,uta,phi,0.4632,2.848,3.036,6.05,Karel Vejmelka (expected),Dan Vladar (confirmed),"UTA: Yamamoto, DeSimone | PHI: -"
+2026-11-01 15:55,xg,401892626,2026-11-01,uta,phi,0.3664,2.672,3.372,6.2,Karel Vejmelka (confirmed),Dan Vladar (confirmed),"UTA: Yamamoto, DeSimone | PHI: -"
+2026-11-01 15:55,goals,401892626,2026-11-01,uta,phi,0.4632,2.848,3.036,6.05,Karel Vejmelka (confirmed),Dan Vladar (confirmed),"UTA: Yamamoto, DeSimone | PHI: -"
