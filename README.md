@@ -218,3 +218,10 @@ side's own text or had to be assumed). Check those after the first day. To pause
 `POLYMARKET_OFF` = `1` (Settings → Secrets and variables → Actions → Variables); delete it to resume.
 
 Settings at the top of `polymarket.py`: `THRESHOLD`, `PAPER_MARKETS`, `TAKER_FEE_RATE`, `MAKER`, `MIN_DEPTH` (20 contracts).
+
+
+## Phone alerts: bets only (since Nov 1, 2026)
+`BET_ONLY = True` in `alert.py`: your phone gets only bet alerts (the EV bar is met with no caution) and **DON'T BET**
+follow-ups (a bet alert you haven't logged whose EV fell below the bar before puck drop, or an opening-price-only long shot
+whose price moved). Cautions, INFO ONLY, market-agrees and line-jump alerts are still logged in their files, just not pushed.
+The 30-minute reminder was replaced by DON'T BET.

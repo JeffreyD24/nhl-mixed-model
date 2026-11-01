@@ -20,7 +20,8 @@ import espn                                              # noqa: E402
 
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
 THRESHOLD_MOVED = 0.09              # needed once the price has moved more than that: in the backtests the edge mostly disappears
-REMIND_AFTER_MIN = 30              # reminder if an alert's bet still isn't logged this many minutes later (once, before puck drop)
+BET_ONLY = True                     # phone alerts only for bets and the DON'T BET follow-up (Nov 1, 2026); everything
+                                    # else (cautions, info-only, market agrees, line jumps) is still logged, just not pushed
 MOVED_SKIP = "price moved off the opening number (info only)"
 NEAR_OPEN = 0.015                   #   as prices move toward the close (shot model +9% ROI at open, +2% halfway, -2% at close)
 OPEN_ONLY_LONGSHOTS = {"goals": 150}  # model -> bets priced at this or longer (+150) are alerted ONLY at/near the opening price
@@ -64,7 +65,10 @@ def log_link(date, away, home, market, pick, line, odds):
 DK_NHL = "https://sportsbook.draftkings.com/leagues/hockey/nhl"
 
 
-def notify(title, body, priority="high", tags="ice_hockey", link=None, dk=None):
+def notify(title, body, priority="high", tags="ice_hockey", link=None, dk=None, kind="info"):
+    """kind: 'bet', 'stop' (DON'T BET follow-up), 'test', or 'info' (not pushed while BET_ONLY)"""
+    if BET_ONLY and kind not in ("bet", "stop", "test"):
+        print("Logged only (not pushed):", title); return False
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
         print("NTFY_TOPIC not set; would have sent:", title, "|", body); return False
@@ -140,7 +144,7 @@ def main():
     if "--test" in sys.argv:
         topic = os.environ.get("NTFY_TOPIC") or ""
         try:
-            ok = notify("Test alert: NHL tracker connected", "If you can read this, phone alerts from your NHL GitHub tracker are working. No bet here.")
+            ok = notify("Test alert: NHL tracker connected", "If you can read this, phone alerts from your NHL GitHub tracker are working. No bet here.", kind="test")
             msg = (f"sent OK to a topic {len(topic)} characters long, starting with '{topic[:2]}'" if ok
                    else "NOT sent: the NTFY_TOPIC secret is missing or empty")
         except Exception as e:
@@ -435,7 +439,7 @@ def main():
                             title = "ALREADY BET - " + title; prio = "default"
                         if other: body += f"\nYour other bets on this game: {other}."
                         if "OTHER SIDE" in other: title = "YOU BET THE OTHER SIDE - " + title
-                        sent = notify(title, why + body, priority=prio, link=link, dk=dk)
+                        sent = notify(title, why + body, priority=prio, link=link, dk=dk, kind="bet")
                     for n, bt in pending:
                         new.append(dict(alerted_at_et=str(NOW), model=n, both_models=len(pending) > 1, game_id=g["game_id"], date=M["date"],
                                         home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,
@@ -443,19 +447,19 @@ def main():
                                         open_only=is_open_only(n, price), remind_ok=skip != MOVED_SKIP))
                         (skipped if skip else done).add((g["game_id"], mk, n))
                     print(("CAUTION " if skip else "") + "ALERT:", title, "|", skip or "")
-    # ---- reminders: an alert's bet still not logged REMIND_AFTER_MIN later (every placed bet gets logged). Ported from the NBA tracker.
+    # ---- DON'T BET follow-up: a pushed bet alert, still not logged, that no longer meets the bar before puck drop
     A2 = pd.concat([A, pd.DataFrame(new)], ignore_index=True) if new else A.copy()
     n_rem = 0
     if len(A2) and "remind_ok" in A2:
         if "reminded_at_et" not in A2: A2["reminded_at_et"] = np.nan
         A2["reminded_at_et"] = A2["reminded_at_et"].astype(object)
-        ok_ = A2.remind_ok.astype(str).isin(["True", "1", "1.0"]) & A2.sent.astype(str).isin(["True", "1", "1.0"])
+        ok_ = (A2.remind_ok.astype(str).isin(["True", "1", "1.0"]) & A2.sent.astype(str).isin(["True", "1", "1.0"])
+               & A2.skipped.isna())
         for (gid, mk), grp in A2[ok_].groupby(["game_id", "market"]):
             if A2[(A2.game_id == gid) & (A2.market == mk)].reminded_at_et.astype(str).str.len().gt(3).any(): continue
             t_last = grp.alerted_at_et.max(); rows = grp[grp.alerted_at_et == t_last]; r = rows.iloc[0]
             gi = GINFO.get(gid)
             if gi is None or pd.Timestamp(gi["tip_et"]) <= NOW: continue
-            if NOW - pd.Timestamp(t_last) < pd.Timedelta(minutes=REMIND_AFTER_MIN): continue
             logged = len(MYB) and ((MYB.date.astype(str) == str(r.date)) & (MYB.home.astype(str).str.lower() == r.home) &
                                    (MYB.away.astype(str).str.lower() == r.away) & (MYB.market == mk)).any()
             if logged: continue
@@ -466,19 +470,19 @@ def main():
             thr = threshold_for(price, oprice)
             longshot_gone = m_best in OPEN_ONLY_LONGSHOTS and price >= OPEN_ONLY_LONGSHOTS[m_best] and not near_open(price, oprice)
             ok_now = ev >= thr and not longshot_gone
-            vd = "BET" if ok_now else "PASS"
+            if ok_now: continue
             team = gi["H"] if r.side == "home" else (gi["Aw"] if r.side == "away" else str(r.side).upper())
             what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
                     (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{str(r.side).upper()} {lnum:g} ({fmt_price(price)})"))
-            why = (f"EV now {ev:+.1%} at {fmt_price(price)}, " + ("still meets" if ok_now else "below") + f" the {thr:.0%} bar"
+            why = (f"EV now {ev:+.1%} at {fmt_price(price)}, below the {thr:.0%} bar"
                    + (" (opening-price-only long shot and the price has moved)" if longshot_gone else ""))
-            body = (f"{vd}: {why}.\nNo bet logged yet for the alert at {pd.Timestamp(t_last):%-I:%M %p} (price then {fmt_price(r.price)}, "
-                    f"EV {float(r.ev):+.1%}). [{SHORT.get(m_best, m_best)}] win chance {p:.1%}.\nGoalies: {gi['goalies']}."
-                    + (" Both confirmed." if gi["conf"] else " Not both confirmed yet."))
-            notify(f"[{vd}] REMINDER - {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body,
-                   priority="default" if vd == "BET" else "low", tags="alarm_clock")
+            body = (f"DON'T BET: {why}.\nThe bet alert at {pd.Timestamp(t_last):%-I:%M %p} was at {fmt_price(r.price)} "
+                    f"(EV {float(r.ev):+.1%}); no bet is logged for it. [{SHORT.get(m_best, m_best)}] win chance now {p:.1%}.\n"
+                    f"Goalies: {gi['goalies']}." + (" Both confirmed." if gi["conf"] else " Not both confirmed yet.")
+                    + " If you did bet it, log it and ignore this.")
+            notify(f"DON'T BET - {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body, priority="high", tags="no_entry", kind="stop")
             A2.loc[rows.index, "reminded_at_et"] = str(NOW)[:16]; n_rem += 1
-            print("REMINDER:", what, vd, why)
+            print("DON'T BET:", what, why)
     if new or n_rem:
         A2.to_csv(apath, index=False)
     # ---- line jumps: fast moves, logged for research and alerted when large
