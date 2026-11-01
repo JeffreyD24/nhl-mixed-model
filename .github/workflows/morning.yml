@@ -31,6 +31,8 @@ jobs:
         run: python tracker.py . --tomorrow
       - name: Grade Polymarket paper trades
         run: python polymarket.py . --grade || echo "Polymarket grading failed; it will try again tomorrow."
+      - name: Shift charts for the last two days of games
+        run: python shifts.py . || echo "Shift charts failed; they will be retried tomorrow."
       - name: Save results
         run: |
           git config user.name "nhl-tracker-bot"

@@ -1,0 +1,29 @@
+name: Live in-game lines
+
+on:
+  schedule:
+    - cron: "*/30 16-23 * * *"   # noon to 7 PM ET (weekend and holiday afternoon games)
+    - cron: "*/30 0-6 * * *"     # 7 PM to 2 AM ET (night games, West Coast late games)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-lines
+  cancel-in-progress: false
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install tools
+        run: pip install -q pandas numpy
+      - name: Record live lines every minute while games are on
+        run: ./live_loop.sh

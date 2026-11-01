@@ -120,3 +120,18 @@ day. `REPORT.md`: the paper-trading scorecard.
 per $1 spent), `close_mid` and `clv` (cents).
 
 `state/poly_last.json` remembers the last price seen per contract so unchanged prices aren't written again.
+
+### `research/live/YYYY-MM-DD/`: in-game lines and game state, every minute while a game is on (since Nov 1, 2026)
+Written by `live.py` (run by `live_loop.sh`, workflow "Live in-game lines"). Rows only when something changed.
+- `situation.csv`: `seen_at_et, espn_event_id, date, away, home, state, detail, period, clock, away_score, home_score,
+  away_saves, home_saves, last_play_type, last_play` (ESPN).
+- `espn_odds.csv`: ESPN's odds feeds in-game (`home_pl, home_pl_odds, away_pl_odds, total, over_odds, under_odds, home_ml, away_ml`).
+- `books.csv`: Action Network, every book (`book`), `period` (event = full game, firstperiod, secondperiod, thirdperiod),
+  `market` (moneyline, spread = puck line, total, team_total), `side`, `value`, `odds`, `is_live` (True = in-game price), `line_status`.
+
+### `research/shifts/YYYY-MM-DD.csv`: every shift of every player (since Nov 1, 2026; season backfilled)
+`date, nhl_game_id, away, home, team, player_id, player, period, shift_number, start, end, start_sec, end_sec, duration_sec,
+type_code, event, event_detail`. From the NHL's shift charts, downloaded by the morning run for the last two days of games
+(`shifts.py`). `type_code` 517 = a shift; 505 rows are goals the NHL lists with the shifts (`event`, `event_detail`).
+Use it for who was on the ice when, ice time by period and score, line combinations, and how coaches deploy players
+in blowouts, back-to-backs and late in close games (the NBA's `research/minutes/` is the same idea).
