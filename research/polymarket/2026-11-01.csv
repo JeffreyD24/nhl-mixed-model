@@ -1,0 +1,5 @@
+seen_at_et,game_id,date,away,home,market,line_home,long_side,slug,bid,ask,bid_depth,ask_depth,mid_home_or_over,last,shares_traded,open_interest,line_source
+2026-11-01 14:45,401892625,2026-11-01,min,wsh,moneyline,,away,aec-nhl-min-was-2026-11-01,0.51,0.52,42.0,41.0,0.485,0.51,16486.87,14094.97,team
+2026-11-01 14:45,401892626,2026-11-01,uta,phi,moneyline,,away,aec-nhl-uta-phi-2026-11-01,0.61,0.62,51.0,36.0,0.385,0.61,53768.09,52765.79,team
+2026-11-01 14:45,401892627,2026-11-01,edm,nyr,moneyline,,away,aec-nhl-edm-nyr-2026-11-01,0.45,0.46,45.0,53.0,0.545,0.45,87907.32,86389.99,team
+2026-11-01 14:45,401892628,2026-11-01,ott,ana,moneyline,,away,aec-nhl-ott-ana-2026-11-01,0.53,0.54,49.0,42.0,0.465,0.54,33403.57,32642.75,team

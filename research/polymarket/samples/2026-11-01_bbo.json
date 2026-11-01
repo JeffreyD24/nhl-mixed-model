@@ -1,0 +1,48 @@
+{
+ "marketData": {
+  "marketSlug": "aec-nhl-cgy-sj-2026-11-02",
+  "currentPx": {
+   "value": "0.4450",
+   "currency": "USD"
+  },
+  "lastTradePx": {
+   "value": "0.4500",
+   "currency": "USD"
+  },
+  "settlementPx": null,
+  "sharesTraded": "954.7000",
+  "openInterest": "304.3900",
+  "bestAsk": {
+   "value": "0.4500",
+   "currency": "USD"
+  },
+  "bestBid": {
+   "value": "0.4400",
+   "currency": "USD"
+  },
+  "askDepth": 20,
+  "bidDepth": 15,
+  "lastPriceSample": {
+   "longPx": {
+    "value": "0.4500",
+    "currency": "USD"
+   },
+   "shortPx": {
+    "value": "0.55",
+    "currency": "USD"
+   },
+   "ts": "2026-11-01T19:42:53.738391513Z"
+  },
+  "longQuote": {
+   "value": "0.4500",
+   "currency": "USD"
+  },
+  "shortQuote": {
+   "value": "0.56",
+   "currency": "USD"
+  },
+  "state": "MARKET_STATE_OPEN",
+  "bidShares": "73000",
+  "askShares": "83000"
+ }
+}
