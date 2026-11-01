@@ -160,6 +160,15 @@ starting goalies** (`research/goalies.csv`), and the model's number whenever it 
 - `data/`: training games with features and lines, last season's box scores, historical lines.
 - `state/`: everything the runs build up (`picks_log.csv`, `alerts.csv`, `my_bets.csv`, `box_2026_27.csv`, `model_YYYY-MM-DD.json`).
 
+## Opening-price bets only (since Nov 1, 2026)
+
+- Bet alerts go out only while the price is at (or within 1.5 win-% points of) its opening number, and each one says
+  **"Bet only at X or better"**: if DraftKings already shows a shorter price, skip it. The backtests made money only at
+  opening prices and lost at closing prices every season.
+- Once the price has moved, alerts are **INFO ONLY** (low priority, no DraftKings button, no reminder): don't bet them.
+- The goalie caution no longer applies to opening-price alerts. Backtest openers (2024-25 and 2025-26, goals model) made
+  +3.7% when the expected goalie started and +3.2% when someone else did, so waiting for confirmation adds nothing.
+
 ## How to read the results, and what to expect
 
 - **The honest test** is the scorecard on the **Summary** sheet. Hockey prices swing more per bet than -110 spreads, so

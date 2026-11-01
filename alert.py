@@ -21,6 +21,7 @@ import espn                                              # noqa: E402
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
 THRESHOLD_MOVED = 0.09              # needed once the price has moved more than that: in the backtests the edge mostly disappears
 REMIND_AFTER_MIN = 30              # reminder if an alert's bet still isn't logged this many minutes later (once, before puck drop)
+MOVED_SKIP = "price moved off the opening number (info only)"
 NEAR_OPEN = 0.015                   #   as prices move toward the close (shot model +9% ROI at open, +2% halfway, -2% at close)
 OPEN_ONLY_LONGSHOTS = {"goals": 150}  # model -> bets priced at this or longer (+150) are alerted ONLY at/near the opening price
                                      #   (within NEAR_OPEN), labeled "OPENING PRICE ONLY" with the shortest price still worth taking.
@@ -200,7 +201,7 @@ def main():
 
     def caution_before(gid, market, names):
         """the latest caution alert sent earlier for this game, market and any of these models"""
-        c = A[(A.game_id == gid) & (A.market == market) & A.skipped.notna() & A.model.isin(names)] if len(A) else A.iloc[:0]
+        c = A[(A.game_id == gid) & (A.market == market) & A.skipped.notna() & (A.skipped != MOVED_SKIP) & A.model.isin(names)] if len(A) else A.iloc[:0]
         return c.iloc[-1] if len(c) else None
 
     def record(name, caution):
@@ -354,8 +355,11 @@ def main():
                     team = H if side == "home" else (Aw if side == "away" else side.upper())
                     against = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) != (side == "home"))
                     toward = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) == (side == "home"))
+                    # Since Nov 1, 2026: only opening-price bets are real bets (the backtests made money only there). The goalie
+                    # caution no longer applies to them (backtest openers: +3.7% when the expected goalie started, +3.2% when not).
+                    at_open = near_open(price, oprice)
                     skip = None
-                    if not (gh_conf and ga_conf): skip = "starting goalies not both confirmed yet"
+                    if not at_open: skip = MOVED_SKIP
                     elif against: skip = f"the moneyline moved {abs(move):.1f} win-% points against this side since open"
                     pending = [(n, bt) for n, bt in members if (g["game_id"], mk, n) not in (skipped if skip else done)]
                     if not pending: continue
@@ -395,7 +399,14 @@ def main():
                         dk = DK_NHL  # so the button opens DraftKings' NHL page instead and the body says to find the bet
                         body += "\nNo one-tap DraftKings link yet (line is brand new); the button opens DraftKings' NHL page."
                     recs = "; ".join(f"{SHORT.get(n, n)} {record(n, bool(skip))}" for n, _ in pending)
-                    if skip:
+                    if at_open and not pd.isna(oprice):
+                        floor = min(open_only_floor(bt[3], oprice) for _, bt in pending)
+                        body = f"Bet only at {fmt_price(floor)} or better. If DraftKings shows a shorter price, skip it.\n" + body
+                    if skip == MOVED_SKIP:
+                        body = ("INFO ONLY, DON'T BET: the price has moved off its opening number "
+                                f"({fmt_price(oprice)} at open). In the backtests the model loses at moved prices.\n" + body + tail + hist_txt)
+                        sent = notify("INFO ONLY - " + title.replace("] Bet ", "] "), body, priority="low", tags="information_source,ice_hockey")
+                    elif skip:
                         body += f"\nCAUTION: {skip}. The model may be missing news here; bet with caution." + tail + \
                                 f"\nCaution alerts so far: {recs}." + hist_txt + news_for(g)
                         same, other = bets_note(M["date"], g["home"], g["away"], mk, (team if mk != "total" else side))
@@ -411,7 +422,8 @@ def main():
                         cb = caution_before(g["game_id"], mk, [n for n, _ in pending])
                         if cb is not None:      # a caution went out earlier: say why this one follows it
                             reason = str(cb.skipped)
-                            cleared = ("both starting goalies are now confirmed" if "goalies" in reason else
+                            cleared = ("goalie cautions no longer apply to opening-price bets" if "goalies" in reason and not (gh_conf and ga_conf) else
+                                       "both starting goalies are now confirmed" if "goalies" in reason else
                                        "the moneyline is no longer moving against this side" if "against" in reason else
                                        "the caution no longer applies")
                             why = (f"UPDATE to the CAUTION alert at {pd.Timestamp(cb.alerted_at_et):%-I:%M %p}: {cleared}. "
@@ -428,7 +440,7 @@ def main():
                         new.append(dict(alerted_at_et=str(NOW), model=n, both_models=len(pending) > 1, game_id=g["game_id"], date=M["date"],
                                         home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,
                                         open_price=oprice, model_prob=round(bt[3], 4), ev=round(bt[4], 4), goalies=goalies_txt, sent=sent, skipped=skip,
-                                        open_only=is_open_only(n, price), remind_ok=True))
+                                        open_only=is_open_only(n, price), remind_ok=skip != MOVED_SKIP))
                         (skipped if skip else done).add((g["game_id"], mk, n))
                     print(("CAUTION " if skip else "") + "ALERT:", title, "|", skip or "")
     # ---- reminders: an alert's bet still not logged REMIND_AFTER_MIN later (every placed bet gets logged). Ported from the NBA tracker.
