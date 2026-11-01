@@ -60,13 +60,17 @@ def log_link(date, away, home, market, pick, line, odds):
     return f"https://github.com/{repo}/issues/new?" + urllib.parse.urlencode(q)
 
 
+DK_NHL = "https://sportsbook.draftkings.com/leagues/hockey/nhl"
+
+
 def notify(title, body, priority="high", tags="ice_hockey", link=None, dk=None):
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
         print("NTFY_TOPIC not set; would have sent:", title, "|", body); return False
     req = urllib.request.Request(f"https://ntfy.sh/{topic}", data=body.encode("utf-8"), method="POST",
                                  headers={"Title": title.encode("ascii", "ignore").decode(), "Priority": priority, "Tags": tags,
-                                          **({"Actions": "; ".join(a for a in (f"view, Bet on DraftKings, {dk}" if dk else "",
+                                          **({"Actions": "; ".join(a for a in ((f"view, Bet on DraftKings, {dk}" if "outcomes=" in dk
+                                                                                else f"view, Open DraftKings NHL, {dk}") if dk else "",
                                                                                f"view, Log this bet, {link}" if link else "") if a)}
                                              if (link or dk) else {})})
     urllib.request.urlopen(req, timeout=20)
@@ -387,6 +391,9 @@ def main():
                                     "" if mk == "moneyline" else f"{lnum:+g}" if mk == "puck line" else f"{lnum:g}", f"{price:+.0f}")
                     dkcol = {"moneyline": f"dk_link_{side}_ml", "puck line": f"dk_link_{side}_pl", "total": f"dk_link_{side}"}[mk]
                     dk = ln.get(dkcol) if isinstance(ln.get(dkcol), str) else None
+                    if not dk:   # brand-new line (taken from Action Network before ESPN has it): no bet-slip link yet,
+                        dk = DK_NHL  # so the button opens DraftKings' NHL page instead and the body says to find the bet
+                        body += "\nNo one-tap DraftKings link yet (line is brand new); the button opens DraftKings' NHL page."
                     recs = "; ".join(f"{SHORT.get(n, n)} {record(n, bool(skip))}" for n, _ in pending)
                     if skip:
                         body += f"\nCAUTION: {skip}. The model may be missing news here; bet with caution." + tail + \
