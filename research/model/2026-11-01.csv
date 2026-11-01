@@ -27,3 +27,7 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-10-31 17:26,goals,401892627,2026-11-01,edm,nyr,0.4657,3.146,3.321,6.63,Matt Tomkins (confirmed),Dylan Garand (expected),"EDM: Howard?, Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
 2026-10-31 17:29,xg,401892627,2026-11-01,edm,nyr,0.4733,3.091,3.156,6.41,Matt Tomkins (confirmed),Dylan Garand (expected),"EDM: Howard, Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
 2026-10-31 17:29,goals,401892627,2026-11-01,edm,nyr,0.4657,3.146,3.321,6.63,Matt Tomkins (confirmed),Dylan Garand (expected),"EDM: Howard, Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
+2026-10-31 23:13,xg,401892627,2026-11-01,edm,nyr,0.5145,3.221,3.027,6.41,Matt Tomkins (confirmed),Dylan Garand (expected),"EDM: Howard, Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
+2026-10-31 23:13,goals,401892627,2026-11-01,edm,nyr,0.5137,3.269,3.127,6.56,Matt Tomkins (confirmed),Dylan Garand (expected),"EDM: Howard, Hyman, Walman | NYR: Dowling, Tolvanen?, Durzi?, Schneider?"
+2026-10-31 23:13,xg,401892628,2026-11-01,ott,ana,0.5113,3.358,3.179,6.7,Jonas Johansson (expected),Laurent Brossoit (confirmed),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky | ANA: Nesterenko, Helleson"
+2026-10-31 23:13,goals,401892628,2026-11-01,ott,ana,0.5373,3.457,3.153,6.77,Jonas Johansson (expected),Laurent Brossoit (confirmed),"OTT: Foegele, Hodgson, Yakemchuk, Burakovsky | ANA: Nesterenko, Helleson"
