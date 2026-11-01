@@ -60,3 +60,11 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-10-31 15:54,401892618,2026-10-31,away,buf,4233889,Ukko-Pekka Luukkonen,Confirmed
 2026-10-31 17:26,401892627,2026-11-01,away,edm,3069614,Matt Tomkins,Confirmed
 2026-10-31 18:55,401892621,2026-10-31,home,van,4894703,Leevi Merilainen,Confirmed
+2026-11-01 09:44,401892629,2026-11-02,home,bos,4712036,Jeremy Swayman,Expected
+2026-11-01 09:44,401892629,2026-11-02,away,vgk,4064582,Carter Hart,Expected
+2026-11-01 09:44,401892630,2026-11-02,home,fla,4587845,Akira Schmid,Expected
+2026-11-01 09:44,401892630,2026-11-02,away,det,2590824,John Gibson,Expected
+2026-11-01 09:44,401892631,2026-11-02,home,chi,4565234,Spencer Knight,Expected
+2026-11-01 09:44,401892631,2026-11-02,away,col,3904177,Mackenzie Blackwood,Expected
+2026-11-01 09:44,401892632,2026-11-02,home,sj,4697394,Yaroslav Askarov,Expected
+2026-11-01 09:44,401892632,2026-11-02,away,cgy,4587952,Dustin Wolf,Expected

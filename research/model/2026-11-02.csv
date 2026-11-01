@@ -1,0 +1,9 @@
+seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_total,away_goalie,home_goalie,missing
+2026-11-01 09:44,xg,401892629,2026-11-02,vgk,bos,0.4754,3.008,3.059,6.23,Carter Hart (expected),Jeremy Swayman (expected),"VGK: Lavoie, Coghlan | BOS: Poitras, Brunet"
+2026-11-01 09:44,goals,401892629,2026-11-02,vgk,bos,0.5644,3.242,2.779,6.18,Carter Hart (expected),Jeremy Swayman (expected),"VGK: Lavoie, Coghlan | BOS: Poitras, Brunet"
+2026-11-01 09:44,xg,401892630,2026-11-02,det,fla,0.5964,3.365,2.665,6.19,John Gibson (expected),Akira Schmid (expected),DET: Larkin | FLA: -
+2026-11-01 09:44,goals,401892630,2026-11-02,det,fla,0.5602,3.184,2.751,6.1,John Gibson (expected),Akira Schmid (expected),DET: Larkin | FLA: -
+2026-11-01 09:44,xg,401892631,2026-11-02,col,chi,0.3263,2.666,3.701,6.52,Mackenzie Blackwood (expected),Spencer Knight (expected),"COL: Manson, O'Connor? | CHI: Teravainen, Korchinski"
+2026-11-01 09:44,goals,401892631,2026-11-02,col,chi,0.3611,2.729,3.607,6.49,Mackenzie Blackwood (expected),Spencer Knight (expected),"COL: Manson, O'Connor? | CHI: Teravainen, Korchinski"
+2026-11-01 09:44,xg,401892632,2026-11-02,cgy,sj,0.4756,3.177,3.227,6.56,Dustin Wolf (expected),Yaroslav Askarov (expected),CGY: Othmann? | SJ: Gaudette
+2026-11-01 09:44,goals,401892632,2026-11-02,cgy,sj,0.5374,3.221,2.928,6.31,Dustin Wolf (expected),Yaroslav Askarov (expected),CGY: Othmann? | SJ: Gaudette
