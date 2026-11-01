@@ -45,3 +45,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-01 10:55,goals,401892627,2026-11-01,edm,nyr,0.5033,3.221,3.147,6.53,Matt Tomkins (confirmed),Dylan Garand (expected),"EDM: Howard, Hyman, Walman | NYR: Dowling, Durzi?, Schneider?"
 2026-11-01 10:58,xg,401892627,2026-11-01,edm,nyr,0.5076,3.185,3.03,6.38,Matt Tomkins (confirmed),Dylan Garand (confirmed),"EDM: Howard, Hyman, Walman | NYR: Dowling, Durzi?, Schneider?"
 2026-11-01 10:58,goals,401892627,2026-11-01,edm,nyr,0.5033,3.221,3.147,6.53,Matt Tomkins (confirmed),Dylan Garand (confirmed),"EDM: Howard, Hyman, Walman | NYR: Dowling, Durzi?, Schneider?"
+2026-11-01 11:25,xg,401892624,2026-11-01,wpg,car,0.7461,3.972,2.29,6.39,Stuart Skinner (expected),Pyotr Kochetkov (confirmed),WPG: Lambert | CAR: -
+2026-11-01 11:25,goals,401892624,2026-11-01,wpg,car,0.6453,3.345,2.366,5.87,Stuart Skinner (expected),Pyotr Kochetkov (confirmed),WPG: Lambert | CAR: -

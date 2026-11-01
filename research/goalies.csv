@@ -69,3 +69,4 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-11-01 09:44,401892632,2026-11-02,home,sj,4697394,Yaroslav Askarov,Expected
 2026-11-01 09:44,401892632,2026-11-02,away,cgy,4587952,Dustin Wolf,Expected
 2026-11-01 10:58,401892627,2026-11-01,home,nyr,4697705,Dylan Garand,Confirmed
+2026-11-01 11:25,401892624,2026-11-01,home,car,4565259,Pyotr Kochetkov,Confirmed
