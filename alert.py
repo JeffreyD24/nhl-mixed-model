@@ -68,7 +68,7 @@ DK_NHL = "https://sportsbook.draftkings.com/leagues/hockey/nhl"
 def notify(title, body, priority="high", tags="ice_hockey", link=None, dk=None, kind="info"):
     """kind: 'bet', 'stop' (DON'T BET follow-up), 'test', or 'info' (not pushed while BET_ONLY)"""
     if BET_ONLY and kind not in ("bet", "stop", "test"):
-        print("Logged only (not pushed):", title); return False
+        print("Logged only (not pushed):", title); return "quiet"     # kept in alerts.csv, not retried
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
         print("NTFY_TOPIC not set; would have sent:", title, "|", body); return False
@@ -170,7 +170,7 @@ def main():
     if "model" not in A: A["model"] = "goals"                 # alerts from before both models ran
     A["model"] = A.model.fillna("goals")
     if len(A) and "sent" in A:          # an alert that couldn't be delivered (e.g. no ntfy topic yet) is tried again next check
-        A = A[A.sent.astype(str) == "True"].reset_index(drop=True)
+        A = A[A.sent.astype(str).isin(["True", "quiet"])].reset_index(drop=True)
     done = set(zip(A[A.skipped.isna()].game_id, A[A.skipped.isna()].market, A[A.skipped.isna()].model)) if len(A) else set()
     skipped = set(zip(A[A.skipped.notna()].game_id, A[A.skipped.notna()].market, A[A.skipped.notna()].model)) if len(A) else set()
     bpath = os.path.join(STATE, "my_bets.csv")
@@ -367,6 +367,23 @@ def main():
                     elif against: skip = f"the moneyline moved {abs(move):.1f} win-% points against this side since open"
                     pending = [(n, bt) for n, bt in members if (g["game_id"], mk, n) not in (skipped if skip else done)]
                     if not pending: continue
+                    # never both sides: the two models backing different teams in this game (moneyline or puck line), or
+                    # a logged bet on the other team, means no bet (Nov 1, 2026: UTA ML and PHI ML were both alerted)
+                    conflict = None
+                    TEAM_MK = ("moneyline", "puck line")
+                    if mk in TEAM_MK:
+                        opp = "away" if side == "home" else "home"; mine = {n for n, _ in pending}
+                        for (gid2, mk2, s2, n2), v in NOWC.items():
+                            if gid2 == g["game_id"] and mk2 in TEAM_MK and s2 == opp and v[3] >= threshold_for(v[1], v[4]):
+                                conflict = (f"the models disagree: the {SHORT.get(n2, n2)} likes {g[opp].upper()} "
+                                            f"({mk2}, EV {v[3]:+.1%}){' too' if n2 in mine else ''}")
+                                break
+                        if len(MYB):
+                            mb = MYB[(MYB.date.astype(str) == str(M["date"])) & (MYB.home.astype(str).str.lower() == g["home"]) &
+                                     (MYB.away.astype(str).str.lower() == g["away"]) & MYB.market.isin(TEAM_MK) &
+                                     (MYB.pick.astype(str).str.lower() == g[opp])]
+                            if len(mb): conflict = f"you already bet {g[opp].upper()} on this game ({mb.market.iloc[-1]})"
+                    if conflict and not skip and all((g["game_id"], mk, n) in skipped for n, _ in pending): continue   # logged already
                     tag = "Both models" if len(pending) > 1 else SHORT.get(pending[0][0], pending[0][0])
                     what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
                             (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{side.upper()} {lnum:g} ({fmt_price(price)})"))
@@ -439,13 +456,19 @@ def main():
                             title = "ALREADY BET - " + title; prio = "default"
                         if other: body += f"\nYour other bets on this game: {other}."
                         if "OTHER SIDE" in other: title = "YOU BET THE OTHER SIDE - " + title
-                        sent = notify(title, why + body, priority=prio, link=link, dk=dk, kind="bet")
+                        if conflict:      # logged, not pushed: betting both teams pays the vig twice
+                            title = "NO BET (both sides) - " + title
+                            body = f"NO BET: {conflict}.\n" + why + body
+                            sent = notify(title, body, priority="low", link=link, dk=dk, kind="info")
+                        else:
+                            sent = notify(title, why + body, priority=prio, link=link, dk=dk, kind="bet")
                     for n, bt in pending:
                         new.append(dict(alerted_at_et=str(NOW), model=n, both_models=len(pending) > 1, game_id=g["game_id"], date=M["date"],
                                         home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,
-                                        open_price=oprice, model_prob=round(bt[3], 4), ev=round(bt[4], 4), goalies=goalies_txt, sent=sent, skipped=skip,
-                                        open_only=is_open_only(n, price), remind_ok=skip != MOVED_SKIP))
-                        (skipped if skip else done).add((g["game_id"], mk, n))
+                                        open_price=oprice, model_prob=round(bt[3], 4), ev=round(bt[4], 4), goalies=goalies_txt, sent=sent,
+                                        skipped=skip or (conflict if not skip else None),
+                                        open_only=is_open_only(n, price), remind_ok=skip != MOVED_SKIP and not conflict))
+                        (skipped if (skip or conflict) else done).add((g["game_id"], mk, n))
                     print(("CAUTION " if skip else "") + "ALERT:", title, "|", skip or "")
     # ---- DON'T BET follow-up: a pushed bet alert, still not logged, that no longer meets the bar before puck drop
     A2 = pd.concat([A, pd.DataFrame(new)], ignore_index=True) if new else A.copy()

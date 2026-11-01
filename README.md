@@ -225,3 +225,7 @@ Settings at the top of `polymarket.py`: `THRESHOLD`, `PAPER_MARKETS`, `TAKER_FEE
 follow-ups (a bet alert you haven't logged whose EV fell below the bar before puck drop, or an opening-price-only long shot
 whose price moved). Cautions, INFO ONLY, market-agrees and line-jump alerts are still logged in their files, just not pushed.
 The 30-minute reminder was replaced by DON'T BET.
+- **Never both sides (since Nov 1, 2026).** When the shot model and the goals model back different teams in the same game
+  (moneyline or puck line, at the bet bar), or you already logged a bet on the other team, the alert is logged as
+  **NO BET (both sides)** and not pushed. On Oct 31 both models alerted on UTA @ PHI from opposite sides (UTA ML -155 from the
+  shot model, PHI ML +130 from the goals model), and both got bet. Bets on both teams pay the vig twice.
