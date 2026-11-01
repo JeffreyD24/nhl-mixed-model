@@ -57,3 +57,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-01 15:49,goals,401892626,2026-11-01,uta,phi,0.4632,2.848,3.036,6.05,Karel Vejmelka (expected),Dan Vladar (confirmed),"UTA: Yamamoto, DeSimone | PHI: -"
 2026-11-01 15:55,xg,401892626,2026-11-01,uta,phi,0.3664,2.672,3.372,6.2,Karel Vejmelka (confirmed),Dan Vladar (confirmed),"UTA: Yamamoto, DeSimone | PHI: -"
 2026-11-01 15:55,goals,401892626,2026-11-01,uta,phi,0.4632,2.848,3.036,6.05,Karel Vejmelka (confirmed),Dan Vladar (confirmed),"UTA: Yamamoto, DeSimone | PHI: -"
+2026-11-01 17:52,xg,401892627,2026-11-01,edm,nyr,0.5054,3.171,3.03,6.37,Matt Tomkins (confirmed),Dylan Garand (confirmed),"EDM: Howard, Hyman, Walman | NYR: Dowling, Durzi"
+2026-11-01 17:52,goals,401892627,2026-11-01,edm,nyr,0.5016,3.209,3.147,6.52,Matt Tomkins (confirmed),Dylan Garand (confirmed),"EDM: Howard, Hyman, Walman | NYR: Dowling, Durzi"
