@@ -1,8 +1,8 @@
 logged_at_et,issue,date,away,home,market,pick,line,odds,stake,book,notes,result,profit,model_prob,model_ev_at_your_price,clv
 2026-10-30 20:10:45,1.0,2026-10-30,sea,cgy,moneyline,sea,0.0,-115.0,1.0,DraftKings,,L,-1.0,0.5062,-0.0536,-0.045
-2026-10-31 10:52:15,2.0,2026-10-31,cgy,col,moneyline,cgy,0.0,330.0,1.0,DraftKings,odds corrected from +320 to DK slip price,,,0.3063,0.3173,
+2026-10-31 10:52:15,2.0,2026-10-31,cgy,col,moneyline,cgy,0.0,330.0,1.0,DraftKings,odds corrected from +320 to DK slip price,L,-1.0,0.3063,0.3173,0.0441
 2026-10-31 11:14:09,4.0,2026-11-01,min,wsh,moneyline,min,0.0,-108.0,1.0,,,,,0.5752,0.1077,
-2026-10-31 11:17:21,5.0,2026-10-31,cgy,col,puck line,cgy,1.5,140.0,1.0,DraftKings,,,,0.5169,0.2406,
+2026-10-31 11:17:21,5.0,2026-10-31,cgy,col,puck line,cgy,1.5,140.0,1.0,DraftKings,,L,-1.0,0.5169,0.2406,-0.0391
 2026-10-31 11:17:57,6.0,2026-10-31,buf,la,moneyline,la,0.0,110.0,1.0,DraftKings,,L,-1.0,0.5315,0.1162,-0.058
 2026-10-31 11:18:20,7.0,2026-10-31,edm,nyi,moneyline,edm,0.0,-115.0,1.0,DraftKings,,W,0.87,0.5142,-0.0387,-0.0652
 2026-10-31 11:18:43,8.0,2026-11-01,wpg,car,moneyline,wpg,0.0,220.0,1.0,DraftKings,,,,0.2655,-0.1505,
