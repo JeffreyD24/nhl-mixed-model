@@ -1,0 +1,14 @@
+seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,home_score,away_saves,home_saves,last_play_type,last_play
+2026-11-01 18:29:33,401892626,2026-11-01,uta,phi,in,4:00 - 3rd,3,4:00,2.0,5.0,15.0,18.0,Goal,"Mikhail Sergachev Goal (5) Slap Shot, assists: Nick Schmaltz (8), Clayton Keller (13)"
+2026-11-01 18:29:33,401892627,2026-11-01,edm,nyr,in,7:35 - 1st,1,7:35,2.0,0.0,5.0,4.0,Penalty Shot Infraction,Kasperi Kapanen Minor
+2026-11-01 18:30:05,401892626,2026-11-01,uta,phi,in,3:52 - 3rd,3,3:52,2.0,5.0,15.0,18.0,Goal,"Mikhail Sergachev Goal (5) Slap Shot, assists: Nick Schmaltz (8), Clayton Keller (13)"
+2026-11-01 18:30:05,401892627,2026-11-01,edm,nyr,in,7:35 - 1st,1,7:35,2.0,0.0,5.0,4.0,Stoppage,TV Timeout
+2026-11-01 18:31:05,401892626,2026-11-01,uta,phi,in,3:34 - 3rd,3,3:34,2.0,5.0,15.0,18.0,Penalty Shot Infraction,Noah Cates Minor
+2026-11-01 18:32:05,401892626,2026-11-01,uta,phi,in,2:53 - 3rd,3,2:53,3.0,5.0,15.0,18.0,Goal,"Logan Cooley Goal (8) Wrist Shot, assists: Nick Schmaltz (9), Clayton Keller (14)"
+2026-11-01 18:32:05,401892627,2026-11-01,edm,nyr,in,7:16 - 1st,1,7:16,2.0,0.0,5.0,4.0,Face Off,Owen Michaels faceoff won against J.T. Miller
+2026-11-01 18:33:06,401892626,2026-11-01,uta,phi,in,2:44 - 3rd,3,2:44,3.0,5.0,15.0,19.0,Face Off,Christian Dvorak faceoff won against Kevin Stenlund
+2026-11-01 18:33:06,401892627,2026-11-01,edm,nyr,in,6:14 - 1st,1,6:14,2.0,0.0,5.0,4.0,Giveaway,Giveaway by J.T. Miller
+2026-11-01 18:34:05,401892626,2026-11-01,uta,phi,in,2:17 - 3rd,3,2:17,3.0,5.0,15.0,19.0,Face Off,Christian Dvorak faceoff won against Vincent Trocheck
+2026-11-01 18:34:05,401892627,2026-11-01,edm,nyr,in,6:11 - 1st,1,6:11,2.0,0.0,5.0,4.0,Tripping,Will Cuylle Tripping against Owen Michaels
+2026-11-01 18:35:05,401892626,2026-11-01,uta,phi,in,1:34 - 3rd,3,1:34,3.0,6.0,15.0,19.0,Goal,"Cole Knuble Goal (3) Wrist Shot, assists: Noel Acciari (1), Jamie Drysdale (5)"
+2026-11-01 18:35:05,401892627,2026-11-01,edm,nyr,in,5:00 - 1st,1,5:00,2.0,0.0,5.0,4.0,Face Off,Mika Zibanejad faceoff won against Jason Dickinson
