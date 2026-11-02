@@ -176,3 +176,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 21:50:05,401892628,2026-11-01,ott,ana,in,End of 2nd,2,0:00,3.0,3.0,17.0,13.0,Period End,End of 2nd Period
 2026-11-01 22:04:05,401892628,2026-11-01,ott,ana,in,End of 2nd,2,0:00,3.0,3.0,18.0,13.0,Period End,End of 2nd Period
 2026-11-01 22:06:05,401892628,2026-11-01,ott,ana,in,End of 2nd,2,0:00,3.0,3.0,19.0,13.0,Period End,End of 2nd Period
+2026-11-01 22:08:05,401892628,2026-11-01,ott,ana,in,20:00 - 3rd,3,20:00,3.0,3.0,19.0,13.0,Period Start,Start of 3rd Period
+2026-11-01 22:09:05,401892628,2026-11-01,ott,ana,in,19:06 - 3rd,3,19:06,3.0,3.0,19.0,13.0,Missed,Leo Carlsson Backhand Wide Left
+2026-11-01 22:10:05,401892628,2026-11-01,ott,ana,in,18:36 - 3rd,3,18:36,3.0,3.0,20.0,13.0,Face Off,Claude Giroux faceoff won against Roger McQueen
+2026-11-01 22:11:05,401892628,2026-11-01,ott,ana,in,18:16 - 3rd,3,18:16,3.0,3.0,19.0,13.0,Shot,Leo Carlsson Snap Shot saved by Jonas Johansson
+2026-11-01 22:12:05,401892628,2026-11-01,ott,ana,in,17:53 - 3rd,3,17:53,3.0,4.0,20.0,13.0,Face Off,Mikael Granlund faceoff won against Tim Stützle
+2026-11-01 22:13:05,401892628,2026-11-01,ott,ana,in,17:34 - 3rd,3,17:34,3.0,5.0,20.0,13.0,Goal,"Cutter Gauthier Goal (7) Slap Shot, assists: none"
