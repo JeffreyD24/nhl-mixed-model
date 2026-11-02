@@ -155,3 +155,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 21:29:05,401892628,2026-11-01,ott,ana,in,6:52 - 2nd,2,6:52,3.0,2.0,15.0,9.0,Face Off,Claude Giroux faceoff won against Tim Washe
 2026-11-01 21:30:05,401892628,2026-11-01,ott,ana,in,6:31 - 2nd,2,6:31,3.0,2.0,15.0,10.0,Face Off,Ridly Greig faceoff won against Tim Washe
 2026-11-01 21:31:06,401892628,2026-11-01,ott,ana,in,6:31 - 2nd,2,6:31,3.0,2.0,16.0,11.0,Shot,Fabian Zetterlund Snap Shot saved by Laurent Brossoit
+2026-11-01 21:32:05,401892628,2026-11-01,ott,ana,in,6:31 - 2nd,2,6:31,3.0,2.0,16.0,11.0,Penalty Shot Infraction,Tim Washe Minor
+2026-11-01 21:33:05,401892628,2026-11-01,ott,ana,in,5:01 - 2nd,2,5:01,3.0,2.0,16.0,11.0,Blocked,Nikita Nesterenko shot blocked by Tyler Kleven
+2026-11-01 21:34:05,401892628,2026-11-01,ott,ana,in,5:01 - 2nd,2,5:01,3.0,2.0,16.0,11.0,Shot,Claude Giroux saved by Laurent Brossoit
+2026-11-01 21:35:05,401892628,2026-11-01,ott,ana,in,4:45 - 2nd,2,4:45,3.0,2.0,16.0,12.0,Missed,Thomas Chabot Snap Shot Hit Left Post
+2026-11-01 21:36:05,401892628,2026-11-01,ott,ana,in,4:20 - 2nd,2,4:20,3.0,2.0,16.0,13.0,Stoppage,Goalie Stopped
+2026-11-01 21:37:06,401892628,2026-11-01,ott,ana,in,4:20 - 2nd,2,4:20,3.0,2.0,16.0,14.0,Stoppage,Goalie Stopped
