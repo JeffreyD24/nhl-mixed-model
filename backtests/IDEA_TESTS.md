@@ -66,3 +66,9 @@ price moves). Totals at the open: +23.9u on 889 bets but -6.5u in 2021-22; still
 - Shot model is profitable at every price band, both markets, home and away (away stronger: +164.6u vs +60.0u), every EV band.
 - Price moving our way by the close: +235.5u; no move or against: about break-even (same as the DON'T BET logic).
 - Games decided in OT/shootout: -89.1u (coin flips); not knowable before the game.
+
+## Schedule/travel adjustment on the puck line (Nov 2, 2026) — not adopted
+`dev/travel_puckline.py`. The moneyline adjustment (back-to-backs, westward travel; live since Nov 2) turned into an equal
+expected-goals shift and applied to puck line bets at DraftKings openers, EV 6%+, weights fit leaving the season out:
+current +49.4u (1,378 bets: +10.9, +31.8, -1.4, +7.2, +0.9) vs adjusted +43.4u (1,666 bets: +14.4, +32.6, -8.8, +11.4, -6.2).
+Worse overall and in 2 of 5 seasons, so the adjustment stays moneyline-only (moneyline: +159.6u vs +96.1u).
