@@ -213,6 +213,11 @@ def main():
     except Exception as e:
         FEED = None; print("Injury feed unavailable:", type(e).__name__)
     NEWS = espn.injury_news(hours=24, feed=FEED) if FEED is not None else None
+    # reporter news on Bluesky (bluesky_watch.py, since Nov 2, 2026): starting goalies and clear skater decisions
+    try: GNEWS = json.load(open(os.path.join(STATE, "goalie_news.json")))
+    except Exception: GNEWS = {}
+    try: SKNEWS = json.load(open(os.path.join(STATE, "news_overrides.json")))
+    except Exception: SKNEWS = {}
     status_of = {}
     for team, items in (FEED or {}).items():
         for pid, name, st, _, _ in items:
@@ -326,6 +331,12 @@ def main():
             def goalie(def_side, gv):
                 """(effect, label, confirmed, known) for the goalie facing the other team, using one model's goalie effects"""
                 p = pr.get(def_side)
+                rn = GNEWS.get(f"{g['game_id']}|{def_side}")
+                if rn and not (p and p[2] == "Confirmed") and (rn["level"] == "confirmed" or not p):
+                    # a reporter's starter: used until ESPN confirms one; an 'expected' one only when ESPN lists nobody
+                    conf = rn["level"] == "confirmed"
+                    return (gv.get(int(rn["goalie_id"]), 0.0), f"{rn['goalie']} ({'confirmed' if conf else 'expected'} by "
+                            f"{rn['reporter']} {pd.Timestamp(rn['posted_at_et']):%-I:%M %p})", conf, True)
                 if p:
                     pid, name, st = p
                     return gv.get(int(pid), 0.0), f"{name} ({(st or 'listed').lower()})", st == "Confirmed", True
@@ -339,6 +350,8 @@ def main():
                 for pid, (name, val, missed_last) in g[f"{side}_regulars"].items():
                     st = status_of.get(int(pid)) if FEED is not None else None
                     pm = P_MISS.get(st, 0.0) if st else (1.0 if missed_last else 0.0)
+                    rv = SKNEWS.get(f"{M['date']}|{g[side]}|{pid}")       # a reporter's clear 'out' / 'will play' for this game
+                    if rv: pm = 1.0 if rv["status"] == "Out" else 0.0
                     if pm > 0: tot += pm * val; out.append(name.split()[-1] + ("" if pm == 1 else "?"))
                 return tot, out
             _, gh_lab, gh_conf, gh_known = goalie("home", {}); _, ga_lab, ga_conf, ga_known = goalie("away", {})

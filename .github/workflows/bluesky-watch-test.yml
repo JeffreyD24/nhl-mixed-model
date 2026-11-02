@@ -1,0 +1,36 @@
+name: Test the Bluesky watcher (no alerts, no saving)
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tools
+        run: pip install -q pandas numpy
+      - name: Run the watcher twice (second run should find nothing new)
+        run: |
+          python - <<'PY'
+          import json, os, pandas as pd, urllib.request
+          # first run: pretend nothing has been seen and posts up to 3 days old are new, to exercise the parsing
+          import bluesky_watch as bw
+          bw.MAX_AGE_MIN = 3 * 24 * 60
+          import sys; sys.argv = ["bluesky_watch.py", "."]
+          print("exit code", bw.main())
+          for f in sorted(os.listdir("research/bluesky")):
+              d = pd.read_csv(os.path.join("research/bluesky", f)); print(f, len(d), "rows")
+              cols = [c for c in ("posted_at_et", "lag_min", "reporter", "players", "practice", "goalie_starts", "decisions", "text") if c in d]
+              flag = [c for c in ("practice", "goalie_starts", "decisions") if c in d]
+              print(d[d[flag].notna().any(axis=1)][cols].tail(25).to_string(max_colwidth=80))
+              print(d[d.players.notna()][cols].tail(15).to_string(max_colwidth=80))
+          for s in ("news_practice.json", "news_overrides.json", "goalie_news.json"):
+              p = os.path.join("state", s)
+              if os.path.exists(p): print(s, json.dumps(json.load(open(p)), indent=1)[:3000])
+          PY
+          python bluesky_watch.py .

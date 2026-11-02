@@ -66,6 +66,14 @@ tomorrow's games each time. `pre_game = 0` rows are in-game prices some books ke
 for pre-game work. This is the dataset for testing what a bet would have gotten at any time of day (for example, how much
 of the opening-price edge is left two hours later).
 
+### `research/bluesky/YYYY-MM-DD.csv`: reporter posts on Bluesky (since Nov 2, 2026)
+One row per new post from a watched account (`bluesky_watch.py`, every minute): `seen_at_et`, `posted_at_et`, `lag_min`,
+`handle`, `reporter`, `team` (team code, or League-wide), `relevant` (about goalies, lineups or injuries), `players` (goalies and
+regular skaters of teams playing soon), `goalie_starts` (team, goalie, confirmed / expected), `decisions` (skater + Out /
+Available), `text` (first 500 characters), `url`. The news the model used: `state/goalie_news.json` (with the model's expected
+starter and whether the reporter's goalie was a surprise) and `state/news_overrides.json`. Compare with `research/goalies.csv`
+(when ESPN listed and confirmed each starter) and `research/line_moves/`.
+
 ## state/ (tracker records that also feed the research)
 
 | file | what it holds |

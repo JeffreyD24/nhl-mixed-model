@@ -233,3 +233,28 @@ The 30-minute reminder was replaced by DON'T BET.
   prices (`backtests/disagree_bets.csv`): goals-model bets the shot model also made +76.7u on 753 (+10.2%); goals-model-only
   bets -16.6u on 1,026 (-1.6%, negative both seasons, worst at +150 and longer: -27.9u on 345). Shot model overall +111.1u on
   1,237 (+9.0%). The goals model still runs every check and is logged in `research/model/` for research.
+
+## Reporter news from Bluesky: goalies and lineups (since Nov 2, 2026)
+
+Ported from the NBA tracker, aimed at the NHL's biggest single-player effect: the starting goalie. Between the 5-minute checks,
+`bluesky_watch.py` reads new posts every minute from the 54 NHL accounts in `research/media/bluesky_watch.csv` (beat writers for
+24 teams, Daily Faceoff, AP, NHL.com, and accounts that mirror Friedman, LeBrun, Seravalli and Johnston from X; no active
+reporter was found for Calgary, Detroit, Edmonton, Florida, Los Angeles, Nashville, Utah or Washington). Free, public API.
+
+- **Every post is saved** (`research/bluesky/YYYY-MM-DD.csv`) with the time it was posted and first seen, the players it names,
+  any starting goalie it reports and any clear skater decision.
+- **Starting goalies.** A post naming one of a team's goalies with "will start", "gets the start", "in goal tonight"... is
+  saved to `state/goalie_news.json` as **confirmed** (no hedge word) or **expected** ("expected to start", "first off the ice").
+  The alert check uses a reporter-confirmed starter until ESPN confirms one (shown as "X (confirmed by [reporter] 10:42 AM)",
+  and it counts as confirmed for the goalie caution), and an expected one only when ESPN lists nobody. ESPN's own confirmation
+  always wins.
+- **Skaters.** A clear decision in one sentence with the player's name and no hedge ("out tonight", "will not play",
+  "scratched", "will play", "draws back in") is saved to `state/news_overrides.json` and used for that day's game.
+- Goalie news that is confirmed or names someone other than the model's most likely starter, and skater decisions about a
+  regular worth 0.25+, run a full check at once: if the news opens an edge, the bet alert goes out right away. The news itself
+  is logged, not pushed (phone alerts are bets only; `NEWS_PUSH` in `bluesky_watch.py`).
+- Who covers each team: `research/media/nhl_media_list.csv` (172 people, Claude's knowledge to mid-2026, not re-checked), plus
+  the one-time Bluesky check, which also read public starter packs of NHL reporters (`tools/bluesky_check.py`,
+  `research/media/bluesky_check.csv`, `bluesky_starterpacks.csv`).
+- Goal: measure how much earlier reporters name the starter than ESPN confirms him (`research/goalies.csv` records when ESPN's
+  status changes) and whether the moneyline has moved by then.
