@@ -104,3 +104,18 @@ moneyline / puck line; 849 same-team games: +67.5u on 849 units, every season po
 - "Both" games are the model's strongest opinions, mostly on favorites, and that is where it runs hot: moneyline favorites in
   those games said 68.5%, won 64.0% (+3.9%). By win chance, the model is ~3-5 points too high above 60% but still profitable
   (65-70%: +21.0u, 70-75%: +6.0u, 75%+: +11.3u).
+
+## Fixing overconfidence on strong favorites (Nov 2, 2026)
+`dev/calibration_fix.py` (output `backtests/calibration_fix_output.txt`). Moneyline, DraftKings openers 2021-26, live rules
+(back-to-back skip, schedule/travel adjustment), each fix fit leaving the test season out.
+| Version | 2021-22 | 2022-23 | 2023-24 | 2024-25 | 2025-26 | Total |
+|---|---|---|---|---|---|---|
+| current, EV 6%+ | +49.2 | +40.9 | -3.0 | +34.2 | +32.1 | +153.4u (2,221 bets, +6.9%) |
+| recalibrated (shrink extremes) | +15.9 | +49.9 | -11.4 | +12.3 | +25.1 | +91.8u |
+| shrink above 60% only | +32.4 | +43.7 | -25.2 | +18.9 | +25.2 | +95.0u |
+| **blend 55% model / 45% DK opener, EV 4%+** | +22.9 | +55.6 | +19.0 | +27.4 | +33.2 | **+158.1u (1,221 bets, +12.9%)** |
+| blend, EV 6%+ | +11.1 | +38.8 | +21.8 | +17.9 | +21.5 | +111.1u (720 bets, +15.4%) |
+| current, EV 9%+ | +20.7 | +53.6 | +13.6 | +35.1 | +28.1 | +151.1u (1,467 bets) |
+- Shrinking the model's own chances loses money (it removes good underdog bets too). Blending with the market's opener fixes
+  the favorites (blended 60%+ bets: said 68.8%, won 72.0%) and gives every season +19u or better. Fitted weight on the model
+  0.51-0.61 in every fold. The EV bar (4%) was chosen on these seasons.

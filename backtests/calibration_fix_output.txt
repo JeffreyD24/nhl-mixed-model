@@ -1,0 +1,5 @@
+  current   Brier 0.2334 |  +49.2  +40.9   -3.0  +34.2  +32.1 | 2221 bets +153.4u (+6.9%) | bets said 60%+: said 70.6% won 66.2% +53.7u
+  recal     Brier 0.2335 |  +15.9  +49.9  -11.4  +12.3  +25.1 | 2003 bets  +91.8u (+4.6%) | bets said 60%+: said 69.5% won 65.3% +32.2u
+  shrink60  Brier 0.2333 |  +32.4  +43.7  -25.2  +18.9  +25.2 | 2013 bets  +95.0u (+4.7%) | bets said 60%+: said 68.0% won 62.5% +21.6u
+  blend     Brier 0.2327 |  +11.1  +38.8  +21.8  +17.9  +21.5 | 720 bets +111.1u (+15.4%) | bets said 60%+: said 68.8% won 72.0% +32.8u
+  DK opener Brier 0.2339
