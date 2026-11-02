@@ -182,3 +182,8 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 22:11:05,401892628,2026-11-01,ott,ana,in,18:16 - 3rd,3,18:16,3.0,3.0,19.0,13.0,Shot,Leo Carlsson Snap Shot saved by Jonas Johansson
 2026-11-01 22:12:05,401892628,2026-11-01,ott,ana,in,17:53 - 3rd,3,17:53,3.0,4.0,20.0,13.0,Face Off,Mikael Granlund faceoff won against Tim Stützle
 2026-11-01 22:13:05,401892628,2026-11-01,ott,ana,in,17:34 - 3rd,3,17:34,3.0,5.0,20.0,13.0,Goal,"Cutter Gauthier Goal (7) Slap Shot, assists: none"
+2026-11-01 22:14:05,401892628,2026-11-01,ott,ana,in,17:34 - 3rd,3,17:34,3.0,5.0,20.0,13.0,Goal,"Cutter Gauthier Goal (7) Snap Shot, assists: Leo Carlsson (17), Mikael Granlund (7)"
+2026-11-01 22:16:05,401892628,2026-11-01,ott,ana,in,17:05 - 3rd,3,17:05,3.0,5.0,20.0,13.0,Face Off,Tim Washe faceoff won against Claude Giroux
+2026-11-01 22:17:05,401892628,2026-11-01,ott,ana,in,16:20 - 3rd,3,16:20,3.0,5.0,20.0,13.0,Blocked,Artem Zub shot blocked by Jackson LaCombe
+2026-11-01 22:18:05,401892628,2026-11-01,ott,ana,in,15:32 - 3rd,3,15:32,3.0,5.0,20.0,13.0,Missed,Jake Sanderson Snap Shot Hit Left Post
+2026-11-01 22:19:05,401892628,2026-11-01,ott,ana,in,15:07 - 3rd,3,15:07,3.0,5.0,20.0,14.0,Stoppage,Goalie Stopped
