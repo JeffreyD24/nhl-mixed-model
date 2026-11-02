@@ -2,36 +2,92 @@
  "active_model": "xg",
  "today": [
   {
-   "home": "bos",
-   "away": "vgk",
-   "tip": "2026-11-02 19:00:00",
-   "home_win_prob": 0.48,
-   "expected_goals": "3.04-3.08 (regulation)",
-   "expected_total": 6.29
+   "home": "tor",
+   "away": "uta",
+   "tip": "2026-11-03 19:00:00",
+   "home_win_prob": 0.401,
+   "expected_goals": "3.06-3.64 (regulation)",
+   "expected_total": 6.85
   },
   {
-   "home": "fla",
+   "home": "mtl",
+   "away": "wpg",
+   "tip": "2026-11-03 19:00:00",
+   "home_win_prob": 0.598,
+   "expected_goals": "3.49-2.75 (regulation)",
+   "expected_total": 6.4
+  },
+  {
+   "home": "tb",
    "away": "det",
-   "tip": "2026-11-02 19:00:00",
-   "home_win_prob": 0.589,
-   "expected_goals": "3.34-2.67 (regulation)",
-   "expected_total": 6.17
+   "tip": "2026-11-03 19:00:00",
+   "home_win_prob": 0.614,
+   "expected_goals": "3.54-2.69 (regulation)",
+   "expected_total": 6.38
   },
   {
-   "home": "chi",
+   "home": "nyr",
+   "away": "stl",
+   "tip": "2026-11-03 19:00:00",
+   "home_win_prob": 0.487,
+   "expected_goals": "2.97-2.97 (regulation)",
+   "expected_total": 6.11
+  },
+  {
+   "home": "phi",
+   "away": "min",
+   "tip": "2026-11-03 19:00:00",
+   "home_win_prob": 0.329,
+   "expected_goals": "2.40-3.45 (regulation)",
+   "expected_total": 6.0
+  },
+  {
+   "home": "pit",
+   "away": "vgk",
+   "tip": "2026-11-03 19:00:00",
+   "home_win_prob": 0.485,
+   "expected_goals": "3.15-3.16 (regulation)",
+   "expected_total": 6.48
+  },
+  {
+   "home": "wsh",
+   "away": "dal",
+   "tip": "2026-11-03 19:00:00",
+   "home_win_prob": 0.516,
+   "expected_goals": "3.10-2.91 (regulation)",
+   "expected_total": 6.18
+  },
+  {
+   "home": "cbj",
    "away": "col",
-   "tip": "2026-11-02 20:00:00",
-   "home_win_prob": 0.335,
-   "expected_goals": "2.69-3.73 (regulation)",
-   "expected_total": 6.57
+   "tip": "2026-11-03 19:00:00",
+   "home_win_prob": 0.404,
+   "expected_goals": "2.84-3.39 (regulation)",
+   "expected_total": 6.39
   },
   {
-   "home": "sj",
-   "away": "cgy",
-   "tip": "2026-11-02 21:00:00",
-   "home_win_prob": 0.465,
-   "expected_goals": "3.09-3.24 (regulation)",
-   "expected_total": 6.49
+   "home": "nj",
+   "away": "edm",
+   "tip": "2026-11-03 19:30:00",
+   "home_win_prob": 0.554,
+   "expected_goals": "3.34-2.89 (regulation)",
+   "expected_total": 6.38
+  },
+  {
+   "home": "nsh",
+   "away": "car",
+   "tip": "2026-11-03 20:00:00",
+   "home_win_prob": 0.307,
+   "expected_goals": "2.56-3.81 (regulation)",
+   "expected_total": 6.52
+  },
+  {
+   "home": "van",
+   "away": "ana",
+   "tip": "2026-11-03 21:00:00",
+   "home_win_prob": 0.399,
+   "expected_goals": "3.11-3.72 (regulation)",
+   "expected_total": 6.99
   }
  ],
  "models": {
@@ -105,19 +161,19 @@
   }
  },
  "log": [
-  "NHL tracker run on 2026-11-01 (ET), predicting games on 2026-11-02.",
-  "Schedule: 235 regular-season games through 2026-11-02; 230 finished, results through 2026-11-01; box scores on file for 230 games.",
-  "Shots: 230 games with shot data; expected goals computed for 230.",
-  "[goals] Locked 0 live picks for 2026-11-02 and 0 backfilled.",
-  "Lines: pulled DraftKings lines from ESPN for 9 games.",
-  "[xg] Locked 0 live picks for 2026-11-02 and 0 backfilled.",
-  "Lines: pulled DraftKings lines from ESPN for 9 games.",
-  "Line histories 2026-10-31: 0 new price changes saved.",
-  "Line histories 2026-11-01: 2246 new price changes saved.",
-  "Line histories 2026-11-02: 1442 new price changes saved.",
-  "Scorecard [goals]: 72-100 on rule bets, -28.5 units (10 live), average CLV -3.56%; alerts -4.9 units on 9; moneyline Brier 0.2388.",
-  "Scorecard [xg]: 67-78 on rule bets, -13.4 units (7 live), average CLV +0.99%; alerts -2.0 units on 2; moneyline Brier 0.2315.",
-  "Saved 2 models for intraday checks (4 games).",
+  "NHL tracker run on 2026-11-02 (ET), predicting games on 2026-11-03.",
+  "Schedule: 246 regular-season games through 2026-11-03; 231 finished, results through 2026-11-01; box scores on file for 231 games.",
+  "Shots: 231 games with shot data; expected goals computed for 231.",
+  "[goals] Locked 11 live picks for 2026-11-03 and 0 backfilled.",
+  "Lines: ESPN returned no odds.",
+  "[xg] Locked 11 live picks for 2026-11-03 and 0 backfilled.",
+  "Lines: ESPN returned no odds.",
+  "Line histories 2026-11-01: 0 new price changes saved.",
+  "Line histories 2026-11-02: 0 new price changes saved.",
+  "Line histories 2026-11-03: 318 new price changes saved.",
+  "Scorecard [goals]: 72-100 on rule bets, -28.5 units (10 live), average CLV -3.56%; alerts -5.3 units on 11; moneyline Brier 0.2389.",
+  "Scorecard [xg]: 67-78 on rule bets, -13.4 units (7 live), average CLV +0.99%; alerts -2.0 units on 2; moneyline Brier 0.2317.",
+  "Saved 2 models for intraday checks (11 games).",
   "Alerts graded so far: 3-10, -7.34 units at the alerted prices.",
   "Your logged bets: 6-9, $-3.45 on $15.00 staked.",
   "Line jumps graded: 12; the result matched the jump's direction 6 times."

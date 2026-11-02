@@ -25915,469 +25915,571 @@ game_id,period,sec,team,event,x,y,strength,home_score,away_score,shot_type,empty
 401892623,3,1073,cgy,missed,30,-5,even-strength,5,2,wrist,0,,,,,,,
 401892623,3,1135,cgy,missed,80,7,even-strength,5,2,wrist,0,,,,,,,
 401892623,3,1162,cgy,shot,18,23,even-strength,5,2,snap,0,,,,,,,
-401892624,1,24,wpg,missed,77,-41,even-strength,0,0,snap,0,2562632,,giveaway,98.0,-8.0,23.0,0.0
-401892624,1,63,car,shot,-60,20,even-strength,0,0,snap,0,3114741,,giveaway,-99.0,12.0,54.0,0.0
-401892624,1,75,car,missed,-30,17,even-strength,0,0,snap,0,4272905,,shot,-60.0,20.0,63.0,1.0
-401892624,1,79,car,shot,-82,27,even-strength,0,0,wrist,0,4874899,,missed,-30.0,17.0,75.0,1.0
-401892624,1,115,car,missed,-79,13,even-strength,0,0,snap,0,2976849,,hit,-73.0,38.0,113.0,0.0
-401892624,1,121,wpg,blocked,-75,15,even-strength,0,0,,0,4697396,,missed,-79.0,13.0,115.0,0.0
-401892624,1,308,wpg,blocked,-61,-18,power-play,0,0,,0,3904173,,face off,69.0,-22.0,246.0,1.0
-401892624,1,316,car,goal,-53,11,short-handed,0,0,snap,0,4272905,,blocked,-61.0,-18.0,308.0,0.0
-401892624,1,381,wpg,shot,66,40,even-strength,1,0,snap,0,5511,,giveaway,98.0,20.0,372.0,0.0
-401892624,1,390,car,blocked,68,-21,even-strength,1,0,,0,3114735,,shot,66.0,40.0,381.0,0.0
-401892624,1,401,wpg,missed,70,12,even-strength,1,0,tip-in,0,4316970,,blocked,68.0,-21.0,390.0,0.0
-401892624,1,427,wpg,missed,86,-8,even-strength,1,0,snap,0,3652598,,hit,49.0,-40.0,426.0,0.0
-401892624,1,436,car,missed,-78,4,even-strength,1,0,tip-in,0,3904173,,missed,86.0,-8.0,427.0,0.0
-401892624,1,471,car,shot,-73,14,power-play,1,0,snap,0,3114741,,face off,-69.0,-22.0,440.0,0.0
-401892624,1,476,car,missed,-53,26,power-play,1,0,slap,0,3904173,,shot,-73.0,14.0,471.0,1.0
-401892624,1,493,wpg,blocked,-83,3,short-handed,1,0,,0,3025662,,missed,-53.0,26.0,476.0,0.0
-401892624,1,496,car,missed,-76,16,power-play,1,0,snap,0,3904173,,blocked,-83.0,3.0,493.0,0.0
-401892624,1,501,car,missed,-75,1,power-play,1,0,tip-in,0,4352683,,missed,-76.0,16.0,496.0,1.0
-401892624,1,530,car,missed,-78,2,power-play,1,0,tip-in,0,2976849,,takeaway,-93.0,18.0,504.0,1.0
-401892624,1,531,car,shot,-80,-2,power-play,1,0,backhand,0,2976849,,missed,-78.0,2.0,530.0,1.0
-401892624,1,550,wpg,blocked,-77,0,short-handed,1,0,,0,3114741,,face off,-69.0,-22.0,536.0,0.0
-401892624,1,560,car,shot,-79,-15,power-play,1,0,snap,0,4352683,,blocked,-77.0,0.0,550.0,0.0
-401892624,1,578,wpg,blocked,-77,-17,short-handed,1,0,,0,3904173,,shot,-79.0,-15.0,560.0,0.0
-401892624,1,612,wpg,blocked,-56,-2,short-handed,1,0,,0,4233611,,blocked,-77.0,-17.0,578.0,1.0
-401892624,1,615,car,shot,-67,-13,power-play,1,0,wrist,0,2976849,,face off,-69.0,-22.0,613.0,0.0
-401892624,1,617,car,shot,-87,-8,power-play,1,0,backhand,0,4697396,,shot,-67.0,-13.0,615.0,1.0
-401892624,1,618,wpg,blocked,-89,-3,short-handed,1,0,,0,4697396,,shot,-87.0,-8.0,617.0,0.0
-401892624,1,629,car,shot,-55,-25,power-play,1,0,slap,0,4697396,,blocked,-89.0,-3.0,618.0,0.0
-401892624,1,700,car,shot,-80,-1,even-strength,1,0,bat,0,4319879,,giveaway,99.0,9.0,692.0,1.0
-401892624,1,825,wpg,blocked,81,-2,even-strength,1,0,,0,2563066,,giveaway,-98.0,5.0,745.0,1.0
-401892624,1,826,wpg,missed,76,0,even-strength,1,0,wrist,0,3652598,,blocked,81.0,-2.0,825.0,1.0
-401892624,1,831,car,blocked,77,-9,even-strength,1,0,,0,2590861,,missed,76.0,0.0,826.0,0.0
-401892624,1,853,wpg,shot,85,17,even-strength,1,0,snap,0,4697392,,giveaway,15.0,39.0,838.0,0.0
-401892624,1,995,car,missed,-50,23,even-strength,1,0,snap,0,5103645,,face off,-20.0,-22.0,918.0,1.0
-401892624,1,1000,car,missed,-31,-2,even-strength,1,0,slap,0,3069836,,missed,-50.0,23.0,995.0,1.0
-401892624,1,1145,car,missed,-70,7,even-strength,1,0,tip-in,0,3904173,,takeaway,51.0,20.0,1098.0,1.0
-401892624,1,1164,wpg,shot,60,-11,power-play,1,0,snap,0,2562632,,face off,69.0,-22.0,1163.0,0.0
-401892624,1,1174,wpg,missed,84,21,power-play,1,0,snap,0,2562632,,face off,69.0,-22.0,1166.0,0.0
-401892624,1,1198,car,blocked,77,3,short-handed,1,0,,0,3988847,,missed,84.0,21.0,1174.0,0.0
-401892624,2,25,wpg,missed,-80,4,power-play,1,0,tip-in,0,4697392,,,,,,
-401892624,2,40,wpg,shot,-66,-2,power-play,1,0,snap,0,2562632,,missed,-80.0,4.0,25.0,1.0
-401892624,2,96,wpg,missed,-76,-11,even-strength,1,0,tip-in,0,5361711,,shot,-66.0,-2.0,40.0,1.0
-401892624,2,105,car,shot,12,-38,even-strength,1,0,backhand,0,4697396,,missed,-76.0,-11.0,96.0,0.0
-401892624,2,115,car,goal,34,10,even-strength,1,0,slap,0,4233611,,face off,69.0,-22.0,110.0,1.0
-401892624,2,138,car,missed,86,-5,power-play,2,0,wrist,0,3904173,,face off,69.0,22.0,131.0,1.0
-401892624,2,139,car,goal,85,-4,power-play,2,0,wrist,0,3904173,,missed,86.0,-5.0,138.0,1.0
-401892624,2,149,car,blocked,-45,29,even-strength,3,0,,0,5080223,,goal,85.0,-4.0,139.0,1.0
-401892624,2,161,car,blocked,-54,30,even-strength,3,0,,0,4316970,,blocked,-45.0,29.0,149.0,1.0
-401892624,2,257,wpg,blocked,47,30,even-strength,3,0,,0,3025662,,face off,69.0,22.0,254.0,0.0
-401892624,2,268,car,blocked,76,0,even-strength,3,0,,0,3025662,,face off,69.0,22.0,259.0,1.0
-401892624,2,315,car,shot,81,3,power-play,3,0,wrist,0,5103645,,face off,69.0,22.0,286.0,1.0
-401892624,2,323,car,missed,66,-3,power-play,3,0,snap,0,5103645,,face off,69.0,22.0,317.0,1.0
-401892624,2,336,wpg,shot,-33,-10,short-handed,3,0,slap,0,4233884,,missed,66.0,-3.0,323.0,0.0
-401892624,2,405,car,missed,81,15,power-play,3,0,snap,0,4874899,,hit,89.0,34.0,379.0,0.0
-401892624,2,450,car,missed,62,24,even-strength,3,0,slap,0,4697396,,missed,81.0,15.0,405.0,1.0
-401892624,2,453,car,shot,54,-40,even-strength,3,0,wrist,0,4874899,,missed,62.0,24.0,450.0,1.0
-401892624,2,461,car,goal,43,-10,even-strength,3,0,wrist,0,4272905,,shot,54.0,-40.0,453.0,1.0
-401892624,2,506,car,missed,62,-14,even-strength,4,0,snap,0,5193,,hit,94.0,-24.0,492.0,0.0
-401892624,2,549,car,goal,72,4,even-strength,4,0,snap,0,4874899,,hit,75.0,38.0,510.0,1.0
-401892624,2,659,car,blocked,71,-4,even-strength,5,0,,0,4272905,,face off,-20.0,-22.0,625.0,1.0
-401892624,2,685,wpg,shot,-71,-8,even-strength,5,0,snap,0,4697392,,takeaway,-37.0,-20.0,681.0,1.0
-401892624,2,696,wpg,blocked,68,18,even-strength,5,0,,0,5193,,giveaway,-27.0,41.0,690.0,0.0
-401892624,2,757,wpg,shot,-46,8,even-strength,5,0,snap,0,3899952,,face off,-69.0,22.0,741.0,0.0
-401892624,2,768,wpg,shot,-52,-28,even-strength,5,0,wrist,0,4233878,,shot,-46.0,8.0,757.0,1.0
-401892624,2,777,wpg,missed,-84,-8,even-strength,5,0,tip-in,0,3652598,,shot,-52.0,-28.0,768.0,1.0
-401892624,2,786,wpg,shot,-73,37,even-strength,5,0,wrist,0,3988847,,missed,-84.0,-8.0,777.0,1.0
-401892624,2,857,car,blocked,-77,-2,short-handed,5,0,,0,5080223,,face off,-69.0,22.0,834.0,1.0
-401892624,2,915,wpg,shot,-54,11,power-play,5,0,snap,0,3988847,,giveaway,-85.0,34.0,898.0,0.0
-401892624,2,934,wpg,shot,-78,3,power-play,5,0,tip-in,0,3988847,,shot,-54.0,11.0,915.0,1.0
-401892624,2,938,wpg,shot,-98,-6,power-play,5,0,snap,0,4233583,,shot,-78.0,3.0,934.0,1.0
-401892624,2,941,wpg,shot,-54,16,power-play,5,0,snap,0,5080223,,face off,-69.0,-22.0,939.0,1.0
-401892624,2,961,wpg,shot,-67,-14,even-strength,5,0,snap,0,4233583,,face off,-69.0,22.0,943.0,0.0
-401892624,2,1021,car,shot,29,33,even-strength,5,0,slap,0,3025662,,face off,-69.0,-22.0,974.0,0.0
-401892624,2,1042,wpg,missed,-30,-36,even-strength,5,0,wrist,0,3114735,,hit,91.0,32.0,1026.0,1.0
-401892624,2,1045,wpg,shot,-43,41,even-strength,5,0,snap,0,5080223,,missed,-30.0,-36.0,1042.0,1.0
-401892624,2,1064,wpg,shot,-24,7,even-strength,5,0,tip-in,0,4316970,,shot,-43.0,41.0,1045.0,1.0
-401892624,2,1080,car,shot,86,-4,even-strength,5,0,snap,0,5193,,shot,-24.0,7.0,1064.0,0.0
-401892624,2,1126,wpg,shot,-60,39,even-strength,5,0,wrist,0,2562632,,shot,86.0,-4.0,1080.0,0.0
-401892624,2,1130,wpg,missed,-63,35,even-strength,5,0,wrist,0,4233878,,shot,-60.0,39.0,1126.0,1.0
-401892624,2,1148,wpg,blocked,76,0,even-strength,5,0,,0,4272905,,missed,-63.0,35.0,1130.0,1.0
-401892624,2,1185,car,shot,45,21,even-strength,5,0,snap,0,4272905,,face off,69.0,22.0,1183.0,1.0
-401892624,3,46,wpg,shot,55,-36,even-strength,5,0,wrist,0,5080223,,hit,-28.0,39.0,18.0,1.0
-401892624,3,54,wpg,missed,75,2,even-strength,5,0,snap,0,4697401,,shot,55.0,-36.0,46.0,1.0
-401892624,3,94,car,shot,-53,0,even-strength,5,0,snap,0,3114741,,hit,63.0,38.0,70.0,1.0
-401892624,3,97,wpg,blocked,-61,-19,even-strength,5,0,,0,4272905,,face off,-69.0,-22.0,96.0,0.0
-401892624,3,107,car,shot,-80,-18,even-strength,5,0,snap,0,3114741,,blocked,-61.0,-19.0,97.0,0.0
-401892624,3,117,car,shot,-38,-26,even-strength,5,0,slap,0,4272905,,shot,-80.0,-18.0,107.0,1.0
-401892624,3,187,car,missed,-81,2,even-strength,5,0,tip-in,0,4697396,,hit,97.0,8.0,162.0,0.0
-401892624,3,225,car,shot,-46,3,even-strength,5,0,wrist,0,4352683,,hit,-33.0,39.0,193.0,0.0
-401892624,3,243,car,shot,-63,-22,even-strength,5,0,snap,0,4352683,,giveaway,-26.0,35.0,241.0,0.0
-401892624,3,247,wpg,blocked,-49,-15,even-strength,5,0,,0,4272905,,face off,-69.0,-22.0,245.0,0.0
-401892624,3,264,car,missed,-83,-3,even-strength,5,0,tip-in,0,3042054,,hit,-77.0,39.0,255.0,1.0
-401892624,3,270,car,shot,-41,-34,even-strength,5,0,slap,0,4272905,,face off,-69.0,-22.0,267.0,0.0
-401892624,3,338,wpg,shot,74,34,even-strength,5,0,snap,0,3114735,,giveaway,-66.0,41.0,291.0,1.0
-401892624,3,341,car,blocked,60,-10,even-strength,5,0,,0,4874731,,shot,74.0,34.0,338.0,0.0
-401892624,3,353,car,shot,-39,-40,even-strength,5,0,snap,0,4352770,,hit,91.0,31.0,347.0,0.0
-401892624,3,371,wpg,missed,87,-6,even-strength,5,0,wrap-around,0,3988847,,face off,69.0,22.0,367.0,1.0
-401892624,3,378,car,blocked,64,-11,even-strength,5,0,,0,4697401,,missed,87.0,-6.0,371.0,0.0
-401892624,3,384,wpg,shot,85,10,even-strength,5,0,backhand,0,4697392,,blocked,64.0,-11.0,378.0,0.0
-401892624,3,385,car,blocked,84,1,even-strength,5,0,,0,4697392,,shot,85.0,10.0,384.0,0.0
-401892624,3,401,car,missed,-82,3,even-strength,5,0,snap,0,4697396,,blocked,84.0,1.0,385.0,1.0
-401892624,3,404,car,shot,-81,1,even-strength,5,0,snap,0,2989376,,missed,-82.0,3.0,401.0,1.0
-401892624,3,413,car,goal,-60,-17,power-play,5,0,wrist,0,2976849,,face off,-69.0,-22.0,406.0,0.0
-401892624,3,481,car,missed,-47,-38,even-strength,6,0,snap,0,4352770,,face off,-20.0,22.0,450.0,1.0
-401892624,3,518,car,goal,-81,-3,even-strength,6,0,snap,0,4352692,,missed,-47.0,-38.0,481.0,1.0
-401892624,3,534,car,shot,-30,-22,even-strength,7,0,wrist,0,4319879,,giveaway,-39.0,1.0,533.0,0.0
-401892624,3,538,car,missed,-51,-19,even-strength,7,0,snap,0,4272905,,face off,-69.0,-22.0,536.0,1.0
-401892624,3,604,wpg,shot,73,-26,even-strength,7,0,snap,0,3988847,,hit,-87.0,36.0,573.0,1.0
-401892624,3,606,wpg,shot,82,-9,even-strength,7,0,wrist,0,3899952,,shot,73.0,-26.0,604.0,1.0
-401892624,3,615,car,blocked,44,-20,even-strength,7,0,,0,3899952,,giveaway,83.0,-24.0,614.0,1.0
-401892624,3,648,wpg,shot,77,12,even-strength,7,0,wrist,0,2562632,,giveaway,-1.0,-38.0,632.0,1.0
-401892624,3,674,car,missed,-78,7,even-strength,7,0,backhand,0,3114741,,shot,77.0,12.0,648.0,0.0
-401892624,3,678,car,missed,-28,-2,even-strength,7,0,slap,0,4272905,,face off,-69.0,22.0,675.0,1.0
-401892624,3,701,wpg,shot,65,-16,even-strength,7,0,snap,0,5511,,missed,-28.0,-2.0,678.0,0.0
-401892624,3,705,wpg,missed,88,3,even-strength,7,0,wrist,0,3652598,,shot,65.0,-16.0,701.0,1.0
-401892624,3,761,car,blocked,57,0,even-strength,7,0,,0,4233878,,hit,2.0,-40.0,751.0,1.0
-401892624,3,764,wpg,blocked,81,-4,even-strength,7,0,,0,3988847,,blocked,57.0,0.0,761.0,0.0
-401892624,3,861,car,blocked,58,-19,even-strength,7,0,,0,2590861,,giveaway,-23.0,6.0,797.0,1.0
-401892624,3,865,wpg,missed,29,-19,even-strength,7,0,slap,0,2590861,,face off,69.0,-22.0,863.0,1.0
-401892624,3,882,wpg,missed,38,37,even-strength,7,0,wrist,0,3114735,,face off,69.0,-22.0,878.0,1.0
-401892624,3,920,wpg,blocked,-71,21,even-strength,7,0,,0,5103645,,hit,-33.0,40.0,891.0,1.0
-401892624,3,940,wpg,missed,88,23,even-strength,7,0,snap,0,4874731,,blocked,-71.0,21.0,920.0,1.0
-401892624,3,1077,car,missed,-74,31,even-strength,7,0,slap,0,4233611,,giveaway,-76.0,11.0,1042.0,1.0
-401892624,3,1114,wpg,blocked,-80,5,even-strength,7,0,,0,2989376,,face off,20.0,22.0,1100.0,1.0
-401892624,3,1119,car,shot,-27,35,even-strength,7,0,wrist,0,4233611,,blocked,-80.0,5.0,1114.0,0.0
-401892624,3,1178,wpg,missed,33,-5,even-strength,7,0,wrist,0,4233878,,giveaway,59.0,-30.0,1129.0,0.0
-401892624,3,1190,wpg,shot,80,-4,even-strength,7,0,deflected,0,4316970,,missed,33.0,-5.0,1178.0,1.0
-401892624,3,1194,wpg,shot,54,-8,even-strength,7,0,wrist,0,5511,,face off,69.0,-22.0,1192.0,0.0
-401892624,3,1197,car,blocked,80,13,even-strength,7,0,,0,3988847,,shot,54.0,-8.0,1194.0,0.0
-401892625,1,13,wsh,blocked,49,9,even-strength,0,0,,0,3942335,,hit,96.0,0.0,10.0,0.0
-401892625,1,15,min,missed,69,-14,even-strength,0,0,snap,0,4565233,,blocked,49.0,9.0,13.0,0.0
-401892625,1,40,wsh,blocked,71,-9,even-strength,0,0,,0,2562600,,missed,69.0,-14.0,15.0,0.0
-401892625,1,92,min,shot,38,18,even-strength,0,0,snap,0,2976850,,takeaway,92.0,19.0,89.0,1.0
-401892625,1,129,wsh,missed,-57,-16,even-strength,0,0,snap,0,3114766,,shot,38.0,18.0,92.0,0.0
-401892625,1,222,min,goal,58,0,even-strength,0,0,snap,0,4320548,,giveaway,-90.0,23.0,199.0,1.0
-401892625,1,260,min,shot,70,-16,even-strength,0,1,backhand,0,3942335,,goal,58.0,0.0,222.0,1.0
-401892625,1,275,wsh,shot,-19,-37,even-strength,0,1,snap,0,4024833,,shot,70.0,-16.0,260.0,0.0
-401892625,1,327,min,goal,68,-6,even-strength,0,1,snap,0,3042048,,giveaway,-82.0,-18.0,310.0,0.0
-401892625,1,349,min,shot,81,-16,even-strength,0,2,backhand,0,5302535,,hit,98.0,-14.0,335.0,1.0
-401892625,1,383,min,blocked,-79,2,even-strength,0,2,,0,4062251,,face off,-69.0,-22.0,379.0,0.0
-401892625,1,405,min,blocked,-74,7,even-strength,0,2,,0,4062251,,blocked,-79.0,2.0,383.0,1.0
-401892625,1,406,wsh,missed,-90,-4,even-strength,0,2,wrist,0,3899933,,blocked,-74.0,7.0,405.0,0.0
-401892625,1,407,min,blocked,-88,-5,even-strength,0,2,,0,5216918,,missed,-90.0,-4.0,406.0,0.0
-401892625,1,416,wsh,shot,-27,11,even-strength,0,2,slap,0,4755690,,blocked,-88.0,-5.0,407.0,0.0
-401892625,1,478,wsh,blocked,54,-10,even-strength,0,2,,0,3942335,,hit,29.0,-2.0,460.0,1.0
-401892625,1,597,min,shot,29,14,even-strength,0,2,slap,0,5526,,hit,-20.0,-40.0,557.0,0.0
-401892625,1,602,min,missed,81,-4,even-strength,0,2,tip-in,0,4320625,,face off,69.0,22.0,599.0,1.0
-401892625,1,615,min,missed,75,0,even-strength,0,2,tip-in,0,5526,,missed,81.0,-4.0,602.0,1.0
-401892625,1,656,wsh,shot,-81,-1,even-strength,0,2,tip-in,0,4587943,,giveaway,94.0,12.0,645.0,0.0
-401892625,1,661,min,blocked,-67,-15,even-strength,0,2,,0,4024950,,shot,-81.0,-1.0,656.0,0.0
-401892625,1,737,wsh,shot,-44,0,even-strength,0,2,snap,0,5149172,,hit,-98.0,0.0,695.0,1.0
-401892625,1,750,min,blocked,-78,-6,even-strength,0,2,,0,3899933,,face off,-69.0,22.0,739.0,1.0
-401892625,1,774,min,blocked,-66,0,even-strength,0,2,,0,5216918,,blocked,-78.0,-6.0,750.0,1.0
-401892625,1,817,min,shot,69,-13,even-strength,0,2,backhand,0,4565257,,hit,77.0,-39.0,815.0,0.0
-401892625,1,835,min,shot,42,22,even-strength,0,2,snap,0,4320548,,face off,69.0,-22.0,818.0,0.0
-401892625,1,844,wsh,blocked,42,1,even-strength,0,2,,0,4320548,,face off,69.0,22.0,836.0,0.0
-401892625,1,863,min,shot,70,18,even-strength,0,2,snap,0,4565233,,blocked,42.0,1.0,844.0,0.0
-401892625,1,888,wsh,blocked,40,8,even-strength,0,2,,0,3942335,,shot,70.0,18.0,863.0,0.0
-401892625,1,947,min,blocked,-62,-6,even-strength,0,2,,0,4233618,,blocked,40.0,8.0,888.0,0.0
-401892625,1,1011,min,missed,32,13,even-strength,0,2,snap,0,4799741,,giveaway,39.0,-28.0,1001.0,0.0
-401892625,1,1047,wsh,missed,-71,-2,even-strength,0,2,tip-in,0,3101,,missed,32.0,13.0,1011.0,0.0
-401892625,1,1070,wsh,missed,-65,-21,even-strength,0,2,snap,0,4024950,,missed,-71.0,-2.0,1047.0,1.0
-401892625,1,1072,wsh,missed,-82,-4,even-strength,0,2,between legs,0,3101,,missed,-65.0,-21.0,1070.0,1.0
-401892625,1,1097,min,shot,58,25,even-strength,0,2,snap,0,4565233,,missed,-82.0,-4.0,1072.0,0.0
-401892625,1,1140,wsh,shot,-39,-25,even-strength,0,2,snap,0,4024950,,stoppage,0.0,-41.0,1121.0,
-401892625,1,1146,min,blocked,-77,-5,even-strength,0,2,,0,2970615,,face off,-69.0,-22.0,1142.0,0.0
-401892625,1,1170,wsh,missed,-44,-40,even-strength,0,2,snap,0,4024950,,blocked,-77.0,-5.0,1146.0,0.0
-401892625,1,1192,min,missed,86,-7,even-strength,0,2,backhand,0,3942335,,hit,-54.0,19.0,1187.0,0.0
-401892625,2,6,wsh,shot,70,-1,even-strength,0,2,snap,0,2970615,,,,,,
-401892625,2,9,wsh,shot,56,-18,even-strength,0,2,snap,0,2970615,,face off,69.0,-22.0,8.0,1.0
-401892625,2,26,wsh,shot,30,14,even-strength,0,2,snap,0,4024833,,shot,56.0,-18.0,9.0,1.0
-401892625,2,56,min,blocked,57,13,even-strength,0,2,,0,4024950,,face off,-20.0,22.0,41.0,0.0
-401892625,2,97,wsh,missed,61,35,even-strength,0,2,snap,0,5216918,,giveaway,-85.0,29.0,88.0,1.0
-401892625,2,148,min,blocked,79,-6,even-strength,0,2,,0,3942924,,hit,42.0,-40.0,143.0,1.0
-401892625,2,174,min,blocked,60,22,even-strength,0,2,,0,5149172,,stoppage,-14.0,41.0,159.0,
-401892625,2,250,min,shot,-48,-31,even-strength,0,2,snap,0,3904091,,giveaway,7.0,-19.0,235.0,1.0
-401892625,2,283,wsh,blocked,-82,-22,even-strength,0,2,,0,3904091,,hit,-52.0,-41.0,282.0,1.0
-401892625,2,333,wsh,shot,84,-1,even-strength,0,2,snap,0,4755690,,blocked,-82.0,-22.0,283.0,1.0
-401892625,2,352,min,blocked,65,18,even-strength,0,2,,0,4024950,,face off,69.0,-22.0,335.0,0.0
-401892625,2,372,min,blocked,84,12,even-strength,0,2,,0,3899933,,hit,-98.0,-15.0,362.0,1.0
-401892625,2,382,wsh,shot,71,12,even-strength,0,2,snap,0,4024950,,blocked,84.0,12.0,372.0,0.0
-401892625,2,432,min,shot,-57,-31,even-strength,0,2,snap,0,5302535,,hit,97.0,3.0,407.0,0.0
-401892625,2,443,wsh,shot,67,28,even-strength,0,2,snap,0,5229146,,shot,-57.0,-31.0,432.0,0.0
-401892625,2,479,wsh,blocked,-47,26,even-strength,0,2,,0,4002,,face off,69.0,22.0,444.0,0.0
-401892625,2,509,min,shot,-63,-18,even-strength,0,2,snap,0,3042063,,hit,-94.0,28.0,493.0,1.0
-401892625,2,562,wsh,shot,66,-33,even-strength,0,2,snap,0,5149172,,hit,20.0,40.0,546.0,1.0
-401892625,2,620,wsh,missed,30,-8,even-strength,0,2,snap,0,3942924,,giveaway,27.0,16.0,612.0,0.0
-401892625,2,654,wsh,missed,66,16,even-strength,0,2,snap,0,4587943,,missed,30.0,-8.0,620.0,1.0
-401892625,2,690,wsh,blocked,-46,-1,even-strength,0,2,,0,4565257,,missed,66.0,16.0,654.0,1.0
-401892625,2,691,min,shot,-59,-5,even-strength,0,2,snap,0,2563026,,blocked,-46.0,-1.0,690.0,0.0
-401892625,2,705,wsh,blocked,-58,-6,even-strength,0,2,,0,4565257,,shot,-59.0,-5.0,691.0,0.0
-401892625,2,713,wsh,blocked,-64,12,even-strength,0,2,,0,2562600,,blocked,-58.0,-6.0,705.0,1.0
-401892625,2,752,min,missed,-75,4,even-strength,0,2,tip-in,0,3904188,,hit,-91.0,-27.0,743.0,0.0
-401892625,2,773,wsh,blocked,-38,34,even-strength,0,2,,0,4002,,face off,-69.0,-22.0,765.0,0.0
-401892625,2,801,min,missed,-73,-3,even-strength,0,2,tip-in,0,2976850,,blocked,-38.0,34.0,773.0,0.0
-401892625,2,857,min,shot,-58,-1,even-strength,0,2,wrist,0,3904091,,hit,-70.0,41.0,846.0,0.0
-401892625,2,863,min,missed,-49,14,even-strength,0,2,bat,0,3904091,,giveaway,-80.0,27.0,861.0,0.0
-401892625,2,872,min,shot,-42,-4,even-strength,0,2,snap,0,4320548,,missed,-49.0,14.0,863.0,1.0
-401892625,2,877,min,shot,-65,40,even-strength,0,2,snap,0,3042063,,shot,-42.0,-4.0,872.0,1.0
-401892625,2,886,min,shot,-81,-16,even-strength,0,2,snap,0,3042063,,shot,-65.0,40.0,877.0,1.0
-401892625,2,899,wsh,blocked,-70,3,even-strength,0,2,,0,4320548,,face off,-69.0,22.0,893.0,0.0
-401892625,2,902,min,missed,-77,-11,even-strength,0,2,backhand,0,5526,,blocked,-70.0,3.0,899.0,0.0
-401892625,2,940,min,blocked,61,21,even-strength,0,2,,0,4697783,,giveaway,-3.0,-12.0,921.0,1.0
-401892625,2,948,wsh,shot,80,5,even-strength,0,2,snap,0,3101,,blocked,61.0,21.0,940.0,0.0
-401892625,2,950,wsh,shot,81,-3,even-strength,0,2,backhand,0,4697783,,shot,80.0,5.0,948.0,1.0
-401892625,2,1074,wsh,shot,57,-12,even-strength,0,2,snap,0,5216918,,hit,-72.0,38.0,1049.0,0.0
-401892625,2,1080,wsh,missed,30,-17,even-strength,0,2,snap,0,4024833,,face off,69.0,-22.0,1076.0,0.0
-401892625,2,1127,wsh,missed,60,10,even-strength,0,2,backhand,0,4024950,,giveaway,97.0,-2.0,1093.0,0.0
-401892625,2,1146,wsh,missed,80,-22,even-strength,0,2,snap,0,3101,,missed,60.0,10.0,1127.0,1.0
-401892625,2,1162,min,blocked,88,-6,even-strength,0,2,,0,4024950,,missed,80.0,-22.0,1146.0,0.0
-401892625,2,1194,wsh,goal,80,-3,even-strength,0,2,tip-in,0,4697783,,blocked,88.0,-6.0,1162.0,0.0
-401892625,3,9,min,shot,63,34,even-strength,1,2,snap,0,3904091,,takeaway,31.0,31.0,4.0,1.0
-401892625,3,98,min,shot,66,16,even-strength,1,2,snap,0,4565257,,giveaway,30.0,24.0,95.0,0.0
-401892625,3,141,min,shot,60,-13,power-play,1,2,snap,0,4565233,,face off,69.0,22.0,138.0,0.0
-401892625,3,203,wsh,shot,-68,30,short-handed,1,2,snap,0,3114766,,face off,69.0,-22.0,143.0,1.0
-401892625,3,220,wsh,blocked,78,-2,short-handed,1,2,,0,4565233,,shot,-68.0,30.0,203.0,1.0
-401892625,3,226,wsh,blocked,75,15,short-handed,1,2,,0,3942335,,blocked,78.0,-2.0,220.0,1.0
-401892625,3,277,min,shot,72,14,even-strength,1,2,snap,0,5080172,,face off,69.0,22.0,227.0,0.0
-401892625,3,281,wsh,blocked,50,4,even-strength,1,2,,0,2976850,,face off,69.0,22.0,279.0,0.0
-401892625,3,302,wsh,shot,-70,-23,even-strength,1,2,snap,0,3904107,,hit,4.0,14.0,297.0,0.0
-401892625,3,307,min,blocked,-34,-23,even-strength,1,2,,0,4697783,,shot,-70.0,-23.0,302.0,0.0
-401892625,3,339,wsh,missed,-87,-5,even-strength,1,2,deflected,0,3101,,blocked,-34.0,-23.0,307.0,0.0
-401892625,3,373,wsh,blocked,81,-25,even-strength,1,2,,0,2563026,,hit,95.0,12.0,359.0,0.0
-401892625,3,374,min,shot,80,-19,even-strength,1,2,snap,0,4565257,,blocked,81.0,-25.0,373.0,0.0
-401892625,3,385,wsh,shot,-62,-21,even-strength,1,2,snap,0,4024833,,shot,80.0,-19.0,374.0,0.0
-401892625,3,462,min,missed,72,-24,even-strength,1,2,backhand,0,5103533,,face off,-69.0,22.0,445.0,1.0
-401892625,3,544,wsh,missed,-36,-25,even-strength,1,2,snap,0,5149172,,hit,9.0,40.0,516.0,0.0
-401892625,3,551,wsh,shot,-62,30,even-strength,1,2,snap,0,4755690,,missed,-36.0,-25.0,544.0,1.0
-401892625,3,562,min,blocked,-77,0,even-strength,1,2,,0,5149172,,shot,-62.0,30.0,551.0,0.0
-401892625,3,596,wsh,shot,-62,0,even-strength,1,2,snap,0,3101,,blocked,-77.0,0.0,562.0,0.0
-401892625,3,601,min,blocked,-50,18,even-strength,1,2,,0,4024950,,shot,-62.0,0.0,596.0,0.0
-401892625,3,604,wsh,shot,-31,2,even-strength,1,2,snap,0,4024950,,blocked,-50.0,18.0,601.0,0.0
-401892625,3,615,min,blocked,-56,8,even-strength,1,2,,0,3899933,,face off,-69.0,22.0,606.0,0.0
-401892625,3,616,wsh,missed,-59,3,even-strength,1,2,snap,0,3899933,,blocked,-56.0,8.0,615.0,0.0
-401892625,3,616,wsh,shot,-72,10,even-strength,1,2,snap,0,4024950,,missed,-59.0,3.0,616.0,1.0
-401892625,3,629,min,missed,79,-16,even-strength,1,2,wrist,0,3042048,,shot,-72.0,10.0,616.0,0.0
-401892625,3,790,min,shot,55,22,power-play,1,2,slap,0,4565257,,takeaway,20.0,-27.0,749.0,0.0
-401892625,3,796,wsh,blocked,67,14,short-handed,1,2,,0,4565257,,shot,55.0,22.0,790.0,0.0
-401892625,3,816,min,missed,87,-17,power-play,1,2,slap,0,3942335,,blocked,67.0,14.0,796.0,0.0
-401892625,3,864,wsh,shot,-18,5,even-strength,1,2,snap,0,5149172,,missed,87.0,-17.0,816.0,0.0
-401892625,3,874,wsh,missed,-52,-17,even-strength,1,2,snap,0,5216918,,face off,-69.0,22.0,867.0,1.0
-401892625,3,882,min,shot,59,40,even-strength,1,2,snap,0,3904188,,missed,-52.0,-17.0,874.0,0.0
-401892625,3,896,wsh,shot,-77,-10,even-strength,1,2,snap,0,3114766,,giveaway,-78.0,-35.0,895.0,0.0
-401892625,3,900,wsh,missed,-61,-19,even-strength,1,2,snap,0,3101,,face off,-69.0,-22.0,899.0,0.0
-401892625,3,968,wsh,missed,-46,-38,even-strength,1,2,snap,0,4587943,,face off,-20.0,22.0,957.0,1.0
-401892625,3,1031,min,shot,84,5,power-play,1,2,tip-in,0,5302535,,face off,69.0,22.0,970.0,0.0
-401892625,3,1057,min,goal,54,6,power-play,1,2,snap,0,5302535,,face off,69.0,-22.0,1053.0,1.0
-401892625,3,1110,min,blocked,-79,2,even-strength,1,3,,0,4024950,,giveaway,-76.0,40.0,1098.0,1.0
-401892625,3,1112,wsh,shot,-72,0,even-strength,1,3,snap,0,3114766,,blocked,-79.0,2.0,1110.0,0.0
-401892625,3,1113,wsh,missed,-88,5,even-strength,1,3,backhand,0,4024833,,shot,-72.0,0.0,1112.0,1.0
-401892625,3,1127,wsh,shot,-62,2,even-strength,1,3,snap,0,3114766,,missed,-88.0,5.0,1113.0,1.0
-401892625,3,1131,wsh,blocked,-35,33,even-strength,1,3,,0,3942335,,shot,-62.0,2.0,1127.0,1.0
-401892625,3,1137,min,missed,53,40,even-strength,1,3,snap,0,3942335,,blocked,-35.0,33.0,1131.0,0.0
-401892625,3,1142,min,goal,81,14,empty-net,1,3,snap,0,3942335,,hit,46.0,-40.0,1140.0,0.0
-401892625,3,1175,min,goal,55,-4,power-play,1,4,slap,0,5080172,,face off,69.0,-22.0,1159.0,1.0
-401892625,3,1193,min,missed,58,24,power-play,1,5,slap,0,3042063,,giveaway,96.0,16.0,1186.0,0.0
-401892626,1,57,uta,shot,60,17,even-strength,0,0,wrist,0,4352699,,hit,71.0,-38.0,54.0,0.0
-401892626,1,62,uta,blocked,67,13,even-strength,0,0,,0,3024798,,face off,69.0,22.0,59.0,1.0
-401892626,1,120,uta,blocked,-68,-7,even-strength,0,0,,0,2564164,,hit,-86.0,-36.0,81.0,0.0
-401892626,1,142,phi,shot,-8,29,even-strength,0,0,wrist,0,4565230,,hit,-71.0,-39.0,124.0,1.0
-401892626,1,155,phi,blocked,61,33,even-strength,0,0,,0,4755695,,shot,-8.0,29.0,142.0,1.0
-401892626,1,176,phi,blocked,45,-23,even-strength,0,0,,0,4064936,,face off,69.0,22.0,173.0,0.0
-401892626,1,193,uta,blocked,-88,16,even-strength,0,0,,0,4697406,,blocked,45.0,-23.0,176.0,0.0
-401892626,1,205,uta,missed,80,0,even-strength,0,0,deflected,0,5080143,,hit,-98.0,21.0,197.0,0.0
-401892626,1,224,phi,blocked,72,-5,even-strength,0,0,,0,2563036,,hit,73.0,39.0,209.0,0.0
-401892626,1,250,phi,shot,-82,-8,even-strength,0,0,snap,0,3096237,,hit,49.0,40.0,228.0,0.0
-401892626,1,253,phi,shot,-42,-18,even-strength,0,0,slap,0,4392642,,face off,-69.0,-22.0,252.0,1.0
-401892626,1,287,uta,shot,57,-17,even-strength,0,0,snap,0,4874723,,hit,-27.0,42.0,260.0,0.0
-401892626,1,347,uta,missed,67,19,power-play,0,0,snap,0,4874723,,face off,69.0,22.0,315.0,1.0
-401892626,1,360,uta,missed,74,32,power-play,0,0,slap,0,4874723,,giveaway,51.0,-40.0,352.0,1.0
-401892626,1,371,phi,blocked,75,-6,short-handed,0,0,,0,3114770,,missed,74.0,32.0,360.0,0.0
-401892626,1,380,uta,shot,59,-10,power-play,0,0,wrist,0,3114770,,giveaway,76.0,-17.0,375.0,0.0
-401892626,1,393,uta,shot,78,-21,power-play,0,0,wrist,0,2563036,,face off,69.0,-22.0,381.0,1.0
-401892626,1,476,phi,blocked,78,2,even-strength,0,0,,0,5080205,,giveaway,82.0,39.0,473.0,1.0
-401892626,1,481,uta,shot,79,25,even-strength,0,0,snap,0,4024857,,blocked,78.0,2.0,476.0,0.0
-401892626,1,498,uta,missed,25,35,even-strength,0,0,slap,0,4024868,,face off,69.0,22.0,483.0,0.0
-401892626,1,528,phi,missed,-49,-38,even-strength,0,0,wrist,0,5173105,,hit,99.0,15.0,516.0,0.0
-401892626,1,546,phi,shot,-69,-24,even-strength,0,0,backhand,0,4392072,,missed,-49.0,-38.0,528.0,1.0
-401892626,1,570,uta,shot,40,0,even-strength,0,0,snap,0,4755695,,giveaway,96.0,-27.0,562.0,0.0
-401892626,1,611,phi,blocked,45,15,even-strength,0,0,,0,3114770,,shot,40.0,0.0,570.0,0.0
-401892626,1,612,uta,missed,72,-9,even-strength,0,0,backhand,0,5149158,,blocked,45.0,15.0,611.0,0.0
-401892626,1,618,uta,missed,29,-23,even-strength,0,0,wrist,0,5080205,,hit,77.0,-38.0,616.0,0.0
-401892626,1,624,uta,shot,62,-25,even-strength,0,0,wrist,0,4024857,,face off,69.0,-22.0,620.0,1.0
-401892626,1,635,uta,shot,83,-9,even-strength,0,0,backhand,0,3114770,,giveaway,49.0,42.0,632.0,0.0
-401892626,1,674,uta,blocked,-76,-7,even-strength,0,0,,0,4565235,,hit,-37.0,-40.0,671.0,1.0
-401892626,1,689,phi,shot,-21,-37,even-strength,0,0,backhand,0,5149199,,blocked,-76.0,-7.0,674.0,0.0
-401892626,1,750,phi,blocked,71,-33,even-strength,0,0,,0,4064936,,hit,65.0,39.0,718.0,0.0
-401892626,1,769,phi,goal,-86,-8,even-strength,0,0,snap,0,5149170,,giveaway,-83.0,38.0,763.0,0.0
-401892626,1,802,uta,blocked,-85,9,even-strength,1,0,,0,3900169,,giveaway,-80.0,6.0,797.0,1.0
-401892626,1,864,uta,goal,72,-7,even-strength,1,0,snap,0,5149158,,hit,-22.0,-41.0,854.0,0.0
-401892626,1,901,uta,blocked,-49,18,even-strength,1,1,,0,5291941,,hit,-98.0,-13.0,900.0,1.0
-401892626,1,917,phi,shot,-40,15,even-strength,1,1,snap,0,5149170,,blocked,-49.0,18.0,901.0,0.0
-401892626,1,979,uta,missed,66,-7,power-play,1,1,snap,0,4874723,,face off,69.0,22.0,928.0,0.0
-401892626,1,1061,phi,missed,-43,6,even-strength,1,1,snap,0,5291941,,giveaway,-26.0,-37.0,993.0,0.0
-401892626,1,1091,phi,missed,-51,-19,even-strength,1,1,snap,0,3115035,,hit,95.0,9.0,1086.0,0.0
-401892626,1,1107,uta,blocked,-55,-26,even-strength,1,1,,0,2564164,,missed,-51.0,-19.0,1091.0,0.0
-401892626,1,1187,phi,missed,-96,-19,even-strength,1,1,backhand,0,3115035,,face off,20.0,22.0,1163.0,0.0
-401892626,2,29,uta,shot,-85,9,even-strength,1,1,wrist,0,5080143,,takeaway,-95.0,-5.0,16.0,1.0
-401892626,2,49,uta,blocked,38,-13,even-strength,1,1,,0,4697387,,shot,-85.0,9.0,29.0,1.0
-401892626,2,57,phi,missed,72,18,even-strength,1,1,snap,0,3115035,,blocked,38.0,-13.0,49.0,0.0
-401892626,2,66,phi,goal,89,-8,even-strength,1,1,backhand,0,3900169,,missed,72.0,18.0,57.0,1.0
-401892626,2,98,uta,missed,-77,-6,even-strength,2,1,tip-in,0,4874723,,hit,74.0,-39.0,86.0,0.0
-401892626,2,159,uta,blocked,69,-3,even-strength,2,1,,0,4392642,,hit,90.0,-32.0,142.0,0.0
-401892626,2,166,phi,blocked,-44,31,even-strength,2,1,,0,3904191,,blocked,69.0,-3.0,159.0,0.0
-401892626,2,216,uta,blocked,67,2,even-strength,2,1,,0,2562601,,blocked,-44.0,31.0,166.0,0.0
-401892626,2,317,phi,blocked,-57,-4,even-strength,2,1,,0,3114770,,hit,97.0,-12.0,252.0,1.0
-401892626,2,326,uta,shot,-61,6,even-strength,2,1,deflected,0,4874723,,blocked,-57.0,-4.0,317.0,0.0
-401892626,2,350,phi,goal,53,16,even-strength,2,1,snap,0,4419682,,hit,91.0,-32.0,341.0,1.0
-401892626,2,397,phi,shot,93,4,even-strength,3,1,wrap-around,0,3096237,,hit,-4.0,-41.0,382.0,1.0
-401892626,2,450,uta,missed,-86,-9,even-strength,3,1,tip-in,0,5793,,hit,-90.0,34.0,411.0,1.0
-401892626,2,487,phi,shot,67,-24,even-strength,3,1,backhand,0,5173105,,giveaway,-94.0,8.0,460.0,0.0
-401892626,2,506,phi,blocked,-64,-16,even-strength,3,1,,0,2563036,,takeaway,-83.0,34.0,503.0,0.0
-401892626,2,537,uta,shot,-71,20,even-strength,3,1,snap,0,4874723,,face off,20.0,22.0,523.0,1.0
-401892626,2,562,phi,missed,82,9,even-strength,3,1,tip-in,0,4419682,,face off,69.0,-22.0,558.0,1.0
-401892626,2,565,uta,blocked,80,-20,even-strength,3,1,,0,5291941,,missed,82.0,9.0,562.0,0.0
-401892626,2,725,phi,shot,70,-22,power-play,3,1,wrist,0,5291941,,face off,69.0,22.0,653.0,0.0
-401892626,2,760,phi,shot,72,-12,power-play,3,1,snap,0,4697406,,face off,69.0,22.0,728.0,1.0
-401892626,2,769,phi,missed,69,2,power-play,3,1,wrist,0,3115035,,shot,72.0,-12.0,760.0,1.0
-401892626,2,802,phi,blocked,80,8,even-strength,3,1,,0,4565235,,hit,90.0,32.0,795.0,1.0
-401892626,2,804,phi,missed,77,11,even-strength,3,1,wrist,0,3096237,,blocked,80.0,8.0,802.0,1.0
-401892626,2,807,uta,blocked,78,-8,even-strength,3,1,,0,5188341,,missed,77.0,11.0,804.0,0.0
-401892626,2,845,phi,blocked,-64,14,even-strength,3,1,,0,4064936,,stoppage,-27.0,-35.0,815.0,
-401892626,2,853,phi,blocked,-81,-22,even-strength,3,1,,0,4031645,,face off,-69.0,-22.0,849.0,0.0
-401892626,2,873,phi,blocked,-74,-12,even-strength,3,1,,0,4352699,,blocked,-81.0,-22.0,853.0,1.0
-401892626,2,890,phi,shot,33,12,even-strength,3,1,snap,0,3114757,,giveaway,-26.0,-17.0,884.0,0.0
-401892626,2,912,phi,missed,53,-25,even-strength,3,1,snap,0,4392072,,hit,71.0,38.0,900.0,0.0
-401892626,2,919,uta,shot,-62,20,even-strength,3,1,snap,0,2563036,,missed,53.0,-25.0,912.0,0.0
-401892626,2,927,phi,shot,56,13,even-strength,3,1,snap,0,3114757,,shot,-62.0,20.0,919.0,0.0
-401892626,2,969,uta,missed,-78,9,even-strength,3,1,tip-in,0,4755695,,giveaway,-90.0,32.0,958.0,0.0
-401892626,2,1004,phi,shot,43,32,even-strength,3,1,snap,0,2564164,,hit,97.0,-15.0,995.0,1.0
-401892626,2,1072,uta,shot,-83,14,even-strength,3,1,backhand,0,4024857,,hit,19.0,-21.0,1034.0,1.0
-401892626,3,36,phi,missed,-65,21,even-strength,3,1,wrist,0,3900169,,face off,-20.0,22.0,18.0,1.0
-401892626,3,62,phi,goal,-68,-2,even-strength,3,1,snap,0,3115035,,hit,-90.0,-30.0,51.0,1.0
-401892626,3,177,uta,missed,59,-32,even-strength,4,1,slap,0,3042269,,hit,-6.0,-39.0,157.0,0.0
-401892626,3,203,uta,missed,75,-9,even-strength,4,1,snap,0,4352699,,giveaway,-34.0,-37.0,189.0,0.0
-401892626,3,209,uta,missed,27,25,even-strength,4,1,snap,0,4024868,,hit,93.0,27.0,207.0,0.0
-401892626,3,218,uta,shot,54,21,even-strength,4,1,snap,0,4024868,,missed,27.0,25.0,209.0,1.0
-401892626,3,298,phi,shot,-79,-13,even-strength,4,1,snap,0,5188341,,hit,91.0,29.0,258.0,1.0
-401892626,3,317,phi,blocked,-80,-5,even-strength,4,1,,0,4565235,,giveaway,-89.0,-23.0,315.0,1.0
-401892626,3,335,phi,goal,-53,22,even-strength,4,1,slap,0,5149199,,blocked,-80.0,-5.0,317.0,1.0
-401892626,3,447,phi,blocked,71,-10,even-strength,5,1,,0,5080143,,takeaway,0.0,-4.0,444.0,0.0
-401892626,3,460,uta,shot,82,-1,even-strength,5,1,tip-in,0,3899951,,hit,96.0,-11.0,450.0,1.0
-401892626,3,493,uta,shot,62,-25,even-strength,5,1,snap,0,4064936,,giveaway,0.0,-15.0,484.0,0.0
-401892626,3,560,uta,shot,45,17,power-play,5,1,slap,0,4874723,,face off,69.0,22.0,502.0,0.0
-401892626,3,576,uta,missed,81,-21,power-play,5,1,slap,0,5080143,,shot,45.0,17.0,560.0,1.0
-401892626,3,625,uta,missed,36,-15,even-strength,5,1,slap,0,3042269,,missed,81.0,-21.0,576.0,1.0
-401892626,3,708,uta,missed,81,-18,even-strength,5,1,backhand,0,5080143,,takeaway,50.0,40.0,704.0,1.0
-401892626,3,777,phi,shot,-82,-18,power-play,5,1,snap,0,5291941,,giveaway,-2.0,18.0,757.0,1.0
-401892626,3,784,phi,missed,-55,22,power-play,5,1,slap,0,4565230,,shot,-82.0,-18.0,777.0,1.0
-401892626,3,796,uta,blocked,-75,-3,short-handed,5,1,,0,5291941,,missed,-55.0,22.0,784.0,0.0
-401892626,3,882,uta,shot,79,-10,even-strength,5,1,wrist,0,4024857,,face off,-69.0,-22.0,866.0,1.0
-401892626,3,960,uta,goal,34,13,power-play,5,1,slap,0,4024868,,face off,69.0,-22.0,899.0,0.0
-401892626,3,1024,uta,shot,74,-3,power-play,5,2,wrist,0,3114770,,face off,69.0,-22.0,986.0,1.0
-401892626,3,1027,uta,goal,85,-9,power-play,5,2,snap,0,5080143,,shot,74.0,-3.0,1024.0,1.0
-401892626,3,1034,phi,blocked,53,0,even-strength,5,3,,0,4755695,,goal,85.0,-9.0,1027.0,0.0
-401892626,3,1106,phi,goal,-51,36,empty-net,5,3,wrist,0,5188341,,hit,71.0,38.0,1048.0,0.0
-401892626,3,1132,phi,blocked,-81,0,even-strength,6,3,,0,5149170,,goal,-51.0,36.0,1106.0,1.0
-401892626,3,1141,phi,blocked,68,-18,even-strength,6,3,,0,4031645,,blocked,-81.0,0.0,1132.0,1.0
-401892627,1,34,nyr,blocked,31,-1,even-strength,0,0,,0,2562624,,hit,-99.0,12.0,27.0,1.0
-401892627,1,39,nyr,shot,-42,23,even-strength,0,0,wrist,0,2562637,,blocked,31.0,-1.0,34.0,1.0
-401892627,1,50,edm,goal,81,-6,even-strength,0,0,wrist,0,3895074,,shot,-42.0,23.0,39.0,0.0
-401892627,1,76,edm,blocked,-78,0,even-strength,0,1,,0,4197146,,goal,81.0,-6.0,50.0,1.0
-401892627,1,160,edm,blocked,-46,22,even-strength,0,1,,0,4697402,,face off,-69.0,22.0,141.0,0.0
-401892627,1,193,nyr,shot,-69,33,even-strength,0,1,wrist,0,2562637,,hit,-95.0,-25.0,185.0,1.0
-401892627,1,261,edm,shot,80,-15,even-strength,0,1,backhand,0,3895074,,giveaway,22.0,37.0,240.0,0.0
-401892627,1,280,edm,shot,43,-27,even-strength,0,1,wrist,0,4233882,,face off,69.0,-22.0,263.0,0.0
-401892627,1,291,edm,blocked,-62,30,even-strength,0,1,,0,4874882,,shot,43.0,-27.0,280.0,1.0
-401892627,1,314,nyr,shot,-82,13,even-strength,0,1,wrist,0,4233720,,hit,-75.0,41.0,298.0,1.0
-401892627,1,339,nyr,shot,-80,39,even-strength,0,1,wrist,0,4197146,,shot,-82.0,13.0,314.0,1.0
-401892627,1,341,edm,blocked,-83,9,even-strength,0,1,,0,4063502,,hit,-80.0,39.0,340.0,1.0
-401892627,1,379,edm,goal,65,12,even-strength,0,1,wrist,0,4874940,,hit,93.0,-28.0,371.0,1.0
-401892627,1,403,nyr,missed,-64,-19,even-strength,0,2,snap,0,4588750,,giveaway,-68.0,-40.0,398.0,0.0
-401892627,1,406,edm,blocked,-73,7,even-strength,0,2,,0,4197146,,missed,-64.0,-19.0,403.0,0.0
-401892627,1,526,nyr,blocked,57,-20,even-strength,0,2,,0,2562624,,hit,11.0,19.0,464.0,1.0
-401892627,1,532,edm,shot,47,-15,even-strength,0,2,slap,0,4352722,,blocked,57.0,-20.0,526.0,0.0
-401892627,1,561,nyr,blocked,81,-1,even-strength,0,2,,0,4352722,,face off,-20.0,22.0,548.0,0.0
-401892627,1,576,edm,shot,73,-17,even-strength,0,2,backhand,0,4565231,,blocked,81.0,-1.0,561.0,0.0
-401892627,1,580,edm,missed,65,-17,even-strength,0,2,tip-in,0,3042062,,face off,69.0,-22.0,578.0,1.0
-401892627,1,716,nyr,shot,-82,9,even-strength,0,2,wrist,0,3942292,,hit,97.0,21.0,686.0,0.0
-401892627,1,732,edm,blocked,-53,-15,even-strength,0,2,,0,4197146,,giveaway,-99.0,-8.0,729.0,1.0
-401892627,1,902,edm,missed,41,-24,power-play,0,2,slap,0,4352722,,face off,69.0,22.0,829.0,0.0
-401892627,1,969,edm,blocked,-59,-6,even-strength,0,2,,0,5188370,,face off,20.0,-22.0,948.0,1.0
-401892627,1,991,edm,blocked,70,-3,even-strength,0,2,,0,4352722,,hit,47.0,-41.0,980.0,0.0
-401892627,1,1070,nyr,missed,-69,2,even-strength,0,2,tip-in,0,2335062,,hit,96.0,-27.0,1051.0,0.0
-401892627,1,1178,edm,shot,58,20,even-strength,0,2,wrist,0,4233882,,face off,20.0,22.0,1174.0,0.0
-401892627,2,23,edm,missed,-83,8,even-strength,0,2,backhand,0,3114775,,giveaway,-84.0,38.0,12.0,0.0
-401892627,2,24,edm,missed,-75,5,even-strength,0,2,snap,0,2562624,,missed,-83.0,8.0,23.0,1.0
-401892627,2,141,nyr,missed,77,-9,even-strength,0,2,tip-in,0,5149204,,giveaway,74.0,32.0,122.0,0.0
-401892627,2,197,nyr,shot,81,-17,even-strength,0,2,wrist,0,4233720,,missed,77.0,-9.0,141.0,1.0
-401892627,2,240,nyr,shot,43,37,even-strength,0,2,wrist,0,3942292,,face off,69.0,-22.0,237.0,1.0
-401892627,2,272,nyr,shot,37,29,even-strength,0,2,wrist,0,2562637,,shot,43.0,37.0,240.0,1.0
-401892627,2,309,nyr,shot,89,28,even-strength,0,2,wrist,0,5149204,,giveaway,-98.0,6.0,283.0,1.0
-401892627,2,315,nyr,shot,78,9,even-strength,0,2,wrist,0,5149204,,shot,89.0,28.0,309.0,1.0
-401892627,2,316,nyr,shot,80,1,even-strength,0,2,backhand,0,2590852,,shot,78.0,9.0,315.0,1.0
-401892627,2,317,nyr,missed,83,-6,even-strength,0,2,wrist,0,4697468,,shot,80.0,1.0,316.0,1.0
-401892627,2,332,nyr,missed,76,9,even-strength,0,2,tip-in,0,4697468,,hit,99.0,9.0,319.0,1.0
-401892627,2,416,nyr,shot,53,-37,even-strength,0,2,wrist,0,4874882,,takeaway,-61.0,13.0,395.0,1.0
-401892627,2,428,nyr,shot,31,-30,even-strength,0,2,wrist,0,4874882,,hit,48.0,-41.0,416.0,0.0
-401892627,2,444,edm,missed,-35,-41,even-strength,0,2,wrist,0,3942033,,hit,-99.0,8.0,440.0,1.0
-401892627,2,450,nyr,blocked,-78,-11,even-strength,0,2,,0,3941965,,face off,-69.0,-22.0,449.0,0.0
-401892627,2,463,edm,blocked,77,15,even-strength,0,2,,0,5149204,,face off,-69.0,-22.0,453.0,0.0
-401892627,2,589,edm,goal,-42,5,power-play,0,2,slap,0,4352722,,giveaway,-41.0,-32.0,544.0,1.0
-401892627,2,669,nyr,shot,72,-16,even-strength,0,3,snap,0,4697402,,takeaway,88.0,5.0,657.0,1.0
-401892627,2,708,edm,shot,-34,-11,even-strength,0,3,wrist,0,4874940,,shot,72.0,-16.0,669.0,0.0
-401892627,2,711,edm,missed,-31,-13,even-strength,0,3,slap,0,2558631,,face off,-69.0,-22.0,710.0,1.0
-401892627,2,758,nyr,shot,36,5,even-strength,0,3,wrist,0,3942292,,hit,91.0,-33.0,749.0,1.0
-401892627,2,766,edm,blocked,85,-4,even-strength,0,3,,0,2590852,,shot,36.0,5.0,758.0,0.0
-401892627,2,779,nyr,shot,63,-23,even-strength,0,3,wrist,0,2562637,,blocked,85.0,-4.0,766.0,0.0
-401892627,2,800,nyr,shot,72,-17,even-strength,0,3,wrist,0,4874882,,face off,69.0,-22.0,796.0,1.0
-401892627,2,802,nyr,goal,84,4,even-strength,0,3,snap,0,4587588,,shot,72.0,-17.0,800.0,1.0
-401892627,2,830,nyr,shot,32,-11,even-strength,1,3,wrist,0,4697402,,face off,20.0,22.0,807.0,1.0
-401892627,2,835,nyr,missed,28,-5,even-strength,1,3,slap,0,4874882,,face off,69.0,-22.0,832.0,1.0
-401892627,2,854,edm,missed,-30,39,even-strength,1,3,wrist,0,4352722,,hit,-7.0,-41.0,845.0,0.0
-401892627,2,882,edm,missed,-76,-14,even-strength,1,3,snap,0,3895074,,takeaway,-61.0,-36.0,877.0,1.0
-401892627,2,898,edm,shot,-30,12,even-strength,1,3,wrist,0,3114775,,missed,-76.0,-14.0,882.0,1.0
-401892627,2,906,edm,missed,-78,4,even-strength,1,3,tip-in,0,3114775,,shot,-30.0,12.0,898.0,1.0
-401892627,2,934,nyr,blocked,-72,-3,even-strength,1,3,,0,3942033,,missed,-78.0,4.0,906.0,0.0
-401892627,2,956,nyr,missed,65,-26,even-strength,1,3,snap,0,4874882,,takeaway,85.0,7.0,953.0,1.0
-401892627,2,1001,edm,shot,-91,8,even-strength,1,3,wrist,0,4024997,,face off,-20.0,22.0,965.0,0.0
-401892627,2,1003,edm,shot,-83,-1,even-strength,1,3,poke,0,4588331,,shot,-91.0,8.0,1001.0,1.0
-401892627,2,1045,nyr,shot,33,-36,even-strength,1,3,wrist,0,4697402,,face off,-69.0,-22.0,1004.0,1.0
-401892627,2,1072,edm,blocked,53,-37,even-strength,1,3,,0,2562637,,hit,52.0,-41.0,1053.0,1.0
-401892627,2,1103,edm,shot,-83,4,even-strength,1,3,snap,0,4874940,,blocked,53.0,-37.0,1072.0,1.0
-401892627,2,1106,nyr,blocked,-72,-16,even-strength,1,3,,0,3942033,,shot,-83.0,4.0,1103.0,0.0
-401892627,2,1136,edm,blocked,81,-10,even-strength,1,3,,0,4874882,,giveaway,44.0,-38.0,1123.0,1.0
-401892627,2,1191,edm,shot,-84,-7,even-strength,1,3,snap,0,2558631,,blocked,81.0,-10.0,1136.0,1.0
-401892627,2,1192,nyr,blocked,-81,-5,even-strength,1,3,,0,2558631,,shot,-84.0,-7.0,1191.0,0.0
-401892627,2,1194,nyr,blocked,-82,6,even-strength,1,3,,0,3895074,,blocked,-81.0,-5.0,1192.0,1.0
-401892627,3,10,edm,blocked,-59,-26,even-strength,1,3,,0,4587588,,,,,,
-401892627,3,19,nyr,missed,-31,-32,even-strength,1,3,slap,0,3114995,,blocked,-59.0,-26.0,10.0,0.0
-401892627,3,32,nyr,shot,-75,-8,even-strength,1,3,tip-in,0,4697382,,giveaway,-89.0,31.0,26.0,0.0
-401892627,3,63,edm,shot,93,-11,even-strength,1,3,backhand,0,3114727,,shot,-75.0,-8.0,32.0,0.0
-401892627,3,63,edm,shot,83,-9,even-strength,1,3,poke,0,3895074,,shot,93.0,-11.0,63.0,1.0
-401892627,3,150,edm,blocked,-67,6,even-strength,1,3,,0,4874882,,hit,-11.0,41.0,140.0,1.0
-401892627,3,274,nyr,missed,-50,-9,even-strength,1,3,wrist,0,2590852,,takeaway,-62.0,41.0,272.0,1.0
-401892627,3,289,edm,shot,80,-27,even-strength,1,3,snap,0,4352722,,missed,-50.0,-9.0,274.0,0.0
-401892627,3,299,nyr,blocked,68,-18,even-strength,1,3,,0,3042062,,shot,80.0,-27.0,289.0,0.0
-401892627,3,328,nyr,shot,-54,-6,power-play,1,3,wrist,0,4197146,,face off,-69.0,-22.0,325.0,1.0
-401892627,3,403,nyr,shot,-47,-20,power-play,1,3,wrist,0,2562637,,giveaway,-37.0,31.0,367.0,1.0
-401892627,3,407,nyr,shot,-83,2,power-play,1,3,snap,0,4697382,,shot,-47.0,-20.0,403.0,1.0
-401892627,3,459,nyr,shot,-43,-21,even-strength,1,3,snap,0,3042095,,hit,-81.0,-40.0,456.0,0.0
-401892627,3,465,nyr,shot,-82,-20,even-strength,1,3,wrist,0,2590852,,face off,-69.0,-22.0,461.0,1.0
-401892627,3,502,edm,missed,72,6,power-play,1,3,snap,0,3114727,,giveaway,96.0,-27.0,500.0,0.0
-401892627,3,512,nyr,blocked,73,16,short-handed,1,3,,0,3114727,,missed,72.0,6.0,502.0,0.0
-401892627,3,537,nyr,blocked,68,8,short-handed,1,3,,0,3895074,,face off,69.0,22.0,526.0,1.0
-401892627,3,548,edm,shot,61,-23,power-play,1,3,snap,0,3114727,,face off,69.0,22.0,538.0,0.0
-401892627,3,573,nyr,blocked,71,-4,short-handed,1,3,,0,3114727,,takeaway,89.0,-34.0,555.0,1.0
-401892627,3,581,edm,shot,68,-23,power-play,1,3,slap,0,3114727,,blocked,71.0,-4.0,573.0,0.0
-401892627,3,607,edm,shot,72,15,power-play,1,3,snap,0,3895074,,shot,68.0,-23.0,581.0,1.0
-401892627,3,621,edm,missed,80,5,power-play,1,3,tip-in,0,2562624,,shot,72.0,15.0,607.0,1.0
-401892627,3,712,edm,shot,81,19,even-strength,1,3,snap,0,3114775,,hit,99.0,-19.0,686.0,1.0
-401892627,3,766,edm,shot,89,-6,even-strength,1,3,bat,0,3895074,,face off,20.0,22.0,750.0,1.0
-401892627,3,859,edm,shot,82,21,even-strength,1,3,snap,0,4233882,,giveaway,74.0,-36.0,826.0,0.0
-401892627,3,918,nyr,missed,-83,-11,even-strength,1,3,tip-in,0,3042095,,hit,-96.0,24.0,908.0,1.0
-401892627,3,961,nyr,missed,-50,-2,even-strength,1,3,wrist,0,4588750,,hit,-82.0,39.0,957.0,1.0
-401892627,3,975,edm,shot,76,-9,even-strength,1,3,snap,0,3895074,,missed,-50.0,-2.0,961.0,0.0
-401892627,3,1031,nyr,blocked,-80,-7,even-strength,1,3,,0,4197146,,face off,-69.0,-22.0,1030.0,1.0
-401892627,3,1033,edm,blocked,-85,-14,even-strength,1,3,,0,2590852,,blocked,-80.0,-7.0,1031.0,0.0
-401892627,3,1054,nyr,missed,-73,-35,even-strength,1,3,snap,0,2562637,,face off,-69.0,-22.0,1051.0,1.0
-401892627,3,1077,nyr,blocked,-71,-7,even-strength,1,3,,0,4197146,,giveaway,-82.0,36.0,1064.0,0.0
-401892627,3,1084,nyr,shot,-62,30,even-strength,1,3,slap,0,4697382,,blocked,-71.0,-7.0,1077.0,1.0
-401892627,3,1098,nyr,blocked,18,-15,even-strength,1,3,,0,2562624,,shot,-62.0,30.0,1084.0,1.0
-401892627,3,1123,nyr,missed,-60,-27,even-strength,1,3,slap,0,2562637,,blocked,18.0,-15.0,1098.0,1.0
-401892627,3,1135,edm,blocked,-69,9,even-strength,1,3,,0,5149204,,missed,-60.0,-27.0,1123.0,0.0
-401892627,3,1138,nyr,shot,-74,-35,even-strength,1,3,wrist,0,4697382,,blocked,-69.0,9.0,1135.0,0.0
-401892627,3,1160,edm,goal,5,35,empty-net,1,3,wrist,0,4874940,,face off,-69.0,-22.0,1140.0,0.0
+401892624,1,24,wpg,missed,77,-41,even-strength,0,0,snap,0,2562632.0,,giveaway,98.0,-8.0,23.0,0.0
+401892624,1,63,car,shot,-60,20,even-strength,0,0,snap,0,3114741.0,,giveaway,-99.0,12.0,54.0,0.0
+401892624,1,75,car,missed,-30,17,even-strength,0,0,snap,0,4272905.0,,shot,-60.0,20.0,63.0,1.0
+401892624,1,79,car,shot,-82,27,even-strength,0,0,wrist,0,4874899.0,,missed,-30.0,17.0,75.0,1.0
+401892624,1,115,car,missed,-79,13,even-strength,0,0,snap,0,2976849.0,,hit,-73.0,38.0,113.0,0.0
+401892624,1,121,wpg,blocked,-75,15,even-strength,0,0,,0,4697396.0,,missed,-79.0,13.0,115.0,0.0
+401892624,1,308,wpg,blocked,-61,-18,power-play,0,0,,0,3904173.0,,face off,69.0,-22.0,246.0,1.0
+401892624,1,316,car,goal,-53,11,short-handed,0,0,snap,0,4272905.0,,blocked,-61.0,-18.0,308.0,0.0
+401892624,1,381,wpg,shot,66,40,even-strength,1,0,snap,0,5511.0,,giveaway,98.0,20.0,372.0,0.0
+401892624,1,390,car,blocked,68,-21,even-strength,1,0,,0,3114735.0,,shot,66.0,40.0,381.0,0.0
+401892624,1,401,wpg,missed,70,12,even-strength,1,0,tip-in,0,4316970.0,,blocked,68.0,-21.0,390.0,0.0
+401892624,1,427,wpg,missed,86,-8,even-strength,1,0,snap,0,3652598.0,,hit,49.0,-40.0,426.0,0.0
+401892624,1,436,car,missed,-78,4,even-strength,1,0,tip-in,0,3904173.0,,missed,86.0,-8.0,427.0,0.0
+401892624,1,471,car,shot,-73,14,power-play,1,0,snap,0,3114741.0,,face off,-69.0,-22.0,440.0,0.0
+401892624,1,476,car,missed,-53,26,power-play,1,0,slap,0,3904173.0,,shot,-73.0,14.0,471.0,1.0
+401892624,1,493,wpg,blocked,-83,3,short-handed,1,0,,0,3025662.0,,missed,-53.0,26.0,476.0,0.0
+401892624,1,496,car,missed,-76,16,power-play,1,0,snap,0,3904173.0,,blocked,-83.0,3.0,493.0,0.0
+401892624,1,501,car,missed,-75,1,power-play,1,0,tip-in,0,4352683.0,,missed,-76.0,16.0,496.0,1.0
+401892624,1,530,car,missed,-78,2,power-play,1,0,tip-in,0,2976849.0,,takeaway,-93.0,18.0,504.0,1.0
+401892624,1,531,car,shot,-80,-2,power-play,1,0,backhand,0,2976849.0,,missed,-78.0,2.0,530.0,1.0
+401892624,1,550,wpg,blocked,-77,0,short-handed,1,0,,0,3114741.0,,face off,-69.0,-22.0,536.0,0.0
+401892624,1,560,car,shot,-79,-15,power-play,1,0,snap,0,4352683.0,,blocked,-77.0,0.0,550.0,0.0
+401892624,1,578,wpg,blocked,-77,-17,short-handed,1,0,,0,3904173.0,,shot,-79.0,-15.0,560.0,0.0
+401892624,1,612,wpg,blocked,-56,-2,short-handed,1,0,,0,4233611.0,,blocked,-77.0,-17.0,578.0,1.0
+401892624,1,615,car,shot,-67,-13,power-play,1,0,wrist,0,2976849.0,,face off,-69.0,-22.0,613.0,0.0
+401892624,1,617,car,shot,-87,-8,power-play,1,0,backhand,0,4697396.0,,shot,-67.0,-13.0,615.0,1.0
+401892624,1,618,wpg,blocked,-89,-3,short-handed,1,0,,0,4697396.0,,shot,-87.0,-8.0,617.0,0.0
+401892624,1,629,car,shot,-55,-25,power-play,1,0,slap,0,4697396.0,,blocked,-89.0,-3.0,618.0,0.0
+401892624,1,700,car,shot,-80,-1,even-strength,1,0,bat,0,4319879.0,,giveaway,99.0,9.0,692.0,1.0
+401892624,1,825,wpg,blocked,81,-2,even-strength,1,0,,0,2563066.0,,giveaway,-98.0,5.0,745.0,1.0
+401892624,1,826,wpg,missed,76,0,even-strength,1,0,wrist,0,3652598.0,,blocked,81.0,-2.0,825.0,1.0
+401892624,1,831,car,blocked,77,-9,even-strength,1,0,,0,2590861.0,,missed,76.0,0.0,826.0,0.0
+401892624,1,853,wpg,shot,85,17,even-strength,1,0,snap,0,4697392.0,,giveaway,15.0,39.0,838.0,0.0
+401892624,1,995,car,missed,-50,23,even-strength,1,0,snap,0,5103645.0,,face off,-20.0,-22.0,918.0,1.0
+401892624,1,1000,car,missed,-31,-2,even-strength,1,0,slap,0,3069836.0,,missed,-50.0,23.0,995.0,1.0
+401892624,1,1145,car,missed,-70,7,even-strength,1,0,tip-in,0,3904173.0,,takeaway,51.0,20.0,1098.0,1.0
+401892624,1,1164,wpg,shot,60,-11,power-play,1,0,snap,0,2562632.0,,face off,69.0,-22.0,1163.0,0.0
+401892624,1,1174,wpg,missed,84,21,power-play,1,0,snap,0,2562632.0,,face off,69.0,-22.0,1166.0,0.0
+401892624,1,1198,car,blocked,77,3,short-handed,1,0,,0,3988847.0,,missed,84.0,21.0,1174.0,0.0
+401892624,2,25,wpg,missed,-80,4,power-play,1,0,tip-in,0,4697392.0,,,,,,
+401892624,2,40,wpg,shot,-66,-2,power-play,1,0,snap,0,2562632.0,,missed,-80.0,4.0,25.0,1.0
+401892624,2,96,wpg,missed,-76,-11,even-strength,1,0,tip-in,0,5361711.0,,shot,-66.0,-2.0,40.0,1.0
+401892624,2,105,car,shot,12,-38,even-strength,1,0,backhand,0,4697396.0,,missed,-76.0,-11.0,96.0,0.0
+401892624,2,115,car,goal,34,10,even-strength,1,0,slap,0,4233611.0,,face off,69.0,-22.0,110.0,1.0
+401892624,2,138,car,missed,86,-5,power-play,2,0,wrist,0,3904173.0,,face off,69.0,22.0,131.0,1.0
+401892624,2,139,car,goal,85,-4,power-play,2,0,wrist,0,3904173.0,,missed,86.0,-5.0,138.0,1.0
+401892624,2,149,car,blocked,-45,29,even-strength,3,0,,0,5080223.0,,goal,85.0,-4.0,139.0,1.0
+401892624,2,161,car,blocked,-54,30,even-strength,3,0,,0,4316970.0,,blocked,-45.0,29.0,149.0,1.0
+401892624,2,257,wpg,blocked,47,30,even-strength,3,0,,0,3025662.0,,face off,69.0,22.0,254.0,0.0
+401892624,2,268,car,blocked,76,0,even-strength,3,0,,0,3025662.0,,face off,69.0,22.0,259.0,1.0
+401892624,2,315,car,shot,81,3,power-play,3,0,wrist,0,5103645.0,,face off,69.0,22.0,286.0,1.0
+401892624,2,323,car,missed,66,-3,power-play,3,0,snap,0,5103645.0,,face off,69.0,22.0,317.0,1.0
+401892624,2,336,wpg,shot,-33,-10,short-handed,3,0,slap,0,4233884.0,,missed,66.0,-3.0,323.0,0.0
+401892624,2,405,car,missed,81,15,power-play,3,0,snap,0,4874899.0,,hit,89.0,34.0,379.0,0.0
+401892624,2,450,car,missed,62,24,even-strength,3,0,slap,0,4697396.0,,missed,81.0,15.0,405.0,1.0
+401892624,2,453,car,shot,54,-40,even-strength,3,0,wrist,0,4874899.0,,missed,62.0,24.0,450.0,1.0
+401892624,2,461,car,goal,43,-10,even-strength,3,0,wrist,0,4272905.0,,shot,54.0,-40.0,453.0,1.0
+401892624,2,506,car,missed,62,-14,even-strength,4,0,snap,0,5193.0,,hit,94.0,-24.0,492.0,0.0
+401892624,2,549,car,goal,72,4,even-strength,4,0,snap,0,4874899.0,,hit,75.0,38.0,510.0,1.0
+401892624,2,659,car,blocked,71,-4,even-strength,5,0,,0,4272905.0,,face off,-20.0,-22.0,625.0,1.0
+401892624,2,685,wpg,shot,-71,-8,even-strength,5,0,snap,0,4697392.0,,takeaway,-37.0,-20.0,681.0,1.0
+401892624,2,696,wpg,blocked,68,18,even-strength,5,0,,0,5193.0,,giveaway,-27.0,41.0,690.0,0.0
+401892624,2,757,wpg,shot,-46,8,even-strength,5,0,snap,0,3899952.0,,face off,-69.0,22.0,741.0,0.0
+401892624,2,768,wpg,shot,-52,-28,even-strength,5,0,wrist,0,4233878.0,,shot,-46.0,8.0,757.0,1.0
+401892624,2,777,wpg,missed,-84,-8,even-strength,5,0,tip-in,0,3652598.0,,shot,-52.0,-28.0,768.0,1.0
+401892624,2,786,wpg,shot,-73,37,even-strength,5,0,wrist,0,3988847.0,,missed,-84.0,-8.0,777.0,1.0
+401892624,2,857,car,blocked,-77,-2,short-handed,5,0,,0,5080223.0,,face off,-69.0,22.0,834.0,1.0
+401892624,2,915,wpg,shot,-54,11,power-play,5,0,snap,0,3988847.0,,giveaway,-85.0,34.0,898.0,0.0
+401892624,2,934,wpg,shot,-78,3,power-play,5,0,tip-in,0,3988847.0,,shot,-54.0,11.0,915.0,1.0
+401892624,2,938,wpg,shot,-98,-6,power-play,5,0,snap,0,4233583.0,,shot,-78.0,3.0,934.0,1.0
+401892624,2,941,wpg,shot,-54,16,power-play,5,0,snap,0,5080223.0,,face off,-69.0,-22.0,939.0,1.0
+401892624,2,961,wpg,shot,-67,-14,even-strength,5,0,snap,0,4233583.0,,face off,-69.0,22.0,943.0,0.0
+401892624,2,1021,car,shot,29,33,even-strength,5,0,slap,0,3025662.0,,face off,-69.0,-22.0,974.0,0.0
+401892624,2,1042,wpg,missed,-30,-36,even-strength,5,0,wrist,0,3114735.0,,hit,91.0,32.0,1026.0,1.0
+401892624,2,1045,wpg,shot,-43,41,even-strength,5,0,snap,0,5080223.0,,missed,-30.0,-36.0,1042.0,1.0
+401892624,2,1064,wpg,shot,-24,7,even-strength,5,0,tip-in,0,4316970.0,,shot,-43.0,41.0,1045.0,1.0
+401892624,2,1080,car,shot,86,-4,even-strength,5,0,snap,0,5193.0,,shot,-24.0,7.0,1064.0,0.0
+401892624,2,1126,wpg,shot,-60,39,even-strength,5,0,wrist,0,2562632.0,,shot,86.0,-4.0,1080.0,0.0
+401892624,2,1130,wpg,missed,-63,35,even-strength,5,0,wrist,0,4233878.0,,shot,-60.0,39.0,1126.0,1.0
+401892624,2,1148,wpg,blocked,76,0,even-strength,5,0,,0,4272905.0,,missed,-63.0,35.0,1130.0,1.0
+401892624,2,1185,car,shot,45,21,even-strength,5,0,snap,0,4272905.0,,face off,69.0,22.0,1183.0,1.0
+401892624,3,46,wpg,shot,55,-36,even-strength,5,0,wrist,0,5080223.0,,hit,-28.0,39.0,18.0,1.0
+401892624,3,54,wpg,missed,75,2,even-strength,5,0,snap,0,4697401.0,,shot,55.0,-36.0,46.0,1.0
+401892624,3,94,car,shot,-53,0,even-strength,5,0,snap,0,3114741.0,,hit,63.0,38.0,70.0,1.0
+401892624,3,97,wpg,blocked,-61,-19,even-strength,5,0,,0,4272905.0,,face off,-69.0,-22.0,96.0,0.0
+401892624,3,107,car,shot,-80,-18,even-strength,5,0,snap,0,3114741.0,,blocked,-61.0,-19.0,97.0,0.0
+401892624,3,117,car,shot,-38,-26,even-strength,5,0,slap,0,4272905.0,,shot,-80.0,-18.0,107.0,1.0
+401892624,3,187,car,missed,-81,2,even-strength,5,0,tip-in,0,4697396.0,,hit,97.0,8.0,162.0,0.0
+401892624,3,225,car,shot,-46,3,even-strength,5,0,wrist,0,4352683.0,,hit,-33.0,39.0,193.0,0.0
+401892624,3,243,car,shot,-63,-22,even-strength,5,0,snap,0,4352683.0,,giveaway,-26.0,35.0,241.0,0.0
+401892624,3,247,wpg,blocked,-49,-15,even-strength,5,0,,0,4272905.0,,face off,-69.0,-22.0,245.0,0.0
+401892624,3,264,car,missed,-83,-3,even-strength,5,0,tip-in,0,3042054.0,,hit,-77.0,39.0,255.0,1.0
+401892624,3,270,car,shot,-41,-34,even-strength,5,0,slap,0,4272905.0,,face off,-69.0,-22.0,267.0,0.0
+401892624,3,338,wpg,shot,74,34,even-strength,5,0,snap,0,3114735.0,,giveaway,-66.0,41.0,291.0,1.0
+401892624,3,341,car,blocked,60,-10,even-strength,5,0,,0,4874731.0,,shot,74.0,34.0,338.0,0.0
+401892624,3,353,car,shot,-39,-40,even-strength,5,0,snap,0,4352770.0,,hit,91.0,31.0,347.0,0.0
+401892624,3,371,wpg,missed,87,-6,even-strength,5,0,wrap-around,0,3988847.0,,face off,69.0,22.0,367.0,1.0
+401892624,3,378,car,blocked,64,-11,even-strength,5,0,,0,4697401.0,,missed,87.0,-6.0,371.0,0.0
+401892624,3,384,wpg,shot,85,10,even-strength,5,0,backhand,0,4697392.0,,blocked,64.0,-11.0,378.0,0.0
+401892624,3,385,car,blocked,84,1,even-strength,5,0,,0,4697392.0,,shot,85.0,10.0,384.0,0.0
+401892624,3,401,car,missed,-82,3,even-strength,5,0,snap,0,4697396.0,,blocked,84.0,1.0,385.0,1.0
+401892624,3,404,car,shot,-81,1,even-strength,5,0,snap,0,2989376.0,,missed,-82.0,3.0,401.0,1.0
+401892624,3,413,car,goal,-60,-17,power-play,5,0,wrist,0,2976849.0,,face off,-69.0,-22.0,406.0,0.0
+401892624,3,481,car,missed,-47,-38,even-strength,6,0,snap,0,4352770.0,,face off,-20.0,22.0,450.0,1.0
+401892624,3,518,car,goal,-81,-3,even-strength,6,0,snap,0,4352692.0,,missed,-47.0,-38.0,481.0,1.0
+401892624,3,534,car,shot,-30,-22,even-strength,7,0,wrist,0,4319879.0,,giveaway,-39.0,1.0,533.0,0.0
+401892624,3,538,car,missed,-51,-19,even-strength,7,0,snap,0,4272905.0,,face off,-69.0,-22.0,536.0,1.0
+401892624,3,604,wpg,shot,73,-26,even-strength,7,0,snap,0,3988847.0,,hit,-87.0,36.0,573.0,1.0
+401892624,3,606,wpg,shot,82,-9,even-strength,7,0,wrist,0,3899952.0,,shot,73.0,-26.0,604.0,1.0
+401892624,3,615,car,blocked,44,-20,even-strength,7,0,,0,3899952.0,,giveaway,83.0,-24.0,614.0,1.0
+401892624,3,648,wpg,shot,77,12,even-strength,7,0,wrist,0,2562632.0,,giveaway,-1.0,-38.0,632.0,1.0
+401892624,3,674,car,missed,-78,7,even-strength,7,0,backhand,0,3114741.0,,shot,77.0,12.0,648.0,0.0
+401892624,3,678,car,missed,-28,-2,even-strength,7,0,slap,0,4272905.0,,face off,-69.0,22.0,675.0,1.0
+401892624,3,701,wpg,shot,65,-16,even-strength,7,0,snap,0,5511.0,,missed,-28.0,-2.0,678.0,0.0
+401892624,3,705,wpg,missed,88,3,even-strength,7,0,wrist,0,3652598.0,,shot,65.0,-16.0,701.0,1.0
+401892624,3,761,car,blocked,57,0,even-strength,7,0,,0,4233878.0,,hit,2.0,-40.0,751.0,1.0
+401892624,3,764,wpg,blocked,81,-4,even-strength,7,0,,0,3988847.0,,blocked,57.0,0.0,761.0,0.0
+401892624,3,861,car,blocked,58,-19,even-strength,7,0,,0,2590861.0,,giveaway,-23.0,6.0,797.0,1.0
+401892624,3,865,wpg,missed,29,-19,even-strength,7,0,slap,0,2590861.0,,face off,69.0,-22.0,863.0,1.0
+401892624,3,882,wpg,missed,38,37,even-strength,7,0,wrist,0,3114735.0,,face off,69.0,-22.0,878.0,1.0
+401892624,3,920,wpg,blocked,-71,21,even-strength,7,0,,0,5103645.0,,hit,-33.0,40.0,891.0,1.0
+401892624,3,940,wpg,missed,88,23,even-strength,7,0,snap,0,4874731.0,,blocked,-71.0,21.0,920.0,1.0
+401892624,3,1077,car,missed,-74,31,even-strength,7,0,slap,0,4233611.0,,giveaway,-76.0,11.0,1042.0,1.0
+401892624,3,1114,wpg,blocked,-80,5,even-strength,7,0,,0,2989376.0,,face off,20.0,22.0,1100.0,1.0
+401892624,3,1119,car,shot,-27,35,even-strength,7,0,wrist,0,4233611.0,,blocked,-80.0,5.0,1114.0,0.0
+401892624,3,1178,wpg,missed,33,-5,even-strength,7,0,wrist,0,4233878.0,,giveaway,59.0,-30.0,1129.0,0.0
+401892624,3,1190,wpg,shot,80,-4,even-strength,7,0,deflected,0,4316970.0,,missed,33.0,-5.0,1178.0,1.0
+401892624,3,1194,wpg,shot,54,-8,even-strength,7,0,wrist,0,5511.0,,face off,69.0,-22.0,1192.0,0.0
+401892624,3,1197,car,blocked,80,13,even-strength,7,0,,0,3988847.0,,shot,54.0,-8.0,1194.0,0.0
+401892625,1,13,wsh,blocked,49,9,even-strength,0,0,,0,3942335.0,,hit,96.0,0.0,10.0,0.0
+401892625,1,15,min,missed,69,-14,even-strength,0,0,snap,0,4565233.0,,blocked,49.0,9.0,13.0,0.0
+401892625,1,40,wsh,blocked,71,-9,even-strength,0,0,,0,2562600.0,,missed,69.0,-14.0,15.0,0.0
+401892625,1,92,min,shot,38,18,even-strength,0,0,snap,0,2976850.0,,takeaway,92.0,19.0,89.0,1.0
+401892625,1,129,wsh,missed,-57,-16,even-strength,0,0,snap,0,3114766.0,,shot,38.0,18.0,92.0,0.0
+401892625,1,222,min,goal,58,0,even-strength,0,0,snap,0,4320548.0,,giveaway,-90.0,23.0,199.0,1.0
+401892625,1,260,min,shot,70,-16,even-strength,0,1,backhand,0,3942335.0,,goal,58.0,0.0,222.0,1.0
+401892625,1,275,wsh,shot,-19,-37,even-strength,0,1,snap,0,4024833.0,,shot,70.0,-16.0,260.0,0.0
+401892625,1,327,min,goal,68,-6,even-strength,0,1,snap,0,3042048.0,,giveaway,-82.0,-18.0,310.0,0.0
+401892625,1,349,min,shot,81,-16,even-strength,0,2,backhand,0,5302535.0,,hit,98.0,-14.0,335.0,1.0
+401892625,1,383,min,blocked,-79,2,even-strength,0,2,,0,4062251.0,,face off,-69.0,-22.0,379.0,0.0
+401892625,1,405,min,blocked,-74,7,even-strength,0,2,,0,4062251.0,,blocked,-79.0,2.0,383.0,1.0
+401892625,1,406,wsh,missed,-90,-4,even-strength,0,2,wrist,0,3899933.0,,blocked,-74.0,7.0,405.0,0.0
+401892625,1,407,min,blocked,-88,-5,even-strength,0,2,,0,5216918.0,,missed,-90.0,-4.0,406.0,0.0
+401892625,1,416,wsh,shot,-27,11,even-strength,0,2,slap,0,4755690.0,,blocked,-88.0,-5.0,407.0,0.0
+401892625,1,478,wsh,blocked,54,-10,even-strength,0,2,,0,3942335.0,,hit,29.0,-2.0,460.0,1.0
+401892625,1,597,min,shot,29,14,even-strength,0,2,slap,0,5526.0,,hit,-20.0,-40.0,557.0,0.0
+401892625,1,602,min,missed,81,-4,even-strength,0,2,tip-in,0,4320625.0,,face off,69.0,22.0,599.0,1.0
+401892625,1,615,min,missed,75,0,even-strength,0,2,tip-in,0,5526.0,,missed,81.0,-4.0,602.0,1.0
+401892625,1,656,wsh,shot,-81,-1,even-strength,0,2,tip-in,0,4587943.0,,giveaway,94.0,12.0,645.0,0.0
+401892625,1,661,min,blocked,-67,-15,even-strength,0,2,,0,4024950.0,,shot,-81.0,-1.0,656.0,0.0
+401892625,1,737,wsh,shot,-44,0,even-strength,0,2,snap,0,5149172.0,,hit,-98.0,0.0,695.0,1.0
+401892625,1,750,min,blocked,-78,-6,even-strength,0,2,,0,3899933.0,,face off,-69.0,22.0,739.0,1.0
+401892625,1,774,min,blocked,-66,0,even-strength,0,2,,0,5216918.0,,blocked,-78.0,-6.0,750.0,1.0
+401892625,1,817,min,shot,69,-13,even-strength,0,2,backhand,0,4565257.0,,hit,77.0,-39.0,815.0,0.0
+401892625,1,835,min,shot,42,22,even-strength,0,2,snap,0,4320548.0,,face off,69.0,-22.0,818.0,0.0
+401892625,1,844,wsh,blocked,42,1,even-strength,0,2,,0,4320548.0,,face off,69.0,22.0,836.0,0.0
+401892625,1,863,min,shot,70,18,even-strength,0,2,snap,0,4565233.0,,blocked,42.0,1.0,844.0,0.0
+401892625,1,888,wsh,blocked,40,8,even-strength,0,2,,0,3942335.0,,shot,70.0,18.0,863.0,0.0
+401892625,1,947,min,blocked,-62,-6,even-strength,0,2,,0,4233618.0,,blocked,40.0,8.0,888.0,0.0
+401892625,1,1011,min,missed,32,13,even-strength,0,2,snap,0,4799741.0,,giveaway,39.0,-28.0,1001.0,0.0
+401892625,1,1047,wsh,missed,-71,-2,even-strength,0,2,tip-in,0,3101.0,,missed,32.0,13.0,1011.0,0.0
+401892625,1,1070,wsh,missed,-65,-21,even-strength,0,2,snap,0,4024950.0,,missed,-71.0,-2.0,1047.0,1.0
+401892625,1,1072,wsh,missed,-82,-4,even-strength,0,2,between legs,0,3101.0,,missed,-65.0,-21.0,1070.0,1.0
+401892625,1,1097,min,shot,58,25,even-strength,0,2,snap,0,4565233.0,,missed,-82.0,-4.0,1072.0,0.0
+401892625,1,1140,wsh,shot,-39,-25,even-strength,0,2,snap,0,4024950.0,,stoppage,0.0,-41.0,1121.0,
+401892625,1,1146,min,blocked,-77,-5,even-strength,0,2,,0,2970615.0,,face off,-69.0,-22.0,1142.0,0.0
+401892625,1,1170,wsh,missed,-44,-40,even-strength,0,2,snap,0,4024950.0,,blocked,-77.0,-5.0,1146.0,0.0
+401892625,1,1192,min,missed,86,-7,even-strength,0,2,backhand,0,3942335.0,,hit,-54.0,19.0,1187.0,0.0
+401892625,2,6,wsh,shot,70,-1,even-strength,0,2,snap,0,2970615.0,,,,,,
+401892625,2,9,wsh,shot,56,-18,even-strength,0,2,snap,0,2970615.0,,face off,69.0,-22.0,8.0,1.0
+401892625,2,26,wsh,shot,30,14,even-strength,0,2,snap,0,4024833.0,,shot,56.0,-18.0,9.0,1.0
+401892625,2,56,min,blocked,57,13,even-strength,0,2,,0,4024950.0,,face off,-20.0,22.0,41.0,0.0
+401892625,2,97,wsh,missed,61,35,even-strength,0,2,snap,0,5216918.0,,giveaway,-85.0,29.0,88.0,1.0
+401892625,2,148,min,blocked,79,-6,even-strength,0,2,,0,3942924.0,,hit,42.0,-40.0,143.0,1.0
+401892625,2,174,min,blocked,60,22,even-strength,0,2,,0,5149172.0,,stoppage,-14.0,41.0,159.0,
+401892625,2,250,min,shot,-48,-31,even-strength,0,2,snap,0,3904091.0,,giveaway,7.0,-19.0,235.0,1.0
+401892625,2,283,wsh,blocked,-82,-22,even-strength,0,2,,0,3904091.0,,hit,-52.0,-41.0,282.0,1.0
+401892625,2,333,wsh,shot,84,-1,even-strength,0,2,snap,0,4755690.0,,blocked,-82.0,-22.0,283.0,1.0
+401892625,2,352,min,blocked,65,18,even-strength,0,2,,0,4024950.0,,face off,69.0,-22.0,335.0,0.0
+401892625,2,372,min,blocked,84,12,even-strength,0,2,,0,3899933.0,,hit,-98.0,-15.0,362.0,1.0
+401892625,2,382,wsh,shot,71,12,even-strength,0,2,snap,0,4024950.0,,blocked,84.0,12.0,372.0,0.0
+401892625,2,432,min,shot,-57,-31,even-strength,0,2,snap,0,5302535.0,,hit,97.0,3.0,407.0,0.0
+401892625,2,443,wsh,shot,67,28,even-strength,0,2,snap,0,5229146.0,,shot,-57.0,-31.0,432.0,0.0
+401892625,2,479,wsh,blocked,-47,26,even-strength,0,2,,0,4002.0,,face off,69.0,22.0,444.0,0.0
+401892625,2,509,min,shot,-63,-18,even-strength,0,2,snap,0,3042063.0,,hit,-94.0,28.0,493.0,1.0
+401892625,2,562,wsh,shot,66,-33,even-strength,0,2,snap,0,5149172.0,,hit,20.0,40.0,546.0,1.0
+401892625,2,620,wsh,missed,30,-8,even-strength,0,2,snap,0,3942924.0,,giveaway,27.0,16.0,612.0,0.0
+401892625,2,654,wsh,missed,66,16,even-strength,0,2,snap,0,4587943.0,,missed,30.0,-8.0,620.0,1.0
+401892625,2,690,wsh,blocked,-46,-1,even-strength,0,2,,0,4565257.0,,missed,66.0,16.0,654.0,1.0
+401892625,2,691,min,shot,-59,-5,even-strength,0,2,snap,0,2563026.0,,blocked,-46.0,-1.0,690.0,0.0
+401892625,2,705,wsh,blocked,-58,-6,even-strength,0,2,,0,4565257.0,,shot,-59.0,-5.0,691.0,0.0
+401892625,2,713,wsh,blocked,-64,12,even-strength,0,2,,0,2562600.0,,blocked,-58.0,-6.0,705.0,1.0
+401892625,2,752,min,missed,-75,4,even-strength,0,2,tip-in,0,3904188.0,,hit,-91.0,-27.0,743.0,0.0
+401892625,2,773,wsh,blocked,-38,34,even-strength,0,2,,0,4002.0,,face off,-69.0,-22.0,765.0,0.0
+401892625,2,801,min,missed,-73,-3,even-strength,0,2,tip-in,0,2976850.0,,blocked,-38.0,34.0,773.0,0.0
+401892625,2,857,min,shot,-58,-1,even-strength,0,2,wrist,0,3904091.0,,hit,-70.0,41.0,846.0,0.0
+401892625,2,863,min,missed,-49,14,even-strength,0,2,bat,0,3904091.0,,giveaway,-80.0,27.0,861.0,0.0
+401892625,2,872,min,shot,-42,-4,even-strength,0,2,snap,0,4320548.0,,missed,-49.0,14.0,863.0,1.0
+401892625,2,877,min,shot,-65,40,even-strength,0,2,snap,0,3042063.0,,shot,-42.0,-4.0,872.0,1.0
+401892625,2,886,min,shot,-81,-16,even-strength,0,2,snap,0,3042063.0,,shot,-65.0,40.0,877.0,1.0
+401892625,2,899,wsh,blocked,-70,3,even-strength,0,2,,0,4320548.0,,face off,-69.0,22.0,893.0,0.0
+401892625,2,902,min,missed,-77,-11,even-strength,0,2,backhand,0,5526.0,,blocked,-70.0,3.0,899.0,0.0
+401892625,2,940,min,blocked,61,21,even-strength,0,2,,0,4697783.0,,giveaway,-3.0,-12.0,921.0,1.0
+401892625,2,948,wsh,shot,80,5,even-strength,0,2,snap,0,3101.0,,blocked,61.0,21.0,940.0,0.0
+401892625,2,950,wsh,shot,81,-3,even-strength,0,2,backhand,0,4697783.0,,shot,80.0,5.0,948.0,1.0
+401892625,2,1074,wsh,shot,57,-12,even-strength,0,2,snap,0,5216918.0,,hit,-72.0,38.0,1049.0,0.0
+401892625,2,1080,wsh,missed,30,-17,even-strength,0,2,snap,0,4024833.0,,face off,69.0,-22.0,1076.0,0.0
+401892625,2,1127,wsh,missed,60,10,even-strength,0,2,backhand,0,4024950.0,,giveaway,97.0,-2.0,1093.0,0.0
+401892625,2,1146,wsh,missed,80,-22,even-strength,0,2,snap,0,3101.0,,missed,60.0,10.0,1127.0,1.0
+401892625,2,1162,min,blocked,88,-6,even-strength,0,2,,0,4024950.0,,missed,80.0,-22.0,1146.0,0.0
+401892625,2,1194,wsh,goal,80,-3,even-strength,0,2,tip-in,0,4697783.0,,blocked,88.0,-6.0,1162.0,0.0
+401892625,3,9,min,shot,63,34,even-strength,1,2,snap,0,3904091.0,,takeaway,31.0,31.0,4.0,1.0
+401892625,3,98,min,shot,66,16,even-strength,1,2,snap,0,4565257.0,,giveaway,30.0,24.0,95.0,0.0
+401892625,3,141,min,shot,60,-13,power-play,1,2,snap,0,4565233.0,,face off,69.0,22.0,138.0,0.0
+401892625,3,203,wsh,shot,-68,30,short-handed,1,2,snap,0,3114766.0,,face off,69.0,-22.0,143.0,1.0
+401892625,3,220,wsh,blocked,78,-2,short-handed,1,2,,0,4565233.0,,shot,-68.0,30.0,203.0,1.0
+401892625,3,226,wsh,blocked,75,15,short-handed,1,2,,0,3942335.0,,blocked,78.0,-2.0,220.0,1.0
+401892625,3,277,min,shot,72,14,even-strength,1,2,snap,0,5080172.0,,face off,69.0,22.0,227.0,0.0
+401892625,3,281,wsh,blocked,50,4,even-strength,1,2,,0,2976850.0,,face off,69.0,22.0,279.0,0.0
+401892625,3,302,wsh,shot,-70,-23,even-strength,1,2,snap,0,3904107.0,,hit,4.0,14.0,297.0,0.0
+401892625,3,307,min,blocked,-34,-23,even-strength,1,2,,0,4697783.0,,shot,-70.0,-23.0,302.0,0.0
+401892625,3,339,wsh,missed,-87,-5,even-strength,1,2,deflected,0,3101.0,,blocked,-34.0,-23.0,307.0,0.0
+401892625,3,373,wsh,blocked,81,-25,even-strength,1,2,,0,2563026.0,,hit,95.0,12.0,359.0,0.0
+401892625,3,374,min,shot,80,-19,even-strength,1,2,snap,0,4565257.0,,blocked,81.0,-25.0,373.0,0.0
+401892625,3,385,wsh,shot,-62,-21,even-strength,1,2,snap,0,4024833.0,,shot,80.0,-19.0,374.0,0.0
+401892625,3,462,min,missed,72,-24,even-strength,1,2,backhand,0,5103533.0,,face off,-69.0,22.0,445.0,1.0
+401892625,3,544,wsh,missed,-36,-25,even-strength,1,2,snap,0,5149172.0,,hit,9.0,40.0,516.0,0.0
+401892625,3,551,wsh,shot,-62,30,even-strength,1,2,snap,0,4755690.0,,missed,-36.0,-25.0,544.0,1.0
+401892625,3,562,min,blocked,-77,0,even-strength,1,2,,0,5149172.0,,shot,-62.0,30.0,551.0,0.0
+401892625,3,596,wsh,shot,-62,0,even-strength,1,2,snap,0,3101.0,,blocked,-77.0,0.0,562.0,0.0
+401892625,3,601,min,blocked,-50,18,even-strength,1,2,,0,4024950.0,,shot,-62.0,0.0,596.0,0.0
+401892625,3,604,wsh,shot,-31,2,even-strength,1,2,snap,0,4024950.0,,blocked,-50.0,18.0,601.0,0.0
+401892625,3,615,min,blocked,-56,8,even-strength,1,2,,0,3899933.0,,face off,-69.0,22.0,606.0,0.0
+401892625,3,616,wsh,missed,-59,3,even-strength,1,2,snap,0,3899933.0,,blocked,-56.0,8.0,615.0,0.0
+401892625,3,616,wsh,shot,-72,10,even-strength,1,2,snap,0,4024950.0,,missed,-59.0,3.0,616.0,1.0
+401892625,3,629,min,missed,79,-16,even-strength,1,2,wrist,0,3042048.0,,shot,-72.0,10.0,616.0,0.0
+401892625,3,790,min,shot,55,22,power-play,1,2,slap,0,4565257.0,,takeaway,20.0,-27.0,749.0,0.0
+401892625,3,796,wsh,blocked,67,14,short-handed,1,2,,0,4565257.0,,shot,55.0,22.0,790.0,0.0
+401892625,3,816,min,missed,87,-17,power-play,1,2,slap,0,3942335.0,,blocked,67.0,14.0,796.0,0.0
+401892625,3,864,wsh,shot,-18,5,even-strength,1,2,snap,0,5149172.0,,missed,87.0,-17.0,816.0,0.0
+401892625,3,874,wsh,missed,-52,-17,even-strength,1,2,snap,0,5216918.0,,face off,-69.0,22.0,867.0,1.0
+401892625,3,882,min,shot,59,40,even-strength,1,2,snap,0,3904188.0,,missed,-52.0,-17.0,874.0,0.0
+401892625,3,896,wsh,shot,-77,-10,even-strength,1,2,snap,0,3114766.0,,giveaway,-78.0,-35.0,895.0,0.0
+401892625,3,900,wsh,missed,-61,-19,even-strength,1,2,snap,0,3101.0,,face off,-69.0,-22.0,899.0,0.0
+401892625,3,968,wsh,missed,-46,-38,even-strength,1,2,snap,0,4587943.0,,face off,-20.0,22.0,957.0,1.0
+401892625,3,1031,min,shot,84,5,power-play,1,2,tip-in,0,5302535.0,,face off,69.0,22.0,970.0,0.0
+401892625,3,1057,min,goal,54,6,power-play,1,2,snap,0,5302535.0,,face off,69.0,-22.0,1053.0,1.0
+401892625,3,1110,min,blocked,-79,2,even-strength,1,3,,0,4024950.0,,giveaway,-76.0,40.0,1098.0,1.0
+401892625,3,1112,wsh,shot,-72,0,even-strength,1,3,snap,0,3114766.0,,blocked,-79.0,2.0,1110.0,0.0
+401892625,3,1113,wsh,missed,-88,5,even-strength,1,3,backhand,0,4024833.0,,shot,-72.0,0.0,1112.0,1.0
+401892625,3,1127,wsh,shot,-62,2,even-strength,1,3,snap,0,3114766.0,,missed,-88.0,5.0,1113.0,1.0
+401892625,3,1131,wsh,blocked,-35,33,even-strength,1,3,,0,3942335.0,,shot,-62.0,2.0,1127.0,1.0
+401892625,3,1137,min,missed,53,40,even-strength,1,3,snap,0,3942335.0,,blocked,-35.0,33.0,1131.0,0.0
+401892625,3,1142,min,goal,81,14,empty-net,1,3,snap,0,3942335.0,,hit,46.0,-40.0,1140.0,0.0
+401892625,3,1175,min,goal,55,-4,power-play,1,4,slap,0,5080172.0,,face off,69.0,-22.0,1159.0,1.0
+401892625,3,1193,min,missed,58,24,power-play,1,5,slap,0,3042063.0,,giveaway,96.0,16.0,1186.0,0.0
+401892626,1,57,uta,shot,60,17,even-strength,0,0,wrist,0,4352699.0,,hit,71.0,-38.0,54.0,0.0
+401892626,1,62,uta,blocked,67,13,even-strength,0,0,,0,3024798.0,,face off,69.0,22.0,59.0,1.0
+401892626,1,120,uta,blocked,-68,-7,even-strength,0,0,,0,2564164.0,,hit,-86.0,-36.0,81.0,0.0
+401892626,1,142,phi,shot,-8,29,even-strength,0,0,wrist,0,4565230.0,,hit,-71.0,-39.0,124.0,1.0
+401892626,1,155,phi,blocked,61,33,even-strength,0,0,,0,4755695.0,,shot,-8.0,29.0,142.0,1.0
+401892626,1,176,phi,blocked,45,-23,even-strength,0,0,,0,4064936.0,,face off,69.0,22.0,173.0,0.0
+401892626,1,193,uta,blocked,-88,16,even-strength,0,0,,0,4697406.0,,blocked,45.0,-23.0,176.0,0.0
+401892626,1,205,uta,missed,80,0,even-strength,0,0,deflected,0,5080143.0,,hit,-98.0,21.0,197.0,0.0
+401892626,1,224,phi,blocked,72,-5,even-strength,0,0,,0,2563036.0,,hit,73.0,39.0,209.0,0.0
+401892626,1,250,phi,shot,-82,-8,even-strength,0,0,snap,0,3096237.0,,hit,49.0,40.0,228.0,0.0
+401892626,1,253,phi,shot,-42,-18,even-strength,0,0,slap,0,4392642.0,,face off,-69.0,-22.0,252.0,1.0
+401892626,1,287,uta,shot,57,-17,even-strength,0,0,snap,0,4874723.0,,hit,-27.0,42.0,260.0,0.0
+401892626,1,347,uta,missed,67,19,power-play,0,0,snap,0,4874723.0,,face off,69.0,22.0,315.0,1.0
+401892626,1,360,uta,missed,74,32,power-play,0,0,slap,0,4874723.0,,giveaway,51.0,-40.0,352.0,1.0
+401892626,1,371,phi,blocked,75,-6,short-handed,0,0,,0,3114770.0,,missed,74.0,32.0,360.0,0.0
+401892626,1,380,uta,shot,59,-10,power-play,0,0,wrist,0,3114770.0,,giveaway,76.0,-17.0,375.0,0.0
+401892626,1,393,uta,shot,78,-21,power-play,0,0,wrist,0,2563036.0,,face off,69.0,-22.0,381.0,1.0
+401892626,1,476,phi,blocked,78,2,even-strength,0,0,,0,5080205.0,,giveaway,82.0,39.0,473.0,1.0
+401892626,1,481,uta,shot,79,25,even-strength,0,0,snap,0,4024857.0,,blocked,78.0,2.0,476.0,0.0
+401892626,1,498,uta,missed,25,35,even-strength,0,0,slap,0,4024868.0,,face off,69.0,22.0,483.0,0.0
+401892626,1,528,phi,missed,-49,-38,even-strength,0,0,wrist,0,5173105.0,,hit,99.0,15.0,516.0,0.0
+401892626,1,546,phi,shot,-69,-24,even-strength,0,0,backhand,0,4392072.0,,missed,-49.0,-38.0,528.0,1.0
+401892626,1,570,uta,shot,40,0,even-strength,0,0,snap,0,4755695.0,,giveaway,96.0,-27.0,562.0,0.0
+401892626,1,611,phi,blocked,45,15,even-strength,0,0,,0,3114770.0,,shot,40.0,0.0,570.0,0.0
+401892626,1,612,uta,missed,72,-9,even-strength,0,0,backhand,0,5149158.0,,blocked,45.0,15.0,611.0,0.0
+401892626,1,618,uta,missed,29,-23,even-strength,0,0,wrist,0,5080205.0,,hit,77.0,-38.0,616.0,0.0
+401892626,1,624,uta,shot,62,-25,even-strength,0,0,wrist,0,4024857.0,,face off,69.0,-22.0,620.0,1.0
+401892626,1,635,uta,shot,83,-9,even-strength,0,0,backhand,0,3114770.0,,giveaway,49.0,42.0,632.0,0.0
+401892626,1,674,uta,blocked,-76,-7,even-strength,0,0,,0,4565235.0,,hit,-37.0,-40.0,671.0,1.0
+401892626,1,689,phi,shot,-21,-37,even-strength,0,0,backhand,0,5149199.0,,blocked,-76.0,-7.0,674.0,0.0
+401892626,1,750,phi,blocked,71,-33,even-strength,0,0,,0,4064936.0,,hit,65.0,39.0,718.0,0.0
+401892626,1,769,phi,goal,-86,-8,even-strength,0,0,snap,0,5149170.0,,giveaway,-83.0,38.0,763.0,0.0
+401892626,1,802,uta,blocked,-85,9,even-strength,1,0,,0,3900169.0,,giveaway,-80.0,6.0,797.0,1.0
+401892626,1,864,uta,goal,72,-7,even-strength,1,0,snap,0,5149158.0,,hit,-22.0,-41.0,854.0,0.0
+401892626,1,901,uta,blocked,-49,18,even-strength,1,1,,0,5291941.0,,hit,-98.0,-13.0,900.0,1.0
+401892626,1,917,phi,shot,-40,15,even-strength,1,1,snap,0,5149170.0,,blocked,-49.0,18.0,901.0,0.0
+401892626,1,979,uta,missed,66,-7,power-play,1,1,snap,0,4874723.0,,face off,69.0,22.0,928.0,0.0
+401892626,1,1061,phi,missed,-43,6,even-strength,1,1,snap,0,5291941.0,,giveaway,-26.0,-37.0,993.0,0.0
+401892626,1,1091,phi,missed,-51,-19,even-strength,1,1,snap,0,3115035.0,,hit,95.0,9.0,1086.0,0.0
+401892626,1,1107,uta,blocked,-55,-26,even-strength,1,1,,0,2564164.0,,missed,-51.0,-19.0,1091.0,0.0
+401892626,1,1187,phi,missed,-96,-19,even-strength,1,1,backhand,0,3115035.0,,face off,20.0,22.0,1163.0,0.0
+401892626,2,29,uta,shot,-85,9,even-strength,1,1,wrist,0,5080143.0,,takeaway,-95.0,-5.0,16.0,1.0
+401892626,2,49,uta,blocked,38,-13,even-strength,1,1,,0,4697387.0,,shot,-85.0,9.0,29.0,1.0
+401892626,2,57,phi,missed,72,18,even-strength,1,1,snap,0,3115035.0,,blocked,38.0,-13.0,49.0,0.0
+401892626,2,66,phi,goal,89,-8,even-strength,1,1,backhand,0,3900169.0,,missed,72.0,18.0,57.0,1.0
+401892626,2,98,uta,missed,-77,-6,even-strength,2,1,tip-in,0,4874723.0,,hit,74.0,-39.0,86.0,0.0
+401892626,2,159,uta,blocked,69,-3,even-strength,2,1,,0,4392642.0,,hit,90.0,-32.0,142.0,0.0
+401892626,2,166,phi,blocked,-44,31,even-strength,2,1,,0,3904191.0,,blocked,69.0,-3.0,159.0,0.0
+401892626,2,216,uta,blocked,67,2,even-strength,2,1,,0,2562601.0,,blocked,-44.0,31.0,166.0,0.0
+401892626,2,317,phi,blocked,-57,-4,even-strength,2,1,,0,3114770.0,,hit,97.0,-12.0,252.0,1.0
+401892626,2,326,uta,shot,-61,6,even-strength,2,1,deflected,0,4874723.0,,blocked,-57.0,-4.0,317.0,0.0
+401892626,2,350,phi,goal,53,16,even-strength,2,1,snap,0,4419682.0,,hit,91.0,-32.0,341.0,1.0
+401892626,2,397,phi,shot,93,4,even-strength,3,1,wrap-around,0,3096237.0,,hit,-4.0,-41.0,382.0,1.0
+401892626,2,450,uta,missed,-86,-9,even-strength,3,1,tip-in,0,5793.0,,hit,-90.0,34.0,411.0,1.0
+401892626,2,487,phi,shot,67,-24,even-strength,3,1,backhand,0,5173105.0,,giveaway,-94.0,8.0,460.0,0.0
+401892626,2,506,phi,blocked,-64,-16,even-strength,3,1,,0,2563036.0,,takeaway,-83.0,34.0,503.0,0.0
+401892626,2,537,uta,shot,-71,20,even-strength,3,1,snap,0,4874723.0,,face off,20.0,22.0,523.0,1.0
+401892626,2,562,phi,missed,82,9,even-strength,3,1,tip-in,0,4419682.0,,face off,69.0,-22.0,558.0,1.0
+401892626,2,565,uta,blocked,80,-20,even-strength,3,1,,0,5291941.0,,missed,82.0,9.0,562.0,0.0
+401892626,2,725,phi,shot,70,-22,power-play,3,1,wrist,0,5291941.0,,face off,69.0,22.0,653.0,0.0
+401892626,2,760,phi,shot,72,-12,power-play,3,1,snap,0,4697406.0,,face off,69.0,22.0,728.0,1.0
+401892626,2,769,phi,missed,69,2,power-play,3,1,wrist,0,3115035.0,,shot,72.0,-12.0,760.0,1.0
+401892626,2,802,phi,blocked,80,8,even-strength,3,1,,0,4565235.0,,hit,90.0,32.0,795.0,1.0
+401892626,2,804,phi,missed,77,11,even-strength,3,1,wrist,0,3096237.0,,blocked,80.0,8.0,802.0,1.0
+401892626,2,807,uta,blocked,78,-8,even-strength,3,1,,0,5188341.0,,missed,77.0,11.0,804.0,0.0
+401892626,2,845,phi,blocked,-64,14,even-strength,3,1,,0,4064936.0,,stoppage,-27.0,-35.0,815.0,
+401892626,2,853,phi,blocked,-81,-22,even-strength,3,1,,0,4031645.0,,face off,-69.0,-22.0,849.0,0.0
+401892626,2,873,phi,blocked,-74,-12,even-strength,3,1,,0,4352699.0,,blocked,-81.0,-22.0,853.0,1.0
+401892626,2,890,phi,shot,33,12,even-strength,3,1,snap,0,3114757.0,,giveaway,-26.0,-17.0,884.0,0.0
+401892626,2,912,phi,missed,53,-25,even-strength,3,1,snap,0,4392072.0,,hit,71.0,38.0,900.0,0.0
+401892626,2,919,uta,shot,-62,20,even-strength,3,1,snap,0,2563036.0,,missed,53.0,-25.0,912.0,0.0
+401892626,2,927,phi,shot,56,13,even-strength,3,1,snap,0,3114757.0,,shot,-62.0,20.0,919.0,0.0
+401892626,2,969,uta,missed,-78,9,even-strength,3,1,tip-in,0,4755695.0,,giveaway,-90.0,32.0,958.0,0.0
+401892626,2,1004,phi,shot,43,32,even-strength,3,1,snap,0,2564164.0,,hit,97.0,-15.0,995.0,1.0
+401892626,2,1072,uta,shot,-83,14,even-strength,3,1,backhand,0,4024857.0,,hit,19.0,-21.0,1034.0,1.0
+401892626,3,36,phi,missed,-65,21,even-strength,3,1,wrist,0,3900169.0,,face off,-20.0,22.0,18.0,1.0
+401892626,3,62,phi,goal,-68,-2,even-strength,3,1,snap,0,3115035.0,,hit,-90.0,-30.0,51.0,1.0
+401892626,3,177,uta,missed,59,-32,even-strength,4,1,slap,0,3042269.0,,hit,-6.0,-39.0,157.0,0.0
+401892626,3,203,uta,missed,75,-9,even-strength,4,1,snap,0,4352699.0,,giveaway,-34.0,-37.0,189.0,0.0
+401892626,3,209,uta,missed,27,25,even-strength,4,1,snap,0,4024868.0,,hit,93.0,27.0,207.0,0.0
+401892626,3,218,uta,shot,54,21,even-strength,4,1,snap,0,4024868.0,,missed,27.0,25.0,209.0,1.0
+401892626,3,298,phi,shot,-79,-13,even-strength,4,1,snap,0,5188341.0,,hit,91.0,29.0,258.0,1.0
+401892626,3,317,phi,blocked,-80,-5,even-strength,4,1,,0,4565235.0,,giveaway,-89.0,-23.0,315.0,1.0
+401892626,3,335,phi,goal,-53,22,even-strength,4,1,slap,0,5149199.0,,blocked,-80.0,-5.0,317.0,1.0
+401892626,3,447,phi,blocked,71,-10,even-strength,5,1,,0,5080143.0,,takeaway,0.0,-4.0,444.0,0.0
+401892626,3,460,uta,shot,82,-1,even-strength,5,1,tip-in,0,3899951.0,,hit,96.0,-11.0,450.0,1.0
+401892626,3,493,uta,shot,62,-25,even-strength,5,1,snap,0,4064936.0,,giveaway,0.0,-15.0,484.0,0.0
+401892626,3,560,uta,shot,45,17,power-play,5,1,slap,0,4874723.0,,face off,69.0,22.0,502.0,0.0
+401892626,3,576,uta,missed,81,-21,power-play,5,1,slap,0,5080143.0,,shot,45.0,17.0,560.0,1.0
+401892626,3,625,uta,missed,36,-15,even-strength,5,1,slap,0,3042269.0,,missed,81.0,-21.0,576.0,1.0
+401892626,3,708,uta,missed,81,-18,even-strength,5,1,backhand,0,5080143.0,,takeaway,50.0,40.0,704.0,1.0
+401892626,3,777,phi,shot,-82,-18,power-play,5,1,snap,0,5291941.0,,giveaway,-2.0,18.0,757.0,1.0
+401892626,3,784,phi,missed,-55,22,power-play,5,1,slap,0,4565230.0,,shot,-82.0,-18.0,777.0,1.0
+401892626,3,796,uta,blocked,-75,-3,short-handed,5,1,,0,5291941.0,,missed,-55.0,22.0,784.0,0.0
+401892626,3,882,uta,shot,79,-10,even-strength,5,1,wrist,0,4024857.0,,face off,-69.0,-22.0,866.0,1.0
+401892626,3,960,uta,goal,34,13,power-play,5,1,slap,0,4024868.0,,face off,69.0,-22.0,899.0,0.0
+401892626,3,1024,uta,shot,74,-3,power-play,5,2,wrist,0,3114770.0,,face off,69.0,-22.0,986.0,1.0
+401892626,3,1027,uta,goal,85,-9,power-play,5,2,snap,0,5080143.0,,shot,74.0,-3.0,1024.0,1.0
+401892626,3,1034,phi,blocked,53,0,even-strength,5,3,,0,4755695.0,,goal,85.0,-9.0,1027.0,0.0
+401892626,3,1106,phi,goal,-51,36,empty-net,5,3,wrist,0,5188341.0,,hit,71.0,38.0,1048.0,0.0
+401892626,3,1132,phi,blocked,-81,0,even-strength,6,3,,0,5149170.0,,goal,-51.0,36.0,1106.0,1.0
+401892626,3,1141,phi,blocked,68,-18,even-strength,6,3,,0,4031645.0,,blocked,-81.0,0.0,1132.0,1.0
+401892627,1,34,nyr,blocked,31,-1,even-strength,0,0,,0,2562624.0,,hit,-99.0,12.0,27.0,1.0
+401892627,1,39,nyr,shot,-42,23,even-strength,0,0,wrist,0,2562637.0,,blocked,31.0,-1.0,34.0,1.0
+401892627,1,50,edm,goal,81,-6,even-strength,0,0,wrist,0,3895074.0,,shot,-42.0,23.0,39.0,0.0
+401892627,1,76,edm,blocked,-78,0,even-strength,0,1,,0,4197146.0,,goal,81.0,-6.0,50.0,1.0
+401892627,1,160,edm,blocked,-46,22,even-strength,0,1,,0,4697402.0,,face off,-69.0,22.0,141.0,0.0
+401892627,1,193,nyr,shot,-69,33,even-strength,0,1,wrist,0,2562637.0,,hit,-95.0,-25.0,185.0,1.0
+401892627,1,261,edm,shot,80,-15,even-strength,0,1,backhand,0,3895074.0,,giveaway,22.0,37.0,240.0,0.0
+401892627,1,280,edm,shot,43,-27,even-strength,0,1,wrist,0,4233882.0,,face off,69.0,-22.0,263.0,0.0
+401892627,1,291,edm,blocked,-62,30,even-strength,0,1,,0,4874882.0,,shot,43.0,-27.0,280.0,1.0
+401892627,1,314,nyr,shot,-82,13,even-strength,0,1,wrist,0,4233720.0,,hit,-75.0,41.0,298.0,1.0
+401892627,1,339,nyr,shot,-80,39,even-strength,0,1,wrist,0,4197146.0,,shot,-82.0,13.0,314.0,1.0
+401892627,1,341,edm,blocked,-83,9,even-strength,0,1,,0,4063502.0,,hit,-80.0,39.0,340.0,1.0
+401892627,1,379,edm,goal,65,12,even-strength,0,1,wrist,0,4874940.0,,hit,93.0,-28.0,371.0,1.0
+401892627,1,403,nyr,missed,-64,-19,even-strength,0,2,snap,0,4588750.0,,giveaway,-68.0,-40.0,398.0,0.0
+401892627,1,406,edm,blocked,-73,7,even-strength,0,2,,0,4197146.0,,missed,-64.0,-19.0,403.0,0.0
+401892627,1,526,nyr,blocked,57,-20,even-strength,0,2,,0,2562624.0,,hit,11.0,19.0,464.0,1.0
+401892627,1,532,edm,shot,47,-15,even-strength,0,2,slap,0,4352722.0,,blocked,57.0,-20.0,526.0,0.0
+401892627,1,561,nyr,blocked,81,-1,even-strength,0,2,,0,4352722.0,,face off,-20.0,22.0,548.0,0.0
+401892627,1,576,edm,shot,73,-17,even-strength,0,2,backhand,0,4565231.0,,blocked,81.0,-1.0,561.0,0.0
+401892627,1,580,edm,missed,65,-17,even-strength,0,2,tip-in,0,3042062.0,,face off,69.0,-22.0,578.0,1.0
+401892627,1,716,nyr,shot,-82,9,even-strength,0,2,wrist,0,3942292.0,,hit,97.0,21.0,686.0,0.0
+401892627,1,732,edm,blocked,-53,-15,even-strength,0,2,,0,4197146.0,,giveaway,-99.0,-8.0,729.0,1.0
+401892627,1,902,edm,missed,41,-24,power-play,0,2,slap,0,4352722.0,,face off,69.0,22.0,829.0,0.0
+401892627,1,969,edm,blocked,-59,-6,even-strength,0,2,,0,5188370.0,,face off,20.0,-22.0,948.0,1.0
+401892627,1,991,edm,blocked,70,-3,even-strength,0,2,,0,4352722.0,,hit,47.0,-41.0,980.0,0.0
+401892627,1,1070,nyr,missed,-69,2,even-strength,0,2,tip-in,0,2335062.0,,hit,96.0,-27.0,1051.0,0.0
+401892627,1,1178,edm,shot,58,20,even-strength,0,2,wrist,0,4233882.0,,face off,20.0,22.0,1174.0,0.0
+401892627,2,23,edm,missed,-83,8,even-strength,0,2,backhand,0,3114775.0,,giveaway,-84.0,38.0,12.0,0.0
+401892627,2,24,edm,missed,-75,5,even-strength,0,2,snap,0,2562624.0,,missed,-83.0,8.0,23.0,1.0
+401892627,2,141,nyr,missed,77,-9,even-strength,0,2,tip-in,0,5149204.0,,giveaway,74.0,32.0,122.0,0.0
+401892627,2,197,nyr,shot,81,-17,even-strength,0,2,wrist,0,4233720.0,,missed,77.0,-9.0,141.0,1.0
+401892627,2,240,nyr,shot,43,37,even-strength,0,2,wrist,0,3942292.0,,face off,69.0,-22.0,237.0,1.0
+401892627,2,272,nyr,shot,37,29,even-strength,0,2,wrist,0,2562637.0,,shot,43.0,37.0,240.0,1.0
+401892627,2,309,nyr,shot,89,28,even-strength,0,2,wrist,0,5149204.0,,giveaway,-98.0,6.0,283.0,1.0
+401892627,2,315,nyr,shot,78,9,even-strength,0,2,wrist,0,5149204.0,,shot,89.0,28.0,309.0,1.0
+401892627,2,316,nyr,shot,80,1,even-strength,0,2,backhand,0,2590852.0,,shot,78.0,9.0,315.0,1.0
+401892627,2,317,nyr,missed,83,-6,even-strength,0,2,wrist,0,4697468.0,,shot,80.0,1.0,316.0,1.0
+401892627,2,332,nyr,missed,76,9,even-strength,0,2,tip-in,0,4697468.0,,hit,99.0,9.0,319.0,1.0
+401892627,2,416,nyr,shot,53,-37,even-strength,0,2,wrist,0,4874882.0,,takeaway,-61.0,13.0,395.0,1.0
+401892627,2,428,nyr,shot,31,-30,even-strength,0,2,wrist,0,4874882.0,,hit,48.0,-41.0,416.0,0.0
+401892627,2,444,edm,missed,-35,-41,even-strength,0,2,wrist,0,3942033.0,,hit,-99.0,8.0,440.0,1.0
+401892627,2,450,nyr,blocked,-78,-11,even-strength,0,2,,0,3941965.0,,face off,-69.0,-22.0,449.0,0.0
+401892627,2,463,edm,blocked,77,15,even-strength,0,2,,0,5149204.0,,face off,-69.0,-22.0,453.0,0.0
+401892627,2,589,edm,goal,-42,5,power-play,0,2,slap,0,4352722.0,,giveaway,-41.0,-32.0,544.0,1.0
+401892627,2,669,nyr,shot,72,-16,even-strength,0,3,snap,0,4697402.0,,takeaway,88.0,5.0,657.0,1.0
+401892627,2,708,edm,shot,-34,-11,even-strength,0,3,wrist,0,4874940.0,,shot,72.0,-16.0,669.0,0.0
+401892627,2,711,edm,missed,-31,-13,even-strength,0,3,slap,0,2558631.0,,face off,-69.0,-22.0,710.0,1.0
+401892627,2,758,nyr,shot,36,5,even-strength,0,3,wrist,0,3942292.0,,hit,91.0,-33.0,749.0,1.0
+401892627,2,766,edm,blocked,85,-4,even-strength,0,3,,0,2590852.0,,shot,36.0,5.0,758.0,0.0
+401892627,2,779,nyr,shot,63,-23,even-strength,0,3,wrist,0,2562637.0,,blocked,85.0,-4.0,766.0,0.0
+401892627,2,800,nyr,shot,72,-17,even-strength,0,3,wrist,0,4874882.0,,face off,69.0,-22.0,796.0,1.0
+401892627,2,802,nyr,goal,84,4,even-strength,0,3,snap,0,4587588.0,,shot,72.0,-17.0,800.0,1.0
+401892627,2,830,nyr,shot,32,-11,even-strength,1,3,wrist,0,4697402.0,,face off,20.0,22.0,807.0,1.0
+401892627,2,835,nyr,missed,28,-5,even-strength,1,3,slap,0,4874882.0,,face off,69.0,-22.0,832.0,1.0
+401892627,2,854,edm,missed,-30,39,even-strength,1,3,wrist,0,4352722.0,,hit,-7.0,-41.0,845.0,0.0
+401892627,2,882,edm,missed,-76,-14,even-strength,1,3,snap,0,3895074.0,,takeaway,-61.0,-36.0,877.0,1.0
+401892627,2,898,edm,shot,-30,12,even-strength,1,3,wrist,0,3114775.0,,missed,-76.0,-14.0,882.0,1.0
+401892627,2,906,edm,missed,-78,4,even-strength,1,3,tip-in,0,3114775.0,,shot,-30.0,12.0,898.0,1.0
+401892627,2,934,nyr,blocked,-72,-3,even-strength,1,3,,0,3942033.0,,missed,-78.0,4.0,906.0,0.0
+401892627,2,956,nyr,missed,65,-26,even-strength,1,3,snap,0,4874882.0,,takeaway,85.0,7.0,953.0,1.0
+401892627,2,1001,edm,shot,-91,8,even-strength,1,3,wrist,0,4024997.0,,face off,-20.0,22.0,965.0,0.0
+401892627,2,1003,edm,shot,-83,-1,even-strength,1,3,poke,0,4588331.0,,shot,-91.0,8.0,1001.0,1.0
+401892627,2,1045,nyr,shot,33,-36,even-strength,1,3,wrist,0,4697402.0,,face off,-69.0,-22.0,1004.0,1.0
+401892627,2,1072,edm,blocked,53,-37,even-strength,1,3,,0,2562637.0,,hit,52.0,-41.0,1053.0,1.0
+401892627,2,1103,edm,shot,-83,4,even-strength,1,3,snap,0,4874940.0,,blocked,53.0,-37.0,1072.0,1.0
+401892627,2,1106,nyr,blocked,-72,-16,even-strength,1,3,,0,3942033.0,,shot,-83.0,4.0,1103.0,0.0
+401892627,2,1136,edm,blocked,81,-10,even-strength,1,3,,0,4874882.0,,giveaway,44.0,-38.0,1123.0,1.0
+401892627,2,1191,edm,shot,-84,-7,even-strength,1,3,snap,0,2558631.0,,blocked,81.0,-10.0,1136.0,1.0
+401892627,2,1192,nyr,blocked,-81,-5,even-strength,1,3,,0,2558631.0,,shot,-84.0,-7.0,1191.0,0.0
+401892627,2,1194,nyr,blocked,-82,6,even-strength,1,3,,0,3895074.0,,blocked,-81.0,-5.0,1192.0,1.0
+401892627,3,10,edm,blocked,-59,-26,even-strength,1,3,,0,4587588.0,,,,,,
+401892627,3,19,nyr,missed,-31,-32,even-strength,1,3,slap,0,3114995.0,,blocked,-59.0,-26.0,10.0,0.0
+401892627,3,32,nyr,shot,-75,-8,even-strength,1,3,tip-in,0,4697382.0,,giveaway,-89.0,31.0,26.0,0.0
+401892627,3,63,edm,shot,93,-11,even-strength,1,3,backhand,0,3114727.0,,shot,-75.0,-8.0,32.0,0.0
+401892627,3,63,edm,shot,83,-9,even-strength,1,3,poke,0,3895074.0,,shot,93.0,-11.0,63.0,1.0
+401892627,3,150,edm,blocked,-67,6,even-strength,1,3,,0,4874882.0,,hit,-11.0,41.0,140.0,1.0
+401892627,3,274,nyr,missed,-50,-9,even-strength,1,3,wrist,0,2590852.0,,takeaway,-62.0,41.0,272.0,1.0
+401892627,3,289,edm,shot,80,-27,even-strength,1,3,snap,0,4352722.0,,missed,-50.0,-9.0,274.0,0.0
+401892627,3,299,nyr,blocked,68,-18,even-strength,1,3,,0,3042062.0,,shot,80.0,-27.0,289.0,0.0
+401892627,3,328,nyr,shot,-54,-6,power-play,1,3,wrist,0,4197146.0,,face off,-69.0,-22.0,325.0,1.0
+401892627,3,403,nyr,shot,-47,-20,power-play,1,3,wrist,0,2562637.0,,giveaway,-37.0,31.0,367.0,1.0
+401892627,3,407,nyr,shot,-83,2,power-play,1,3,snap,0,4697382.0,,shot,-47.0,-20.0,403.0,1.0
+401892627,3,459,nyr,shot,-43,-21,even-strength,1,3,snap,0,3042095.0,,hit,-81.0,-40.0,456.0,0.0
+401892627,3,465,nyr,shot,-82,-20,even-strength,1,3,wrist,0,2590852.0,,face off,-69.0,-22.0,461.0,1.0
+401892627,3,502,edm,missed,72,6,power-play,1,3,snap,0,3114727.0,,giveaway,96.0,-27.0,500.0,0.0
+401892627,3,512,nyr,blocked,73,16,short-handed,1,3,,0,3114727.0,,missed,72.0,6.0,502.0,0.0
+401892627,3,537,nyr,blocked,68,8,short-handed,1,3,,0,3895074.0,,face off,69.0,22.0,526.0,1.0
+401892627,3,548,edm,shot,61,-23,power-play,1,3,snap,0,3114727.0,,face off,69.0,22.0,538.0,0.0
+401892627,3,573,nyr,blocked,71,-4,short-handed,1,3,,0,3114727.0,,takeaway,89.0,-34.0,555.0,1.0
+401892627,3,581,edm,shot,68,-23,power-play,1,3,slap,0,3114727.0,,blocked,71.0,-4.0,573.0,0.0
+401892627,3,607,edm,shot,72,15,power-play,1,3,snap,0,3895074.0,,shot,68.0,-23.0,581.0,1.0
+401892627,3,621,edm,missed,80,5,power-play,1,3,tip-in,0,2562624.0,,shot,72.0,15.0,607.0,1.0
+401892627,3,712,edm,shot,81,19,even-strength,1,3,snap,0,3114775.0,,hit,99.0,-19.0,686.0,1.0
+401892627,3,766,edm,shot,89,-6,even-strength,1,3,bat,0,3895074.0,,face off,20.0,22.0,750.0,1.0
+401892627,3,859,edm,shot,82,21,even-strength,1,3,snap,0,4233882.0,,giveaway,74.0,-36.0,826.0,0.0
+401892627,3,918,nyr,missed,-83,-11,even-strength,1,3,tip-in,0,3042095.0,,hit,-96.0,24.0,908.0,1.0
+401892627,3,961,nyr,missed,-50,-2,even-strength,1,3,wrist,0,4588750.0,,hit,-82.0,39.0,957.0,1.0
+401892627,3,975,edm,shot,76,-9,even-strength,1,3,snap,0,3895074.0,,missed,-50.0,-2.0,961.0,0.0
+401892627,3,1031,nyr,blocked,-80,-7,even-strength,1,3,,0,4197146.0,,face off,-69.0,-22.0,1030.0,1.0
+401892627,3,1033,edm,blocked,-85,-14,even-strength,1,3,,0,2590852.0,,blocked,-80.0,-7.0,1031.0,0.0
+401892627,3,1054,nyr,missed,-73,-35,even-strength,1,3,snap,0,2562637.0,,face off,-69.0,-22.0,1051.0,1.0
+401892627,3,1077,nyr,blocked,-71,-7,even-strength,1,3,,0,4197146.0,,giveaway,-82.0,36.0,1064.0,0.0
+401892627,3,1084,nyr,shot,-62,30,even-strength,1,3,slap,0,4697382.0,,blocked,-71.0,-7.0,1077.0,1.0
+401892627,3,1098,nyr,blocked,18,-15,even-strength,1,3,,0,2562624.0,,shot,-62.0,30.0,1084.0,1.0
+401892627,3,1123,nyr,missed,-60,-27,even-strength,1,3,slap,0,2562637.0,,blocked,18.0,-15.0,1098.0,1.0
+401892627,3,1135,edm,blocked,-69,9,even-strength,1,3,,0,5149204.0,,missed,-60.0,-27.0,1123.0,0.0
+401892627,3,1138,nyr,shot,-74,-35,even-strength,1,3,wrist,0,4697382.0,,blocked,-69.0,9.0,1135.0,0.0
+401892627,3,1160,edm,goal,5,35,empty-net,1,3,wrist,0,4874940.0,,face off,-69.0,-22.0,1140.0,0.0
+401892628,1,14,ana,blocked,-66,31,even-strength,0,0,,0,3149829,,hit,-97.0,-17.0,8.0,0.0
+401892628,1,23,ana,shot,55,28,even-strength,0,0,snap,0,3648015,,blocked,-66.0,31.0,14.0,1.0
+401892628,1,62,ana,shot,61,35,even-strength,0,0,slap,0,4565262,,hit,-93.0,-27.0,50.0,0.0
+401892628,1,172,ott,shot,-70,-26,power-play,0,0,snap,0,5136706,,face off,-69.0,-22.0,124.0,0.0
+401892628,1,179,ana,blocked,-77,-8,short-handed,0,0,,0,5136706,,face off,-69.0,-22.0,174.0,0.0
+401892628,1,180,ott,shot,-85,-14,power-play,0,0,bat,0,4271734,,blocked,-77.0,-8.0,179.0,0.0
+401892628,1,244,ana,blocked,-73,0,even-strength,0,0,,0,4565255,,giveaway,-88.0,-10.0,230.0,1.0
+401892628,1,251,ott,blocked,60,13,even-strength,0,0,,0,5149153,,blocked,-73.0,0.0,244.0,0.0
+401892628,1,286,ott,blocked,51,-2,even-strength,0,0,,0,5291946,,giveaway,-76.0,39.0,273.0,1.0
+401892628,1,360,ott,goal,-86,0,even-strength,0,0,snap,0,4565245,,giveaway,-70.0,-37.0,353.0,0.0
+401892628,1,422,ott,goal,-67,17,even-strength,0,1,snap,0,3775,,hit,63.0,-39.0,378.0,1.0
+401892628,1,646,ott,shot,-65,38,even-strength,0,2,snap,0,5174232,,face off,69.0,-22.0,542.0,1.0
+401892628,1,696,ana,missed,63,-26,even-strength,0,2,snap,0,5080220,,giveaway,7.0,-35.0,683.0,1.0
+401892628,1,721,ana,shot,2,-38,even-strength,0,2,wrist,0,5831,,missed,63.0,-26.0,696.0,1.0
+401892628,1,778,ott,shot,-61,32,even-strength,0,2,slap,0,5174232,,giveaway,-58.0,40.0,742.0,1.0
+401892628,1,808,ana,shot,50,-36,even-strength,0,2,snap,0,3648015,,hit,46.0,-38.0,799.0,1.0
+401892628,1,826,ana,shot,75,-9,even-strength,0,2,backhand,0,4895214,,hit,12.0,-38.0,814.0,1.0
+401892628,1,842,ana,missed,79,-40,even-strength,0,2,wrist,0,5291946,,shot,75.0,-9.0,826.0,1.0
+401892628,1,849,ott,blocked,83,-3,even-strength,0,2,,0,4755684,,face off,69.0,-22.0,844.0,0.0
+401892628,1,876,ott,blocked,73,21,even-strength,0,2,,0,4755684,,hit,96.0,22.0,871.0,0.0
+401892628,1,995,ana,shot,76,-24,even-strength,0,2,snap,0,4697441,,giveaway,3.0,-41.0,990.0,0.0
+401892628,1,1004,ott,missed,-86,-19,even-strength,0,2,wrist,0,4697411,,face off,69.0,-22.0,996.0,1.0
+401892628,1,1021,ana,missed,69,23,even-strength,0,2,wrist,0,4968,,missed,-86.0,-19.0,1004.0,0.0
+401892628,1,1045,ana,shot,84,11,even-strength,0,2,wrist,0,4565262,,missed,69.0,23.0,1021.0,1.0
+401892628,1,1057,ott,goal,-81,-1,even-strength,0,2,snap,0,3149829,,shot,84.0,11.0,1045.0,0.0
+401892628,1,1074,ott,blocked,52,-17,even-strength,0,3,,0,5080145,,giveaway,78.0,40.0,1063.0,1.0
+401892628,1,1090,ana,missed,34,5,even-strength,0,3,slap,0,5216858,,face off,69.0,-22.0,1078.0,0.0
+401892628,1,1116,ana,shot,-32,2,even-strength,0,3,deflected,0,5216858,,hit,-37.0,39.0,1100.0,1.0
+401892628,2,51,ana,blocked,88,-4,even-strength,0,3,,0,4587837,,face off,69.0,22.0,43.0,0.0
+401892628,2,74,ott,shot,91,-4,even-strength,0,3,wrist,0,4587837,,hit,64.0,40.0,57.0,1.0
+401892628,2,95,ana,goal,-84,-11,even-strength,0,3,wrist,0,5080145,,face off,69.0,22.0,84.0,1.0
+401892628,2,117,ott,blocked,-78,0,even-strength,1,3,,0,5291946,,hit,-98.0,16.0,103.0,0.0
+401892628,2,124,ott,shot,66,15,even-strength,1,3,snap,0,4697384,,blocked,-78.0,0.0,117.0,1.0
+401892628,2,133,ana,missed,-60,17,even-strength,1,3,wrist,0,4755696,,shot,66.0,15.0,124.0,0.0
+401892628,2,145,ott,shot,59,15,even-strength,1,3,wrist,0,4697448,,missed,-60.0,17.0,133.0,0.0
+401892628,2,187,ott,shot,25,7,even-strength,1,3,wrist,0,4565255,,hit,-97.0,-3.0,160.0,0.0
+401892628,2,193,ana,blocked,72,-11,even-strength,1,3,,0,4712021,,face off,69.0,-22.0,190.0,0.0
+401892628,2,209,ana,shot,-32,34,even-strength,1,3,snap,0,5080210,,blocked,72.0,-11.0,193.0,1.0
+401892628,2,212,ana,shot,-83,1,even-strength,1,3,wrist,0,4755684,,shot,-32.0,34.0,209.0,1.0
+401892628,2,213,ana,goal,-80,-5,even-strength,1,3,wrist,0,4755684,,shot,-83.0,1.0,212.0,1.0
+401892628,2,257,ana,shot,-71,-22,even-strength,2,3,wrist,0,5080145,,giveaway,-5.0,34.0,250.0,0.0
+401892628,2,305,ott,blocked,-88,5,even-strength,2,3,,0,4755696,,hit,-95.0,-26.0,297.0,1.0
+401892628,2,307,ana,shot,-91,6,even-strength,2,3,wrist,0,4895214,,blocked,-88.0,5.0,305.0,0.0
+401892628,2,309,ana,shot,-91,5,even-strength,2,3,wrap-around,0,4895214,,shot,-91.0,6.0,307.0,1.0
+401892628,2,448,ott,shot,68,22,even-strength,2,3,slap,0,4697448,,hit,-97.0,-19.0,395.0,0.0
+401892628,2,470,ana,shot,-80,24,even-strength,2,3,wrist,0,4565270,,shot,68.0,22.0,448.0,0.0
+401892628,2,515,ana,blocked,71,14,even-strength,2,3,,0,5136706,,face off,69.0,22.0,509.0,0.0
+401892628,2,594,ana,blocked,64,-15,even-strength,2,3,,0,5174232,,giveaway,99.0,0.0,585.0,0.0
+401892628,2,611,ana,shot,-32,12,even-strength,2,3,wrist,0,5080220,,blocked,64.0,-15.0,594.0,1.0
+401892628,2,632,ott,blocked,-77,5,even-strength,2,3,,0,5080145,,face off,-69.0,22.0,612.0,0.0
+401892628,2,656,ana,blocked,73,-8,even-strength,2,3,,0,4697386,,giveaway,95.0,16.0,644.0,1.0
+401892628,2,715,ana,shot,-62,-36,short-handed,2,3,snap,0,4996085,,face off,69.0,22.0,685.0,0.0
+401892628,2,800,ott,shot,60,15,power-play,2,3,slap,0,4697386,,face off,69.0,-22.0,787.0,1.0
+401892628,2,807,ott,shot,80,13,power-play,2,3,snap,0,4587837,,face off,69.0,22.0,801.0,1.0
+401892628,2,895,ott,shot,45,12,power-play,2,3,wrist,0,3775,,face off,20.0,22.0,809.0,1.0
+401892628,2,898,ott,missed,61,40,power-play,2,3,snap,0,3900219,,face off,69.0,22.0,897.0,1.0
+401892628,2,939,ott,shot,51,-17,even-strength,2,3,snap,0,4588190,,hit,95.0,-25.0,917.0,0.0
+401892628,2,961,ott,missed,54,28,even-strength,2,3,wrist,0,4697448,,face off,20.0,-22.0,955.0,1.0
+401892628,2,981,ana,shot,-46,20,even-strength,2,3,wrist,0,5291946,,hit,98.0,2.0,964.0,0.0
+401892628,2,1040,ana,missed,-82,-25,even-strength,2,3,wrist,0,5831,,face off,20.0,22.0,1026.0,0.0
+401892628,2,1138,ana,shot,-82,-5,power-play,2,3,tip-in,0,4755696,,giveaway,48.0,7.0,1073.0,1.0
+401892628,2,1158,ana,goal,-81,-2,power-play,2,3,tip-in,0,4755684,,shot,-82.0,-5.0,1138.0,1.0
+401892628,3,41,ott,blocked,83,4,short-handed,3,3,,0,5149153,,,,,,
+401892628,3,72,ana,missed,79,2,power-play,3,3,tip-in,0,5216858,,blocked,83.0,4.0,41.0,0.0
+401892628,3,95,ana,shot,52,18,power-play,3,3,snap,0,5149153,,face off,69.0,22.0,84.0,0.0
+401892628,3,110,ana,goal,82,-17,power-play,3,3,wrist,0,5080145,,shot,52.0,18.0,95.0,1.0
+401892628,3,146,ana,goal,77,-15,power-play,4,3,snap,0,5080145,,giveaway,98.0,15.0,126.0,0.0
+401892628,3,213,ana,blocked,-66,11,even-strength,5,3,,0,4712021,,takeaway,-37.0,37.0,180.0,0.0
+401892628,3,218,ott,missed,-74,1,even-strength,5,3,tip-in,0,4587837,,blocked,-66.0,11.0,213.0,0.0
+401892628,3,224,ott,missed,-66,-36,even-strength,5,3,snap,0,4697386,,face off,-69.0,22.0,220.0,1.0
+401892628,3,282,ott,shot,-74,8,even-strength,5,3,snap,0,5136706,,giveaway,28.0,-13.0,248.0,0.0
+401892628,3,289,ott,missed,-61,-12,even-strength,5,3,tip-in,0,4565245,,face off,-69.0,22.0,283.0,1.0
+401892628,3,291,ott,missed,-81,3,even-strength,5,3,tip-in,0,4565255,,missed,-61.0,-12.0,289.0,1.0
+401892628,3,380,ott,shot,-70,6,even-strength,5,3,snap,0,3775,,giveaway,89.0,33.0,321.0,0.0
+401892628,3,397,ott,shot,-53,16,even-strength,5,3,snap,0,3149829,,giveaway,72.0,-39.0,390.0,0.0
+401892628,3,412,ana,blocked,-87,6,even-strength,5,3,,0,3149829,,shot,-53.0,16.0,397.0,0.0
+401892628,3,464,ana,blocked,-70,0,even-strength,5,3,,0,4587837,,giveaway,-78.0,23.0,455.0,1.0
+401892628,3,472,ana,blocked,-79,1,even-strength,5,3,,0,4587837,,blocked,-70.0,0.0,464.0,1.0
+401892628,3,476,ott,missed,-29,-29,even-strength,5,3,slap,0,4697384,,blocked,-79.0,1.0,472.0,0.0
+401892628,3,484,ott,shot,-71,-28,even-strength,5,3,slap,0,4588190,,hit,-93.0,30.0,482.0,0.0
+401892628,3,507,ana,shot,76,26,even-strength,5,3,snap,0,5149153,,hit,33.0,40.0,504.0,0.0
+401892628,3,523,ott,blocked,45,24,even-strength,5,3,,0,5173614,,face off,69.0,22.0,511.0,1.0
+401892628,3,563,ana,blocked,85,10,even-strength,5,3,,0,4895214,,giveaway,-71.0,16.0,537.0,1.0
+401892628,3,564,ana,shot,79,-12,even-strength,5,3,snap,0,5291946,,blocked,85.0,10.0,563.0,1.0
+401892628,3,657,ana,shot,90,15,even-strength,5,3,wrist,0,5831,,giveaway,-78.0,-22.0,645.0,0.0
+401892628,3,685,ana,missed,50,-2,even-strength,5,3,snap,0,5216858,,takeaway,79.0,27.0,664.0,1.0
+401892628,3,721,ana,shot,52,-8,even-strength,5,3,snap,0,4755696,,missed,50.0,-2.0,685.0,1.0
+401892628,3,731,ott,missed,-76,-13,even-strength,5,3,snap,0,4697384,,shot,52.0,-8.0,721.0,0.0
+401892628,3,823,ana,shot,76,23,power-play,5,3,slap,0,5216858,,face off,-69.0,-22.0,733.0,1.0
+401892628,3,830,ana,shot,85,8,power-play,5,3,wrist,0,5216858,,shot,76.0,23.0,823.0,1.0
+401892628,3,852,ana,missed,74,2,power-play,5,3,wrist,0,5080145,,shot,85.0,8.0,830.0,1.0
+401892628,3,854,ott,shot,90,10,short-handed,5,3,wrist,0,4712021,,missed,74.0,2.0,852.0,0.0
+401892628,3,908,ana,shot,53,15,power-play,5,3,snap,0,5291946,,shot,90.0,10.0,854.0,0.0
+401892628,3,919,ana,goal,68,23,power-play,5,3,snap,0,5291946,,shot,53.0,15.0,908.0,1.0
+401892628,3,965,ana,shot,52,25,even-strength,6,3,snap,0,5080145,,giveaway,-77.0,37.0,959.0,0.0
+401892628,3,979,ana,blocked,-66,10,even-strength,6,3,,0,2563027,,shot,52.0,25.0,965.0,1.0
+401892628,3,1063,ott,shot,-60,7,even-strength,6,3,snap,0,4587837,,giveaway,-6.0,40.0,1051.0,1.0
+401892628,3,1076,ana,blocked,-72,8,even-strength,6,3,,0,5174232,,shot,-60.0,7.0,1063.0,0.0
+401892628,3,1092,ott,missed,-42,21,even-strength,6,3,snap,0,5174232,,blocked,-72.0,8.0,1076.0,0.0
+401892628,3,1138,ott,blocked,56,-8,even-strength,6,3,,0,5080145,,missed,-42.0,21.0,1092.0,1.0
+401892628,3,1145,ott,blocked,71,0,even-strength,6,3,,0,5080145,,blocked,56.0,-8.0,1138.0,1.0
+401892628,3,1189,ana,blocked,-65,-20,even-strength,6,3,,0,4697386,,giveaway,-98.0,0.0,1185.0,1.0
