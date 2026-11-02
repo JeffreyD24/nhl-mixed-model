@@ -19,6 +19,8 @@ import nhl_mixed_model as nm                             # noqa: E402
 import espn                                              # noqa: E402
 import nhl_travel                                        # noqa: E402
 
+REMIND_EVERY_MIN = 30               # Nov 2, 2026: an alerted bet still not logged and still a bet -> REMINDER every 30 min,
+REMIND_HOURS = (6, 20)              #   only 6 AM - 8 PM ET
 ML_BLEND = 0.55                     # moneyline win chance = 55% shot model + 45% DraftKings' no-vig opener (approved Nov 2, 2026;
 ML_THRESHOLD = 0.04                 #   backtests/IDEA_TESTS.md: +158.1u on 1,221 bets 2021-26, every season +19u or better), EV 4%+ near the opener
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
@@ -583,12 +585,14 @@ def main():
         A2["reminded_at_et"] = A2["reminded_at_et"].astype(object)
         if "resumed_at_et" not in A2: A2["resumed_at_et"] = np.nan
         A2["resumed_at_et"] = A2["resumed_at_et"].astype(object)
+        if "last_reminder_at_et" not in A2: A2["last_reminder_at_et"] = np.nan
+        A2["last_reminder_at_et"] = A2["last_reminder_at_et"].astype(object)
         ok_ = (A2.remind_ok.astype(str).isin(["True", "1", "1.0"]) & A2.sent.astype(str).isin(["True", "1", "1.0"])
                & A2.skipped.isna())
         for (gid, mk), grp in A2[ok_].groupby(["game_id", "market"]):
             allr = A2[(A2.game_id == gid) & (A2.market == mk)]
             stopped = allr.reminded_at_et.astype(str).str.len().gt(3).any()
-            if stopped and allr.resumed_at_et.astype(str).str.len().gt(3).any(): continue      # one DON'T BET and one BACK IN RANGE max
+            resumed = stopped and allr.resumed_at_et.astype(str).str.len().gt(3).any()      # one DON'T BET and one BACK IN RANGE max
             t_last = grp.alerted_at_et.max(); rows = grp[grp.alerted_at_et == t_last]; r = rows.iloc[0]
             gi = GINFO.get(gid)
             if gi is None or pd.Timestamp(gi["tip_et"]) <= NOW: continue
@@ -608,6 +612,25 @@ def main():
                 if d_ < -PIN_DISAGREE:
                     pin_txt = (f"Pinnacle (the sharp book) has now opened and gives this side {abs(d_) * 100:.1f} win-% points less than "
                                f"DraftKings' opener; bets Pinnacle disagrees with lost every season 2021-26")
+            def remind():
+                """REMINDER push every REMIND_EVERY_MIN minutes, REMIND_HOURS only, while still a bet and not logged"""
+                if not (REMIND_HOURS[0] <= NOW.hour < REMIND_HOURS[1]): return 0
+                refs = [x for x in list(allr.last_reminder_at_et) + list(allr.resumed_at_et) + [t_last] if isinstance(x, str) and len(x) > 3]
+                ref = max(pd.Timestamp(x) for x in refs)
+                if NOW - ref < pd.Timedelta(minutes=REMIND_EVERY_MIN): return 0
+                team = gi["H"] if r.side == "home" else (gi["Aw"] if r.side == "away" else str(r.side).upper())
+                what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
+                        (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{str(r.side).upper()} {lnum:g} ({fmt_price(price)})"))
+                try: floor_txt = f"Bet only at {fmt_price(open_only_floor(p, oprice, thr))} or better (stop if DraftKings shows a shorter price).\n"
+                except Exception: floor_txt = f"Bet only at {fmt_price(price)} or better.\n"
+                body = floor_txt + (f"REMINDER: still a bet and not logged yet (alerted {pd.Timestamp(t_last):%a %-I:%M %p}). EV {ev:+.1%} at {fmt_price(price)}; "
+                                    f"[{SHORT.get(m_best, m_best)}] win chance {p:.1%}. Goalies: {gi['goalies']}. If you already bet it, log it to stop these.")
+                notify(f"REMINDER - BET {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body, priority="default", tags="alarm_clock", kind="bet")
+                A2.loc[rows.index, "last_reminder_at_et"] = str(NOW)[:16]; print("REMINDER:", what); return 1
+            if resumed:
+                same_line = mk == "moneyline" or (not pd.isna(lnum) and float(lnum) == float(r.line))
+                if ok_now and not pin_txt and same_line and espn.nd_dec(price) >= espn.nd_dec(float(r.price)): n_rem += remind()
+                continue
             if stopped:
                 # BACK IN RANGE (Nov 2, 2026): after a DON'T BET, it qualifies again at a price no worse than the original alert
                 same_line = mk == "moneyline" or (not pd.isna(lnum) and float(lnum) == float(r.line))
@@ -623,7 +646,8 @@ def main():
                 notify(f"BACK IN RANGE - BET {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body, priority="high", tags="white_check_mark", kind="bet")
                 A2.loc[rows.index, "resumed_at_et"] = str(NOW)[:16]; n_rem += 1
                 print("BACK IN RANGE:", what); continue
-            if ok_now and not pin_txt: continue
+            if ok_now and not pin_txt:
+                n_rem += remind(); continue
             team = gi["H"] if r.side == "home" else (gi["Aw"] if r.side == "away" else str(r.side).upper())
             what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
                     (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{str(r.side).upper()} {lnum:g} ({fmt_price(price)})"))
