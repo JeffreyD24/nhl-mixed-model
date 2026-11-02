@@ -125,3 +125,7 @@ moneyline / puck line; 849 same-team games: +67.5u on 849 units, every season po
 opener, weight fit leaving the season out): puck line weight 0.34-0.50 -> 164 bets +12.0u at EV 6%+ (vs +85.6u model-only);
 overs weight 0.38 -> almost no bets left. The puck line and overs edges come from where the model disagrees most with the
 price, which the blend erases. Keep them model-only. (Puck line at EV 9%+ model-only: 739 bets +87.5u, +11.8%, worst -1.7.)
+
+## TO REVISIT (decided Nov 2, 2026)
+- Puck line EV bar: staying at 6%. 9% gave the same profit on 40% fewer bets (+87.5u vs +85.6u; worst season -1.7 vs -2.4)
+  but was chosen on the same seasons. Re-test after the 2026-27 season with its bets as fresh, unused data.
