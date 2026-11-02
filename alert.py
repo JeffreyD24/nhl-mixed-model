@@ -204,7 +204,7 @@ def main():
         print("Test alert", msg); return
     if not FORCE and not in_window():
         print(f"{NOW:%H:%M} ET is outside the alert window; nothing to do."); return
-    models = sorted(f for f in os.listdir(STATE) if f.startswith("model_") and f[6:16] >= str(TODAY.date()))
+    models = sorted(f for f in os.listdir(STATE) if f.startswith("model_") and f.endswith(".json") and f[6:16] >= str(TODAY.date()))
     if not models: print("No model saved for today or tomorrow yet."); return
     try:
         FEED = espn.injury_feed()
