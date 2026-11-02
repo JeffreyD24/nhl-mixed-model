@@ -17,6 +17,7 @@ sys.path.insert(0, W)
 import nhl_data as nd                                    # noqa: E402
 import nhl_mixed_model as nm                             # noqa: E402
 import espn                                              # noqa: E402
+import nhl_travel                                        # noqa: E402
 
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
 THRESHOLD_MOVED = 0.09              # needed once the price has moved more than that: in the backtests the edge mostly disappears
@@ -300,6 +301,7 @@ def main():
         except Exception as e:
             print("Yesterday's scoreboard unavailable:", type(e).__name__)
         PIN = pinnacle_first()
+        LAST = nhl_travel.last_games(nd, day, os.path.join(STATE, "_travel_cache.json"))   # each team's previous game (back-to-backs, travel)
         L = espn.lines([day], when=("open", "current"))
         L = fill_from_action_network(L, day)
         for g in M["games"]:
@@ -342,6 +344,7 @@ def main():
             H, Aw = g["home"].upper(), g["away"].upper()
             move = 100 * (ph_now - ph_open) if not (pd.isna(ph_now) or pd.isna(ph_open)) else 0.0
             # ---- every model's numbers and best bet per market at the current prices
+            TADJ, TWHY = nhl_travel.adjustment(g["home"], g["away"], day, LAST)
             best, est = {}, {}
             for name in order:
                 OM = Mall["models"][name]
@@ -353,6 +356,7 @@ def main():
                 cal = OM["cal"]["pretip" if (gh_known and ga_known) else "open"]
                 mp = nm.market_probs(np.array([lam_h]), np.array([lam_a]), OM["h_ot"], cal)
                 p_home, p_hby2, p_aby2 = float(mp["home_win"][0]), float(mp["home_by2"][0]), float(mp["away_by2"][0])
+                if name in ALERT_MODELS and TADJ: p_home = min(max(p_home + TADJ, 0.02), 0.98)   # schedule/travel (moneyline)
                 exp_total = float(lam_h + lam_a + nm.raw_probs(np.array([lam_h]), np.array([lam_a]), OM["h_ot"])["tie"][0])
                 est[name] = (lam_h, lam_a, exp_total, p_home)
                 model_rows.append(dict(seen_at_et=str(NOW)[:16], model=name, game_id=g["game_id"], date=M["date"], away=g["away"], home=g["home"],
@@ -486,7 +490,7 @@ def main():
                                 f"(+10%) 2021-26, every season positive. Bet at {fmt_price(price)} or better, now.\n" + body)
                     elif threshold_for(price, oprice) > THRESHOLD:
                         body += f"\nThe price has moved since it opened, so this needed {THRESHOLD_MOVED:.0%}+ EV (vs {THRESHOLD:.0%} at the opening price)."
-                    tail = f"\nGoalies: {goalies_txt}."
+                    tail = f"\nGoalies: {goalies_txt}." + (f"\nSchedule: {TWHY} ({100 * TADJ:+.1f} win-% pts to {H} in the shot model's moneyline)." if TADJ else "")
                     if outs_a or outs_h: tail += f"\nMissing: {Aw} {', '.join(outs_a) or 'none'}; {H} {', '.join(outs_h) or 'none'}."
                     link = log_link(M["date"], g["away"], g["home"], mk, team if mk != "total" else side,
                                     "" if mk == "moneyline" else f"{lnum:+g}" if mk == "puck line" else f"{lnum:g}", f"{price:+.0f}")

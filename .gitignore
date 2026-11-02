@@ -4,3 +4,4 @@ data/box_hist.csv
 state/_bet_reply.md
 state/_bet_title.txt
 data/shots_hist.csv
+state/_travel_cache.json
