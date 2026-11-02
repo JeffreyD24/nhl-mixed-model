@@ -84,3 +84,13 @@ Worse overall and in 2 of 5 seasons, so the adjustment stays moneyline-only (mon
   overrates unders; when it still likes the over, it's right.
 - Overs timing: open +57.6u, +15 min +55.6u, +60 min +60.7u, halfway +40.8u, close +14.5u (still positive).
 - Pinnacle's first total agrees/same: 418 bets +46.4u (all five seasons positive); against: 96 bets +12.3u (mixed).
+
+## Why the puck line was flat in 2023-24 (Nov 2, 2026)
+Puck line bets at DraftKings openers (shot model, EV 6%+), 2021-22..2025-26, back-to-back bets removed (live rule):
+1,264 bets +117.2u (+13.1, +41.5, -2.4, +20.1, +44.9).
+- 2023-24 has no single cause: -1.5 and +1.5 bets, price bands and EV bands are all near zero that season. With ~250 bets a
+  season at the expected ~9% return, a season's result has a spread of about +/-17u, so a flat season is ~1-in-10 noise.
+- Bets on a team on a back-to-back: 136 bets -34.0u (already removed by the live rule).
+- Overconfident zones (+1.5 when the model says 70%+, -1.5 when it says 50%+): +8.8u on 371; removing them doesn't fix 2023-24.
+- Pinnacle's first moneyline agrees/same: 991 bets +88.7u, positive all five seasons (+2.2, +39.3, +8.3, +10.0, +28.9);
+  disagrees: 273 bets +28.5u (2023-24 -10.7u). Not adopted for the puck line: the disagree bets still made money in 4 of 5 seasons.
