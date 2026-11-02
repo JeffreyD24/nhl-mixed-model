@@ -29,6 +29,8 @@ jobs:
         run: python tracker.py .
       - name: Lock tomorrow's picks before DraftKings posts its lines
         run: python tracker.py . --tomorrow
+      - name: Bet record by model version
+        run: python bet_record.py . || echo "Bet record not updated; it will run again tomorrow."
       - name: Grade Polymarket paper trades
         run: python polymarket.py . --grade || echo "Polymarket grading failed; it will try again tomorrow."
       - name: Shift charts for the last two days of games
