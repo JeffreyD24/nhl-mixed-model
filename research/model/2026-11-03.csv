@@ -31,3 +31,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-02 13:04,goals,401892633,2026-11-03,uta,tor,0.5051,3.413,3.324,6.89,Karel Vejmelka (expected),Sergei Bobrovsky (confirmed),"UTA: But, Yamamoto?, DeSimone | TOR: Marchenko, Mermis"
 2026-11-02 13:08,xg,401892636,2026-11-03,edm,nj,0.5633,3.324,2.826,6.31,Tristan Jarry (expected),Connor Hellebuyck (expected),"EDM: Howard? | NJ: Mantha?, Rodrigues?, Dillon"
 2026-11-02 13:08,goals,401892636,2026-11-03,edm,nj,0.4735,3.018,3.139,6.32,Tristan Jarry (expected),Connor Hellebuyck (expected),"EDM: Howard? | NJ: Mantha?, Rodrigues?, Dillon"
+2026-11-02 13:34,xg,401892635,2026-11-03,det,tb,0.6446,3.585,2.72,6.46,John Gibson (expected),Andrei Vasilevskiy (expected),"DET: Larkin | TB: Girgensons, Cernak?, Lilleberg"
+2026-11-02 13:34,goals,401892635,2026-11-03,det,tb,0.5893,3.459,2.82,6.44,John Gibson (expected),Andrei Vasilevskiy (expected),"DET: Larkin | TB: Girgensons, Cernak?, Lilleberg"
