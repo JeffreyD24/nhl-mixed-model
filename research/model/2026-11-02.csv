@@ -28,3 +28,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-02 13:29,goals,401892632,2026-11-02,cgy,sj,0.5358,3.215,2.931,6.31,Dustin Wolf (confirmed),Yaroslav Askarov (expected),CGY: Othmann? | SJ: Gaudette
 2026-11-02 13:57,xg,401892631,2026-11-02,col,chi,0.3258,2.684,3.667,6.5,Mackenzie Blackwood (expected),Spencer Knight (confirmed),"COL: Manson, O'Connor? | CHI: Teravainen, Korchinski"
 2026-11-02 13:57,goals,401892631,2026-11-02,col,chi,0.3624,2.727,3.605,6.49,Mackenzie Blackwood (expected),Spencer Knight (confirmed),"COL: Manson, O'Connor? | CHI: Teravainen, Korchinski"
+2026-11-02 13:59,xg,401892632,2026-11-02,cgy,sj,0.4452,3.138,3.224,6.52,Dustin Wolf (confirmed),Yaroslav Askarov (confirmed),CGY: Othmann? | SJ: Gaudette
+2026-11-02 13:59,goals,401892632,2026-11-02,cgy,sj,0.5358,3.215,2.931,6.31,Dustin Wolf (confirmed),Yaroslav Askarov (confirmed),CGY: Othmann? | SJ: Gaudette
