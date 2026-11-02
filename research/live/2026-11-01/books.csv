@@ -3490,3 +3490,17 @@ seen_at_et,espn_event_id,date,away,home,period,clock,away_score,home_score,book,
 2026-11-01 20:51:05,401892628,2026-11-01,ott,ana,thirdperiod,0:00,3.0,0.0,FanDuel,moneyline,away,0.0,-155,True,normal
 2026-11-01 20:51:05,401892628,2026-11-01,ott,ana,thirdperiod,0:00,3.0,0.0,FanDuel,moneyline,home,0.0,-102,False,normal
 2026-11-01 20:51:05,401892628,2026-11-01,ott,ana,thirdperiod,0:00,3.0,0.0,FanDuel,spread,home,0.5,-170,True,normal
+2026-11-01 20:59:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,0.0,BetMGM,spread,home,3.5,-155,True,normal
+2026-11-01 20:59:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,0.0,BetMGM,spread,away,-3.5,115,True,normal
+2026-11-01 20:59:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,0.0,BetMGM,total,over,7.5,-105,True,normal
+2026-11-01 20:59:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,0.0,BetMGM,total,under,7.5,-125,True,normal
+2026-11-01 20:59:05,401892628,2026-11-01,ott,ana,secondperiod,0:00,3.0,0.0,BetMGM,moneyline,draw,0.0,210,True,normal
+2026-11-01 20:59:05,401892628,2026-11-01,ott,ana,secondperiod,0:00,3.0,0.0,BetMGM,moneyline,away,0.0,155,True,normal
+2026-11-01 20:59:05,401892628,2026-11-01,ott,ana,secondperiod,0:00,3.0,0.0,BetMGM,total,under,2.5,-185,True,normal
+2026-11-01 20:59:05,401892628,2026-11-01,ott,ana,secondperiod,0:00,3.0,0.0,BetMGM,total,over,2.5,130,True,normal
+2026-11-01 21:01:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,0.0,Consensus,total,over,7.5,-105,True,normal
+2026-11-01 21:01:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,0.0,Consensus,total,under,7.5,-125,True,normal
+2026-11-01 21:01:05,401892628,2026-11-01,ott,ana,secondperiod,0:00,3.0,0.0,Consensus,moneyline,away,0.0,155,True,normal
+2026-11-01 21:01:05,401892628,2026-11-01,ott,ana,secondperiod,0:00,3.0,0.0,Consensus,moneyline,draw,0.0,210,True,normal
+2026-11-01 21:01:05,401892628,2026-11-01,ott,ana,secondperiod,0:00,3.0,0.0,Consensus,total,under,2.5,-185,True,normal
+2026-11-01 21:01:05,401892628,2026-11-01,ott,ana,thirdperiod,0:00,3.0,0.0,Fanatics,team_total,away_under,1.5,-230,False,normal
