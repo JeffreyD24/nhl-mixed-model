@@ -66,3 +66,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 20:02:05,401892627,2026-11-01,edm,nyr,in,18:53 - 3rd,3,18:53,3.0,1.0,20.0,11.0,Shot,Alexis Lafrenière saved by Matt Tomkins
 2026-11-01 20:03:05,401892627,2026-11-01,edm,nyr,in,18:10 - 3rd,3,18:10,3.0,1.0,20.0,12.0,Face Off,J.T. Miller faceoff won against Leon Draisaitl
 2026-11-01 20:04:05,401892627,2026-11-01,edm,nyr,in,17:11 - 3rd,3,17:11,3.0,1.0,20.0,12.0,Face Off,J.T. Miller faceoff won against Leon Draisaitl
+2026-11-01 20:05:05,401892627,2026-11-01,edm,nyr,in,16:41 - 3rd,3,16:41,3.0,1.0,20.0,12.0,Stoppage,Icing
+2026-11-01 20:06:05,401892627,2026-11-01,edm,nyr,in,16:02 - 3rd,3,16:02,3.0,1.0,20.0,13.0,Face Off,Luke Glendening faceoff won against Ryan Nugent-Hopkins
+2026-11-01 20:07:05,401892627,2026-11-01,edm,nyr,in,14:49 - 3rd,3,14:49,3.0,1.0,20.0,13.0,Blocked,Jason Dickinson shot blocked by Marcus Pettersson
+2026-11-01 20:08:05,401892627,2026-11-01,edm,nyr,in,14:35 - 3rd,3,14:35,3.0,1.0,20.0,14.0,Interference,Connor Murphy Interference against Will Cuylle
+2026-11-01 20:08:05,401892628,2026-11-01,ott,ana,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-01 20:09:05,401892627,2026-11-01,edm,nyr,in,13:39 - 3rd,3,13:39,3.0,1.0,21.0,14.0,Shot,Adam Fox Wrist Shot saved by Matt Tomkins
+2026-11-01 20:09:05,401892628,2026-11-01,ott,ana,in,19:36 - 1st,1,19:36,0.0,0.0,0.0,0.0,Stoppage,Goalie Stopped
+2026-11-01 20:10:05,401892627,2026-11-01,edm,nyr,in,12:36 - 3rd,3,12:36,3.0,1.0,23.0,14.0,Shot,Alexis Lafrenière saved by Matt Tomkins
+2026-11-01 20:10:05,401892628,2026-11-01,ott,ana,in,18:57 - 1st,1,18:57,0.0,0.0,1.0,0.0,Shot,Jackson LaCombe Slap Shot saved by Jonas Johansson
