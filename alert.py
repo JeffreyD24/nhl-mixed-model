@@ -69,6 +69,12 @@ SKIP_B2B = True          # Nov 2, 2026: no bet on a team playing the second nigh
                          #   said 53%, won 36%, -40.1u, negative all five seasons; goals model -43.6u)
 
 
+PIN_SEEN = {}            # (home, away) -> when the recorder first saw Pinnacle's price (UTC)
+SECOND_CHANCE = True     # Nov 2, 2026 (approved): moneyline bets the model missed at the opener (EV under 6% there) that are 6%+ at
+SC_WINDOW_MIN = 60       #   DraftKings' price when Pinnacle first posts (within this many minutes) and Pinnacle agrees or matches.
+                         #   Shot model 2021-26: 172 bets, +17.2u (+10.0%), positive all five seasons (tracker analysis/sharp_nhl.py G)
+
+
 def pinnacle_first():
     """{(home, away): Pinnacle's first no-vig home win chance} from the live recorder; {} if unavailable"""
     try:
@@ -80,7 +86,7 @@ def pinnacle_first():
         h, a = PIN_NAME.get(ev.get("home")), PIN_NAME.get(ev.get("away")); f = ev.get("first", {})
         ph, pa = f.get(f"h2h|{ev.get('home')}", [None])[0], f.get(f"h2h|{ev.get('away')}", [None])[0]
         if h and a and ph is not None and pa is not None:
-            out[(h, a)] = fair(ph, pa)
+            out[(h, a)] = fair(ph, pa); PIN_SEEN[(h, a)] = ev.get("first_seen_utc")
     return out
 
 
@@ -373,6 +379,15 @@ def main():
             GINFO[g["game_id"]] = dict(H=H, Aw=Aw, tip=tip, tip_et=g["tip_et"], goalies=goalies_txt, conf=gh_conf and ga_conf,
                                       ph_open=ph_open, pin=PIN.get((g["home"], g["away"])))
             # ---- alerts: one per side; both models in one alert when they agree
+            def second_chance(name, bt, mk):
+                """moneyline only: no value at the opener, 6%+ now, Pinnacle posted in the last hour and agrees or matches"""
+                if not SECOND_CHANCE or mk != "moneyline" or name not in ALERT_MODELS: return False
+                key = (g["home"], g["away"]); seen = PIN_SEEN.get(key)
+                if key not in PIN or not seen or pd.isna(bt[5]) or pd.isna(ph_now): return False
+                if NOW - pd.Timestamp(seen).tz_convert(ET).tz_localize(None) > pd.Timedelta(minutes=SC_WINDOW_MIN): return False
+                if bt[4] < THRESHOLD or bt[3] * espn.nd_dec(bt[5]) - 1 >= THRESHOLD: return False
+                diff = (PIN[key] - ph_now) if bt[0] == "home" else (ph_now - PIN[key])
+                return diff >= -PIN_DISAGREE
             for mk in ALERT_MARKETS:
                 hist_txt = history_text(g["game_id"], "total" if mk == "total" else "moneyline")
                 groups = {}
@@ -381,7 +396,7 @@ def main():
                     if bt is None: continue
                     if name in OPEN_ONLY_LONGSHOTS and bt[2] >= OPEN_ONLY_LONGSHOTS[name] and not near_open(bt[2], bt[5]): continue
                     thr = threshold_for(bt[2], bt[5])
-                    if bt[4] < thr:
+                    if bt[4] < thr and not second_chance(name, bt, mk):
                         side = bt[0]
                         toward = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) == (side == "home"))
                         if name == lead and toward and (g["game_id"], mk) not in moved_done:
@@ -406,7 +421,8 @@ def main():
                     # caution no longer applies to them (backtest openers: +3.7% when the expected goalie started, +3.2% when not).
                     at_open = near_open(price, oprice)
                     skip = None
-                    if not at_open: skip = MOVED_SKIP
+                    is_sc = (not at_open) and any(second_chance(n, bt_, mk) for n, bt_ in members)
+                    if not at_open and not is_sc: skip = MOVED_SKIP
                     elif against: skip = f"the moneyline moved {abs(move):.1f} win-% points against this side since open"
                     pending = [(n, bt) for n, bt in members if (g["game_id"], mk, n) not in (skipped if skip else done)]
                     if not pending: continue
@@ -462,7 +478,13 @@ def main():
                                 f"the opening price (+13.5u on 641 bets) but lost once the price moved.\n" + body)
                         if len(oo) < len(pending):
                             body += f"\nThe shot model's number on this bet holds at any price; only the {who}'s needs the opening price."
-                    if threshold_for(price, oprice) > THRESHOLD:
+                    if is_sc:
+                        title = "SECOND CHANCE - " + title
+                        pin_ours = PIN[(g["home"], g["away"])] if side == "home" else 1 - PIN[(g["home"], g["away"])]
+                        body = (f"SECOND CHANCE: no bet at the opening price, but Pinnacle (the sharp book) just posted {team} at {pin_ours:.1%} "
+                                f"and DraftKings' price now has {max(bt[4] for _, bt in pending):+.1%} EV. These bets made +17.2u on 172 "
+                                f"(+10%) 2021-26, every season positive. Bet at {fmt_price(price)} or better, now.\n" + body)
+                    elif threshold_for(price, oprice) > THRESHOLD:
                         body += f"\nThe price has moved since it opened, so this needed {THRESHOLD_MOVED:.0%}+ EV (vs {THRESHOLD:.0%} at the opening price)."
                     tail = f"\nGoalies: {goalies_txt}."
                     if outs_a or outs_h: tail += f"\nMissing: {Aw} {', '.join(outs_a) or 'none'}; {H} {', '.join(outs_h) or 'none'}."
@@ -521,7 +543,7 @@ def main():
                                         home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,
                                         open_price=oprice, model_prob=round(bt[3], 4), ev=round(bt[4], 4), goalies=goalies_txt, sent=sent,
                                         skipped=skip or (conflict if not skip else None),
-                                        open_only=is_open_only(n, price), remind_ok=skip != MOVED_SKIP and not conflict))
+                                        open_only=is_open_only(n, price), remind_ok=skip != MOVED_SKIP and not conflict, second_chance=bool(is_sc)))
                         (skipped if (skip or conflict) else done).add((g["game_id"], mk, n))
                     print(("CAUTION " if skip else "") + "ALERT:", title, "|", skip or "")
     # ---- DON'T BET follow-up: a pushed bet alert, still not logged, that no longer meets the bar before puck drop
@@ -544,7 +566,7 @@ def main():
             nowv = [(m, v) for m, v in nowv if v is not None]
             if not nowv: continue
             m_best, (lnum, price, p, ev, oprice) = max(nowv, key=lambda x: x[1][3])
-            thr = threshold_for(price, oprice)
+            thr = THRESHOLD if str(r.get("second_chance", "")) in ("True", "1", "1.0") else threshold_for(price, oprice)
             longshot_gone = m_best in OPEN_ONLY_LONGSHOTS and price >= OPEN_ONLY_LONGSHOTS[m_best] and not near_open(price, oprice)
             ok_now = ev >= thr and not longshot_gone
             pin_txt = None
