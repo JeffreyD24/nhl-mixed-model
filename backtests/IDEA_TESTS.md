@@ -54,3 +54,15 @@ Moneyline + puck line at EV 6%+:
 Total at the open: +105.7u on 2,168 bets (+4.9%). With 2024-25 and 2025-26 (+111u on 1,237): five seasons in a row profitable
 at the opening price, and the edge is gone by the close every season. Confirms the current rules (6% near the open, 9% once the
 price moves). Totals at the open: +23.9u on 889 bets but -6.5u in 2021-22; still not alerted.
+
+## Autopsy of wins and losses, both models, 2021-22 to 2025-26 at the opener (Nov 2, 2026)
+`dev/autopsy_preds.py`, `dev/autopsy.py`, full output `backtests/autopsy_output.txt`. Moneyline + puck line, EV 6%+.
+- Shot model (live): 3,463 bets, +224.6u (+6.5%), positive all five seasons (+52, +39, +15, +46, +73). Goals model (research):
+  4,015 bets, -38.4u; lost 2021-22..2023-24, won 2024-25 and 2025-26. Confirms shot model only.
+- **Betting a team on the second night of a back-to-back loses for both models, every season.** Shot model: 144 bets, said
+  53.3%, won 36.1%, -40.1u (-4, -14, -4, -5, -12); worst on puck line underdogs (86 bets, won 23% vs said 44%, -33.0u). Goals
+  model: 283 bets, -43.6u. Betting AGAINST a back-to-back team is fine (+89.4u). The model's back-to-back penalty is too small,
+  most likely the tired team's backup goalie, which isn't known at the open.
+- Shot model is profitable at every price band, both markets, home and away (away stronger: +164.6u vs +60.0u), every EV band.
+- Price moving our way by the close: +235.5u; no move or against: about break-even (same as the DON'T BET logic).
+- Games decided in OT/shootout: -89.1u (coin flips); not knowable before the game.
