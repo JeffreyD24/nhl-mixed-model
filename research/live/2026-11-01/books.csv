@@ -4758,3 +4758,4 @@ seen_at_et,espn_event_id,date,away,home,period,clock,away_score,home_score,book,
 2026-11-01 22:41:05,401892628,2026-11-01,ott,ana,thirdperiod,2:44,3.0,6.0,BetMGM,spread,home,-3.5,290,True,normal
 2026-11-01 22:41:05,401892628,2026-11-01,ott,ana,thirdperiod,2:44,3.0,6.0,BetMGM,spread,away,3.5,-425,True,normal
 2026-11-01 22:43:05,401892628,2026-11-01,ott,ana,event,0:36,3.0,6.0,Consensus,moneyline,home,0.0,101,False,normal
+2026-11-01 22:44:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,6.0,DraftKings,spread,home,-3.5,550,True,normal
