@@ -52,6 +52,38 @@ def in_window():
     return start <= NOW < end
 
 
+PIN_URL = "https://raw.githubusercontent.com/JeffreyD24/nba-mixed-model/main/state/pinnacle_now.json"   # live Pinnacle recorder (nba repo)
+PIN_NAME = {"Anaheim Ducks": "ana", "Arizona Coyotes": "uta", "Utah Hockey Club": "uta", "Utah Mammoth": "uta", "Boston Bruins": "bos",
+            "Buffalo Sabres": "buf", "Carolina Hurricanes": "car", "Columbus Blue Jackets": "cbj", "Calgary Flames": "cgy",
+            "Chicago Blackhawks": "chi", "Colorado Avalanche": "col", "Dallas Stars": "dal", "Detroit Red Wings": "det",
+            "Edmonton Oilers": "edm", "Florida Panthers": "fla", "Los Angeles Kings": "la", "Minnesota Wild": "min",
+            "Montréal Canadiens": "mtl", "Montreal Canadiens": "mtl", "New Jersey Devils": "nj", "Nashville Predators": "nsh",
+            "New York Islanders": "nyi", "New York Rangers": "nyr", "Ottawa Senators": "ott", "Philadelphia Flyers": "phi",
+            "Pittsburgh Penguins": "pit", "Seattle Kraken": "sea", "San Jose Sharks": "sj", "St Louis Blues": "stl", "St. Louis Blues": "stl",
+            "Tampa Bay Lightning": "tb", "Toronto Maple Leafs": "tor", "Vancouver Canucks": "van", "Vegas Golden Knights": "vgk",
+            "Winnipeg Jets": "wpg", "Washington Capitals": "wsh"}
+USE_PINNACLE_RULE = False   # built Nov 2, 2026, OFF until approved: skip when Pinnacle's first price disagrees
+PIN_DISAGREE = 0.005     # Nov 2, 2026: Pinnacle's first moneyline gives our side 0.5+ win-% points less than DraftKings' opener ->
+                         #   no bet (shot model at the open 2021-26: 405 such bets -42.0u, negative all five seasons)
+SKIP_B2B = True          # Nov 2, 2026: no bet on a team playing the second night of a back-to-back (shot model 2021-26: 144 bets,
+                         #   said 53%, won 36%, -40.1u, negative all five seasons; goals model -43.6u)
+
+
+def pinnacle_first():
+    """{(home, away): Pinnacle's first no-vig home win chance} from the live recorder; {} if unavailable"""
+    try:
+        with urllib.request.urlopen(PIN_URL, timeout=20) as r: js = json.loads(r.read())
+    except Exception as e:
+        print("Pinnacle prices unavailable:", type(e).__name__); return {}
+    out = {}
+    for ev in js.get("nhl", {}).values():
+        h, a = PIN_NAME.get(ev.get("home")), PIN_NAME.get(ev.get("away")); f = ev.get("first", {})
+        ph, pa = f.get(f"h2h|{ev.get('home')}", [None])[0], f.get(f"h2h|{ev.get('away')}", [None])[0]
+        if h and a and ph is not None and pa is not None:
+            out[(h, a)] = fair(ph, pa)
+    return out
+
+
 def fair(a, b):
     if pd.isna(a) or pd.isna(b): return np.nan
     ia, ib = 1 / espn.nd_dec(a), 1 / espn.nd_dec(b); return ia / (ia + ib)
@@ -256,6 +288,12 @@ def main():
             SB = {(r["home"], r["away"]): r for r in nd.scoreboard(day)}
         except Exception as e:
             SB = {}; print("Scoreboard unavailable:", type(e).__name__)
+        B2B = set()
+        try:
+            for r in nd.scoreboard(day - pd.Timedelta(days=1)): B2B |= {r["home"], r["away"]}
+        except Exception as e:
+            print("Yesterday's scoreboard unavailable:", type(e).__name__)
+        PIN = pinnacle_first()
         L = espn.lines([day], when=("open", "current"))
         L = fill_from_action_network(L, day)
         for g in M["games"]:
@@ -332,7 +370,8 @@ def main():
                     ev = p * espn.nd_dec(price) - 1
                     NOWC[(g["game_id"], mk, side, name)] = (lnum, price, p, ev, oprice)
                     if (name, mk) not in best or ev > best[(name, mk)][4]: best[(name, mk)] = (side, lnum, price, p, ev, oprice)
-            GINFO[g["game_id"]] = dict(H=H, Aw=Aw, tip=tip, tip_et=g["tip_et"], goalies=goalies_txt, conf=gh_conf and ga_conf)
+            GINFO[g["game_id"]] = dict(H=H, Aw=Aw, tip=tip, tip_et=g["tip_et"], goalies=goalies_txt, conf=gh_conf and ga_conf,
+                                      ph_open=ph_open, pin=PIN.get((g["home"], g["away"])))
             # ---- alerts: one per side; both models in one alert when they agree
             for mk in ALERT_MARKETS:
                 hist_txt = history_text(g["game_id"], "total" if mk == "total" else "moneyline")
@@ -387,6 +426,17 @@ def main():
                                      (MYB.away.astype(str).str.lower() == g["away"]) & MYB.market.isin(TEAM_MK) &
                                      (MYB.pick.astype(str).str.lower() == g[opp])]
                             if len(mb): conflict = f"you already bet {g[opp].upper()} on this game ({mb.market.iloc[-1]})"
+                    if mk in TEAM_MK and not conflict:
+                        if SKIP_B2B and g[side] in B2B:
+                            conflict = (f"{g[side].upper()} played last night (second night of a back-to-back); bets on back-to-back "
+                                        f"teams lost every season 2021-26 (shot model 144 bets, won 36%, -40u)")
+                        elif USE_PINNACLE_RULE and mk == "moneyline" and (g["home"], g["away"]) in PIN and not pd.isna(ph_open):
+                            pin = PIN[(g["home"], g["away"])]
+                            diff = (pin - ph_open) if side == "home" else (ph_open - pin)
+                            if diff < -PIN_DISAGREE:
+                                ours_pin = pin if side == "home" else 1 - pin; ours_dk = ph_open if side == "home" else 1 - ph_open
+                                conflict = (f"Pinnacle (the sharp book) opened {g[side].upper()} at {ours_pin:.1%} vs DraftKings' "
+                                            f"{ours_dk:.1%}; bets Pinnacle disagrees with lost every season 2021-26 (405 bets, -42u)")
                     if conflict and not skip and all((g["game_id"], mk, n) in skipped for n, _ in pending): continue   # logged already
                     tag = "Both models" if len(pending) > 1 else SHORT.get(pending[0][0], pending[0][0])
                     what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
@@ -461,7 +511,7 @@ def main():
                         if other: body += f"\nYour other bets on this game: {other}."
                         if "OTHER SIDE" in other: title = "YOU BET THE OTHER SIDE - " + title
                         if conflict:      # logged, not pushed: betting both teams pays the vig twice
-                            title = "NO BET (both sides) - " + title
+                            title = ("NO BET (both sides) - " if ("disagree" in conflict and "Pinnacle" not in conflict) or "already bet" in conflict else "NO BET - ") + title
                             body = f"NO BET: {conflict}.\n" + why + body
                             sent = notify(title, body, priority="low", link=link, dk=dk, kind="info")
                         else:
@@ -497,11 +547,17 @@ def main():
             thr = threshold_for(price, oprice)
             longshot_gone = m_best in OPEN_ONLY_LONGSHOTS and price >= OPEN_ONLY_LONGSHOTS[m_best] and not near_open(price, oprice)
             ok_now = ev >= thr and not longshot_gone
-            if ok_now: continue
+            pin_txt = None
+            if USE_PINNACLE_RULE and ok_now and mk == "moneyline" and gi.get("pin") is not None and not pd.isna(gi.get("ph_open")):
+                d_ = (gi["pin"] - gi["ph_open"]) if r.side == "home" else (gi["ph_open"] - gi["pin"])
+                if d_ < -PIN_DISAGREE:
+                    pin_txt = (f"Pinnacle (the sharp book) has now opened and gives this side {abs(d_) * 100:.1f} win-% points less than "
+                               f"DraftKings' opener; bets Pinnacle disagrees with lost every season 2021-26")
+            if ok_now and not pin_txt: continue
             team = gi["H"] if r.side == "home" else (gi["Aw"] if r.side == "away" else str(r.side).upper())
             what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
                     (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{str(r.side).upper()} {lnum:g} ({fmt_price(price)})"))
-            why = (f"EV now {ev:+.1%} at {fmt_price(price)}, below the {thr:.0%} bar"
+            why = pin_txt or (f"EV now {ev:+.1%} at {fmt_price(price)}, below the {thr:.0%} bar"
                    + (" (opening-price-only long shot and the price has moved)" if longshot_gone else ""))
             body = (f"DON'T BET: {why}.\nThe bet alert at {pd.Timestamp(t_last):%-I:%M %p} was at {fmt_price(r.price)} "
                     f"(EV {float(r.ev):+.1%}); no bet is logged for it. [{SHORT.get(m_best, m_best)}] win chance now {p:.1%}.\n"
