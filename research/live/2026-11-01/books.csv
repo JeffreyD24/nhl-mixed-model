@@ -4319,3 +4319,11 @@ seen_at_et,espn_event_id,date,away,home,period,clock,away_score,home_score,book,
 2026-11-01 22:01:05,401892628,2026-11-01,ott,ana,thirdperiod,0:00,3.0,3.0,BetMGM,spread,away,0.5,-220,True,normal
 2026-11-01 22:01:05,401892628,2026-11-01,ott,ana,thirdperiod,0:00,3.0,3.0,BetMGM,total,over,2.5,125,True,normal
 2026-11-01 22:01:05,401892628,2026-11-01,ott,ana,thirdperiod,0:00,3.0,3.0,BetMGM,total,under,2.5,-175,True,normal
+2026-11-01 22:02:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,3.0,DraftKings,team_total,home_over,4.5,110,True,normal
+2026-11-01 22:02:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,3.0,DraftKings,team_total,away_under,4.5,-210,True,normal
+2026-11-01 22:02:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,3.0,DraftKings,team_total,away_over,4.5,155,True,normal
+2026-11-01 22:02:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,3.0,DraftKings,spread,home,-1.5,280,True,normal
+2026-11-01 22:02:05,401892628,2026-11-01,ott,ana,thirdperiod,0:00,3.0,3.0,DraftKings,moneyline,away,0.0,110,True,normal
+2026-11-01 22:02:05,401892628,2026-11-01,ott,ana,thirdperiod,0:00,3.0,3.0,DraftKings,total,over,2.5,115,True,normal
+2026-11-01 22:03:05,401892628,2026-11-01,ott,ana,event,0:00,3.0,3.0,Consensus,spread,home,1.5,-242,False,normal
+2026-11-01 22:04:05,401892628,2026-11-01,ott,ana,thirdperiod,0:00,3.0,3.0,Consensus,total,under,2.5,-154,False,normal
