@@ -19,6 +19,8 @@ import nhl_mixed_model as nm                             # noqa: E402
 import espn                                              # noqa: E402
 import nhl_travel                                        # noqa: E402
 
+ML_BLEND = 0.55                     # moneyline win chance = 55% shot model + 45% DraftKings' no-vig opener (approved Nov 2, 2026;
+ML_THRESHOLD = 0.04                 #   backtests/IDEA_TESTS.md: +158.1u on 1,221 bets 2021-26, every season +19u or better), EV 4%+ near the opener
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
 THRESHOLD_MOVED = 0.09              # needed once the price has moved more than that: in the backtests the edge mostly disappears
 BET_ONLY = True                     # phone alerts only for bets and the DON'T BET follow-up (Nov 1, 2026); everything
@@ -172,10 +174,16 @@ def american(d):
     return (d - 1) * 100 if d >= 2 else -100 / (d - 1)
 
 
-def open_only_floor(p, oprice):
-    """shortest price still worth taking on an opening-price-only bet: still near the opening price AND still EV >= THRESHOLD"""
+def thr_for(mk, price, oprice):
+    """EV bar by market: moneyline (blended chance) ML_THRESHOLD near the opener; others THRESHOLD; THRESHOLD_MOVED once moved"""
+    t = threshold_for(price, oprice)
+    return ML_THRESHOLD if (mk == "moneyline" and t == THRESHOLD) else t
+
+
+def open_only_floor(p, oprice, thr=None):
+    """shortest price still worth taking on an opening-price-only bet: still near the opening price AND still EV >= the bar"""
     d_near = 1 / (1 / espn.nd_dec(oprice) + NEAR_OPEN)
-    d_ev = (1 + THRESHOLD) / p
+    d_ev = (1 + (THRESHOLD if thr is None else thr)) / p
     return american(max(d_near, d_ev))
 
 
@@ -364,8 +372,9 @@ def main():
                                        model_home_win=round(p_home, 4), lam_home=round(lam_h, 3), lam_away=round(lam_a, 3),
                                        model_total=round(exp_total, 2), away_goalie=ga_lab, home_goalie=gh_lab, missing=missing_txt))
                 cands = []
+                p_ml = (ML_BLEND * p_home + (1 - ML_BLEND) * ph_open) if (name in ALERT_MODELS and not pd.isna(ph_open)) else p_home
                 if not pd.isna(c["home_ml"]):
-                    for side, p, price in (("home", p_home, c["home_ml"]), ("away", 1 - p_home, c["away_ml"])):
+                    for side, p, price in (("home", p_ml, c["home_ml"]), ("away", 1 - p_ml, c["away_ml"])):
                         cands.append(("moneyline", side, np.nan, price, p, o[f"{side}_ml"]))
                 if not pd.isna(c["home_pl"]):
                     hl = c["home_pl"]; p_hc = p_hby2 if hl < 0 else 1 - p_aby2
@@ -390,7 +399,8 @@ def main():
                 key = (g["home"], g["away"]); seen = PIN_SEEN.get(key)
                 if key not in PIN or not seen or pd.isna(bt[5]) or pd.isna(ph_now): return False
                 if NOW - pd.Timestamp(seen).tz_convert(ET).tz_localize(None) > pd.Timedelta(minutes=SC_WINDOW_MIN): return False
-                if bt[4] < THRESHOLD or bt[3] * espn.nd_dec(bt[5]) - 1 >= THRESHOLD: return False
+                p_raw = est[name][3] if bt[0] == "home" else 1 - est[name][3]        # tested with the plain shot model's chance
+                if p_raw * espn.nd_dec(bt[2]) - 1 < THRESHOLD or p_raw * espn.nd_dec(bt[5]) - 1 >= THRESHOLD: return False
                 diff = (PIN[key] - ph_now) if bt[0] == "home" else (ph_now - PIN[key])
                 return diff >= -PIN_DISAGREE
             for mk in ALERT_MARKETS:
@@ -401,7 +411,7 @@ def main():
                     if bt is None: continue
                     if mk == "total" and bt[0] not in TOTAL_SIDES: continue        # unders are logged by the model, never alerted
                     if name in OPEN_ONLY_LONGSHOTS and bt[2] >= OPEN_ONLY_LONGSHOTS[name] and not near_open(bt[2], bt[5]): continue
-                    thr = threshold_for(bt[2], bt[5])
+                    thr = thr_for(mk, bt[2], bt[5])
                     if bt[4] < thr and not second_chance(name, bt, mk):
                         side = bt[0]
                         toward = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) == (side == "home"))
@@ -439,7 +449,7 @@ def main():
                     if mk in TEAM_MK:
                         opp = "away" if side == "home" else "home"; mine = {n for n, _ in pending}
                         for (gid2, mk2, s2, n2), v in NOWC.items():
-                            if gid2 == g["game_id"] and mk2 in TEAM_MK and s2 == opp and n2 in ALERT_MODELS and v[3] >= threshold_for(v[1], v[4]):
+                            if gid2 == g["game_id"] and mk2 in TEAM_MK and s2 == opp and n2 in ALERT_MODELS and v[3] >= thr_for(mk2, v[1], v[4]):
                                 conflict = (f"the models disagree: the {SHORT.get(n2, n2)} likes {g[opp].upper()} "
                                             f"({mk2}, EV {v[3]:+.1%}){' too' if n2 in mine else ''}")
                                 break
@@ -469,7 +479,7 @@ def main():
                         else:
                             for n2 in ALERT_MODELS:
                                 ob = best.get((n2, other))
-                                if ob and ob[0] == side and near_open(ob[2], ob[5]) and ob[4] >= THRESHOLD and ob[4] > mine_ev:
+                                if ob and ob[0] == side and near_open(ob[2], ob[5]) and ob[4] >= thr_for(other, ob[2], ob[5]) and ob[4] > mine_ev:
                                     conflict = f"one bet per game: the {other} has more value (EV {ob[4]:+.1%} vs {mine_ev:+.1%})"
                                     break
                     if conflict and not skip and all((g["game_id"], mk, n) in skipped for n, _ in pending): continue   # logged already
@@ -516,7 +526,7 @@ def main():
                         body += "\nNo one-tap DraftKings link yet (line is brand new); the button opens DraftKings' NHL page."
                     recs = "; ".join(f"{SHORT.get(n, n)} {record(n, bool(skip))}" for n, _ in pending)
                     if at_open and not pd.isna(oprice):
-                        floor = min(open_only_floor(bt[3], oprice) for _, bt in pending)
+                        floor = min(open_only_floor(bt[3], oprice, thr_for(mk, price, oprice)) for _, bt in pending)
                         body = f"Bet only at {fmt_price(floor)} or better. If DraftKings shows a shorter price, skip it.\n" + body
                     if skip == MOVED_SKIP:
                         body = ("INFO ONLY, DON'T BET: the price has moved off its opening number "
@@ -585,7 +595,7 @@ def main():
             nowv = [(m, v) for m, v in nowv if v is not None]
             if not nowv: continue
             m_best, (lnum, price, p, ev, oprice) = max(nowv, key=lambda x: x[1][3])
-            thr = THRESHOLD if str(r.get("second_chance", "")) in ("True", "1", "1.0") else threshold_for(price, oprice)
+            thr = THRESHOLD if str(r.get("second_chance", "")) in ("True", "1", "1.0") else thr_for(mk, price, oprice)
             longshot_gone = m_best in OPEN_ONLY_LONGSHOTS and price >= OPEN_ONLY_LONGSHOTS[m_best] and not near_open(price, oprice)
             ok_now = ev >= thr and not longshot_gone
             pin_txt = None
