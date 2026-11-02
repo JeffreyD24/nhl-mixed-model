@@ -24,6 +24,7 @@ from scipy.optimize import minimize
 import nhl_mixed_model as nm
 
 NET_X = 89.0
+V2 = False      # rush shots and pre-shot movement (Nov 1, 2026 test); set True only if the backtest says so
 STYPES = ["wrist", "snap", "slap", "backhand", "tip-in", "deflected", "wrap-around"]
 
 
@@ -38,6 +39,21 @@ def shot_features(S):
     S = S.sort_values(["game_id", "period", "sec"]).reset_index(drop=True)
     same = (S.game_id == S.game_id.shift()) & (S.period == S.period.shift()) & (S.team == S.team.shift())
     S["rebound"] = (same & ((S.sec - S.sec.shift()) <= 3)).astype(int)
+    if V2 and "prev_sec" in S:
+        gap = (S.sec - S.prev_sec).clip(lower=0)
+        side = np.sign(S.x.replace(0, np.nan)).fillna(1.0)
+        rel = S.prev_x * side                       # previous play's position toward the net being shot at (+89 = that net)
+        moved = np.sqrt((S.x - S.prev_x) ** 2 + (S.y - S.prev_y) ** 2)
+        ok = gap.notna() & S.prev_x.notna()
+        S["gap"] = gap.fillna(30).clip(upper=30)
+        S["quick"] = (ok & (gap <= 2)).astype(int)
+        S["rush"] = (ok & (gap <= 4) & (rel < 25)).astype(int)                      # from the neutral or defensive zone
+        S["speed"] = np.where(ok & (gap > 0), (moved / gap.replace(0, np.nan)).clip(upper=60), 0.0)
+        S["cross_ice"] = (ok & (gap <= 3) & (np.sign(S.prev_y) != np.sign(S.y)) & (S.prev_y.abs() > 8) & (S.y.abs() > 3)).astype(int)
+        pt = S.prev_type.fillna("").astype(str)
+        S["after_faceoff"] = (ok & (gap <= 5) & (pt == "face off")).astype(int)
+        S["after_turnover"] = (ok & (gap <= 5) & pt.isin(["giveaway", "takeaway"])).astype(int)
+        S["after_hit"] = (ok & (gap <= 5) & (pt == "hit")).astype(int)
     return S
 
 
@@ -51,6 +67,10 @@ def design_xg(S, home_of):
                 rebound_angle=S.rebound * S.angle / 10, ot=(S.period == 4).astype(float),
                 leading=(diff > 0).astype(float), trailing=(diff < 0).astype(float), typed=(st != "").astype(float))
     for t in STYPES: cols[f"t_{t}"] = (st == t).astype(float)
+    if V2 and "rush" in S:
+        for c in ("quick", "rush", "cross_ice", "after_faceoff", "after_turnover", "after_hit"): cols[c] = S[c].astype(float).values
+        cols["speed"] = S.speed.values / 10; cols["gap"] = np.log1p(S.gap.values)
+        cols["rush_dist"] = S.rush.values * S.dist.values / 10
     return pd.DataFrame(cols)
 
 

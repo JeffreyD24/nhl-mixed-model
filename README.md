@@ -229,3 +229,7 @@ The 30-minute reminder was replaced by DON'T BET.
   (moneyline or puck line, at the bet bar), or you already logged a bet on the other team, the alert is logged as
   **NO BET (both sides)** and not pushed. On Oct 31 both models alerted on UTA @ PHI from opposite sides (UTA ML -155 from the
   shot model, PHI ML +130 from the goals model), and both got bet. Bets on both teams pay the vig twice.
+- **Only the shot model alerts (since Nov 1, 2026).** `ALERT_MODELS = ("xg",)` in `alert.py`. Backtest 2025-26 at opening
+  prices (`backtests/disagree_bets.csv`): goals-model bets the shot model also made +76.7u on 753 (+10.2%); goals-model-only
+  bets -16.6u on 1,026 (-1.6%, negative both seasons, worst at +150 and longer: -27.9u on 345). Shot model overall +111.1u on
+  1,237 (+9.0%). The goals model still runs every check and is logged in `research/model/` for research.

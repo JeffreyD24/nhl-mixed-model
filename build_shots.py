@@ -24,6 +24,7 @@ def shots(game_id):
     for t in (d.get("boxscore") or {}).get("teams", []):
         tid[str(t["team"]["id"])] = nd.code(t["team"]["abbreviation"])
     out, prev_h, prev_a = [], 0, 0
+    last = None                       # the previous play with a location (for rush shots and pre-shot movement)
     for p in d.get("plays", []):
         typ = TYPES.get((p.get("type") or {}).get("text"))
         hs, as_ = p.get("homeScore", prev_h), p.get("awayScore", prev_a)
@@ -35,11 +36,29 @@ def shots(game_id):
                 sec = None
             st = STYPE.search(p.get("text") or "")
             before_h, before_a = (prev_h, prev_a)
-            out.append(dict(game_id=int(game_id), period=per, sec=sec, team=tid.get(str(p["team"]["id"])), event=typ,
+            parts = p.get("participants") or []
+            who = lambda *ts: next((str((x.get("athlete") or {}).get("id")) for x in parts if x.get("type") in ts), None)
+            team = tid.get(str(p["team"]["id"]))
+            out.append(dict(game_id=int(game_id), period=per, sec=sec, team=team, event=typ,
                             x=p["coordinate"].get("x"), y=p["coordinate"].get("y"),
                             strength=((p.get("strength") or {}).get("abbreviation") or ""),
                             home_score=before_h, away_score=before_a,
-                            shot_type=st.group(1).lower() if st else "", empty_net=int("empty net" in (p.get("text") or "").lower())))
+                            shot_type=st.group(1).lower() if st else "", empty_net=int("empty net" in (p.get("text") or "").lower()),
+                            shooter_id=who("shooter", "scorer") or (str((parts[0].get("athlete") or {}).get("id")) if parts else None),
+                            goalie_id=who("goalie"),
+                            prev_type=last["type"] if last and last["period"] == per else None,
+                            prev_x=last["x"] if last and last["period"] == per else None,
+                            prev_y=last["y"] if last and last["period"] == per else None,
+                            prev_sec=last["sec"] if last and last["period"] == per else None,
+                            prev_same_team=(int(last["team"] == team) if last and last["period"] == per and last["team"] else None)))
+        if p.get("coordinate") and p.get("coordinate").get("x") is not None:
+            try:
+                m_, s_ = (p.get("clock") or {}).get("displayValue", "0:00").split(":"); sec_ = int(m_) * 60 + int(s_)
+            except ValueError:
+                sec_ = None
+            last = dict(type=((p.get("type") or {}).get("text") or "").lower(), x=p["coordinate"].get("x"), y=p["coordinate"].get("y"),
+                        sec=sec_, period=(p.get("period") or {}).get("number"),
+                        team=tid.get(str((p.get("team") or {}).get("id"))) if p.get("team") else None)
         prev_h, prev_a = hs, as_
     return out
 

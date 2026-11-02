@@ -15,3 +15,17 @@ EV >= 6%, 1 unit per bet. Opening and halfway prices: 2024-25 and 2025-26. Closi
 Goals model long shots (+150 or longer), all four seasons at closing prices: said 39.9%, won 30.4%, needed 34.4% (-141u on
 1,126 bets). At opening prices: said 40.0%, won 35.3%, needed 34.4% (+13.5u on 641 bets). The goals model's win chances for
 big underdogs are about 5 points too high; it only gets away with it at the opening price.
+
+## Rush shots and pre-shot movement in the shot model (Nov 1, 2026) — not adopted yet
+`dev/xg_v2_backtest.py`, results `backtests/xg_v2_backtest.csv`. New xG inputs from the previous play (ESPN play-by-play, re-downloaded
+with previous-play fields): seconds since it, rush (within 4 s of a play in the neutral/defensive zone), puck speed between the two
+locations, cross-ice (sides of the ice flipped within 3 s), after a faceoff / turnover / hit. Raw goal rates: rush shots 16.4% vs 6.9%;
+shots within 1 s of the previous play 24%.
+| Test season | xG log-loss V1 → V2 | Game Brier V1 → V2 | Team bets at open (EV 6%+) V1 → V2 |
+|---|---|---|---|
+| 2023 | 0.24196 → 0.24145 | 0.23109 → 0.23124 | no opening prices |
+| 2024 | 0.23396 → 0.23466 | 0.23313 → 0.23323 | no opening prices |
+| 2025 | 0.23442 → 0.23436 | 0.23577 → 0.23578 | +43.9u → +52.5u (620 bets) |
+| 2026 | 0.24014 → 0.23808 | 0.24520 → 0.24510 | +67.2u → +71.6u (614 bets) |
+Better shot-level accuracy in 3 of 4 seasons and +13u at opening prices, but game-level accuracy is unchanged, so most of the gain
+is in which shots are dangerous, not who wins. Kept as `nhl_xg_model.V2 = False`; re-test at the next refit with shooter skill added.

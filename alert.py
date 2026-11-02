@@ -36,6 +36,9 @@ JUMP_LOG_PROB = 3.0                 # log moneyline moves of at least this many 
 JUMP_ALERT_PROB = 5.0               # send a "Line jump" notification at this size (and for totals moving a full goal)
 P_MISS = {"Out": 1.0, "Injured Reserve": 1.0, "Long Term Injured Reserve": 1.0, "Suspension": 1.0, "Suspended": 1.0, "Day-To-Day": 0.5}
 SHORT = {"xg": "Shot model", "goals": "Goals model"}
+ALERT_MODELS = ("xg",)   # Nov 1, 2026: only the shot model alerts. Backtest 2025-26 at opening prices: the goals model's own
+                         # bets (ones the shot model didn't make) lost -16.6u on 1,026 bets, in both seasons; its profit came
+                         # only from bets the shot model also made. The goals model still runs and is logged (research/model).
 WINDOW = None                       # None = check all day; or (16, 0, 19, 0) for 4:00-7:00 PM ET
 ET = ZoneInfo("America/New_York")
 STATE = os.path.join(W, "state")
@@ -355,6 +358,7 @@ def main():
                         continue
                     groups.setdefault((bt[0], bt[1], bt[2]), []).append((name, bt))
                 for (side, lnum, price), members in groups.items():
+                    if not any(n in ALERT_MODELS for n, _ in members): continue      # research-only model's bet: not alerted
                     oprice = members[0][1][5]
                     team = H if side == "home" else (Aw if side == "away" else side.upper())
                     against = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) != (side == "home"))
@@ -374,7 +378,7 @@ def main():
                     if mk in TEAM_MK:
                         opp = "away" if side == "home" else "home"; mine = {n for n, _ in pending}
                         for (gid2, mk2, s2, n2), v in NOWC.items():
-                            if gid2 == g["game_id"] and mk2 in TEAM_MK and s2 == opp and v[3] >= threshold_for(v[1], v[4]):
+                            if gid2 == g["game_id"] and mk2 in TEAM_MK and s2 == opp and n2 in ALERT_MODELS and v[3] >= threshold_for(v[1], v[4]):
                                 conflict = (f"the models disagree: the {SHORT.get(n2, n2)} likes {g[opp].upper()} "
                                             f"({mk2}, EV {v[3]:+.1%}){' too' if n2 in mine else ''}")
                                 break
