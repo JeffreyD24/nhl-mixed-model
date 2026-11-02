@@ -1,0 +1,7 @@
+version,season,xg_logloss,ml_brier,bets,units
+current,2025,0.23442,0.23577,618,43.9
+current,2026,0.24014,0.2452,619,67.2
+shooter skill,2025,0.23395,0.23567,569,40.2
+shooter skill,2026,0.2398,0.24515,669,54.6
+rush+movement shooter skill,2025,0.2339,0.23572,560,34.8
+rush+movement shooter skill,2026,0.23776,0.24507,674,60.3

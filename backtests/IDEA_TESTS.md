@@ -29,3 +29,15 @@ shots within 1 s of the previous play 24%.
 | 2026 | 0.24014 → 0.23808 | 0.24520 → 0.24510 | +67.2u → +71.6u (614 bets) |
 Better shot-level accuracy in 3 of 4 seasons and +13u at opening prices, but game-level accuracy is unchanged, so most of the gain
 is in which shots are dangerous, not who wins. Kept as `nhl_xg_model.V2 = False`; re-test at the next refit with shooter skill added.
+
+## Shooter finishing skill (Nov 1, 2026) — not adopted
+`dev/shooter_backtest.py`, results `backtests/shooter_backtest.csv`. Each shooter's goals vs xG in the training seasons, shrunk
+((goals + 40) / (xG + 40), capped 0.6-1.6), multiplies his shots' xG in the test season.
+| Version | xG log-loss 2025 / 2026 | Game Brier 2025 / 2026 | Team bets at open, units (2025+26) |
+|---|---|---|---|
+| current | 0.23442 / 0.24014 | 0.23577 / 0.24520 | +111.1 on 1,237 |
+| shooter skill | 0.23395 / 0.23980 | 0.23567 / 0.24515 | +94.8 on 1,238 |
+| rush+movement + shooter skill | 0.23390 / 0.23776 | 0.23572 / 0.24507 | +95.1 on 1,234 |
+More accurate at every level, but less profitable: the market already prices who the good shooters are, so knowing it moves
+our number toward the line rather than away from it. The edge is in what the market is slow on (goalies, injuries, timing), not
+in general accuracy. Lesson for future tests: judge by profit at opening prices and by accuracy vs the opener, not accuracy alone.
