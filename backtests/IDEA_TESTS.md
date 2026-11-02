@@ -72,3 +72,15 @@ price moves). Totals at the open: +23.9u on 889 bets but -6.5u in 2021-22; still
 expected-goals shift and applied to puck line bets at DraftKings openers, EV 6%+, weights fit leaving the season out:
 current +49.4u (1,378 bets: +10.9, +31.8, -1.4, +7.2, +0.9) vs adjusted +43.4u (1,666 bets: +14.4, +32.6, -8.8, +11.4, -6.2).
 Worse overall and in 2 of 5 seasons, so the adjustment stays moneyline-only (moneyline: +159.6u vs +96.1u).
+
+## NHL totals rework (Nov 2, 2026)
+`dev/totals_rework.py` (output `backtests/totals_rework_output.txt`). Shot model totals at DraftKings openers, EV 6%+, 2021-22..2025-26.
+- Current (both sides): 1,597 bets +50.2u but 3 of 5 seasons negative (-6.5, -0.4, +30.7, -2.3, +28.6).
+- Added pieces (each fit leaving the season out) did NOT help: league scoring drift +7.9u, shooting/goalie luck +32.5u,
+  last-10 form +39.6u, schedule +32.8u, all together -37.2u.
+- **The problem is the unders.** Overs: 515 bets, said 56.3%, won 56.9%, +57.6u (+11.2%), positive all five seasons
+  (+10.6, +8.6, +6.5, +7.1, +24.8), every line (5.5 / 6 / 6.5). Unders: 1,082 bets, said 54.9%, won 48.5%, -7.5u. The model's
+  total runs 0.13-0.40 goals low every season (Poisson from regulation xG misses empty-net goals and fat tails), so it
+  overrates unders; when it still likes the over, it's right.
+- Overs timing: open +57.6u, +15 min +55.6u, +60 min +60.7u, halfway +40.8u, close +14.5u (still positive).
+- Pinnacle's first total agrees/same: 418 bets +46.4u (all five seasons positive); against: 96 bets +12.3u (mixed).

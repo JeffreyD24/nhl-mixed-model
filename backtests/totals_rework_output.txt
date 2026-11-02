@@ -1,0 +1,16 @@
+seasons [np.int64(2022), np.int64(2023), np.int64(2024), np.int64(2025), np.int64(2026)] | totals at DraftKings openers, units by season
+  current shot model (uncalibrated)              -6.5   -0.4  +30.7   -2.3  +28.6 |  1597 bets   +50.2u (+3.1%)
+  + league scoring drift                        -44.5   +0.2  +11.1   +6.1  +35.1 |  1824 bets    +7.9u (+0.4%)
+  + shooting/goalie luck                         -9.5   -7.0  +16.1  +10.9  +22.0 |  1518 bets   +32.5u (+2.1%)
+  + last-10 form                                 -6.3   -2.5  +19.9   -8.5  +36.9 |  1561 bets   +39.6u (+2.5%)
+  + schedule (b2b, west travel)                 -14.7   -4.6  +14.6   +8.4  +29.0 |  1532 bets   +32.8u (+2.1%)
+  + all                                         -75.6   -2.0  +17.3   -6.9  +30.0 |  1804 bets   -37.2u (-2.1%)
+  + all + recalibrated level                    -24.6  -10.2  +26.6   +7.0  +15.2 |   909 bets   +14.0u (+1.5%)
+filters on '+ all + recalibrated level':
+  EV 4%+                                        -44.3   -7.3  +37.1  +10.3  +20.5 |  1506 bets   +16.3u (+1.1%)
+  EV 6%+                                        -24.6  -10.2  +26.6   +7.0  +15.2 |   909 bets   +14.0u (+1.5%)
+  EV 9%+                                         -1.1   -9.1  +14.0   +3.5   +8.5 |   377 bets   +15.8u (+4.2%)
+  EV 12%+                                        +5.9   -4.6   +4.6   -0.4   +2.5 |   154 bets    +8.0u (+5.2%)
+  EV 6%+, both teams 10+ games                  -18.0   -5.8  +31.8   +2.2  +16.4 |   758 bets   +26.7u (+3.5%)
+  EV 6%+, skip when Pinnacle's first total disagrees  -18.5  -10.3  +23.2   +6.8  +10.6 |   845 bets   +11.7u (+1.4%)
+  EV 6%+, ONLY when Pinnacle's first total disagrees   -6.1   +0.1   +3.5   +0.1   +4.6 |    64 bets    +2.3u (+3.5%)
