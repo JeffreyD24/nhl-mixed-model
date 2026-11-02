@@ -186,15 +186,15 @@ def build(log_csvs, out_xlsx, rule, run_log, board):
                                        ("Kept moving to close?", "kept_moving_to_close"), ("Result matched move?", "result_matched_move"),
                                        ("News around the move", "news_in_window")], upper=("away", "home"))
     mcols = [("Logged at (ET)", "logged_at_et"), ("Game date", "date"), ("Away", "away"), ("Home", "home"), ("Market", "market"),
-             ("Pick", "pick"), ("Line", "line"), ("Odds", "odds"), ("Stake ($)", "stake"), ("Book", "book"),
+             ("Pick", "pick"), ("Line", "line"), ("Odds", "odds"), ("Stake (units)", "stake"), ("Book", "book"),
              ("Model win prob", "model_prob"), ("Model EV at your price", "model_ev_at_your_price"), ("Result", "result"),
-             ("Profit ($)", "profit"), ("CLV", "clv"), ("Notes", "notes")]
+             ("Profit (units)", "profit"), ("CLV", "clv"), ("Notes", "notes")]
     mb = table_sheet(wb, "My Bets", MB, mcols, index=1, upper=("pick", "away", "home"))
     n = max(mb.max_row, 2); r0 = n + 2
     mb.cell(r0, 1, "Totals (formulas)").font = f_h
     labels = [("Bets graded", f'=COUNTIF(M2:M{n},"W")+COUNTIF(M2:M{n},"L")+COUNTIF(M2:M{n},"P")'),
               ("Wins", f'=COUNTIF(M2:M{n},"W")'), ("Losses", f'=COUNTIF(M2:M{n},"L")'), ("Pushes", f'=COUNTIF(M2:M{n},"P")'),
-              ("Staked on graded bets ($)", f'=SUMIF(M2:M{n},"?*",I2:I{n})'), ("Profit ($)", f"=SUM(N2:N{n})"),
+              ("Units staked on graded bets", f'=SUMIF(M2:M{n},"?*",I2:I{n})'), ("Profit ($)", f"=SUM(N2:N{n})"),
               ("Return on money staked", f'=IFERROR(B{r0 + 6}/B{r0 + 5},"")')]
     for k, (lab, fml) in enumerate(labels):
         mb.cell(r0 + 1 + k, 1, lab).font = f_bold

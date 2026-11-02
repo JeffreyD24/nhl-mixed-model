@@ -238,7 +238,7 @@ def main():
             try:
                 pick = str(r.pick).upper(); mk_ = str(r.market)
                 ln_ = "" if mk_ == "moneyline" or pd.isna(r.line) else (f" {float(r.line):+g}" if mk_ == "puck line" else f" {float(r.line):g}")
-                st = float(r.stake); stake = f"${st:.0f}" if st == int(st) else f"${st:.2f}"
+                st = float(r.stake); stake = f"{st:g}u"
                 when = pd.Timestamp(r.logged_at_et).strftime("%-I:%M %p") if isinstance(r.logged_at_et, str) else "earlier"
                 book = f", {r.book}" if isinstance(r.book, str) and r.book else ""
                 return f"{pick}{' ML' if mk_ == 'moneyline' else ''}{ln_} ({float(r.odds):+g}, {stake}{book}, logged {when})"

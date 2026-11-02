@@ -1,5 +1,5 @@
-version,market,bets,graded,wins,losses,pushes,pending,units,dollars,roi,description
-NHL v1 (goals + shot models),moneyline,13,10,4,6,0,3,-1.4,-1.4,-0.14,goals model then both models side by side; EV 6%+ (higher once the price moved)
-NHL v1 (goals + shot models),puck line,7,5,2,3,0,2,-2.05,-2.05,-0.41,goals model then both models side by side; EV 6%+ (higher once the price moved)
-NHL v3,puck line,3,0,0,0,0,3,0.0,0.0,,"55/45 blend with DK opener, EV 4%+; b2b skip; Pinnacle rule; travel adj; second chance; one bet per game"
-OVERALL,all,23,15,6,9,0,8,-3.45,-3.45,-0.23,
+version,market,bets,graded,wins,losses,pushes,pending,units,roi,description
+NHL v1 (goals + shot models),moneyline,13,10,4,6,0,3,-1.4,-0.1405,goals model then both models side by side; EV 6%+ (higher once the price moved)
+NHL v1 (goals + shot models),puck line,7,5,2,3,0,2,-2.06,-0.4114,goals model then both models side by side; EV 6%+ (higher once the price moved)
+NHL v3,puck line,3,0,0,0,0,3,0.0,,"55/45 blend with DK opener, EV 4%+; b2b skip; Pinnacle rule; travel adj; second chance; one bet per game"
+OVERALL,all,23,15,6,9,0,8,-3.46,-0.2308,
