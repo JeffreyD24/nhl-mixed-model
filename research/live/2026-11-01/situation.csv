@@ -83,3 +83,15 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 20:14:05,401892628,2026-11-01,ott,ana,in,16:25 - 1st,1,16:25,0.0,0.0,2.0,2.0,Shot,Drake Batherson Snap Shot saved by Laurent Brossoit
 2026-11-01 20:15:05,401892627,2026-11-01,edm,nyr,in,11:27 - 3rd,3,11:27,3.0,1.0,25.0,14.0,Missed,Leon Draisaitl Missed Shot Wide Left
 2026-11-01 20:15:05,401892628,2026-11-01,ott,ana,in,15:25 - 1st,1,15:25,0.0,0.0,2.0,2.0,Blocked,Leo Carlsson shot blocked by Thomas Chabot
+2026-11-01 20:16:06,401892627,2026-11-01,edm,nyr,in,11:08 - 3rd,3,11:08,3.0,1.0,25.0,14.0,Face Off,Leon Draisaitl faceoff won against Mika Zibanejad
+2026-11-01 20:16:06,401892628,2026-11-01,ott,ana,in,14:36 - 1st,1,14:36,0.0,0.0,2.0,2.0,Stoppage,Icing
+2026-11-01 20:17:05,401892627,2026-11-01,edm,nyr,in,10:35 - 3rd,3,10:35,3.0,1.0,25.0,14.0,Shot,Leon Draisaitl saved by Dylan Garand
+2026-11-01 20:17:05,401892628,2026-11-01,ott,ana,in,14:00 - 1st,1,14:00,0.0,0.0,2.0,2.0,Face Off,Tim Washe faceoff won against Shane Pinto
+2026-11-01 20:18:05,401892627,2026-11-01,edm,nyr,in,9:36 - 3rd,3,9:36,3.0,1.0,25.0,16.0,Missed,Ryan Nugent-Hopkins Missed Shot Wide Left
+2026-11-01 20:18:05,401892628,2026-11-01,ott,ana,in,13:43 - 1st,1,13:43,1.0,0.0,2.0,2.0,Face Off,Leo Carlsson faceoff won against Dylan Cozens
+2026-11-01 20:19:05,401892627,2026-11-01,edm,nyr,in,8:34 - 3rd,3,8:34,3.0,1.0,25.0,17.0,Missed,Ryan Nugent-Hopkins Missed Shot Wide Left
+2026-11-01 20:19:05,401892628,2026-11-01,ott,ana,in,12:58 - 1st,1,12:58,2.0,0.0,2.0,2.0,Goal,"Claude Giroux Goal (3) Wrist Shot, assists: none"
+2026-11-01 20:20:05,401892627,2026-11-01,edm,nyr,in,7:32 - 3rd,3,7:32,3.0,1.0,25.0,18.0,Shot,Kasperi Kapanen saved by Dylan Garand
+2026-11-01 20:20:05,401892628,2026-11-01,ott,ana,in,12:23 - 1st,1,12:23,2.0,0.0,2.0,2.0,Face Off,Roger McQueen faceoff won against Stephen Halliday
+2026-11-01 20:21:05,401892627,2026-11-01,edm,nyr,in,7:30 - 3rd,3,7:30,3.0,1.0,25.0,18.0,Stoppage,Off-side
+2026-11-01 20:21:05,401892628,2026-11-01,ott,ana,in,11:32 - 1st,1,11:32,2.0,0.0,2.0,2.0,Face Off,Roger McQueen faceoff won against Stephen Halliday
