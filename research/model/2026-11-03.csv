@@ -37,3 +37,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-02 13:37,goals,401892634,2026-11-03,wpg,mtl,0.6006,3.202,2.52,5.89,Stuart Skinner (expected),Jacob Fowler (expected),"WPG: Koepke?, Mercer? | MTL: Dach?, Matheson"
 2026-11-02 13:51,xg,401892643,2026-11-03,ana,van,0.3902,3.096,3.717,6.97,Lukas Dostal (expected),Leevi Merilainen (expected),"ANA: Greer, Hinds | VAN: Bains, Chytil, Mancini"
 2026-11-02 13:51,goals,401892643,2026-11-03,ana,van,0.4209,3.253,3.745,7.15,Lukas Dostal (expected),Leevi Merilainen (expected),"ANA: Greer, Hinds | VAN: Bains, Chytil, Mancini"
+2026-11-02 13:53,xg,401892634,2026-11-03,wpg,mtl,0.5979,3.387,2.675,6.22,Stuart Skinner (expected),Jacob Fowler (expected),"WPG: Koepke, Mercer? | MTL: Dach?, Matheson"
+2026-11-02 13:53,goals,401892634,2026-11-03,wpg,mtl,0.6008,3.202,2.519,5.89,Stuart Skinner (expected),Jacob Fowler (expected),"WPG: Koepke, Mercer? | MTL: Dach?, Matheson"
