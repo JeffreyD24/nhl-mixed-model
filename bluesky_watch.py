@@ -44,7 +44,7 @@ TELL_RX = re.compile(r"\b(first (?:goalie )?off the ice|led the \w+ (?:off|onto)
 OUT_RX = re.compile(r"\b(ruled out|will not play|won'?t play|not playing|(?:is|are) out\b(?! of)|will be out\b(?! of)|out tonight|"
                     r"scratch(?:ed)?|healthy scratch|won'?t dress|will not dress|will miss|sidelined|placed on (?:ir|ltir|injured reserve)|"
                     r"out (?:for|vs\.?|against) (?:tonight|today|the game))\b", re.I)
-IN_RX = re.compile(r"\b(will play|is playing|will return|returns tonight|will dress|draws? back in|back in the lineup|in the lineup|"
+IN_RX = re.compile(r"\b(will play|is playing|will return|returns tonight|will dress|draws? back in|back in the lineup|returns? to the lineup|in the lineup|"
                    r"(?:is|will be) available|good to go|cleared to play|will make (?:his|her) (?:season )?debut|activated)\b", re.I)
 HEDGE_RX = re.compile(r"\b(questionable|doubtful|game[- ]time|likely|unlikely|could|might|may|hope|hoping|expected|expects|"
                       r"if he|whether|unclear|uncertain|undecided|probabl\w*|projected|anticipat\w*|should|presumably|"
@@ -145,7 +145,7 @@ def read_post(text, team, I, when, started=()):
     for sent in SENT.split(text):
         w0 = who(sent, team, I)
         if not w0: continue
-        names += [x[3] for x in w0 if x[3] not in names]
+        names += [n for n in dict.fromkeys(x[3] for x in w0) if n not in names]
         if INGAME_RX.search(sent): continue
         w = []
         for kind, pid in dict.fromkeys((x[1], x[2]) for x in w0):
