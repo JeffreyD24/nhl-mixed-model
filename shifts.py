@@ -31,6 +31,39 @@ def secs(s):
     except Exception: return None
 
 
+def toi_report(gid, home, away):
+    """fallback when the shift-chart feed is empty (it is for some games): the NHL's official HTML time-on-ice reports,
+    TH (home) and TV (visitor). They list each player's shifts by name and sweater number (no player id)."""
+    import re, html as H
+    season = f"{str(gid)[:4]}{int(str(gid)[:4]) + 1}"; num = str(gid)[-6:]
+    rows = []
+    for code, team in (("TH", home), ("TV", away)):
+        try:
+            req = urllib.request.Request(f"https://www.nhl.com/scores/htmlreports/{season}/{code}{num}.HTM", headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=40) as r: b = r.read().decode("utf-8", "ignore")
+        except Exception as e:
+            print(f"  TOI report {code}{num} unavailable: {type(e).__name__}"); continue
+        cells = [H.unescape(re.sub(r"<[^>]+>", "", c)).replace("\xa0", " ").strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", b, re.S)]
+        clock = re.compile(r"^(\d+):(\d\d) / \d+:\d\d$"); name = re.compile(r"^(\d+) ([^,]+), (.+)$")
+        player = number = None; i = 0
+        while i < len(cells):
+            c = cells[i]; m = name.match(c)
+            if m and not clock.match(c):
+                number, player = int(m.group(1)), f"{m.group(3).title()} {m.group(2).title()}"; i += 1; continue
+            if player and c.isdigit() and i + 4 < len(cells) and clock.match(cells[i + 2]) and clock.match(cells[i + 3]):
+                per = cells[i + 1]; per = 4 if per.upper() == "OT" else int(per) if per.isdigit() else None
+                a, z = clock.match(cells[i + 2]), clock.match(cells[i + 3])
+                st, en = int(a.group(1)) * 60 + int(a.group(2)), int(z.group(1)) * 60 + int(z.group(2))
+                rows.append(dict(team=team, player_id=None, player=player, sweater=number, period=per, shift_number=int(c),
+                                 start=cells[i + 2].split(" / ")[0], end=cells[i + 3].split(" / ")[0], start_sec=st, end_sec=en,
+                                 duration_sec=secs(cells[i + 4]), type_code=517, event=cells[i + 5] if i + 5 < len(cells) else None,
+                                 event_detail=None, source="toi_report"))
+                i += 5; continue
+            i += 1
+        time.sleep(1)
+    return rows
+
+
 def day(d):
     path = os.path.join(OUT, f"{d.date()}.csv")
     old = pd.read_csv(path) if os.path.exists(path) else pd.DataFrame(columns=["nhl_game_id"])
@@ -40,20 +73,25 @@ def day(d):
     rows = []
     for g in sc.get("games", []):
         if g.get("gameType") not in (2, 3) or g.get("gameState") not in ("OFF", "FINAL") or int(g["id"]) in have: continue
-        js = None
-        for k in range(3):      # the API sometimes answers with an empty list when asked too quickly: wait and retry
-            js = get(f"https://api.nhle.com/stats/rest/en/shiftcharts?cayenneExp=gameId={g['id']}")
-            if js and js.get("data"): break
-            time.sleep(8 * (k + 1))
-        if not js or not js.get("data"): print(f"  {d.date()} game {g['id']}: no shift chart yet"); continue
+        js = get(f"https://api.nhle.com/stats/rest/en/shiftcharts?cayenneExp=gameId={g['id']}")
         home, away = g["homeTeam"]["abbrev"].lower(), g["awayTeam"]["abbrev"].lower()
+        if not js or not js.get("data"):
+            # the feed is empty for some games for good (checked Nov 1, 2026): read the official time-on-ice reports instead
+            fb = toi_report(g["id"], home, away)
+            if fb:
+                for x in fb: x.update(date=str(d.date()), nhl_game_id=int(g["id"]), away=away, home=home)
+                rows += fb; print(f"  {d.date()} game {g['id']}: {len(fb)} shifts from the time-on-ice reports")
+            else:
+                print(f"  {d.date()} game {g['id']}: no shift chart yet")
+            continue
         for x in js["data"]:
             rows.append(dict(date=str(d.date()), nhl_game_id=int(g["id"]), away=away, home=home,
                              team=str(x.get("teamAbbrev") or "").lower(), player_id=x.get("playerId"),
                              player=f"{x.get('firstName') or ''} {x.get('lastName') or ''}".strip(), period=x.get("period"),
                              shift_number=x.get("shiftNumber"), start=x.get("startTime"), end=x.get("endTime"),
                              start_sec=secs(x.get("startTime")), end_sec=secs(x.get("endTime")), duration_sec=secs(x.get("duration")),
-                             type_code=x.get("typeCode"), event=x.get("eventDescription"), event_detail=x.get("detailCode")))
+                             type_code=x.get("typeCode"), event=x.get("eventDescription"), event_detail=x.get("detailCode"),
+                             source="shift_feed"))
         time.sleep(1.5)
     if rows:
         D = pd.concat([old, pd.DataFrame(rows)], ignore_index=True) if len(old) else pd.DataFrame(rows)

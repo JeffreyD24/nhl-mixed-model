@@ -1,6 +1,6 @@
-import urllib.request, re, html
-b = urllib.request.urlopen(urllib.request.Request("https://www.nhl.com/scores/htmlreports/20262027/TH020180.HTM", headers={"User-Agent": "Mozilla/5.0"}), timeout=30).read().decode("utf-8", "ignore")
-i = b.find("playerHeading")
-print(b[i - 300:i + 3500])
-cells = [html.unescape(re.sub(r"<[^>]+>", "", c)).strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", b, re.S)]
-print("CELLS", len(cells)); print(cells[40:160])
+import sys, pandas as pd
+sys.argv = ["x", "."]; sys.path.insert(0, ".")
+import shifts
+r = pd.DataFrame(shifts.toi_report(2026020180, "phi", "fla"))
+print("ROWS", len(r)); print(r.head(4).to_string()); print(r.groupby("team").player.nunique().to_dict())
+print((r.groupby(["team", "player"]).duration_sec.sum() / 60).describe().round(1).to_dict())
