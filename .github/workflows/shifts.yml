@@ -1,4 +1,4 @@
-name: Shift charts (backfill)
+name: Shift charts and NHL play-by-play (backfill)
 on:
   workflow_dispatch:
     inputs:
@@ -17,10 +17,11 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install -q pandas
       - run: python shifts.py . --from "${{ inputs.from }}"
+      - run: python nhl_extra.py . --from "${{ inputs.from }}" --edge
       - name: Save
         run: |
           git config user.name "nhl-tracker-bot"; git config user.email "actions@users.noreply.github.com"
-          git add research/shifts
+          git add research/shifts research/nhl_pbp research/edge
           git diff --cached --quiet && exit 0
           git commit -q -m "Shift charts backfill"
           for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push -q && exit 0; sleep 10; done

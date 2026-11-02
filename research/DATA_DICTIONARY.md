@@ -135,3 +135,16 @@ type_code, event, event_detail`. From the NHL's shift charts, downloaded by the 
 (`shifts.py`). `type_code` 517 = a shift; 505 rows are goals the NHL lists with the shifts (`event`, `event_detail`).
 Use it for who was on the ice when, ice time by period and score, line combinations, and how coaches deploy players
 in blowouts, back-to-backs and late in close games (the NBA's `research/minutes/` is the same idea).
+
+### `research/nhl_pbp/YYYY-MM-DD.csv`: the NHL's own play-by-play (since Nov 1, 2026; season backfilled)
+One row per event: `nhl_game_id, event_id, sort_order, period, period_type, time_in_period, situation_code` (4 digits: away
+goalie in net, away skaters, home skaters, home goalie in net, e.g. 1551 = 5-on-5), `home_defending_side, event, team, x, y, zone`
+(O/D/N for the team that owns the event), `shot_type, reason, shooter_id, goalie_id, player_id, other_player_id, assist1_id,
+assist2_id, penalty_type, penalty_min, home_score, away_score, home_sog, away_sog`. From `nhl_extra.py` in the morning run.
+
+### `research/edge/YYYY-MM-DD.csv` and `research/edge/raw/`: NHL EDGE tracking stats, a daily snapshot (since Nov 1, 2026)
+One row per team, season to date, every number flattened into a column named after where it sits in the NHL's reply:
+team skating and shot-speed summaries, zone time by strength (`team-zone-time-details.zoneTimeDetails.es.offensiveZonePctg`...),
+shots / goals / shooting % by rink area (`team-shot-location-detail.shotLocationDetails.High Slot.sog`...), distance skated in each
+of the last 10 games. `raw/` keeps the full replies (including fastest-skater and hardest-shot leaderboards and the league landing
+pages). The NHL only serves EDGE as of today, so this history exists only from the day recording started.

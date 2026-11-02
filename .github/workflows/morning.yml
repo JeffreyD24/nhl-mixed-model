@@ -33,6 +33,8 @@ jobs:
         run: python polymarket.py . --grade || echo "Polymarket grading failed; it will try again tomorrow."
       - name: Shift charts for the last two days of games
         run: python shifts.py . || echo "Shift charts failed; they will be retried tomorrow."
+      - name: NHL play-by-play and EDGE tracking stats
+        run: python nhl_extra.py . || echo "NHL extra data failed; it will be retried tomorrow."
       - name: Save results
         run: |
           git config user.name "nhl-tracker-bot"
