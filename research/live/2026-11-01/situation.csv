@@ -149,3 +149,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 21:22:05,401892628,2026-11-01,ott,ana,in,10:09 - 2nd,2,10:09,3.0,2.0,11.0,9.0,Blocked,Nikolas Matinpalo shot blocked by Tim Washe
 2026-11-01 21:23:05,401892628,2026-11-01,ott,ana,in,9:48 - 2nd,2,9:48,3.0,2.0,13.0,9.0,Stoppage,Goalie Stopped
 2026-11-01 21:25:06,401892628,2026-11-01,ott,ana,in,9:13 - 2nd,2,9:13,3.0,2.0,13.0,9.0,Blocked,Cutter Gauthier shot blocked by Ridly Greig
+2026-11-01 21:26:05,401892628,2026-11-01,ott,ana,in,8:35 - 2nd,2,8:35,3.0,2.0,13.0,9.0,Penalty Shot Infraction,Noah Warren Minor
+2026-11-01 21:27:05,401892628,2026-11-01,ott,ana,in,7:54 - 2nd,2,7:54,3.0,2.0,14.0,9.0,Shot,Tim Washe Snap Shot saved by Jonas Johansson
+2026-11-01 21:28:06,401892628,2026-11-01,ott,ana,in,6:53 - 2nd,2,6:53,3.0,2.0,14.0,9.0,Shot,Tim Washe Snap Shot saved by Jonas Johansson
+2026-11-01 21:29:05,401892628,2026-11-01,ott,ana,in,6:52 - 2nd,2,6:52,3.0,2.0,15.0,9.0,Face Off,Claude Giroux faceoff won against Tim Washe
+2026-11-01 21:30:05,401892628,2026-11-01,ott,ana,in,6:31 - 2nd,2,6:31,3.0,2.0,15.0,10.0,Face Off,Ridly Greig faceoff won against Tim Washe
+2026-11-01 21:31:06,401892628,2026-11-01,ott,ana,in,6:31 - 2nd,2,6:31,3.0,2.0,16.0,11.0,Shot,Fabian Zetterlund Snap Shot saved by Laurent Brossoit
