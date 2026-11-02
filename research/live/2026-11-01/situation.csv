@@ -135,3 +135,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 21:06:05,401892628,2026-11-01,ott,ana,in,18:36 - 2nd,2,18:36,3.0,0.0,8.0,5.0,Missed,Missed Shot
 2026-11-01 21:07:05,401892628,2026-11-01,ott,ana,in,18:25 - 2nd,2,18:25,3.0,1.0,8.0,5.0,Goal,"Cutter Gauthier Goal (5) Wrist Shot, assists: none"
 2026-11-01 21:08:05,401892628,2026-11-01,ott,ana,in,17:43 - 2nd,2,17:43,3.0,1.0,8.0,6.0,Shot,Tim Stützle Snap Shot saved by Laurent Brossoit
+2026-11-01 21:09:05,401892628,2026-11-01,ott,ana,in,16:50 - 2nd,2,16:50,3.0,1.0,8.0,7.0,Shot,Shane Pinto saved by Laurent Brossoit
+2026-11-01 21:10:05,401892628,2026-11-01,ott,ana,in,16:27 - 2nd,2,16:27,3.0,1.0,9.0,8.0,Missed,Leo Carlsson Missed Shot Hit Left Post
+2026-11-01 21:11:05,401892628,2026-11-01,ott,ana,in,16:20 - 2nd,2,16:20,3.0,2.0,9.0,8.0,Face Off,Mikael Granlund faceoff won against Dylan Cozens
+2026-11-01 21:12:05,401892628,2026-11-01,ott,ana,in,15:22 - 2nd,2,15:22,3.0,2.0,10.0,8.0,Shot,Cutter Gauthier Wrist Shot saved by Jonas Johansson
+2026-11-01 21:13:06,401892628,2026-11-01,ott,ana,in,14:51 - 2nd,2,14:51,3.0,2.0,10.0,8.0,Stoppage,Goalie Stopped
+2026-11-01 21:14:05,401892628,2026-11-01,ott,ana,in,13:56 - 2nd,2,13:56,3.0,2.0,10.0,8.0,Face Off,Ridly Greig faceoff won against Tim Washe
