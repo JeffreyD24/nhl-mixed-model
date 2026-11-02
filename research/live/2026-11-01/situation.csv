@@ -42,3 +42,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 19:20:05,401892627,2026-11-01,edm,nyr,in,9:41 - 2nd,2,9:41,3.0,0.0,13.0,5.0,Face Off,Jason Dickinson faceoff won against Alexis Lafrenière
 2026-11-01 19:21:05,401892627,2026-11-01,edm,nyr,in,9:20 - 2nd,2,9:20,3.0,0.0,13.0,5.0,Stoppage,Puck in Netting
 2026-11-01 19:23:06,401892627,2026-11-01,edm,nyr,in,9:20 - 2nd,2,9:20,3.0,0.0,13.0,5.0,Face Off,Luke Glendening faceoff won against Owen Michaels
+2026-11-01 19:24:05,401892627,2026-11-01,edm,nyr,in,8:10 - 2nd,2,8:10,3.0,0.0,14.0,5.0,Shot,Braden Schneider saved by Matt Tomkins
+2026-11-01 19:25:05,401892627,2026-11-01,edm,nyr,in,7:43 - 2nd,2,7:43,3.0,0.0,14.0,6.0,Missed,Mattias Ekholm Missed Shot Wide Left
+2026-11-01 19:26:05,401892627,2026-11-01,edm,nyr,in,6:58 - 2nd,2,6:58,3.0,0.0,14.0,6.0,Stoppage,Net Dislodged Defensive Skater
+2026-11-01 19:27:05,401892627,2026-11-01,edm,nyr,in,6:48 - 2nd,2,6:48,3.0,0.0,14.0,6.0,Stoppage,Net Dislodged Defensive Skater
+2026-11-01 19:28:05,401892627,2026-11-01,edm,nyr,in,6:38 - 2nd,2,6:38,3.0,0.0,15.0,6.0,Stoppage,Goalie Stopped
+2026-11-01 19:29:05,401892627,2026-11-01,edm,nyr,in,6:38 - 2nd,2,6:38,3.0,0.0,15.0,7.0,Shot, Wrist Shot saved by Dylan Garand
