@@ -75,3 +75,11 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 20:09:05,401892628,2026-11-01,ott,ana,in,19:36 - 1st,1,19:36,0.0,0.0,0.0,0.0,Stoppage,Goalie Stopped
 2026-11-01 20:10:05,401892627,2026-11-01,edm,nyr,in,12:36 - 3rd,3,12:36,3.0,1.0,23.0,14.0,Shot,Alexis Lafrenière saved by Matt Tomkins
 2026-11-01 20:10:05,401892628,2026-11-01,ott,ana,in,18:57 - 1st,1,18:57,0.0,0.0,1.0,0.0,Shot,Jackson LaCombe Slap Shot saved by Jonas Johansson
+2026-11-01 20:11:05,401892627,2026-11-01,edm,nyr,in,12:19 - 3rd,3,12:19,3.0,1.0,24.0,14.0,Stoppage,Goalie Stopped
+2026-11-01 20:11:05,401892628,2026-11-01,ott,ana,in,18:23 - 1st,1,18:23,0.0,0.0,2.0,0.0,Face Off,Mikael Granlund faceoff won against Claude Giroux
+2026-11-01 20:12:05,401892628,2026-11-01,ott,ana,in,17:56 - 1st,1,17:56,0.0,0.0,2.0,0.0,Giveaway,Giveaway by Jackson LaCombe
+2026-11-01 20:13:05,401892628,2026-11-01,ott,ana,in,17:06 - 1st,1,17:06,0.0,0.0,2.0,0.0,Holding,Drew Helleson Holding against Michael Amadio
+2026-11-01 20:14:05,401892627,2026-11-01,edm,nyr,in,11:46 - 3rd,3,11:46,3.0,1.0,25.0,14.0,Hooking,Tye Kartye Hooking
+2026-11-01 20:14:05,401892628,2026-11-01,ott,ana,in,16:25 - 1st,1,16:25,0.0,0.0,2.0,2.0,Shot,Drake Batherson Snap Shot saved by Laurent Brossoit
+2026-11-01 20:15:05,401892627,2026-11-01,edm,nyr,in,11:27 - 3rd,3,11:27,3.0,1.0,25.0,14.0,Missed,Leon Draisaitl Missed Shot Wide Left
+2026-11-01 20:15:05,401892628,2026-11-01,ott,ana,in,15:25 - 1st,1,15:25,0.0,0.0,2.0,2.0,Blocked,Leo Carlsson shot blocked by Thomas Chabot
