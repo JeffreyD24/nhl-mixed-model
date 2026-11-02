@@ -30,7 +30,8 @@ OPEN_ONLY_LONGSHOTS = {"goals": 150}  # model -> bets priced at this or longer (
                                      #   The goals model's underdog win chances run ~5 points high: its +150-and-longer bets made
                                      #   +13.5u on 641 bets at the open but lost once the price moved (backtests/IDEA_TESTS.md).
                                      #   The shot model's long shots are calibrated, so they get normal alerts. Scorecard unchanged.
-ALERT_MARKETS = ("moneyline", "puck line")   # add "total" to alert on totals too (they lost money in the backtests)
+ALERT_MARKETS = ("moneyline", "puck line", "total")   # totals: OVERS ONLY (approved Nov 2, 2026; backtests/IDEA_TESTS.md "NHL totals rework":
+TOTAL_SIDES = ("over",)                               #   overs at the opener EV 6%+ +57.6u on 515, all five seasons positive; unders lose)
 MAX_MOVE = 5.0                      # caution when the home win chance implied by the moneyline moved this many points AGAINST the bet since open
 JUMP_WINDOW_MIN = 60                # a "jump" is a move within this many minutes
 JUMP_LOG_PROB = 3.0                 # log moneyline moves of at least this many win-probability points (and any change in the total)
@@ -398,6 +399,7 @@ def main():
                 for name in order:
                     bt = best.get((name, mk))
                     if bt is None: continue
+                    if mk == "total" and bt[0] not in TOTAL_SIDES: continue        # unders are logged by the model, never alerted
                     if name in OPEN_ONLY_LONGSHOTS and bt[2] >= OPEN_ONLY_LONGSHOTS[name] and not near_open(bt[2], bt[5]): continue
                     thr = threshold_for(bt[2], bt[5])
                     if bt[4] < thr and not second_chance(name, bt, mk):
