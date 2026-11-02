@@ -460,7 +460,7 @@ def main():
                             if len(mb): conflict = f"you already bet {g[opp].upper()} on this game ({mb.market.iloc[-1]})"
                     if mk in TEAM_MK and not conflict:
                         if SKIP_B2B and g[side] in B2B:
-                            conflict = (f"{g[side].upper()} played last night (second night of a back-to-back); bets on back-to-back "
+                            conflict = (f"{g[side].upper()} also plays the night before this game (second night of a back-to-back); bets on back-to-back "
                                         f"teams lost every season 2021-26 (shot model 144 bets, won 36%, -40u)")
                         elif USE_PINNACLE_RULE and mk == "moneyline" and (g["home"], g["away"]) in PIN and not pd.isna(ph_open):
                             pin = PIN[(g["home"], g["away"])]

@@ -20,5 +20,5 @@ placed_et,issue,date,away,home,market,pick,line,odds,stake,version,status,profit
 2026-11-01 12:31:00,19.0,2026-11-01,uta,phi,puck line,phi,1.5,-180.0,1.0,NHL v1 (goals + shot models),W,0.5556,0.5556
 2026-11-01 12:31:00,20.0,2026-11-02,det,fla,moneyline,det,0.0,145.0,1.0,NHL v1 (goals + shot models),pending,,
 2026-11-02 11:34:00,23.0,2026-11-03,car,nsh,puck line,car,-1.5,140.0,1.0,NHL v3,pending,,
-2026-11-02 11:34:00,22.0,2026-11-03,col,cbj,puck line,col,-1.5,190.0,1.0,NHL v3,pending,,
+2026-11-02 11:34:00,22.0,2026-11-03,col,cbj,puck line,col,-1.5,190.0,1.0,off-model (no alert),pending,,
 2026-11-02 11:35:00,21.0,2026-11-03,min,phi,puck line,min,-1.5,160.0,1.0,NHL v3,pending,,
