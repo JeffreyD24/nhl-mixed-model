@@ -48,3 +48,8 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 19:27:05,401892627,2026-11-01,edm,nyr,in,6:48 - 2nd,2,6:48,3.0,0.0,14.0,6.0,Stoppage,Net Dislodged Defensive Skater
 2026-11-01 19:28:05,401892627,2026-11-01,edm,nyr,in,6:38 - 2nd,2,6:38,3.0,0.0,15.0,6.0,Stoppage,Goalie Stopped
 2026-11-01 19:29:05,401892627,2026-11-01,edm,nyr,in,6:38 - 2nd,2,6:38,3.0,0.0,15.0,7.0,Shot, Wrist Shot saved by Dylan Garand
+2026-11-01 19:30:06,401892627,2026-11-01,edm,nyr,in,6:29 - 2nd,2,6:29,3.0,0.0,15.0,7.0,Stoppage,Puck in Benches
+2026-11-01 19:31:05,401892627,2026-11-01,edm,nyr,in,6:08 - 2nd,2,6:08,3.0,0.0,17.0,7.0,Stoppage,Goalie Stopped
+2026-11-01 19:32:05,401892627,2026-11-01,edm,nyr,in,6:01 - 2nd,2,6:01,3.0,1.0,17.0,6.0,Face Off,Connor McDavid faceoff won against J.T. Miller
+2026-11-01 19:33:06,401892627,2026-11-01,edm,nyr,in,6:01 - 2nd,2,6:01,3.0,1.0,17.0,6.0,Missed,Kasperi Kapanen Missed Shot Wide Left
+2026-11-01 19:34:06,401892627,2026-11-01,edm,nyr,in,6:01 - 2nd,2,6:01,3.0,1.0,17.0,7.0,Stoppage,Off-side
