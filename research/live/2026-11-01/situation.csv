@@ -37,3 +37,8 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 19:15:05,401892627,2026-11-01,edm,nyr,in,12:27 - 2nd,2,12:27,2.0,0.0,13.0,5.0,Stoppage,Goalie Stopped
 2026-11-01 19:16:05,401892627,2026-11-01,edm,nyr,in,11:41 - 2nd,2,11:41,2.0,0.0,13.0,5.0,Blocked,Gabe Perreault shot blocked by Jason Dickinson
 2026-11-01 19:17:05,401892627,2026-11-01,edm,nyr,in,11:20 - 2nd,2,11:20,2.0,0.0,13.0,5.0,Penalty Shot Infraction,Noah Laba Minor against Connor Murphy
+2026-11-01 19:18:05,401892627,2026-11-01,edm,nyr,in,10:31 - 2nd,2,10:31,2.0,0.0,13.0,5.0,Missed,Connor McDavid Missed Shot High and Wide Right
+2026-11-01 19:19:05,401892627,2026-11-01,edm,nyr,in,10:11 - 2nd,2,10:11,2.0,0.0,13.0,6.0,Shot,Evan Bouchard Slap Shot saved by Dylan Garand
+2026-11-01 19:20:05,401892627,2026-11-01,edm,nyr,in,9:41 - 2nd,2,9:41,3.0,0.0,13.0,5.0,Face Off,Jason Dickinson faceoff won against Alexis Lafrenière
+2026-11-01 19:21:05,401892627,2026-11-01,edm,nyr,in,9:20 - 2nd,2,9:20,3.0,0.0,13.0,5.0,Stoppage,Puck in Netting
+2026-11-01 19:23:06,401892627,2026-11-01,edm,nyr,in,9:20 - 2nd,2,9:20,3.0,0.0,13.0,5.0,Face Off,Luke Glendening faceoff won against Owen Michaels
