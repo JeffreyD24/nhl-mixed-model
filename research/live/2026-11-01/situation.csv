@@ -144,3 +144,8 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 21:15:05,401892628,2026-11-01,ott,ana,in,12:45 - 2nd,2,12:45,3.0,2.0,10.0,8.0,Face Off,Ridly Greig faceoff won against Tim Washe
 2026-11-01 21:16:05,401892628,2026-11-01,ott,ana,in,12:08 - 2nd,2,12:08,3.0,2.0,11.0,9.0,Stoppage,Goalie Stopped
 2026-11-01 21:19:05,401892628,2026-11-01,ott,ana,in,11:31 - 2nd,2,11:31,3.0,2.0,11.0,9.0,Stoppage,
+2026-11-01 21:20:05,401892628,2026-11-01,ott,ana,in,11:31 - 2nd,2,11:31,3.0,2.0,11.0,9.0,Face Off,Tim Stützle faceoff won against Sam Colangelo
+2026-11-01 21:21:05,401892628,2026-11-01,ott,ana,in,10:36 - 2nd,2,10:36,3.0,2.0,11.0,9.0,Stoppage,Icing
+2026-11-01 21:22:05,401892628,2026-11-01,ott,ana,in,10:09 - 2nd,2,10:09,3.0,2.0,11.0,9.0,Blocked,Nikolas Matinpalo shot blocked by Tim Washe
+2026-11-01 21:23:05,401892628,2026-11-01,ott,ana,in,9:48 - 2nd,2,9:48,3.0,2.0,13.0,9.0,Stoppage,Goalie Stopped
+2026-11-01 21:25:06,401892628,2026-11-01,ott,ana,in,9:13 - 2nd,2,9:13,3.0,2.0,13.0,9.0,Blocked,Cutter Gauthier shot blocked by Ridly Greig
