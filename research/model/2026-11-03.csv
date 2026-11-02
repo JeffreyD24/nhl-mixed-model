@@ -41,3 +41,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-02 13:53,goals,401892634,2026-11-03,wpg,mtl,0.6008,3.202,2.519,5.89,Stuart Skinner (expected),Jacob Fowler (expected),"WPG: Koepke, Mercer? | MTL: Dach?, Matheson"
 2026-11-02 15:09,xg,401892641,2026-11-03,col,cbj,0.4155,2.851,3.45,6.46,Scott Wedgewood (expected),Jet Greaves (expected),"COL: Manson, O'Connor | CBJ: Belluz, Voronkov"
 2026-11-02 15:09,goals,401892641,2026-11-03,col,cbj,0.3902,2.84,3.519,6.52,Scott Wedgewood (expected),Jet Greaves (expected),"COL: Manson, O'Connor | CBJ: Belluz, Voronkov"
+2026-11-02 17:59,xg,401892641,2026-11-03,col,cbj,0.4155,2.851,3.45,6.46,Scott Wedgewood (confirmed),Jet Greaves (expected),"COL: Manson, O'Connor | CBJ: Belluz, Voronkov"
+2026-11-02 17:59,goals,401892641,2026-11-03,col,cbj,0.3902,2.84,3.519,6.52,Scott Wedgewood (confirmed),Jet Greaves (expected),"COL: Manson, O'Connor | CBJ: Belluz, Voronkov"
