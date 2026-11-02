@@ -102,3 +102,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 20:25:05,401892628,2026-11-01,ott,ana,in,10:58 - 1st,1,10:58,2.0,0.0,2.0,2.0,Penalty Shot Infraction,Alex Killorn Minor
 2026-11-01 20:26:05,401892627,2026-11-01,edm,nyr,in,4:00 - 3rd,3,4:00,3.0,1.0,25.0,19.0,Missed,Oliver Bjorkstrand Missed Shot Wide Left
 2026-11-01 20:26:05,401892628,2026-11-01,ott,ana,in,10:19 - 1st,1,10:19,2.0,0.0,2.0,2.0,Missed,Leo Carlsson Wrist Shot Wide Right
+2026-11-01 20:27:05,401892627,2026-11-01,edm,nyr,in,2:58 - 3rd,3,2:58,3.0,1.0,25.0,20.0,Shot,Connor McDavid saved by Dylan Garand
+2026-11-01 20:27:05,401892628,2026-11-01,ott,ana,in,9:19 - 1st,1,9:19,2.0,0.0,2.0,2.0,Missed,Leo Carlsson Wrist Shot Wide Right
+2026-11-01 20:28:05,401892627,2026-11-01,edm,nyr,in,2:45 - 3rd,3,2:45,3.0,1.0,25.0,21.0,Face Off,J.T. Miller faceoff won against Jason Dickinson
+2026-11-01 20:28:05,401892628,2026-11-01,ott,ana,in,8:36 - 1st,1,8:36,2.0,0.0,2.0,3.0,Shot,Nikolas Matinpalo Snap Shot saved by Laurent Brossoit
+2026-11-01 20:29:06,401892627,2026-11-01,edm,nyr,in,2:45 - 3rd,3,2:45,3.0,1.0,25.0,21.0,Stoppage,Puck in Netting
+2026-11-01 20:29:06,401892628,2026-11-01,ott,ana,in,7:35 - 1st,1,7:35,2.0,0.0,2.0,3.0,Shot,Mikael Granlund Wrist Shot saved by Jonas Johansson
+2026-11-01 20:30:05,401892628,2026-11-01,ott,ana,in,6:32 - 1st,1,6:32,2.0,0.0,3.0,4.0,Shot,Nikolas Matinpalo Slap Shot saved by Laurent Brossoit
+2026-11-01 20:31:05,401892627,2026-11-01,edm,nyr,in,2:29 - 3rd,3,2:29,3.0,1.0,25.0,21.0,Face Off,J.T. Miller faceoff won against Leon Draisaitl
+2026-11-01 20:31:05,401892628,2026-11-01,ott,ana,in,5:56 - 1st,1,5:56,2.0,0.0,6.0,4.0,Stoppage,Goalie Stopped
+2026-11-01 20:32:05,401892627,2026-11-01,edm,nyr,in,1:38 - 3rd,3,1:38,3.0,1.0,27.0,21.0,Blocked,Ryan Nugent-Hopkins shot blocked by Adam Fox
