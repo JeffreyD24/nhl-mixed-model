@@ -112,13 +112,37 @@ def edge_snapshot():
     print(f"EDGE: {len(rows)} teams, {max((len(r) for r in rows), default=0)} numbers per team")
 
 
+def edge_seasons():
+    """season totals of the EDGE team numbers for past seasons (2021-22 is the first): research/edge/seasons/SEASON.csv"""
+    teams = get("https://api.nhle.com/stats/rest/en/team")
+    if not teams: return
+    d = os.path.join(R, "edge", "seasons"); os.makedirs(d, exist_ok=True)
+    for y in range(2021, int(TODAY.year) + (0 if TODAY.month < 9 else 1) - 1):
+        season = f"{y}{y + 1}"; path = os.path.join(d, f"{season}.csv")
+        if os.path.exists(path): continue
+        sc = get(f"https://api.nhle.com/stats/rest/en/team/summary?cayenneExp=seasonId={season}%20and%20gameTypeId=2")
+        ids = {r["teamId"] for r in (sc or {}).get("data", [])}
+        tri = {t["id"]: t["triCode"] for t in teams.get("data", [])}
+        rows = []
+        for tid in sorted(ids):
+            row = dict(season=season, team=str(tri.get(tid, tid)).lower(), nhl_team_id=tid)
+            for ep in ("team-detail", "team-zone-time-details", "team-shot-location-detail", "team-skating-distance-detail"):
+                js = get(f"{API}/edge/{ep}/{tid}/{season}/2")
+                if js is not None: row.update({f"{ep}.{k}": v for k, v in flat(js).items()})
+                time.sleep(0.3)
+            rows.append(row)
+        pd.DataFrame(rows).to_csv(path, index=False); print(f"EDGE season {season}: {len(rows)} teams")
+
+
 def main():
     if "--from" in sys.argv:
-        days = pd.date_range(pd.Timestamp(sys.argv[sys.argv.index("--from") + 1]), TODAY - pd.Timedelta(days=1))
+        end = pd.Timestamp(sys.argv[sys.argv.index("--to") + 1]) if "--to" in sys.argv else TODAY - pd.Timedelta(days=1)
+        days = pd.date_range(pd.Timestamp(sys.argv[sys.argv.index("--from") + 1]), end)
     else:
         days = [TODAY - pd.Timedelta(days=2), TODAY - pd.Timedelta(days=1)]
     print("play-by-play games saved:", sum(pbp_day(d) for d in days))
     if "--from" not in sys.argv or "--edge" in sys.argv: edge_snapshot()
+    if "--edge-seasons" in sys.argv: edge_seasons()
 
 
 if __name__ == "__main__":

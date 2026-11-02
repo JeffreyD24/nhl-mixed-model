@@ -5,19 +5,22 @@ on:
       from:
         description: "First date to download (YYYY-MM-DD)"
         default: "2026-10-07"
+      to:
+        description: "Last date (YYYY-MM-DD); blank = yesterday"
+        default: ""
 permissions:
   contents: write
 jobs:
   shifts:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 340
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install -q pandas
-      - run: python shifts.py . --from "${{ inputs.from }}"
-      - run: python nhl_extra.py . --from "${{ inputs.from }}" --edge
+      - run: python shifts.py . --from "${{ inputs.from }}" ${{ inputs.to && format('--to {0}', inputs.to) || '' }}
+      - run: python nhl_extra.py . --from "${{ inputs.from }}" ${{ inputs.to && format('--to {0}', inputs.to) || '' }} --edge-seasons
       - name: Save
         run: |
           git config user.name "nhl-tracker-bot"; git config user.email "actions@users.noreply.github.com"

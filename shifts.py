@@ -104,7 +104,8 @@ def day(d):
 def main():
     if "--from" in sys.argv:
         start = pd.Timestamp(sys.argv[sys.argv.index("--from") + 1])
-        days = pd.date_range(start, TODAY - pd.Timedelta(days=1))
+        end = pd.Timestamp(sys.argv[sys.argv.index("--to") + 1]) if "--to" in sys.argv else TODAY - pd.Timedelta(days=1)
+        days = pd.date_range(start, end)
     else:
         days = [TODAY - pd.Timedelta(days=2), TODAY - pd.Timedelta(days=1)]
     total = sum(day(d) for d in days)
