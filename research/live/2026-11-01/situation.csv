@@ -203,3 +203,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 22:35:05,401892628,2026-11-01,ott,ana,in,7:47 - 3rd,3,7:47,3.0,5.0,22.0,17.0,Missed,Tim Stützle Snap Shot Above Crossbar
 2026-11-01 22:36:05,401892628,2026-11-01,ott,ana,in,7:01 - 3rd,3,7:01,3.0,5.0,22.0,18.0,Missed,Claude Giroux Tip-In Wide Left
 2026-11-01 22:37:05,401892628,2026-11-01,ott,ana,in,5:43 - 3rd,3,5:43,3.0,5.0,23.0,18.0,Missed,Beckett Sennecke Wrist Shot Hit Left Post
+2026-11-01 22:38:05,401892628,2026-11-01,ott,ana,in,4:59 - 3rd,3,4:59,3.0,5.0,24.0,19.0,Shot,Roger McQueen Snap Shot saved by Jonas Johansson
+2026-11-01 22:39:05,401892628,2026-11-01,ott,ana,in,4:40 - 3rd,3,4:40,3.0,6.0,24.0,19.0,Goal,"Roger McQueen Goal (2), assists: none"
+2026-11-01 22:40:05,401892628,2026-11-01,ott,ana,in,3:40 - 3rd,3,3:40,3.0,6.0,24.0,19.0,Blocked,Nick Cousins shot blocked by Tim Washe
+2026-11-01 22:41:05,401892628,2026-11-01,ott,ana,in,2:44 - 3rd,3,2:44,3.0,6.0,25.0,19.0,Blocked,Nick Cousins shot blocked by Tim Washe
+2026-11-01 22:42:05,401892628,2026-11-01,ott,ana,in,1:38 - 3rd,3,1:38,3.0,6.0,26.0,20.0,Blocked,Nikolas Matinpalo shot blocked by Drew Helleson
+2026-11-01 22:43:05,401892628,2026-11-01,ott,ana,in,0:36 - 3rd,3,0:36,3.0,6.0,27.0,20.0,Blocked,Cutter Gauthier shot blocked by Nick Cousins
