@@ -615,7 +615,9 @@ def main():
                 team = gi["H"] if r.side == "home" else (gi["Aw"] if r.side == "away" else str(r.side).upper())
                 what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
                         (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{str(r.side).upper()} {lnum:g} ({fmt_price(price)})"))
-                body = (f"BET: back in range. The DON'T BET earlier no longer applies: EV {ev:+.1%} at {fmt_price(price)}, no worse than the "
+                try: floor_txt = f"Bet only at {fmt_price(open_only_floor(p, oprice, thr))} or better (stop if DraftKings shows a shorter price).\n"
+                except Exception: floor_txt = f"Bet only at {fmt_price(price)} or better.\n"
+                body = floor_txt + (f"BET: back in range. The DON'T BET earlier no longer applies: EV {ev:+.1%} at {fmt_price(price)}, no worse than the "
                         f"original alert ({fmt_price(r.price)}). [{SHORT.get(m_best, m_best)}] win chance {p:.1%}. Goalies: {gi['goalies']}."
                         + " Bet it now if you still want it; log it after.")
                 notify(f"BACK IN RANGE - BET {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body, priority="high", tags="white_check_mark", kind="bet")
