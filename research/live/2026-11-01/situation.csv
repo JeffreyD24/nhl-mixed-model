@@ -112,3 +112,11 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 20:31:05,401892627,2026-11-01,edm,nyr,in,2:29 - 3rd,3,2:29,3.0,1.0,25.0,21.0,Face Off,J.T. Miller faceoff won against Leon Draisaitl
 2026-11-01 20:31:05,401892628,2026-11-01,ott,ana,in,5:56 - 1st,1,5:56,2.0,0.0,6.0,4.0,Stoppage,Goalie Stopped
 2026-11-01 20:32:05,401892627,2026-11-01,edm,nyr,in,1:38 - 3rd,3,1:38,3.0,1.0,27.0,21.0,Blocked,Ryan Nugent-Hopkins shot blocked by Adam Fox
+2026-11-01 20:33:05,401892627,2026-11-01,edm,nyr,in,1:00 - 3rd,3,1:00,3.0,1.0,28.0,21.0,Stoppage,Timeout - Home
+2026-11-01 20:34:05,401892627,2026-11-01,edm,nyr,in,0:57 - 3rd,3,0:57,3.0,1.0,28.0,21.0,Stoppage,Goalie Stopped
+2026-11-01 20:34:05,401892628,2026-11-01,ott,ana,in,5:22 - 1st,1,5:22,2.0,0.0,6.0,4.0,Stoppage,Puck in Netting
+2026-11-01 20:35:05,401892627,2026-11-01,edm,nyr,in,0:39 - 3rd,3,0:39,3.0,1.0,28.0,21.0,Face Off,J.T. Miller faceoff won against Leon Draisaitl
+2026-11-01 20:35:05,401892628,2026-11-01,ott,ana,in,4:36 - 1st,1,4:36,2.0,0.0,6.0,4.0,Stoppage,Off-side
+2026-11-01 20:36:05,401892627,2026-11-01,edm,nyr,in,End of 3rd,3,0:00,4.0,1.0,28.0,21.0,Face Off,Luke Glendening faceoff won against Owen Michaels
+2026-11-01 20:36:05,401892628,2026-11-01,ott,ana,in,4:36 - 1st,1,4:36,2.0,0.0,5.0,4.0,Stoppage,Off-side
+2026-11-01 20:38:05,401892628,2026-11-01,ott,ana,in,4:04 - 1st,1,4:04,2.0,0.0,5.0,4.0,Face Off,Roger McQueen faceoff won against Dylan Cozens
