@@ -49,7 +49,14 @@ IN_RX = re.compile(r"\b(will play|is playing|will return|returns tonight|will dr
 HEDGE_RX = re.compile(r"\b(questionable|doubtful|game[- ]time|likely|unlikely|could|might|may|hope|hoping|expected|expects|"
                       r"if he|whether|unclear|uncertain|undecided|probabl\w*|projected|anticipat\w*|should|presumably|"
                       r"looks like|appears|plans? to|trending|tbd|believe\w*)\b", re.I)
+INGAME_RX = re.compile(r"\b(period|intermission|pulled|replac\w+|relie\w+|in relief|(?:will not|won'?t|did not) return|"
+                       r"left the game|empty net)\b", re.I)
+DAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+NEXT_GAME_HOURS = 30       # news with no day named counts for the team's next game only if it starts within this many hours
 SENT = re.compile(r"(?<=[.!?;])\s+|\n")
+
+
+STARTED = []               # (team, puck drop) of every game in the model files, for the in-game check (filled by index)
 
 
 def api(method, **q):
@@ -70,6 +77,25 @@ def team_code(name):
     return ""
 
 
+def day_hint(sent, when):
+    """the game date a sentence names ('tonight', 'tomorrow', 'Thursday'), counted from when it was posted; else None"""
+    t = sent.lower()
+    if re.search(r"\b(tonight|today|this afternoon|this evening)\b", t): return str(when.date())
+    if re.search(r"\btomorrow\b", t): return str((when + pd.Timedelta(days=1)).date())
+    for i, d in enumerate(DAYS):
+        if re.search(rf"\b{d}\b", t): return str((when + pd.Timedelta(days=(i - when.weekday()) % 7)).date())
+    return None
+
+
+def pick(entries, sent, when):
+    """the game a sentence is about: the date it names, else the team's next game if it starts within NEXT_GAME_HOURS of the
+    post; None if neither (e.g. Saturday's 'starting tonight' post doesn't count for Tuesday's game)"""
+    d = day_hint(sent, when)
+    ok = [e for e in entries if pd.Timestamp(e["game"]["tip_et"]) > when and
+          (e["date"] == d if d else pd.Timestamp(e["game"]["tip_et"]) - when <= pd.Timedelta(hours=NEXT_GAME_HOURS))]
+    return min(ok, key=lambda e: e["game"]["tip_et"]) if ok else None
+
+
 def index(now):
     """games not started in the saved model files, with each team's goalie candidates and regular skaters:
     {'games': [dict(game, date, side, team, goalies {id: name}, top (id, name, share), skaters {id: (name, value)})]}"""
@@ -77,12 +103,13 @@ def index(now):
     gp = os.path.join(R, "goalies.csv")
     seen_g = pd.read_csv(gp) if os.path.exists(gp) else pd.DataFrame(columns=["team", "goalie_id", "goalie", "date"])
     seen_g = seen_g[pd.to_datetime(seen_g.date, errors="coerce") >= now - pd.Timedelta(days=40)].dropna(subset=["goalie_id"])
-    out = []
+    out = []; STARTED.clear()
     for mf in models:
         Mall = json.load(open(os.path.join(STATE, mf)))
         lead = "goals" if "goals" in Mall["models"] else next(iter(Mall["models"]))
         M = Mall["models"][lead]; gname = {int(k): v for k, v in M.get("goalie_names", {}).items()}
         for g in M["games"]:
+            STARTED.extend((g[s_], pd.Timestamp(g["tip_et"])) for s_ in ("home", "away"))
             if pd.Timestamp(g["tip_et"]) <= now: continue
             for side in ("home", "away"):
                 team = g[side]
@@ -108,20 +135,25 @@ def who(sent, team, I):
                 if (n and f" {n} " in t) or (own and len(last) > 3 and f" {last} " in t and
                                                (kind == "G" or abs(e["skaters"][pid][1]) >= SKATER_NEWS)):
                     out.append((e, kind, pid, name))
-    first = {}
-    for x in out:                      # a player can appear in two upcoming games: keep his next one
-        k = (x[1], x[2])
-        if k not in first or x[0]["game"]["tip_et"] < first[k][0]["game"]["tip_et"]: first[k] = x
-    return list(first.values())
+    return out
 
 
-def read_post(text, team, I):
-    """(names, goalie starts [(entry, id, name, level)], decisions [(entry, id, name, 'Out'/'Available')])"""
+def read_post(text, team, I, when, started=()):
+    """(names, goalie starts [(entry, id, name, level)], decisions [(entry, id, name, 'Out'/'Available')]); each start or decision
+    is tied to the game the sentence is about (pick), and dropped if that team's game was under way when it was posted"""
     names, starts, dec = [], [], []
     for sent in SENT.split(text):
-        w = who(sent, team, I)
+        w0 = who(sent, team, I)
+        if not w0: continue
+        names += [x[3] for x in w0 if x[3] not in names]
+        if INGAME_RX.search(sent): continue
+        w = []
+        for kind, pid in dict.fromkeys((x[1], x[2]) for x in w0):
+            xs = [x for x in w0 if (x[1], x[2]) == (kind, pid)]
+            e = pick([x[0] for x in xs], sent, when)
+            if e is None or any(t == e["team"] and tip <= when < tip + pd.Timedelta(hours=3.5) for t, tip in started): continue
+            w.append(next(x for x in xs if x[0] is e))
         if not w: continue
-        names += [x[3] for x in w if x[3] not in names]
         hedge = bool(HEDGE_RX.search(sent))
         if START_RX.search(sent):
             gs = [x for x in w if x[1] == "G"]
@@ -131,7 +163,14 @@ def read_post(text, team, I):
         if hedge: continue
         o, i = bool(OUT_RX.search(sent)), bool(IN_RX.search(sent))
         if o != i:
-            dec += [(e, pid, name, "Out" if o else "Available") for e, kind, pid, name in w if kind == "S"]
+            sk = [x for x in w if x[1] == "S"]
+            if len(sk) > 1:               # several skaters named: the decision belongs to the one named closest to it
+                rx = OUT_RX if o else IN_RX; low = norm(sent)
+                ms = [m.start() for m in rx.finditer(low)]
+                pos = {x[2]: (low.find(norm(x[3])) if norm(x[3]) in low else low.find(norm(x[3]).split()[-1])) for x in sk}
+                keep = {min((p_ for p_ in pos if pos[p_] >= 0), key=lambda p_: abs(pos[p_] - m), default=None) for m in ms}
+                sk = [x for x in sk if x[2] in keep]
+            dec += [(e, pid, name, "Out" if o else "Available") for e, kind, pid, name in sk]
     return names, starts, dec
 
 
@@ -148,7 +187,7 @@ def process(posts, watch, seen, I, now, gnews=None, overrides=None):
         w = watch.get(handle, {}); team = w.get("team_code") or team_code(w.get("team", ""))
         text = (rec.get("text") or "").replace("\n", " ").strip()
         rel = bool(RELEVANT.search(text))
-        names, starts, dec = read_post(text, team, I) if rel else ([], [], [])
+        names, starts, dec = read_post(text, team, I, created, STARTED) if rel else ([], [], [])
         url = f"https://bsky.app/profile/{handle}/post/{uri.rsplit('/', 1)[-1]}"
         rows.append(dict(seen_at_et=str(now)[:19], posted_at_et=str(created)[:19], lag_min=round((now - created).total_seconds() / 60, 1),
                          handle=handle, reporter=w.get("name", ""), team=w.get("team", ""), relevant=rel, players="; ".join(names),
