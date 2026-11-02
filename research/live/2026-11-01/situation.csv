@@ -62,3 +62,7 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-01 19:43:05,401892627,2026-11-01,edm,nyr,in,End of 2nd,2,0:00,3.0,1.0,19.0,10.0,Period End,End of 2nd Period
 2026-11-01 19:44:05,401892627,2026-11-01,edm,nyr,in,End of 2nd,2,0:00,3.0,1.0,19.0,11.0,Period End,End of 2nd Period
 2026-11-01 19:58:05,401892627,2026-11-01,edm,nyr,in,20:00 - 3rd,3,20:00,3.0,1.0,19.0,11.0,Period End,End of 2nd Period
+2026-11-01 20:01:06,401892627,2026-11-01,edm,nyr,in,19:36 - 3rd,3,19:36,3.0,1.0,19.0,11.0,Stoppage,Puck in Crowd
+2026-11-01 20:02:05,401892627,2026-11-01,edm,nyr,in,18:53 - 3rd,3,18:53,3.0,1.0,20.0,11.0,Shot,Alexis Lafrenière saved by Matt Tomkins
+2026-11-01 20:03:05,401892627,2026-11-01,edm,nyr,in,18:10 - 3rd,3,18:10,3.0,1.0,20.0,12.0,Face Off,J.T. Miller faceoff won against Leon Draisaitl
+2026-11-01 20:04:05,401892627,2026-11-01,edm,nyr,in,17:11 - 3rd,3,17:11,3.0,1.0,20.0,12.0,Face Off,J.T. Miller faceoff won against Leon Draisaitl
