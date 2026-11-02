@@ -94,3 +94,13 @@ Puck line bets at DraftKings openers (shot model, EV 6%+), 2021-22..2025-26, bac
 - Overconfident zones (+1.5 when the model says 70%+, -1.5 when it says 50%+): +8.8u on 371; removing them doesn't fix 2023-24.
 - Pinnacle's first moneyline agrees/same: 991 bets +88.7u, positive all five seasons (+2.2, +39.3, +8.3, +10.0, +28.9);
   disagrees: 273 bets +28.5u (2023-24 -10.7u). Not adopted for the puck line: the disagree bets still made money in 4 of 5 seasons.
+
+## One bet per game, and games where only one market had value (Nov 2, 2026)
+Shot model at DraftKings openers 2021-26, back-to-back bets removed. Live since Nov 2: one alert per game (the higher-value of
+moneyline / puck line; 849 same-team games: +67.5u on 849 units, every season positive, vs +114.6u on 1,698 units betting both).
+- Only one market showing value does better per unit: moneyline only 1,025 bets +8.9% (+91.5u); puck line only 414 bets +16.0%
+  (+66.4u, positive all five seasons; -1.5 only: 312 bets +18.1%, all five positive). When both show value: moneyline +7.3%,
+  puck line +6.0%.
+- "Both" games are the model's strongest opinions, mostly on favorites, and that is where it runs hot: moneyline favorites in
+  those games said 68.5%, won 64.0% (+3.9%). By win chance, the model is ~3-5 points too high above 60% but still profitable
+  (65-70%: +21.0u, 70-75%: +6.0u, 75%+: +11.3u).
