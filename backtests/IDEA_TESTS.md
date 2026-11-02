@@ -119,3 +119,9 @@ moneyline / puck line; 849 same-team games: +67.5u on 849 units, every season po
 - Shrinking the model's own chances loses money (it removes good underdog bets too). Blending with the market's opener fixes
   the favorites (blended 60%+ bets: said 68.8%, won 72.0%) and gives every season +19u or better. Fitted weight on the model
   0.51-0.61 in every fold. The EV bar (4%) was chosen on these seasons.
+
+## Market blend for the other NHL bets (Nov 2, 2026) — not adopted
+`dev/blend_all_nhl.py` (output `backtests/blend_all_nhl_output.txt`). Same blend as the moneyline (model + DraftKings' no-vig
+opener, weight fit leaving the season out): puck line weight 0.34-0.50 -> 164 bets +12.0u at EV 6%+ (vs +85.6u model-only);
+overs weight 0.38 -> almost no bets left. The puck line and overs edges come from where the model disagrees most with the
+price, which the blend erases. Keep them model-only. (Puck line at EV 9%+ model-only: 739 bets +87.5u, +11.8%, worst -1.7.)
