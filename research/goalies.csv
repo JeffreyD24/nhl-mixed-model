@@ -103,3 +103,4 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-11-02 12:48,401892630,2026-11-02,away,det,4587994,Daniil Tarasov,Confirmed
 2026-11-02 12:58,401892637,2026-11-03,home,nyr,4697705,Dylan Garand,Expected
 2026-11-02 13:04,401892633,2026-11-03,home,tor,5571,Sergei Bobrovsky,Confirmed
+2026-11-02 13:27,401892632,2026-11-02,away,cgy,4587952,Dustin Wolf,Confirmed
