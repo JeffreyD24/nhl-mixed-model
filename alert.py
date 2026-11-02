@@ -581,10 +581,14 @@ def main():
     if len(A2) and "remind_ok" in A2:
         if "reminded_at_et" not in A2: A2["reminded_at_et"] = np.nan
         A2["reminded_at_et"] = A2["reminded_at_et"].astype(object)
+        if "resumed_at_et" not in A2: A2["resumed_at_et"] = np.nan
+        A2["resumed_at_et"] = A2["resumed_at_et"].astype(object)
         ok_ = (A2.remind_ok.astype(str).isin(["True", "1", "1.0"]) & A2.sent.astype(str).isin(["True", "1", "1.0"])
                & A2.skipped.isna())
         for (gid, mk), grp in A2[ok_].groupby(["game_id", "market"]):
-            if A2[(A2.game_id == gid) & (A2.market == mk)].reminded_at_et.astype(str).str.len().gt(3).any(): continue
+            allr = A2[(A2.game_id == gid) & (A2.market == mk)]
+            stopped = allr.reminded_at_et.astype(str).str.len().gt(3).any()
+            if stopped and allr.resumed_at_et.astype(str).str.len().gt(3).any(): continue      # one DON'T BET and one BACK IN RANGE max
             t_last = grp.alerted_at_et.max(); rows = grp[grp.alerted_at_et == t_last]; r = rows.iloc[0]
             gi = GINFO.get(gid)
             if gi is None or pd.Timestamp(gi["tip_et"]) <= NOW: continue
@@ -604,6 +608,19 @@ def main():
                 if d_ < -PIN_DISAGREE:
                     pin_txt = (f"Pinnacle (the sharp book) has now opened and gives this side {abs(d_) * 100:.1f} win-% points less than "
                                f"DraftKings' opener; bets Pinnacle disagrees with lost every season 2021-26")
+            if stopped:
+                # BACK IN RANGE (Nov 2, 2026): after a DON'T BET, it qualifies again at a price no worse than the original alert
+                same_line = mk == "moneyline" or (not pd.isna(lnum) and float(lnum) == float(r.line))
+                if not (ok_now and not pin_txt and same_line and espn.nd_dec(price) >= espn.nd_dec(float(r.price))): continue
+                team = gi["H"] if r.side == "home" else (gi["Aw"] if r.side == "away" else str(r.side).upper())
+                what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
+                        (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{str(r.side).upper()} {lnum:g} ({fmt_price(price)})"))
+                body = (f"BET: back in range. The DON'T BET earlier no longer applies: EV {ev:+.1%} at {fmt_price(price)}, no worse than the "
+                        f"original alert ({fmt_price(r.price)}). [{SHORT.get(m_best, m_best)}] win chance {p:.1%}. Goalies: {gi['goalies']}."
+                        + " Bet it now if you still want it; log it after.")
+                notify(f"BACK IN RANGE - BET {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body, priority="high", tags="white_check_mark", kind="bet")
+                A2.loc[rows.index, "resumed_at_et"] = str(NOW)[:16]; n_rem += 1
+                print("BACK IN RANGE:", what); continue
             if ok_now and not pin_txt: continue
             team = gi["H"] if r.side == "home" else (gi["Aw"] if r.side == "away" else str(r.side).upper())
             what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
