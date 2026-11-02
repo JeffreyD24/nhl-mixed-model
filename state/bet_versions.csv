@@ -6,3 +6,6 @@ NHL v2 (shot model),puck line,2026-11-01 19:09,shot model only alerts; opening-p
 NHL v3,moneyline,2026-11-02 11:08,"55/45 blend with DK opener, EV 4%+; b2b skip; Pinnacle rule; travel adj; second chance; one bet per game"
 NHL v3,puck line,2026-11-02 11:08,"shot model EV 6%+; b2b skip; one bet per game (higher value of ML / PL)"
 NHL overs v1,total,2026-11-02 10:05,shot model totals: overs only at the opener EV 6%+
+NHL v3.1,moneyline,2026-11-02 18:45,"v3 + reporter goalie/lineup news from Bluesky (confirmed starter used until ESPN confirms; clear skater out/in for that game); same rules"
+NHL v3.1,puck line,2026-11-02 18:45,"v3 + reporter goalie/lineup news from Bluesky; same rules"
+NHL overs v1.1,total,2026-11-02 18:45,"overs v1 + reporter goalie/lineup news from Bluesky; same rule"
