@@ -459,6 +459,19 @@ def main():
                                 ours_pin = pin if side == "home" else 1 - pin; ours_dk = ph_open if side == "home" else 1 - ph_open
                                 conflict = (f"Pinnacle (the sharp book) opened {g[side].upper()} at {ours_pin:.1%} vs DraftKings' "
                                             f"{ours_dk:.1%}; bets Pinnacle disagrees with lost every season 2021-26 (405 bets, -42u)")
+                    if mk in TEAM_MK and not conflict and not skip:
+                        # one bet per game (approved Nov 2, 2026): moneyline and puck line on the same team are the same prediction;
+                        # alert only the one with more value (2021-26: +67.5u on 849 units vs +114.6u on 1,698 betting both)
+                        other = "puck line" if mk == "moneyline" else "moneyline"
+                        mine_ev = max(bt_[4] for _, bt_ in pending)
+                        if any((g["game_id"], other, n) in done for n in ALERT_MODELS):
+                            conflict = f"one bet per game: the {other} on this game was already alerted"
+                        else:
+                            for n2 in ALERT_MODELS:
+                                ob = best.get((n2, other))
+                                if ob and ob[0] == side and near_open(ob[2], ob[5]) and ob[4] >= THRESHOLD and ob[4] > mine_ev:
+                                    conflict = f"one bet per game: the {other} has more value (EV {ob[4]:+.1%} vs {mine_ev:+.1%})"
+                                    break
                     if conflict and not skip and all((g["game_id"], mk, n) in skipped for n, _ in pending): continue   # logged already
                     tag = "Both models" if len(pending) > 1 else SHORT.get(pending[0][0], pending[0][0])
                     what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
