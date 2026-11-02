@@ -62,7 +62,7 @@ PIN_NAME = {"Anaheim Ducks": "ana", "Arizona Coyotes": "uta", "Utah Hockey Club"
             "Pittsburgh Penguins": "pit", "Seattle Kraken": "sea", "San Jose Sharks": "sj", "St Louis Blues": "stl", "St. Louis Blues": "stl",
             "Tampa Bay Lightning": "tb", "Toronto Maple Leafs": "tor", "Vancouver Canucks": "van", "Vegas Golden Knights": "vgk",
             "Winnipeg Jets": "wpg", "Washington Capitals": "wsh"}
-USE_PINNACLE_RULE = False   # built Nov 2, 2026, OFF until approved: skip when Pinnacle's first price disagrees
+USE_PINNACLE_RULE = True    # approved Nov 2, 2026: skip when Pinnacle's first price disagrees
 PIN_DISAGREE = 0.005     # Nov 2, 2026: Pinnacle's first moneyline gives our side 0.5+ win-% points less than DraftKings' opener ->
                          #   no bet (shot model at the open 2021-26: 405 such bets -42.0u, negative all five seasons)
 SKIP_B2B = True          # Nov 2, 2026: no bet on a team playing the second night of a back-to-back (shot model 2021-26: 144 bets,
