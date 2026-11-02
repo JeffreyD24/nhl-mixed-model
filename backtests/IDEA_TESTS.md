@@ -41,3 +41,16 @@ is in which shots are dangerous, not who wins. Kept as `nhl_xg_model.V2 = False`
 More accurate at every level, but less profitable: the market already prices who the good shooters are, so knowing it moves
 our number toward the line rather than away from it. The edge is in what the market is slow on (goalies, injuries, timing), not
 in general accuracy. Lesson for future tests: judge by profit at opening prices and by accuracy vs the opener, not accuracy alone.
+
+## Holdout seasons 2021-22 to 2023-24 at real DraftKings prices (Nov 2, 2026)
+`dev/dk_holdout.py`, table `backtests/dk_holdout.csv`. Shot model with live settings (one-day lag), trained only on earlier
+seasons, graded at DraftKings prices from The Odds API history (data/nhl_prices.csv.gz): opener, +15/30/60 min, halfway, close.
+Moneyline + puck line at EV 6%+:
+| Season | Open | +60 min | Halfway | Close |
+|---|---|---|---|---|
+| 2021-22 | +52.2u (609 bets) | +57.4u | +48.4u | -1.3u |
+| 2022-23 | +39.0u (971) | +38.6u | +12.0u | -11.1u |
+| 2023-24 | +14.6u (588) | +10.5u | -5.3u | -16.3u |
+Total at the open: +105.7u on 2,168 bets (+4.9%). With 2024-25 and 2025-26 (+111u on 1,237): five seasons in a row profitable
+at the opening price, and the edge is gone by the close every season. Confirms the current rules (6% near the open, 9% once the
+price moves). Totals at the open: +23.9u on 889 bets but -6.5u in 2021-22; still not alerted.
