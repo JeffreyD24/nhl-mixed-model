@@ -12,3 +12,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 19:13:05,401892630,2026-11-02,det,fla,in,17:10 - 1st,1,17:10,0.0,0.0,1.0,1.0,Shot,Niko Mikkola Snap Shot saved by Daniil Tarasov
 2026-11-02 19:14:05,401892629,2026-11-02,vgk,bos,in,15:56 - 1st,1,15:56,0.0,0.0,0.0,1.0,Blocked,Elias Lindholm shot blocked by Mark Stone
 2026-11-02 19:14:05,401892630,2026-11-02,det,fla,in,15:39 - 1st,1,15:39,0.0,0.0,1.0,1.0,Missed,Andrew Copp Missed Shot Failed Bank Attempt
+2026-11-02 19:15:05,401892629,2026-11-02,vgk,bos,in,14:55 - 1st,1,14:55,0.0,0.0,1.0,1.0,Shot,Brett Howden saved by Jeremy Swayman
+2026-11-02 19:15:05,401892630,2026-11-02,det,fla,in,14:39 - 1st,1,14:39,0.0,0.0,3.0,1.0,Shot,Sandis Vilmanis saved by Daniil Tarasov
+2026-11-02 19:16:05,401892629,2026-11-02,vgk,bos,in,14:30 - 1st,1,14:30,0.0,0.0,2.0,2.0,Missed,David Pastrnak Missed Shot High and Wide Right
+2026-11-02 19:16:05,401892630,2026-11-02,det,fla,in,14:24 - 1st,1,14:24,1.0,0.0,4.0,1.0,Goal,"Carter Mazur Goal (1), assists: Moritz Seider (9)"
+2026-11-02 19:17:05,401892629,2026-11-02,vgk,bos,in,14:11 - 1st,1,14:11,0.0,0.0,2.0,2.0,Face Off,Mark Kastelic faceoff won against Tomas Hertl
+2026-11-02 19:17:05,401892630,2026-11-02,det,fla,in,13:24 - 1st,1,13:24,1.0,0.0,4.0,1.0,Face Off,Andrew Copp faceoff won against Sam Bennett
+2026-11-02 19:18:06,401892629,2026-11-02,vgk,bos,in,13:46 - 1st,1,13:46,0.0,0.0,2.0,2.0,Blocked,Nikita Zadorov shot blocked by Tomas Hertl
+2026-11-02 19:18:06,401892630,2026-11-02,det,fla,in,12:54 - 1st,1,12:54,1.0,0.0,4.0,1.0,Penalty Shot Infraction,Ben Chiarot Minor
+2026-11-02 19:19:05,401892629,2026-11-02,vgk,bos,in,13:17 - 1st,1,13:17,0.0,0.0,2.0,3.0,Stoppage,Puck in Netting
+2026-11-02 19:19:05,401892630,2026-11-02,det,fla,in,12:54 - 1st,1,12:54,1.0,0.0,4.0,1.0,Tripping,Ben Chiarot Tripping against Eetu Luostarinen
