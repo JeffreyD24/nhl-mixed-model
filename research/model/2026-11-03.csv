@@ -99,3 +99,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-03 12:04,goals,401892638,2026-11-03,min,phi,0.3891,2.362,3.004,5.54,Jesper Wallstedt (confirmed),Dan Vladar (confirmed),"MIN: Spurgeon | PHI: Bump, Gaucher, McDonald"
 2026-11-03 12:11,xg,401892639,2026-11-03,vgk,pit,0.5579,3.221,2.919,6.3,Adin Hill (expected),Arturs Silovs (confirmed),"VGK: Lavoie | PIT: Malkin, Solovyov"
 2026-11-03 12:11,goals,401892639,2026-11-03,vgk,pit,0.5588,3.313,2.877,6.35,Adin Hill (expected),Arturs Silovs (confirmed),"VGK: Lavoie | PIT: Malkin, Solovyov"
+2026-11-03 12:17,xg,401892642,2026-11-03,car,nsh,0.2697,2.567,3.779,6.49,Pyotr Kochetkov (expected),Juuse Saros (confirmed),"CAR: - | NSH: Marchessault?, Hague"
+2026-11-03 12:17,goals,401892642,2026-11-03,car,nsh,0.3859,2.616,3.31,6.09,Pyotr Kochetkov (expected),Juuse Saros (confirmed),"CAR: - | NSH: Marchessault?, Hague"
