@@ -25,10 +25,11 @@ jobs:
         run: |
           git config user.name "nhl-tracker-bot"; git config user.email "actions@users.noreply.github.com"
           for s in ${{ inputs.seasons }}; do
-            python fetch_nhl_box.py "$s" || true
+            if python fetch_nhl_box.py "$s"; then ok=1; else ok=0; fi
             git add parts
             git diff --cached --quiet || git commit -q -m "NHL box scores: season $s (job B)"
             for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 10; done
+            if [ "$ok" = 0 ]; then echo "Season $s stopped early (see FIRST ERROR / ABORT lines above)"; exit 1; fi
           done
           python fetch_nhl_box.py
           git add .

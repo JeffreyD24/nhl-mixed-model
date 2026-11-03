@@ -2,7 +2,7 @@
 python fetch_nhl_box.py [season_start_years...]   run from this folder, in GitHub Actions (the Claude workspace cannot reach nhle.com).
 Game list = regular-season games in ../hockeyr/team_game_xg_2010_2023.csv.gz. Safe to rerun: games already in parts/ are skipped.
 Writes parts/{season}_goalies.csv, parts/{season}_skaters.csv, then combines into goalies_2011_2023.csv and skaters_2011_2023.csv.gz."""
-import os, sys, glob, json, time, urllib.request
+import os, sys, glob, json, time, threading, urllib.request, urllib.error
 from concurrent.futures import ThreadPoolExecutor
 import pandas as pd
 os.makedirs("parts", exist_ok=True)
@@ -14,14 +14,37 @@ def toi(s):
     try: m, sec = str(s).split(":"); return int(m) * 60 + int(sec)
     except Exception: return 0
 
+MAX_CONSEC_FAIL = 20          # stop the whole run after this many failed games in a row
+TIMEOUT, TRIES = 20, 3        # seconds per request, attempts per game
+ABORT, LOCK = threading.Event(), threading.Lock()
+consec, first_err = 0, []
+
+def err_text(gid, e):
+    msg = f"{gid}: {type(e).__name__} {str(e)[:150]}"
+    if isinstance(e, urllib.error.HTTPError):
+        try: msg += f" | HTTP {e.code} body: {e.read()[:150]!r}"
+        except Exception: msg += f" | HTTP {e.code}"
+    return msg
+
 def one(gid):
+    global consec
+    if ABORT.is_set(): return gid, None, None, "skipped (aborted)"
     url = f"https://api-web.nhle.com/v1/gamecenter/{gid}/boxscore"
-    for k in range(5):
+    for k in range(TRIES):
         try:
-            with urllib.request.urlopen(url, timeout=40) as r: b = json.loads(r.read()); break
+            with urllib.request.urlopen(url, timeout=TIMEOUT) as r: b = json.loads(r.read()); break
         except Exception as e:
-            if k == 4: return gid, None, None, f"{gid}: {type(e).__name__} {str(e)[:60]}"
-            time.sleep(3 * (k + 1))
+            if isinstance(e, urllib.error.HTTPError) and e.code == 404: k = TRIES - 1   # missing game: don't retry
+            if k >= TRIES - 1:
+                msg = err_text(gid, e)
+                with LOCK:
+                    if not first_err: first_err.append(msg); print("FIRST ERROR:", msg, flush=True)
+                    consec += 1
+                    if consec >= MAX_CONSEC_FAIL and not ABORT.is_set():
+                        ABORT.set(); print(f"ABORT: {consec} failed games in a row. Last error: {msg}", flush=True)
+                return gid, None, None, msg
+            time.sleep(2 * (k + 1))
+    with LOCK: consec = 0
     G, S = [], []
     for side in ("homeTeam", "awayTeam"):
         t = b[side]; ps = b["playerByGameStats"][side]
@@ -46,14 +69,17 @@ for s in SEASONS:
     G, S, errs, t0 = [], [], [], time.time()
     with ThreadPoolExecutor(6) as ex:
         for n, (gid, g, sk, e) in enumerate(ex.map(one, todo), 1):
+            if n % 300 == 0: print(f"  {n}/{len(todo)} {time.time() - t0:.0f}s, {len(errs)} errors", flush=True)
             if e: errs.append(e); continue
             G += g; S += sk
-            if n % 300 == 0: print(f"  {n}/{len(todo)} {time.time() - t0:.0f}s", flush=True)
     for rows, path in ((G, gp), (S, sp)):
         if rows:
             new = pd.DataFrame(rows)
             pd.concat([pd.read_csv(path), new]).to_csv(path, index=False) if os.path.exists(path) else new.to_csv(path, index=False)
-    print(f"{s}: errors {len(errs)} {errs[:3]}", flush=True)
+    print(f"{s}: saved {len(G)} goalie rows, errors {len(errs)} {errs[:3]}", flush=True)
+    if ABORT.is_set():
+        print(f"STOPPED EARLY in season {s}: {MAX_CONSEC_FAIL} games failed in a row. First error: {first_err[:1]}", flush=True)
+        sys.exit(2)
 
 G = pd.concat([pd.read_csv(p) for p in sorted(glob.glob("parts/*_goalies.csv"))], ignore_index=True)
 S = pd.concat([pd.read_csv(p) for p in sorted(glob.glob("parts/*_skaters.csv"))], ignore_index=True)
