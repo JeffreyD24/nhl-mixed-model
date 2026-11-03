@@ -223,3 +223,26 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 21:15:06,401892630,2026-11-02,det,fla,in,8:09 - 3rd,3,8:09,4.0,2.0,23.0,23.0,Shot,Viktor Arvidsson saved by Jacob Markstrom
 2026-11-02 21:15:06,401892631,2026-11-02,col,chi,in,17:48 - 2nd,2,17:48,2.0,2.0,2.0,12.0,Face Off,Connor Bedard faceoff won against Nazem Kadri
 2026-11-02 21:15:06,401892632,2026-11-02,cgy,sj,in,17:35 - 1st,1,17:35,0.0,0.0,1.0,4.0,Shot,Yan Kuznetsov Wrist Shot saved by Yaroslav Askarov
+2026-11-02 21:16:06,401892629,2026-11-02,vgk,bos,in,9:47 - 3rd,3,9:47,2.0,2.0,14.0,17.0,Shot,David Pastrnak saved by Carter Hart
+2026-11-02 21:16:06,401892630,2026-11-02,det,fla,in,7:15 - 3rd,3,7:15,4.0,2.0,23.0,23.0,Blocked,Lars Eller shot blocked by Eetu Luostarinen
+2026-11-02 21:16:06,401892631,2026-11-02,col,chi,in,17:30 - 2nd,2,17:30,2.0,2.0,2.0,14.0,Cross checking,Nazem Kadri Cross-checking against Ryan Greene
+2026-11-02 21:16:06,401892632,2026-11-02,cgy,sj,in,17:07 - 1st,1,17:07,0.0,0.0,1.0,5.0,Stoppage,Off-side
+2026-11-02 21:17:05,401892629,2026-11-02,vgk,bos,in,8:45 - 3rd,3,8:45,2.0,2.0,16.0,17.0,Missed,Morgan Geekie Missed Shot Wide Left
+2026-11-02 21:17:05,401892630,2026-11-02,det,fla,in,7:15 - 3rd,3,7:15,4.0,2.0,22.0,23.0,Stoppage,Puck in Netting
+2026-11-02 21:17:05,401892631,2026-11-02,col,chi,in,17:12 - 2nd,2,17:12,2.0,2.0,3.0,14.0,Stoppage,Goalie Stopped
+2026-11-02 21:17:05,401892632,2026-11-02,cgy,sj,in,17:00 - 1st,1,17:00,0.0,0.0,1.0,5.0,Face Off,Collin Graf faceoff won against Morgan Frost
+2026-11-02 21:18:05,401892629,2026-11-02,vgk,bos,in,7:55 - 3rd,3,7:55,2.0,2.0,16.0,17.0,Missed,Elias Lindholm Missed Shot Above Crossbar
+2026-11-02 21:18:05,401892631,2026-11-02,col,chi,in,16:30 - 2nd,2,16:30,2.0,2.0,3.0,15.0,Blocked,Connor Bedard shot blocked by Brock Nelson
+2026-11-02 21:18:05,401892632,2026-11-02,cgy,sj,in,16:02 - 1st,1,16:02,0.0,0.0,1.0,5.0,Blocked,Joel Farabee shot blocked by Darnell Nurse
+2026-11-02 21:19:05,401892629,2026-11-02,vgk,bos,in,7:02 - 3rd,3,7:02,2.0,2.0,16.0,17.0,Blocked,JJ Peterka shot blocked by Jeremy Lauzon
+2026-11-02 21:19:05,401892630,2026-11-02,det,fla,in,6:30 - 3rd,3,6:30,4.0,2.0,22.0,23.0,Hit,Sam Bennett hit Keegan Kolesar
+2026-11-02 21:19:05,401892631,2026-11-02,col,chi,in,16:10 - 2nd,2,16:10,2.0,2.0,4.0,15.0,Face Off,Nicolas Roy faceoff won against Oliver Moore
+2026-11-02 21:19:05,401892632,2026-11-02,cgy,sj,in,15:08 - 1st,1,15:08,0.0,0.0,1.0,6.0,Missed,Jacob Trouba Wrist Shot
+2026-11-02 21:20:05,401892629,2026-11-02,vgk,bos,in,6:12 - 3rd,3,6:12,2.0,2.0,16.0,17.0,Missed,Fraser Minten Missed Shot High and Wide Left
+2026-11-02 21:20:05,401892630,2026-11-02,det,fla,in,5:27 - 3rd,3,5:27,4.0,2.0,22.0,23.0,Shot,Viktor Arvidsson saved by Jacob Markstrom
+2026-11-02 21:20:05,401892631,2026-11-02,col,chi,in,15:33 - 2nd,2,15:33,2.0,2.0,4.0,15.0,Missed,Frank Nazar Slap Shot Wide Left
+2026-11-02 21:20:05,401892632,2026-11-02,cgy,sj,in,14:45 - 1st,1,14:45,0.0,0.0,2.0,7.0,Stoppage,Goalie Stopped
+2026-11-02 21:21:05,401892629,2026-11-02,vgk,bos,in,6:12 - 3rd,3,6:12,2.0,2.0,16.0,17.0,Stoppage,TV Timeout
+2026-11-02 21:21:05,401892630,2026-11-02,det,fla,in,4:25 - 3rd,3,4:25,4.0,2.0,22.0,24.0,Shot,Viktor Arvidsson Snap Shot saved by Jacob Markstrom
+2026-11-02 21:21:05,401892631,2026-11-02,col,chi,in,15:05 - 2nd,2,15:05,2.0,2.0,4.0,15.0,Face Off,Nathan MacKinnon faceoff won against Anton Frondell
+2026-11-02 21:21:05,401892632,2026-11-02,cgy,sj,in,14:32 - 1st,1,14:32,0.0,0.0,2.0,7.0,Stoppage,Puck in Benches
