@@ -385,3 +385,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 22:38:06,401892632,2026-11-02,cgy,sj,in,4:12 - 2nd,2,4:12,1.0,0.0,13.0,16.0,Blocked,Mikael Backlund shot blocked by Dmitry Orlov
 2026-11-02 22:39:05,401892631,2026-11-02,col,chi,in,6:40 - 3rd,3,6:40,4.0,2.0,19.0,23.0,Stoppage,Off-side
 2026-11-02 22:39:05,401892632,2026-11-02,cgy,sj,in,3:22 - 2nd,2,3:22,1.0,0.0,13.0,16.0,Blocked,Mikael Backlund shot blocked by Dmitry Orlov
+2026-11-02 22:40:05,401892631,2026-11-02,col,chi,in,6:13 - 3rd,3,6:13,4.0,2.0,19.0,23.0,Face Off,Nathan MacKinnon faceoff won against Connor Bedard
+2026-11-02 22:40:05,401892632,2026-11-02,cgy,sj,in,3:22 - 2nd,2,3:22,1.0,0.0,13.0,16.0,Stoppage,Off-side
+2026-11-02 22:41:05,401892631,2026-11-02,col,chi,in,5:52 - 3rd,3,5:52,4.0,2.0,19.0,23.0,Face Off,Nicolas Roy faceoff won against Ryan Donato
+2026-11-02 22:42:06,401892631,2026-11-02,col,chi,in,4:41 - 3rd,3,4:41,4.0,2.0,20.0,23.0,Missed,Ryan Donato Wrist Shot Wide Right
+2026-11-02 22:42:06,401892632,2026-11-02,cgy,sj,in,2:43 - 2nd,2,2:43,1.0,0.0,13.0,16.0,Face Off,Morgan Frost faceoff won against Filip Bystedt
+2026-11-02 22:43:06,401892631,2026-11-02,col,chi,in,3:50 - 3rd,3,3:50,4.0,2.0,20.0,23.0,Blocked,Blocked Shot
+2026-11-02 22:43:06,401892632,2026-11-02,cgy,sj,in,2:03 - 2nd,2,2:03,1.0,0.0,14.0,17.0,Shot,Tyler Toffoli Slap Shot saved by Dustin Wolf
+2026-11-02 22:44:05,401892631,2026-11-02,col,chi,in,3:20 - 3rd,3,3:20,4.0,2.0,20.0,23.0,Stoppage,TV Timeout
+2026-11-02 22:44:05,401892632,2026-11-02,cgy,sj,in,1:23 - 2nd,2,1:23,1.0,0.0,14.0,17.0,Missed,Mason Marchment Wrist Shot Wide Right
+2026-11-02 22:45:06,401892632,2026-11-02,cgy,sj,in,0:13 - 2nd,2,0:13,1.0,0.0,16.0,17.0,Blocked,Mikael Backlund shot blocked by Mason Marchment
