@@ -1,7 +1,17 @@
-# NHL starting goalies, 2010-11 .. 2022-23 (job B)
+# NHL starting goalies and time on ice, 2010-11 .. 2022-23 (job B)
 
-**Status Nov 3, 2026: done from the hockeyR play-by-play, not from nhle.com.** api-web.nhle.com does not answer GitHub's servers (the `fetch-nhl-box.yml` run hung with no output for 6+ minutes and was cancelled),
-so `fetch_nhl_box.py` is kept but not used. Goalies are built by `build_goalies_from_hockeyr.py` from the hockeyR-data files (about 30 MB per season, plain curl from raw.githubusercontent.com works; see `../hockeyr/fetch_raw_pbp.sh`).
+**Status Nov 3, 2026 (evening): all three pieces are done.** CORRECTION: api-web.nhle.com DOES answer GitHub's servers. The first run hung because `fetch_nhl_box.py` sent no
+User-Agent header; with one it fetched a full season in about a minute (`probe_nhle.py`). Three sources now exist:
+
+1. **hockeyR goalies** (`goalies_hockeyr_2010_2023.csv.gz`, below).
+2. **Official NHL box scores** (`goalies_2011_2023.csv`: 30,037 goalie rows, 27,966 starters; `skaters_2011_2023.csv.gz`: 503,318 skater rows with TOI; regular season only, 13,983 games = 100% of hockeyR's 2011-12..2022-23 regular-season games). `checks.txt`: exactly one starter per team-game (100.00%), all from the API's own `starter` flag; 96.4% of starters have 30+ minutes on ice.
+   **Cross-check vs hockeyR: the two starter tables agree on 99.96% of team-games (4 mismatches out of 27,922: 2016021016 NYI, 2017020168 PIT, 2018020331 LAK, 2021021194 WPG).**
+3. **Time on ice per player-game from shift charts** (`parts_toi/2010.csv.gz` .. `2022.csv.gz`, 13 files, 623,713 player-game rows; columns game_id, player_id, team, player, shifts, toi_sec; not tagged by position, join the goalie table to separate goalies). Games per file look right (2012 = 806 lockout season, 2020 = 952 COVID season plus playoffs).
+
+The sections below are the earlier hockeyR-only notes (written when nhle.com was wrongly believed blocked).
+
+---
+Earlier note (superseded above): goalies were first built by `build_goalies_from_hockeyr.py` from the hockeyR-data files (about 30 MB per season, plain curl from raw.githubusercontent.com works; see `../hockeyr/fetch_raw_pbp.sh`).
 
 - `goalies_hockeyr_2010_2023.csv.gz`: 35,082 rows, one per goalie who was on the ice, 16,350 games (regular season + playoffs, 2010-11 to 2022-23). Columns: game_id, season, season_type, date, team (abbrev), team_name, is_home, goalie (name, `First.Last`), goalie_id (NHL id, 0.1% blank), **starter** (goalie on the ice at the opening faceoff), toi_sec (approximate), shots_against, goals_against, game_sec, goalie_toi_share.
 - Checks in `checks_hockeyr.txt`: 100% of team-games have exactly one starter; starters play 55+ minutes in 92.3% of games and are out before 40 minutes in 5.0%; season start counts for well-known goalies match their games played.
@@ -15,7 +25,7 @@ The raw hockeyR files have no license and are not committed; the output here is 
 ---
 ## Original plan (nhle.com; did not work from GitHub)
 
-Not yet fetched: the Claude workspace cannot reach nhle.com, so `fetch_nhl_box.py` runs in GitHub Actions
+Fetched (see the status above): the Claude workspace cannot reach nhle.com, so `fetch_nhl_box.py` ran in GitHub Actions
 (`.github/workflows/fetch-nhl-box.yml`, manual run; saves and pushes after each season; safe to rerun). README is updated with counts after the run.
 
 - Source: NHL public API `api-web.nhle.com/v1/gamecenter/{game_id}/boxscore` (undocumented but public; private research use). Game list = hockeyR table regular-season games.
