@@ -246,3 +246,25 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 21:21:05,401892630,2026-11-02,det,fla,in,4:25 - 3rd,3,4:25,4.0,2.0,22.0,24.0,Shot,Viktor Arvidsson Snap Shot saved by Jacob Markstrom
 2026-11-02 21:21:05,401892631,2026-11-02,col,chi,in,15:05 - 2nd,2,15:05,2.0,2.0,4.0,15.0,Face Off,Nathan MacKinnon faceoff won against Anton Frondell
 2026-11-02 21:21:05,401892632,2026-11-02,cgy,sj,in,14:32 - 1st,1,14:32,0.0,0.0,2.0,7.0,Stoppage,Puck in Benches
+2026-11-02 21:22:05,401892630,2026-11-02,det,fla,in,3:42 - 3rd,3,3:42,4.0,2.0,22.0,24.0,Stoppage,Icing
+2026-11-02 21:22:05,401892631,2026-11-02,col,chi,in,14:04 - 2nd,2,14:04,2.0,2.0,4.0,16.0,Blocked,Cale Makar shot blocked by Nazem Kadri
+2026-11-02 21:22:05,401892632,2026-11-02,cgy,sj,in,14:10 - 1st,1,14:10,0.0,0.0,2.0,7.0,Stoppage,Puck in Crowd
+2026-11-02 21:23:05,401892629,2026-11-02,vgk,bos,in,6:05 - 3rd,3,6:05,2.0,2.0,16.0,17.0,Face Off,Jack Eichel faceoff won against Pavel Zacha
+2026-11-02 21:23:05,401892630,2026-11-02,det,fla,in,3:20 - 3rd,3,3:20,4.0,2.0,22.0,24.0,Shot,Sam Bennett saved by Daniil Tarasov
+2026-11-02 21:23:05,401892631,2026-11-02,col,chi,in,13:05 - 2nd,2,13:05,2.0,2.0,4.0,16.0,Shot,Jaden Schwartz Backhand saved by Spencer Knight
+2026-11-02 21:23:05,401892632,2026-11-02,cgy,sj,in,13:00 - 1st,1,13:00,0.0,0.0,2.0,7.0,Face Off,Will Smith faceoff won against Martin Pospisil
+2026-11-02 21:24:05,401892629,2026-11-02,vgk,bos,in,5:34 - 3rd,3,5:34,2.0,2.0,18.0,17.0,Stoppage,Goalie Stopped
+2026-11-02 21:24:05,401892630,2026-11-02,det,fla,in,3:05 - 3rd,3,3:05,4.0,3.0,22.0,24.0,Face Off,Emmitt Finnie faceoff won against Anton Lundell
+2026-11-02 21:24:05,401892631,2026-11-02,col,chi,in,12:50 - 2nd,2,12:50,2.0,2.0,4.0,18.0,Stoppage,TV Timeout
+2026-11-02 21:24:05,401892632,2026-11-02,cgy,sj,in,12:40 - 1st,1,12:40,0.0,0.0,2.0,7.0,Shot,Tyler Toffoli Wrist Shot saved by Dustin Wolf
+2026-11-02 21:25:05,401892629,2026-11-02,vgk,bos,in,4:35 - 3rd,3,4:35,2.0,2.0,18.0,18.0,Shot,Noah Hanifin saved by Jeremy Swayman
+2026-11-02 21:25:05,401892630,2026-11-02,det,fla,in,1:57 - 3rd,3,1:57,4.0,3.0,22.0,24.0,Face Off,Emmitt Finnie faceoff won against Anton Lundell
+2026-11-02 21:25:05,401892632,2026-11-02,cgy,sj,in,11:17 - 1st,1,11:17,0.0,0.0,4.0,7.0,Blocked,Michael Kesselring shot blocked by Aydar Suniev
+2026-11-02 21:26:05,401892629,2026-11-02,vgk,bos,in,3:33 - 3rd,3,3:33,2.0,2.0,20.0,18.0,Shot,Jonathan Aspirot saved by Carter Hart
+2026-11-02 21:26:05,401892630,2026-11-02,det,fla,in,1:42 - 3rd,3,1:42,4.0,3.0,22.0,24.0,Stoppage,Icing
+2026-11-02 21:26:05,401892631,2026-11-02,col,chi,in,12:37 - 2nd,2,12:37,2.0,2.0,4.0,18.0,Blocked,Sam Malinski shot blocked by Ryan Donato
+2026-11-02 21:26:05,401892632,2026-11-02,cgy,sj,in,10:17 - 1st,1,10:17,0.0,0.0,4.0,7.0,Missed,Michael Misa Wrist Shot Wide Left
+2026-11-02 21:27:05,401892629,2026-11-02,vgk,bos,in,2:30 - 3rd,3,2:30,2.0,2.0,20.0,18.0,Shot,Noah Hanifin saved by Jeremy Swayman
+2026-11-02 21:27:05,401892630,2026-11-02,det,fla,in,0:43 - 3rd,3,0:43,4.0,3.0,23.0,24.0,Blocked,Sam Bennett shot blocked by Ben Chiarot
+2026-11-02 21:27:05,401892631,2026-11-02,col,chi,in,12:31 - 2nd,2,12:31,2.0,2.0,4.0,18.0,Stoppage,Off-side
+2026-11-02 21:27:05,401892632,2026-11-02,cgy,sj,in,9:49 - 1st,1,9:49,0.0,0.0,4.0,7.0,Tripping,Adam Klapka Tripping against Filip Bystedt
