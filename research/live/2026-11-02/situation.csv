@@ -206,3 +206,20 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 21:10:05,401892629,2026-11-02,vgk,bos,in,14:27 - 3rd,3,14:27,1.0,2.0,12.0,17.0,Shot,William Karlsson Snap Shot saved by Jeremy Swayman
 2026-11-02 21:10:05,401892630,2026-11-02,det,fla,in,10:29 - 3rd,3,10:29,4.0,2.0,21.0,22.0,Stoppage,High Stick
 2026-11-02 21:10:05,401892631,2026-11-02,col,chi,in,20:00 - 2nd,2,20:00,2.0,2.0,2.0,12.0,Period End,End of 1st Period
+2026-11-02 21:11:05,401892629,2026-11-02,vgk,bos,in,13:59 - 3rd,3,13:59,1.0,2.0,12.0,17.0,Face Off,Jack Eichel faceoff won against Elias Lindholm
+2026-11-02 21:12:05,401892629,2026-11-02,vgk,bos,in,12:55 - 3rd,3,12:55,1.0,2.0,12.0,17.0,Blocked,Mason Lohrei shot blocked by Jeremy Lauzon
+2026-11-02 21:12:05,401892630,2026-11-02,det,fla,in,10:17 - 3rd,3,10:17,4.0,2.0,21.0,22.0,Stoppage,Puck in Netting
+2026-11-02 21:12:05,401892631,2026-11-02,col,chi,in,19:48 - 2nd,2,19:48,2.0,2.0,2.0,12.0,Period Start,Start of 2nd Period
+2026-11-02 21:12:05,401892632,2026-11-02,cgy,sj,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-02 21:13:05,401892629,2026-11-02,vgk,bos,in,12:37 - 3rd,3,12:37,2.0,2.0,13.0,18.0,Goal,"Trevor Connelly Goal (5), assists: Noah Hanifin (4), Mitch Marner (15)"
+2026-11-02 21:13:05,401892630,2026-11-02,det,fla,in,9:36 - 3rd,3,9:36,4.0,2.0,21.0,22.0,Missed,Missed Shot
+2026-11-02 21:13:05,401892631,2026-11-02,col,chi,in,19:16 - 2nd,2,19:16,2.0,2.0,2.0,12.0,Face Off,Frank Nazar faceoff won against Brock Nelson
+2026-11-02 21:13:05,401892632,2026-11-02,cgy,sj,in,19:16 - 1st,1,19:16,0.0,0.0,,,Shot,Jacob Middleton Wrist Shot saved by Yaroslav Askarov
+2026-11-02 21:14:05,401892629,2026-11-02,vgk,bos,in,11:48 - 3rd,3,11:48,2.0,2.0,13.0,17.0,Face Off,Pavel Zacha faceoff won against William Karlsson
+2026-11-02 21:14:05,401892630,2026-11-02,det,fla,in,9:03 - 3rd,3,9:03,4.0,2.0,22.0,22.0,Blocked,Justin Faulk shot blocked by Carter Verhaeghe
+2026-11-02 21:14:05,401892631,2026-11-02,col,chi,in,18:14 - 2nd,2,18:14,2.0,2.0,2.0,12.0,Face Off,Frank Nazar faceoff won against Brock Nelson
+2026-11-02 21:14:05,401892632,2026-11-02,cgy,sj,in,18:35 - 1st,1,18:35,0.0,0.0,1.0,4.0,Missed,Kevin Bahl Tip-In Wide Right
+2026-11-02 21:15:06,401892629,2026-11-02,vgk,bos,in,10:59 - 3rd,3,10:59,2.0,2.0,13.0,17.0,Blocked,Jack Eichel shot blocked by Tanner Jeannot
+2026-11-02 21:15:06,401892630,2026-11-02,det,fla,in,8:09 - 3rd,3,8:09,4.0,2.0,23.0,23.0,Shot,Viktor Arvidsson saved by Jacob Markstrom
+2026-11-02 21:15:06,401892631,2026-11-02,col,chi,in,17:48 - 2nd,2,17:48,2.0,2.0,2.0,12.0,Face Off,Connor Bedard faceoff won against Nazem Kadri
+2026-11-02 21:15:06,401892632,2026-11-02,cgy,sj,in,17:35 - 1st,1,17:35,0.0,0.0,1.0,4.0,Shot,Yan Kuznetsov Wrist Shot saved by Yaroslav Askarov
