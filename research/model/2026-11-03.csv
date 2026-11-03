@@ -125,3 +125,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-03 13:29,goals,401892636,2026-11-03,edm,nj,0.4769,3.039,3.141,6.34,Tristan Jarry (confirmed),Connor Hellebuyck (confirmed),EDM: Howard? | NJ: Dillon
 2026-11-03 13:29,xg,401892643,2026-11-03,ana,van,0.3941,3.105,3.66,6.92,Lukas Dostal (expected),Kevin Lankinen (confirmed),"ANA: Greer, Hinds | VAN: Bains, Chytil, Mancini"
 2026-11-03 13:29,goals,401892643,2026-11-03,ana,van,0.4349,3.256,3.654,7.06,Lukas Dostal (expected),Kevin Lankinen (confirmed),"ANA: Greer, Hinds | VAN: Bains, Chytil, Mancini"
+2026-11-03 14:15,xg,401892634,2026-11-03,wpg,mtl,0.6033,3.422,2.694,6.27,Stuart Skinner (expected),Jacob Fowler (confirmed),"WPG: Koepke | MTL: Dach, Matheson"
+2026-11-03 14:15,goals,401892634,2026-11-03,wpg,mtl,0.5989,3.196,2.52,5.88,Stuart Skinner (expected),Jacob Fowler (confirmed),"WPG: Koepke | MTL: Dach, Matheson"
