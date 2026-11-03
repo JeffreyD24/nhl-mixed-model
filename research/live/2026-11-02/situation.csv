@@ -375,3 +375,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 22:32:05,401892631,2026-11-02,col,chi,in,10:40 - 3rd,3,10:40,4.0,2.0,18.0,23.0,Face Off,Ryan Greene faceoff won against Nicolas Roy
 2026-11-02 22:33:05,401892631,2026-11-02,col,chi,in,9:32 - 3rd,3,9:32,4.0,2.0,19.0,23.0,Blocked,Connor Bedard shot blocked by Artturi Lehkonen
 2026-11-02 22:33:05,401892632,2026-11-02,cgy,sj,in,7:46 - 2nd,2,7:46,1.0,0.0,12.0,16.0,Face Off,Zack Ostapchuk faceoff won against Matt Coronato
+2026-11-02 22:34:05,401892631,2026-11-02,col,chi,in,8:29 - 3rd,3,8:29,4.0,2.0,19.0,23.0,Blocked,Connor Bedard shot blocked by Artturi Lehkonen
+2026-11-02 22:34:05,401892632,2026-11-02,cgy,sj,in,7:26 - 2nd,2,7:26,1.0,0.0,12.0,16.0,Stoppage,Puck in Netting
+2026-11-02 22:35:05,401892631,2026-11-02,col,chi,in,8:22 - 3rd,3,8:22,4.0,2.0,19.0,23.0,Stoppage,TV Timeout
+2026-11-02 22:35:05,401892632,2026-11-02,cgy,sj,in,7:01 - 2nd,2,7:01,1.0,0.0,12.0,16.0,Tripping,Barclay Goodrow Tripping against Matt Coronato
+2026-11-02 22:36:05,401892632,2026-11-02,cgy,sj,in,6:16 - 2nd,2,6:16,1.0,0.0,12.0,16.0,Missed,Aydar Suniev Slap Shot Wide Left
+2026-11-02 22:37:05,401892632,2026-11-02,cgy,sj,in,5:14 - 2nd,2,5:14,1.0,0.0,13.0,16.0,Shot,Zack Ostapchuk Wrist Shot saved by Dustin Wolf
+2026-11-02 22:38:06,401892631,2026-11-02,col,chi,in,7:44 - 3rd,3,7:44,4.0,2.0,19.0,23.0,Face Off,Frank Nazar faceoff won against Fedor Svechkov
+2026-11-02 22:38:06,401892632,2026-11-02,cgy,sj,in,4:12 - 2nd,2,4:12,1.0,0.0,13.0,16.0,Blocked,Mikael Backlund shot blocked by Dmitry Orlov
+2026-11-02 22:39:05,401892631,2026-11-02,col,chi,in,6:40 - 3rd,3,6:40,4.0,2.0,19.0,23.0,Stoppage,Off-side
+2026-11-02 22:39:05,401892632,2026-11-02,cgy,sj,in,3:22 - 2nd,2,3:22,1.0,0.0,13.0,16.0,Blocked,Mikael Backlund shot blocked by Dmitry Orlov
