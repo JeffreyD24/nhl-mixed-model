@@ -124,3 +124,16 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 20:23:06,401892629,2026-11-02,vgk,bos,in,9:37 - 2nd,2,9:37,0.0,2.0,10.0,10.0,Stoppage,Goalie Stopped
 2026-11-02 20:23:06,401892630,2026-11-02,det,fla,in,6:32 - 2nd,2,6:32,2.0,1.0,18.0,11.0,Face Off,J.T. Compher faceoff won against Sam Reinhart
 2026-11-02 20:23:06,401892631,2026-11-02,col,chi,in,10:53 - 1st,1,10:53,0.0,2.0,1.0,4.0,Stoppage,TV Timeout
+2026-11-02 20:24:05,401892630,2026-11-02,det,fla,in,6:16 - 2nd,2,6:16,2.0,1.0,18.0,11.0,Blocked,Lucas Raymond shot blocked by Viktor Arvidsson
+2026-11-02 20:25:05,401892629,2026-11-02,vgk,bos,in,9:33 - 2nd,2,9:33,0.0,2.0,10.0,10.0,Face Off,Morgan Geekie faceoff won against William Karlsson
+2026-11-02 20:25:05,401892630,2026-11-02,det,fla,in,5:29 - 2nd,2,5:29,2.0,1.0,18.0,14.0,Stoppage,Goalie Stopped
+2026-11-02 20:26:06,401892629,2026-11-02,vgk,bos,in,8:40 - 2nd,2,8:40,0.0,2.0,10.0,10.0,Face Off,Morgan Geekie faceoff won against William Karlsson
+2026-11-02 20:26:06,401892630,2026-11-02,det,fla,in,5:17 - 2nd,2,5:17,2.0,1.0,18.0,14.0,Face Off,Anton Lundell faceoff won against J.T. Compher
+2026-11-02 20:26:06,401892631,2026-11-02,col,chi,in,10:34 - 1st,1,10:34,0.0,2.0,1.0,5.0,Shot,Nazem Kadri Wrist Shot saved by Spencer Knight
+2026-11-02 20:27:05,401892629,2026-11-02,vgk,bos,in,8:03 - 2nd,2,8:03,0.0,2.0,10.0,11.0,Stoppage,Goalie Stopped
+2026-11-02 20:27:05,401892630,2026-11-02,det,fla,in,4:41 - 2nd,2,4:41,2.0,1.0,18.0,15.0,Shot,Alex DeBrincat saved by Jacob Markstrom
+2026-11-02 20:27:05,401892631,2026-11-02,col,chi,in,9:51 - 1st,1,9:51,0.0,2.0,1.0,6.0,Missed,Wyatt Kaiser Wrist Shot Wide Right
+2026-11-02 20:28:06,401892630,2026-11-02,det,fla,in,4:24 - 2nd,2,4:24,2.0,2.0,19.0,16.0,Face Off,Sam Bennett faceoff won against Sheldon Dries
+2026-11-02 20:28:06,401892631,2026-11-02,col,chi,in,9:19 - 1st,1,9:19,0.0,2.0,1.0,6.0,Missed,Wyatt Kaiser Wrist Shot Wide Right
+2026-11-02 20:29:05,401892630,2026-11-02,det,fla,in,3:43 - 2nd,2,3:43,2.0,2.0,20.0,16.0,Face Off,Sam Bennett faceoff won against Sheldon Dries
+2026-11-02 20:29:05,401892631,2026-11-02,col,chi,in,9:19 - 1st,1,9:19,0.0,2.0,1.0,6.0,High-sticking,Brock Nelson High-sticking
