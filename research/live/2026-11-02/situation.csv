@@ -354,3 +354,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 22:20:05,401892632,2026-11-02,cgy,sj,in,13:20 - 2nd,2,13:20,1.0,0.0,10.0,15.0,Shot,Jacob Trouba Wrist Shot saved by Dustin Wolf
 2026-11-02 22:21:05,401892631,2026-11-02,col,chi,in,16:28 - 3rd,3,16:28,4.0,2.0,13.0,22.0,Face Off,Fedor Svechkov faceoff won against Ryan Greene
 2026-11-02 22:21:05,401892632,2026-11-02,cgy,sj,in,12:53 - 2nd,2,12:53,1.0,0.0,11.0,15.0,Face Off,Mikael Backlund faceoff won against Macklin Celebrini
+2026-11-02 22:22:05,401892631,2026-11-02,col,chi,in,15:36 - 3rd,3,15:36,4.0,2.0,13.0,22.0,Takeaway,Takeaway by Parker Kelly
+2026-11-02 22:22:05,401892632,2026-11-02,cgy,sj,in,12:26 - 2nd,2,12:26,1.0,0.0,11.0,15.0,Face Off,Michael Misa faceoff won against Jonathan Castagna
+2026-11-02 22:23:06,401892631,2026-11-02,col,chi,in,15:04 - 3rd,3,15:04,4.0,2.0,14.0,23.0,Stoppage,Goalie Stopped
+2026-11-02 22:23:06,401892632,2026-11-02,cgy,sj,in,11:49 - 2nd,2,11:49,1.0,0.0,12.0,15.0,Stoppage,Off-side
+2026-11-02 22:24:05,401892631,2026-11-02,col,chi,in,14:25 - 3rd,3,14:25,4.0,2.0,15.0,23.0,Face Off,Nicolas Roy faceoff won against Connor Bedard
+2026-11-02 22:24:05,401892632,2026-11-02,cgy,sj,in,11:20 - 2nd,2,11:20,1.0,0.0,12.0,15.0,Missed,Ivar Stenberg Tip-In Wide Left
+2026-11-02 22:25:05,401892631,2026-11-02,col,chi,in,13:35 - 3rd,3,13:35,4.0,2.0,15.0,22.0,Missed,Nazem Kadri Slap Shot Short
+2026-11-02 22:25:05,401892632,2026-11-02,cgy,sj,in,10:42 - 2nd,2,10:42,1.0,0.0,12.0,15.0,Stoppage,Puck in Netting
+2026-11-02 22:26:05,401892631,2026-11-02,col,chi,in,13:25 - 3rd,3,13:25,4.0,2.0,16.0,22.0,Stoppage,TV Timeout
+2026-11-02 22:26:05,401892632,2026-11-02,cgy,sj,in,10:27 - 2nd,2,10:27,1.0,0.0,12.0,16.0,Stoppage,Goalie Stopped
+2026-11-02 22:27:05,401892632,2026-11-02,cgy,sj,in,10:12 - 2nd,2,10:12,1.0,0.0,12.0,16.0,Penalty Shot Infraction,Adam Klapka Minor
