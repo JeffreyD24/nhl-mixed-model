@@ -125,7 +125,10 @@ def notify(title, body, priority="high", tags="ice_hockey", link=None, dk=None, 
                                                                                 else f"view, Open DraftKings NHL, {dk}") if dk else "",
                                                                                f"view, Log this bet, {link}" if link else "") if a)}
                                              if (link or dk) else {})})
-    urllib.request.urlopen(req, timeout=20)
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        try: mid = json.loads(resp.read()).get("id")
+        except Exception: mid = None
+        print(f"ntfy accepted (HTTP {resp.status}, id {mid}, {len(body.encode('utf-8'))} bytes): {title[:70]}")
     return True
 
 
@@ -299,6 +302,7 @@ def main():
     moved_done = set(zip(MV.game_id, MV.market)); moves_new = []
     info = {}
     NOWC, GINFO = {}, {}   # this check's price and EV for every (game, market, side, model), and game details, for reminders
+    DKC = {}               # (game, market, side) -> DraftKings bet-slip link, so reminders carry the same button as the first alert
 
     for mf in models:
         Mall = load_models(os.path.join(STATE, mf))
@@ -407,6 +411,10 @@ def main():
                     if (name, mk) not in best or ev > best[(name, mk)][4]: best[(name, mk)] = (side, lnum, price, p, ev, oprice)
             GINFO[g["game_id"]] = dict(H=H, Aw=Aw, tip=tip, tip_et=g["tip_et"], goalies=goalies_txt, conf=gh_conf and ga_conf,
                                       ph_open=ph_open, pin=PIN.get((g["home"], g["away"])))
+            for _mk, _sides in (("moneyline", ("home", "away")), ("puck line", ("home", "away")), ("total", ("over", "under"))):
+                for _sd in _sides:
+                    _col = {"moneyline": f"dk_link_{_sd}_ml", "puck line": f"dk_link_{_sd}_pl", "total": f"dk_link_{_sd}"}[_mk]
+                    DKC[(g["game_id"], _mk, _sd)] = ln.get(_col) if isinstance(ln.get(_col), str) else DK_NHL
             # ---- alerts: one per side; both models in one alert when they agree
             def second_chance(name, bt, mk):
                 """moneyline only: no value at the opener, 6%+ now, Pinnacle posted in the last hour and agrees or matches"""
@@ -638,7 +646,10 @@ def main():
                 except Exception: floor_txt = f"Bet only at {fmt_price(price)} or better.\n"
                 body = floor_txt + (f"REMINDER: still a bet and not logged yet (alerted {pd.Timestamp(t_last):%a %-I:%M %p}). EV {ev:+.1%} at {fmt_price(price)}; "
                                     f"[{SHORT.get(m_best, m_best)}] win chance {p:.1%}. Goalies: {gi['goalies']}. If you already bet it, log it to stop these.")
-                notify(f"REMINDER - BET {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body, priority="default", tags="alarm_clock", kind="bet")
+                rlink = log_link(str(r.date), r.away, r.home, mk, team if mk != "total" else r.side,
+                                 "" if mk == "moneyline" else f"{lnum:+g}" if mk == "puck line" else f"{lnum:g}", f"{price:+.0f}")
+                notify(f"REMINDER - BET {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body, priority="default", tags="alarm_clock",
+                       link=rlink, dk=DKC.get((gid, mk, r.side), DK_NHL), kind="bet")
                 A2.loc[rows.index, "last_reminder_at_et"] = str(NOW)[:16]; print("REMINDER:", what); return 1
             if resumed:
                 same_line = mk == "moneyline" or (not pd.isna(lnum) and float(lnum) == float(r.line))
