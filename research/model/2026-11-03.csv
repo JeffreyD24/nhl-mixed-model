@@ -117,3 +117,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-03 12:34,goals,401892634,2026-11-03,wpg,mtl,0.6001,3.2,2.517,5.88,Stuart Skinner (expected),Jacob Fowler (confirmed),"WPG: Koepke, Mercer? | MTL: Dach?, Matheson"
 2026-11-03 12:50,xg,401892637,2026-11-03,stl,nyr,0.4695,2.913,2.986,6.07,Joel Hofer (confirmed),Dylan Garand (confirmed),STL: Parayko? | NYR: Durzi
 2026-11-03 12:50,goals,401892637,2026-11-03,stl,nyr,0.4626,2.9,3.093,6.16,Joel Hofer (confirmed),Dylan Garand (confirmed),STL: Parayko? | NYR: Durzi
+2026-11-03 12:54,xg,401892637,2026-11-03,stl,nyr,0.4694,2.913,2.987,6.07,Joel Hofer (confirmed),Dylan Garand (confirmed),STL: Parayko | NYR: Durzi
+2026-11-03 12:54,goals,401892637,2026-11-03,stl,nyr,0.4625,2.9,3.094,6.16,Joel Hofer (confirmed),Dylan Garand (confirmed),STL: Parayko | NYR: Durzi
