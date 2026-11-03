@@ -173,3 +173,8 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 20:44:06,401892631,2026-11-02,col,chi,in,3:16 - 1st,1,3:16,2.0,2.0,3.0,9.0,Stoppage,TV Timeout
 2026-11-02 20:45:05,401892629,2026-11-02,vgk,bos,in,End of 2nd,2,0:00,1.0,2.0,12.0,16.0,Period End,End of 2nd Period
 2026-11-02 20:45:05,401892631,2026-11-02,col,chi,in,3:16 - 1st,1,3:16,2.0,2.0,2.0,9.0,Stoppage,TV Timeout
+2026-11-02 20:48:05,401892631,2026-11-02,col,chi,in,3:10 - 1st,1,3:10,2.0,2.0,2.0,9.0,Face Off,Nazem Kadri faceoff won against Anton Frondell
+2026-11-02 20:49:06,401892631,2026-11-02,col,chi,in,2:45 - 1st,1,2:45,2.0,2.0,2.0,10.0,Blocked,Cale Makar shot blocked by Ryan Greene
+2026-11-02 20:50:06,401892631,2026-11-02,col,chi,in,2:04 - 1st,1,2:04,2.0,2.0,2.0,11.0,Face Off,Nazem Kadri faceoff won against Frank Nazar
+2026-11-02 20:51:05,401892631,2026-11-02,col,chi,in,1:11 - 1st,1,1:11,2.0,2.0,2.0,11.0,Stoppage,Puck in Netting
+2026-11-02 20:52:05,401892631,2026-11-02,col,chi,in,0:30 - 1st,1,0:30,2.0,2.0,2.0,11.0,Blocked,Blocked Shot
