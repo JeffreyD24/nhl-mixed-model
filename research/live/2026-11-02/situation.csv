@@ -301,3 +301,20 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 21:39:05,401892629,2026-11-02,vgk,bos,in,1:31 - OT,4,1:31,2.0,2.0,24.0,19.0,Missed,Charlie McAvoy Missed Shot Wide Right
 2026-11-02 21:39:05,401892631,2026-11-02,col,chi,in,7:01 - 2nd,2,7:01,2.0,2.0,8.0,20.0,Face Off,Nazem Kadri faceoff won against Connor Bedard
 2026-11-02 21:39:05,401892632,2026-11-02,cgy,sj,in,4:46 - 1st,1,4:46,1.0,0.0,5.0,8.0,Face Off,Morgan Frost faceoff won against Michael Misa
+2026-11-02 21:40:05,401892629,2026-11-02,vgk,bos,in,0:28 - OT,4,0:28,2.0,2.0,25.0,20.0,Shot,Noah Hanifin saved by Jeremy Swayman
+2026-11-02 21:40:05,401892631,2026-11-02,col,chi,in,6:29 - 2nd,2,6:29,2.0,2.0,8.0,20.0,Face Off,Nathan MacKinnon faceoff won against Anton Frondell
+2026-11-02 21:40:05,401892632,2026-11-02,cgy,sj,in,4:46 - 1st,1,4:46,1.0,0.0,5.0,8.0,Stoppage,Off-side
+2026-11-02 21:41:06,401892629,2026-11-02,vgk,bos,in,End of OT,4,0:00,2.0,2.0,25.0,22.0,Period End,End of OT
+2026-11-02 21:41:06,401892631,2026-11-02,col,chi,in,6:22 - 2nd,2,6:22,3.0,2.0,8.0,20.0,Goal,"Nazem Kadri Goal (4) Tip-In, assists: Cale Makar (13), Nathan MacKinnon (16)"
+2026-11-02 21:41:06,401892632,2026-11-02,cgy,sj,in,4:40 - 1st,1,4:40,1.0,0.0,5.0,8.0,Stoppage,Off-side
+2026-11-02 21:42:05,401892629,2026-11-02,vgk,bos,in,In SO,5,0:00,2.0,2.0,25.0,22.0,Period Start,Start of Shootout
+2026-11-02 21:42:05,401892631,2026-11-02,col,chi,in,5:38 - 2nd,2,5:38,3.0,2.0,8.0,20.0,Shot,Oliver Moore saved by Mackenzie Blackwood
+2026-11-02 21:42:05,401892632,2026-11-02,cgy,sj,in,3:48 - 1st,1,3:48,1.0,0.0,5.0,8.0,Face Off,Filip Bystedt faceoff won against Martin Pospisil
+2026-11-02 21:43:06,401892629,2026-11-02,vgk,bos,in,In SO,5,0:00,2.0,2.0,25.0,21.0,Shot,Trevor Connelly saved by Jeremy Swayman
+2026-11-02 21:43:06,401892631,2026-11-02,col,chi,in,5:07 - 2nd,2,5:07,3.0,2.0,10.0,20.0,Stoppage,TV Timeout
+2026-11-02 21:43:06,401892632,2026-11-02,cgy,sj,in,3:22 - 1st,1,3:22,1.0,0.0,5.0,9.0,Stoppage,Goalie Stopped
+2026-11-02 21:44:05,401892629,2026-11-02,vgk,bos,in,In SO,5,0:00,2.0,2.0,25.0,21.0,Shot,Jack Eichel Wrist Shot saved by Jeremy Swayman
+2026-11-02 21:44:05,401892632,2026-11-02,cgy,sj,in,2:22 - 1st,1,2:22,1.0,0.0,5.0,10.0,Missed,Macklin Celebrini Missed Shot Failed Bank Attempt
+2026-11-02 21:45:05,401892629,2026-11-02,vgk,bos,in,In SO,5,0:00,2.0,2.0,25.0,21.0,Period End,End of SO
+2026-11-02 21:45:05,401892631,2026-11-02,col,chi,in,4:56 - 2nd,2,4:56,3.0,2.0,10.0,20.0,Face Off,Nathan MacKinnon faceoff won against Connor Bedard
+2026-11-02 21:45:05,401892632,2026-11-02,cgy,sj,in,2:06 - 1st,1,2:06,1.0,0.0,5.0,10.0,Face Off,Jonathan Castagna faceoff won against Macklin Celebrini
