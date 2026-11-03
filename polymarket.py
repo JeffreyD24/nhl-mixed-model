@@ -46,7 +46,7 @@ MIN_DEPTH = 20               # contracts needed at the price (a stray 1-contract
 BOOK_EVERY_MIN = 30         # save the full order book at least this often per contract (and whenever the best price or size changes)
 BOOK_RANGE = 0.10           # keep price levels within this many dollars of the best price
 BOOK_LEVELS = 15            # and at most this many per side
-HOURS_BEFORE = 100           # (NHL early runs cover games up to 4 days out; see state/early/)            # look at games starting within this many hours
+HOURS_BEFORE = 100           # NHL and NBA early runs cover games up to 4 days out (state/early/); the NFL model files already cover a week (170 h)            # look at games starting within this many hours
 TIMEOUT = 12                 # seconds per request
 WORKERS = 8                  # parallel price requests
 ET = ZoneInfo("America/New_York")
@@ -231,7 +231,7 @@ def load_games():
     files = sorted(f for f in os.listdir(STATE) if re.fullmatch(r"model_\d{4}-\d{2}-\d{2}\.json", f) and f[6:16] >= str(TODAY.date()))
     games = {}
     early = []                      # NHL: models made 2-4 days ahead by early.yml into state/early/, used until the regular model file for that day exists
-    if SPORT == "nhl" and os.path.isdir(os.path.join(STATE, "early")):
+    if SPORT in ("nhl", "nba") and os.path.isdir(os.path.join(STATE, "early")):
         main_days = {f[6:16] for f in files}
         early = [f for f in sorted(os.listdir(os.path.join(STATE, "early")))
                  if re.fullmatch(r"model_\d{4}-\d{2}-\d{2}\.json", f) and f[6:16] >= str(TODAY.date()) and f[6:16] not in main_days]
@@ -260,14 +260,14 @@ def load_games():
                     G["models"][name + tag] = nhl_prob(nm, lh, la, OM["h_ot"], cal)
         else:
             res = residuals()
-            live = latest_rows(day, ["game_id"])
+            live = {} if is_early else latest_rows(day, ["game_id"])
             for g in M["games"]:
                 gid = str(g["game_id"]); r = live.get((gid,))
                 mm = num(r["model_margin"]) if r is not None else num(g.get("morning_margin"))
                 mt = num(r["model_total"]) if r is not None else num(g.get("morning_total"))
                 if math.isnan(mm) and math.isnan(mt): continue
                 G = games.setdefault(gid, dict(game_id=gid, date=day, home=g["home"], away=g["away"], tip_et=pd.Timestamp(g["tip_et"]), models={}))
-                G["models"]["model"] = points_prob(mm, mt, res)
+                G["models"]["model" + tag] = points_prob(mm, mt, res)
     return games
 
 
@@ -577,7 +577,7 @@ def check():
         print("POLYMARKET_OFF is set; skipping the Polymarket check."); return
     games = {gid: g for gid, g in load_games().items() if g["tip_et"] > NOW}
     if not games: print("Polymarket: no upcoming games in the saved model files."); return
-    t1 = min(max(g["tip_et"] for g in games.values()) + pd.Timedelta(hours=6), NOW + pd.Timedelta(hours=HOURS_BEFORE))
+    t1 = min(max(g["tip_et"] for g in games.values()) + pd.Timedelta(hours=6), NOW + pd.Timedelta(hours=170 if SPORT == "nfl" else HOURS_BEFORE))
     events = fetch_events(NOW - pd.Timedelta(hours=1), t1)
     last = load_last(); unmatched_seen = set(last.get("unmatched", [])); unmatched_new = []
     by_pair = {}
