@@ -1,0 +1,11 @@
+goalie rows 35082; games 16350 of 16352 in the hockeyR team-game table
+team-games with goalie rows: 32660 of 32704 (99.87%); exactly one starter: 100.00%
+starter (regular season): median TOI 3600s; played 55+ min 92.3%; out before 40 min 5.0%
+goalie time / game length: mean 0.992; team-games below 0.90: 178 of 30330 (0.6%)
+shots on goal faced vs team-game table (regular season): exact 77.1%, within 1 89.6%, within 3 97.0%, mean signed -0.50 (empty-net shots are not charged to a goalie)
+same, restricted to team-games with goalie_toi_share >= 0.90: exact 77.5%, within 1 90.1%
+goals against equal to table: 80.0% (differences: empty-net and shootout goals)
+goalie_id missing: 0.1% of rows
+shot-count gap explained: the team-game table's shots on goal faced are never lower than ours; the mean gap (0.50 per team-game) matches the empty-net goal rate (0.25 goals per team-game, ~60% of mismatches have a matching goal gap); the 3+ bucket (6% of team-games) is probably shootout attempts (not confirmed)
+spot checks (starts = games started, regular season): Lundqvist 2011-12 62, Quick 2011-12 69, Price 2014-15 66, Rinne 2014-15 64, Vasilevskiy 2018-19 53 (all equal their games played)
+not covered: skater ice time (no free source; the play-by-play only lists who is on the ice at each event), 2023-24 onward (hockeyR file has a new format; the NHL repo's own research/ files cover 2021-22 onward)
