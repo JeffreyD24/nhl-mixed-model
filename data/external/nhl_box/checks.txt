@@ -1,0 +1,5 @@
+goalie rows 30037 (starters 27966), skater rows 503318
+games in hockeyR 2011-12..2022-23: 13983; games with API data: 13983 (100.0%)
+team-games with exactly one starter: 100.00%; with 0 or 2+: 0
+starter source: {'flag': 27966}
+starter share with >= 1800 s on ice (30 min): 96.4%
