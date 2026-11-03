@@ -1,0 +1,87 @@
+{
+ "slug": "aec-nhl-car-nas-2026-11-03",
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/book": {
+  "status": 200,
+  "body": "{\"marketData\":{\"marketSlug\":\"aec-nhl-car-nas-2026-11-03\", \"bids\":[{\"px\":{\"value\":\"0.6300\", \"currency\":\"USD\"}, \"qty\":\"40623.5700\"}, {\"px\":{\"value\":\"0.6200\", \"currency\":\"USD\"}, \"qty\":\"21294.1000\"}, {\"px\":{\"value\":\"0.6100\", \"currency\":\"USD\"}, \"qty\":\"23463.0000\"}, {\"px\":{\"value\":\"0.6000\", \"currency\":\"USD\"}, \"qty\":\"23371.0000\"}, {\"px\":{\"value\":\"0.5900\", \"currency\":\"USD\"}, \"qty\":\"7766.0300\"}, {\"px\":{\"value\":\"0.5700\", \"currency\":\"USD\"}, \"qty\":\"962.9800\"}, {\"px\":{\"value\":\"0.5600\", \"currency\":\"USD\"}, \"qty\":\"20.0000\"}, {\"px\":{\"value\":\"0.1300\", \"currency\":\"USD\"}, \"qty\":\"1347.0000\"}, {\"px\":{\"value\":\"0.1000\", \"currency\":\"USD\"}, \"qty\":\"50.0000\"}, {\"px\":{\"value\":\"0.0600\", \"currency\":\"USD\"}, \"qty\":\"30.0000\"}, {\"px\":{\"value\":\"0.0500\", \"currency\":\"USD\"}, \"qty\":\"200.0000\"}, {\"px\":{\"value\":\"0.0400\", \"currency\":\"USD\"}, \"qty\":\"200.0000\"}, {\"px\":{\"value\":\"0.0300\", \"currency\":\"USD\"}, \"qty\":\"650.0000\"}, {\"px\":{\"value\":\"0.0200\", \"currency\":\"USD\"}, \"qty\":\"19411.0000\"}, {\"px\":{\"value\":\"0.0100\", \"currency\":\"USD\"}, \"qty\":\"48712.0000\"}], \"offers\":[{\"px\":{\"value\":\"0.6400\", \"currency\":\"USD\"}, \"qty\":\"18.1000\"}, {\"px\":{\"value\":\"0.6500\", \"currency\":\"USD\"}, \"qty\":\"24015.2700\"}, {\"px\":{\"value\":\"0.6600\", \"currency\":\"USD\"}, \"qty\":\"42165.4300\"}, {\"px\":{\"value\":\"0.6700\", \"currency\":\"USD\"}, \"qty\":\"30532.0900\"}, {\"px\":{\"value\":\"0.6800\", \"currency\":\"USD\"}, \"qty\":\"20251.1200\"}, {\"px\":{\"value\":\"0.6900\", \"currency\":\"USD\"}, \"qty\":\"474.0000\"}, {\"px\":{\"value\":\"0.7000\", \"currency\":\"USD\"}, \"qty\":\"946.6600\"}, {\"px\":{\"value\":\"0.7900\", \"currency\":\"USD\"}, \"qty\":\"1375.0000\"}, {\"px\":{\"value\":\"0.8000\", \"currency\":\"USD\"}, \"qty\":\"10953.0000\"}, {\"px\":{\"value\":\"0.8100\", \"currency\":\"USD\"}, \"qty\":\"250.0000\"}, {\"px\":{\"value\":\"0.8500\", \"currency\":\"USD\"}, \"qty\":\"30.0000\"}, {\"px\":{\"value\":\"0.8600\", \"currency\":\"USD\"}, \"qty\":\"250.0000\"}, {\"px\":{\"value\":\"0.9000\", \"currency\":\"USD\"}, \"qty\":\"50.0000\"}, {\"px\":{\"value\":\"0.9200\", \"currency\":\"USD\"}, \"qty\":\"30.0000\"}, {\"px\":{\"value\":\"0.9300\", \"currency\":\"USD\"}, \"qty\":\"250.0000\"}, {\"px\":{\"value\":\"0.9500\", \"currency\":\"USD\"}, \"qty\":\"200.0000\"}, {\"px\":{\"value\":\"0.9600\", \"currency\":\"USD\"}, \"qty\":\"200.0000\"}, {\"px\":{\"value\":\"0.9700\", \"currency\":\"USD\"}, \"qty\":\"650.0000\"}, {\"px\":{\"value\":\"0.9800\", \"currency\":\"USD\"}, \"qty\":\"25643.0000\"}, {\"px\":{\"value\":\"0.9900\", \"currency\":\"USD\"}, \"qty\":\"31051.0000\"}], \"state\":\"MARKET_STATE_OPEN\", \"stats\":{\"openPx\":{\"value\":\"0.8500\", \"currency\":\"USD\"}, \"lowPx\":{\"value\":\"0.5700\", \"currency\":\"USD\"}, \"highPx\":{\"value\":\"0.8900\", \"currency\":\"USD\"}, \"lastTradePx\":{\"value\":\"0.6400\", \"currency\":\"USD\"}, \"sharesTraded\":\"795.6100\", \"notionalTraded\":{\"value\":\"509.1311\", \"currency\":\"USD\"}, \"lastTradeQty\":\"1.0000\", \"openInterest\":\"206.2000\", \"openSetTime\":\"2026-10-30T12:32:34.969575843Z\", \"highSetTime\":\"2026-10-30T12:32:34.969575843Z\", \"lowSetTime\":\"2026-10-30T20:31:30.025743971Z\", \"lastTradeSetTime\":\"2026-11-03T00:49:28.531524777Z\", \"openInterestSetTime\":\"2026-11-03T00:49:28.557004048Z\", \"notionalSetTime\":\"2026-11-03T00:49:28.531524777Z\", \"currentPx\":{\"value\":\"0.6350\", \"currency\":\"USD\"}, \"lastPriceSample\":{\"longPx\":{\"value\":\"0.6400\", \"currency\":\"USD\"}, \"shortPx\":{\"value\":\"0.36\", \"currency\":\"USD\"}, \"ts\":\"2026-11-03T01:00:11.930313049Z\"}}, \"transactTime\":\"2026-11-03T01:00:11.930313049Z\"}}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/book?depth=50": {
+  "status": 200,
+  "body": "{\"marketData\":{\"marketSlug\":\"aec-nhl-car-nas-2026-11-03\", \"bids\":[{\"px\":{\"value\":\"0.6300\", \"currency\":\"USD\"}, \"qty\":\"40623.5700\"}, {\"px\":{\"value\":\"0.6200\", \"currency\":\"USD\"}, \"qty\":\"21538.1000\"}, {\"px\":{\"value\":\"0.6100\", \"currency\":\"USD\"}, \"qty\":\"23453.0000\"}, {\"px\":{\"value\":\"0.6000\", \"currency\":\"USD\"}, \"qty\":\"23371.0000\"}, {\"px\":{\"value\":\"0.5900\", \"currency\":\"USD\"}, \"qty\":\"7776.0300\"}, {\"px\":{\"value\":\"0.5700\", \"currency\":\"USD\"}, \"qty\":\"962.9800\"}, {\"px\":{\"value\":\"0.5600\", \"currency\":\"USD\"}, \"qty\":\"20.0000\"}, {\"px\":{\"value\":\"0.1300\", \"currency\":\"USD\"}, \"qty\":\"1347.0000\"}, {\"px\":{\"value\":\"0.1000\", \"currency\":\"USD\"}, \"qty\":\"50.0000\"}, {\"px\":{\"value\":\"0.0600\", \"currency\":\"USD\"}, \"qty\":\"30.0000\"}, {\"px\":{\"value\":\"0.0500\", \"currency\":\"USD\"}, \"qty\":\"200.0000\"}, {\"px\":{\"value\":\"0.0400\", \"currency\":\"USD\"}, \"qty\":\"200.0000\"}, {\"px\":{\"value\":\"0.0300\", \"currency\":\"USD\"}, \"qty\":\"650.0000\"}, {\"px\":{\"value\":\"0.0200\", \"currency\":\"USD\"}, \"qty\":\"19411.0000\"}, {\"px\":{\"value\":\"0.0100\", \"currency\":\"USD\"}, \"qty\":\"48712.0000\"}], \"offers\":[{\"px\":{\"value\":\"0.6400\", \"currency\":\"USD\"}, \"qty\":\"18.1000\"}, {\"px\":{\"value\":\"0.6500\", \"currency\":\"USD\"}, \"qty\":\"24015.2700\"}, {\"px\":{\"value\":\"0.6600\", \"currency\":\"USD\"}, \"qty\":\"42399.4300\"}, {\"px\":{\"value\":\"0.6700\", \"currency\":\"USD\"}, \"qty\":\"30532.0900\"}, {\"px\":{\"value\":\"0.6800\", \"currency\":\"USD\"}, \"qty\":\"20261.1200\"}, {\"px\":{\"value\":\"0.6900\", \"currency\":\"USD\"}, \"qty\":\"474.0000\"}, {\"px\":{\"value\":\"0.7000\", \"currency\":\"USD\"}, \"qty\":\"946.6600\"}, {\"px\":{\"value\":\"0.7900\", \"currency\":\"USD\"}, \"qty\":\"1375.0000\"}, {\"px\":{\"value\":\"0.8000\", \"currency\":\"USD\"}, \"qty\":\"10953.0000\"}, {\"px\":{\"value\":\"0.8100\", \"currency\":\"USD\"}, \"qty\":\"250.0000\"}, {\"px\":{\"value\":\"0.8500\", \"currency\":\"USD\"}, \"qty\":\"30.0000\"}, {\"px\":{\"value\":\"0.8600\", \"currency\":\"USD\"}, \"qty\":\"250.0000\"}, {\"px\":{\"value\":\"0.9000\", \"currency\":\"USD\"}, \"qty\":\"50.0000\"}, {\"px\":{\"value\":\"0.9200\", \"currency\":\"USD\"}, \"qty\":\"30.0000\"}, {\"px\":{\"value\":\"0.9300\", \"currency\":\"USD\"}, \"qty\":\"250.0000\"}, {\"px\":{\"value\":\"0.9500\", \"currency\":\"USD\"}, \"qty\":\"200.0000\"}, {\"px\":{\"value\":\"0.9600\", \"currency\":\"USD\"}, \"qty\":\"200.0000\"}, {\"px\":{\"value\":\"0.9700\", \"currency\":\"USD\"}, \"qty\":\"650.0000\"}, {\"px\":{\"value\":\"0.9800\", \"currency\":\"USD\"}, \"qty\":\"25643.0000\"}, {\"px\":{\"value\":\"0.9900\", \"currency\":\"USD\"}, \"qty\":\"31051.0000\"}], \"state\":\"MARKET_STATE_OPEN\", \"stats\":{\"openPx\":{\"value\":\"0.8500\", \"currency\":\"USD\"}, \"lowPx\":{\"value\":\"0.5700\", \"currency\":\"USD\"}, \"highPx\":{\"value\":\"0.8900\", \"currency\":\"USD\"}, \"lastTradePx\":{\"value\":\"0.6400\", \"currency\":\"USD\"}, \"sharesTraded\":\"795.6100\", \"notionalTraded\":{\"value\":\"509.1311\", \"currency\":\"USD\"}, \"lastTradeQty\":\"1.0000\", \"openInterest\":\"206.2000\", \"openSetTime\":\"2026-10-30T12:32:34.969575843Z\", \"highSetTime\":\"2026-10-30T12:32:34.969575843Z\", \"lowSetTime\":\"2026-10-30T20:31:30.025743971Z\", \"lastTradeSetTime\":\"2026-11-03T00:49:28.531524777Z\", \"openInterestSetTime\":\"2026-11-03T00:49:28.557004048Z\", \"notionalSetTime\":\"2026-11-03T00:49:28.531524777Z\", \"currentPx\":{\"value\":\"0.6350\", \"currency\":\"USD\"}, \"lastPriceSample\":{\"longPx\":{\"value\":\"0.6400\", \"currency\":\"USD\"}, \"shortPx\":{\"value\":\"0.36\", \"currency\":\"USD\"}, \"ts\":\"2026-11-03T01:00:25.584223625Z\"}}, \"transactTime\":\"2026-11-03T01:00:25.584223625Z\"}}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/orderbook": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/orderbook?depth=50": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/order-book": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/order-book?depth=50": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/depth": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/depth?depth=50": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/l2": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/levels": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/trades": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/slug/aec-nhl-car-nas-2026-11-03": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/orderbook/aec-nhl-car-nas-2026-11-03": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/book/aec-nhl-car-nas-2026-11-03": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/markets/aec-nhl-car-nas-2026-11-03/bbo": {
+  "status": 200,
+  "body": "{\"marketData\":{\"marketSlug\":\"aec-nhl-car-nas-2026-11-03\", \"currentPx\":{\"value\":\"0.6350\", \"currency\":\"USD\"}, \"lastTradePx\":{\"value\":\"0.6400\", \"currency\":\"USD\"}, \"settlementPx\":null, \"sharesTraded\":\"795.6100\", \"openInterest\":\"206.2000\", \"bestAsk\":{\"value\":\"0.6400\", \"currency\":\"USD\"}, \"bestBid\":{\"value\":\"0.6300\", \"currency\":\"USD\"}, \"askDepth\":20, \"bidDepth\":15, \"lastPriceSample\":{\"longPx\":{\"value\":\"0.6400\", \"currency\":\"USD\"}, \"shortPx\":{\"value\":\"0.36\", \"currency\":\"USD\"}, \"ts\":\"2026-11-03T01:00:25.584223625Z\"}, \"longQuote\":{\"value\":\"0.6400\", \"currency\":\"USD\"}, \"shortQuote\":{\"value\":\"0.37\", \"currency\":\"USD\"}, \"state\":\"MARKET_STATE_OPEN\", \"bidShares\":\"180000\", \"askShares\":\"180000\"}}"
+ },
+ "/openapi.json": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/v1/openapi.json": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/swagger.json": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/docs": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ },
+ "/": {
+  "status": 404,
+  "body": "{\"code\":5, \"message\":\"The server was unable to process your request.\", \"details\":[]}"
+ }
+}
