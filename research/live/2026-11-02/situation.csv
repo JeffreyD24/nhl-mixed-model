@@ -76,3 +76,19 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 20:05:05,401892630,2026-11-02,det,fla,in,17:14 - 2nd,2,17:14,2.0,1.0,13.0,5.0,Face Off,Sam Reinhart faceoff won against J.T. Compher
 2026-11-02 20:06:05,401892629,2026-11-02,vgk,bos,in,19:20 - 2nd,2,19:20,0.0,1.0,7.0,6.0,Missed,Nikita Zadorov Missed Shot High and Wide Right
 2026-11-02 20:06:05,401892630,2026-11-02,det,fla,in,16:03 - 2nd,2,16:03,2.0,1.0,13.0,6.0,Missed,Justin Faulk Snap Shot Wide Right
+2026-11-02 20:07:05,401892629,2026-11-02,vgk,bos,in,18:16 - 2nd,2,18:16,0.0,1.0,7.0,6.0,Missed,Nikita Zadorov Wrist Shot High and Wide Right
+2026-11-02 20:07:05,401892630,2026-11-02,det,fla,in,15:01 - 2nd,2,15:01,2.0,1.0,14.0,6.0,Shot,Aaron Ekblad saved by Daniil Tarasov
+2026-11-02 20:07:05,401892631,2026-11-02,col,chi,in,20:00 - 1st,1,20:00,0.0,0.0,,,,
+2026-11-02 20:08:06,401892629,2026-11-02,vgk,bos,in,17:28 - 2nd,2,17:28,0.0,1.0,7.0,6.0,Stoppage,Goalie Stopped
+2026-11-02 20:08:06,401892630,2026-11-02,det,fla,in,14:09 - 2nd,2,14:09,2.0,1.0,14.0,7.0,Blocked,Moritz Seider shot blocked by Radko Gudas
+2026-11-02 20:08:06,401892631,2026-11-02,col,chi,in,20:00 - 1st,1,20:00,0.0,0.0,,,,
+2026-11-02 20:09:05,401892629,2026-11-02,vgk,bos,in,17:11 - 2nd,2,17:11,0.0,1.0,7.0,7.0,Missed,Trevor Connelly Missed Shot Above Crossbar
+2026-11-02 20:09:05,401892630,2026-11-02,det,fla,in,13:43 - 2nd,2,13:43,2.0,1.0,14.0,7.0,Tripping,Niko Mikkola Tripping
+2026-11-02 20:09:05,401892631,2026-11-02,col,chi,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-02 20:10:05,401892630,2026-11-02,det,fla,in,13:43 - 2nd,2,13:43,2.0,1.0,14.0,7.0,Tripping,Niko Mikkola Tripping against Sheldon Dries
+2026-11-02 20:10:05,401892631,2026-11-02,col,chi,in,19:21 - 1st,1,19:21,0.0,0.0,,,Missed,Alex Vlasic Wrist Shot High and Wide Right
+2026-11-02 20:11:05,401892630,2026-11-02,det,fla,in,13:33 - 2nd,2,13:33,2.0,1.0,14.0,7.0,Blocked,Viktor Arvidsson shot blocked by Viktor Arvidsson
+2026-11-02 20:11:05,401892631,2026-11-02,col,chi,in,19:03 - 1st,1,19:03,0.0,1.0,0.0,0.0,Goal,"Wyatt Kaiser Goal (2) Wrist Shot, assists: Ryan Donato (3), Connor Bedard (6)"
+2026-11-02 20:12:05,401892629,2026-11-02,vgk,bos,in,17:11 - 2nd,2,17:11,0.0,1.0,7.0,7.0,Game Misconduct,Braeden Bowman Game Misconduct
+2026-11-02 20:12:05,401892630,2026-11-02,det,fla,in,12:38 - 2nd,2,12:38,2.0,1.0,14.0,7.0,Stoppage,Puck in Benches
+2026-11-02 20:12:05,401892631,2026-11-02,col,chi,in,18:28 - 1st,1,18:28,0.0,1.0,0.0,0.0,Missed,Patrick Kane Wrist Shot Failed Bank Attempt
