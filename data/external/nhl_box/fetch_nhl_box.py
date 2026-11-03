@@ -94,5 +94,5 @@ L = [f"goalie rows {len(G)} (starters {len(Gs)}), skater rows {len(S)}",
      f"games in hockeyR 2011-12..2022-23: {allg.nunique()}; games with API data: {G.game_id.nunique()} ({G.game_id.nunique() / allg.nunique():.1%})",
      f"team-games with exactly one starter: {(st == 1).mean():.2%}; with 0 or 2+: {(st != 1).sum()}",
      "starter source: " + str(Gs.starter_source.value_counts().to_dict()),
-     "starter share of team shots against >= 50% of game TOI: %.1f%%" % (100 * (Gs.toi_sec >= 1800).mean())]
+     "starter share with >= 1800 s on ice (30 min): %.1f%%" % (100 * (Gs.toi_sec >= 1800).mean())]
 open("checks.txt", "w").write("\n".join(L) + "\n"); print("\n".join(L))
