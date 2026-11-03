@@ -286,3 +286,18 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 21:32:05,401892632,2026-11-02,cgy,sj,in,7:46 - 1st,1,7:46,0.0,0.0,5.0,7.0,Stoppage,Off-side
 2026-11-02 21:33:05,401892629,2026-11-02,vgk,bos,in,5:00 - OT,4,5:00,2.0,2.0,21.0,19.0,Period End,End of 3rd Period
 2026-11-02 21:33:05,401892631,2026-11-02,col,chi,in,8:53 - 2nd,2,8:53,2.0,2.0,7.0,18.0,Face Off,Frank Nazar faceoff won against Nazem Kadri
+2026-11-02 21:34:05,401892631,2026-11-02,col,chi,in,7:55 - 2nd,2,7:55,2.0,2.0,8.0,20.0,Shot,Artturi Lehkonen Wrist Shot saved by Spencer Knight
+2026-11-02 21:34:05,401892632,2026-11-02,cgy,sj,in,6:52 - 1st,1,6:52,0.0,0.0,5.0,7.0,Missed,Collin Graf Wrist Shot Above Crossbar
+2026-11-02 21:35:05,401892629,2026-11-02,vgk,bos,in,4:19 - OT,4,4:19,2.0,2.0,22.0,19.0,Face Off,Jack Eichel faceoff won against Mark Kastelic
+2026-11-02 21:35:05,401892631,2026-11-02,col,chi,in,7:43 - 2nd,2,7:43,2.0,2.0,8.0,20.0,Stoppage,TV Timeout
+2026-11-02 21:35:05,401892632,2026-11-02,cgy,sj,in,5:51 - 1st,1,5:51,0.0,0.0,5.0,7.0,Missed,Ryan Strome Wrist Shot Wide Left
+2026-11-02 21:36:06,401892629,2026-11-02,vgk,bos,in,3:16 - OT,4,3:16,2.0,2.0,22.0,19.0,Missed,Mason Lohrei Wrist Shot Wide Left
+2026-11-02 21:36:06,401892632,2026-11-02,cgy,sj,in,5:24 - 1st,1,5:24,0.0,0.0,5.0,7.0,Blocked,Will Smith shot blocked by Matt Coronato
+2026-11-02 21:37:05,401892629,2026-11-02,vgk,bos,in,2:55 - OT,4,2:55,2.0,2.0,24.0,19.0,Stoppage,Goalie Stopped
+2026-11-02 21:37:05,401892632,2026-11-02,cgy,sj,in,5:19 - 1st,1,5:19,1.0,0.0,5.0,7.0,Face Off,Michael Misa faceoff won against Jonathan Castagna
+2026-11-02 21:38:05,401892629,2026-11-02,vgk,bos,in,2:12 - OT,4,2:12,2.0,2.0,24.0,19.0,Face Off,Jack Eichel faceoff won against Pavel Zacha
+2026-11-02 21:38:05,401892631,2026-11-02,col,chi,in,7:18 - 2nd,2,7:18,2.0,2.0,8.0,20.0,Stoppage,Off-side
+2026-11-02 21:38:05,401892632,2026-11-02,cgy,sj,in,5:05 - 1st,1,5:05,1.0,0.0,5.0,8.0,Stoppage,Icing
+2026-11-02 21:39:05,401892629,2026-11-02,vgk,bos,in,1:31 - OT,4,1:31,2.0,2.0,24.0,19.0,Missed,Charlie McAvoy Missed Shot Wide Right
+2026-11-02 21:39:05,401892631,2026-11-02,col,chi,in,7:01 - 2nd,2,7:01,2.0,2.0,8.0,20.0,Face Off,Nazem Kadri faceoff won against Connor Bedard
+2026-11-02 21:39:05,401892632,2026-11-02,cgy,sj,in,4:46 - 1st,1,4:46,1.0,0.0,5.0,8.0,Face Off,Morgan Frost faceoff won against Michael Misa
