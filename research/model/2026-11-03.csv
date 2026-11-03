@@ -89,3 +89,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-03 11:26,goals,401892639,2026-11-03,vgk,pit,0.5626,3.34,2.877,6.38,Adin Hill (expected),Arturs Silovs (confirmed),"VGK: Lavoie | PIT: Malkin?, Korczak?, Solovyov"
 2026-11-03 11:26,xg,401892636,2026-11-03,edm,nj,0.5589,3.298,2.838,6.3,Tristan Jarry (expected),Connor Hellebuyck (confirmed),"EDM: Howard? | NJ: Mantha?, Rodrigues?, Dillon"
 2026-11-03 11:26,goals,401892636,2026-11-03,edm,nj,0.4739,3.019,3.141,6.32,Tristan Jarry (expected),Connor Hellebuyck (confirmed),"EDM: Howard? | NJ: Mantha?, Rodrigues?, Dillon"
+2026-11-03 11:30,xg,401892641,2026-11-03,col,cbj,0.4768,2.976,3.158,6.3,Scott Wedgewood (confirmed),Cam Talbot (confirmed),"COL: Manson | CBJ: Belluz, Voronkov"
+2026-11-03 11:30,goals,401892641,2026-11-03,col,cbj,0.4612,2.953,3.157,6.28,Scott Wedgewood (confirmed),Cam Talbot (confirmed),"COL: Manson | CBJ: Belluz, Voronkov"
