@@ -1803,3 +1803,17 @@ seen_at_et,espn_event_id,date,away,home,period,clock,away_score,home_score,book,
 2026-11-02 19:53:05,401892630,2026-11-02,det,fla,event,0:00,1.0,1.0,Caesars,total,under,6.5,-130,True,normal
 2026-11-02 19:53:05,401892629,2026-11-02,vgk,bos,event,0:00,0.0,1.0,Caesars,moneyline,home,0.0,-218,True,normal
 2026-11-02 19:53:05,401892629,2026-11-02,vgk,bos,event,0:00,0.0,1.0,Caesars,moneyline,away,0.0,171,True,normal
+2026-11-02 19:58:05,401892630,2026-11-02,det,fla,event,0:00,1.0,1.0,BetRivers,team_total,home_over,3.5,-105,True,normal
+2026-11-02 19:58:05,401892630,2026-11-02,det,fla,event,0:00,1.0,1.0,BetRivers,team_total,away_under,2.5,-103,True,normal
+2026-11-02 19:58:05,401892630,2026-11-02,det,fla,event,0:00,1.0,1.0,BetRivers,total,under,6.5,-136,True,normal
+2026-11-02 19:58:05,401892630,2026-11-02,det,fla,event,0:00,1.0,1.0,BetRivers,total,over,6.5,105,True,normal
+2026-11-02 19:58:05,401892629,2026-11-02,vgk,bos,event,0:00,0.0,1.0,BetRivers,team_total,home_under,3.5,-177,True,normal
+2026-11-02 19:58:05,401892629,2026-11-02,vgk,bos,event,0:00,0.0,1.0,BetRivers,team_total,away_under,2.5,-190,True,normal
+2026-11-02 19:58:05,401892630,2026-11-02,det,fla,secondperiod,0:00,1.0,1.0,BetRivers,team_total,away_over,0.5,-175,True,normal
+2026-11-02 19:58:05,401892630,2026-11-02,det,fla,secondperiod,0:00,1.0,1.0,BetRivers,team_total,home_under,0.5,165,True,normal
+2026-11-02 19:58:05,401892630,2026-11-02,det,fla,secondperiod,0:00,1.0,1.0,BetRivers,team_total,home_over,0.5,-286,True,normal
+2026-11-02 19:58:05,401892630,2026-11-02,det,fla,secondperiod,0:00,1.0,1.0,BetRivers,moneyline,home,0.0,-205,True,normal
+2026-11-02 19:58:05,401892630,2026-11-02,det,fla,secondperiod,0:00,1.0,1.0,BetRivers,total,under,1.5,116,True,normal
+2026-11-02 19:58:05,401892629,2026-11-02,vgk,bos,secondperiod,0:00,0.0,1.0,BetRivers,team_total,away_under,0.5,150,True,normal
+2026-11-02 19:58:05,401892629,2026-11-02,vgk,bos,thirdperiod,0:00,0.0,1.0,BetRivers,team_total,away_over,0.5,-240,True,normal
+2026-11-02 19:58:05,401892629,2026-11-02,vgk,bos,thirdperiod,0:00,0.0,1.0,BetRivers,total,under,1.5,138,True,normal
