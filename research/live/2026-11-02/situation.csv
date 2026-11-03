@@ -152,3 +152,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 20:35:05,401892629,2026-11-02,vgk,bos,in,5:23 - 2nd,2,5:23,0.0,2.0,11.0,12.0,Stoppage,Goalie Stopped
 2026-11-02 20:35:05,401892630,2026-11-02,det,fla,in,1:10 - 2nd,2,1:10,2.0,2.0,20.0,17.0,Face Off,Sheldon Dries faceoff won against Cole Schwindt
 2026-11-02 20:35:05,401892631,2026-11-02,col,chi,in,6:38 - 1st,1,6:38,1.0,2.0,3.0,8.0,Goal,"Martin Necas Goal (8) Tip-In, assists: Devon Toews (10), Nathan MacKinnon (16)"
+2026-11-02 20:36:05,401892629,2026-11-02,vgk,bos,in,5:18 - 2nd,2,5:18,0.0,2.0,11.0,12.0,Missed,Missed Shot
+2026-11-02 20:36:05,401892630,2026-11-02,det,fla,in,0:30 - 2nd,2,0:30,2.0,2.0,20.0,17.0,Face Off,Sam Bennett faceoff won against Emmitt Finnie
+2026-11-02 20:36:05,401892631,2026-11-02,col,chi,in,6:38 - 1st,1,6:38,1.0,2.0,3.0,8.0,Stoppage,Challenge Hm - goal interference
+2026-11-02 20:37:05,401892629,2026-11-02,vgk,bos,in,5:10 - 2nd,2,5:10,0.0,2.0,12.0,12.0,Penalty Shot Infraction,Charlie McAvoy Minor
+2026-11-02 20:37:05,401892630,2026-11-02,det,fla,in,End of 2nd,2,0:00,2.0,2.0,20.0,18.0,Period End,End of 2nd Period
+2026-11-02 20:38:05,401892629,2026-11-02,vgk,bos,in,5:02 - 2nd,2,5:02,1.0,2.0,12.0,13.0,Goal,"Mark Stone Goal (10), assists: Tomas Hertl (4), Mitch Marner (14)"
+2026-11-02 20:38:05,401892631,2026-11-02,col,chi,in,6:04 - 1st,1,6:04,0.0,2.0,3.0,8.0,Face Off,Nathan MacKinnon faceoff won against Anton Frondell
+2026-11-02 20:39:05,401892629,2026-11-02,vgk,bos,in,4:28 - 2nd,2,4:28,1.0,2.0,12.0,13.0,Blocked,Mitch Marner shot blocked by Marat Khusnutdinov
+2026-11-02 20:39:05,401892631,2026-11-02,col,chi,in,5:12 - 1st,1,5:12,0.0,2.0,3.0,8.0,Giveaway,Giveaway by Anton Frondell
+2026-11-02 20:40:05,401892629,2026-11-02,vgk,bos,in,3:27 - 2nd,2,3:27,1.0,2.0,12.0,13.0,Blocked,Mitch Marner shot blocked by Fraser Minten
+2026-11-02 20:40:05,401892631,2026-11-02,col,chi,in,4:37 - 1st,1,4:37,1.0,2.0,3.0,8.0,Goal,"Gabriel Landeskog Goal (6) Wrist Shot, assists: none"
