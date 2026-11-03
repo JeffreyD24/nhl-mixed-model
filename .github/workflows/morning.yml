@@ -39,6 +39,8 @@ jobs:
         run: python nhl_extra.py . || echo "NHL extra data failed; it will be retried tomorrow."
       - name: Edge statistics (bootstrap ranges, calibration, Pinnacle CLV, books and limits)
         run: python edge_stats.py . || echo "Edge statistics not updated; they will run again tomorrow."
+      - name: Check thresholds against the register (config/thresholds.csv)
+        run: python tools/check_thresholds.py . || true
       - name: Save results
         run: |
           git config user.name "nhl-tracker-bot"

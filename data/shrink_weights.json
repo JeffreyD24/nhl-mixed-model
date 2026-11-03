@@ -1,0 +1,18 @@
+{
+ "moneyline": {
+  "weight": 0.294,
+  "weight_se": 0.086,
+  "rule": "bet when shrunk win chance x decimal odds > 1"
+ },
+ "overs": {
+  "weight": 0.399,
+  "weight_se": 0.09,
+  "rule": "bet when shrunk win chance x decimal odds > 1"
+ },
+ "fit": {
+  "seasons": "2014-15..2021-22 (SBR openers, out of sample)",
+  "model": "team-only shot model fed hockeyR xG, no goalies",
+  "set_on": "2026-11-03",
+  "note": "the live model has goalies, so its true weight is likely higher; re-fit on live 2026-27 picks after the season"
+ }
+}

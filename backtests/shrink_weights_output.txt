@@ -1,0 +1,13 @@
+
+== MONEYLINE: weight on the model vs the opener, 2015-2022 pooled: 0.29 (+/- 0.09)
+   by season: 2015: +0.35 | 2016: +0.45 | 2017: +0.06 | 2018: +0.13 | 2019: +0.19 | 2020: +0.41 | 2021: -0.02 | 2022: +0.55
+   out of season, bet when shrunk chance beats the price: 2821 bets, +70.8u (+2.5%)
+   live rule on the same games (55/45 blend, EV 4%+): 2430 bets, +61.9u (+2.5%)
+
+== OVERS: weight on the model vs the opener, 2015-2022 pooled: 0.40 (+/- 0.09)
+   by season: 2015: +0.51 | 2016: +0.35 | 2017: +0.91 | 2018: +0.04 | 2019: +0.36 | 2020: +0.50 | 2021: +0.47 | 2022: +0.30
+   out of season, bet when shrunk chance beats the price: 473 bets, +58.6u (+12.4%)
+   live rule on the same games (model only, EV 6%+): 532 bets, +61.1u (+11.5%)
+
+This season's live shot-model picks (with goalies), moneyline weight vs DraftKings' opener: 0.30 (+/- 0.60), n=235
+   (live 55/45 blend = weight 0.55 in probability terms; fitted 0.51-0.61 on 2021-26 in backtests/IDEA_TESTS.md)
