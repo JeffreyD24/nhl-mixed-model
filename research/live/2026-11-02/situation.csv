@@ -420,3 +420,8 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 23:19:06,401892632,2026-11-02,cgy,sj,in,11:29 - 3rd,3,11:29,1.0,0.0,21.0,18.0,Face Off,Adam Gaudette faceoff won against Martin Pospisil
 2026-11-02 23:20:06,401892632,2026-11-02,cgy,sj,in,11:00 - 3rd,3,11:00,1.0,0.0,21.0,18.0,Face Off,Adam Klapka faceoff won against Michael Misa
 2026-11-02 23:21:05,401892632,2026-11-02,cgy,sj,in,10:46 - 3rd,3,10:46,1.0,0.0,21.0,18.0,Goal,"William Stromgren Goal (1) Wrist Shot, assists: Adam Klapka (3), Jonathan Castagna (3)"
+2026-11-02 23:22:05,401892632,2026-11-02,cgy,sj,in,9:50 - 3rd,3,9:50,2.0,0.0,21.0,18.0,Blocked,Jacob Trouba shot blocked by Aydar Suniev
+2026-11-02 23:23:05,401892632,2026-11-02,cgy,sj,in,9:43 - 3rd,3,9:43,2.0,0.0,21.0,18.0,Stoppage,Puck in Benches
+2026-11-02 23:25:05,401892632,2026-11-02,cgy,sj,in,9:36 - 3rd,3,9:36,2.0,0.0,21.0,18.0,Stoppage,Off-side
+2026-11-02 23:26:05,401892632,2026-11-02,cgy,sj,in,8:38 - 3rd,3,8:38,2.0,0.0,21.0,18.0,Blocked,Zach Whitecloud shot blocked by Tyler Toffoli
+2026-11-02 23:27:05,401892632,2026-11-02,cgy,sj,in,8:03 - 3rd,3,8:03,2.0,1.0,23.0,18.0,Goal,"Sam Dickinson Goal (1) Wrist Shot, assists: Michael Misa (5), Jacob Trouba (8)"
