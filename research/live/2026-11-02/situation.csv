@@ -318,3 +318,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 21:45:05,401892629,2026-11-02,vgk,bos,in,In SO,5,0:00,2.0,2.0,25.0,21.0,Period End,End of SO
 2026-11-02 21:45:05,401892631,2026-11-02,col,chi,in,4:56 - 2nd,2,4:56,3.0,2.0,10.0,20.0,Face Off,Nathan MacKinnon faceoff won against Connor Bedard
 2026-11-02 21:45:05,401892632,2026-11-02,cgy,sj,in,2:06 - 1st,1,2:06,1.0,0.0,5.0,10.0,Face Off,Jonathan Castagna faceoff won against Macklin Celebrini
+2026-11-02 21:46:05,401892631,2026-11-02,col,chi,in,4:32 - 2nd,2,4:32,3.0,2.0,10.0,20.0,Stoppage,High Stick
+2026-11-02 21:46:05,401892632,2026-11-02,cgy,sj,in,1:38 - 1st,1,1:38,1.0,0.0,5.0,10.0,Stoppage,Goalie Stopped
+2026-11-02 21:47:05,401892631,2026-11-02,col,chi,in,3:43 - 2nd,2,3:43,3.0,2.0,10.0,21.0,Stoppage,Puck in Benches
+2026-11-02 21:47:05,401892632,2026-11-02,cgy,sj,in,1:21 - 1st,1,1:21,1.0,0.0,5.0,11.0,Face Off,Ivar Stenberg faceoff won against Morgan Frost
+2026-11-02 21:48:05,401892631,2026-11-02,col,chi,in,3:23 - 2nd,2,3:23,3.0,2.0,10.0,21.0,Face Off,Frank Nazar faceoff won against Nazem Kadri
+2026-11-02 21:48:05,401892632,2026-11-02,cgy,sj,in,0:45 - 1st,1,0:45,1.0,0.0,5.0,11.0,Missed,Michael Kesselring Wrist Shot Wide Left
+2026-11-02 21:49:06,401892631,2026-11-02,col,chi,in,3:01 - 2nd,2,3:01,3.0,2.0,11.0,21.0,Cross checking,Noah Juulsen Cross-checking against Connor Bedard
+2026-11-02 21:49:06,401892632,2026-11-02,cgy,sj,in,0:37 - 1st,1,0:37,1.0,0.0,6.0,11.0,Shot,Michael Kesselring Wrist Shot saved by Dustin Wolf
+2026-11-02 21:50:05,401892631,2026-11-02,col,chi,in,2:25 - 2nd,2,2:25,3.0,2.0,11.0,21.0,Shot,Frank Nazar Wrist Shot saved by Mackenzie Blackwood
+2026-11-02 21:50:05,401892632,2026-11-02,cgy,sj,in,End of 1st,1,0:00,1.0,0.0,6.0,11.0,Period End,End of 1st Period
+2026-11-02 21:51:05,401892631,2026-11-02,col,chi,in,2:14 - 2nd,2,2:14,3.0,2.0,12.0,21.0,Stoppage,Timeout - Home
