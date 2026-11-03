@@ -9,3 +9,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-03 10:04,goals,401892647,2026-11-04,cgy,sea,0.5803,3.37,2.797,6.33,Dustin Wolf (expected),Philipp Grubauer (expected),CGY: - | SEA: -
 2026-11-03 13:00,xg,401892644,2026-11-04,ott,buf,0.5082,3.286,3.129,6.58,Samuel Ersson (expected),Ukko-Pekka Luukkonen (expected),OTT: Burakovsky | BUF: Helenius
 2026-11-03 13:00,goals,401892644,2026-11-04,ott,buf,0.5198,3.348,3.163,6.67,Samuel Ersson (expected),Ukko-Pekka Luukkonen (expected),OTT: Burakovsky | BUF: Helenius
+2026-11-03 13:27,xg,401892644,2026-11-04,ott,buf,0.5091,3.286,3.123,6.57,Samuel Ersson (expected),Colten Ellis (expected),OTT: Burakovsky | BUF: Helenius
+2026-11-03 13:27,goals,401892644,2026-11-04,ott,buf,0.5237,3.348,3.138,6.64,Samuel Ersson (expected),Colten Ellis (expected),OTT: Burakovsky | BUF: Helenius
