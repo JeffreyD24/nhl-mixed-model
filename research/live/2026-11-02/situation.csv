@@ -365,3 +365,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 22:26:05,401892631,2026-11-02,col,chi,in,13:25 - 3rd,3,13:25,4.0,2.0,16.0,22.0,Stoppage,TV Timeout
 2026-11-02 22:26:05,401892632,2026-11-02,cgy,sj,in,10:27 - 2nd,2,10:27,1.0,0.0,12.0,16.0,Stoppage,Goalie Stopped
 2026-11-02 22:27:05,401892632,2026-11-02,cgy,sj,in,10:12 - 2nd,2,10:12,1.0,0.0,12.0,16.0,Penalty Shot Infraction,Adam Klapka Minor
+2026-11-02 22:28:06,401892631,2026-11-02,col,chi,in,13:21 - 3rd,3,13:21,4.0,2.0,16.0,22.0,Face Off,Nathan MacKinnon faceoff won against Andrew Mangiapane
+2026-11-02 22:28:06,401892632,2026-11-02,cgy,sj,in,9:11 - 2nd,2,9:11,1.0,0.0,12.0,16.0,Face Off,Macklin Celebrini faceoff won against Mikael Backlund
+2026-11-02 22:29:05,401892631,2026-11-02,col,chi,in,12:14 - 3rd,3,12:14,4.0,2.0,16.0,23.0,Shot,Brent Burns Slap Shot saved by Spencer Knight
+2026-11-02 22:29:05,401892632,2026-11-02,cgy,sj,in,8:58 - 2nd,2,8:58,1.0,0.0,12.0,16.0,Hooking,Will Smith Hooking against Joel Farabee
+2026-11-02 22:30:05,401892631,2026-11-02,col,chi,in,11:58 - 3rd,3,11:58,4.0,2.0,16.0,23.0,Tripping,Brock Nelson Tripping against Frank Nazar
+2026-11-02 22:30:05,401892632,2026-11-02,cgy,sj,in,8:25 - 2nd,2,8:25,1.0,0.0,12.0,16.0,Stoppage,Puck in Netting
+2026-11-02 22:31:06,401892631,2026-11-02,col,chi,in,11:12 - 3rd,3,11:12,4.0,2.0,16.0,23.0,Shot,Connor Bedard Backhand saved by Mackenzie Blackwood
+2026-11-02 22:32:05,401892631,2026-11-02,col,chi,in,10:40 - 3rd,3,10:40,4.0,2.0,18.0,23.0,Face Off,Ryan Greene faceoff won against Nicolas Roy
+2026-11-02 22:33:05,401892631,2026-11-02,col,chi,in,9:32 - 3rd,3,9:32,4.0,2.0,19.0,23.0,Blocked,Connor Bedard shot blocked by Artturi Lehkonen
+2026-11-02 22:33:05,401892632,2026-11-02,cgy,sj,in,7:46 - 2nd,2,7:46,1.0,0.0,12.0,16.0,Face Off,Zack Ostapchuk faceoff won against Matt Coronato
