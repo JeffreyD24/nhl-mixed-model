@@ -137,3 +137,18 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 20:28:06,401892631,2026-11-02,col,chi,in,9:19 - 1st,1,9:19,0.0,2.0,1.0,6.0,Missed,Wyatt Kaiser Wrist Shot Wide Right
 2026-11-02 20:29:05,401892630,2026-11-02,det,fla,in,3:43 - 2nd,2,3:43,2.0,2.0,20.0,16.0,Face Off,Sam Bennett faceoff won against Sheldon Dries
 2026-11-02 20:29:05,401892631,2026-11-02,col,chi,in,9:19 - 1st,1,9:19,0.0,2.0,1.0,6.0,High-sticking,Brock Nelson High-sticking
+2026-11-02 20:30:05,401892629,2026-11-02,vgk,bos,in,7:07 - 2nd,2,7:07,0.0,2.0,10.0,11.0,Blocked,Jeremy Lauzon shot blocked by William Borgen
+2026-11-02 20:30:05,401892630,2026-11-02,det,fla,in,3:14 - 2nd,2,3:14,2.0,2.0,20.0,16.0,Stoppage,Hand Pass
+2026-11-02 20:30:05,401892631,2026-11-02,col,chi,in,9:19 - 1st,1,9:19,0.0,2.0,1.0,6.0,Stoppage,TV Timeout
+2026-11-02 20:31:06,401892629,2026-11-02,vgk,bos,in,6:18 - 2nd,2,6:18,0.0,2.0,11.0,11.0,Stoppage,Goalie Stopped
+2026-11-02 20:31:06,401892631,2026-11-02,col,chi,in,8:55 - 1st,1,8:55,0.0,2.0,1.0,6.0,Stoppage,Off-side
+2026-11-02 20:32:05,401892629,2026-11-02,vgk,bos,in,5:50 - 2nd,2,5:50,0.0,2.0,11.0,11.0,Stoppage,Puck in Netting
+2026-11-02 20:32:05,401892630,2026-11-02,det,fla,in,2:35 - 2nd,2,2:35,2.0,2.0,20.0,16.0,Face Off,Sam Bennett faceoff won against Emmitt Finnie
+2026-11-02 20:32:05,401892631,2026-11-02,col,chi,in,7:58 - 1st,1,7:58,0.0,2.0,1.0,6.0,Blocked,Anton Frondell shot blocked by Parker Kelly
+2026-11-02 20:33:05,401892630,2026-11-02,det,fla,in,1:50 - 2nd,2,1:50,2.0,2.0,20.0,17.0,Stoppage,Goalie Stopped
+2026-11-02 20:33:05,401892631,2026-11-02,col,chi,in,6:56 - 1st,1,6:56,0.0,2.0,2.0,6.0,Shot,Logan O'Connor Wrist Shot saved by Spencer Knight
+2026-11-02 20:34:06,401892630,2026-11-02,det,fla,in,1:29 - 2nd,2,1:29,2.0,2.0,20.0,17.0,Face Off,Michael Brandsegg-Nygård faceoff won against Anton Lundell
+2026-11-02 20:34:06,401892631,2026-11-02,col,chi,in,6:51 - 1st,1,6:51,0.0,2.0,3.0,8.0,Missed,Martin Necas Snap Shot High and Wide Right
+2026-11-02 20:35:05,401892629,2026-11-02,vgk,bos,in,5:23 - 2nd,2,5:23,0.0,2.0,11.0,12.0,Stoppage,Goalie Stopped
+2026-11-02 20:35:05,401892630,2026-11-02,det,fla,in,1:10 - 2nd,2,1:10,2.0,2.0,20.0,17.0,Face Off,Sheldon Dries faceoff won against Cole Schwindt
+2026-11-02 20:35:05,401892631,2026-11-02,col,chi,in,6:38 - 1st,1,6:38,1.0,2.0,3.0,8.0,Goal,"Martin Necas Goal (8) Tip-In, assists: Devon Toews (10), Nathan MacKinnon (16)"
