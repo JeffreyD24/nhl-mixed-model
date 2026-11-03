@@ -4,4 +4,5 @@ NHL v1 (goals + shot models),moneyline,11,11,5,6,0,0,-0.26,-0.0236,goals model t
 NHL v1 (goals + shot models),puck line,5,5,2,3,0,0,-2.05,-0.41,goals model then both models side by side; EV 6%+ (higher once the price moved)
 NHL v3,puck line,2,0,0,0,0,2,0.0,,"55/45 blend with DK opener, EV 4%+; b2b skip; Pinnacle rule; travel adj; second chance; one bet per game"
 NHL v3.1,moneyline,1,0,0,0,0,1,0.0,,v3 + reporter goalie/lineup news from Bluesky (confirmed starter used until ESPN confirms; clear skater out/in for that game); same rules
-OVERALL,all,20,16,7,9,0,4,-2.31,-0.1444,
+NHL v3.1,puck line,1,0,0,0,0,1,0.0,,v3 + reporter goalie/lineup news from Bluesky (confirmed starter used until ESPN confirms; clear skater out/in for that game); same rules
+OVERALL,all,21,16,7,9,0,5,-2.31,-0.1444,
