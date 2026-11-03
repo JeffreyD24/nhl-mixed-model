@@ -22,3 +22,15 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 19:18:06,401892630,2026-11-02,det,fla,in,12:54 - 1st,1,12:54,1.0,0.0,4.0,1.0,Penalty Shot Infraction,Ben Chiarot Minor
 2026-11-02 19:19:05,401892629,2026-11-02,vgk,bos,in,13:17 - 1st,1,13:17,0.0,0.0,2.0,3.0,Stoppage,Puck in Netting
 2026-11-02 19:19:05,401892630,2026-11-02,det,fla,in,12:54 - 1st,1,12:54,1.0,0.0,4.0,1.0,Tripping,Ben Chiarot Tripping against Eetu Luostarinen
+2026-11-02 19:21:06,401892629,2026-11-02,vgk,bos,in,13:14 - 1st,1,13:14,0.0,0.0,2.0,3.0,Stoppage,Puck in Netting
+2026-11-02 19:21:06,401892630,2026-11-02,det,fla,in,12:08 - 1st,1,12:08,1.0,0.0,4.0,1.0,Blocked,Seth Jones shot blocked by William Wallinder
+2026-11-02 19:22:06,401892629,2026-11-02,vgk,bos,in,12:38 - 1st,1,12:38,0.0,0.0,3.0,4.0,Shot,James Hagens saved by Carter Hart
+2026-11-02 19:22:06,401892630,2026-11-02,det,fla,in,11:07 - 1st,1,11:07,1.0,0.0,6.0,1.0,Missed,Carter Verhaeghe Missed Shot Wide Right
+2026-11-02 19:23:05,401892629,2026-11-02,vgk,bos,in,12:37 - 1st,1,12:37,0.0,1.0,4.0,4.0,Face Off,William Karlsson faceoff won against Fraser Minten
+2026-11-02 19:23:05,401892630,2026-11-02,det,fla,in,10:38 - 1st,1,10:38,1.0,0.0,7.0,1.0,Stoppage,Off-side
+2026-11-02 19:24:05,401892629,2026-11-02,vgk,bos,in,12:26 - 1st,1,12:26,0.0,1.0,4.0,4.0,Penalty Shot Infraction,Brett Howden Minor
+2026-11-02 19:24:05,401892630,2026-11-02,det,fla,in,9:45 - 1st,1,9:45,1.0,0.0,8.0,1.0,Face Off,Cole Schwindt faceoff won against Andrew Copp
+2026-11-02 19:25:05,401892629,2026-11-02,vgk,bos,in,11:48 - 1st,1,11:48,0.0,1.0,5.0,4.0,Shot,David Pastrnak saved by Carter Hart
+2026-11-02 19:25:05,401892630,2026-11-02,det,fla,in,9:45 - 1st,1,9:45,1.0,0.0,9.0,1.0,Stoppage,Goalie Stopped
+2026-11-02 19:26:05,401892629,2026-11-02,vgk,bos,in,10:46 - 1st,1,10:46,0.0,1.0,5.0,4.0,Missed,Missed Shot
+2026-11-02 19:26:05,401892630,2026-11-02,det,fla,in,9:45 - 1st,1,9:45,1.0,0.0,8.0,2.0,Stoppage,Goalie Stopped

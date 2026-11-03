@@ -1,3 +1,4 @@
 seen_at_et,espn_event_id,date,away,home,period,clock,away_score,home_score,provider,provider_id,home_pl,home_pl_odds,away_pl_odds,total,over_odds,under_odds,home_ml,away_ml
 2026-11-02 19:07:05,401892629,2026-11-02,vgk,bos,1,20:00,0.0,0.0,Draft Kings,100,1.5,-265.0,215.0,6.5,105.0,-125.0,-102.0,-118.0
 2026-11-02 19:07:05,401892630,2026-11-02,det,fla,1,20:00,0.0,0.0,Draft Kings,100,-1.5,142.0,-170.0,5.5,-120.0,100.0,-185.0,154.0
+2026-11-02 19:22:06,401892630,2026-11-02,det,fla,1,11:07,1.0,0.0,Draft Kings - Live Odds,200,1.5,-238.0,180.0,6.5,110.0,-140.0,105.0,-135.0
