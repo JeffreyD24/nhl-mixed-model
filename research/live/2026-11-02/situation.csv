@@ -110,3 +110,17 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 20:18:05,401892629,2026-11-02,vgk,bos,in,13:30 - 2nd,2,13:30,0.0,2.0,9.0,8.0,Face Off,Pavel Zacha faceoff won against Nic Dowd
 2026-11-02 20:18:05,401892630,2026-11-02,det,fla,in,8:20 - 2nd,2,8:20,2.0,1.0,17.0,11.0,Face Off,Anton Lundell faceoff won against Andrew Copp
 2026-11-02 20:18:05,401892631,2026-11-02,col,chi,in,14:21 - 1st,1,14:21,0.0,1.0,1.0,3.0,Stoppage,Puck in Netting
+2026-11-02 20:19:05,401892629,2026-11-02,vgk,bos,in,12:29 - 2nd,2,12:29,0.0,2.0,10.0,8.0,Shot,David Pastrnak saved by Carter Hart
+2026-11-02 20:19:05,401892630,2026-11-02,det,fla,in,7:47 - 2nd,2,7:47,2.0,1.0,17.0,13.0,Stoppage,TV Timeout
+2026-11-02 20:19:05,401892631,2026-11-02,col,chi,in,13:32 - 1st,1,13:32,0.0,1.0,1.0,4.0,Face Off,Brock Nelson faceoff won against Frank Nazar
+2026-11-02 20:20:05,401892629,2026-11-02,vgk,bos,in,11:46 - 2nd,2,11:46,0.0,2.0,10.0,8.0,Giveaway,Giveaway by David Pastrnak
+2026-11-02 20:20:05,401892630,2026-11-02,det,fla,in,7:47 - 2nd,2,7:47,2.0,1.0,17.0,13.0,Stoppage,High Stick
+2026-11-02 20:20:05,401892631,2026-11-02,col,chi,in,12:55 - 1st,1,12:55,0.0,2.0,1.0,5.0,Goal,"Roman Kantserov Goal (6) Snap Shot, assists: Connor Bedard (6)"
+2026-11-02 20:21:05,401892629,2026-11-02,vgk,bos,in,10:48 - 2nd,2,10:48,0.0,2.0,10.0,8.0,Giveaway,Giveaway by David Pastrnak
+2026-11-02 20:21:05,401892631,2026-11-02,col,chi,in,12:21 - 1st,1,12:21,0.0,2.0,1.0,5.0,Blocked,Brent Burns shot blocked by Logan O'Connor
+2026-11-02 20:22:05,401892629,2026-11-02,vgk,bos,in,9:37 - 2nd,2,9:37,0.0,2.0,10.0,8.0,Stoppage,Goalie Stopped
+2026-11-02 20:22:05,401892630,2026-11-02,det,fla,in,6:56 - 2nd,2,6:56,2.0,1.0,18.0,11.0,Shot,Lars Eller saved by Daniil Tarasov
+2026-11-02 20:22:05,401892631,2026-11-02,col,chi,in,11:12 - 1st,1,11:12,0.0,2.0,1.0,5.0,Missed,Teuvo Teravainen Missed Shot High and Wide Right
+2026-11-02 20:23:06,401892629,2026-11-02,vgk,bos,in,9:37 - 2nd,2,9:37,0.0,2.0,10.0,10.0,Stoppage,Goalie Stopped
+2026-11-02 20:23:06,401892630,2026-11-02,det,fla,in,6:32 - 2nd,2,6:32,2.0,1.0,18.0,11.0,Face Off,J.T. Compher faceoff won against Sam Reinhart
+2026-11-02 20:23:06,401892631,2026-11-02,col,chi,in,10:53 - 1st,1,10:53,0.0,2.0,1.0,4.0,Stoppage,TV Timeout
