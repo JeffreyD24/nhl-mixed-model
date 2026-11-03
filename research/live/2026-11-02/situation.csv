@@ -403,3 +403,8 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 22:50:05,401892631,2026-11-02,col,chi,in,1:54 - 3rd,3,1:54,5.0,2.0,21.0,23.0,Face Off,Nicolas Roy faceoff won against Oliver Moore
 2026-11-02 22:51:05,401892631,2026-11-02,col,chi,in,1:13 - 3rd,3,1:13,5.0,2.0,21.0,24.0,Shot,Jaden Schwartz Wrist Shot saved by Spencer Knight
 2026-11-02 22:52:05,401892631,2026-11-02,col,chi,in,0:14 - 3rd,3,0:14,5.0,2.0,21.0,24.0,Shot,Jaden Schwartz Wrist Shot saved by Spencer Knight
+2026-11-02 23:05:05,401892632,2026-11-02,cgy,sj,in,20:00 - 3rd,3,20:00,1.0,0.0,17.0,17.0,Period End,End of 2nd Period
+2026-11-02 23:06:05,401892632,2026-11-02,cgy,sj,in,19:54 - 3rd,3,19:54,1.0,0.0,17.0,17.0,Stoppage,Puck in Benches
+2026-11-02 23:07:05,401892632,2026-11-02,cgy,sj,in,19:27 - 3rd,3,19:27,1.0,0.0,17.0,17.0,Face Off,Martin Pospisil faceoff won against Michael Misa
+2026-11-02 23:08:05,401892632,2026-11-02,cgy,sj,in,18:49 - 3rd,3,18:49,1.0,0.0,17.0,17.0,Face Off,Macklin Celebrini faceoff won against Mikael Backlund
+2026-11-02 23:09:05,401892632,2026-11-02,cgy,sj,in,17:47 - 3rd,3,17:47,1.0,0.0,17.0,17.0,Blocked,Darnell Nurse shot blocked by Matt Coronato
