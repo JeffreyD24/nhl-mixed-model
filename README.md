@@ -208,6 +208,14 @@ about 1.25¢ at 50¢; set in `TAKER_FEE_RATE`).
      offer later falls to it before the game (approximate: ignores who was first in line);
    - each with DraftKings' price on the same bet at that moment (from `research/odds/`), to see which is cheaper.
 
+**Order books and early trades (added Nov 2, 2026).** Every check also saves the full order book (every price level and size, plus
+when the contract opened and its opening price) to `research/polymarket/book_YYYY-MM-DD.csv`; `REPORT.md` summarizes the depth.
+**NHL only:** Polymarket opens a game's contracts about four days ahead, so `.github/workflows/early.yml` (8:40 AM and 8:40 PM ET)
+runs the normal tracker in a scratch copy for games 2-4 days out and saves just the model files to `state/early/`. The Polymarket
+tracker paper-trades those numbers as separate `xg@early` / `goals@early` trades, until the regular model file for that day exists
+(then the usual `xg` / `goals` trades take over). Early models don't know the starting goalies (they use the usual assumption).
+Nothing in `state/early/` touches the picks logs, bet records or bet alerts.
+
 The **morning run** grades finished trades from Polymarket's settlement prices (`--grade`), adds closing line value (last mid
 price before the start minus the price paid, in cents) and rewrites `research/polymarket/REPORT.md`.
 
