@@ -55,3 +55,25 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-02 22:20,goals,401892642,2026-11-03,car,nsh,0.3851,2.618,3.31,6.09,Pyotr Kochetkov (expected),Juuse Saros (expected),CAR: - | NSH: Hague
 2026-11-02 22:20,xg,401892643,2026-11-03,ana,van,0.3912,3.103,3.717,6.97,Lukas Dostal (expected),Leevi Merilainen (expected),"ANA: Greer, Hinds | VAN: Bains, Chytil, Mancini"
 2026-11-02 22:20,goals,401892643,2026-11-03,ana,van,0.4237,3.272,3.745,7.17,Lukas Dostal (expected),Leevi Merilainen (expected),"ANA: Greer, Hinds | VAN: Bains, Chytil, Mancini"
+2026-11-03 10:04,xg,401892633,2026-11-03,uta,tor,0.3853,3.045,3.656,6.85,Karel Vejmelka (expected),Sergei Bobrovsky (confirmed),"UTA: But, Yamamoto?, DeSimone | TOR: Marchenko, Mermis"
+2026-11-03 10:04,goals,401892633,2026-11-03,uta,tor,0.5052,3.415,3.326,6.9,Karel Vejmelka (expected),Sergei Bobrovsky (confirmed),"UTA: But, Yamamoto?, DeSimone | TOR: Marchenko, Mermis"
+2026-11-03 10:04,xg,401892634,2026-11-03,wpg,mtl,0.6047,3.426,2.69,6.28,Stuart Skinner (expected),Jacob Fowler (expected),"WPG: Koepke, Mercer? | MTL: Dach?, Matheson"
+2026-11-03 10:04,goals,401892634,2026-11-03,wpg,mtl,0.6001,3.2,2.517,5.88,Stuart Skinner (expected),Jacob Fowler (expected),"WPG: Koepke, Mercer? | MTL: Dach?, Matheson"
+2026-11-03 10:04,xg,401892635,2026-11-03,det,tb,0.6699,3.726,2.716,6.59,John Gibson (expected),Andrei Vasilevskiy (expected),"DET: Danielson | TB: Girgensons, Cernak?, Lilleberg"
+2026-11-03 10:04,goals,401892635,2026-11-03,det,tb,0.6223,3.584,2.715,6.45,John Gibson (expected),Andrei Vasilevskiy (expected),"DET: Danielson | TB: Girgensons, Cernak?, Lilleberg"
+2026-11-03 10:04,xg,401892637,2026-11-03,stl,nyr,0.4717,2.926,2.986,6.08,Joel Hofer (expected),Dylan Garand (expected),STL: Parayko? | NYR: Durzi?
+2026-11-03 10:04,goals,401892637,2026-11-03,stl,nyr,0.4644,2.911,3.093,6.17,Joel Hofer (expected),Dylan Garand (expected),STL: Parayko? | NYR: Durzi?
+2026-11-03 10:04,xg,401892638,2026-11-03,min,phi,0.3186,2.427,3.419,6.0,Jesper Wallstedt (expected),Joseph Woll (expected),"MIN: Spurgeon | PHI: Bump, Gaucher, McDonald"
+2026-11-03 10:04,goals,401892638,2026-11-03,min,phi,0.3816,2.362,3.055,5.59,Jesper Wallstedt (expected),Joseph Woll (expected),"MIN: Spurgeon | PHI: Bump, Gaucher, McDonald"
+2026-11-03 10:04,xg,401892639,2026-11-03,vgk,pit,0.563,3.252,2.919,6.33,Adin Hill (expected),Arturs Silovs (expected),"VGK: Lavoie | PIT: Malkin?, Korczak?, Solovyov"
+2026-11-03 10:04,goals,401892639,2026-11-03,vgk,pit,0.5626,3.34,2.877,6.38,Adin Hill (expected),Arturs Silovs (expected),"VGK: Lavoie | PIT: Malkin?, Korczak?, Solovyov"
+2026-11-03 10:04,xg,401892640,2026-11-03,dal,wsh,0.5176,3.112,2.902,6.18,Jake Oettinger (expected),Logan Thompson (expected),"DAL: Capobianco, Seminoff | WSH: -"
+2026-11-03 10:04,goals,401892640,2026-11-03,dal,wsh,0.4784,2.862,2.952,5.98,Jake Oettinger (expected),Logan Thompson (expected),"DAL: Capobianco, Seminoff | WSH: -"
+2026-11-03 10:04,xg,401892641,2026-11-03,col,cbj,0.4574,2.976,3.278,6.42,Scott Wedgewood (confirmed),Jet Greaves (expected),"COL: Manson | CBJ: Belluz, Voronkov"
+2026-11-03 10:04,goals,401892641,2026-11-03,col,cbj,0.4315,2.953,3.358,6.47,Scott Wedgewood (confirmed),Jet Greaves (expected),"COL: Manson | CBJ: Belluz, Voronkov"
+2026-11-03 10:04,xg,401892636,2026-11-03,edm,nj,0.5589,3.298,2.838,6.3,Tristan Jarry (expected),Connor Hellebuyck (expected),"EDM: Howard? | NJ: Mantha?, Rodrigues?, Dillon"
+2026-11-03 10:04,goals,401892636,2026-11-03,edm,nj,0.4739,3.019,3.141,6.32,Tristan Jarry (expected),Connor Hellebuyck (expected),"EDM: Howard? | NJ: Mantha?, Rodrigues?, Dillon"
+2026-11-03 10:04,xg,401892642,2026-11-03,car,nsh,0.2707,2.573,3.779,6.5,Pyotr Kochetkov (expected),Juuse Saros (expected),CAR: - | NSH: Hague
+2026-11-03 10:04,goals,401892642,2026-11-03,car,nsh,0.3868,2.621,3.31,6.09,Pyotr Kochetkov (expected),Juuse Saros (expected),CAR: - | NSH: Hague
+2026-11-03 10:04,xg,401892643,2026-11-03,ana,van,0.3904,3.105,3.686,6.94,Lukas Dostal (expected),Leevi Merilainen (expected),"ANA: Greer, Hinds | VAN: Bains, Chytil, Mancini"
+2026-11-03 10:04,goals,401892643,2026-11-03,ana,van,0.4217,3.256,3.749,7.16,Lukas Dostal (expected),Leevi Merilainen (expected),"ANA: Greer, Hinds | VAN: Bains, Chytil, Mancini"

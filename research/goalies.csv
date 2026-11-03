@@ -110,3 +110,11 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-11-02 17:54,401892631,2026-11-02,away,col,3904177,Mackenzie Blackwood,Confirmed
 2026-11-02 17:59,401892641,2026-11-03,away,col,5622,Scott Wedgewood,Confirmed
 2026-11-02 18:53,401892629,2026-11-02,away,vgk,4064582,Carter Hart,Confirmed
+2026-11-03 10:04,401892644,2026-11-04,home,buf,4233889,Ukko-Pekka Luukkonen,Expected
+2026-11-03 10:04,401892644,2026-11-04,away,ott,4587815,Samuel Ersson,Expected
+2026-11-03 10:04,401892645,2026-11-04,home,fla,5452,Jacob Markstrom,Expected
+2026-11-03 10:04,401892645,2026-11-04,away,chi,4565234,Spencer Knight,Expected
+2026-11-03 10:04,401892646,2026-11-04,home,la,2610321,Darcy Kuemper,Expected
+2026-11-03 10:04,401892646,2026-11-04,away,sj,4697394,Yaroslav Askarov,Expected
+2026-11-03 10:04,401892647,2026-11-04,home,sea,5657,Philipp Grubauer,Expected
+2026-11-03 10:04,401892647,2026-11-04,away,cgy,4587952,Dustin Wolf,Expected

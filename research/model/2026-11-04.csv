@@ -1,0 +1,9 @@
+seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_total,away_goalie,home_goalie,missing
+2026-11-03 10:04,xg,401892644,2026-11-04,ott,buf,0.5051,3.266,3.129,6.56,Samuel Ersson (expected),Ukko-Pekka Luukkonen (expected),"OTT: Burakovsky | BUF: Benson?, Helenius"
+2026-11-03 10:04,goals,401892644,2026-11-04,ott,buf,0.5173,3.331,3.163,6.65,Samuel Ersson (expected),Ukko-Pekka Luukkonen (expected),"OTT: Burakovsky | BUF: Benson?, Helenius"
+2026-11-03 10:04,xg,401892645,2026-11-04,chi,fla,0.693,3.73,2.388,6.26,Spencer Knight (expected),Jacob Markstrom (expected),"CHI: Greenway, Kane, Korchinski | FLA: -"
+2026-11-03 10:04,goals,401892645,2026-11-04,chi,fla,0.6149,3.388,2.597,6.14,Spencer Knight (expected),Jacob Markstrom (expected),"CHI: Greenway, Kane, Korchinski | FLA: -"
+2026-11-03 10:04,xg,401892646,2026-11-04,sj,la,0.6657,3.587,2.439,6.18,Yaroslav Askarov (expected),Darcy Kuemper (expected),SJ: Dellandrea | LA: Kempe?
+2026-11-03 10:04,goals,401892646,2026-11-04,sj,la,0.5485,3.095,2.74,6.0,Yaroslav Askarov (expected),Darcy Kuemper (expected),SJ: Dellandrea | LA: Kempe?
+2026-11-03 10:04,xg,401892647,2026-11-04,cgy,sea,0.5559,3.256,2.808,6.23,Dustin Wolf (expected),Philipp Grubauer (expected),CGY: - | SEA: -
+2026-11-03 10:04,goals,401892647,2026-11-04,cgy,sea,0.5803,3.37,2.797,6.33,Dustin Wolf (expected),Philipp Grubauer (expected),CGY: - | SEA: -
