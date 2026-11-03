@@ -1,5 +1,6 @@
 version,market,bets,graded,wins,losses,pushes,pending,units,roi,description
+NHL overs v1.1,total,1,0,0,0,0,1,0.0,,overs v1 + reporter goalie/lineup news from Bluesky; same rule
 NHL v1 (goals + shot models),moneyline,11,11,5,6,0,0,-0.26,-0.0236,goals model then both models side by side; EV 6%+ (higher once the price moved)
 NHL v1 (goals + shot models),puck line,5,5,2,3,0,0,-2.05,-0.41,goals model then both models side by side; EV 6%+ (higher once the price moved)
 NHL v3,puck line,2,0,0,0,0,2,0.0,,"55/45 blend with DK opener, EV 4%+; b2b skip; Pinnacle rule; travel adj; second chance; one bet per game"
-OVERALL,all,18,16,7,9,0,2,-2.31,-0.1444,
+OVERALL,all,19,16,7,9,0,3,-2.31,-0.1444,
