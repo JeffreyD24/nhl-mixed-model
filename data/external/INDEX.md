@@ -18,3 +18,8 @@ MANIFEST.csv lists every file with size and checksum.** Re-run `python3 -I make_
 ## Wish list (not yet obtained)
 - BeatTheBookie odds zips (see `beatthebookie/DOWNLOAD_LINKS.md`)
 - Reddit / X / 4chan sweep via the desktop-app browser (see research/community_notes/)
+
+## Added Nov 3, 2026 (data jobs for the tournaments)
+| Folder | What | Status |
+|---|---|---|
+| `nhl_box/` | starting goalies and skater ice time 2011-12..2022-23 from the NHL API | script + workflow written; run `fetch-nhl-box.yml` in GitHub Actions |

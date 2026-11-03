@@ -1,0 +1,36 @@
+name: Fetch NHL starting goalies and skaters (job B)
+on:
+  workflow_dispatch:
+    inputs:
+      seasons:
+        description: "Season start years, space-separated (2011 = 2011-12)"
+        default: "2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022"
+permissions:
+  contents: write
+concurrency:
+  group: fetch-data
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pandas numpy
+      - name: Fetch one season at a time, saving after each
+        working-directory: data/external/nhl_box
+        run: |
+          git config user.name "nhl-tracker-bot"; git config user.email "actions@users.noreply.github.com"
+          for s in ${{ inputs.seasons }}; do
+            python fetch_nhl_box.py "$s" || true
+            git add parts
+            git diff --cached --quiet || git commit -q -m "NHL box scores: season $s (job B)"
+            for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 10; done
+          done
+          python fetch_nhl_box.py
+          git add .
+          git diff --cached --quiet || git commit -q -m "NHL box scores: combined tables and checks (job B)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 10; done

@@ -2,6 +2,7 @@
 import csv, hashlib, os
 root = os.path.dirname(os.path.abspath(__file__))
 LIC = {"sbr": ("sportsbookreview.com odds via FinnedAI scraper", "scraper MIT; odds belong to SBR; private research use", "https://github.com/FinnedAI/sportsbookreview-scraper"),
+       "nhl_box": ("NHL public API (api-web.nhle.com) box scores", "public game facts; private research use", "https://api-web.nhle.com"),
        "hockeyr": ("hockeyR / hockeyR-data", "code MIT; derived table ours; raw pbp unlicensed, not committed", "https://github.com/danmorse314/hockeyR"),
        "beatthebookie": ("BeatTheBookie", "code GPL-3.0; data license unstated, not committed", "https://github.com/Lisandro79/BeatTheBookie")}
 rows = []
