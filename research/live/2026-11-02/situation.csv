@@ -414,3 +414,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 23:13:05,401892632,2026-11-02,cgy,sj,in,14:34 - 3rd,3,14:34,1.0,0.0,19.0,17.0,Missed,Tyler Toffoli Wrist Shot Wide Right
 2026-11-02 23:14:05,401892632,2026-11-02,cgy,sj,in,13:32 - 3rd,3,13:32,1.0,0.0,19.0,17.0,Face Off,Jonathan Castagna faceoff won against Filip Bystedt
 2026-11-02 23:15:06,401892632,2026-11-02,cgy,sj,in,12:55 - 3rd,3,12:55,1.0,0.0,20.0,17.0,Face Off,Jonathan Castagna faceoff won against Filip Bystedt
+2026-11-02 23:16:06,401892632,2026-11-02,cgy,sj,in,12:55 - 3rd,3,12:55,1.0,0.0,20.0,17.0,Stoppage,Goalie Stopped
+2026-11-02 23:17:05,401892632,2026-11-02,cgy,sj,in,12:43 - 3rd,3,12:43,1.0,0.0,20.0,17.0,Face Off,Mikael Backlund faceoff won against Will Smith
+2026-11-02 23:18:06,401892632,2026-11-02,cgy,sj,in,12:17 - 3rd,3,12:17,1.0,0.0,21.0,18.0,Stoppage,Puck in Crowd
+2026-11-02 23:19:06,401892632,2026-11-02,cgy,sj,in,11:29 - 3rd,3,11:29,1.0,0.0,21.0,18.0,Face Off,Adam Gaudette faceoff won against Martin Pospisil
+2026-11-02 23:20:06,401892632,2026-11-02,cgy,sj,in,11:00 - 3rd,3,11:00,1.0,0.0,21.0,18.0,Face Off,Adam Klapka faceoff won against Michael Misa
+2026-11-02 23:21:05,401892632,2026-11-02,cgy,sj,in,10:46 - 3rd,3,10:46,1.0,0.0,21.0,18.0,Goal,"William Stromgren Goal (1) Wrist Shot, assists: Adam Klapka (3), Jonathan Castagna (3)"
