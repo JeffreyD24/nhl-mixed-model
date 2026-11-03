@@ -847,3 +847,4 @@ seen_at_et,game_id,date,away,home,market,line_home,long_side,slug,bid,ask,bid_de
 2026-11-03 15:32,401892635,2026-11-03,det,tb,moneyline,,away,aec-nhl-det-tb-2026-11-03,0.27,0.28,27.0,71.0,0.725,0.28,71968.69,71631.67,team
 2026-11-03 15:38,401892642,2026-11-03,car,nsh,moneyline,,away,aec-nhl-car-nas-2026-11-03,0.65,0.66,65.0,32.0,0.345,0.66,26460.15,25477.19,team
 2026-11-03 15:47,401892642,2026-11-03,car,nsh,moneyline,,away,aec-nhl-car-nas-2026-11-03,0.65,0.66,65.0,30.0,0.345,0.66,26539.95,25548.79,team
+2026-11-03 15:52,401892643,2026-11-03,ana,van,moneyline,,away,aec-nhl-ana-van-2026-11-03,0.59,0.6,58.0,37.0,0.405,0.59,73216.01,71659.77,team
