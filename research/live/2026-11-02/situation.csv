@@ -268,3 +268,21 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 21:27:05,401892630,2026-11-02,det,fla,in,0:43 - 3rd,3,0:43,4.0,3.0,23.0,24.0,Blocked,Sam Bennett shot blocked by Ben Chiarot
 2026-11-02 21:27:05,401892631,2026-11-02,col,chi,in,12:31 - 2nd,2,12:31,2.0,2.0,4.0,18.0,Stoppage,Off-side
 2026-11-02 21:27:05,401892632,2026-11-02,cgy,sj,in,9:49 - 1st,1,9:49,0.0,0.0,4.0,7.0,Tripping,Adam Klapka Tripping against Filip Bystedt
+2026-11-02 21:28:05,401892629,2026-11-02,vgk,bos,in,1:53 - 3rd,3,1:53,2.0,2.0,21.0,19.0,Stoppage,Goalie Stopped
+2026-11-02 21:28:05,401892630,2026-11-02,det,fla,in,0:02 - 3rd,3,0:02,4.0,3.0,23.0,24.0,Missed,Missed Shot
+2026-11-02 21:28:05,401892631,2026-11-02,col,chi,in,12:28 - 2nd,2,12:28,2.0,2.0,5.0,18.0,Face Off,Nathan MacKinnon faceoff won against Anton Frondell
+2026-11-02 21:29:06,401892629,2026-11-02,vgk,bos,in,1:29 - 3rd,3,1:29,2.0,2.0,21.0,19.0,Face Off,Jack Eichel faceoff won against Casey Mittelstadt
+2026-11-02 21:29:06,401892630,2026-11-02,det,fla,in,End of 3rd,3,0:00,5.0,3.0,23.0,24.0,Period End,End of 3rd Period
+2026-11-02 21:29:06,401892631,2026-11-02,col,chi,in,12:07 - 2nd,2,12:07,2.0,2.0,5.0,18.0,Face Off,Nathan MacKinnon faceoff won against Connor Bedard
+2026-11-02 21:29:06,401892632,2026-11-02,cgy,sj,in,9:45 - 1st,1,9:45,0.0,0.0,4.0,7.0,Face Off,Macklin Celebrini faceoff won against Mikael Backlund
+2026-11-02 21:30:05,401892629,2026-11-02,vgk,bos,in,1:05 - 3rd,3,1:05,2.0,2.0,21.0,19.0,Face Off,Jack Eichel faceoff won against Elias Lindholm
+2026-11-02 21:30:05,401892631,2026-11-02,col,chi,in,10:50 - 2nd,2,10:50,2.0,2.0,6.0,18.0,Missed,Jaden Schwartz Slap Shot Wide Right
+2026-11-02 21:30:05,401892632,2026-11-02,cgy,sj,in,8:42 - 1st,1,8:42,0.0,0.0,4.0,7.0,Shot,Ivar Stenberg saved by Dustin Wolf
+2026-11-02 21:31:05,401892629,2026-11-02,vgk,bos,in,0:02 - 3rd,3,0:02,2.0,2.0,21.0,19.0,Face Off,Jack Eichel faceoff won against Elias Lindholm
+2026-11-02 21:31:05,401892631,2026-11-02,col,chi,in,10:12 - 2nd,2,10:12,2.0,2.0,6.0,18.0,Missed,Oliver Moore Wrist Shot Wide Left
+2026-11-02 21:31:05,401892632,2026-11-02,cgy,sj,in,7:46 - 1st,1,7:46,0.0,0.0,5.0,7.0,Blocked,Will Smith shot blocked by Martin Pospisil
+2026-11-02 21:32:05,401892629,2026-11-02,vgk,bos,in,End of 3rd,3,0:00,2.0,2.0,21.0,19.0,Period End,End of 3rd Period
+2026-11-02 21:32:05,401892631,2026-11-02,col,chi,in,9:55 - 2nd,2,9:55,2.0,2.0,7.0,18.0,Face Off,Frank Nazar faceoff won against Nazem Kadri
+2026-11-02 21:32:05,401892632,2026-11-02,cgy,sj,in,7:46 - 1st,1,7:46,0.0,0.0,5.0,7.0,Stoppage,Off-side
+2026-11-02 21:33:05,401892629,2026-11-02,vgk,bos,in,5:00 - OT,4,5:00,2.0,2.0,21.0,19.0,Period End,End of 3rd Period
+2026-11-02 21:33:05,401892631,2026-11-02,col,chi,in,8:53 - 2nd,2,8:53,2.0,2.0,7.0,18.0,Face Off,Frank Nazar faceoff won against Nazem Kadri
