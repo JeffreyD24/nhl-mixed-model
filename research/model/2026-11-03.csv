@@ -133,3 +133,9 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-03 14:41,goals,401892636,2026-11-03,edm,nj,0.477,3.039,3.14,6.34,Tristan Jarry (confirmed),Connor Hellebuyck (confirmed),EDM: Howard | NJ: Dillon
 2026-11-03 18:50,xg,401892633,2026-11-03,uta,tor,0.3932,3.087,3.648,6.89,Sebastian Cossa (confirmed),Sergei Bobrovsky (confirmed),"UTA: But, Yamamoto, DeSimone | TOR: Marchenko, Mermis"
 2026-11-03 18:50,goals,401892633,2026-11-03,uta,tor,0.5155,3.479,3.319,6.95,Sebastian Cossa (confirmed),Sergei Bobrovsky (confirmed),"UTA: But, Yamamoto, DeSimone | TOR: Marchenko, Mermis"
+2026-11-03 18:54,xg,401892634,2026-11-03,wpg,mtl,0.6033,3.422,2.694,6.27,Stuart Skinner (confirmed),Jacob Fowler (confirmed),"WPG: Koepke | MTL: Dach, Matheson"
+2026-11-03 18:54,goals,401892634,2026-11-03,wpg,mtl,0.5989,3.196,2.52,5.88,Stuart Skinner (confirmed),Jacob Fowler (confirmed),"WPG: Koepke | MTL: Dach, Matheson"
+2026-11-03 18:54,xg,401892635,2026-11-03,det,tb,0.6699,3.726,2.716,6.59,John Gibson (confirmed),Andrei Vasilevskiy (confirmed),"DET: Danielson | TB: Girgensons, Cernak, Lilleberg"
+2026-11-03 18:54,goals,401892635,2026-11-03,det,tb,0.6223,3.584,2.715,6.45,John Gibson (confirmed),Andrei Vasilevskiy (confirmed),"DET: Danielson | TB: Girgensons, Cernak, Lilleberg"
+2026-11-03 18:54,xg,401892639,2026-11-03,vgk,pit,0.5579,3.221,2.919,6.3,Adin Hill (confirmed),Arturs Silovs (confirmed),"VGK: Lavoie | PIT: Malkin, Solovyov"
+2026-11-03 18:54,goals,401892639,2026-11-03,vgk,pit,0.5588,3.313,2.877,6.35,Adin Hill (confirmed),Arturs Silovs (confirmed),"VGK: Lavoie | PIT: Malkin, Solovyov"
