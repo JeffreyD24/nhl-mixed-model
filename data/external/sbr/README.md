@@ -26,6 +26,14 @@ and 2021 runs through June 2022). Our own NBA files label seasons by the END yea
 4. A few openers are plainly broken (NBA open totals of 19.5 and 1,955.5): flagged `open_ok = 0` (13 NBA rows, 4 NFL).
 5. NHL and MLB: no swaps found; a handful of totals/moneylines outside a sane range are flagged.
 
+6. **Found Nov 3, 2026 in the NHL out-of-sample test (backtests/OOS_SBR_RESULTS.md in nhl-mixed-model):**
+   - NHL: the single `open/close_over_under_odds` price is the **UNDER** price, not the over (at 5.5, posted −121 or shorter went over
+     43.6%; +106 or longer 54.1%). The over price is not stored. Check whether NBA/NFL use the same convention before using their total prices.
+   - NHL: the 2020-21 season (label 2020) dates its January-March 2021 games as 2020 (548 rows). Add a year.
+   - NHL: finals include the shootout goal; period scores give regulation.
+   - NHL: 54 moneyline rows have swapped team prices in the opener or closer. Flag: de-vigged win chance moving more than 10 points
+     open-to-close (99th percentile of real moves is 7.8). Swapped rows look like huge-CLV longshot winners and inflate backtests.
+
 ## Which rows to use
 - Spread backtests: `spread_trusted = 1` (NBA 12,949 of 13,893; NFL 2,685 of 2,946).
 - Total backtests: `total_trusted = 1` (NBA 13,874; NFL 2,941).

@@ -1,0 +1,22 @@
+hockeyR regular-season games: 15187 (2011-2023)
+SBR 2020-21 rows dated a year early, shifted +1 year: 548
+SBR duplicate team/date rows dropped: 0
+  2011: games 1204, matched to SBR 0 (0.0%), final score agrees nan%
+  2012: games 1230, matched to SBR 1230 (100.0%), final score agrees 85.3%
+  2013: games 720, matched to SBR 720 (100.0%), final score agrees 86.5%
+  2014: games 1230, matched to SBR 1230 (100.0%), final score agrees 85.4%
+  2015: games 1230, matched to SBR 1230 (100.0%), final score agrees 86.2%
+  2016: games 1230, matched to SBR 1230 (100.0%), final score agrees 91.3%
+  2017: games 1230, matched to SBR 1230 (100.0%), final score agrees 91.9%
+  2018: games 1271, matched to SBR 1270 (99.9%), final score agrees 91.7%
+  2019: games 1271, matched to SBR 1271 (100.0%), final score agrees 93.1%
+  2020: games 1094, matched to SBR 1082 (98.9%), final score agrees 92.1%
+  2021: games 868, matched to SBR 868 (100.0%), final score agrees 92.1%
+  2022: games 1312, matched to SBR 1312 (100.0%), final score agrees 92.1%
+  2023: games 1297, matched to SBR 0 (0.0%), final score agrees nan%
+SBR rows (Oct 2011 - Apr 2022, incl. playoffs) not in hockeyR regular season: 907 (playoffs, ±1 day shifts)
+matched games whose finals differ: 1285; explained by one shootout goal: 1277; other: 8 (regulation set missing)
+unmatched games given regulation = final (margin 2+): 1405; unmatched games with no usable result: 1109
+regulation ties among games with regulation scores: 20.8% (real NHL ~22-24%)
+games with xG missing: 0
+moneyline rows with an open-to-close move over 10 win-% points (likely swapped sides), flagged ml_move_ok=0: 54

@@ -47,6 +47,8 @@ Legend: [x] already in place  [~] partly  [ ] open  (O) = good job for Opus
 - [ ] Out-of-sample test of the "bet at the opener" rules on 2011-2021 using the SBR openers (old_seasons.py currently grades closes only) (O)
 - [ ] MLB: the SBR MLB file is stored for when the MLB model starts
 - [x] hockeyR xG: code, fitted objects and a 2010-23 team-game xG table stored (data/external/hockeyr). Next: test it against SBR NHL openers (O)
+- [x] NHL out-of-sample test vs SBR openers, 2016-17..2021-22 (Nov 3, 2026, nhl-mixed-model backtests/OOS_SBR_RESULTS.md): moneylines +1%/bet with
+      negative CLV (not confirmed); overs at the opener +16.5%/bet and the total rose on 33.5% of picks vs 10.9% of all games (real signal)
 - [~] BeatTheBookie: code stored; odds data is on Dropbox/Google Drive and needs your browser (data/external/beatthebookie/DOWNLOAD_LINKS.md)
 
 ### F. Audit for the classic failure modes

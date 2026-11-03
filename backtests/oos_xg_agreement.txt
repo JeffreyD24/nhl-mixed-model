@@ -1,0 +1,7 @@
+hockeyR xG vs our xG, games matched by date+teams, 2021-22 and 2022-23
+  2022: games 1230, corr per team-game 0.773, mean hockeyR 3.11 (all periods) vs ours 2.99 (regulation)
+     team-season average xG for: corr 0.947
+     team-season average xG against: corr 0.895
+  2023: games 1216, corr per team-game 0.784, mean hockeyR 3.16 (all periods) vs ours 3.12 (regulation)
+     team-season average xG for: corr 0.954
+     team-season average xG against: corr 0.953
