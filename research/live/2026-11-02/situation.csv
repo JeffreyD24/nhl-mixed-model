@@ -67,3 +67,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 19:46:05,401892629,2026-11-02,vgk,bos,in,End of 1st,1,0:00,0.0,1.0,7.0,6.0,Face Off,Fraser Minten faceoff won against Jack Eichel
 2026-11-02 19:47:05,401892629,2026-11-02,vgk,bos,in,End of 1st,1,0:00,0.0,1.0,7.0,6.0,Period End,End of 1st Period
 2026-11-02 19:59:05,401892630,2026-11-02,det,fla,in,20:00 - 2nd,2,20:00,1.0,1.0,11.0,5.0,Period End,End of 1st Period
+2026-11-02 20:01:05,401892630,2026-11-02,det,fla,in,19:46 - 2nd,2,19:46,1.0,1.0,11.0,5.0,Face Off,Anton Lundell faceoff won against Andrew Copp
+2026-11-02 20:02:06,401892630,2026-11-02,det,fla,in,19:18 - 2nd,2,19:18,1.0,1.0,11.0,5.0,Face Off,Anton Lundell faceoff won against Andrew Copp
+2026-11-02 20:03:05,401892629,2026-11-02,vgk,bos,in,20:00 - 2nd,2,20:00,0.0,1.0,7.0,6.0,Period End,End of 1st Period
+2026-11-02 20:03:05,401892630,2026-11-02,det,fla,in,18:35 - 2nd,2,18:35,1.0,1.0,12.0,5.0,Missed,Missed Shot
+2026-11-02 20:04:05,401892630,2026-11-02,det,fla,in,18:02 - 2nd,2,18:02,2.0,1.0,13.0,5.0,Face Off,Sam Reinhart faceoff won against J.T. Compher
+2026-11-02 20:05:05,401892629,2026-11-02,vgk,bos,in,20:00 - 2nd,2,20:00,0.0,1.0,7.0,6.0,Period Start,Start of 2nd Period
+2026-11-02 20:05:05,401892630,2026-11-02,det,fla,in,17:14 - 2nd,2,17:14,2.0,1.0,13.0,5.0,Face Off,Sam Reinhart faceoff won against J.T. Compher
+2026-11-02 20:06:05,401892629,2026-11-02,vgk,bos,in,19:20 - 2nd,2,19:20,0.0,1.0,7.0,6.0,Missed,Nikita Zadorov Missed Shot High and Wide Right
+2026-11-02 20:06:05,401892630,2026-11-02,det,fla,in,16:03 - 2nd,2,16:03,2.0,1.0,13.0,6.0,Missed,Justin Faulk Snap Shot Wide Right
