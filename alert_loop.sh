@@ -40,6 +40,7 @@ while :; do
   echo "=== check at $(TZ=America/New_York date '+%F %H:%M:%S') ET ==="
   if python alert.py .; then date -u +%Y-%m-%dT%H:%M:%SZ > state/heartbeat_alert.txt; else echo "Check failed; trying again next time."; fi
   python polymarket.py . || echo "Polymarket check failed; trying again next time."
+  timeout 90 python pregame.py . || echo "Pregame recorder failed; continuing."
   while busy; do echo "Another run is saving; waiting."; sleep 30; done
   save
   NOW=$(date +%s)
@@ -53,6 +54,7 @@ while :; do
     python bluesky_watch.py .; RC=$?
     if [ "$RC" -eq 10 ]; then echo "Reporter goalie/lineup news: checking now."; break; fi
     [ "$RC" -ne 0 ] && echo "Bluesky watch failed; continuing."
+    timeout 90 python pregame.py . || echo "Pregame recorder failed; continuing."
     python opener_watch.py .; RC=$?
     if [ "$RC" -eq 10 ]; then echo "New DraftKings line: checking now."; break; fi
   done
