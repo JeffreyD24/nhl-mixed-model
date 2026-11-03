@@ -266,3 +266,12 @@ reporter was found for Calgary, Detroit, Edmonton, Florida, Los Angeles, Nashvil
   `research/media/bluesky_check.csv`, `bluesky_starterpacks.csv`).
 - Goal: measure how much earlier reporters name the starter than ESPN confirms him (`research/goalies.csv` records when ESPN's
   status changes) and whether the moneyline has moved by then.
+
+
+## Edge statistics, sportsbooks and limits
+`edge_stats.py` (same file in the NBA, NHL and NFL repos) runs in the morning run and writes `research/edge_stats/REPORT.md` plus CSVs:
+- **Bootstrap ranges** (`bootstrap.csv`): ROI and closing line value for every logged rule (scorecard rule at the opening line, BET vs caution alerts, and each model version of your logged bets), with 90% ranges from resampling bets and from resampling whole game days. Rows under 30 bets are flagged.
+- **Calibration** (`calibration_*.csv`): predicted probability bins vs what happened, Brier score and log loss. NHL also by price band.
+- **Pinnacle closing price** (`pinnacle_clv_*.csv`): price CLV in no-vig terms against Pinnacle's last price before the game, for games from Nov 2, 2026 (when the live recorder started). NBA/NFL bets at a different line than Pinnacle's close are moved to the bet line with the model's backtest misses; NHL keeps points only.
+- **Sportsbooks and limits** (`by_book.csv`, `book_limits.csv`): results per book from `state/my_bets.csv` (names normalized by `books.py`) and the limit events you report with the **Log a limit** issue form (label `limit`; create it once at Labels, like `bet`). Each limit is listed with the bets placed at that book before it.
+Run by hand with `python edge_stats.py . [--only boot|calib|pinnacle|book]`.

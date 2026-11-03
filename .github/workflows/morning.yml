@@ -37,6 +37,8 @@ jobs:
         run: python shifts.py . || echo "Shift charts failed; they will be retried tomorrow."
       - name: NHL play-by-play and EDGE tracking stats
         run: python nhl_extra.py . || echo "NHL extra data failed; it will be retried tomorrow."
+      - name: Edge statistics (bootstrap ranges, calibration, Pinnacle CLV, books and limits)
+        run: python edge_stats.py . || echo "Edge statistics not updated; they will run again tomorrow."
       - name: Save results
         run: |
           git config user.name "nhl-tracker-bot"
