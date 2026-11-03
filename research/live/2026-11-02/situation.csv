@@ -184,3 +184,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 20:56:05,401892630,2026-11-02,det,fla,in,19:39 - 3rd,3,19:39,2.0,2.0,20.0,18.0,Face Off,Anton Lundell faceoff won against Andrew Copp
 2026-11-02 20:57:05,401892630,2026-11-02,det,fla,in,18:59 - 3rd,3,18:59,2.0,2.0,20.0,18.0,Shot,Moritz Seider saved by Jacob Markstrom
 2026-11-02 20:58:06,401892630,2026-11-02,det,fla,in,18:09 - 3rd,3,18:09,2.0,2.0,20.0,19.0,Shot,Moritz Seider Snap Shot saved by Jacob Markstrom
+2026-11-02 20:59:05,401892630,2026-11-02,det,fla,in,17:52 - 3rd,3,17:52,3.0,2.0,20.0,19.0,Face Off,Sheldon Dries faceoff won against Sam Bennett
+2026-11-02 21:00:05,401892630,2026-11-02,det,fla,in,17:20 - 3rd,3,17:20,3.0,2.0,20.0,19.0,Stoppage,Puck in Crowd
+2026-11-02 21:01:06,401892630,2026-11-02,det,fla,in,17:07 - 3rd,3,17:07,4.0,2.0,20.0,19.0,Goal,"Michael Brandsegg-Nygård Goal (3), assists: Lucas Raymond (10), Andrew Copp (3)"
+2026-11-02 21:02:05,401892629,2026-11-02,vgk,bos,in,20:00 - 3rd,3,20:00,1.0,2.0,12.0,16.0,Period End,End of 2nd Period
+2026-11-02 21:02:05,401892630,2026-11-02,det,fla,in,16:12 - 3rd,3,16:12,4.0,2.0,20.0,20.0,Shot,Alex DeBrincat saved by Jacob Markstrom
+2026-11-02 21:03:05,401892629,2026-11-02,vgk,bos,in,19:48 - 3rd,3,19:48,1.0,2.0,12.0,16.0,Face Off,Elias Lindholm faceoff won against Jack Eichel
+2026-11-02 21:03:05,401892630,2026-11-02,det,fla,in,14:50 - 3rd,3,14:50,4.0,2.0,20.0,20.0,Blocked,Michael Rasmussen shot blocked by Radko Gudas
+2026-11-02 21:04:05,401892629,2026-11-02,vgk,bos,in,18:59 - 3rd,3,18:59,1.0,2.0,12.0,16.0,Face Off,Elias Lindholm faceoff won against Jack Eichel
+2026-11-02 21:04:05,401892630,2026-11-02,det,fla,in,14:17 - 3rd,3,14:17,4.0,2.0,21.0,20.0,Stoppage,Goalie Stopped
