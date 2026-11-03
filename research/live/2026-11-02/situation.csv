@@ -34,3 +34,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 19:25:05,401892630,2026-11-02,det,fla,in,9:45 - 1st,1,9:45,1.0,0.0,9.0,1.0,Stoppage,Goalie Stopped
 2026-11-02 19:26:05,401892629,2026-11-02,vgk,bos,in,10:46 - 1st,1,10:46,0.0,1.0,5.0,4.0,Missed,Missed Shot
 2026-11-02 19:26:05,401892630,2026-11-02,det,fla,in,9:45 - 1st,1,9:45,1.0,0.0,8.0,2.0,Stoppage,Goalie Stopped
+2026-11-02 19:27:05,401892629,2026-11-02,vgk,bos,in,9:56 - 1st,1,9:56,0.0,1.0,5.0,4.0,Blocked,Casey Mittelstadt shot blocked by Nic Dowd
+2026-11-02 19:27:05,401892630,2026-11-02,det,fla,in,8:58 - 1st,1,8:58,1.0,0.0,8.0,2.0,Face Off,Emmitt Finnie faceoff won against Brady Tkachuk
+2026-11-02 19:28:05,401892629,2026-11-02,vgk,bos,in,9:26 - 1st,1,9:26,0.0,1.0,5.0,4.0,Stoppage,Icing
+2026-11-02 19:28:05,401892630,2026-11-02,det,fla,in,8:27 - 1st,1,8:27,1.0,0.0,8.0,2.0,Face Off,J.T. Compher faceoff won against Sam Reinhart
+2026-11-02 19:29:05,401892630,2026-11-02,det,fla,in,7:48 - 1st,1,7:48,1.0,0.0,8.0,2.0,Face Off,J.T. Compher faceoff won against Sam Reinhart
+2026-11-02 19:30:05,401892629,2026-11-02,vgk,bos,in,9:26 - 1st,1,9:26,0.0,1.0,6.0,4.0,Stoppage,Icing
+2026-11-02 19:30:05,401892630,2026-11-02,det,fla,in,6:46 - 1st,1,6:46,1.0,0.0,8.0,2.0,Missed,Lars Eller Tip-In Wide Left
+2026-11-02 19:31:05,401892629,2026-11-02,vgk,bos,in,8:26 - 1st,1,8:26,0.0,1.0,6.0,4.0,Face Off,Jack Eichel faceoff won against Elias Lindholm
+2026-11-02 19:31:05,401892630,2026-11-02,det,fla,in,5:57 - 1st,1,5:57,1.0,0.0,8.0,2.0,Face Off,J.T. Compher faceoff won against Sam Reinhart
+2026-11-02 19:32:05,401892629,2026-11-02,vgk,bos,in,8:07 - 1st,1,8:07,0.0,1.0,6.0,4.0,Stoppage,Hand Pass
+2026-11-02 19:32:05,401892630,2026-11-02,det,fla,in,5:41 - 1st,1,5:41,1.0,1.0,8.0,2.0,Goal,"Sam Reinhart Goal (8) Wrist Shot, assists: Carter Verhaeghe (5)"
