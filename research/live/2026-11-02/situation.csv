@@ -1,3 +1,14 @@
 seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,home_score,away_saves,home_saves,last_play_type,last_play
 2026-11-02 19:07:05,401892629,2026-11-02,vgk,bos,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
 2026-11-02 19:07:05,401892630,2026-11-02,det,fla,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-02 19:09:05,401892630,2026-11-02,det,fla,in,19:44 - 1st,1,19:44,0.0,0.0,,,Face Off,Andrew Copp faceoff won against Sam Bennett
+2026-11-02 19:10:05,401892629,2026-11-02,vgk,bos,in,19:28 - 1st,1,19:28,0.0,0.0,,,Shot,Brayden McNabb saved by Jeremy Swayman
+2026-11-02 19:10:05,401892630,2026-11-02,det,fla,in,19:04 - 1st,1,19:04,0.0,0.0,0.0,0.0,Missed,Missed Shot
+2026-11-02 19:11:05,401892629,2026-11-02,vgk,bos,in,18:27 - 1st,1,18:27,0.0,0.0,0.0,1.0,Shot,Brayden McNabb Snap Shot saved by Jeremy Swayman
+2026-11-02 19:11:05,401892630,2026-11-02,det,fla,in,18:16 - 1st,1,18:16,0.0,0.0,0.0,0.0,Shot,Michael Rasmussen saved by Jacob Markstrom
+2026-11-02 19:12:06,401892629,2026-11-02,vgk,bos,in,17:27 - 1st,1,17:27,0.0,0.0,0.0,1.0,Missed,Trevor Connelly Missed Shot Wide Left
+2026-11-02 19:12:06,401892630,2026-11-02,det,fla,in,17:53 - 1st,1,17:53,0.0,0.0,0.0,1.0,Shot,Niko Mikkola saved by Daniil Tarasov
+2026-11-02 19:13:05,401892629,2026-11-02,vgk,bos,in,16:36 - 1st,1,16:36,0.0,0.0,0.0,1.0,Missed,Trevor Connelly Missed Shot Wide Left
+2026-11-02 19:13:05,401892630,2026-11-02,det,fla,in,17:10 - 1st,1,17:10,0.0,0.0,1.0,1.0,Shot,Niko Mikkola Snap Shot saved by Daniil Tarasov
+2026-11-02 19:14:05,401892629,2026-11-02,vgk,bos,in,15:56 - 1st,1,15:56,0.0,0.0,0.0,1.0,Blocked,Elias Lindholm shot blocked by Mark Stone
+2026-11-02 19:14:05,401892630,2026-11-02,det,fla,in,15:39 - 1st,1,15:39,0.0,0.0,1.0,1.0,Missed,Andrew Copp Missed Shot Failed Bank Attempt
