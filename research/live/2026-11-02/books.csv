@@ -6896,3 +6896,6 @@ seen_at_et,espn_event_id,date,away,home,period,clock,away_score,home_score,book,
 2026-11-02 22:52:05,401892632,2026-11-02,cgy,sj,thirdperiod,0:00,1.0,0.0,BetMGM,moneyline,away,0.0,145,True,normal
 2026-11-02 22:52:05,401892632,2026-11-02,cgy,sj,thirdperiod,0:00,1.0,0.0,BetMGM,moneyline,draw,0.0,340,True,normal
 2026-11-02 22:52:05,401892632,2026-11-02,cgy,sj,thirdperiod,0:00,1.0,0.0,BetMGM,moneyline,home,0.0,110,True,normal
+2026-11-02 22:59:05,401892632,2026-11-02,cgy,sj,event,0:00,1.0,0.0,Caesars,moneyline,home,0.0,225,True,normal
+2026-11-02 23:01:05,401892632,2026-11-02,cgy,sj,event,0:00,1.0,0.0,Consensus,team_total,away_under,2.5,132,False,normal
+2026-11-02 23:01:05,401892632,2026-11-02,cgy,sj,thirdperiod,0:00,1.0,0.0,Consensus,spread,home,-0.5,145,False,normal
