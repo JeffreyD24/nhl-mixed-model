@@ -32,7 +32,10 @@ def one(gid):
     url = f"https://api-web.nhle.com/v1/gamecenter/{gid}/boxscore"
     for k in range(TRIES):
         try:
-            with urllib.request.urlopen(url, timeout=TIMEOUT) as r: b = json.loads(r.read()); break
+            # send a browser-style User-Agent: shifts.py and probe_nhle.py do, and they answer in 0.3 s from GitHub; the bare Python-urllib agent is the likely reason
+            # the first run hung (Nov 3, 2026; not proven)
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as r: b = json.loads(r.read()); break
         except Exception as e:
             if isinstance(e, urllib.error.HTTPError) and e.code == 404: k = TRIES - 1   # missing game: don't retry
             if k >= TRIES - 1:
