@@ -193,3 +193,16 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-02 21:03:05,401892630,2026-11-02,det,fla,in,14:50 - 3rd,3,14:50,4.0,2.0,20.0,20.0,Blocked,Michael Rasmussen shot blocked by Radko Gudas
 2026-11-02 21:04:05,401892629,2026-11-02,vgk,bos,in,18:59 - 3rd,3,18:59,1.0,2.0,12.0,16.0,Face Off,Elias Lindholm faceoff won against Jack Eichel
 2026-11-02 21:04:05,401892630,2026-11-02,det,fla,in,14:17 - 3rd,3,14:17,4.0,2.0,21.0,20.0,Stoppage,Goalie Stopped
+2026-11-02 21:05:06,401892629,2026-11-02,vgk,bos,in,17:57 - 3rd,3,17:57,1.0,2.0,12.0,16.0,Hit,Ivan Barbashev hit Nikita Zadorov
+2026-11-02 21:05:06,401892630,2026-11-02,det,fla,in,14:04 - 3rd,3,14:04,4.0,2.0,21.0,20.0,Stoppage,Goalie Stopped
+2026-11-02 21:06:05,401892629,2026-11-02,vgk,bos,in,17:30 - 3rd,3,17:30,1.0,2.0,12.0,16.0,Face Off,Tomas Hertl faceoff won against Elias Lindholm
+2026-11-02 21:06:05,401892630,2026-11-02,det,fla,in,13:13 - 3rd,3,13:13,4.0,2.0,21.0,21.0,Face Off,Anton Lundell faceoff won against Emmitt Finnie
+2026-11-02 21:07:05,401892629,2026-11-02,vgk,bos,in,16:32 - 3rd,3,16:32,1.0,2.0,12.0,16.0,Face Off,Tomas Hertl faceoff won against Elias Lindholm
+2026-11-02 21:07:05,401892630,2026-11-02,det,fla,in,12:35 - 3rd,3,12:35,4.0,2.0,21.0,22.0,Face Off,J.T. Compher faceoff won against Sam Bennett
+2026-11-02 21:08:05,401892629,2026-11-02,vgk,bos,in,16:09 - 3rd,3,16:09,1.0,2.0,12.0,16.0,Stoppage,Off-side
+2026-11-02 21:08:05,401892630,2026-11-02,det,fla,in,11:43 - 3rd,3,11:43,4.0,2.0,21.0,22.0,Face Off,J.T. Compher faceoff won against Sam Bennett
+2026-11-02 21:09:05,401892629,2026-11-02,vgk,bos,in,15:29 - 3rd,3,15:29,1.0,2.0,12.0,17.0,Shot,William Karlsson saved by Jeremy Swayman
+2026-11-02 21:09:05,401892630,2026-11-02,det,fla,in,10:31 - 3rd,3,10:31,4.0,2.0,21.0,22.0,Hit,Brady Tkachuk hit Ben Chiarot
+2026-11-02 21:10:05,401892629,2026-11-02,vgk,bos,in,14:27 - 3rd,3,14:27,1.0,2.0,12.0,17.0,Shot,William Karlsson Snap Shot saved by Jeremy Swayman
+2026-11-02 21:10:05,401892630,2026-11-02,det,fla,in,10:29 - 3rd,3,10:29,4.0,2.0,21.0,22.0,Stoppage,High Stick
+2026-11-02 21:10:05,401892631,2026-11-02,col,chi,in,20:00 - 2nd,2,20:00,2.0,2.0,2.0,12.0,Period End,End of 1st Period
