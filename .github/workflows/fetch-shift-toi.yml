@@ -1,0 +1,36 @@
+name: Fetch NHL time on ice per game, 2010-11 to 2022-23 (job B part 2)
+on:
+  workflow_dispatch:
+    inputs:
+      seasons:
+        description: "Season START years, space-separated (2014 = 2014-15)"
+        default: "2014"
+      probe:
+        description: "Run the endpoint probe first (true/false)"
+        default: "true"
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pandas
+      - name: Probe which NHL endpoints answer from GitHub
+        if: ${{ inputs.probe == 'true' }}
+        working-directory: data/external/nhl_box
+        run: python probe_nhle.py
+      - name: Fetch one season at a time, saving after each
+        working-directory: data/external/nhl_box
+        run: |
+          git config user.name "nhl-tracker-bot"; git config user.email "actions@users.noreply.github.com"
+          for s in ${{ inputs.seasons }}; do
+            python fetch_shift_toi.py "$s" || true
+            git add parts_toi
+            git diff --cached --quiet || git commit -q -m "NHL time on ice: season $s (job B part 2)"
+            for i in 1 2 3 4 5; do git pull --rebase --autostash -q && git push -q && break; sleep 10; done
+          done
