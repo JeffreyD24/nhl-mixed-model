@@ -83,3 +83,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-03 11:03,goals,401892637,2026-11-03,stl,nyr,0.4644,2.911,3.093,6.17,Joel Hofer (expected),Dylan Garand (confirmed),STL: Parayko? | NYR: Durzi?
 2026-11-03 11:03,xg,401892638,2026-11-03,min,phi,0.3213,2.427,3.4,5.98,Jesper Wallstedt (expected),Dan Vladar (confirmed),"MIN: Spurgeon | PHI: Bump, Gaucher, McDonald"
 2026-11-03 11:03,goals,401892638,2026-11-03,min,phi,0.3891,2.362,3.004,5.54,Jesper Wallstedt (expected),Dan Vladar (confirmed),"MIN: Spurgeon | PHI: Bump, Gaucher, McDonald"
+2026-11-03 11:05,xg,401892634,2026-11-03,wpg,mtl,0.6047,3.426,2.69,6.28,Stuart Skinner (expected),Jacob Fowler (confirmed),"WPG: Koepke, Mercer? | MTL: Dach?, Matheson"
+2026-11-03 11:05,goals,401892634,2026-11-03,wpg,mtl,0.6001,3.2,2.517,5.88,Stuart Skinner (expected),Jacob Fowler (confirmed),"WPG: Koepke, Mercer? | MTL: Dach?, Matheson"
