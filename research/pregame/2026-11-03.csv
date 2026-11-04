@@ -758,3 +758,16 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-03 21:00:56,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,thirdperiod,moneyline,home,0.0,135,normal
 2026-11-03 21:00:56,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,thirdperiod,total,over,2.5,108,normal
 2026-11-03 21:00:56,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,thirdperiod,total,under,2.5,-155,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,event,moneyline,away,0.0,-200,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,event,moneyline,home,0.0,163,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,event,spread,home,1.5,-148,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,firstperiod,spread,home,0.5,-177,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,firstperiod,spread,away,-0.5,128,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,firstperiod,total,over,1.5,-170,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,firstperiod,total,over,1.5,-200,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,firstperiod,total,under,1.5,138,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,secondperiod,team_total,away_over,1.5,100,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,secondperiod,team_total,away_under,1.5,-132,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,secondperiod,total,under,2.5,-168,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,thirdperiod,team_total,away_over,1.5,-115,normal
+2026-11-03 21:03:05,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,thirdperiod,team_total,away_under,1.5,-115,normal
