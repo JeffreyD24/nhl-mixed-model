@@ -192,7 +192,7 @@ pos = {k: i for i, k in enumerate(zip(H.date, H.home, H.away))}
 ix = np.array([pos.get(k, -1) for k in zip(B.date, B.home_team, B.away_team)])
 evm = np.where(ix >= 0, T60_MP.ev.values[np.clip(ix, 0, None)], np.nan); sidem = np.where(ix >= 0, T60_MP.home.values[np.clip(ix, 0, None)], True)
 evp = np.where(ix >= 0, T60_PP.ev.values[np.clip(ix, 0, None)], np.nan); sidep = np.where(ix >= 0, T60_PP.home.values[np.clip(ix, 0, None)], True)
-B["still"] = np.where(B.market == "ML", (sidem == B.home) & (evm >= ML_THR), (sidep == B.home) & (evp >= PL_THR))
+B["still"] = pd.Series(np.where(B.market == "ML", (sidem == B.home) & (evm >= ML_THR), (sidep == B.home) & (evp >= PL_THR)), index=B.index).astype(object)
 B.loc[np.isnan(np.where(B.market == "ML", evm, evp)), "still"] = np.nan
 for mk in ("ML", "PL"):
     X = B[B.market == mk]
@@ -202,3 +202,26 @@ for mk in ("ML", "PL"):
     line(f"{mk} any starter, pretip at T60 below the bar / flipped", X[X.still == False])
 
 pd.concat(out).to_csv(os.path.join(W, "research", "spreads", "step3_nhl_goalie_bets.csv"), index=False)
+
+# ------------------------------------------------------------------ EXPLORATORY (added after seeing results; not part of the decision)
+print("\n" + "=" * 150 + "\nEXPLORATORY: strict surprise = actual starter had < 30% of the team's last-10 starts (or none)\n" + "-" * 150)
+def wt(gm, a):
+    try: m = json.loads(gm) if isinstance(gm, str) else {}
+    except Exception: m = {}
+    return 0.0 if pd.isna(a) else float(m.get(str(int(a)), 0.0))
+for s in ("home", "away"): H[f"{s}_strict"] = [wt(g, a) < 0.3 for g, a in zip(H[f"{s}_gmix"], H[f"{s}_goalie"])]
+H["strict"] = H.home_strict | H.away_strict
+print(f"  strict-surprise games {H.strict.mean():.1%} (home {H.home_strict.mean():.1%}, away {H.away_strict.mean():.1%})")
+qp = T60_MP.ev.notna() & (T60_MP.ev >= ML_THR); pp = T60_PP.ev.notna() & (T60_PP.ev >= PL_THR) & ~T60_PP.b2b
+line("A at T60, strict-surprise games", T60_MP[qp & H.strict.values]); line("A at T60, no strict surprise", T60_MP[qp & ~H.strict.values])
+line("B at T60, strict-surprise games", T60_PP[pp & H.strict.values])
+info("T60", "p_home_win", H.strict.values, "pretip, strict-surprise games"); info("T60", "p_home_win_open", H.strict.values, "opener model, strict-surprise games")
+B["our_strict"] = [bool(H.loc[pos[k], "home_strict" if h else "away_strict"]) if k in pos else False
+                   for k, h in zip(zip(B.date, B.home_team, B.away_team), B.home)]
+for mk in ("ML", "PL"):
+    X = B[B.market == mk]
+    line(f"{mk} opener bets, our starter a STRICT surprise", X[X.our_strict]); line(f"{mk} opener bets, not a strict surprise", X[~X.our_strict])
+# lineup look-ahead check: pretip model with the opener's missed-player value (goalies only changed) is not in the holdout files;
+# report how often the pretip and opener models differ only through skaters
+d_g = (H.home_goalie.notna()); print(f"  games where pretip skater-missing value differs from the opener's: "
+      f"{((H.home_miss_off - H.home_miss_off_open).abs().gt(0.01) | (H.away_miss_off - H.away_miss_off_open).abs().gt(0.01)).mean():.1%}")

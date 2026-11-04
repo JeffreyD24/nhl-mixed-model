@@ -1,0 +1,120 @@
+DK snapshots: 302475 rows, unmapped teams none
+/home/claude/nhl-mixed-model/research/spreads/step3_nhl_goalie.py:88: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  for c, v in out.items(): H[f"{lab}_{c}"] = v
+/home/claude/nhl-mixed-model/research/spreads/step3_nhl_goalie.py:92: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  H["mkt_close"] = nv(H.close_home_ml, H.close_away_ml)
+T60: DK price found for 6549 of 6560 games; median minutes before puck drop 64
+T180: DK price found for 6554 of 6560 games; median minutes before puck drop 184
+Surprise starter games: 65.1% (home 38.8%, away 43.7%)
+
+======================================================================================================================================================
+T60  [PRIMARY]
+------------------------------------------------------------------------------------------------------------------------------------------------------
+  A  ML pretip (actual starters), EV 4%+                1330 bets 52.0%   +58.2u  +4.4/100 [ -0.5, +9.4]  CLV -3.49% [-3.74,-3.12]
+                                                       by season  +13.5  +33.7   -9.0   -1.2  +21.2  neg 2/5
+  A-open  ML opener model (expected goalies), EV 4%+    1158 bets 50.4%   +43.8u  +3.8/100 [ -1.1, +9.1]  CLV -3.75% [-4.04,-3.35]
+                                                       by season  +10.9  +24.3  -11.7   -7.3  +27.7  neg 2/5
+  C  A, surprise games                                   877 bets 51.3%   +24.7u  +2.8/100 [ -3.0, +9.0]  CLV -3.44% [-3.80,-2.87]
+                                                       by season   +3.6  +26.3   -3.6   -2.0   +0.4  neg 2/5
+  D  A, non-surprise games                               453 bets 53.2%   +33.4u  +7.4/100 [ -0.7,+15.6]  CLV -3.59% [-3.77,-3.39]
+                                                       by season   +9.9   +7.4   -5.4   +0.7  +20.8  neg 1/5
+     A-open, surprise games                              781 bets 51.2%   +37.4u  +4.8/100 [ -1.3,+11.1]  CLV -3.82% [-4.22,-3.19]
+                                                       by season   +8.5  +20.5   +5.2   -3.4   +6.7  neg 1/5
+     A, EV 9%+                                           322 bets 50.9%   +50.6u +15.7/100 [ +4.5,+26.3]  CLV -2.74% [-3.67,-1.23]
+                                                       by season  +21.4   +7.6  +12.5   +4.2   +4.9  neg 0/5
+  B  PL pretip, EV 9%+, no b2b                           827 bets 48.1%   +78.5u  +9.5/100 [ +2.9,+16.0]  CLV -3.54% [-3.65,-3.44]
+                                                       by season  +13.2  +18.7   +6.1  +20.1  +20.4  neg 0/5
+  B-open  PL opener model                                652 bets 43.3%    -5.4u  -0.8/100 [ -8.2, +6.9]  CLV -3.77% [-3.89,-3.66]
+                                                       by season   -0.3  -17.6   +2.8  +15.3   -5.7  neg 3/5
+     B, surprise games                                   555 bets 50.3%   +71.9u +12.9/100 [ +4.8,+21.4]  CLV -3.56% [-3.68,-3.43]
+                                                       by season  +11.5  +41.7   +1.7   +2.6  +14.4  neg 0/5
+  information test (logistic slope on model minus DK, offset DK no-vig at T60)
+  pretip, all games                                    n  6549  w = +0.447 [+0.301, +0.593]
+  opener model, all games                              n  6549  w = +0.337 [+0.168, +0.501]
+  pretip, surprise games                               n  4263  w = +0.465 [+0.277, +0.650]
+  opener model, surprise games                         n  4263  w = +0.329 [+0.132, +0.536]
+  log loss DK no-vig at T60                 all 0.6581   surprise games 0.6559  (n 6549, 4263)
+  log loss DK no-vig close                  all 0.6579   surprise games 0.6559  (n 6549, 4263)
+  log loss pretip blend at T60              all 0.6564   surprise games 0.6542  (n 6549, 4263)
+  log loss opener-model blend at T60        all 0.6575   surprise games 0.6555  (n 6549, 4263)
+
+======================================================================================================================================================
+T180  (secondary; more look-ahead risk)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+  A  ML pretip (actual starters), EV 4%+                1323 bets 52.8%   +85.6u  +6.5/100 [ +1.6,+11.2]  CLV -3.40% [-3.52,-3.28]
+                                                       by season  +24.2  +43.5   -8.6  +10.5  +16.1  neg 1/5
+  A-open  ML opener model (expected goalies), EV 4%+    1130 bets 51.8%   +71.9u  +6.4/100 [ +1.0,+11.9]  CLV -3.87% [-4.00,-3.74]
+                                                       by season  +26.4  +31.0   -9.7   +6.6  +17.5  neg 1/5
+  C  A, surprise games                                   879 bets 52.3%   +46.1u  +5.2/100 [ -0.7,+11.5]  CLV -3.42% [-3.56,-3.27]
+                                                       by season   +8.4  +33.1   -4.1   +7.5   +1.3  neg 1/5
+  D  A, non-surprise games                               444 bets 53.8%   +39.5u  +8.9/100 [ +0.5,+17.1]  CLV -3.38% [-3.57,-3.18]
+                                                       by season  +15.8  +10.4   -4.5   +3.0  +14.9  neg 1/5
+     A-open, surprise games                              752 bets 53.2%   +64.9u  +8.6/100 [ +2.0,+15.2]  CLV -4.01% [-4.16,-3.86]
+                                                       by season  +19.7  +25.7   +5.1  +10.6   +3.8  neg 0/5
+     A, EV 9%+                                           320 bets 52.8%   +58.7u +18.3/100 [ +7.5,+29.4]  CLV -3.40% [-3.65,-3.13]
+                                                       by season  +21.9  +15.0  +11.4  +10.3   +0.1  neg 0/5
+  B  PL pretip, EV 9%+, no b2b                           847 bets 48.8%   +92.4u +10.9/100 [ +4.0,+17.9]  CLV -3.17% [-3.31,-3.04]
+                                                       by season  +14.5  +26.9   +4.9  +25.3  +20.9  neg 0/5
+  B-open  PL opener model                                648 bets 43.5%   +10.3u  +1.6/100 [ -6.5, +9.2]  CLV -3.49% [-3.63,-3.34]
+                                                       by season   -1.0   -5.1   +2.3  +12.6   +1.5  neg 2/5
+     B, surprise games                                   567 bets 50.6%   +74.4u +13.1/100 [ +4.9,+21.3]  CLV -3.21% [-3.38,-3.03]
+                                                       by season  +11.6  +45.1   +0.8   +4.4  +12.5  neg 0/5
+  information test (logistic slope on model minus DK, offset DK no-vig at T180)
+  pretip, all games                                    n  6554  w = +0.476 [+0.328, +0.634]
+  opener model, all games                              n  6554  w = +0.367 [+0.193, +0.532]
+  pretip, surprise games                               n  4266  w = +0.504 [+0.312, +0.693]
+  opener model, surprise games                         n  4266  w = +0.369 [+0.172, +0.570]
+  log loss DK no-vig at T180                all 0.6585   surprise games 0.6567  (n 6554, 4266)
+  log loss DK no-vig close                  all 0.6578   surprise games 0.6559  (n 6554, 4266)
+  log loss pretip blend at T180             all 0.6566   surprise games 0.6545  (n 6554, 4266)
+  log loss opener-model blend at T180       all 0.6577   surprise games 0.6559  (n 6554, 4266)
+
+======================================================================================================================================================
+E. STEP-1 v4 OPENER BETS (lag 1, graded at the opener) by our starter and the pretip re-check at T60
+------------------------------------------------------------------------------------------------------------------------------------------------------
+  ML opener bets, our starter as expected                764 bets 56.2%   +86.1u +11.3/100 [ +5.3,+17.6]  CLV +1.02% [+0.63,+1.40]
+                                                       by season  +18.3  +24.8  +14.9   +6.8  +21.3  neg 0/5
+  ML opener bets, our starter a SURPRISE                 503 bets 55.7%   +61.0u +12.1/100 [ +4.6,+20.0]  CLV -0.98% [-1.41,-0.52]
+                                                       by season   +4.0  +26.7   +7.0  +18.6   +4.8  neg 0/5
+  ML   surprise and pretip at T60 below the bar / flipped   234 bets 58.5%   +33.8u +14.4/100 [ +3.8,+25.6]  CLV +0.53% [-0.09,+1.11]
+                                                       by season   -2.9   +8.2   +9.3  +14.3   +4.8  neg 1/5
+  ML   surprise and pretip at T60 still a bet            268 bets 53.4%   +28.3u +10.6/100 [ -0.7,+21.2]  CLV -2.32% [-3.01,-1.69]
+                                                       by season   +6.9  +18.4   -2.4   +5.3   +0.0  neg 1/5
+  ML any starter, pretip at T60 below the bar / flipped   552 bets 56.3%   +56.7u +10.3/100 [ +3.7,+17.6]  CLV +2.43% [+2.02,+2.85]
+                                                       by season   -0.4  +17.5  +11.4  +20.3   +7.9  neg 1/5
+  PL opener bets, our starter as expected                212 bets 45.3%   +31.0u +14.6/100 [ +0.6,+29.2]  CLV +1.15% [+0.49,+1.81]
+                                                       by season   +5.7   +1.9   -2.8  +19.1   +7.2  neg 1/5
+  PL opener bets, our starter a SURPRISE                 109 bets 41.3%    +4.5u  +4.2/100 [-16.2,+25.3]  CLV -0.32% [-1.26,+0.72]
+                                                       by season   +2.7  +10.1   -6.7   -1.7   +0.1  neg 2/5
+  PL   surprise and pretip at T60 below the bar / flipped    55 bets 38.2%    -1.8u  -3.3/100 [-31.8,+26.1]  CLV +1.85% [+0.46,+3.29]
+                                                       by season   +0.1   +3.4   -6.2   -1.0   +1.9  neg 2/5
+  PL   surprise and pretip at T60 still a bet             54 bets 44.4%    +6.4u +11.8/100 [-16.8,+40.0]  CLV -2.41% [-3.52,-1.29]
+                                                       by season   +2.6   +6.7   -0.5   -0.7   -1.7  neg 3/5
+  PL any starter, pretip at T60 below the bar / flipped   169 bets 40.8%    +6.7u  +4.0/100 [-12.6,+20.2]  CLV +2.90% [+2.25,+3.61]
+                                                       by season   +4.0   +3.5  -11.6   +3.3   +7.5  neg 1/5
+
+======================================================================================================================================================
+EXPLORATORY: strict surprise = actual starter had < 30% of the team's last-10 starts (or none)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+/home/claude/nhl-mixed-model/research/spreads/step3_nhl_goalie.py:212: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  for s in ("home", "away"): H[f"{s}_strict"] = [wt(g, a) < 0.3 for g, a in zip(H[f"{s}_gmix"], H[f"{s}_goalie"])]
+/home/claude/nhl-mixed-model/research/spreads/step3_nhl_goalie.py:213: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  H["strict"] = H.home_strict | H.away_strict
+  strict-surprise games 35.0% (home 17.3%, away 22.4%)
+  A at T60, strict-surprise games                        487 bets 52.0%   +16.5u  +3.4/100 [ -5.1,+10.9]  CLV -3.64% [-3.80,-3.48]
+                                                       by season   -4.7  +17.2   +1.7   -1.0   +3.4  neg 2/5
+  A at T60, no strict surprise                           843 bets 52.0%   +41.7u  +4.9/100 [ -0.8,+11.0]  CLV -3.41% [-3.79,-2.83]
+                                                       by season  +18.2  +16.5  -10.7   -0.2  +17.9  neg 2/5
+  B at T60, strict-surprise games                        267 bets 52.4%   +44.0u +16.5/100 [ +5.1,+29.1]  CLV -3.57% [-3.78,-3.36]
+                                                       by season   +6.0  +36.0   -1.2   -4.7   +7.8  neg 2/5
+  pretip, strict-surprise games                        n  2295  w = +0.520 [+0.281, +0.762]
+  opener model, strict-surprise games                  n  2295  w = +0.379 [+0.138, +0.634]
+  ML opener bets, our starter a STRICT surprise          234 bets 53.0%   +18.0u  +7.7/100 [ -4.2,+19.3]  CLV -1.22% [-1.90,-0.52]
+                                                       by season   -0.4   +9.1   +6.6   +2.0   +0.7  neg 1/5
+  ML opener bets, not a strict surprise                 1033 bets 56.6%  +129.1u +12.5/100 [ +7.2,+17.9]  CLV +0.56% [+0.21,+0.88]
+                                                       by season  +22.7  +42.4  +15.2  +23.4  +25.4  neg 0/5
+  PL opener bets, our starter a STRICT surprise           42 bets 42.9%    +3.1u  +7.4/100 [-24.7,+40.6]  CLV +0.94% [-0.52,+2.44]
+                                                       by season   -2.2   +7.8   -3.7   -0.4   +1.7  neg 3/5
+  PL opener bets, not a strict surprise                  279 bets 44.1%   +32.5u +11.6/100 [ -1.3,+24.6]  CLV +0.60% [+0.01,+1.19]
+                                                       by season  +10.6   +4.2   -5.8  +17.8   +5.7  neg 1/5
+  games where pretip skater-missing value differs from the opener's: 83.8%
