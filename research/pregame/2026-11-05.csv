@@ -5130,3 +5130,16 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 15:27:59,293558,2026-11-05,2026-11-05 19:00,van,wpg,bet365,event,spread,home,-1.5,114,normal
 2026-11-04 15:29:58,293550,2026-11-05,2026-11-05 19:00,chi,tb,bet365,event,total,under,6.5,-117,normal
 2026-11-04 15:29:58,293550,2026-11-05,2026-11-05 19:00,chi,tb,bet365,event,total,over,6.5,-103,normal
+2026-11-04 15:32:01,293556,2026-11-05,2026-11-05 19:00,uta,mtl,BetMGM,event,total,under,6.5,-115,normal
+2026-11-04 15:32:01,293556,2026-11-05,2026-11-05 19:00,uta,mtl,BetMGM,event,total,over,6.5,-105,normal
+2026-11-04 15:32:01,293557,2026-11-05,2026-11-05 20:00,ana,edm,bet365,event,total,under,6.5,122,normal
+2026-11-04 15:32:01,293557,2026-11-05,2026-11-05 20:00,ana,edm,bet365,event,total,over,6.5,-144,normal
+2026-11-04 15:32:01,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,event,moneyline,away,0.0,188,normal
+2026-11-04 15:32:01,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,event,moneyline,home,0.0,-230,normal
+2026-11-04 15:32:01,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,event,spread,home,-1.5,-102,normal
+2026-11-04 15:32:01,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,event,spread,away,1.5,-120,normal
+2026-11-04 15:32:01,293559,2026-11-05,2026-11-05 21:30,nsh,col,BetMGM,event,moneyline,home,0.0,-220,normal
+2026-11-04 15:32:01,293559,2026-11-05,2026-11-05 21:30,nsh,col,BetMGM,event,moneyline,away,0.0,180,normal
+2026-11-04 15:32:01,293559,2026-11-05,2026-11-05 21:30,nsh,col,BetMGM,event,spread,away,1.5,-130,normal
+2026-11-04 15:32:01,293559,2026-11-05,2026-11-05 21:30,nsh,col,BetMGM,event,spread,home,-1.5,105,normal
+2026-11-04 15:32:01,293559,2026-11-05,2026-11-05 21:30,nsh,col,BetMGM,thirdperiod,spread,home,-0.5,-105,normal
