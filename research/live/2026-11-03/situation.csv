@@ -25,3 +25,51 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 19:11:05,401892639,2026-11-03,vgk,pit,in,18:13 - 1st,1,18:13,0.0,0.0,0.0,1.0,Face Off,William Karlsson faceoff won against Blake Lizotte
 2026-11-03 19:11:05,401892640,2026-11-03,dal,wsh,in,18:45 - 1st,1,18:45,0.0,0.0,0.0,0.0,Face Off,Jamie Benn faceoff won against Dylan Strome
 2026-11-03 19:11:05,401892641,2026-11-03,col,cbj,in,19:12 - 1st,1,19:12,0.0,1.0,1.0,0.0,Shot,Charlie Coyle Wrist Shot saved by Scott Wedgewood
+2026-11-03 19:12:05,401892633,2026-11-03,uta,tor,in,18:50 - 1st,1,18:50,0.0,0.0,1.0,0.0,Stoppage,Off-side
+2026-11-03 19:12:05,401892634,2026-11-03,wpg,mtl,in,16:55 - 1st,1,16:55,0.0,1.0,3.0,0.0,Goal,"Owen Beck Goal (1), assists: none"
+2026-11-03 19:12:05,401892635,2026-11-03,det,tb,in,17:56 - 1st,1,17:56,0.0,0.0,0.0,1.0,Shot,Alex DeBrincat saved by Andrei Vasilevskiy
+2026-11-03 19:12:05,401892637,2026-11-03,stl,nyr,in,18:15 - 1st,1,18:15,0.0,0.0,0.0,0.0,Stoppage,Goalie Stopped
+2026-11-03 19:12:05,401892638,2026-11-03,min,phi,in,17:55 - 1st,1,17:55,0.0,0.0,1.0,2.0,Stoppage,Puck Frozen - Goalie
+2026-11-03 19:12:05,401892639,2026-11-03,vgk,pit,in,17:12 - 1st,1,17:12,0.0,0.0,0.0,2.0,Shot,Noah Hanifin Wrist Shot saved by Arturs Silovs
+2026-11-03 19:12:05,401892640,2026-11-03,dal,wsh,in,17:46 - 1st,1,17:46,0.0,0.0,0.0,0.0,Face Off,Jamie Benn faceoff won against Dylan Strome
+2026-11-03 19:12:05,401892641,2026-11-03,col,cbj,in,18:11 - 1st,1,18:11,0.0,1.0,0.0,0.0,Face Off,Adam Fantilli faceoff won against Brock Nelson
+2026-11-03 19:13:05,401892633,2026-11-03,uta,tor,in,18:23 - 1st,1,18:23,0.0,0.0,1.0,1.0,Stoppage,Goalie Stopped
+2026-11-03 19:13:05,401892634,2026-11-03,wpg,mtl,in,16:41 - 1st,1,16:41,0.0,1.0,3.0,0.0,Stoppage,Goalie Stopped
+2026-11-03 19:13:05,401892635,2026-11-03,det,tb,in,17:21 - 1st,1,17:21,0.0,0.0,1.0,1.0,Stoppage,Goalie Stopped
+2026-11-03 19:13:05,401892637,2026-11-03,stl,nyr,in,17:39 - 1st,1,17:39,0.0,0.0,0.0,2.0,Shot,Theo Lindstein saved by Dylan Garand
+2026-11-03 19:13:05,401892638,2026-11-03,min,phi,in,17:18 - 1st,1,17:18,0.0,0.0,1.0,2.0,Stoppage,Icing
+2026-11-03 19:13:05,401892639,2026-11-03,vgk,pit,in,16:12 - 1st,1,16:12,0.0,0.0,0.0,2.0,Takeaway,Takeaway by Ben Kindel
+2026-11-03 19:13:05,401892640,2026-11-03,dal,wsh,in,16:37 - 1st,1,16:37,0.0,0.0,0.0,0.0,Missed,Joel Kiviranta Missed Shot Wide Left
+2026-11-03 19:13:05,401892641,2026-11-03,col,cbj,in,17:33 - 1st,1,17:33,0.0,1.0,0.0,0.0,Stoppage,Goalie Stopped
+2026-11-03 19:14:06,401892633,2026-11-03,uta,tor,in,18:07 - 1st,1,18:07,0.0,0.0,1.0,1.0,Stoppage,Puck in Netting
+2026-11-03 19:14:06,401892634,2026-11-03,wpg,mtl,in,16:28 - 1st,1,16:28,0.0,1.0,3.0,1.0,Shot,Cole Perfetti Snap Shot saved by Jacob Fowler
+2026-11-03 19:14:06,401892635,2026-11-03,det,tb,in,16:35 - 1st,1,16:35,0.0,0.0,1.0,1.0,Missed,Conor Geekie Missed Shot Wide Right
+2026-11-03 19:14:06,401892637,2026-11-03,stl,nyr,in,16:41 - 1st,1,16:41,0.0,0.0,0.0,3.0,Missed,Adam Jiricek Missed Shot High and Wide Right
+2026-11-03 19:14:06,401892638,2026-11-03,min,phi,in,16:56 - 1st,1,16:56,0.0,0.0,1.0,3.0,Shot,Joel Eriksson Ek Tip-In saved by Dan Vladar
+2026-11-03 19:14:06,401892639,2026-11-03,vgk,pit,in,15:45 - 1st,1,15:45,0.0,0.0,0.0,2.0,Face Off,Blake Lizotte faceoff won against Jack Eichel
+2026-11-03 19:14:06,401892640,2026-11-03,dal,wsh,in,15:57 - 1st,1,15:57,0.0,0.0,0.0,0.0,Stoppage,Icing
+2026-11-03 19:14:06,401892641,2026-11-03,col,cbj,in,16:52 - 1st,1,16:52,0.0,1.0,0.0,1.0,Face Off,Sean Monahan faceoff won against Fedor Svechkov
+2026-11-03 19:15:05,401892633,2026-11-03,uta,tor,in,17:28 - 1st,1,17:28,0.0,0.0,1.0,1.0,Shot,Kevin Stenlund saved by Sergei Bobrovsky
+2026-11-03 19:15:05,401892634,2026-11-03,wpg,mtl,in,15:41 - 1st,1,15:41,0.0,1.0,3.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 19:15:05,401892635,2026-11-03,det,tb,in,15:32 - 1st,1,15:32,0.0,0.0,1.0,1.0,Missed,Alex DeBrincat Missed Shot High and Wide Left
+2026-11-03 19:15:05,401892637,2026-11-03,stl,nyr,in,15:54 - 1st,1,15:54,0.0,0.0,0.0,2.0,Stoppage,Icing
+2026-11-03 19:15:05,401892638,2026-11-03,min,phi,in,16:39 - 1st,1,16:39,0.0,0.0,1.0,3.0,Face Off,Christian Dvorak faceoff won against Joel Eriksson Ek
+2026-11-03 19:15:05,401892639,2026-11-03,vgk,pit,in,14:53 - 1st,1,14:53,0.0,0.0,0.0,2.0,Face Off,Blake Lizotte faceoff won against Jack Eichel
+2026-11-03 19:15:05,401892640,2026-11-03,dal,wsh,in,15:37 - 1st,1,15:37,0.0,0.0,0.0,0.0,Blocked,Pierre-Luc Dubois shot blocked by Arttu Hyry
+2026-11-03 19:15:05,401892641,2026-11-03,col,cbj,in,15:49 - 1st,1,15:49,0.0,1.0,0.0,1.0,Face Off,Sean Monahan faceoff won against Fedor Svechkov
+2026-11-03 19:16:05,401892633,2026-11-03,uta,tor,in,16:27 - 1st,1,16:27,0.0,0.0,1.0,2.0,Shot,Kevin Stenlund Wrist Shot saved by Sergei Bobrovsky
+2026-11-03 19:16:05,401892634,2026-11-03,wpg,mtl,in,14:50 - 1st,1,14:50,0.0,1.0,3.0,2.0,Missed,Missed Shot
+2026-11-03 19:16:05,401892635,2026-11-03,det,tb,in,14:30 - 1st,1,14:30,0.0,0.0,1.0,1.0,Missed,Alex DeBrincat Missed Shot High and Wide Left
+2026-11-03 19:16:05,401892637,2026-11-03,stl,nyr,in,15:06 - 1st,1,15:06,0.0,0.0,0.0,2.0,Blocked,Vladislav Gavrikov shot blocked by Brandon Carlo
+2026-11-03 19:16:05,401892638,2026-11-03,min,phi,in,15:54 - 1st,1,15:54,1.0,0.0,1.0,3.0,Goal,"Matt Boldy Goal (7) Snap Shot, assists: none"
+2026-11-03 19:16:05,401892639,2026-11-03,vgk,pit,in,14:37 - 1st,1,14:37,0.0,0.0,0.0,2.0,Face Off,Sidney Crosby faceoff won against Jack Eichel
+2026-11-03 19:16:05,401892640,2026-11-03,dal,wsh,in,15:15 - 1st,1,15:15,0.0,0.0,0.0,0.0,Face Off,Arttu Hyry faceoff won against Pierre-Luc Dubois
+2026-11-03 19:16:05,401892641,2026-11-03,col,cbj,in,14:48 - 1st,1,14:48,0.0,1.0,1.0,2.0,Shot,Cale Makar saved by Cam Talbot
+2026-11-03 19:17:05,401892633,2026-11-03,uta,tor,in,15:25 - 1st,1,15:25,0.0,0.0,1.0,2.0,Giveaway,Giveaway by Clayton Keller
+2026-11-03 19:17:05,401892634,2026-11-03,wpg,mtl,in,14:22 - 1st,1,14:22,0.0,1.0,3.0,2.0,Stoppage,Off-side
+2026-11-03 19:17:05,401892635,2026-11-03,det,tb,in,13:30 - 1st,1,13:30,0.0,0.0,1.0,1.0,Blocked,Brayden Point shot blocked by Nikita Kucherov
+2026-11-03 19:17:05,401892637,2026-11-03,stl,nyr,in,14:33 - 1st,1,14:33,0.0,0.0,0.0,3.0,Stoppage,Goalie Stopped
+2026-11-03 19:17:05,401892638,2026-11-03,min,phi,in,15:23 - 1st,1,15:23,2.0,0.0,1.0,5.0,Goal,"Michael McCarron Goal (3), assists: none"
+2026-11-03 19:17:05,401892639,2026-11-03,vgk,pit,in,14:12 - 1st,1,14:12,0.0,0.0,1.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 19:17:05,401892640,2026-11-03,dal,wsh,in,14:14 - 1st,1,14:14,0.0,0.0,1.0,0.0,Missed,Dylan Strome Tip-In Wide Right
+2026-11-03 19:17:05,401892641,2026-11-03,col,cbj,in,14:42 - 1st,1,14:42,0.0,1.0,1.0,3.0,Face Off,Nazem Kadri faceoff won against Sean Monahan
