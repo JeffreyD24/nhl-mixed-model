@@ -1207,3 +1207,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 22:28:06,401892643,2026-11-03,ana,van,in,8:18 - 2nd,2,8:18,3.0,2.0,7.0,10.0,Face Off,Leo Carlsson faceoff won against Elias Pettersson
 2026-11-03 22:29:05,401892642,2026-11-03,car,nsh,in,6:18 - 3rd,3,6:18,1.0,3.0,15.0,25.0,Face Off,Logan Stankoven faceoff won against Jack Drury
 2026-11-03 22:29:05,401892643,2026-11-03,ana,van,in,7:56 - 2nd,2,7:56,3.0,2.0,7.0,10.0,Penalty Shot Infraction,Jamie Oleksiak Minor
+2026-11-03 22:30:05,401892642,2026-11-03,car,nsh,in,5:14 - 3rd,3,5:14,1.0,3.0,15.0,25.0,Shot,Reid Schaefer Wrist Shot saved by Pyotr Kochetkov
+2026-11-03 22:30:05,401892643,2026-11-03,ana,van,in,7:45 - 2nd,2,7:45,3.0,2.0,7.0,10.0,Fighting,Jeff Malott Fighting against Jamie Oleksiak
+2026-11-03 22:31:05,401892642,2026-11-03,car,nsh,in,5:14 - 3rd,3,5:14,1.0,3.0,16.0,25.0,Stoppage,Puck in Netting
+2026-11-03 22:31:05,401892643,2026-11-03,ana,van,in,7:20 - 2nd,2,7:20,3.0,2.0,8.0,10.0,Face Off,Mikael Granlund faceoff won against Marco Rossi
+2026-11-03 22:32:05,401892643,2026-11-03,ana,van,in,6:21 - 2nd,2,6:21,3.0,2.0,8.0,10.0,Blocked,Liam Ohgren shot blocked by Jackson LaCombe
+2026-11-03 22:33:05,401892642,2026-11-03,car,nsh,in,4:51 - 3rd,3,4:51,1.0,3.0,16.0,25.0,Stoppage,Puck in Benches
+2026-11-03 22:33:05,401892643,2026-11-03,ana,van,in,5:16 - 2nd,2,5:16,3.0,2.0,9.0,10.0,Blocked,Liam Ohgren shot blocked by Jackson LaCombe
+2026-11-03 22:34:05,401892642,2026-11-03,car,nsh,in,4:29 - 3rd,3,4:29,1.0,3.0,16.0,27.0,Shot,Sean Walker Wrist Shot saved by Juuse Saros
+2026-11-03 22:34:05,401892643,2026-11-03,ana,van,in,4:57 - 2nd,2,4:57,3.0,2.0,10.0,10.0,Stoppage,Off-side
+2026-11-03 22:35:06,401892642,2026-11-03,car,nsh,in,3:40 - 3rd,3,3:40,1.0,3.0,16.0,28.0,Stoppage,Off-side
