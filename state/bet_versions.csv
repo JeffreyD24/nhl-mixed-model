@@ -9,5 +9,5 @@ NHL overs v1,total,2026-11-02 10:05,shot model totals: overs only at the opener 
 NHL v3.1,moneyline,2026-11-02 18:45,"v3 + reporter goalie/lineup news from Bluesky (confirmed starter used until ESPN confirms; clear skater out/in for that game); same rules"
 NHL v3.1,puck line,2026-11-02 18:45,"v3 + reporter goalie/lineup news from Bluesky; same rules"
 NHL overs v1.1,total,2026-11-02 18:45,"overs v1 + reporter goalie/lineup news from Bluesky; same rule"
-NHL v4,moneyline,2026-11-04 11:50,"v3.1 + rule audit: no back-to-back skip; one bet per game prefers the moneyline; no DON'T BET while price within 1.5 pts of the alert; Pinnacle post-alert follow-up dropped (at-alert Pinnacle rule kept)"
-NHL v4,puck line,2026-11-04 11:50,"v3.1 + rule audit: EV 9%+ (6-9% logged as TEST); back-to-back skip kept; not alerted when the moneyline on the game is the bet"
+NHL v4,moneyline,2026-11-04 11:42,"v3.1 + rule audit: no back-to-back skip; one bet per game prefers the moneyline; no DON'T BET while price within 1.5 pts of the alert; Pinnacle post-alert follow-up dropped (at-alert Pinnacle rule kept)"
+NHL v4,puck line,2026-11-04 11:42,"v3.1 + rule audit: EV 9%+ (6-9% logged as TEST); back-to-back skip kept; not alerted when the moneyline on the game is the bet"
