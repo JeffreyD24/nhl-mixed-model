@@ -823,3 +823,60 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 21:13:05,401892636,2026-11-03,edm,nj,in,End of 2nd,2,0:00,2.0,3.0,22.0,10.0,Period End,End of 2nd Period
 2026-11-03 21:13:05,401892642,2026-11-03,car,nsh,in,16:24 - 2nd,2,16:24,0.0,2.0,5.0,9.0,Face Off,Alexander Kerfoot faceoff won against Jesperi Kotkaniemi
 2026-11-03 21:13:05,401892643,2026-11-03,ana,van,in,18:28 - 1st,1,18:28,0.0,0.0,1.0,0.0,Blocked,Beckett Sennecke shot blocked by Elias Pettersson
+2026-11-03 21:14:06,401892633,2026-11-03,uta,tor,in,15:09 - 3rd,3,15:09,2.0,1.0,21.0,30.0,Face Off,Barrett Hayton faceoff won against Jack Roslovic
+2026-11-03 21:14:06,401892634,2026-11-03,wpg,mtl,in,16:20 - 3rd,3,16:20,0.0,4.0,13.0,32.0,Face Off,Jake Evans faceoff won against Mark Scheifele
+2026-11-03 21:14:06,401892637,2026-11-03,stl,nyr,in,15:33 - 3rd,3,15:33,0.0,1.0,25.0,22.0,Stoppage,Puck Frozen - Skater
+2026-11-03 21:14:06,401892638,2026-11-03,min,phi,in,12:28 - 3rd,3,12:28,3.0,2.0,18.0,15.0,Blocked,Trevor Zegras shot blocked by Jonas Brodin
+2026-11-03 21:14:06,401892639,2026-11-03,vgk,pit,in,11:10 - 3rd,3,11:10,1.0,1.0,19.0,18.0,Blocked,Egor Chinakhov shot blocked by Noah Hanifin
+2026-11-03 21:14:06,401892640,2026-11-03,dal,wsh,in,10:54 - 3rd,3,10:54,6.0,3.0,13.0,13.0,Face Off,Wyatt Johnston faceoff won against Pierre-Luc Dubois
+2026-11-03 21:14:06,401892641,2026-11-03,col,cbj,in,12:33 - 3rd,3,12:33,2.0,6.0,11.0,22.0,Face Off,Adam Fantilli faceoff won against Brock Nelson
+2026-11-03 21:14:06,401892642,2026-11-03,car,nsh,in,15:56 - 2nd,2,15:56,0.0,2.0,5.0,9.0,Face Off,Alexander Kerfoot faceoff won against Jesperi Kotkaniemi
+2026-11-03 21:14:06,401892643,2026-11-03,ana,van,in,17:49 - 1st,1,17:49,0.0,0.0,1.0,0.0,Blocked,Beckett Sennecke shot blocked by Elias Pettersson
+2026-11-03 21:15:05,401892633,2026-11-03,uta,tor,in,14:04 - 3rd,3,14:04,2.0,1.0,22.0,30.0,Shot,William Nylander Wrist Shot saved by Sebastian Cossa
+2026-11-03 21:15:05,401892634,2026-11-03,wpg,mtl,in,15:35 - 3rd,3,15:35,0.0,4.0,13.0,32.0,Blocked,Cole Perfetti shot blocked by Adam Engstrom
+2026-11-03 21:15:05,401892635,2026-11-03,det,tb,in,12:42 - 3rd,3,12:42,2.0,3.0,21.0,9.0,Stoppage,Goalie Stopped
+2026-11-03 21:15:05,401892637,2026-11-03,stl,nyr,in,15:18 - 3rd,3,15:18,0.0,1.0,25.0,22.0,Hooking,Mika Zibanejad Hooking against Dalibor Dvorsky
+2026-11-03 21:15:05,401892638,2026-11-03,min,phi,in,11:35 - 3rd,3,11:35,3.0,2.0,18.0,15.0,Blocked,Simon Benoit shot blocked by Zach Bogosian
+2026-11-03 21:15:05,401892639,2026-11-03,vgk,pit,in,10:20 - 3rd,3,10:20,1.0,1.0,19.0,18.0,Blocked,Hendrix Lapierre shot blocked by Brayden McNabb
+2026-11-03 21:15:05,401892640,2026-11-03,dal,wsh,in,10:54 - 3rd,3,10:54,6.0,3.0,13.0,13.0,Stoppage,Off-side
+2026-11-03 21:15:05,401892641,2026-11-03,col,cbj,in,12:03 - 3rd,3,12:03,2.0,6.0,12.0,22.0,Stoppage,Goalie Stopped
+2026-11-03 21:15:05,401892642,2026-11-03,car,nsh,in,15:25 - 2nd,2,15:25,0.0,2.0,6.0,9.0,Shot,Steven Stamkos Snap Shot saved by Pyotr Kochetkov
+2026-11-03 21:15:05,401892643,2026-11-03,ana,van,in,17:10 - 1st,1,17:10,0.0,0.0,1.0,0.0,Penalty Shot Infraction,Jacob Quillan Minor
+2026-11-03 21:16:05,401892633,2026-11-03,uta,tor,in,13:05 - 3rd,3,13:05,2.0,1.0,24.0,30.0,Shot,Darren Raddysh saved by Sebastian Cossa
+2026-11-03 21:16:05,401892634,2026-11-03,wpg,mtl,in,15:28 - 3rd,3,15:28,0.0,4.0,13.0,32.0,Stoppage,Puck in Netting
+2026-11-03 21:16:05,401892635,2026-11-03,det,tb,in,11:44 - 3rd,3,11:44,2.0,3.0,21.0,10.0,Missed,Missed Shot
+2026-11-03 21:16:05,401892637,2026-11-03,stl,nyr,in,14:43 - 3rd,3,14:43,0.0,1.0,25.0,22.0,Face Off,J.T. Miller faceoff won against Robert Thomas
+2026-11-03 21:16:05,401892638,2026-11-03,min,phi,in,11:11 - 3rd,3,11:11,3.0,2.0,19.0,15.0,Face Off,Danila Yurov faceoff won against Cole Knuble
+2026-11-03 21:16:05,401892639,2026-11-03,vgk,pit,in,9:50 - 3rd,3,9:50,1.0,2.0,19.0,18.0,Shot,Blake Lizotte saved by Adin Hill
+2026-11-03 21:16:05,401892640,2026-11-03,dal,wsh,in,9:55 - 3rd,3,9:55,6.0,3.0,13.0,13.0,Stoppage,TV Timeout
+2026-11-03 21:16:05,401892642,2026-11-03,car,nsh,in,14:40 - 2nd,2,14:40,0.0,2.0,6.0,9.0,Missed,Seth Jarvis Wrist Shot Wide Left
+2026-11-03 21:16:05,401892643,2026-11-03,ana,van,in,16:22 - 1st,1,16:22,0.0,0.0,1.0,0.0,Missed,Beckett Sennecke Missed Shot Wide Right
+2026-11-03 21:17:06,401892633,2026-11-03,uta,tor,in,12:21 - 3rd,3,12:21,2.0,1.0,26.0,30.0,Blocked,Easton Cowan shot blocked by Mikhail Sergachev
+2026-11-03 21:17:06,401892634,2026-11-03,wpg,mtl,in,15:00 - 3rd,3,15:00,0.0,4.0,13.0,32.0,Stoppage,Goalie Stopped
+2026-11-03 21:17:06,401892635,2026-11-03,det,tb,in,10:44 - 3rd,3,10:44,2.0,3.0,21.0,10.0,Missed,Gage Goncalves Missed Shot Wide Left
+2026-11-03 21:17:06,401892637,2026-11-03,stl,nyr,in,13:31 - 3rd,3,13:31,0.0,1.0,25.0,23.0,Shot,Pavel Buchnevich Wrist Shot saved by Dylan Garand
+2026-11-03 21:17:06,401892638,2026-11-03,min,phi,in,10:09 - 3rd,3,10:09,3.0,2.0,21.0,16.0,Shot,David Spacek Snap Shot saved by Dan Vladar
+2026-11-03 21:17:06,401892639,2026-11-03,vgk,pit,in,8:56 - 3rd,3,8:56,1.0,2.0,20.0,18.0,Shot,Mark Stone Backhand saved by Arturs Silovs
+2026-11-03 21:17:06,401892640,2026-11-03,dal,wsh,in,9:55 - 3rd,3,9:55,6.0,3.0,13.0,14.0,Stoppage,TV Timeout
+2026-11-03 21:17:06,401892641,2026-11-03,col,cbj,in,12:03 - 3rd,3,12:03,2.0,6.0,12.0,22.0,Face Off,Nathan MacKinnon faceoff won against Charlie Coyle
+2026-11-03 21:17:06,401892642,2026-11-03,car,nsh,in,14:13 - 2nd,2,14:13,0.0,2.0,7.0,9.0,Stoppage,Goalie Stopped
+2026-11-03 21:17:06,401892643,2026-11-03,ana,van,in,15:56 - 1st,1,15:56,1.0,0.0,1.0,0.0,Goal,"Mikael Granlund Goal (4) Snap Shot, assists: Beckett Sennecke (5), Jackson LaCombe (15)"
+2026-11-03 21:18:05,401892633,2026-11-03,uta,tor,in,12:21 - 3rd,3,12:21,2.0,1.0,25.0,30.0,Stoppage,TV Timeout
+2026-11-03 21:18:05,401892634,2026-11-03,wpg,mtl,in,14:49 - 3rd,3,14:49,0.0,4.0,14.0,33.0,Stoppage,Goalie Stopped
+2026-11-03 21:18:05,401892635,2026-11-03,det,tb,in,9:57 - 3rd,3,9:57,2.0,3.0,21.0,11.0,Missed,Dominic James Missed Shot Wide Left
+2026-11-03 21:18:05,401892637,2026-11-03,stl,nyr,in,12:37 - 3rd,3,12:37,0.0,1.0,25.0,23.0,Shot,Scott Morrow saved by Joel Hofer
+2026-11-03 21:18:05,401892638,2026-11-03,min,phi,in,9:41 - 3rd,3,9:41,3.0,2.0,22.0,16.0,Blocked,Quinn Hughes shot blocked by Denver Barkey
+2026-11-03 21:18:05,401892639,2026-11-03,vgk,pit,in,8:41 - 3rd,3,8:41,2.0,2.0,20.0,19.0,Goal,"Trevor Connelly Goal (6) Wrist Shot, assists: none"
+2026-11-03 21:18:05,401892641,2026-11-03,col,cbj,in,10:57 - 3rd,3,10:57,2.0,6.0,12.0,22.0,Missed,Nathan MacKinnon Snap Shot Wide Left
+2026-11-03 21:18:05,401892642,2026-11-03,car,nsh,in,14:08 - 2nd,2,14:08,0.0,2.0,7.0,9.0,Face Off,Alexander Kerfoot faceoff won against Mark Jankowski
+2026-11-03 21:18:05,401892643,2026-11-03,ana,van,in,15:18 - 1st,1,15:18,1.0,0.0,1.0,1.0,Shot,Jeff Malott saved by Kevin Lankinen
+2026-11-03 21:19:05,401892633,2026-11-03,uta,tor,in,12:21 - 3rd,3,12:21,2.0,1.0,24.0,30.0,Stoppage,TV Timeout
+2026-11-03 21:19:05,401892634,2026-11-03,wpg,mtl,in,14:17 - 3rd,3,14:17,0.0,4.0,14.0,33.0,Face Off,Jake Evans faceoff won against Mark Scheifele
+2026-11-03 21:19:05,401892635,2026-11-03,det,tb,in,9:33 - 3rd,3,9:33,2.0,3.0,21.0,12.0,Stoppage,Goalie Stopped
+2026-11-03 21:19:05,401892637,2026-11-03,stl,nyr,in,12:28 - 3rd,3,12:28,0.0,1.0,26.0,24.0,Stoppage,Puck Frozen - Goalie
+2026-11-03 21:19:05,401892638,2026-11-03,min,phi,in,8:29 - 3rd,3,8:29,3.0,2.0,22.0,17.0,Blocked,Nick Seeler shot blocked by Ryan Hartman
+2026-11-03 21:19:05,401892639,2026-11-03,vgk,pit,in,7:41 - 3rd,3,7:41,2.0,2.0,20.0,19.0,Face Off,Tomas Hertl faceoff won against Hendrix Lapierre
+2026-11-03 21:19:05,401892640,2026-11-03,dal,wsh,in,9:32 - 3rd,3,9:32,6.0,3.0,14.0,14.0,Stoppage,Goalie Stopped
+2026-11-03 21:19:05,401892641,2026-11-03,col,cbj,in,10:28 - 3rd,3,10:28,2.0,6.0,13.0,22.0,Face Off,Nazem Kadri faceoff won against Sean Monahan
+2026-11-03 21:19:05,401892642,2026-11-03,car,nsh,in,13:16 - 2nd,2,13:16,0.0,2.0,6.0,9.0,Stoppage,Icing
+2026-11-03 21:19:05,401892643,2026-11-03,ana,van,in,15:18 - 1st,1,15:18,1.0,0.0,1.0,1.0,Fighting,Roger McQueen Fighting
