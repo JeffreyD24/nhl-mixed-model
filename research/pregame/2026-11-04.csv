@@ -3394,3 +3394,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 06:44:31,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,thirdperiod,total,under,2.5,-215,normal
 2026-11-04 06:44:31,293548,2026-11-04,2026-11-04 22:00,sj,la,BetMGM,thirdperiod,moneyline,home,0.0,-160,normal
 2026-11-04 06:44:31,293548,2026-11-04,2026-11-04 22:00,sj,la,BetMGM,thirdperiod,moneyline,away,0.0,115,normal
+2026-11-04 06:47:49,293545,2026-11-04,2026-11-04 19:30,chi,fla,BetRivers,event,spread,home,-1.5,100,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,event,team_total,away_over,2.5,-148,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,event,team_total,away_under,2.5,108,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,event,team_total,home_over,3.5,-103,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,event,moneyline,home,0.0,-159,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,firstperiod,team_total,home_over,0.5,-230,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,secondperiod,team_total,home_over,0.5,-250,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,secondperiod,team_total,home_under,0.5,170,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,secondperiod,moneyline,home,0.0,-152,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,secondperiod,moneyline,away,0.0,110,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,thirdperiod,team_total,away_over,0.5,-205,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,thirdperiod,team_total,away_under,0.5,140,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,thirdperiod,moneyline,home,0.0,-150,normal
+2026-11-04 06:47:49,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,thirdperiod,total,under,2.5,-210,normal
