@@ -678,3 +678,4 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-03 20:37:53,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,thirdperiod,team_total,away_over,1.5,128,normal
 2026-11-03 20:37:53,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,thirdperiod,moneyline,away,0.0,-182,normal
 2026-11-03 20:37:53,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,thirdperiod,moneyline,home,0.0,133,normal
+2026-11-03 20:41:51,293544,2026-11-03,2026-11-03 21:00,ana,van,bet365,event,total,over,6.5,-144,normal
