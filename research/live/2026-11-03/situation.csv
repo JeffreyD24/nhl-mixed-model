@@ -625,3 +625,48 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 20:39:05,401892641,2026-11-03,col,cbj,in,2:12 - 2nd,2,2:12,2.0,6.0,8.0,17.0,Face Off,Sean Monahan faceoff won against Nathan MacKinnon
 2026-11-03 20:39:05,401892636,2026-11-03,edm,nj,in,16:05 - 2nd,2,16:05,1.0,0.0,12.0,8.0,Stoppage,Goalie Stopped
 2026-11-03 20:39:05,401892642,2026-11-03,car,nsh,in,4:24 - 1st,1,4:24,0.0,1.0,2.0,7.0,Stoppage,Goalie Stopped
+2026-11-03 20:40:06,401892633,2026-11-03,uta,tor,in,2:40 - 2nd,2,2:40,2.0,1.0,15.0,25.0,Stoppage,On-Ice Official
+2026-11-03 20:40:06,401892634,2026-11-03,wpg,mtl,in,5:11 - 2nd,2,5:11,0.0,3.0,11.0,22.0,Shot,Kyle Connor Snap Shot saved by Jacob Fowler
+2026-11-03 20:40:06,401892635,2026-11-03,det,tb,in,2:05 - 2nd,2,2:05,1.0,3.0,19.0,5.0,Stoppage,Puck in Netting
+2026-11-03 20:40:06,401892638,2026-11-03,min,phi,in,End of 2nd,2,0:00,3.0,1.0,13.0,15.0,Blocked,Matt Boldy shot blocked by Noah Cates
+2026-11-03 20:40:06,401892639,2026-11-03,vgk,pit,in,2:50 - 2nd,2,2:50,1.0,0.0,15.0,17.0,Face Off,Hendrix Lapierre faceoff won against Ivan Barbashev
+2026-11-03 20:40:06,401892640,2026-11-03,dal,wsh,in,0:39 - 2nd,2,0:39,5.0,2.0,10.0,13.0,Missed,Sam Steel Snap Shot Wide Left
+2026-11-03 20:40:06,401892641,2026-11-03,col,cbj,in,1:35 - 2nd,2,1:35,2.0,6.0,8.0,17.0,Face Off,Sean Monahan faceoff won against Nathan MacKinnon
+2026-11-03 20:40:06,401892636,2026-11-03,edm,nj,in,15:11 - 2nd,2,15:11,1.0,0.0,14.0,8.0,Shot,Dougie Hamilton saved by Tristan Jarry
+2026-11-03 20:40:06,401892642,2026-11-03,car,nsh,in,4:24 - 1st,1,4:24,0.0,1.0,3.0,7.0,Stoppage,Goalie Stopped
+2026-11-03 20:41:05,401892633,2026-11-03,uta,tor,in,2:40 - 2nd,2,2:40,2.0,1.0,16.0,25.0,Stoppage,On-Ice Official
+2026-11-03 20:41:05,401892634,2026-11-03,wpg,mtl,in,4:15 - 2nd,2,4:15,0.0,3.0,11.0,23.0,Shot,Kyle Connor Snap Shot saved by Jacob Fowler
+2026-11-03 20:41:05,401892637,2026-11-03,stl,nyr,in,4:32 - 2nd,2,4:32,0.0,1.0,18.0,19.0,Stoppage,Goalie Stopped
+2026-11-03 20:41:05,401892638,2026-11-03,min,phi,in,End of 2nd,2,0:00,3.0,1.0,13.0,15.0,Period End,End of 2nd Period
+2026-11-03 20:41:05,401892639,2026-11-03,vgk,pit,in,1:58 - 2nd,2,1:58,1.0,0.0,15.0,17.0,Blocked,Trevor Connelly shot blocked by Rickard Rakell
+2026-11-03 20:41:05,401892640,2026-11-03,dal,wsh,in,0:16 - 2nd,2,0:16,5.0,3.0,10.0,13.0,Face Off,Boone Jenner faceoff won against Wyatt Johnston
+2026-11-03 20:41:05,401892641,2026-11-03,col,cbj,in,0:30 - 2nd,2,0:30,2.0,6.0,8.0,17.0,Shot,Fedor Svechkov Tip-In saved by Cam Talbot
+2026-11-03 20:41:05,401892636,2026-11-03,edm,nj,in,13:57 - 2nd,2,13:57,1.0,0.0,14.0,8.0,Missed,Arseny Gritsyuk Missed Shot Wide Left
+2026-11-03 20:41:05,401892642,2026-11-03,car,nsh,in,4:24 - 1st,1,4:24,0.0,1.0,3.0,7.0,Face Off,Shane Wright faceoff won against Mark Jankowski
+2026-11-03 20:42:06,401892633,2026-11-03,uta,tor,in,2:15 - 2nd,2,2:15,2.0,1.0,16.0,26.0,Penalty Shot Infraction,Nick Paul Minor
+2026-11-03 20:42:06,401892634,2026-11-03,wpg,mtl,in,3:58 - 2nd,2,3:58,0.0,3.0,11.0,24.0,Stoppage,Goalie Stopped
+2026-11-03 20:42:06,401892635,2026-11-03,det,tb,in,1:29 - 2nd,2,1:29,1.0,3.0,19.0,5.0,Blocked,Nikita Kucherov shot blocked by William Wallinder
+2026-11-03 20:42:06,401892637,2026-11-03,stl,nyr,in,3:43 - 2nd,2,3:43,0.0,1.0,19.0,19.0,Shot,Oliver Bjorkstrand saved by Joel Hofer
+2026-11-03 20:42:06,401892639,2026-11-03,vgk,pit,in,0:59 - 2nd,2,0:59,1.0,0.0,15.0,17.0,Blocked,Trevor Connelly shot blocked by Rickard Rakell
+2026-11-03 20:42:06,401892640,2026-11-03,dal,wsh,in,End of 2nd,2,0:00,5.0,3.0,10.0,13.0,Period End,End of 2nd Period
+2026-11-03 20:42:06,401892641,2026-11-03,col,cbj,in,0:03 - 2nd,2,0:03,2.0,6.0,8.0,20.0,Face Off,Nathan MacKinnon faceoff won against Adam Fantilli
+2026-11-03 20:42:06,401892636,2026-11-03,edm,nj,in,13:31 - 2nd,2,13:31,1.0,0.0,14.0,8.0,Stoppage,Puck in Netting
+2026-11-03 20:42:06,401892642,2026-11-03,car,nsh,in,3:53 - 1st,1,3:53,0.0,1.0,3.0,7.0,Stoppage,Icing
+2026-11-03 20:43:06,401892633,2026-11-03,uta,tor,in,1:43 - 2nd,2,1:43,2.0,1.0,16.0,26.0,Blocked,Mikhail Sergachev shot blocked by Colton Sissons
+2026-11-03 20:43:06,401892634,2026-11-03,wpg,mtl,in,3:56 - 2nd,2,3:56,0.0,3.0,11.0,24.0,Face Off,Phillip Danault faceoff won against Mark Scheifele
+2026-11-03 20:43:06,401892635,2026-11-03,det,tb,in,0:30 - 2nd,2,0:30,1.0,3.0,19.0,6.0,Shot,Andrew Copp saved by Andrei Vasilevskiy
+2026-11-03 20:43:06,401892637,2026-11-03,stl,nyr,in,3:18 - 2nd,2,3:18,0.0,1.0,20.0,19.0,Face Off,Mika Zibanejad faceoff won against Robert Thomas
+2026-11-03 20:43:06,401892639,2026-11-03,vgk,pit,in,End of 2nd,2,0:00,1.0,0.0,14.0,17.0,Period End,End of 2nd Period
+2026-11-03 20:43:06,401892641,2026-11-03,col,cbj,in,End of 2nd,2,0:00,2.0,6.0,8.0,20.0,Face Off,Adam Fantilli faceoff won against Brock Nelson
+2026-11-03 20:43:06,401892642,2026-11-03,car,nsh,in,3:07 - 1st,1,3:07,0.0,1.0,3.0,7.0,Face Off,Mark Jankowski faceoff won against Ryan O'Reilly
+2026-11-03 20:44:05,401892633,2026-11-03,uta,tor,in,0:47 - 2nd,2,0:47,2.0,1.0,16.0,26.0,Blocked,Nick Schmaltz shot blocked by Nick Schmaltz
+2026-11-03 20:44:05,401892634,2026-11-03,wpg,mtl,in,2:59 - 2nd,2,2:59,0.0,3.0,11.0,24.0,Face Off,Phillip Danault faceoff won against Mark Scheifele
+2026-11-03 20:44:05,401892635,2026-11-03,det,tb,in,End of 2nd,2,0:00,1.0,3.0,19.0,7.0,Period End,End of 2nd Period
+2026-11-03 20:44:05,401892637,2026-11-03,stl,nyr,in,2:56 - 2nd,2,2:56,0.0,1.0,21.0,19.0,Stoppage,Goalie Stopped
+2026-11-03 20:44:05,401892641,2026-11-03,col,cbj,in,End of 2nd,2,0:00,2.0,6.0,8.0,20.0,Period End,End of 2nd Period
+2026-11-03 20:44:05,401892642,2026-11-03,car,nsh,in,2:38 - 1st,1,2:38,0.0,1.0,3.0,7.0,Face Off,Alexander Kerfoot faceoff won against Jesperi Kotkaniemi
+2026-11-03 20:45:05,401892633,2026-11-03,uta,tor,in,End of 2nd,2,0:00,2.0,1.0,16.0,26.0,Period End,End of 2nd Period
+2026-11-03 20:45:05,401892634,2026-11-03,wpg,mtl,in,2:24 - 2nd,2,2:24,0.0,3.0,11.0,25.0,Shot,Mark Scheifele Snap Shot saved by Jacob Fowler
+2026-11-03 20:45:05,401892637,2026-11-03,stl,nyr,in,1:55 - 2nd,2,1:55,0.0,1.0,21.0,19.0,Blocked,Tye Kartye shot blocked by Brandon Carlo
+2026-11-03 20:45:05,401892636,2026-11-03,edm,nj,in,12:47 - 2nd,2,12:47,1.0,0.0,16.0,9.0,Stoppage,Icing
+2026-11-03 20:45:05,401892642,2026-11-03,car,nsh,in,2:24 - 1st,1,2:24,0.0,1.0,3.0,8.0,Face Off,Jack Drury faceoff won against Sebastian Aho
