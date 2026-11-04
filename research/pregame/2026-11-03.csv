@@ -644,3 +644,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-03 20:15:58,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,firstperiod,spread,away,-0.5,126,normal
 2026-11-03 20:15:58,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,secondperiod,total,under,2.5,-168,normal
 2026-11-03 20:15:58,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,thirdperiod,total,over,2.5,110,normal
+2026-11-03 20:18:01,293544,2026-11-03,2026-11-03 21:00,ana,van,BetRivers,event,moneyline,home,0.0,163,normal
+2026-11-03 20:18:01,293544,2026-11-03,2026-11-03 21:00,ana,van,DraftKings,firstperiod,moneyline,home,0.0,115,normal
