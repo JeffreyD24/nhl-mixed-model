@@ -630,3 +630,4 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-03 20:07:54,293544,2026-11-03,2026-11-03 21:00,ana,van,FanDuel,thirdperiod,moneyline,home,0.0,136,normal
 2026-11-03 20:07:54,293544,2026-11-03,2026-11-03 21:00,ana,van,FanDuel,thirdperiod,moneyline,away,0.0,-174,normal
 2026-11-03 20:07:54,293544,2026-11-03,2026-11-03 21:00,ana,van,FanDuel,thirdperiod,spread,away,-0.5,106,normal
+2026-11-03 20:09:55,293544,2026-11-03,2026-11-03 21:00,ana,van,bet365,event,spread,away,-1.5,132,normal
