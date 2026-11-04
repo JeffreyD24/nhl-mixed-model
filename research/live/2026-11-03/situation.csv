@@ -331,3 +331,49 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 20:04:06,401892640,2026-11-03,dal,wsh,in,18:10 - 2nd,2,18:10,2.0,0.0,6.0,6.0,Missed,Anthony Beauvillier Missed Shot Wide Right
 2026-11-03 20:04:06,401892641,2026-11-03,col,cbj,in,19:38 - 2nd,2,19:38,1.0,2.0,3.0,10.0,Face Off,Charlie Coyle faceoff won against Nazem Kadri
 2026-11-03 20:04:06,401892636,2026-11-03,edm,nj,in,5:25 - 1st,1,5:25,1.0,0.0,7.0,7.0,Stoppage,Off-side
+2026-11-03 20:05:05,401892638,2026-11-03,min,phi,in,19:18 - 2nd,2,19:18,3.0,0.0,7.0,7.0,Goal,"Joel Eriksson Ek Goal (6) Snap Shot, assists: Matt Boldy (9)"
+2026-11-03 20:05:05,401892639,2026-11-03,vgk,pit,in,19:43 - 2nd,2,19:43,1.0,0.0,7.0,9.0,Shot,Nick Robertson saved by Adin Hill
+2026-11-03 20:05:05,401892640,2026-11-03,dal,wsh,in,17:28 - 2nd,2,17:28,2.0,0.0,6.0,6.0,Stoppage,Goalie Stopped
+2026-11-03 20:05:05,401892641,2026-11-03,col,cbj,in,18:30 - 2nd,2,18:30,1.0,2.0,3.0,10.0,Giveaway,Giveaway by Martin Necas
+2026-11-03 20:06:06,401892633,2026-11-03,uta,tor,in,20:00 - 2nd,2,20:00,1.0,0.0,9.0,13.0,Period End,End of 1st Period
+2026-11-03 20:06:06,401892634,2026-11-03,wpg,mtl,in,19:51 - 2nd,2,19:51,0.0,2.0,5.0,11.0,Period End,End of 1st Period
+2026-11-03 20:06:06,401892635,2026-11-03,det,tb,in,19:31 - 2nd,2,19:31,0.0,2.0,11.0,2.0,Stoppage,Puck in Benches
+2026-11-03 20:06:06,401892638,2026-11-03,min,phi,in,18:54 - 2nd,2,18:54,3.0,0.0,7.0,7.0,Face Off,Noah Cates faceoff won against Michael McCarron
+2026-11-03 20:06:06,401892639,2026-11-03,vgk,pit,in,18:58 - 2nd,2,18:58,1.0,0.0,9.0,10.0,Stoppage,Goalie Stopped
+2026-11-03 20:06:06,401892640,2026-11-03,dal,wsh,in,16:42 - 2nd,2,16:42,2.0,0.0,6.0,6.0,Missed,Jason Robertson Missed Shot Above Crossbar
+2026-11-03 20:06:06,401892641,2026-11-03,col,cbj,in,17:56 - 2nd,2,17:56,1.0,2.0,3.0,10.0,Stoppage,Off-side
+2026-11-03 20:06:06,401892636,2026-11-03,edm,nj,in,5:14 - 1st,1,5:14,1.0,0.0,7.0,7.0,Face Off,Nico Hischier faceoff won against Connor McDavid
+2026-11-03 20:07:05,401892634,2026-11-03,wpg,mtl,in,19:10 - 2nd,2,19:10,0.0,2.0,6.0,11.0,Stoppage,Off-side
+2026-11-03 20:07:05,401892635,2026-11-03,det,tb,in,18:56 - 2nd,2,18:56,0.0,2.0,11.0,2.0,Stoppage,Off-side
+2026-11-03 20:07:05,401892637,2026-11-03,stl,nyr,in,20:00 - 2nd,2,20:00,0.0,0.0,9.0,10.0,Period End,End of 1st Period
+2026-11-03 20:07:05,401892638,2026-11-03,min,phi,in,18:15 - 2nd,2,18:15,3.0,0.0,7.0,8.0,Stoppage,Goalie Stopped
+2026-11-03 20:07:05,401892639,2026-11-03,vgk,pit,in,18:49 - 2nd,2,18:49,1.0,0.0,9.0,10.0,Face Off,William Karlsson faceoff won against Ben Kindel
+2026-11-03 20:07:05,401892640,2026-11-03,dal,wsh,in,16:41 - 2nd,2,16:41,3.0,0.0,6.0,6.0,Face Off,Wyatt Johnston faceoff won against Ilya Protas
+2026-11-03 20:07:05,401892641,2026-11-03,col,cbj,in,17:33 - 2nd,2,17:33,1.0,2.0,3.0,10.0,Blocked,Damon Severson shot blocked by Brent Burns
+2026-11-03 20:07:05,401892636,2026-11-03,edm,nj,in,4:17 - 1st,1,4:17,1.0,0.0,7.0,7.0,Face Off,Nico Hischier faceoff won against Connor McDavid
+2026-11-03 20:08:06,401892633,2026-11-03,uta,tor,in,19:59 - 2nd,2,19:59,1.0,0.0,9.0,13.0,Period Start,Start of 2nd Period
+2026-11-03 20:08:06,401892634,2026-11-03,wpg,mtl,in,18:37 - 2nd,2,18:37,0.0,2.0,6.0,11.0,Stoppage,Puck in Benches
+2026-11-03 20:08:06,401892635,2026-11-03,det,tb,in,18:08 - 2nd,2,18:08,0.0,2.0,11.0,2.0,Missed,Brandon Hagel Missed Shot Wide Right
+2026-11-03 20:08:06,401892638,2026-11-03,min,phi,in,17:50 - 2nd,2,17:50,3.0,0.0,7.0,8.0,Stoppage,Off-side
+2026-11-03 20:08:06,401892639,2026-11-03,vgk,pit,in,18:16 - 2nd,2,18:16,1.0,0.0,9.0,10.0,Stoppage,Puck in Benches
+2026-11-03 20:08:06,401892640,2026-11-03,dal,wsh,in,16:06 - 2nd,2,16:06,3.0,0.0,7.0,6.0,Shot,Boone Jenner Tip-In saved by Jake Oettinger
+2026-11-03 20:08:06,401892641,2026-11-03,col,cbj,in,17:02 - 2nd,2,17:02,1.0,2.0,3.0,10.0,Face Off,Fedor Svechkov faceoff won against Danton Heinen
+2026-11-03 20:08:06,401892636,2026-11-03,edm,nj,in,4:07 - 1st,1,4:07,1.0,0.0,8.0,7.0,Hooking,Colton Dach Hooking against Jack Hughes
+2026-11-03 20:09:05,401892633,2026-11-03,uta,tor,in,19:01 - 2nd,2,19:01,1.0,0.0,9.0,13.0,Face Off,Nick Paul faceoff won against Barrett Hayton
+2026-11-03 20:09:05,401892634,2026-11-03,wpg,mtl,in,18:13 - 2nd,2,18:13,0.0,2.0,6.0,12.0,Stoppage,Goalie Stopped
+2026-11-03 20:09:05,401892635,2026-11-03,det,tb,in,17:07 - 2nd,2,17:07,0.0,2.0,11.0,2.0,Missed,Brandon Hagel Wrist Shot Wide Right
+2026-11-03 20:09:05,401892637,2026-11-03,stl,nyr,in,19:12 - 2nd,2,19:12,0.0,0.0,9.0,10.0,Shot,Philip Broberg saved by Dylan Garand
+2026-11-03 20:09:05,401892638,2026-11-03,min,phi,in,17:04 - 2nd,2,17:04,3.0,0.0,7.0,8.0,Shot,Tyson Foerster saved by Jesper Wallstedt
+2026-11-03 20:09:05,401892639,2026-11-03,vgk,pit,in,17:16 - 2nd,2,17:16,1.0,0.0,9.0,10.0,Face Off,Blake Lizotte faceoff won against Jack Eichel
+2026-11-03 20:09:05,401892640,2026-11-03,dal,wsh,in,15:24 - 2nd,2,15:24,3.0,0.0,7.0,6.0,Face Off,Wyatt Johnston faceoff won against Anthony Beauvillier
+2026-11-03 20:09:05,401892641,2026-11-03,col,cbj,in,16:01 - 2nd,2,16:01,1.0,2.0,3.0,11.0,Shot,Logan O'Connor saved by Cam Talbot
+2026-11-03 20:09:05,401892636,2026-11-03,edm,nj,in,3:10 - 1st,1,3:10,1.0,0.0,8.0,7.0,Blocked,Jack Hughes shot blocked by Ryan Shea
+2026-11-03 20:10:05,401892633,2026-11-03,uta,tor,in,17:57 - 2nd,2,17:57,1.0,0.0,9.0,14.0,Blocked,Oliver Ekman-Larsson shot blocked by Lawson Crouse
+2026-11-03 20:10:05,401892634,2026-11-03,wpg,mtl,in,18:06 - 2nd,2,18:06,0.0,2.0,6.0,12.0,Face Off,Phillip Danault faceoff won against Mark Scheifele
+2026-11-03 20:10:05,401892635,2026-11-03,det,tb,in,16:27 - 2nd,2,16:27,0.0,2.0,11.0,2.0,Missed,Dominic James Missed Shot Wide Left
+2026-11-03 20:10:05,401892637,2026-11-03,stl,nyr,in,18:50 - 2nd,2,18:50,0.0,0.0,9.0,11.0,Face Off,Dalibor Dvorsky faceoff won against J.T. Miller
+2026-11-03 20:10:05,401892638,2026-11-03,min,phi,in,16:37 - 2nd,2,16:37,3.0,0.0,9.0,8.0,Stoppage,Puck in Crowd
+2026-11-03 20:10:05,401892639,2026-11-03,vgk,pit,in,16:53 - 2nd,2,16:53,1.0,0.0,9.0,11.0,Stoppage,Goalie Stopped
+2026-11-03 20:10:05,401892640,2026-11-03,dal,wsh,in,14:44 - 2nd,2,14:44,3.0,0.0,7.0,6.0,Missed,Matt Roy Missed Shot Hit Left Post
+2026-11-03 20:10:05,401892641,2026-11-03,col,cbj,in,15:41 - 2nd,2,15:41,1.0,3.0,3.0,12.0,Goal,"Jake Christiansen Goal (2) Slap Shot, assists: Mathieu Olivier (2), Charlie Coyle (10)"
+2026-11-03 20:10:05,401892636,2026-11-03,edm,nj,in,2:16 - 1st,1,2:16,1.0,0.0,8.0,7.0,Hit,Shakir Mukhamadullin hit Connor Brown
