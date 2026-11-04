@@ -56,16 +56,16 @@
    "sd_goalie": 0.30097154583376634,
    "sd_residual": 1.6499830720969402,
    "rho": {
-    "offense": 0.44720364574862187,
-    "defense": 0.4267262069267936,
-    "goalie": 0.20402107917816487
+    "offense": 0.4472036457486218,
+    "defense": 0.4267262069267935,
+    "goalie": 0.2040210791781649
    },
    "h_ot": 0.5243317340644277,
    "tuning_rmse_on_validation": {
     "None|None": 2.402828504261853,
     "60|None": 2.400011745767145,
     "30|None": 2.400936601787434,
-    "15|None": 2.404038414222164
+    "15|None": 2.4040384142221636
    },
    "chosen_halflife": 60,
    "chosen_adapt_n0": null
@@ -94,8 +94,8 @@
    "sd_resid_xg": 0.7333068700930937,
    "sd_resid_conv": 1.5989017907088423,
    "rho": {
-    "O": 0.6740587103518052,
-    "D": 0.61214504502052,
+    "O": 0.6740587103518054,
+    "D": 0.6121450450205199,
     "F": 0.16464362158765664,
     "G": 0.1505910703254889
    },
@@ -106,20 +106,20 @@
  },
  "log": [
   "NHL tracker run on 2026-11-03 (ET), predicting games on 2026-11-04.",
-  "Schedule: 250 regular-season games through 2026-11-04; 235 finished, results through 2026-11-02; box scores on file for 235 games.",
-  "Shots: 235 games with shot data; expected goals computed for 235.",
-  "[goals] Locked 4 live picks for 2026-11-04 and 0 backfilled.",
-  "Lines: ESPN returned no odds.",
-  "[xg] Locked 4 live picks for 2026-11-04 and 0 backfilled.",
-  "Lines: ESPN returned no odds.",
+  "Schedule: 250 regular-season games through 2026-11-04; 243 finished, results through 2026-11-03; box scores on file for 243 games.",
+  "Shots: 243 games with shot data; expected goals computed for 243.",
+  "[goals] Locked 0 live picks for 2026-11-04 and 0 backfilled.",
+  "Lines: pulled DraftKings lines from ESPN for 15 games.",
+  "[xg] Locked 0 live picks for 2026-11-04 and 0 backfilled.",
+  "Lines: pulled DraftKings lines from ESPN for 15 games.",
   "Line histories 2026-11-02: 0 new price changes saved.",
-  "Line histories 2026-11-03: 5 new price changes saved.",
-  "Line histories 2026-11-04: 116 new price changes saved.",
-  "Scorecard [goals]: 75-101 on rule bets, -26.7 units (14 live), average CLV -3.58%; alerts -2.5 units on 14; moneyline Brier 0.2387.",
-  "Scorecard [xg]: 69-78 on rule bets, -11.7 units (9 live), average CLV +0.98%; alerts -0.4 units on 4; moneyline Brier 0.2318.",
+  "Line histories 2026-11-03: 3948 new price changes saved.",
+  "Line histories 2026-11-04: 1309 new price changes saved.",
+  "Scorecard [goals]: 75-107 on rule bets, -32.7 units (20 live), average CLV -3.65%; alerts -2.5 units on 14; moneyline Brier 0.2394.",
+  "Scorecard [xg]: 72-82 on rule bets, -12.8 units (16 live), average CLV +0.92%; alerts -0.4 units on 4; moneyline Brier 0.2319.",
   "Saved 2 models for intraday checks (4 games).",
-  "Alerts graded so far: 8-10, -2.92 units at the alerted prices.",
-  "Your logged bets: 7-9, -2.31u on 16 units staked.",
-  "Line jumps graded: 13; the result matched the jump's direction 7 times."
+  "Alerts graded so far: 10-15, -5.55 units at the alerted prices.",
+  "Your logged bets: 8-10, -1.71u on 18 units staked.",
+  "Line jumps graded: 15; the result matched the jump's direction 9 times."
  ]
 }
