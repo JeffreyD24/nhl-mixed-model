@@ -1,0 +1,36 @@
+NHL goals model (GM) vs shot model (G1), same goalie data, 2017-2022 (HOLDOUT). Pre-registered: backtests/GOALS_MODEL_PREREG.md. Trusted rows unless noted.
+  GM 2017: sd_goalie 0.108, sd_offense 0.199, sd_defense 0.226, half-life 30
+  GM 2018: sd_goalie 0.101, sd_offense 0.227, sd_defense 0.208, half-life 60
+  GM 2019: sd_goalie 0.143, sd_offense 0.227, sd_defense 0.186, half-life None
+  GM 2020: sd_goalie 0.112, sd_offense 0.251, sd_defense 0.201, half-life None
+  GM 2021: sd_goalie 0.085, sd_offense 0.273, sd_defense 0.212, half-life None
+  GM 2022: sd_goalie 0.118, sd_offense 0.258, sd_defense 0.223, half-life 60
+
+1. Accuracy on every game (home win): log loss / Brier; lower is better
+  opener (no-vig)            logloss 0.6668  Brier 0.2369  n=7031  by season 17:0.6695 18:0.6680 19:0.6747 20:0.6819 21:0.6568 22:0.6495
+  closer (no-vig)            logloss 0.6638  Brier 0.2356  n=7031  by season 17:0.6672 18:0.6682 19:0.6726 20:0.6791 21:0.6530 22:0.6421
+  G1 shot model              logloss 0.6677  Brier 0.2375  n=7031  by season 17:0.6730 18:0.6709 19:0.6785 20:0.6800 21:0.6593 22:0.6444
+  GM goals model             logloss 0.6686  Brier 0.2380  n=7031  by season 17:0.6758 18:0.6691 19:0.6782 20:0.6791 21:0.6644 22:0.6463
+  G1 shot + 55/45 blend      logloss 0.6656  Brier 0.2365  n=7031  by season 17:0.6700 18:0.6682 19:0.6748 20:0.6794 21:0.6570 22:0.6444
+  GM goals + 55/45 blend     logloss 0.6663  Brier 0.2369  n=7031  by season 17:0.6717 18:0.6676 19:0.6753 20:0.6790 21:0.6595 22:0.6455
+
+2. Bet rules at the opening price (1 unit). CLV = win-% points the de-vigged line moved toward the bet.
+  G1 ML plain EV6             2465 bets 47.3%   +41.7u ROI +1.7% [-2.1%,+5.6%]  CLV +1.17 [+1.08,+1.26]  +150..+249: n=695 said 41.6% won 33.7%
+  GM ML plain EV6             2189 bets 44.2%   -61.6u ROI -2.8% [-7.0%,+1.4%]  CLV +0.71 [+0.61,+0.80]  +150..+249: n=709 said 41.5% won 31.0%
+  G1 ML blend55 EV4 noB2B     1239 bets 45.4%   +18.0u ROI +1.5% [-3.8%,+6.6%]  CLV +1.37 [+1.24,+1.50]  +150..+249: n=389 said 39.1% won 33.9%
+  GM ML blend55 EV4 noB2B     1044 bets 39.4%   -85.2u ROI -8.2% [-14.1%,-2.0%]  CLV +0.90 [+0.76,+1.04]  +150..+249: n=433 said 38.9% won 29.6%
+
+3. Bets only the goals model makes (blend rule), vs bets both make (live finding 2025-26: the goals model's own bets lost -16.6u on 1,026)
+  GM only (shot model did not bet it)      527 bets 37.8%   -71.0u ROI -13.5% [-22.0%,-5.1%]  CLV +0.53  by season 17:-22 18:-12 19:-1 20:+0 21:-22 22:-14
+  both models bet it                       517 bets 41.0%   -14.2u ROI -2.7% [-10.9%,+5.6%]  CLV +1.29  by season 17:-16 18:-1 19:-13 20:-1 21:+3 22:+13
+  G1 only (goals model did not bet it)     722 bets 48.6%   +32.2u ROI +4.5% [-2.4%,+11.3%]  CLV +1.43  by season 17:+10 18:+2 19:+1 20:+8 21:+6 22:+6
+
+4. Pre-registered decisions (paired CLV difference, 90% interval resampling game days)
+  Blend rule, GM minus G1: CLV -0.47 [-0.61,-0.32] -> GOALS WORSE
+  Plain rule, GM minus G1: CLV -0.46 [-0.55,-0.36] -> GOALS WORSE
+  Log loss shot 0.6677 vs goals 0.6687 (n=7038) -> shot model more accurate
+  Goals-model-only bets: ROI -13.5% [-22.0%,-5.1%], CLV +0.53 -> consistent with the live finding (loses)
+
+5. Overs at the opening total, EV 6%+ (rebuilt over price), trusted rows
+  G1 shot: 256 bets 56.6% +42.3u ROI +16.5% [+7.3%,+25.7%]  total rose 38.3% fell 1.2%
+  GM goals: 137 bets 53.3% +18.2u ROI +13.3% [+1.1%,+25.2%]  total rose 54.0% fell 0.0%
