@@ -4344,3 +4344,12 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 08:49:43,293546,2026-11-04,2026-11-04 19:30,ott,buf,FanDuel,thirdperiod,total,under,2.5,-156,normal
 2026-11-04 08:49:43,293546,2026-11-04,2026-11-04 19:30,ott,buf,FanDuel,thirdperiod,total,over,2.5,122,normal
 2026-11-04 08:49:43,293548,2026-11-04,2026-11-04 22:00,sj,la,BetMGM,thirdperiod,spread,home,-0.5,115,normal
+2026-11-04 08:50:48,293546,2026-11-04,2026-11-04 19:30,ott,buf,bet365,event,spread,away,1.5,-230,normal
+2026-11-04 08:50:48,293546,2026-11-04,2026-11-04 19:30,ott,buf,bet365,event,spread,home,-1.5,185,normal
+2026-11-04 08:50:48,293548,2026-11-04,2026-11-04 22:00,sj,la,bet365,event,moneyline,away,0.0,140,normal
+2026-11-04 08:50:48,293548,2026-11-04,2026-11-04 22:00,sj,la,bet365,event,moneyline,home,0.0,-165,normal
+2026-11-04 08:50:48,293546,2026-11-04,2026-11-04 19:30,ott,buf,BetMGM,firstperiod,spread,home,-0.5,145,normal
+2026-11-04 08:50:48,293548,2026-11-04,2026-11-04 22:00,sj,la,BetMGM,firstperiod,team_total,home_over,1.0,110,normal
+2026-11-04 08:50:48,293548,2026-11-04,2026-11-04 22:00,sj,la,BetMGM,firstperiod,team_total,home_under,1.0,-155,normal
+2026-11-04 08:50:48,293548,2026-11-04,2026-11-04 22:00,sj,la,BetMGM,thirdperiod,team_total,home_under,1.0,-102,normal
+2026-11-04 08:50:48,293548,2026-11-04,2026-11-04 22:00,sj,la,BetMGM,thirdperiod,moneyline,away,0.0,118,normal
