@@ -2986,3 +2986,14 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 06:04:23,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,thirdperiod,team_total,home_under,1.5,-230,normal
 2026-11-04 06:04:23,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,thirdperiod,total,under,2.5,-175,normal
 2026-11-04 06:04:23,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,thirdperiod,total,over,2.5,130,normal
+2026-11-04 06:07:24,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,event,total,under,5.5,117,normal
+2026-11-04 06:07:24,293546,2026-11-04,2026-11-04 19:30,ott,buf,Consensus,event,total,under,6.5,101,normal
+2026-11-04 06:07:24,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,event,moneyline,away,0.0,133,normal
+2026-11-04 06:07:24,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,event,total,under,6.5,-124,normal
+2026-11-04 06:07:24,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,event,total,over,6.5,100,normal
+2026-11-04 06:07:24,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,firstperiod,moneyline,away,0.0,114,normal
+2026-11-04 06:07:24,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,firstperiod,total,under,1.5,110,normal
+2026-11-04 06:07:24,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,firstperiod,total,over,1.5,-157,normal
+2026-11-04 06:07:24,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,thirdperiod,team_total,home_over,1.5,175,normal
+2026-11-04 06:07:24,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,thirdperiod,moneyline,away,0.0,108,normal
+2026-11-04 06:07:24,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,thirdperiod,moneyline,home,0.0,-148,normal
