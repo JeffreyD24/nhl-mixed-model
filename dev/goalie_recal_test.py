@@ -52,7 +52,19 @@ def predict(V, seasons):
     if V == "G0":
         for side in ("home", "away"):
             D[f"{side}_goalie"] = 0; D[f"{side}_gmix"] = '{"0": 1.0}'
+    if V == "GM":          # the GOALS model (nhl_mixed_model.run, as live), same goalie data as G1; see GOALS_MODEL_PREREG.md
+        _fr = nm.fit_reml
+        def fr(X, Z, y, q):          # no missing-skater data in the historical table: that all-zero column makes REML singular
+            keep = np.abs(X).sum(0) > 0
+            r = _fr(X[:, keep], Z, y, q); b = np.zeros(X.shape[1]); b[keep] = r["b"]; r["b"] = b; return r
+        nm.fit_reml = fr
     for s in seasons:
+        if V == "GM":
+            summ, P, x = nm.run(D[D.season.isin(ob.train_for(s) + [s])], ob.train_for(s), s, lines=(), lag_days=1)
+            P.to_csv(os.path.join(TMP, f"gr_{V}_pred_{s}.csv"), index=False)
+            json.dump(dict(summary=summ, cal=x["cal"], h_ot=x["h_ot"]), open(os.path.join(TMP, f"gr_{V}_meta_{s}.json"), "w"), default=float)
+            print(V, s, "half-life", summ["chosen_halflife"], "sd_goalie", round(summ["sd_goalie"], 3), flush=True)
+            continue
         summ, P, x = xm.run(D[D.season.isin(ob.train_for(s) + [s])], ob.train_for(s), s, tot_cal="none", lag_days=1)
         P.to_csv(os.path.join(TMP, f"gr_{V}_pred_{s}.csv"), index=False)
         json.dump(dict(summary=summ, cal=x["cal"], h_ot=x["h_ot"]), open(os.path.join(TMP, f"gr_{V}_meta_{s}.json"), "w"), default=float)
