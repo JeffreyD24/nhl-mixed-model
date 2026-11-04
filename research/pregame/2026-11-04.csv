@@ -3168,3 +3168,12 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 06:30:24,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Consensus,thirdperiod,total,under,2.0,-105,normal
 2026-11-04 06:30:24,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Consensus,thirdperiod,total,over,2.0,-135,normal
 2026-11-04 06:30:24,293548,2026-11-04,2026-11-04 22:00,sj,la,Consensus,thirdperiod,moneyline,away,0.0,115,normal
+2026-11-04 06:32:03,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,event,team_total,away_under,2.5,116,normal
+2026-11-04 06:32:03,293548,2026-11-04,2026-11-04 22:00,sj,la,Consensus,event,moneyline,home,0.0,-155,normal
+2026-11-04 06:32:03,293548,2026-11-04,2026-11-04 22:00,sj,la,Consensus,event,moneyline,away,0.0,133,normal
+2026-11-04 06:32:03,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,firstperiod,team_total,home_over,0.5,-205,normal
+2026-11-04 06:32:03,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,firstperiod,total,over,1.5,-150,normal
+2026-11-04 06:32:03,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,secondperiod,total,over,1.5,-200,normal
+2026-11-04 06:32:03,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,secondperiod,total,under,1.5,138,normal
+2026-11-04 06:32:03,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,thirdperiod,moneyline,away,0.0,100,normal
+2026-11-04 06:32:03,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,thirdperiod,moneyline,home,0.0,-136,normal
