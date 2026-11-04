@@ -1,0 +1,13 @@
+games 8510
+fetch errors 0 []
+box rows 323678 games 8509 | shots 990456 games 8510
+lag 1 season 2022 games 1312 with DK opener 1312
+lag 1 season 2023 games 1312 with DK opener 1312
+lag 1 season 2024 games 1312 with DK opener 1312
+lag 1 season 2025 games 1312 with DK opener 1312
+lag 1 season 2026 games 1312 with DK opener 1312
+lag 0 season 2022 games 1312 with DK opener 1312
+lag 0 season 2023 games 1312 with DK opener 1312
+lag 0 season 2024 games 1312 with DK opener 1312
+lag 0 season 2025 games 1312 with DK opener 1312
+lag 0 season 2026 games 1312 with DK opener 1312
