@@ -1131,3 +1131,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 21:53:05,401892636,2026-11-03,edm,nj,in,4:35 - 3rd,3,4:35,3.0,3.0,23.0,14.0,Blocked,Ryan Shea shot blocked by Anthony Mantha
 2026-11-03 21:54:05,401892634,2026-11-03,wpg,mtl,in,0:34 - 3rd,3,0:34,3.0,4.0,17.0,39.0,Stoppage,Icing
 2026-11-03 21:54:05,401892636,2026-11-03,edm,nj,in,3:49 - 3rd,3,3:49,3.0,3.0,24.0,14.0,Stoppage,Off-side
+2026-11-03 21:55:05,401892634,2026-11-03,wpg,mtl,in,0:31 - 3rd,3,0:31,4.0,4.0,17.0,39.0,Goal,"Kyle Connor Goal (13), assists: Mark Scheifele (12), Morgan Barron (3)"
+2026-11-03 21:55:05,401892636,2026-11-03,edm,nj,in,3:49 - 3rd,3,3:49,3.0,3.0,26.0,14.0,Stoppage,Off-side
+2026-11-03 21:56:05,401892634,2026-11-03,wpg,mtl,in,0:20 - 3rd,3,0:20,4.0,4.0,17.0,39.0,Face Off,Alex Newhook faceoff won against Morgan Barron
+2026-11-03 21:57:05,401892634,2026-11-03,wpg,mtl,in,End of 3rd,3,0:00,4.0,4.0,17.0,39.0,Period End,End of 3rd Period
+2026-11-03 21:57:05,401892636,2026-11-03,edm,nj,in,3:09 - 3rd,3,3:09,3.0,3.0,26.0,14.0,Blocked,Evan Bouchard shot blocked by Jack Hughes
+2026-11-03 21:58:05,401892636,2026-11-03,edm,nj,in,2:32 - 3rd,3,2:32,3.0,3.0,26.0,14.0,Shot,Dougie Hamilton Wrist Shot saved by Tristan Jarry
+2026-11-03 21:59:05,401892634,2026-11-03,wpg,mtl,in,5:00 - OT,4,5:00,4.0,4.0,17.0,39.0,Period Start,Start of Overtime
+2026-11-03 21:59:05,401892636,2026-11-03,edm,nj,in,2:21 - 3rd,3,2:21,3.0,3.0,29.0,14.0,Stoppage,Goalie Stopped
+2026-11-03 22:00:05,401892634,2026-11-03,wpg,mtl,in,3:31 - OT,4,3:31,4.0,4.0,17.0,39.0,Missed,Kyle Connor Snap Shot High and Wide Right
