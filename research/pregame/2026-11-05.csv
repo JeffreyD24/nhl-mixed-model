@@ -7049,3 +7049,8 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 17:55:06,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,firstperiod,team_total,home_under,0.5,155,normal
 2026-11-04 17:55:06,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,firstperiod,moneyline,home,0.0,-170,normal
 2026-11-04 17:55:06,293550,2026-11-05,2026-11-05 19:00,chi,tb,BetRivers,secondperiod,moneyline,away,0.0,225,normal
+2026-11-04 17:57:14,293550,2026-11-05,2026-11-05 19:00,chi,tb,BetRivers,event,moneyline,away,0.0,350,normal
+2026-11-04 17:57:14,293550,2026-11-05,2026-11-05 19:00,chi,tb,BetRivers,event,moneyline,home,0.0,-455,normal
+2026-11-04 17:57:14,293550,2026-11-05,2026-11-05 19:00,chi,tb,BetRivers,event,spread,home,-1.5,-162,normal
+2026-11-04 17:57:14,293550,2026-11-05,2026-11-05 19:00,chi,tb,BetRivers,event,spread,away,1.5,130,normal
+2026-11-04 17:57:14,293550,2026-11-05,2026-11-05 19:00,chi,tb,BetRivers,event,total,over,6.5,-103,normal
