@@ -7554,3 +7554,8 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 18:10:57,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,event,total,over,6.5,120,normal
 2026-11-04 18:10:57,293545,2026-11-04,2026-11-04 19:30,chi,fla,bet365,event,total,over,5.5,-140,normal
 2026-11-04 18:10:57,293545,2026-11-04,2026-11-04 19:30,chi,fla,bet365,event,total,under,5.5,120,normal
+2026-11-04 18:13:02,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,event,total,over,6.0,-124,normal
+2026-11-04 18:13:02,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,event,total,under,6.0,104,normal
+2026-11-04 18:13:02,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,event,total,under,5.5,120,normal
+2026-11-04 18:13:02,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,event,total,over,5.5,-142,normal
+2026-11-04 18:13:02,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,firstperiod,moneyline,away,0.0,145,normal
