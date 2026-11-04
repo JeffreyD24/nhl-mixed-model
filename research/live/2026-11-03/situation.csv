@@ -243,3 +243,44 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 19:41:05,401892640,2026-11-03,dal,wsh,in,0:47 - 1st,1,0:47,1.0,0.0,5.0,4.0,Stoppage,TV Timeout
 2026-11-03 19:41:05,401892641,2026-11-03,col,cbj,in,1:57 - 1st,1,1:57,1.0,2.0,2.0,10.0,Blocked,Adam Fantilli shot blocked by Brent Burns
 2026-11-03 19:41:05,401892636,2026-11-03,edm,nj,in,18:29 - 1st,1,18:29,0.0,0.0,2.0,0.0,Shot,Dougie Hamilton Wrist Shot saved by Tristan Jarry
+2026-11-03 19:42:06,401892633,2026-11-03,uta,tor,in,2:41 - 1st,1,2:41,0.0,0.0,8.0,10.0,Missed,Dylan Guenther Wrist Shot Off Crossbar
+2026-11-03 19:42:06,401892634,2026-11-03,wpg,mtl,in,3:21 - 1st,1,3:21,0.0,1.0,5.0,12.0,Face Off,Viggo Björck faceoff won against Phillip Danault
+2026-11-03 19:42:06,401892635,2026-11-03,det,tb,in,2:31 - 1st,1,2:31,0.0,2.0,8.0,2.0,Blocked,Conor Geekie shot blocked by Anton Johansson
+2026-11-03 19:42:06,401892637,2026-11-03,stl,nyr,in,4:01 - 1st,1,4:01,0.0,0.0,4.0,9.0,Stoppage,Puck Frozen - Goalie
+2026-11-03 19:42:06,401892638,2026-11-03,min,phi,in,1:50 - 1st,1,1:50,2.0,0.0,7.0,6.0,Stoppage,Icing
+2026-11-03 19:42:06,401892639,2026-11-03,vgk,pit,in,1:03 - 1st,1,1:03,1.0,0.0,7.0,8.0,Missed,Brett Howden Snap Shot Wide Left
+2026-11-03 19:42:06,401892640,2026-11-03,dal,wsh,in,End of 1st,1,0:00,1.0,0.0,5.0,4.0,Shot,Alex Tuch Snap Shot saved by Jake Oettinger
+2026-11-03 19:42:06,401892641,2026-11-03,col,cbj,in,1:11 - 1st,1,1:11,1.0,2.0,2.0,10.0,Blocked,Adam Fantilli shot blocked by Brent Burns
+2026-11-03 19:42:06,401892636,2026-11-03,edm,nj,in,17:50 - 1st,1,17:50,0.0,0.0,2.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 19:43:05,401892633,2026-11-03,uta,tor,in,2:02 - 1st,1,2:02,0.0,0.0,8.0,10.0,Missed,Logan Cooley Wrist Shot High and Wide Left
+2026-11-03 19:43:05,401892634,2026-11-03,wpg,mtl,in,2:35 - 1st,1,2:35,0.0,1.0,5.0,11.0,Blocked,Neal Pionk shot blocked by Lane Hutson
+2026-11-03 19:43:05,401892635,2026-11-03,det,tb,in,1:40 - 1st,1,1:40,0.0,2.0,8.0,2.0,Blocked,Ilya Mikheyev shot blocked by Emmitt Finnie
+2026-11-03 19:43:05,401892637,2026-11-03,stl,nyr,in,3:24 - 1st,1,3:24,0.0,0.0,5.0,9.0,Missed,Tye Kartye Missed Shot Wide Right
+2026-11-03 19:43:05,401892638,2026-11-03,min,phi,in,1:21 - 1st,1,1:21,2.0,0.0,7.0,6.0,Face Off,Ryan Hartman faceoff won against Noah Cates
+2026-11-03 19:43:05,401892639,2026-11-03,vgk,pit,in,0:54 - 1st,1,0:54,1.0,0.0,7.0,9.0,Face Off,Tomas Hertl faceoff won against Blake Lizotte
+2026-11-03 19:43:05,401892640,2026-11-03,dal,wsh,in,End of 1st,1,0:00,1.0,0.0,6.0,4.0,Period End,End of 1st Period
+2026-11-03 19:43:05,401892641,2026-11-03,col,cbj,in,0:38 - 1st,1,0:38,1.0,2.0,2.0,10.0,Stoppage,Puck in Crowd
+2026-11-03 19:43:05,401892636,2026-11-03,edm,nj,in,17:05 - 1st,1,17:05,0.0,0.0,2.0,3.0,Shot,Cody Glass Wrist Shot saved by Tristan Jarry
+2026-11-03 19:44:06,401892633,2026-11-03,uta,tor,in,1:30 - 1st,1,1:30,0.0,0.0,8.0,10.0,Shot,MacKenzie Weegar Slap Shot saved by Sergei Bobrovsky
+2026-11-03 19:44:06,401892634,2026-11-03,wpg,mtl,in,2:06 - 1st,1,2:06,0.0,1.0,5.0,11.0,Stoppage,Puck in Netting
+2026-11-03 19:44:06,401892635,2026-11-03,det,tb,in,1:11 - 1st,1,1:11,0.0,2.0,9.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 19:44:06,401892637,2026-11-03,stl,nyr,in,2:28 - 1st,1,2:28,0.0,0.0,8.0,9.0,Stoppage,Goalie Stopped
+2026-11-03 19:44:06,401892638,2026-11-03,min,phi,in,0:19 - 1st,1,0:19,2.0,0.0,7.0,6.0,Blocked,Quinn Hughes shot blocked by Jamie Drysdale
+2026-11-03 19:44:06,401892639,2026-11-03,vgk,pit,in,0:43 - 1st,1,0:43,1.0,0.0,7.0,9.0,Face Off,Blake Lizotte faceoff won against Tomas Hertl
+2026-11-03 19:44:06,401892641,2026-11-03,col,cbj,in,0:02 - 1st,1,0:02,1.0,2.0,2.0,10.0,Blocked,Brent Burns shot blocked by Cole Sillinger
+2026-11-03 19:44:06,401892636,2026-11-03,edm,nj,in,16:50 - 1st,1,16:50,0.0,0.0,3.0,4.0,Blocked,Jack Hughes shot blocked by Connor Murphy
+2026-11-03 19:45:06,401892633,2026-11-03,uta,tor,in,1:04 - 1st,1,1:04,0.0,0.0,9.0,13.0,Face Off,Auston Matthews faceoff won against Nick Schmaltz
+2026-11-03 19:45:06,401892634,2026-11-03,wpg,mtl,in,1:42 - 1st,1,1:42,0.0,2.0,5.0,11.0,Goal,"Josh Anderson Goal (7), assists: none"
+2026-11-03 19:45:06,401892635,2026-11-03,det,tb,in,0:49 - 1st,1,0:49,0.0,2.0,9.0,2.0,Face Off,Anthony Cirelli faceoff won against J.T. Compher
+2026-11-03 19:45:06,401892637,2026-11-03,stl,nyr,in,2:00 - 1st,1,2:00,0.0,0.0,9.0,9.0,Face Off,Mason McTavish faceoff won against Mika Zibanejad
+2026-11-03 19:45:06,401892638,2026-11-03,min,phi,in,End of 1st,1,0:00,2.0,0.0,7.0,6.0,Period End,End of 1st Period
+2026-11-03 19:45:06,401892639,2026-11-03,vgk,pit,in,End of 1st,1,0:00,1.0,0.0,7.0,9.0,Blocked,Blake Lizotte shot blocked by Rasmus Andersson
+2026-11-03 19:45:06,401892641,2026-11-03,col,cbj,in,End of 1st,1,0:00,1.0,2.0,2.0,10.0,Period End,End of 1st Period
+2026-11-03 19:45:06,401892636,2026-11-03,edm,nj,in,16:10 - 1st,1,16:10,0.0,0.0,3.0,4.0,Face Off,Nico Hischier faceoff won against Connor McDavid
+2026-11-03 19:46:05,401892633,2026-11-03,uta,tor,in,1:02 - 1st,1,1:02,0.0,0.0,9.0,13.0,Hooking,Jack Roslovic Hooking against Dylan Guenther
+2026-11-03 19:46:05,401892634,2026-11-03,wpg,mtl,in,1:08 - 1st,1,1:08,0.0,2.0,5.0,11.0,Face Off,Mark Scheifele faceoff won against Alex Newhook
+2026-11-03 19:46:05,401892635,2026-11-03,det,tb,in,0:30 - 1st,1,0:30,0.0,2.0,10.0,2.0,Face Off,Andrew Copp faceoff won against Anthony Cirelli
+2026-11-03 19:46:05,401892637,2026-11-03,stl,nyr,in,1:28 - 1st,1,1:28,0.0,0.0,9.0,9.0,Stoppage,Hand Pass
+2026-11-03 19:46:05,401892639,2026-11-03,vgk,pit,in,End of 1st,1,0:00,1.0,0.0,7.0,9.0,Penalty Shot Infraction,Sidney Crosby Minor
+2026-11-03 19:46:05,401892641,2026-11-03,col,cbj,in,End of 1st,1,0:00,1.0,2.0,2.0,11.0,Blocked,Blocked Shot
+2026-11-03 19:46:05,401892636,2026-11-03,edm,nj,in,16:01 - 1st,1,16:01,0.0,0.0,3.0,5.0,Face Off,Evan Rodrigues faceoff won against Jason Dickinson
