@@ -7276,3 +7276,15 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 18:45:08,293549,2026-11-05,2026-11-05 19:00,dal,cbj,DraftKings,secondperiod,team_total,home_over,0.5,-170,normal
 2026-11-04 18:45:08,293549,2026-11-05,2026-11-05 19:00,dal,cbj,DraftKings,secondperiod,team_total,home_under,0.5,130,normal
 2026-11-04 18:45:08,293549,2026-11-05,2026-11-05 19:00,dal,cbj,DraftKings,secondperiod,team_total,away_under,0.5,150,normal
+2026-11-04 18:47:21,293549,2026-11-05,2026-11-05 19:00,dal,cbj,Consensus,event,moneyline,away,0.0,-132,normal
+2026-11-04 18:47:21,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,event,spread,away,1.5,-250,normal
+2026-11-04 18:47:21,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,event,spread,home,-1.5,200,normal
+2026-11-04 18:47:21,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,event,moneyline,home,0.0,-189,normal
+2026-11-04 18:47:21,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,event,moneyline,away,0.0,154,normal
+2026-11-04 18:47:21,293554,2026-11-05,2026-11-05 19:00,phi,nyr,Consensus,event,moneyline,away,0.0,125,normal
+2026-11-04 18:47:21,293554,2026-11-05,2026-11-05 19:00,phi,nyr,Consensus,event,moneyline,home,0.0,-154,normal
+2026-11-04 18:47:21,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,event,moneyline,away,0.0,-141,normal
+2026-11-04 18:47:21,293558,2026-11-05,2026-11-05 19:00,van,wpg,BetRivers,secondperiod,team_total,home_under,1.5,-225,normal
+2026-11-04 18:47:21,293558,2026-11-05,2026-11-05 19:00,van,wpg,BetRivers,secondperiod,team_total,home_over,1.5,150,normal
+2026-11-04 18:47:21,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,thirdperiod,spread,away,0.5,-210,normal
+2026-11-04 18:47:21,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,thirdperiod,spread,home,-0.5,145,normal
