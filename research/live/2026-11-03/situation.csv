@@ -1263,3 +1263,8 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 23:32:05,401892643,2026-11-03,ana,van,in,7:07 - 3rd,3,7:07,5.0,4.0,16.0,15.0,Face Off,Tim Washe faceoff won against Jacob Quillan
 2026-11-03 23:33:06,401892643,2026-11-03,ana,van,in,6:35 - 3rd,3,6:35,5.0,4.0,16.0,15.0,Stoppage,Icing
 2026-11-03 23:34:05,401892643,2026-11-03,ana,van,in,5:34 - 3rd,3,5:34,5.0,4.0,16.0,15.0,Face Off,Marco Rossi faceoff won against Tim Washe
+2026-11-03 23:35:06,401892643,2026-11-03,ana,van,in,5:34 - 3rd,3,5:34,5.0,4.0,16.0,15.0,Stoppage,Puck in Netting
+2026-11-03 23:37:06,401892643,2026-11-03,ana,van,in,4:56 - 3rd,3,4:56,5.0,4.0,16.0,15.0,Stoppage,Goalie Stopped
+2026-11-03 23:38:05,401892643,2026-11-03,ana,van,in,4:38 - 3rd,3,4:38,5.0,4.0,16.0,15.0,Blocked,Jacob Quillan shot blocked by Drew O'Connor
+2026-11-03 23:39:05,401892643,2026-11-03,ana,van,in,4:12 - 3rd,3,4:12,5.0,4.0,17.0,16.0,Stoppage,Icing
+2026-11-03 23:40:05,401892643,2026-11-03,ana,van,in,3:23 - 3rd,3,3:23,5.0,4.0,18.0,16.0,Shot,Zeev Buium saved by Laurent Brossoit
