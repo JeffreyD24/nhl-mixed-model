@@ -935,3 +935,47 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 21:25:06,401892641,2026-11-03,col,cbj,in,4:51 - 3rd,3,4:51,2.0,7.0,13.0,24.0,Blocked,Valeri Nichushkin shot blocked by Logan O'Connor
 2026-11-03 21:25:06,401892642,2026-11-03,car,nsh,in,10:03 - 2nd,2,10:03,0.0,2.0,9.0,10.0,Shot,Adam Wilsby Wrist Shot saved by Pyotr Kochetkov
 2026-11-03 21:25:06,401892643,2026-11-03,ana,van,in,11:25 - 1st,1,11:25,1.0,1.0,4.0,1.0,Missed,Jake DeBrusk Missed Shot Wide Right
+2026-11-03 21:26:06,401892633,2026-11-03,uta,tor,in,8:18 - 3rd,3,8:18,2.0,2.0,25.0,30.0,Cross checking,Darren Raddysh Cross-checking against Anders Lee
+2026-11-03 21:26:06,401892634,2026-11-03,wpg,mtl,in,10:35 - 3rd,3,10:35,0.0,4.0,15.0,33.0,Hit,Tyrel Bauer hit Alex Newhook
+2026-11-03 21:26:06,401892635,2026-11-03,det,tb,in,6:08 - 3rd,3,6:08,2.0,3.0,22.0,14.0,Penalty Shot Infraction,Erik Cernak Minor
+2026-11-03 21:26:06,401892637,2026-11-03,stl,nyr,in,9:52 - 3rd,3,9:52,0.0,2.0,26.0,25.0,Stoppage,Puck in Netting
+2026-11-03 21:26:06,401892638,2026-11-03,min,phi,in,4:46 - 3rd,3,4:46,3.0,2.0,23.0,18.0,Stoppage,TV Timeout
+2026-11-03 21:26:06,401892639,2026-11-03,vgk,pit,in,5:16 - 3rd,3,5:16,2.0,2.0,23.0,20.0,Stoppage,Goalie Stopped
+2026-11-03 21:26:06,401892640,2026-11-03,dal,wsh,in,6:17 - 3rd,3,6:17,6.0,4.0,16.0,16.0,Face Off,Radek Faksa faceoff won against Dylan Strome
+2026-11-03 21:26:06,401892641,2026-11-03,col,cbj,in,4:13 - 3rd,3,4:13,2.0,7.0,13.0,24.0,Blocked,Valeri Nichushkin shot blocked by Logan O'Connor
+2026-11-03 21:26:06,401892642,2026-11-03,car,nsh,in,9:32 - 2nd,2,9:32,0.0,2.0,9.0,10.0,Blocked,Jackson Blake shot blocked by Roman Josi
+2026-11-03 21:26:06,401892643,2026-11-03,ana,van,in,10:43 - 1st,1,10:43,1.0,1.0,5.0,1.0,Blocked,Max Sasson shot blocked by Drew Helleson
+2026-11-03 21:27:05,401892633,2026-11-03,uta,tor,in,8:18 - 3rd,3,8:18,2.0,2.0,25.0,30.0,Stoppage,TV Timeout
+2026-11-03 21:27:05,401892634,2026-11-03,wpg,mtl,in,10:04 - 3rd,3,10:04,0.0,4.0,15.0,33.0,Face Off,Morgan Barron faceoff won against Phillip Danault
+2026-11-03 21:27:05,401892635,2026-11-03,det,tb,in,5:21 - 3rd,3,5:21,2.0,3.0,22.0,14.0,Face Off,Emmitt Finnie faceoff won against Anthony Cirelli
+2026-11-03 21:27:05,401892637,2026-11-03,stl,nyr,in,9:52 - 3rd,3,9:52,0.0,2.0,27.0,26.0,Stoppage,Puck in Netting
+2026-11-03 21:27:05,401892639,2026-11-03,vgk,pit,in,5:11 - 3rd,3,5:11,2.0,2.0,23.0,20.0,Face Off,Sidney Crosby faceoff won against Tomas Hertl
+2026-11-03 21:27:05,401892640,2026-11-03,dal,wsh,in,5:36 - 3rd,3,5:36,6.0,4.0,16.0,17.0,Stoppage,TV Timeout
+2026-11-03 21:27:05,401892641,2026-11-03,col,cbj,in,4:07 - 3rd,3,4:07,2.0,7.0,13.0,24.0,Stoppage,TV Timeout
+2026-11-03 21:27:05,401892642,2026-11-03,car,nsh,in,8:54 - 2nd,2,8:54,1.0,2.0,9.0,10.0,Shot,Sebastian Aho Wrist Shot saved by Juuse Saros
+2026-11-03 21:27:05,401892643,2026-11-03,ana,van,in,9:45 - 1st,1,9:45,1.0,1.0,5.0,1.0,Blocked,Nico Myatovic shot blocked by Filip Hronek
+2026-11-03 21:28:05,401892633,2026-11-03,uta,tor,in,7:50 - 3rd,3,7:50,2.0,2.0,25.0,30.0,Face Off,Nick Schmaltz faceoff won against Teddy Blueger
+2026-11-03 21:28:05,401892634,2026-11-03,wpg,mtl,in,9:20 - 3rd,3,9:20,0.0,4.0,15.0,33.0,Face Off,Morgan Barron faceoff won against Phillip Danault
+2026-11-03 21:28:05,401892635,2026-11-03,det,tb,in,4:38 - 3rd,3,4:38,2.0,3.0,22.0,14.0,Missed,Moritz Seider Missed Shot Wide Left
+2026-11-03 21:28:05,401892639,2026-11-03,vgk,pit,in,4:16 - 3rd,3,4:16,2.0,2.0,23.0,20.0,Face Off,Sidney Crosby faceoff won against Tomas Hertl
+2026-11-03 21:28:05,401892642,2026-11-03,car,nsh,in,8:52 - 2nd,2,8:52,1.0,2.0,9.0,11.0,Stoppage,Puck Frozen - Goalie
+2026-11-03 21:28:05,401892643,2026-11-03,ana,van,in,9:29 - 1st,1,9:29,1.0,1.0,6.0,1.0,Stoppage,Goalie Stopped
+2026-11-03 21:29:05,401892633,2026-11-03,uta,tor,in,7:00 - 3rd,3,7:00,2.0,2.0,25.0,32.0,Shot,Clayton Keller Wrist Shot saved by Sergei Bobrovsky
+2026-11-03 21:29:05,401892634,2026-11-03,wpg,mtl,in,9:20 - 3rd,3,9:20,0.0,4.0,15.0,34.0,Penalty Shot Infraction,Tyrel Bauer Minor
+2026-11-03 21:29:05,401892635,2026-11-03,det,tb,in,3:13 - 3rd,3,3:13,2.0,3.0,23.0,14.0,Blocked,Ben Chiarot shot blocked by Gage Goncalves
+2026-11-03 21:29:05,401892637,2026-11-03,stl,nyr,in,8:31 - 3rd,3,8:31,0.0,2.0,27.0,26.0,Blocked,Braden Schneider shot blocked by Alexey Toropchenko
+2026-11-03 21:29:05,401892638,2026-11-03,min,phi,in,4:06 - 3rd,3,4:06,3.0,2.0,23.0,18.0,Face Off,Noah Cates faceoff won against Ryan Hartman
+2026-11-03 21:29:05,401892639,2026-11-03,vgk,pit,in,4:03 - 3rd,3,4:03,2.0,2.0,24.0,20.0,Holding the Stick,Jeremy Lauzon Holding the stick against Blake Lizotte
+2026-11-03 21:29:05,401892640,2026-11-03,dal,wsh,in,5:27 - 3rd,3,5:27,6.0,4.0,16.0,17.0,Face Off,Pierre-Luc Dubois faceoff won against Jamie Benn
+2026-11-03 21:29:05,401892641,2026-11-03,col,cbj,in,3:46 - 3rd,3,3:46,2.0,7.0,13.0,24.0,Blocked,Damon Severson shot blocked by Cole Sillinger
+2026-11-03 21:29:05,401892636,2026-11-03,edm,nj,in,20:00 - 3rd,3,20:00,2.0,3.0,21.0,10.0,Period End,End of 2nd Period
+2026-11-03 21:29:05,401892643,2026-11-03,ana,van,in,9:29 - 1st,1,9:29,1.0,1.0,5.0,1.0,Stoppage,Goalie Stopped
+2026-11-03 21:30:06,401892633,2026-11-03,uta,tor,in,6:48 - 3rd,3,6:48,3.0,2.0,25.0,33.0,Face Off,Auston Matthews faceoff won against Jack McBain
+2026-11-03 21:30:06,401892634,2026-11-03,wpg,mtl,in,9:20 - 3rd,3,9:20,0.0,4.0,15.0,34.0,Face Off,Adam Lowry faceoff won against 
+2026-11-03 21:30:06,401892635,2026-11-03,det,tb,in,3:09 - 3rd,3,3:09,2.0,3.0,23.0,15.0,Stoppage,Goalie Stopped
+2026-11-03 21:30:06,401892637,2026-11-03,stl,nyr,in,8:05 - 3rd,3,8:05,0.0,2.0,27.0,26.0,Stoppage,Puck in Benches
+2026-11-03 21:30:06,401892638,2026-11-03,min,phi,in,3:00 - 3rd,3,3:00,3.0,2.0,23.0,18.0,Blocked,Blake Coleman shot blocked by Cam York
+2026-11-03 21:30:06,401892640,2026-11-03,dal,wsh,in,4:51 - 3rd,3,4:51,6.0,4.0,16.0,17.0,Face Off,Radek Faksa faceoff won against Boone Jenner
+2026-11-03 21:30:06,401892641,2026-11-03,col,cbj,in,3:22 - 3rd,3,3:22,2.0,7.0,14.0,24.0,Stoppage,Puck in Benches
+2026-11-03 21:30:06,401892642,2026-11-03,car,nsh,in,8:33 - 2nd,2,8:33,1.0,2.0,10.0,11.0,Blocked,Daemon Hunt shot blocked by Eric Robinson
+2026-11-03 21:30:06,401892643,2026-11-03,ana,van,in,9:01 - 1st,1,9:01,1.0,1.0,5.0,1.0,Face Off,Tim Washe faceoff won against Jacob Quillan
