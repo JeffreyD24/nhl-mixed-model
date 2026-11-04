@@ -1235,3 +1235,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 22:45:06,401892643,2026-11-03,ana,van,in,End of 2nd,2,0:00,4.0,2.0,11.0,12.0,Period End,End of 2nd Period
 2026-11-03 23:02:06,401892643,2026-11-03,ana,van,in,20:00 - 3rd,3,20:00,4.0,2.0,11.0,12.0,Period End,End of 2nd Period
 2026-11-03 23:04:06,401892643,2026-11-03,ana,van,in,18:52 - 3rd,3,18:52,4.0,2.0,11.0,12.0,Stoppage,Icing
+2026-11-03 23:05:06,401892643,2026-11-03,ana,van,in,18:35 - 3rd,3,18:35,4.0,2.0,12.0,12.0,Face Off,Marco Rossi faceoff won against Mikael Granlund
+2026-11-03 23:06:05,401892643,2026-11-03,ana,van,in,17:21 - 3rd,3,17:21,4.0,2.0,13.0,12.0,Shot,Drew O'Connor saved by Laurent Brossoit
+2026-11-03 23:07:05,401892643,2026-11-03,ana,van,in,16:56 - 3rd,3,16:56,4.0,2.0,13.0,12.0,Stoppage,Hand Pass
+2026-11-03 23:08:05,401892643,2026-11-03,ana,van,in,16:48 - 3rd,3,16:48,4.0,2.0,13.0,13.0,Face Off,Leo Carlsson faceoff won against Elias Pettersson
+2026-11-03 23:09:06,401892643,2026-11-03,ana,van,in,15:49 - 3rd,3,15:49,4.0,2.0,13.0,13.0,Blocked,Jackson LaCombe shot blocked by Elias Pettersson
+2026-11-03 23:10:05,401892643,2026-11-03,ana,van,in,15:49 - 3rd,3,15:49,5.0,2.0,13.0,13.0,Goal,"Cutter Gauthier Goal (10) Wrist Shot, assists: Beckett Sennecke (8), Tristan Luneau (8)"
