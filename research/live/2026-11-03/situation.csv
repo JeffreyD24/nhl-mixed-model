@@ -1140,3 +1140,18 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 21:59:05,401892634,2026-11-03,wpg,mtl,in,5:00 - OT,4,5:00,4.0,4.0,17.0,39.0,Period Start,Start of Overtime
 2026-11-03 21:59:05,401892636,2026-11-03,edm,nj,in,2:21 - 3rd,3,2:21,3.0,3.0,29.0,14.0,Stoppage,Goalie Stopped
 2026-11-03 22:00:05,401892634,2026-11-03,wpg,mtl,in,3:31 - OT,4,3:31,4.0,4.0,17.0,39.0,Missed,Kyle Connor Snap Shot High and Wide Right
+2026-11-03 22:01:05,401892634,2026-11-03,wpg,mtl,in,2:47 - OT,4,2:47,4.0,4.0,17.0,39.0,Stoppage,Icing
+2026-11-03 22:01:05,401892636,2026-11-03,edm,nj,in,1:48 - 3rd,3,1:48,3.0,3.0,29.0,14.0,Blocked,Luke Hughes shot blocked by Connor McDavid
+2026-11-03 22:02:05,401892634,2026-11-03,wpg,mtl,in,2:34 - OT,4,2:34,4.0,4.0,17.0,40.0,Face Off,Juraj Slafkovský faceoff won against Adam Lowry
+2026-11-03 22:02:05,401892636,2026-11-03,edm,nj,in,0:58 - 3rd,3,0:58,3.0,3.0,29.0,14.0,Shot,Colton Dach Wrist Shot saved by Connor Hellebuyck
+2026-11-03 22:03:05,401892634,2026-11-03,wpg,mtl,in,1:57 - OT,4,1:57,4.0,4.0,17.0,42.0,Face Off,Phillip Danault faceoff won against Mark Scheifele
+2026-11-03 22:03:05,401892636,2026-11-03,edm,nj,in,0:08 - 3rd,3,0:08,3.0,3.0,29.0,15.0,Shot,Evan Bouchard saved by Connor Hellebuyck
+2026-11-03 22:03:05,401892642,2026-11-03,car,nsh,in,20:00 - 3rd,3,20:00,1.0,2.0,10.0,17.0,Period End,End of 2nd Period
+2026-11-03 22:04:06,401892634,2026-11-03,wpg,mtl,in,1:45 - OT,4,1:45,4.0,4.0,18.0,42.0,Stoppage,Goalie Stopped
+2026-11-03 22:04:06,401892636,2026-11-03,edm,nj,in,End of 3rd,3,0:00,3.0,3.0,29.0,16.0,Period End,End of 3rd Period
+2026-11-03 22:05:06,401892634,2026-11-03,wpg,mtl,in,End of OT,4,0:00,5.0,4.0,18.0,42.0,Period End,End of OT
+2026-11-03 22:05:06,401892636,2026-11-03,edm,nj,in,5:00 - OT,4,5:00,3.0,3.0,29.0,16.0,Period End,End of 3rd Period
+2026-11-03 22:05:06,401892642,2026-11-03,car,nsh,in,19:32 - 3rd,3,19:32,1.0,2.0,11.0,17.0,Stoppage,Goalie Stopped
+2026-11-03 22:05:06,401892643,2026-11-03,ana,van,in,20:00 - 2nd,2,20:00,2.0,1.0,7.0,8.0,Period End,End of 1st Period
+2026-11-03 22:06:05,401892636,2026-11-03,edm,nj,in,4:35 - OT,4,4:35,3.0,3.0,29.0,16.0,Face Off,Leon Draisaitl faceoff won against Nico Hischier
+2026-11-03 22:06:05,401892642,2026-11-03,car,nsh,in,18:41 - 3rd,3,18:41,1.0,2.0,11.0,17.0,Face Off,Ryan O'Reilly faceoff won against Logan Stankoven
