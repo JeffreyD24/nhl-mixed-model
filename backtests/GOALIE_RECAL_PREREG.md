@@ -28,6 +28,9 @@ earlier season's own out-of-sample G1 predictions (2017 is fit on 2015-16; 2018 
 - **R2 underdog market weight**: p' = w_k·model + (1 − w_k)·no-vig opener, with separate w for the side priced as underdog and as favorite
   (k = dog / fav, by the opening no-vig price; the other side gets 1 − p'), fit by log loss. Compared with R2s = one shared w
   (the live 55/45 idea, refit the same way).
+  *Clarification added before any run (same evening):* in one game the underdog's and favorite's chances sum to 1, so "a weight per side"
+  is only identifiable as a weight per **direction of disagreement**: k = dog when the model gives the underdog more than the opener does,
+  k = fav when it gives the favorite more. Formula: p'_home = nv_home + w_k·(model_home − nv_home). Fit by log loss on all games.
 
 ## Rules scored (same as OOS_SBR)
 1. ML plain: model (or R1) probability, EV >= 6% at the opening price.
