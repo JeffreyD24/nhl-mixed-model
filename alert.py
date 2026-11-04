@@ -24,6 +24,11 @@ REMIND_HOURS = (6, 20)              #   only 6 AM - 8 PM ET
 ML_BLEND = 0.55                     # moneyline win chance = 55% shot model + 45% DraftKings' no-vig opener (approved Nov 2, 2026;
 ML_THRESHOLD = 0.04                 #   backtests/IDEA_TESTS.md: +158.1u on 1,221 bets 2021-26, every season +19u or better), EV 4%+ near the opener
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
+                                    #   (overs; second-chance moneylines). Puck line: THRESHOLD_PL.
+THRESHOLD_PL = 0.09                 # Nov 4, 2026 (approved; analysis/rule_audit_nhl_output.txt section 5): puck line bar 6% -> 9%.
+                                    #   2021-26 at DK openers, b2b removed: EV 6-9% 514 bets -11.1u (4 of 5 seasons negative);
+                                    #   EV 9%+ 754 bets +90.2u. Chosen on the same seasons: re-test after 2026-27. Puck lines at
+                                    #   EV 6-9% near the opener are still logged as TEST rows (not pushed) for that re-test.
 THRESHOLD_MOVED = 0.09              # needed once the price has moved more than that: in the backtests the edge mostly disappears
 BET_ONLY = True                     # phone alerts only for bets and the DON'T BET follow-up (Nov 1, 2026); everything
                                     # else (cautions, info-only, market agrees, line jumps) is still logged, just not pushed
@@ -68,11 +73,24 @@ PIN_NAME = {"Anaheim Ducks": "ana", "Arizona Coyotes": "uta", "Utah Hockey Club"
             "Pittsburgh Penguins": "pit", "Seattle Kraken": "sea", "San Jose Sharks": "sj", "St Louis Blues": "stl", "St. Louis Blues": "stl",
             "Tampa Bay Lightning": "tb", "Toronto Maple Leafs": "tor", "Vancouver Canucks": "van", "Vegas Golden Knights": "vgk",
             "Winnipeg Jets": "wpg", "Washington Capitals": "wsh"}
-USE_PINNACLE_RULE = True    # approved Nov 2, 2026: skip when Pinnacle's first price disagrees
-PIN_DISAGREE = 0.005     # Nov 2, 2026: Pinnacle's first moneyline gives our side 0.5+ win-% points less than DraftKings' opener ->
-                         #   no bet (shot model at the open 2021-26: 405 such bets -42.0u, negative all five seasons)
-SKIP_B2B = True          # Nov 2, 2026: no bet on a team playing the second night of a back-to-back (shot model 2021-26: 144 bets,
-                         #   said 53%, won 36%, -40.1u, negative all five seasons; goals model -43.6u)
+USE_PINNACLE_RULE = True    # approved Nov 2, 2026: no bet when Pinnacle has ALREADY posted at alert time and disagrees
+PIN_DISAGREE = 0.005     # Pinnacle's first moneyline gives our side 0.5+ win-% points less than DraftKings' opener -> no bet.
+                         #   Rule audit Nov 4 (live blend, bettable timing): Pinnacle up at DK's open and disagreeing 27 bets -8.8u
+                         #   (small sample). The old "405 bets -42u" was the raw model graded at DK's opener with Pinnacle's
+                         #   LATER price (look-ahead); under the live blend that group made +5.4u.
+SKIP_B2B = True          # no bet on a team playing the second night of a back-to-back, PUCK LINE ONLY since Nov 4, 2026
+SKIP_B2B_MARKETS = ("puck line",)   # (rule audit, 2021-26 at DK openers: puck line bets on b2b teams 137 bets, won 35%, -37.3u,
+                         #   4 of 5 seasons negative; moneyline under the live blend + travel adjustment 77 bets +0.9u, i.e. the
+                         #   travel adjustment already prices the b2b, so the moneyline is no longer skipped)
+PREFER_ML = True         # Nov 4, 2026: one bet per game -> the MONEYLINE when it qualifies. The old rule compared blended ML EV with
+                         #   raw puck line EV and picked the puck line 79% of the time; in those 597 games 2021-26 always-ML made
+                         #   +69.7u vs +54.2u as picked (dropped ML legs +57.3u on 470). The puck line leg is logged as a TEST row.
+PIN_FOLLOWUP = False     # Nov 4, 2026: no DON'T BET when Pinnacle posts after the alert and disagrees. At the price still available
+                         #   when Pinnacle posts, those bets made +9.1u on 187 (2021-26, live blend): the follow-up saved nothing.
+                         #   The at-alert-time Pinnacle rule (USE_PINNACLE_RULE) stays.
+ML_HOLD_NEAR_ALERT = True   # Nov 4, 2026: no moneyline DON'T BET just because EV dipped under the bar while DK's price is still
+                         #   within NEAR_OPEN (1.5 win-% pts) of the alerted price (those bets halfway to puck drop: 113 bets
+                         #   +26.0u, 4 of 5 seasons positive). Bigger moneyline moves and overs keep the DON'T BET.
 
 
 PIN_SEEN = {}            # (home, away) -> when the recorder first saw Pinnacle's price (UTC)
@@ -180,9 +198,17 @@ def american(d):
 
 
 def thr_for(mk, price, oprice):
-    """EV bar by market: moneyline (blended chance) ML_THRESHOLD near the opener; others THRESHOLD; THRESHOLD_MOVED once moved"""
+    """EV bar by market near the opener: moneyline (blended chance) ML_THRESHOLD, puck line THRESHOLD_PL, overs THRESHOLD;
+    THRESHOLD_MOVED once the price moved"""
     t = threshold_for(price, oprice)
-    return ML_THRESHOLD if (mk == "moneyline" and t == THRESHOLD) else t
+    if t != THRESHOLD: return t
+    return ML_THRESHOLD if mk == "moneyline" else (THRESHOLD_PL if mk == "puck line" else THRESHOLD)
+
+
+def scan_bar(mk, price, oprice):
+    """lowest EV that gets a row at all: puck lines near the opener from THRESHOLD (6-9% = TEST rows, logged not pushed)"""
+    t = thr_for(mk, price, oprice)
+    return THRESHOLD if (mk == "puck line" and t == THRESHOLD_PL) else t
 
 
 def open_only_floor(p, oprice, thr=None):
@@ -434,7 +460,7 @@ def main():
                     if bt is None: continue
                     if mk == "total" and bt[0] not in TOTAL_SIDES: continue        # unders are logged by the model, never alerted
                     if name in OPEN_ONLY_LONGSHOTS and bt[2] >= OPEN_ONLY_LONGSHOTS[name] and not near_open(bt[2], bt[5]): continue
-                    thr = thr_for(mk, bt[2], bt[5])
+                    thr = scan_bar(mk, bt[2], bt[5])
                     if bt[4] < thr and not second_chance(name, bt, mk):
                         side = bt[0]
                         toward = mk != "total" and abs(move) >= MAX_MOVE and ((move > 0) == (side == "home"))
@@ -482,29 +508,34 @@ def main():
                                      (MYB.pick.astype(str).str.lower() == g[opp])]
                             if len(mb): conflict = f"you already bet {g[opp].upper()} on this game ({mb.market.iloc[-1]})"
                     if mk in TEAM_MK and not conflict:
-                        if SKIP_B2B and g[side] in B2B:
-                            conflict = (f"{g[side].upper()} also plays the night before this game (second night of a back-to-back); bets on back-to-back "
-                                        f"teams lost every season 2021-26 (shot model 144 bets, won 36%, -40u)")
+                        if SKIP_B2B and mk in SKIP_B2B_MARKETS and g[side] in B2B:
+                            conflict = (f"{g[side].upper()} also plays the night before this game (second night of a back-to-back); puck line "
+                                        f"bets on back-to-back teams 2021-26: 137 bets, won 35%, -37.3u, 4 of 5 seasons negative")
                         elif USE_PINNACLE_RULE and mk == "moneyline" and (g["home"], g["away"]) in PIN and not pd.isna(ph_open):
                             pin = PIN[(g["home"], g["away"])]
                             diff = (pin - ph_open) if side == "home" else (ph_open - pin)
                             if diff < -PIN_DISAGREE:
                                 ours_pin = pin if side == "home" else 1 - pin; ours_dk = ph_open if side == "home" else 1 - ph_open
                                 conflict = (f"Pinnacle (the sharp book) opened {g[side].upper()} at {ours_pin:.1%} vs DraftKings' "
-                                            f"{ours_dk:.1%}; bets Pinnacle disagrees with lost every season 2021-26 (405 bets, -42u)")
+                                            f"{ours_dk:.1%}; when Pinnacle was already up and disagreed, 2021-26: 27 bets -8.8u (small sample)")
                     if mk in TEAM_MK and not conflict and not skip:
-                        # one bet per game (approved Nov 2, 2026): moneyline and puck line on the same team are the same prediction;
-                        # alert only the one with more value (2021-26: +67.5u on 849 units vs +114.6u on 1,698 betting both)
+                        # one bet per game (Nov 2, 2026): moneyline and puck line on the same team are the same prediction. Since Nov 4
+                        # (PREFER_ML) the moneyline is the bet when it qualifies; the puck line leg is logged as a TEST row (not pushed).
+                        # Rule audit 2021-26, 597 games where both qualified: always the moneyline +69.7u, the old higher-EV pick +54.2u.
                         other = "puck line" if mk == "moneyline" else "moneyline"
                         mine_ev = max(bt_[4] for _, bt_ in pending)
                         if any((g["game_id"], other, n) in done for n in ALERT_MODELS):
-                            conflict = f"one bet per game: the {other} on this game was already alerted"
-                        else:
+                            conflict = (f"TEST: one bet per game, the moneyline on this game is the bet (puck line leg recorded for testing)"
+                                        if mk == "puck line" and PREFER_ML else f"one bet per game: the {other} on this game was already alerted")
+                        elif not PREFER_ML:
                             for n2 in ALERT_MODELS:
                                 ob = best.get((n2, other))
                                 if ob and ob[0] == side and near_open(ob[2], ob[5]) and ob[4] >= thr_for(other, ob[2], ob[5]) and ob[4] > mine_ev:
                                     conflict = f"one bet per game: the {other} has more value (EV {ob[4]:+.1%} vs {mine_ev:+.1%})"
                                     break
+                    if mk == "puck line" and not conflict and not skip and max(bt_[4] for _, bt_ in pending) < thr_for(mk, price, oprice):
+                        conflict = (f"TEST: puck line EV {max(bt_[4] for _, bt_ in pending):+.1%} is under the {THRESHOLD_PL:.0%} bar "
+                                    f"(6-9% bucket recorded for the re-test after 2026-27; not a bet)")
                     if conflict and not skip and all((g["game_id"], mk, n) in skipped for n, _ in pending): continue   # logged already
                     tag = "Both models" if len(pending) > 1 else SHORT.get(pending[0][0], pending[0][0])
                     what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
@@ -585,7 +616,8 @@ def main():
                         if other: body += f"\nYour other bets on this game: {other}."
                         if "OTHER SIDE" in other: title = "YOU BET THE OTHER SIDE - " + title
                         if conflict:      # logged, not pushed: betting both teams pays the vig twice
-                            title = ("NO BET (both sides) - " if ("disagree" in conflict and "Pinnacle" not in conflict) or "already bet" in conflict else "NO BET - ") + title
+                            title = ("TEST (not a bet) - " if conflict.startswith("TEST") else
+                                     "NO BET (both sides) - " if ("disagree" in conflict and "Pinnacle" not in conflict) or "already bet" in conflict else "NO BET - ") + title
                             body = f"NO BET: {conflict}.\n" + why + body
                             sent = notify(title, body, priority="low", link=link, dk=dk, kind="info")
                         else:
@@ -627,8 +659,12 @@ def main():
             thr = THRESHOLD if str(r.get("second_chance", "")) in ("True", "1", "1.0") else thr_for(mk, price, oprice)
             longshot_gone = m_best in OPEN_ONLY_LONGSHOTS and price >= OPEN_ONLY_LONGSHOTS[m_best] and not near_open(price, oprice)
             ok_now = ev >= thr and not longshot_gone
+            # Nov 4, 2026: a moneyline still within NEAR_OPEN of the alerted price stays a bet even if EV dipped under the bar
+            ml_hold = (ML_HOLD_NEAR_ALERT and mk == "moneyline" and not ok_now and not pd.isna(r.price) and not pd.isna(price)
+                       and abs(1 / espn.nd_dec(price) - 1 / espn.nd_dec(float(r.price))) <= NEAR_OPEN)
+            if ml_hold: ok_now = True
             pin_txt = None
-            if USE_PINNACLE_RULE and ok_now and mk == "moneyline" and gi.get("pin") is not None and not pd.isna(gi.get("ph_open")):
+            if PIN_FOLLOWUP and USE_PINNACLE_RULE and ok_now and mk == "moneyline" and gi.get("pin") is not None and not pd.isna(gi.get("ph_open")):
                 d_ = (gi["pin"] - gi["ph_open"]) if r.side == "home" else (gi["ph_open"] - gi["pin"])
                 if d_ < -PIN_DISAGREE:
                     pin_txt = (f"Pinnacle (the sharp book) has now opened and gives this side {abs(d_) * 100:.1f} win-% points less than "
@@ -642,7 +678,10 @@ def main():
                 team = gi["H"] if r.side == "home" else (gi["Aw"] if r.side == "away" else str(r.side).upper())
                 what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
                         (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{str(r.side).upper()} {lnum:g} ({fmt_price(price)})"))
-                try: floor_txt = f"Bet only at {fmt_price(open_only_floor(p, oprice, thr))} or better (stop if DraftKings shows a shorter price).\n"
+                try:
+                    if ml_hold: floor_txt = (f"Bet only at {fmt_price(american(1 / (1 / espn.nd_dec(float(r.price)) + NEAR_OPEN)))} or better "
+                                             f"(within 1.5 win-% points of the alerted {fmt_price(r.price)}).\n")
+                    else: floor_txt = f"Bet only at {fmt_price(open_only_floor(p, oprice, thr))} or better (stop if DraftKings shows a shorter price).\n"
                 except Exception: floor_txt = f"Bet only at {fmt_price(price)} or better.\n"
                 body = floor_txt + (f"REMINDER: still a bet and not logged yet (alerted {pd.Timestamp(t_last):%a %-I:%M %p}). EV {ev:+.1%} at {fmt_price(price)}; "
                                     f"[{SHORT.get(m_best, m_best)}] win chance {p:.1%}. Goalies: {gi['goalies']}. If you already bet it, log it to stop these.")

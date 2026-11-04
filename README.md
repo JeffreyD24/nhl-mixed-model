@@ -36,7 +36,7 @@ games' shots to `state/shots_2026_27.csv`.
 | From model to bet | points vs. the spread | expected goals → Poisson score distribution + overtime (home wins OT/SO ~52%) → win %, win by 2+, final-total distribution → **calibrated** (empty-net goals make 2-goal margins more common than Poisson says) |
 | Markets | spread, total | **moneyline, puck line** (±1.5 at varying prices), total |
 | Edge | 3+ points from the line | **expected value ≥ 6%** at the posted price: model win % × decimal odds − 1 |
-| Safeguards | no current injury report; team hasn't filed; line moved 3+ against | **starting goalies not both confirmed**; moneyline moved 5+ win-% points against the bet |
+| Safeguards | no current injury report; team hasn't filed; line moved 3+ against | opening price only; puck line not on the 2nd night of a back-to-back; Pinnacle already posted and disagreeing (moneyline). The goalie caution was dropped for opening-price bets on Nov 1 (see **Betting rules, v4**). |
 
 ## What runs, and when
 
@@ -97,8 +97,9 @@ the actual price. Full tables in `backtests/`.
 - **What an alert says:** the bet and price, the model's win chance vs. the chance the price needs, the expected value
   (and what it was at the opening price), the model's expected score, the goalies (expected / confirmed / not announced),
   which regulars the model has as missing, the moneyline or total history with times, and the latest injury news.
-- **Rule:** moneyline and puck line. Expected value **6%+** while the DraftKings price is at (or within 1.5 win-% points of) its
-  opening price; **9%+** once it has moved further or the line number changed. In the backtests most of the edge was gone
+- **Rule (current version: see "Betting rules, v4 (Nov 4, 2026)" below):** moneyline (55/45 blend, EV **4%+**), puck line
+  (EV **9%+**), overs (EV **6%+**), while the DraftKings price is at (or within 1.5 win-% points of) its opening price; moved
+  prices are logged as info only. In the backtests most of the edge was gone
   by halfway between open and close (shot model +9.0% per bet at the open, +2.3% halfway, −2.2% at the close;
   `backtests/midpoint_prices.csv`), and bigger edges held up better. One alert per game, market and model.
   **Goals model long shots (+150 or longer): opening price only** (since Oct 31). These alerts go out only while the price is
@@ -107,16 +108,13 @@ the actual price. Full tables in `backtests/`.
   641 at the open but lost once the price moved. Shot-model long shots alert normally (they're calibrated). Scorecard unchanged.
   Alerts carry an `open_only` column in `state/alerts.csv` so these can be graded separately.
   Settings at the top of `alert.py`: `THRESHOLD`, `THRESHOLD_MOVED`, `NEAR_OPEN`, `OPEN_ONLY_LONGSHOTS`, `ALERT_MARKETS` (add `"total"` for totals), `MAX_MOVE`, `WINDOW`.
-- **Caution alerts.** Sent with **CAUTION** in the title, at normal priority, when the edge is there but:
-  - the starting goalies aren't both **confirmed** yet (ESPN lists them as "expected" for most of the day), or
-  - the moneyline has moved 5+ win-% points **against** the bet since it opened (the market knows something).
-
-  If a caution clears later (goalies confirmed, edge still there), a regular alert follows, titled **UPDATE**, saying what
-  cleared and how the expected value changed since the caution.
+- **Caution alerts (logged, not pushed).** The goalie caution no longer applies to opening-price bets (Nov 1; backtest openers
+  +3.7% when the expected goalie started, +3.2% when not). The 5+ point "moved against" caution can only apply to
+  second-chance bets (an opening-price bet can't have moved that far).
 - **Reminder if you haven't logged the bet** (ported from the NBA tracker, Oct 31, 2026): 30 minutes after an alert
   (`REMIND_AFTER_MIN`), if no bet is logged for that game and market, one **REMINDER** goes out before puck drop with the price
-  now and a verdict: **[BET]** if the expected value at today's price still meets the bar (6% near the opening price, 9% once it
-  has moved; opening-price-only long shots need the price still near the open), **[PASS]** if not. It also says whether both
+  now and a verdict: **[BET]** if the expected value at today's price still meets the bar (4% moneyline / 9% puck line / 6% overs
+  near the opening price, 9% once it has moved; a moneyline within 1.5 win-% points of the alerted price stays a bet; opening-price-only long shots need the price still near the open), **[PASS]** if not. It also says whether both
   goalies are confirmed yet. Only alerts sent since this change get reminders; it relies on you logging every bet you place.
 - **Your logged bets are checked** (ported from the NBA tracker, Oct 31, 2026). If you already logged a bet on that game and
   market on the same side, the title starts with **ALREADY BET**, shows your bet, and comes at normal priority. If your logged
@@ -228,11 +226,24 @@ side's own text or had to be assumed). Check those after the first day. To pause
 Settings at the top of `polymarket.py`: `THRESHOLD`, `PAPER_MARKETS`, `TAKER_FEE_RATE`, `MAKER`, `MIN_DEPTH` (20 contracts).
 
 
+## Betting rules, v4 (Nov 4, 2026)
+From the rule audit (`analysis/rule_audit_nhl.py`, output `analysis/rule_audit_nhl_output.txt`; 2021-22..2025-26, every bet
+graded at a DraftKings price that was available at the time). New version rows in `state/bet_versions.csv` (NHL v4).
+| Rule | Now | Evidence (2021-26) |
+|---|---|---|
+| Puck line EV bar | **9%** (was 6%); EV 6-9% logged as **TEST** rows, not pushed | 6-9%: 514 bets -11.1u, 4 of 5 seasons negative; 9%+: 754 bets +90.2u (chosen on these seasons: re-test after 2026-27) |
+| One bet per game | the **moneyline** when it qualifies; the puck line leg is a TEST row | 597 games: always-ML +69.7u vs the old higher-EV pick +54.2u (it chose the puck line 79% of the time) |
+| Back-to-back skip | **puck line only** | puck line on b2b teams 137 bets -37.3u (4/5 negative); moneyline (blend + travel adj.) 77 bets +0.9u |
+| Pinnacle at alert time | kept: Pinnacle already posted and disagreeing -> no bet (moneyline) | 27 bets -8.8u (small sample) |
+| Pinnacle after the alert | **dropped** (no DON'T BET when Pinnacle posts later and disagrees) | those bets at the price still available: 187 bets +9.1u. The old "405 bets -42u" graded at DK's opener with Pinnacle's later price (look-ahead); under the live blend it was +5.4u |
+| Moneyline DON'T BET | **not sent** while DK's price is within 1.5 win-% points of the alerted price, even if EV dips under 4% | those bets halfway to puck drop: 113 bets +26.0u. Bigger moves still get DON'T BET; overs unchanged (moved-toward overs 101 bets -11.6u) |
+| Moved prices | info only (unchanged); moneylines at EV 9%+ off the opener stay logged as info rows | new moneyline bets at moved prices halfway: EV 9%+ 50 bets +18.5u; watch-only |
+
 ## Phone alerts: bets only (since Nov 1, 2026)
 `BET_ONLY = True` in `alert.py`: your phone gets only bet alerts (the EV bar is met with no caution) and **DON'T BET**
 follow-ups (a bet alert you haven't logged whose EV fell below the bar before puck drop, or an opening-price-only long shot
 whose price moved). Cautions, INFO ONLY, market-agrees and line-jump alerts are still logged in their files, just not pushed.
-The 30-minute reminder was replaced by DON'T BET.
+REMINDER pushes (every 30 minutes, 6 AM-8 PM, while an alerted bet is unlogged and still a bet) and BACK IN RANGE are also pushed.
 - **Never both sides (since Nov 1, 2026).** When the shot model and the goals model back different teams in the same game
   (moneyline or puck line, at the bet bar), or you already logged a bet on the other team, the alert is logged as
   **NO BET (both sides)** and not pushed. On Oct 31 both models alerted on UTA @ PHI from opposite sides (UTA ML -155 from the
