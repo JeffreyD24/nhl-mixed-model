@@ -661,7 +661,11 @@ def main():
             ok_now = ev >= thr and not longshot_gone
             # Nov 4, 2026: a moneyline still within NEAR_OPEN of the alerted price stays a bet even if EV dipped under the bar
             ml_hold = (ML_HOLD_NEAR_ALERT and mk == "moneyline" and not ok_now and not pd.isna(r.price) and not pd.isna(price)
-                       and abs(1 / espn.nd_dec(price) - 1 / espn.nd_dec(float(r.price))) <= NEAR_OPEN)
+                       and abs(1 / espn.nd_dec(price) - 1 / espn.nd_dec(float(r.price))) <= NEAR_OPEN
+                       # Fable review (Nov 4): only a PRICE-driven dip is held; if the model itself moved (goalie news, side flip),
+                       # EV going negative or the win chance falling 2+ pts still gets the DON'T BET
+                       and ev >= 0 and (pd.isna(pd.to_numeric(r.get("model_prob"), errors="coerce"))
+                                        or float(p) >= float(r.get("model_prob")) - 0.02))
             if ml_hold: ok_now = True
             pin_txt = None
             if PIN_FOLLOWUP and USE_PINNACLE_RULE and ok_now and mk == "moneyline" and gi.get("pin") is not None and not pd.isna(gi.get("ph_open")):
