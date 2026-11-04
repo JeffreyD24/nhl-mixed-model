@@ -23,3 +23,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-04 11:05,goals,401892645,2026-11-04,chi,fla,0.6151,3.389,2.591,6.14,Spencer Knight (expected),Jacob Markstrom (confirmed),"CHI: Greenway, Kane, Korchinski | FLA: -"
 2026-11-04 12:09,xg,401892644,2026-11-04,ott,buf,0.5009,3.264,3.148,6.57,Samuel Ersson (expected),Colten Ellis (expected),"OTT: Burakovsky, Kleven | BUF: Helenius"
 2026-11-04 12:09,goals,401892644,2026-11-04,ott,buf,0.5248,3.346,3.127,6.63,Samuel Ersson (expected),Colten Ellis (expected),"OTT: Burakovsky, Kleven | BUF: Helenius"
+2026-11-04 12:10,xg,401892644,2026-11-04,ott,buf,0.5009,3.264,3.148,6.57,Samuel Ersson (confirmed),Colten Ellis (expected),"OTT: Burakovsky, Kleven | BUF: Helenius"
+2026-11-04 12:10,goals,401892644,2026-11-04,ott,buf,0.5248,3.346,3.127,6.63,Samuel Ersson (confirmed),Colten Ellis (expected),"OTT: Burakovsky, Kleven | BUF: Helenius"
