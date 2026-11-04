@@ -6420,3 +6420,9 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 13:54:23,293546,2026-11-04,2026-11-04 19:30,ott,buf,Consensus,event,team_total,away_over,3.5,-106,normal
 2026-11-04 13:54:23,293546,2026-11-04,2026-11-04 19:30,ott,buf,Consensus,secondperiod,total,over,2.0,-125,normal
 2026-11-04 13:54:23,293546,2026-11-04,2026-11-04 19:30,ott,buf,Consensus,secondperiod,total,under,2.0,-110,normal
+2026-11-04 13:57:38,293546,2026-11-04,2026-11-04 19:30,ott,buf,BetMGM,event,moneyline,away,0.0,105,normal
+2026-11-04 13:57:38,293546,2026-11-04,2026-11-04 19:30,ott,buf,BetMGM,event,moneyline,home,0.0,-125,normal
+2026-11-04 13:57:38,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,firstperiod,team_total,away_over,0.5,-140,normal
+2026-11-04 13:57:38,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,firstperiod,team_total,away_under,0.5,100,normal
+2026-11-04 13:57:38,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,secondperiod,team_total,home_under,1.5,-255,normal
+2026-11-04 13:57:38,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,secondperiod,team_total,home_over,1.5,185,normal
