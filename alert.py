@@ -21,6 +21,13 @@ import nhl_travel                                        # noqa: E402
 
 REMIND_EVERY_MIN = 30               # Nov 2, 2026: an alerted bet still not logged and still a bet -> REMINDER every 30 min,
 REMIND_HOURS = (6, 20)              #   only 6 AM - 8 PM ET
+REMIND_GAPS = ((24, 240), (6, 120), (2, 60))   # Nov 4, 2026: reminders spaced by time to start: 24h+ every 4 h, 6-24 h every 2 h,
+                                              #   2-6 h hourly, under 2 h every REMIND_EVERY_MIN (an opener alerted the day before
+                                              #   no longer sends ~25 reminders)
+def remind_gap_min(tip, now):
+    try: h = (pd.Timestamp(tip) - now).total_seconds() / 3600
+    except Exception: return REMIND_EVERY_MIN
+    return next((m for hh, m in REMIND_GAPS if h > hh), REMIND_EVERY_MIN)
 ML_BLEND = 0.55                     # moneyline win chance = 55% shot model + 45% DraftKings' no-vig opener (approved Nov 2, 2026;
 ML_THRESHOLD = 0.04                 #   backtests/IDEA_TESTS.md: +158.1u on 1,221 bets 2021-26, every season +19u or better), EV 4%+ near the opener
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
@@ -678,7 +685,7 @@ def main():
                 if not (REMIND_HOURS[0] <= NOW.hour < REMIND_HOURS[1]): return 0
                 refs = [x for x in list(allr.last_reminder_at_et) + list(allr.resumed_at_et) + [t_last] if isinstance(x, str) and len(x) > 3]
                 ref = max(pd.Timestamp(x) for x in refs)
-                if NOW - ref < pd.Timedelta(minutes=REMIND_EVERY_MIN): return 0
+                if NOW - ref < pd.Timedelta(minutes=remind_gap_min(gi["tip_et"], NOW)): return 0
                 team = gi["H"] if r.side == "home" else (gi["Aw"] if r.side == "away" else str(r.side).upper())
                 what = (f"{team} ML {fmt_price(price)}" if mk == "moneyline" else
                         (f"{team} {lnum:+g} ({fmt_price(price)})" if mk == "puck line" else f"{str(r.side).upper()} {lnum:g} ({fmt_price(price)})"))
