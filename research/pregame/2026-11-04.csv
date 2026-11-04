@@ -4517,3 +4517,7 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 09:06:02,293546,2026-11-04,2026-11-04 19:30,ott,buf,FanDuel,firstperiod,team_total,home_over,0.5,-190,normal
 2026-11-04 09:06:02,293546,2026-11-04,2026-11-04 19:30,ott,buf,FanDuel,firstperiod,spread,away,0.5,-215,normal
 2026-11-04 09:06:02,293546,2026-11-04,2026-11-04 19:30,ott,buf,FanDuel,firstperiod,total,over,1.5,-150,normal
+2026-11-04 09:08:03,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,event,moneyline,away,0.0,105,normal
+2026-11-04 09:08:03,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,event,moneyline,home,0.0,-125,normal
+2026-11-04 09:08:03,293546,2026-11-04,2026-11-04 19:30,ott,buf,FanDuel,firstperiod,moneyline,away,0.0,-102,normal
+2026-11-04 09:08:03,293546,2026-11-04,2026-11-04 19:30,ott,buf,FanDuel,thirdperiod,team_total,away_over,0.5,-215,normal
