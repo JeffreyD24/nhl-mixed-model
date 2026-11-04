@@ -1173,3 +1173,19 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 22:12:05,401892636,2026-11-03,edm,nj,in,In SO,5,0:00,3.0,3.0,31.0,19.0,Period Start,Start of Shootout
 2026-11-03 22:12:05,401892642,2026-11-03,car,nsh,in,14:33 - 3rd,3,14:33,1.0,2.0,11.0,19.0,Blocked,Filip Forsberg shot blocked by Sean Walker
 2026-11-03 22:12:05,401892643,2026-11-03,ana,van,in,16:55 - 2nd,2,16:55,3.0,1.0,7.0,9.0,Face Off,Marco Rossi faceoff won against Tim Washe
+2026-11-03 22:13:06,401892636,2026-11-03,edm,nj,in,In SO,5,0:00,3.0,3.0,31.0,19.0,Shot,Jack Hughes Backhand saved by Tristan Jarry
+2026-11-03 22:13:06,401892642,2026-11-03,car,nsh,in,14:20 - 3rd,3,14:20,1.0,3.0,11.0,19.0,Goal,"Adam Edstrom Goal (6) Tip-In, assists: Roman Josi (15), Ross Colton (3)"
+2026-11-03 22:13:06,401892643,2026-11-03,ana,van,in,15:51 - 2nd,2,15:51,3.0,1.0,7.0,9.0,Face Off,Marco Rossi faceoff won against Tim Washe
+2026-11-03 22:14:05,401892636,2026-11-03,edm,nj,in,In SO,5,0:00,3.0,3.0,31.0,19.0,Goal,Connor McDavid Goal Wrist Shot
+2026-11-03 22:14:05,401892642,2026-11-03,car,nsh,in,13:52 - 3rd,3,13:52,1.0,3.0,11.0,19.0,Face Off,Logan Stankoven faceoff won against Jack Drury
+2026-11-03 22:14:05,401892643,2026-11-03,ana,van,in,14:50 - 2nd,2,14:50,3.0,1.0,7.0,9.0,Missed,Missed Shot
+2026-11-03 22:15:05,401892636,2026-11-03,edm,nj,in,In SO,5,0:00,3.0,3.0,31.0,19.0,Shot,Evan Rodrigues saved by Tristan Jarry
+2026-11-03 22:15:05,401892642,2026-11-03,car,nsh,in,12:54 - 3rd,3,12:54,1.0,3.0,11.0,20.0,Blocked,Roman Josi shot blocked by Jackson Blake
+2026-11-03 22:15:05,401892643,2026-11-03,ana,van,in,14:24 - 2nd,2,14:24,3.0,1.0,7.0,9.0,Stoppage,Goalie Stopped
+2026-11-03 22:16:05,401892636,2026-11-03,edm,nj,in,In SO,5,0:00,3.0,3.0,31.0,19.0,Shot,Ryan Nugent-Hopkins Wrist Shot saved by Connor Hellebuyck
+2026-11-03 22:16:05,401892642,2026-11-03,car,nsh,in,12:11 - 3rd,3,12:11,1.0,3.0,11.0,21.0,Stoppage,High Stick
+2026-11-03 22:16:05,401892643,2026-11-03,ana,van,in,13:23 - 2nd,2,13:23,3.0,1.0,8.0,9.0,Giveaway,Giveaway by Jackson LaCombe
+2026-11-03 22:17:05,401892636,2026-11-03,edm,nj,in,In SO,5,0:00,3.0,3.0,31.0,19.0,Shot, saved by Connor Hellebuyck
+2026-11-03 22:17:05,401892643,2026-11-03,ana,van,in,13:23 - 2nd,2,13:23,3.0,1.0,7.0,9.0,Fighting,Jacob Quillan Fighting
+2026-11-03 22:18:05,401892642,2026-11-03,car,nsh,in,12:04 - 3rd,3,12:04,1.0,3.0,11.0,21.0,Shot,Seth Jarvis Wrist Shot saved by Juuse Saros
+2026-11-03 22:18:05,401892643,2026-11-03,ana,van,in,13:23 - 2nd,2,13:23,3.0,1.0,7.0,9.0,Fighting,Jacob Quillan Fighting against Travis Mitchell
