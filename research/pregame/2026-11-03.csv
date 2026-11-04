@@ -681,3 +681,12 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-03 20:41:51,293544,2026-11-03,2026-11-03 21:00,ana,van,bet365,event,total,over,6.5,-144,normal
 2026-11-03 20:50:58,293544,2026-11-03,2026-11-03 21:00,ana,van,bet365,event,spread,home,1.5,-159,normal
 2026-11-03 20:50:58,293544,2026-11-03,2026-11-03 21:00,ana,van,bet365,event,spread,away,-1.5,134,normal
+2026-11-03 20:55:21,293544,2026-11-03,2026-11-03 21:00,ana,van,Consensus,event,spread,home,1.5,-159,normal
+2026-11-03 20:55:21,293544,2026-11-03,2026-11-03 21:00,ana,van,DraftKings,event,team_total,home_over,2.5,-170,normal
+2026-11-03 20:55:21,293544,2026-11-03,2026-11-03 21:00,ana,van,DraftKings,event,team_total,home_under,2.5,130,normal
+2026-11-03 20:55:21,293544,2026-11-03,2026-11-03 21:00,ana,van,DraftKings,secondperiod,spread,away,-0.5,124,normal
+2026-11-03 20:55:21,293544,2026-11-03,2026-11-03 21:00,ana,van,DraftKings,secondperiod,spread,home,0.5,-160,normal
+2026-11-03 20:55:21,293544,2026-11-03,2026-11-03 21:00,ana,van,DraftKings,thirdperiod,team_total,home_over,0.5,-200,normal
+2026-11-03 20:55:21,293544,2026-11-03,2026-11-03 21:00,ana,van,DraftKings,thirdperiod,team_total,home_under,0.5,154,normal
+2026-11-03 20:55:21,293544,2026-11-03,2026-11-03 21:00,ana,van,DraftKings,thirdperiod,spread,home,0.5,-135,normal
+2026-11-03 20:55:21,293544,2026-11-03,2026-11-03 21:00,ana,van,DraftKings,thirdperiod,spread,away,-0.5,105,normal
