@@ -425,3 +425,53 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 20:15:05,401892641,2026-11-03,col,cbj,in,12:40 - 2nd,2,12:40,1.0,3.0,5.0,12.0,Missed,Cole Sillinger Backhand
 2026-11-03 20:15:05,401892636,2026-11-03,edm,nj,in,End of 1st,1,0:00,1.0,0.0,9.0,8.0,Stoppage,Goalie Stopped
 2026-11-03 20:15:05,401892642,2026-11-03,car,nsh,in,18:23 - 1st,1,18:23,0.0,0.0,0.0,1.0,Face Off,Mark Jankowski faceoff won against Shane Wright
+2026-11-03 20:16:05,401892633,2026-11-03,uta,tor,in,13:14 - 2nd,2,13:14,1.0,0.0,9.0,18.0,Blocked,Nate Schmidt shot blocked by Jake McCabe
+2026-11-03 20:16:05,401892634,2026-11-03,wpg,mtl,in,15:02 - 2nd,2,15:02,0.0,3.0,8.0,12.0,Face Off,Alex Iafallo faceoff won against Alex Newhook
+2026-11-03 20:16:05,401892635,2026-11-03,det,tb,in,13:00 - 2nd,2,13:00,0.0,2.0,14.0,2.0,Stoppage,Puck in Netting
+2026-11-03 20:16:05,401892637,2026-11-03,stl,nyr,in,15:22 - 2nd,2,15:22,0.0,1.0,11.0,16.0,Stoppage,Puck in Netting
+2026-11-03 20:16:05,401892639,2026-11-03,vgk,pit,in,13:54 - 2nd,2,13:54,1.0,0.0,12.0,11.0,Stoppage,Goalie Stopped
+2026-11-03 20:16:05,401892640,2026-11-03,dal,wsh,in,13:09 - 2nd,2,13:09,4.0,0.0,8.0,7.0,Face Off,Tyler Seguin faceoff won against Dylan Strome
+2026-11-03 20:16:05,401892641,2026-11-03,col,cbj,in,12:40 - 2nd,2,12:40,1.0,4.0,5.0,13.0,Goal,"Cole Sillinger Goal (4) Backhand, assists: Zach Werenski (11), Mathieu Olivier (3)"
+2026-11-03 20:16:05,401892636,2026-11-03,edm,nj,in,End of 1st,1,0:00,1.0,0.0,9.0,8.0,Period End,End of 1st Period
+2026-11-03 20:16:05,401892642,2026-11-03,car,nsh,in,17:19 - 1st,1,17:19,0.0,0.0,0.0,2.0,Shot,Nicolas Deslauriers Tip-In saved by Juuse Saros
+2026-11-03 20:17:05,401892633,2026-11-03,uta,tor,in,12:15 - 2nd,2,12:15,1.0,0.0,10.0,18.0,Shot,Jack Roslovic Wrist Shot saved by Sebastian Cossa
+2026-11-03 20:17:05,401892634,2026-11-03,wpg,mtl,in,14:50 - 2nd,2,14:50,0.0,3.0,9.0,13.0,Stoppage,Goalie Stopped
+2026-11-03 20:17:05,401892635,2026-11-03,det,tb,in,13:00 - 2nd,2,13:00,0.0,2.0,14.0,3.0,Stoppage,Puck in Netting
+2026-11-03 20:17:05,401892637,2026-11-03,stl,nyr,in,14:39 - 2nd,2,14:39,0.0,1.0,11.0,16.0,Blocked,Brandon Carlo shot blocked by Scott Morrow
+2026-11-03 20:17:05,401892639,2026-11-03,vgk,pit,in,13:40 - 2nd,2,13:40,1.0,0.0,13.0,11.0,Stoppage,Goalie Stopped
+2026-11-03 20:17:05,401892640,2026-11-03,dal,wsh,in,12:26 - 2nd,2,12:26,4.0,0.0,8.0,7.0,Shot,Wyatt Johnston Snap Shot saved by Charlie Lindgren
+2026-11-03 20:17:05,401892641,2026-11-03,col,cbj,in,12:29 - 2nd,2,12:29,1.0,4.0,5.0,13.0,Face Off,Sean Monahan faceoff won against Fedor Svechkov
+2026-11-03 20:17:05,401892642,2026-11-03,car,nsh,in,16:28 - 1st,1,16:28,0.0,0.0,0.0,2.0,Blocked,Jaccob Slavin shot blocked by Adam Wilsby
+2026-11-03 20:18:05,401892633,2026-11-03,uta,tor,in,11:23 - 2nd,2,11:23,1.0,0.0,11.0,18.0,Giveaway,Giveaway by Oliver Ekman-Larsson
+2026-11-03 20:18:05,401892634,2026-11-03,wpg,mtl,in,14:10 - 2nd,2,14:10,0.0,3.0,9.0,13.0,Missed,Missed Shot
+2026-11-03 20:18:05,401892635,2026-11-03,det,tb,in,12:28 - 2nd,2,12:28,0.0,2.0,14.0,3.0,Blocked,Alex DeBrincat shot blocked by Erik Cernak
+2026-11-03 20:18:05,401892637,2026-11-03,stl,nyr,in,13:56 - 2nd,2,13:56,0.0,1.0,11.0,16.0,Blocked,Vladislav Gavrikov shot blocked by Philip Broberg
+2026-11-03 20:18:05,401892638,2026-11-03,min,phi,in,11:49 - 2nd,2,11:49,3.0,0.0,11.0,9.0,Face Off,Noel Acciari faceoff won against Joel Eriksson Ek
+2026-11-03 20:18:05,401892640,2026-11-03,dal,wsh,in,12:26 - 2nd,2,12:26,4.0,0.0,8.0,9.0,Stoppage,On-Ice Official
+2026-11-03 20:18:05,401892641,2026-11-03,col,cbj,in,11:28 - 2nd,2,11:28,1.0,4.0,5.0,13.0,Missed,Conor Garland Snap Shot Above Crossbar
+2026-11-03 20:18:05,401892642,2026-11-03,car,nsh,in,16:00 - 1st,1,16:00,0.0,0.0,0.0,3.0,Stoppage,Icing
+2026-11-03 20:19:05,401892633,2026-11-03,uta,tor,in,10:33 - 2nd,2,10:33,1.0,0.0,11.0,19.0,Blocked,MacKenzie Weegar shot blocked by Jake McCabe
+2026-11-03 20:19:05,401892634,2026-11-03,wpg,mtl,in,13:55 - 2nd,2,13:55,0.0,3.0,9.0,13.0,Tripping,Lane Hutson Tripping against Dawson Mercer
+2026-11-03 20:19:05,401892635,2026-11-03,det,tb,in,11:37 - 2nd,2,11:37,0.0,2.0,15.0,3.0,Shot,Max Crozier saved by Daniil Tarasov
+2026-11-03 20:19:05,401892637,2026-11-03,stl,nyr,in,13:56 - 2nd,2,13:56,0.0,1.0,11.0,16.0,Stoppage,Puck Frozen - Goalie
+2026-11-03 20:19:05,401892638,2026-11-03,min,phi,in,11:21 - 2nd,2,11:21,3.0,0.0,11.0,10.0,Stoppage,Goalie Stopped
+2026-11-03 20:19:05,401892639,2026-11-03,vgk,pit,in,13:04 - 2nd,2,13:04,1.0,0.0,13.0,11.0,Face Off,Nic Dowd faceoff won against Ben Kindel
+2026-11-03 20:19:05,401892640,2026-11-03,dal,wsh,in,11:52 - 2nd,2,11:52,4.0,0.0,8.0,9.0,Face Off,Boone Jenner faceoff won against Roope Hintz
+2026-11-03 20:19:05,401892641,2026-11-03,col,cbj,in,10:27 - 2nd,2,10:27,1.0,4.0,5.0,14.0,Shot,Jaden Schwartz Snap Shot saved by Cam Talbot
+2026-11-03 20:19:05,401892642,2026-11-03,car,nsh,in,15:29 - 1st,1,15:29,0.0,0.0,0.0,3.0,Face Off,Mark Jankowski faceoff won against Shane Wright
+2026-11-03 20:20:05,401892633,2026-11-03,uta,tor,in,9:40 - 2nd,2,9:40,1.0,0.0,11.0,18.0,Missed,Missed Shot
+2026-11-03 20:20:05,401892634,2026-11-03,wpg,mtl,in,13:24 - 2nd,2,13:24,0.0,3.0,9.0,14.0,Stoppage,Goalie Stopped
+2026-11-03 20:20:05,401892635,2026-11-03,det,tb,in,11:19 - 2nd,2,11:19,0.0,2.0,15.0,3.0,Stoppage,High Stick
+2026-11-03 20:20:05,401892638,2026-11-03,min,phi,in,10:33 - 2nd,2,10:33,3.0,0.0,11.0,10.0,Stoppage,Goalie Stopped
+2026-11-03 20:20:05,401892639,2026-11-03,vgk,pit,in,12:35 - 2nd,2,12:35,1.0,0.0,13.0,11.0,Face Off,Hendrix Lapierre faceoff won against Tomas Hertl
+2026-11-03 20:20:05,401892640,2026-11-03,dal,wsh,in,10:47 - 2nd,2,10:47,4.0,0.0,8.0,9.0,Missed,Jason Robertson Snap Shot Wide Right
+2026-11-03 20:20:05,401892641,2026-11-03,col,cbj,in,9:57 - 2nd,2,9:57,1.0,4.0,5.0,14.0,Stoppage,TV Timeout
+2026-11-03 20:20:05,401892642,2026-11-03,car,nsh,in,14:34 - 1st,1,14:34,0.0,0.0,0.0,3.0,Face Off,Mark Jankowski faceoff won against Shane Wright
+2026-11-03 20:21:06,401892633,2026-11-03,uta,tor,in,9:31 - 2nd,2,9:31,1.0,1.0,11.0,18.0,Stoppage,TV Timeout
+2026-11-03 20:21:06,401892634,2026-11-03,wpg,mtl,in,13:11 - 2nd,2,13:11,0.0,3.0,9.0,15.0,Stoppage,Puck in Crowd
+2026-11-03 20:21:06,401892635,2026-11-03,det,tb,in,10:54 - 2nd,2,10:54,0.0,3.0,15.0,3.0,Face Off,Sheldon Dries faceoff won against Conor Geekie
+2026-11-03 20:21:06,401892637,2026-11-03,stl,nyr,in,13:43 - 2nd,2,13:43,0.0,1.0,12.0,16.0,Face Off,J.T. Miller faceoff won against Pius Suter
+2026-11-03 20:21:06,401892638,2026-11-03,min,phi,in,10:18 - 2nd,2,10:18,3.0,0.0,11.0,12.0,Shot,Bobby Brink Backhand saved by Dan Vladar
+2026-11-03 20:21:06,401892639,2026-11-03,vgk,pit,in,11:57 - 2nd,2,11:57,1.0,0.0,14.0,11.0,Penalty Shot Infraction,Trevor Connelly Minor
+2026-11-03 20:21:06,401892640,2026-11-03,dal,wsh,in,10:30 - 2nd,2,10:30,4.0,0.0,8.0,9.0,Giveaway,Giveaway by Alex Tuch
+2026-11-03 20:21:06,401892642,2026-11-03,car,nsh,in,13:43 - 1st,1,13:43,0.0,0.0,0.0,4.0,Stoppage,Goalie Stopped
