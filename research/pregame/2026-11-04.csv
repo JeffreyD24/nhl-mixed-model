@@ -3967,3 +3967,8 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 07:40:35,293545,2026-11-04,2026-11-04 19:30,chi,fla,BetMGM,secondperiod,team_total,home_under,1.0,-102,normal
 2026-11-04 07:40:35,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetMGM,thirdperiod,moneyline,home,0.0,-145,normal
 2026-11-04 07:40:35,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetMGM,thirdperiod,moneyline,away,0.0,105,normal
+2026-11-04 07:42:19,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,event,moneyline,away,0.0,135,normal
+2026-11-04 07:42:19,293548,2026-11-04,2026-11-04 22:00,sj,la,BetRivers,event,total,over,6.5,100,normal
+2026-11-04 07:42:19,293548,2026-11-04,2026-11-04 22:00,sj,la,BetMGM,event,spread,home,-1.5,145,normal
+2026-11-04 07:42:19,293548,2026-11-04,2026-11-04 22:00,sj,la,BetMGM,secondperiod,moneyline,home,0.0,-160,normal
+2026-11-04 07:42:19,293548,2026-11-04,2026-11-04 22:00,sj,la,BetMGM,secondperiod,moneyline,away,0.0,115,normal
