@@ -31,6 +31,10 @@ def remind_gap_min(tip, now):
 ML_BLEND = 0.55                     # moneyline win chance = 55% shot model + 45% DraftKings' no-vig opener (approved Nov 2, 2026;
 ML_THRESHOLD = 0.04                 #   backtests/IDEA_TESTS.md: +158.1u on 1,221 bets 2021-26, every season +19u or better), EV 4%+ near the opener
 THRESHOLD = 0.06                    # expected value needed while the price is at (or within 1.5 win-% points of) its opening price
+ML_EV_SPLIT = 0.09                  # Nov 4, 2026 (user decision after spreads step 1): moneyline bets are recorded and graded in two
+                                    #   buckets, EV 4-9% and EV 9%+ (2021-26 at honest timing: 4-9% CLV -0.42%, 9%+ CLV +2.22%). Both are
+                                    #   still BET alerts; bet_record.py splits the record. research/spreads/STEP1_NHL_RESULTS.md
+
                                     #   (overs; second-chance moneylines). Puck line: THRESHOLD_PL.
 THRESHOLD_PL = 0.09                 # Nov 4, 2026 (approved; analysis/rule_audit_nhl_output.txt section 5): puck line bar 6% -> 9%.
                                     #   2021-26 at DK openers, b2b removed: EV 6-9% 514 bets -11.1u (4 of 5 seasons negative);
@@ -640,6 +644,10 @@ def main():
                         sent = notify(ctitle, body, priority="default", tags="warning,ice_hockey", link=link, dk=dk)
                     else:
                         if toward: body += f"\nMarket agrees: the moneyline has moved {abs(move):.1f} win-% points toward this side since open."
+                        if mk == "moneyline":
+                            ev_b = max([bt_[4] for n_, bt_ in pending if n_ in ALERT_MODELS] or [bt_[4] for _, bt_ in pending])   # shot model, as recorded
+                            body += (f"\nRecord bucket: moneyline EV {'9%+' if ev_b >= ML_EV_SPLIT else '4-9%'} (graded separately; "
+                                     f"2021-26 the 9%+ bucket beat the closing line, the 4-9% bucket did not).")
                         body += tail + f"\nAlerts so far: {recs}. Tracking test: neither model has proven an edge live yet." + hist_txt + news_for(g)
                         prio = "high"; why = ""
                         cb = caution_before(g["game_id"], mk, [n for n, _ in pending])
