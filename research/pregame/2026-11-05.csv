@@ -6931,3 +6931,15 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 17:39:09,293556,2026-11-05,2026-11-05 19:00,uta,mtl,BetRivers,thirdperiod,moneyline,away,0.0,-130,normal
 2026-11-04 17:39:09,293558,2026-11-05,2026-11-05 19:00,van,wpg,BetRivers,thirdperiod,team_total,away_under,0.5,123,normal
 2026-11-04 17:39:09,293558,2026-11-05,2026-11-05 19:00,van,wpg,BetRivers,thirdperiod,moneyline,away,0.0,143,normal
+2026-11-04 17:40:57,293549,2026-11-05,2026-11-05 19:00,dal,cbj,BetRivers,event,team_total,away_over,2.5,-180,normal
+2026-11-04 17:40:57,293549,2026-11-05,2026-11-05 19:00,dal,cbj,BetRivers,event,moneyline,home,0.0,108,normal
+2026-11-04 17:40:57,293549,2026-11-05,2026-11-05 19:00,dal,cbj,BetRivers,event,spread,away,-1.5,200,normal
+2026-11-04 17:40:57,293549,2026-11-05,2026-11-05 19:00,dal,cbj,BetRivers,event,spread,home,1.5,-250,normal
+2026-11-04 17:40:57,293549,2026-11-05,2026-11-05 19:00,dal,cbj,BetRivers,event,total,under,5.5,-105,normal
+2026-11-04 17:40:57,293549,2026-11-05,2026-11-05 19:00,dal,cbj,BetRivers,firstperiod,team_total,home_under,0.5,114,normal
+2026-11-04 17:40:57,293549,2026-11-05,2026-11-05 19:00,dal,cbj,BetRivers,firstperiod,team_total,home_over,0.5,-165,normal
+2026-11-04 17:40:57,293550,2026-11-05,2026-11-05 19:00,chi,tb,DraftKings,firstperiod,moneyline,home,0.0,-290,normal
+2026-11-04 17:40:57,293550,2026-11-05,2026-11-05 19:00,chi,tb,DraftKings,firstperiod,moneyline,away,0.0,205,normal
+2026-11-04 17:40:57,293550,2026-11-05,2026-11-05 19:00,chi,tb,DraftKings,firstperiod,total,under,1.5,110,normal
+2026-11-04 17:40:57,293550,2026-11-05,2026-11-05 19:00,chi,tb,DraftKings,firstperiod,total,over,1.5,-140,normal
+2026-11-04 17:40:57,293549,2026-11-05,2026-11-05 19:00,dal,cbj,BetRivers,thirdperiod,team_total,away_under,0.5,155,normal
