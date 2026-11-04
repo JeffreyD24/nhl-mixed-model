@@ -4,6 +4,10 @@ For a new session. Goal set by Jeffrey: evaluate the spread-type models in all t
 Read first: `claude/goals.md` (how we judge a model), `claude/findings_log.md` (newest first), `claude/leakage_audit_2026-11-03.md`,
 `claude/rule_audit_2026-11-04.md`. Same file in all three repos: `research/SPREADS_HANDOFF_2026-11-04.md`.
 
+
+## Status update (Nov 4, afternoon)
+- **NHL and NFL step 1 done (Nov 4, afternoon).** NHL (`nhl-mixed-model research/spreads/STEP1_NHL_RESULTS.md`): timing already honest; v4 moneyline +147.1u, CLV +0.23% [-0.07, +0.52]; v4 puck line +35.6u, CLV +0.65% [+0.11, +1.19]; keep both; ML CLV only at EV 9%+ (proposal: ML bar 9%, not applied); -2.5 puck line bug fixed live (NHL v4.1). NFL (`nfl-mixed-model research/spreads/STEP1_NFL_RESULTS.md`): Monday 9 AM spreads 211 bets -6.9u, CLV +0.25 vs break-even +0.64: stays test-only. **Next: step 2 (shrink-to-line) / step 3 (news the line lacks).**
+
 ## Honest starting point
 Every spread test so far says **team ratings alone do not beat the opening spread**. Tuning a model that has no information the line
 lacks only finds noise that looks good on the tuning seasons. So "fine-tuning" here means: find information the opener does not have yet
