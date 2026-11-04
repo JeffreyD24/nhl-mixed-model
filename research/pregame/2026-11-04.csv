@@ -6949,3 +6949,14 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 15:40:04,293546,2026-11-04,2026-11-04 19:30,ott,buf,Consensus,secondperiod,moneyline,away,0.0,-125,normal
 2026-11-04 15:40:04,293546,2026-11-04,2026-11-04 19:30,ott,buf,Consensus,thirdperiod,moneyline,home,0.0,-110,normal
 2026-11-04 15:40:04,293546,2026-11-04,2026-11-04 19:30,ott,buf,Consensus,thirdperiod,moneyline,away,0.0,-125,normal
+2026-11-04 15:42:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,FanDuel,event,moneyline,home,0.0,-134,normal
+2026-11-04 15:42:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,FanDuel,event,moneyline,away,0.0,112,normal
+2026-11-04 15:42:12,293548,2026-11-04,2026-11-04 22:00,sj,la,Consensus,event,moneyline,away,0.0,140,normal
+2026-11-04 15:42:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,FanDuel,firstperiod,spread,home,-0.5,164,normal
+2026-11-04 15:42:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,FanDuel,secondperiod,moneyline,home,0.0,-130,normal
+2026-11-04 15:42:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,FanDuel,secondperiod,moneyline,away,0.0,104,normal
+2026-11-04 15:42:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,FanDuel,secondperiod,spread,home,-0.5,152,normal
+2026-11-04 15:42:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,FanDuel,secondperiod,spread,away,0.5,-196,normal
+2026-11-04 15:42:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,FanDuel,thirdperiod,moneyline,home,0.0,-132,normal
+2026-11-04 15:42:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,FanDuel,thirdperiod,spread,home,-0.5,136,normal
+2026-11-04 15:42:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,FanDuel,thirdperiod,spread,away,0.5,-174,normal
