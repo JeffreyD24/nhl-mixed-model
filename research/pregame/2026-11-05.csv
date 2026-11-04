@@ -311,3 +311,9 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 07:12:50,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,event,moneyline,away,0.0,135,normal
 2026-11-04 07:12:50,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,event,spread,home,-1.5,155,normal
 2026-11-04 07:12:50,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,event,spread,away,1.5,-192,normal
+2026-11-04 10:58:02,293549,2026-11-05,2026-11-05 19:00,dal,cbj,Caesars,event,moneyline,home,0.0,112,opener
+2026-11-04 10:58:02,293549,2026-11-05,2026-11-05 19:00,dal,cbj,Caesars,event,moneyline,away,0.0,-132,opener
+2026-11-04 10:58:02,293549,2026-11-05,2026-11-05 19:00,dal,cbj,Caesars,event,total,under,5.5,-102,opener
+2026-11-04 10:58:02,293549,2026-11-05,2026-11-05 19:00,dal,cbj,Caesars,event,total,over,5.5,-122,opener
+2026-11-04 10:58:02,293555,2026-11-05,2026-11-05 19:00,vgk,det,Caesars,event,moneyline,home,0.0,120,opener
+2026-11-04 10:58:02,293555,2026-11-05,2026-11-05 19:00,vgk,det,Caesars,event,moneyline,away,0.0,-141,opener
