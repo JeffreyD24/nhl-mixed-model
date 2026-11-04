@@ -116,3 +116,44 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 19:23:05,401892638,2026-11-03,min,phi,in,11:09 - 1st,1,11:09,2.0,0.0,3.0,5.0,Missed,Travis Konecny Wrist Shot Wide Right
 2026-11-03 19:23:05,401892640,2026-11-03,dal,wsh,in,11:54 - 1st,1,11:54,0.0,0.0,2.0,0.0,Face Off,Pierre-Luc Dubois faceoff won against Jamie Benn
 2026-11-03 19:23:05,401892641,2026-11-03,col,cbj,in,12:23 - 1st,1,12:23,0.0,1.0,2.0,3.0,Missed,Missed Shot
+2026-11-03 19:24:05,401892633,2026-11-03,uta,tor,in,10:38 - 1st,1,10:38,0.0,0.0,4.0,6.0,Stoppage,TV Timeout
+2026-11-03 19:24:05,401892634,2026-11-03,wpg,mtl,in,10:36 - 1st,1,10:36,0.0,1.0,3.0,7.0,Missed,Dawson Mercer Slap Shot Wide Left
+2026-11-03 19:24:05,401892635,2026-11-03,det,tb,in,11:02 - 1st,1,11:02,0.0,1.0,3.0,2.0,Missed,Nikita Kucherov Missed Shot Wide Left
+2026-11-03 19:24:05,401892637,2026-11-03,stl,nyr,in,11:22 - 1st,1,11:22,0.0,0.0,1.0,6.0,Shot,Philip Broberg saved by Dylan Garand
+2026-11-03 19:24:05,401892638,2026-11-03,min,phi,in,10:20 - 1st,1,10:20,2.0,0.0,3.0,5.0,Missed,Missed Shot
+2026-11-03 19:24:05,401892639,2026-11-03,vgk,pit,in,11:25 - 1st,1,11:25,0.0,0.0,2.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 19:24:05,401892640,2026-11-03,dal,wsh,in,11:05 - 1st,1,11:05,0.0,0.0,3.0,0.0,Missed,Missed Shot
+2026-11-03 19:24:05,401892641,2026-11-03,col,cbj,in,12:10 - 1st,1,12:10,0.0,2.0,2.0,3.0,Missed,Missed Shot
+2026-11-03 19:25:05,401892634,2026-11-03,wpg,mtl,in,10:22 - 1st,1,10:22,0.0,1.0,3.0,9.0,Stoppage,Icing
+2026-11-03 19:25:05,401892635,2026-11-03,det,tb,in,10:20 - 1st,1,10:20,0.0,1.0,3.0,2.0,Missed,Charle-Edouard D'Astous Missed Shot Hit Left Post
+2026-11-03 19:25:05,401892637,2026-11-03,stl,nyr,in,10:42 - 1st,1,10:42,0.0,0.0,1.0,6.0,Face Off,Mika Zibanejad faceoff won against Connor McMichael
+2026-11-03 19:25:05,401892638,2026-11-03,min,phi,in,9:54 - 1st,1,9:54,2.0,0.0,3.0,5.0,Stoppage,TV Timeout
+2026-11-03 19:25:05,401892639,2026-11-03,vgk,pit,in,10:44 - 1st,1,10:44,0.0,0.0,3.0,2.0,Shot,William Karlsson Wrist Shot saved by Arturs Silovs
+2026-11-03 19:25:05,401892640,2026-11-03,dal,wsh,in,10:48 - 1st,1,10:48,1.0,0.0,3.0,0.0,Blocked,Justin Sourdif shot blocked by Radek Faksa
+2026-11-03 19:25:05,401892641,2026-11-03,col,cbj,in,11:09 - 1st,1,11:09,0.0,2.0,2.0,3.0,Blocked,Cale Makar shot blocked by Devon Toews
+2026-11-03 19:26:05,401892634,2026-11-03,wpg,mtl,in,10:07 - 1st,1,10:07,0.0,1.0,3.0,9.0,Face Off,Mark Scheifele faceoff won against Oliver Kapanen
+2026-11-03 19:26:05,401892635,2026-11-03,det,tb,in,9:18 - 1st,1,9:18,0.0,1.0,4.0,2.0,Missed,Charle-Edouard D'Astous Missed Shot Hit Left Post
+2026-11-03 19:26:05,401892637,2026-11-03,stl,nyr,in,10:13 - 1st,1,10:13,0.0,0.0,1.0,6.0,Face Off,Mika Zibanejad faceoff won against Dylan Holloway
+2026-11-03 19:26:05,401892639,2026-11-03,vgk,pit,in,9:44 - 1st,1,9:44,0.0,0.0,3.0,3.0,Blocked,Spencer Stastney shot blocked by Mark Stone
+2026-11-03 19:26:05,401892640,2026-11-03,dal,wsh,in,9:44 - 1st,1,9:44,1.0,0.0,3.0,0.0,Missed,Anthony Beauvillier Snap Shot Wide Left
+2026-11-03 19:26:05,401892641,2026-11-03,col,cbj,in,10:09 - 1st,1,10:09,0.0,2.0,2.0,3.0,Shot,Dante Fabbro Slap Shot saved by Scott Wedgewood
+2026-11-03 19:27:05,401892633,2026-11-03,uta,tor,in,9:55 - 1st,1,9:55,0.0,0.0,4.0,7.0,Shot,MacKenzie Weegar Backhand saved by Sergei Bobrovsky
+2026-11-03 19:27:05,401892634,2026-11-03,wpg,mtl,in,9:33 - 1st,1,9:33,0.0,1.0,3.0,9.0,Stoppage,Icing
+2026-11-03 19:27:05,401892635,2026-11-03,det,tb,in,8:18 - 1st,1,8:18,0.0,1.0,4.0,2.0,Missed,Erik Cernak Missed Shot Wide Right
+2026-11-03 19:27:05,401892637,2026-11-03,stl,nyr,in,9:43 - 1st,1,9:43,0.0,0.0,2.0,7.0,Stoppage,Goalie Stopped
+2026-11-03 19:27:05,401892639,2026-11-03,vgk,pit,in,9:37 - 1st,1,9:37,0.0,0.0,3.0,3.0,Holding,Nic Dowd Holding against Kris Letang
+2026-11-03 19:27:05,401892640,2026-11-03,dal,wsh,in,8:40 - 1st,1,8:40,1.0,0.0,3.0,0.0,Blocked,Ryan Leonard shot blocked by Tyler Myers
+2026-11-03 19:27:05,401892641,2026-11-03,col,cbj,in,9:08 - 1st,1,9:08,0.0,2.0,3.0,3.0,Shot,Sam Malinski Snap Shot saved by Cam Talbot
+2026-11-03 19:28:05,401892633,2026-11-03,uta,tor,in,9:28 - 1st,1,9:28,0.0,0.0,5.0,8.0,Face Off,Colton Sissons faceoff won against Anders Lee
+2026-11-03 19:28:05,401892634,2026-11-03,wpg,mtl,in,8:45 - 1st,1,8:45,0.0,1.0,5.0,9.0,Stoppage,Goalie Stopped
+2026-11-03 19:28:05,401892635,2026-11-03,det,tb,in,7:34 - 1st,1,7:34,0.0,1.0,4.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 19:28:05,401892638,2026-11-03,min,phi,in,9:06 - 1st,1,9:06,2.0,0.0,3.0,5.0,Missed,Joel Eriksson Ek Wrist Shot Wide Left
+2026-11-03 19:28:05,401892640,2026-11-03,dal,wsh,in,8:06 - 1st,1,8:06,1.0,0.0,3.0,0.0,Face Off,Jamie Benn faceoff won against Dylan Strome
+2026-11-03 19:28:05,401892641,2026-11-03,col,cbj,in,8:43 - 1st,1,8:43,1.0,2.0,2.0,4.0,Goal,"Cale Makar Goal (4), assists: none"
+2026-11-03 19:29:05,401892633,2026-11-03,uta,tor,in,8:39 - 1st,1,8:39,0.0,0.0,5.0,8.0,Stoppage,Icing
+2026-11-03 19:29:05,401892634,2026-11-03,wpg,mtl,in,8:45 - 1st,1,8:45,0.0,1.0,5.0,9.0,Stoppage,TV Timeout
+2026-11-03 19:29:05,401892635,2026-11-03,det,tb,in,7:34 - 1st,1,7:34,0.0,1.0,5.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 19:29:05,401892638,2026-11-03,min,phi,in,8:47 - 1st,1,8:47,2.0,0.0,4.0,5.0,Face Off,Michael McCarron faceoff won against Trevor Zegras
+2026-11-03 19:29:05,401892639,2026-11-03,vgk,pit,in,9:09 - 1st,1,9:09,0.0,0.0,3.0,3.0,Shot,Erik Karlsson Slap Shot saved by Adin Hill
+2026-11-03 19:29:05,401892640,2026-11-03,dal,wsh,in,7:18 - 1st,1,7:18,1.0,0.0,3.0,0.0,Stoppage,TV Timeout
+2026-11-03 19:29:05,401892641,2026-11-03,col,cbj,in,7:46 - 1st,1,7:46,1.0,2.0,3.0,4.0,Shot,Damon Severson saved by Scott Wedgewood
