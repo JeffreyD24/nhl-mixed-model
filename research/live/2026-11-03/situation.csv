@@ -770,3 +770,56 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 21:08:05,401892641,2026-11-03,col,cbj,in,15:55 - 3rd,3,15:55,2.0,6.0,10.0,22.0,Face Off,Charlie Coyle faceoff won against Nathan MacKinnon
 2026-11-03 21:08:05,401892636,2026-11-03,edm,nj,in,1:44 - 2nd,2,1:44,1.0,3.0,22.0,9.0,Missed,Missed Shot
 2026-11-03 21:08:05,401892642,2026-11-03,car,nsh,in,19:48 - 2nd,2,19:48,0.0,1.0,4.0,9.0,Face Off,Sebastian Aho faceoff won against Steven Stamkos
+2026-11-03 21:09:06,401892633,2026-11-03,uta,tor,in,16:51 - 3rd,3,16:51,2.0,1.0,18.0,30.0,Missed,Missed Shot
+2026-11-03 21:09:06,401892634,2026-11-03,wpg,mtl,in,19:19 - 3rd,3,19:19,0.0,3.0,11.0,30.0,Face Off,Alex Newhook faceoff won against Morgan Barron
+2026-11-03 21:09:06,401892635,2026-11-03,det,tb,in,15:28 - 3rd,3,15:28,1.0,3.0,20.0,8.0,Face Off,Anthony Cirelli faceoff won against Emmitt Finnie
+2026-11-03 21:09:06,401892637,2026-11-03,stl,nyr,in,19:00 - 3rd,3,19:00,0.0,1.0,23.0,21.0,Face Off,Mika Zibanejad faceoff won against Robert Thomas
+2026-11-03 21:09:06,401892638,2026-11-03,min,phi,in,14:28 - 3rd,3,14:28,3.0,2.0,16.0,15.0,Shot,Christian Dvorak saved by Jesper Wallstedt
+2026-11-03 21:09:06,401892639,2026-11-03,vgk,pit,in,15:39 - 3rd,3,15:39,1.0,1.0,16.0,18.0,Blocked,Hendrix Lapierre shot blocked by Brayden McNabb
+2026-11-03 21:09:06,401892640,2026-11-03,dal,wsh,in,12:49 - 3rd,3,12:49,6.0,3.0,12.0,13.0,Shot,Alex Ovechkin Snap Shot saved by Jake Oettinger
+2026-11-03 21:09:06,401892641,2026-11-03,col,cbj,in,15:27 - 3rd,3,15:27,2.0,6.0,11.0,22.0,Stoppage,Puck in Benches
+2026-11-03 21:09:06,401892636,2026-11-03,edm,nj,in,1:20 - 2nd,2,1:20,2.0,3.0,22.0,9.0,Missed,Colton Dach Snap Shot High and Wide Left
+2026-11-03 21:09:06,401892642,2026-11-03,car,nsh,in,19:12 - 2nd,2,19:12,0.0,1.0,4.0,9.0,Face Off,Sebastian Aho faceoff won against Steven Stamkos
+2026-11-03 21:10:05,401892633,2026-11-03,uta,tor,in,16:23 - 3rd,3,16:23,2.0,1.0,18.0,30.0,Shot,Oliver Ekman-Larsson saved by Sebastian Cossa
+2026-11-03 21:10:05,401892634,2026-11-03,wpg,mtl,in,18:43 - 3rd,3,18:43,0.0,4.0,12.0,30.0,Face Off,Oliver Kapanen faceoff won against Adam Lowry
+2026-11-03 21:10:05,401892635,2026-11-03,det,tb,in,14:31 - 3rd,3,14:31,1.0,3.0,20.0,8.0,Blocked,Alex DeBrincat shot blocked by Erik Cernak
+2026-11-03 21:10:05,401892637,2026-11-03,stl,nyr,in,18:28 - 3rd,3,18:28,0.0,1.0,23.0,21.0,Holding,Connor McMichael Holding against Mika Zibanejad
+2026-11-03 21:10:05,401892638,2026-11-03,min,phi,in,13:39 - 3rd,3,13:39,3.0,2.0,17.0,15.0,Face Off,Michael McCarron faceoff won against Sean Couturier
+2026-11-03 21:10:05,401892639,2026-11-03,vgk,pit,in,15:21 - 3rd,3,15:21,1.0,1.0,16.0,18.0,Face Off,William Karlsson faceoff won against Sidney Crosby
+2026-11-03 21:10:05,401892640,2026-11-03,dal,wsh,in,12:38 - 3rd,3,12:38,6.0,3.0,12.0,13.0,Stoppage,TV Timeout
+2026-11-03 21:10:05,401892641,2026-11-03,col,cbj,in,14:48 - 3rd,3,14:48,2.0,6.0,10.0,22.0,Face Off,Adam Fantilli faceoff won against Nazem Kadri
+2026-11-03 21:10:05,401892636,2026-11-03,edm,nj,in,1:03 - 2nd,2,1:03,2.0,3.0,22.0,9.0,Tripping,Arseny Gritsyuk Tripping
+2026-11-03 21:10:05,401892642,2026-11-03,car,nsh,in,18:07 - 2nd,2,18:07,0.0,1.0,5.0,9.0,Missed,Juuso Valimaki Slap Shot Above Crossbar
+2026-11-03 21:11:05,401892633,2026-11-03,uta,tor,in,16:07 - 3rd,3,16:07,2.0,1.0,19.0,30.0,Stoppage,Puck in Netting
+2026-11-03 21:11:05,401892634,2026-11-03,wpg,mtl,in,18:35 - 3rd,3,18:35,0.0,4.0,12.0,30.0,Face Off,Phillip Danault faceoff won against Morgan Barron
+2026-11-03 21:11:05,401892635,2026-11-03,det,tb,in,14:03 - 3rd,3,14:03,2.0,3.0,20.0,8.0,Face Off,Sheldon Dries faceoff won against Conor Geekie
+2026-11-03 21:11:05,401892637,2026-11-03,stl,nyr,in,17:59 - 3rd,3,17:59,0.0,1.0,23.0,21.0,Shot,Adam Fox saved by Joel Hofer
+2026-11-03 21:11:05,401892638,2026-11-03,min,phi,in,13:15 - 3rd,3,13:15,3.0,2.0,17.0,15.0,Stoppage,TV Timeout
+2026-11-03 21:11:05,401892639,2026-11-03,vgk,pit,in,13:57 - 3rd,3,13:57,1.0,1.0,18.0,18.0,Shot,Erik Karlsson Wrist Shot saved by Adin Hill
+2026-11-03 21:11:05,401892640,2026-11-03,dal,wsh,in,12:38 - 3rd,3,12:38,6.0,3.0,13.0,13.0,Stoppage,TV Timeout
+2026-11-03 21:11:05,401892641,2026-11-03,col,cbj,in,14:08 - 3rd,3,14:08,2.0,6.0,10.0,22.0,Tripping,Martin Necas Tripping
+2026-11-03 21:11:05,401892636,2026-11-03,edm,nj,in,0:10 - 2nd,2,0:10,2.0,3.0,22.0,10.0,Stoppage,Puck in Benches
+2026-11-03 21:11:05,401892642,2026-11-03,car,nsh,in,17:25 - 2nd,2,17:25,0.0,1.0,5.0,9.0,Stoppage,Icing
+2026-11-03 21:11:05,401892643,2026-11-03,ana,van,in,19:44 - 1st,1,19:44,0.0,0.0,,,Face Off,Elias Pettersson faceoff won against Leo Carlsson
+2026-11-03 21:12:05,401892633,2026-11-03,uta,tor,in,16:01 - 3rd,3,16:01,2.0,1.0,20.0,30.0,Face Off,Vincent Trocheck faceoff won against William Nylander
+2026-11-03 21:12:05,401892634,2026-11-03,wpg,mtl,in,17:40 - 3rd,3,17:40,0.0,4.0,12.0,30.0,Shot,Florian Xhekaj Snap Shot saved by Stuart Skinner
+2026-11-03 21:12:05,401892635,2026-11-03,det,tb,in,12:55 - 3rd,3,12:55,2.0,3.0,20.0,9.0,Face Off,Sheldon Dries faceoff won against Conor Geekie
+2026-11-03 21:12:05,401892637,2026-11-03,stl,nyr,in,16:50 - 3rd,3,16:50,0.0,1.0,25.0,21.0,Shot,Will Cuylle saved by Joel Hofer
+2026-11-03 21:12:05,401892638,2026-11-03,min,phi,in,13:15 - 3rd,3,13:15,3.0,2.0,18.0,15.0,Stoppage,TV Timeout
+2026-11-03 21:12:05,401892639,2026-11-03,vgk,pit,in,12:55 - 3rd,3,12:55,1.0,1.0,18.0,18.0,Shot,Egor Chinakhov Snap Shot saved by Adin Hill
+2026-11-03 21:12:05,401892640,2026-11-03,dal,wsh,in,12:22 - 3rd,3,12:22,6.0,3.0,13.0,13.0,Face Off,Arttu Hyry faceoff won against Dylan Strome
+2026-11-03 21:12:05,401892641,2026-11-03,col,cbj,in,13:41 - 3rd,3,13:41,2.0,6.0,10.0,22.0,Blocked,Ivan Provorov shot blocked by Noah Juulsen
+2026-11-03 21:12:05,401892636,2026-11-03,edm,nj,in,End of 2nd,2,0:00,2.0,3.0,22.0,10.0,Blocked,Connor McDavid shot blocked by Brett Pesce
+2026-11-03 21:12:05,401892642,2026-11-03,car,nsh,in,16:37 - 2nd,2,16:37,0.0,1.0,5.0,9.0,Face Off,Jack Drury faceoff won against Logan Stankoven
+2026-11-03 21:12:05,401892643,2026-11-03,ana,van,in,19:04 - 1st,1,19:04,0.0,0.0,1.0,0.0,Blocked,Filip Hronek shot blocked by Jackson LaCombe
+2026-11-03 21:13:05,401892633,2026-11-03,uta,tor,in,15:31 - 3rd,3,15:31,2.0,1.0,20.0,30.0,Face Off,Vincent Trocheck faceoff won against Auston Matthews
+2026-11-03 21:13:05,401892634,2026-11-03,wpg,mtl,in,17:14 - 3rd,3,17:14,0.0,4.0,13.0,31.0,Stoppage,Goalie Stopped
+2026-11-03 21:13:05,401892635,2026-11-03,det,tb,in,12:52 - 3rd,3,12:52,2.0,3.0,21.0,9.0,Stoppage,Goalie Stopped
+2026-11-03 21:13:05,401892637,2026-11-03,stl,nyr,in,15:46 - 3rd,3,15:46,0.0,1.0,25.0,22.0,Takeaway,Takeaway by Noah Laba
+2026-11-03 21:13:05,401892638,2026-11-03,min,phi,in,13:11 - 3rd,3,13:11,3.0,2.0,18.0,15.0,Stoppage,TV Timeout
+2026-11-03 21:13:05,401892639,2026-11-03,vgk,pit,in,11:53 - 3rd,3,11:53,1.0,1.0,19.0,18.0,Blocked,Egor Chinakhov shot blocked by Noah Hanifin
+2026-11-03 21:13:05,401892640,2026-11-03,dal,wsh,in,11:53 - 3rd,3,11:53,6.0,3.0,13.0,13.0,Stoppage,Off-side
+2026-11-03 21:13:05,401892641,2026-11-03,col,cbj,in,13:13 - 3rd,3,13:13,2.0,6.0,11.0,22.0,Stoppage,Off-side
+2026-11-03 21:13:05,401892636,2026-11-03,edm,nj,in,End of 2nd,2,0:00,2.0,3.0,22.0,10.0,Period End,End of 2nd Period
+2026-11-03 21:13:05,401892642,2026-11-03,car,nsh,in,16:24 - 2nd,2,16:24,0.0,2.0,5.0,9.0,Face Off,Alexander Kerfoot faceoff won against Jesperi Kotkaniemi
+2026-11-03 21:13:05,401892643,2026-11-03,ana,van,in,18:28 - 1st,1,18:28,0.0,0.0,1.0,0.0,Blocked,Beckett Sennecke shot blocked by Elias Pettersson
