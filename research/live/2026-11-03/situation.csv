@@ -1041,3 +1041,50 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 21:36:05,401892636,2026-11-03,edm,nj,in,16:21 - 3rd,3,16:21,3.0,3.0,21.0,11.0,Blocked,Blocked Shot
 2026-11-03 21:36:05,401892642,2026-11-03,car,nsh,in,5:32 - 2nd,2,5:32,1.0,2.0,10.0,13.0,Stoppage,TV Timeout
 2026-11-03 21:36:05,401892643,2026-11-03,ana,van,in,3:47 - 1st,1,3:47,1.0,1.0,6.0,2.0,Shot,Brock Boeser saved by Laurent Brossoit
+2026-11-03 21:37:05,401892633,2026-11-03,uta,tor,in,1:02 - 3rd,3,1:02,3.0,2.0,25.0,33.0,Stoppage,Off-side
+2026-11-03 21:37:05,401892634,2026-11-03,wpg,mtl,in,5:40 - 3rd,3,5:40,0.0,4.0,17.0,34.0,Face Off,Mark Scheifele faceoff won against Jake Evans
+2026-11-03 21:37:05,401892635,2026-11-03,det,tb,in,0:16 - 3rd,3,0:16,2.0,3.0,23.0,17.0,Missed,Moritz Seider Missed Shot Above Crossbar
+2026-11-03 21:37:05,401892637,2026-11-03,stl,nyr,in,5:23 - 3rd,3,5:23,0.0,2.0,28.0,28.0,Shot,Jonatan Berggren saved by Dylan Garand
+2026-11-03 21:37:05,401892639,2026-11-03,vgk,pit,in,1:17 - 3rd,3,1:17,2.0,2.0,23.0,20.0,Stoppage,Timeout - Visitor
+2026-11-03 21:37:05,401892640,2026-11-03,dal,wsh,in,0:59 - 3rd,3,0:59,6.0,5.0,20.0,17.0,Goal,"Ryan Leonard Goal (5) Snap Shot, assists: none"
+2026-11-03 21:37:05,401892641,2026-11-03,col,cbj,in,End of 3rd,3,0:00,2.0,7.0,17.0,26.0,Period End,End of 3rd Period
+2026-11-03 21:37:05,401892636,2026-11-03,edm,nj,in,15:27 - 3rd,3,15:27,3.0,3.0,21.0,11.0,Hit,Timo Meier hit Connor McDavid
+2026-11-03 21:37:05,401892642,2026-11-03,car,nsh,in,5:23 - 2nd,2,5:23,1.0,2.0,10.0,13.0,Stoppage,TV Timeout
+2026-11-03 21:37:05,401892643,2026-11-03,ana,van,in,3:29 - 1st,1,3:29,1.0,1.0,6.0,3.0,Stoppage,Goalie Stopped
+2026-11-03 21:38:05,401892633,2026-11-03,uta,tor,in,1:02 - 3rd,3,1:02,3.0,2.0,25.0,33.0,Stoppage,Timeout - Home
+2026-11-03 21:38:05,401892634,2026-11-03,wpg,mtl,in,4:58 - 3rd,3,4:58,0.0,4.0,17.0,34.0,Missed,Mark Scheifele Tip-In Wide Left
+2026-11-03 21:38:05,401892635,2026-11-03,det,tb,in,0:02 - 3rd,3,0:02,2.0,3.0,23.0,17.0,Face Off,Anthony Cirelli faceoff won against J.T. Compher
+2026-11-03 21:38:05,401892637,2026-11-03,stl,nyr,in,4:24 - 3rd,3,4:24,0.0,2.0,28.0,29.0,Missed,Dylan Holloway Tip-In Wide Left
+2026-11-03 21:38:05,401892639,2026-11-03,vgk,pit,in,0:32 - 3rd,3,0:32,2.0,2.0,23.0,20.0,Missed,Missed Shot
+2026-11-03 21:38:05,401892640,2026-11-03,dal,wsh,in,0:07 - 3rd,3,0:07,6.0,5.0,20.0,17.0,Face Off,Roope Hintz faceoff won against Dylan Strome
+2026-11-03 21:38:05,401892636,2026-11-03,edm,nj,in,15:03 - 3rd,3,15:03,3.0,3.0,21.0,11.0,Face Off,Owen Michaels faceoff won against Nico Hischier
+2026-11-03 21:38:05,401892642,2026-11-03,car,nsh,in,5:00 - 2nd,2,5:00,1.0,2.0,10.0,14.0,Stoppage,Puck in Netting
+2026-11-03 21:39:05,401892633,2026-11-03,uta,tor,in,0:48 - 3rd,3,0:48,3.0,2.0,25.0,33.0,Face Off,Barrett Hayton faceoff won against Auston Matthews
+2026-11-03 21:39:05,401892634,2026-11-03,wpg,mtl,in,4:58 - 3rd,3,4:58,0.0,4.0,17.0,34.0,Penalty Shot Infraction,Florian Xhekaj Minor against Adam Lowry
+2026-11-03 21:39:05,401892635,2026-11-03,det,tb,in,End of 3rd,3,0:00,2.0,4.0,23.0,18.0,Missed,Missed Shot
+2026-11-03 21:39:05,401892637,2026-11-03,stl,nyr,in,3:44 - 3rd,3,3:44,0.0,2.0,28.0,29.0,Stoppage,Off-side
+2026-11-03 21:39:05,401892639,2026-11-03,vgk,pit,in,0:32 - 3rd,3,0:32,3.0,2.0,23.0,21.0,Goal,"Tomas Hertl Goal (7) Wrist Shot, assists: Mark Stone (9), Jack Eichel (15)"
+2026-11-03 21:39:05,401892640,2026-11-03,dal,wsh,in,0:07 - 3rd,3,0:07,6.0,5.0,20.0,17.0,Stoppage,Off-side
+2026-11-03 21:39:05,401892636,2026-11-03,edm,nj,in,14:20 - 3rd,3,14:20,3.0,3.0,21.0,11.0,Face Off,Owen Michaels faceoff won against Nico Hischier
+2026-11-03 21:39:05,401892642,2026-11-03,car,nsh,in,4:45 - 2nd,2,4:45,1.0,2.0,10.0,14.0,Face Off,Sebastian Aho faceoff won against Ryan O'Reilly
+2026-11-03 21:39:05,401892643,2026-11-03,ana,van,in,3:24 - 1st,1,3:24,1.0,1.0,6.0,3.0,Stoppage,Goalie Stopped
+2026-11-03 21:40:05,401892633,2026-11-03,uta,tor,in,0:34 - 3rd,3,0:34,3.0,2.0,26.0,33.0,Face Off,Auston Matthews faceoff won against Vincent Trocheck
+2026-11-03 21:40:05,401892634,2026-11-03,wpg,mtl,in,4:58 - 3rd,3,4:58,0.0,4.0,17.0,34.0,Fighting,Fighting against Adam Lowry
+2026-11-03 21:40:05,401892635,2026-11-03,det,tb,in,End of 3rd,3,0:00,2.0,4.0,23.0,18.0,Period End,End of 3rd Period
+2026-11-03 21:40:05,401892639,2026-11-03,vgk,pit,in,0:11 - 3rd,3,0:11,3.0,2.0,23.0,21.0,Face Off,William Karlsson faceoff won against Sidney Crosby
+2026-11-03 21:40:05,401892640,2026-11-03,dal,wsh,in,0:07 - 3rd,3,0:07,6.0,5.0,20.0,17.0,Face Off,Boone Jenner faceoff won against Jamie Benn
+2026-11-03 21:40:05,401892636,2026-11-03,edm,nj,in,13:50 - 3rd,3,13:50,3.0,3.0,22.0,11.0,Face Off,Leon Draisaitl faceoff won against Timo Meier
+2026-11-03 21:40:05,401892642,2026-11-03,car,nsh,in,3:40 - 2nd,2,3:40,1.0,2.0,10.0,14.0,Face Off,Sebastian Aho faceoff won against Ryan O'Reilly
+2026-11-03 21:40:05,401892643,2026-11-03,ana,van,in,3:01 - 1st,1,3:01,1.0,1.0,6.0,5.0,Face Off,Mikael Granlund faceoff won against Marco Rossi
+2026-11-03 21:41:06,401892633,2026-11-03,uta,tor,in,End of 3rd,3,0:00,3.0,2.0,26.0,33.0,Period End,End of 3rd Period
+2026-11-03 21:41:06,401892634,2026-11-03,wpg,mtl,in,4:58 - 3rd,3,4:58,0.0,4.0,17.0,34.0,Fighting,Adam Lowry Fighting against Florian Xhekaj
+2026-11-03 21:41:06,401892639,2026-11-03,vgk,pit,in,End of 3rd,3,0:00,3.0,2.0,23.0,20.0,Period End,End of 3rd Period
+2026-11-03 21:41:06,401892636,2026-11-03,edm,nj,in,13:37 - 3rd,3,13:37,3.0,3.0,23.0,11.0,Face Off,Leon Draisaitl faceoff won against Evan Rodrigues
+2026-11-03 21:41:06,401892642,2026-11-03,car,nsh,in,2:52 - 2nd,2,2:52,1.0,2.0,10.0,15.0,Stoppage,Off-side
+2026-11-03 21:41:06,401892643,2026-11-03,ana,van,in,3:01 - 1st,1,3:01,1.0,1.0,6.0,5.0,Penalty Shot Infraction,Liam Ohgren Minor against Jackson LaCombe
+2026-11-03 21:42:06,401892633,2026-11-03,uta,tor,in,End of 3rd,3,0:00,3.0,2.0,27.0,33.0,Face Off,Vincent Trocheck faceoff won against Colton Sissons
+2026-11-03 21:42:06,401892634,2026-11-03,wpg,mtl,in,4:46 - 3rd,3,4:46,0.0,4.0,17.0,34.0,Fighting,Adam Lowry Fighting against Florian Xhekaj
+2026-11-03 21:42:06,401892637,2026-11-03,stl,nyr,in,2:58 - 3rd,3,2:58,0.0,2.0,28.0,29.0,Blocked,Alexis Lafrenière shot blocked by Adam Jiricek
+2026-11-03 21:42:06,401892636,2026-11-03,edm,nj,in,12:32 - 3rd,3,12:32,3.0,3.0,23.0,12.0,Shot,Connor McDavid saved by Connor Hellebuyck
+2026-11-03 21:42:06,401892642,2026-11-03,car,nsh,in,2:21 - 2nd,2,2:21,1.0,2.0,10.0,16.0,Face Off,William Carrier faceoff won against Shane Wright
+2026-11-03 21:42:06,401892643,2026-11-03,ana,van,in,3:01 - 1st,1,3:01,1.0,1.0,6.0,5.0,Hooking,Liam Ohgren Hooking against Jackson LaCombe
