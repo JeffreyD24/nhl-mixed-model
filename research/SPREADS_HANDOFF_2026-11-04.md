@@ -7,6 +7,7 @@ Read first: `claude/goals.md` (how we judge a model), `claude/findings_log.md` (
 
 ## Status update (Nov 4, afternoon)
 - **NHL and NFL step 1 done (Nov 4, afternoon).** NHL (`nhl-mixed-model research/spreads/STEP1_NHL_RESULTS.md`): timing already honest; v4 moneyline +147.1u, CLV +0.23% [-0.07, +0.52]; v4 puck line +35.6u, CLV +0.65% [+0.11, +1.19]; keep both; ML CLV only at EV 9%+ (proposal: ML bar 9%, not applied); -2.5 puck line bug fixed live (NHL v4.1). NFL (`nfl-mixed-model research/spreads/STEP1_NFL_RESULTS.md`): Monday 9 AM spreads 211 bets -6.9u, CLV +0.25 vs break-even +0.64: stays test-only. **Next: step 2 (shrink-to-line) / step 3 (news the line lacks).**
+- **Step 3 NHL/NFL done (Nov 4, evening).** NHL goalie re-check: information yes, bettable not shown (look-ahead; CLV unusable 1 h out); proposed TEST-only live re-check at goalie confirmation. NFL final-report news: priced by the close, dropped. NBA step 3 (news reaction speed) is running in another session (`claude/news_model_handoff_2026-11-04.md`).
 
 ## Honest starting point
 Every spread test so far says **team ratings alone do not beat the opening spread**. Tuning a model that has no information the line
