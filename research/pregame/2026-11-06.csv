@@ -59,3 +59,13 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 06:15:37,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Open,firstperiod,total,under,1.5,120,
 2026-11-04 06:15:37,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Open,firstperiod,spread,home,-0.5,140,
 2026-11-04 06:15:37,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Open,firstperiod,spread,away,0.5,-200,
+2026-11-04 06:20:24,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,event,moneyline,away,0.0,110,normal
+2026-11-04 06:20:24,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,event,moneyline,home,0.0,-132,normal
+2026-11-04 06:20:24,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,event,spread,home,-1.5,190,normal
+2026-11-04 06:20:24,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,event,spread,away,1.5,-233,normal
+2026-11-04 06:20:24,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,event,total,under,6.5,105,normal
+2026-11-04 06:20:24,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,event,total,over,6.5,-125,normal
+2026-11-04 06:20:24,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,firstperiod,spread,home,-0.5,140,normal
+2026-11-04 06:20:24,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,firstperiod,spread,away,0.5,-200,normal
+2026-11-04 06:20:24,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,firstperiod,total,under,1.5,120,normal
+2026-11-04 06:20:24,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,firstperiod,total,over,1.5,-156,normal
