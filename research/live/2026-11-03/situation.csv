@@ -157,3 +157,44 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 19:29:05,401892639,2026-11-03,vgk,pit,in,9:09 - 1st,1,9:09,0.0,0.0,3.0,3.0,Shot,Erik Karlsson Slap Shot saved by Adin Hill
 2026-11-03 19:29:05,401892640,2026-11-03,dal,wsh,in,7:18 - 1st,1,7:18,1.0,0.0,3.0,0.0,Stoppage,TV Timeout
 2026-11-03 19:29:05,401892641,2026-11-03,col,cbj,in,7:46 - 1st,1,7:46,1.0,2.0,3.0,4.0,Shot,Damon Severson saved by Scott Wedgewood
+2026-11-03 19:30:05,401892633,2026-11-03,uta,tor,in,7:57 - 1st,1,7:57,0.0,0.0,5.0,8.0,Blocked,Nate Schmidt shot blocked by Vinni Lettieri
+2026-11-03 19:30:05,401892637,2026-11-03,stl,nyr,in,9:23 - 1st,1,9:23,0.0,0.0,2.0,7.0,Stoppage,Off-side
+2026-11-03 19:30:05,401892638,2026-11-03,min,phi,in,8:19 - 1st,1,8:19,2.0,0.0,5.0,5.0,Stoppage,TV Timeout
+2026-11-03 19:30:05,401892639,2026-11-03,vgk,pit,in,8:09 - 1st,1,8:09,0.0,0.0,4.0,3.0,Blocked,Rickard Rakell shot blocked by Tommy Novak
+2026-11-03 19:30:05,401892641,2026-11-03,col,cbj,in,6:45 - 1st,1,6:45,1.0,2.0,3.0,4.0,Blocked,Adam Fantilli shot blocked by Kent Johnson
+2026-11-03 19:31:05,401892633,2026-11-03,uta,tor,in,7:50 - 1st,1,7:50,0.0,0.0,5.0,8.0,Stoppage,TV Timeout
+2026-11-03 19:31:05,401892634,2026-11-03,wpg,mtl,in,8:45 - 1st,1,8:45,0.0,1.0,5.0,9.0,Face Off,Morgan Barron faceoff won against Juraj Slafkovský
+2026-11-03 19:31:05,401892635,2026-11-03,det,tb,in,7:21 - 1st,1,7:21,0.0,1.0,5.0,2.0,Stoppage,Puck in Netting
+2026-11-03 19:31:05,401892637,2026-11-03,stl,nyr,in,9:00 - 1st,1,9:00,0.0,0.0,2.0,7.0,Face Off,Dalibor Dvorsky faceoff won against Matt Rempe
+2026-11-03 19:31:05,401892639,2026-11-03,vgk,pit,in,7:08 - 1st,1,7:08,0.0,0.0,4.0,3.0,Missed,Egor Chinakhov Missed Shot Wide Right
+2026-11-03 19:31:05,401892641,2026-11-03,col,cbj,in,5:45 - 1st,1,5:45,1.0,2.0,2.0,5.0,Shot,Martin Necas saved by Cam Talbot
+2026-11-03 19:32:05,401892634,2026-11-03,wpg,mtl,in,7:50 - 1st,1,7:50,0.0,1.0,5.0,9.0,Face Off,Morgan Barron faceoff won against Juraj Slafkovský
+2026-11-03 19:32:05,401892635,2026-11-03,det,tb,in,7:01 - 1st,1,7:01,0.0,1.0,6.0,2.0,Missed,Missed Shot
+2026-11-03 19:32:05,401892637,2026-11-03,stl,nyr,in,8:31 - 1st,1,8:31,0.0,0.0,2.0,7.0,Hooking,Jaroslav Chmelar Hooking
+2026-11-03 19:32:05,401892638,2026-11-03,min,phi,in,8:00 - 1st,1,8:00,2.0,0.0,5.0,5.0,Face Off,Ryan Hartman faceoff won against Noah Cates
+2026-11-03 19:32:05,401892639,2026-11-03,vgk,pit,in,6:30 - 1st,1,6:30,0.0,0.0,5.0,4.0,Stoppage,Off-side
+2026-11-03 19:32:05,401892640,2026-11-03,dal,wsh,in,6:36 - 1st,1,6:36,1.0,0.0,3.0,0.0,Blocked,Thomas Harley shot blocked by Jack St. Ivany
+2026-11-03 19:32:05,401892641,2026-11-03,col,cbj,in,5:12 - 1st,1,5:12,1.0,2.0,2.0,7.0,Stoppage,Icing
+2026-11-03 19:33:05,401892633,2026-11-03,uta,tor,in,7:37 - 1st,1,7:37,0.0,0.0,5.0,8.0,Stoppage,TV Timeout
+2026-11-03 19:33:05,401892634,2026-11-03,wpg,mtl,in,6:50 - 1st,1,6:50,0.0,1.0,5.0,9.0,Missed,Missed Shot
+2026-11-03 19:33:05,401892635,2026-11-03,det,tb,in,6:34 - 1st,1,6:34,0.0,2.0,7.0,2.0,Face Off,Conor Geekie faceoff won against Sheldon Dries
+2026-11-03 19:33:05,401892637,2026-11-03,stl,nyr,in,8:12 - 1st,1,8:12,0.0,0.0,2.0,7.0,Face Off,Robert Thomas faceoff won against J.T. Miller
+2026-11-03 19:33:05,401892638,2026-11-03,min,phi,in,7:17 - 1st,1,7:17,2.0,0.0,5.0,5.0,Blocked,Travis Sanheim shot blocked by Tyler Pitlick
+2026-11-03 19:33:05,401892639,2026-11-03,vgk,pit,in,5:47 - 1st,1,5:47,0.0,0.0,5.0,5.0,Face Off,Tomas Hertl faceoff won against Blake Lizotte
+2026-11-03 19:33:05,401892640,2026-11-03,dal,wsh,in,6:11 - 1st,1,6:11,1.0,0.0,3.0,0.0,Blocked,Alex Ovechkin shot blocked by Miro Heiskanen
+2026-11-03 19:33:05,401892641,2026-11-03,col,cbj,in,5:07 - 1st,1,5:07,1.0,2.0,2.0,8.0,Stoppage,Hand Pass
+2026-11-03 19:34:05,401892633,2026-11-03,uta,tor,in,6:36 - 1st,1,6:36,0.0,0.0,6.0,9.0,Shot,Darren Raddysh Wrist Shot saved by Sebastian Cossa
+2026-11-03 19:34:05,401892634,2026-11-03,wpg,mtl,in,6:17 - 1st,1,6:17,0.0,1.0,5.0,9.0,Missed,Gabriel Vilardi Missed Shot High and Wide Right
+2026-11-03 19:34:05,401892635,2026-11-03,det,tb,in,6:02 - 1st,1,6:02,0.0,2.0,6.0,2.0,Face Off,Sheldon Dries faceoff won against Anthony Cirelli
+2026-11-03 19:34:05,401892637,2026-11-03,stl,nyr,in,7:02 - 1st,1,7:02,0.0,0.0,2.0,7.0,Blocked,Cam Fowler shot blocked by Mika Zibanejad
+2026-11-03 19:34:05,401892638,2026-11-03,min,phi,in,6:37 - 1st,1,6:37,2.0,0.0,6.0,6.0,Missed,Tyson Foerster Missed Shot High and Wide Left
+2026-11-03 19:34:05,401892639,2026-11-03,vgk,pit,in,4:38 - 1st,1,4:38,0.0,0.0,6.0,5.0,Missed,Nic Dowd Wrist Shot Wide Right
+2026-11-03 19:34:05,401892640,2026-11-03,dal,wsh,in,5:00 - 1st,1,5:00,1.0,0.0,3.0,1.0,Shot,Arttu Hyry Snap Shot saved by Logan Thompson
+2026-11-03 19:35:05,401892633,2026-11-03,uta,tor,in,6:21 - 1st,1,6:21,0.0,0.0,7.0,9.0,Face Off,Barrett Hayton faceoff won against Nick Paul
+2026-11-03 19:35:05,401892634,2026-11-03,wpg,mtl,in,5:49 - 1st,1,5:49,0.0,1.0,5.0,9.0,Face Off,Phillip Danault faceoff won against Adam Lowry
+2026-11-03 19:35:05,401892635,2026-11-03,det,tb,in,5:27 - 1st,1,5:27,0.0,2.0,7.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 19:35:05,401892637,2026-11-03,stl,nyr,in,6:44 - 1st,1,6:44,0.0,0.0,2.0,7.0,Face Off,Connor McMichael faceoff won against Noah Laba
+2026-11-03 19:35:05,401892638,2026-11-03,min,phi,in,5:45 - 1st,1,5:45,2.0,0.0,7.0,6.0,Shot,Noel Acciari Wrist Shot saved by Jesper Wallstedt
+2026-11-03 19:35:05,401892639,2026-11-03,vgk,pit,in,4:33 - 1st,1,4:33,0.0,0.0,6.0,5.0,Interference,Hendrix Lapierre Interference against Raphael Lavoie
+2026-11-03 19:35:05,401892640,2026-11-03,dal,wsh,in,4:00 - 1st,1,4:00,1.0,0.0,3.0,1.0,Shot,Boone Jenner Snap Shot saved by Jake Oettinger
+2026-11-03 19:35:05,401892641,2026-11-03,col,cbj,in,5:07 - 1st,1,5:07,1.0,2.0,2.0,8.0,Face Off,Fedor Svechkov faceoff won against Sean Monahan
