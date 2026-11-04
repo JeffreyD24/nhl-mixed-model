@@ -33,3 +33,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-04 14:12,goals,401892646,2026-11-04,sj,la,0.5479,3.092,2.739,6.0,Yaroslav Askarov (expected),Darcy Kuemper (confirmed),SJ: Dellandrea | LA: Kempe?
 2026-11-04 14:36,xg,401892645,2026-11-04,chi,fla,0.6904,3.723,2.439,6.31,Spencer Knight (confirmed),Jacob Markstrom (confirmed),"CHI: Greenway, Kane, Korchinski | FLA: -"
 2026-11-04 14:36,goals,401892645,2026-11-04,chi,fla,0.6151,3.389,2.591,6.14,Spencer Knight (confirmed),Jacob Markstrom (confirmed),"CHI: Greenway, Kane, Korchinski | FLA: -"
+2026-11-04 14:42,xg,401892646,2026-11-04,sj,la,0.6674,3.585,2.463,6.2,Yaroslav Askarov (confirmed),Darcy Kuemper (confirmed),SJ: Dellandrea | LA: Kempe?
+2026-11-04 14:42,goals,401892646,2026-11-04,sj,la,0.5479,3.092,2.739,6.0,Yaroslav Askarov (confirmed),Darcy Kuemper (confirmed),SJ: Dellandrea | LA: Kempe?
