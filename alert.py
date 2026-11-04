@@ -103,6 +103,13 @@ GOALIE_OVER_TEST = True  # Nov 4, 2026 (TEST only, never pushed): once both star
 GOALIE_OVER_EV = 0.06    #   price (shot model re-run with the confirmed starters) on a game with no over alerted at the opener is
                          #   logged once per game to state/ovr_goalie_test.csv. Backtest (analysis/nhl_totals_research.py s.2a, DK price
                          #   1 h before puck drop 2021-26): 162 bets +31.1u, 0 of 5 seasons negative; no out-of-sample check possible.
+GOALIE_RECHECK_TEST = True   # Nov 4, 2026 (user approved; TEST only, never pushed): spreads step 3 (research/spreads/STEP3_NHL_GOALIE_RESULTS.md).
+GR_ML_EV, GR_PL_EV = 0.04, 0.09   # The first check after BOTH starters are confirmed logs one row per game for the moneyline and one for the
+                             #   puck line to state/goalie_recheck_test.csv: shot model with the confirmed starters and the live skater
+                             #   picture (injury feed + reporters, nothing from the box score), at DraftKings' price that minute. Moneyline
+                             #   chance = 0.55 x model + 0.45 x DK no-vig NOW (as tested); puck line raw, +/-1.5 only. Every game is logged;
+                             #   `qualifies` marks ML EV 4%+ / PL EV 9%+ (PL: not on a b2b team). Graded by tracker.py with CLV to the close.
+                             #   Purpose: history can't show when starters became public; this measures it live.
 REST_TEST = True         # Nov 4, 2026 (TEST only, never pushed): games where exactly one team is on the 2nd night of a back-to-back.
                          #   The RESTED team's moneyline at DK's opening price is logged once per game to state/rest_b2b_test.csv and graded
                          #   by tracker.py (market-only rule, no model). Statistics catalog X02: 2016-22 holdout 1,520 bets +2.2%,
@@ -349,6 +356,9 @@ def main():
     gpath = os.path.join(STATE, "ovr_goalie_test.csv")
     GT = pd.read_csv(gpath) if os.path.exists(gpath) else pd.DataFrame(columns=["game_id"])
     gtest_done, gtest_new = set(GT.game_id), []
+    grpath = os.path.join(STATE, "goalie_recheck_test.csv")
+    GR = pd.read_csv(grpath) if os.path.exists(grpath) else pd.DataFrame(columns=["game_id", "market"])
+    grtest_done, grtest_new = set(zip(GR.game_id, GR.market)), []
     rpath = os.path.join(STATE, "rest_b2b_test.csv")
     RT = pd.read_csv(rpath) if os.path.exists(rpath) else pd.DataFrame(columns=["game_id"])
     rtest_done, rtest_new = set(RT.game_id), []
@@ -482,6 +492,36 @@ def main():
                                           model_prob=round(v[2], 4), ev=round(v[3], 4), model_total=round(est["xg"][2], 2), goalies=goalies_txt,
                                           sent=False, verdict="TEST: goalie-confirmed over (not a bet)"))
                     gtest_done.add(g["game_id"]); print(f"TEST (not pushed): goalie-confirmed OVER {v[0]:g} ({fmt_price(v[1])}) {Aw} @ {H}, EV {v[3]:+.1%}")
+            # ---- TEST: game-day re-check once both starters are confirmed (logged only, never pushed)
+            if GOALIE_RECHECK_TEST and gh_conf and ga_conf and "xg" in est:
+                try:
+                    exp_ = {sd: (lambda mx: gname.get(max(mx, key=mx.get), "?") if mx else "?")({int(k): w for k, w in g[f"{sd}_gmix"].items()})
+                            for sd in ("home", "away")}
+                    bet_before = {mk_: bool(len(A) and ((A.game_id == g["game_id"]) & (A.market == mk_) & A.skipped.isna()).any())
+                                  for mk_ in ("moneyline", "puck line")}
+                    base = dict(logged_at_et=str(NOW)[:16], game_id=g["game_id"], date=M["date"], home=g["home"], away=g["away"], tip_et=g["tip_et"],
+                                goalies=goalies_txt, expected_home=exp_["home"], expected_away=exp_["away"], missing=missing_txt)
+                    if (g["game_id"], "moneyline") not in grtest_done and not pd.isna(c["home_ml"]) and not pd.isna(ph_now):
+                        pm_ = ML_BLEND * est["xg"][3] + (1 - ML_BLEND) * ph_now
+                        evs = {"home": pm_ * espn.nd_dec(c["home_ml"]) - 1, "away": (1 - pm_) * espn.nd_dec(c["away_ml"]) - 1}
+                        sd = max(evs, key=evs.get)
+                        grtest_new.append(dict(base, market="moneyline", side=sd, team=g[sd], line=np.nan, price=c[f"{sd}_ml"],
+                                               open_price=o[f"{sd}_ml"], model_prob=round(pm_ if sd == "home" else 1 - pm_, 4),
+                                               raw_model_home=round(est["xg"][3], 4), dk_fair_home_now=round(ph_now, 4), ev=round(evs[sd], 4),
+                                               qualifies=bool(evs[sd] >= GR_ML_EV), bet_alerted_before=bet_before["moneyline"],
+                                               verdict="TEST: goalie re-check (not a bet)"))
+                        grtest_done.add((g["game_id"], "moneyline"))
+                    vh, va = NOWC.get((g["game_id"], "puck line", "home", "xg")), NOWC.get((g["game_id"], "puck line", "away", "xg"))
+                    if (g["game_id"], "puck line") not in grtest_done and vh is not None and va is not None:
+                        sd, v = ("home", vh) if vh[3] >= va[3] else ("away", va)
+                        grtest_new.append(dict(base, market="puck line", side=sd, team=g[sd], line=v[0], price=v[1], open_price=v[4],
+                                               model_prob=round(v[2], 4), raw_model_home=round(est["xg"][3], 4), dk_fair_home_now=round(ph_now, 4)
+                                               if not pd.isna(ph_now) else np.nan, ev=round(v[3], 4),
+                                               qualifies=bool(v[3] >= GR_PL_EV and g[sd] not in B2B), bet_alerted_before=bet_before["puck line"],
+                                               verdict="TEST: goalie re-check (not a bet)"))
+                        grtest_done.add((g["game_id"], "puck line"))
+                except Exception as e:                       # a TEST logger must never stop the real alerts
+                    print(f"goalie re-check TEST skipped for {Aw} @ {H}: {e}")
             GINFO[g["game_id"]] = dict(H=H, Aw=Aw, tip=tip, tip_et=g["tip_et"], goalies=goalies_txt, conf=gh_conf and ga_conf,
                                       ph_open=ph_open, pin=PIN.get((g["home"], g["away"])))
             for _mk, _sides in (("moneyline", ("home", "away")), ("puck line", ("home", "away")), ("total", ("over", "under"))):
@@ -833,6 +873,7 @@ def main():
                 notify(f"Line jump: {A2} @ {H2} {what}", body, priority="default", tags="zap")
                 print("LINE JUMP:", what, "|", body)
     if gtest_new: pd.concat([GT, pd.DataFrame(gtest_new)], ignore_index=True).to_csv(gpath, index=False)
+    if grtest_new: pd.concat([GR, pd.DataFrame(grtest_new)], ignore_index=True).to_csv(grpath, index=False)
     if rtest_new: pd.concat([RT, pd.DataFrame(rtest_new)], ignore_index=True).to_csv(rpath, index=False)
     if jumps_new: pd.concat([J, pd.DataFrame(jumps_new)], ignore_index=True).to_csv(jpath, index=False)
     if hist_new: pd.concat([H_, pd.DataFrame(hist_new)], ignore_index=True).to_csv(hpath, index=False)

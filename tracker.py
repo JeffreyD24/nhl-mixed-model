@@ -320,6 +320,8 @@ def grade_alerts(games, logdf):
     add_total_clv(a, L)
     a.to_csv(path, index=False)
     grade_goalie_over_test(res, L)
+    try: grade_goalie_recheck_test(res, L)
+    except Exception as e: print("goalie re-check TEST grading skipped:", e)
     grade_rest_test(res, L)
     g = a[a.result.isin(["W", "L"]) & a.skipped.isna()] if "skipped" in a else a[a.result.isin(["W", "L"])]
     if len(g):
@@ -363,6 +365,32 @@ def grade_goalie_over_test(res, L):
     if len(g):
         say(f"TEST goalie-confirmed overs (not bets): {int((g.result == 'W').sum())}-{int((g.result == 'L').sum())}-{int((g.result == 'P').sum())}, "
             f"{g.profit.sum():+.2f} units, closing total moved {g.clv_points.mean():+.2f} goals our way on average.")
+
+
+def grade_goalie_recheck_test(res, L):
+    """grade state/goalie_recheck_test.csv (TEST rows from alert.py, never pushed; spreads step 3): one moneyline and one puck line row
+    per game, logged when both starters were confirmed, at DK's price then. result, profit, clv (EV at the no-vig close)."""
+    import espn
+    path = os.path.join(STATE, "goalie_recheck_test.csv")
+    if not os.path.exists(path): return
+    t = pd.read_csv(path)
+    if not len(t): return
+    out, prof, clvs = [], [], []
+    for r in t.itertuples():
+        hg, ag = res.home_goals.get(r.game_id, np.nan), res.away_goals.get(r.game_id, np.nan)
+        result = settle(r.market, r.side, r.line if r.market == "puck line" else np.nan, hg, ag); out.append(result)
+        d = espn.nd_dec(r.price) if not pd.isna(r.price) else np.nan
+        prof.append(np.nan if result is None else (0.0 if result == "P" else (d - 1 if result == "W" else -1.0)))
+        crow = {c: L[f"close_{c}"].get(r.game_id, np.nan) for c in LCOLS} if r.game_id in L.index else None
+        clvs.append(clv(d, r.side, r.market, r.line, crow) if crow else np.nan)
+    t["result"], t["profit"], t["clv"] = out, prof, clvs
+    t.to_csv(path, index=False)
+    q = t[t.result.isin(["W", "L", "P"]) & t.qualifies.astype(str).isin(["True", "1", "1.0"])]
+    for mk in ("moneyline", "puck line"):
+        g = q[q.market == mk]
+        if len(g):
+            say(f"TEST goalie re-check {mk} (not bets): {int((g.result == 'W').sum())}-{int((g.result == 'L').sum())}, {g.profit.sum():+.2f} units, "
+                f"average CLV {g.clv.mean():+.2%} (all logged games: {int((t.market == mk).sum())}).")
 
 
 def grade_rest_test(res, L):
