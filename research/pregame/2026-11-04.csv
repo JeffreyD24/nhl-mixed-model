@@ -3873,3 +3873,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 07:31:47,293548,2026-11-04,2026-11-04 22:00,sj,la,Consensus,thirdperiod,team_total,home_under,1.5,-150,normal
 2026-11-04 07:31:47,293548,2026-11-04,2026-11-04 22:00,sj,la,Consensus,thirdperiod,moneyline,away,0.0,115,normal
 2026-11-04 07:31:47,293548,2026-11-04,2026-11-04 22:00,sj,la,Consensus,thirdperiod,moneyline,home,0.0,-158,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,event,team_total,home_under,3.5,-100,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,event,moneyline,away,0.0,201,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,firstperiod,moneyline,home,0.0,-203,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,firstperiod,moneyline,away,0.0,156,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,firstperiod,spread,away,0.5,-156,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,firstperiod,total,over,1.5,-133,normal
+2026-11-04 07:37:03,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,firstperiod,total,under,1.5,104,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,secondperiod,team_total,home_under,1.0,-102,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,secondperiod,spread,home,-0.5,100,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,secondperiod,total,under,1.5,142,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,secondperiod,total,over,1.5,-182,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,thirdperiod,team_total,home_under,1.5,-120,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,thirdperiod,team_total,home_over,1.5,-109,normal
+2026-11-04 07:37:03,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,thirdperiod,total,under,2.0,-115,normal
