@@ -4077,3 +4077,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 07:54:16,293548,2026-11-04,2026-11-04 22:00,sj,la,FanDuel,thirdperiod,spread,away,0.5,-154,normal
 2026-11-04 07:54:16,293548,2026-11-04,2026-11-04 22:00,sj,la,FanDuel,thirdperiod,total,under,2.5,-192,normal
 2026-11-04 07:54:16,293548,2026-11-04,2026-11-04 22:00,sj,la,FanDuel,thirdperiod,total,over,2.5,150,normal
+2026-11-04 07:59:09,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,event,spread,away,1.5,-235,normal
+2026-11-04 07:59:09,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,thirdperiod,moneyline,home,0.0,-132,normal
