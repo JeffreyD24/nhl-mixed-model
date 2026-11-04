@@ -284,3 +284,26 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 19:46:05,401892639,2026-11-03,vgk,pit,in,End of 1st,1,0:00,1.0,0.0,7.0,9.0,Penalty Shot Infraction,Sidney Crosby Minor
 2026-11-03 19:46:05,401892641,2026-11-03,col,cbj,in,End of 1st,1,0:00,1.0,2.0,2.0,11.0,Blocked,Blocked Shot
 2026-11-03 19:46:05,401892636,2026-11-03,edm,nj,in,16:01 - 1st,1,16:01,0.0,0.0,3.0,5.0,Face Off,Evan Rodrigues faceoff won against Jason Dickinson
+2026-11-03 19:47:05,401892633,2026-11-03,uta,tor,in,0:26 - 1st,1,0:26,0.0,0.0,9.0,13.0,Face Off,Colton Sissons faceoff won against Nick Schmaltz
+2026-11-03 19:47:05,401892634,2026-11-03,wpg,mtl,in,0:01 - 1st,1,0:01,0.0,2.0,5.0,11.0,Missed,Noah Dobson Snap Shot Wide Left
+2026-11-03 19:47:05,401892635,2026-11-03,det,tb,in,End of 1st,1,0:00,0.0,2.0,10.0,2.0,Period End,End of 1st Period
+2026-11-03 19:47:05,401892637,2026-11-03,stl,nyr,in,0:53 - 1st,1,0:53,0.0,0.0,9.0,9.0,Missed,Gabe Perreault Missed Shot High and Wide Right
+2026-11-03 19:47:05,401892639,2026-11-03,vgk,pit,in,End of 1st,1,0:00,1.0,0.0,7.0,9.0,Period End,End of 1st Period
+2026-11-03 19:47:05,401892641,2026-11-03,col,cbj,in,End of 1st,1,0:00,1.0,2.0,2.0,10.0,Period End,End of 1st Period
+2026-11-03 19:47:05,401892636,2026-11-03,edm,nj,in,14:40 - 1st,1,14:40,0.0,0.0,4.0,5.0,Shot,Jesper Boqvist Wrist Shot saved by Tristan Jarry
+2026-11-03 19:48:06,401892633,2026-11-03,uta,tor,in,0:12 - 1st,1,0:12,1.0,0.0,9.0,13.0,Goal,"Dylan Guenther Goal (6) Snap Shot, assists: none"
+2026-11-03 19:48:06,401892634,2026-11-03,wpg,mtl,in,End of 1st,1,0:00,0.0,2.0,5.0,11.0,Period End,End of 1st Period
+2026-11-03 19:48:06,401892637,2026-11-03,stl,nyr,in,0:53 - 1st,1,0:53,0.0,0.0,9.0,9.0,Penalty Shot Infraction,J.T. Miller Minor against Theo Lindstein
+2026-11-03 19:48:06,401892640,2026-11-03,dal,wsh,in,End of 1st,1,0:00,1.0,0.0,6.0,5.0,Period End,End of 1st Period
+2026-11-03 19:48:06,401892636,2026-11-03,edm,nj,in,14:10 - 1st,1,14:10,0.0,0.0,4.0,5.0,Stoppage,Off-side
+2026-11-03 19:49:05,401892633,2026-11-03,uta,tor,in,End of 1st,1,0:00,1.0,0.0,9.0,13.0,Goal,"Dylan Guenther Goal (6) Snap Shot, assists: Mikhail Sergachev (13), Clayton Keller (15)"
+2026-11-03 19:49:05,401892635,2026-11-03,det,tb,in,End of 1st,1,0:00,0.0,2.0,9.0,2.0,Period End,End of 1st Period
+2026-11-03 19:49:05,401892637,2026-11-03,stl,nyr,in,0:07 - 1st,1,0:07,0.0,0.0,9.0,10.0,Shot,Philip Broberg saved by Dylan Garand
+2026-11-03 19:49:05,401892636,2026-11-03,edm,nj,in,13:32 - 1st,1,13:32,0.0,0.0,4.0,5.0,Missed,Missed Shot
+2026-11-03 19:50:06,401892633,2026-11-03,uta,tor,in,End of 1st,1,0:00,1.0,0.0,9.0,13.0,Period End,End of 1st Period
+2026-11-03 19:50:06,401892637,2026-11-03,stl,nyr,in,End of 1st,1,0:00,0.0,0.0,9.0,10.0,Period End,End of 1st Period
+2026-11-03 19:50:06,401892636,2026-11-03,edm,nj,in,12:19 - 1st,1,12:19,0.0,0.0,4.0,5.0,Missed,Jonas Siegenthaler Missed Shot Wide Left
+2026-11-03 19:51:06,401892635,2026-11-03,det,tb,in,End of 1st,1,0:00,0.0,2.0,10.0,2.0,Period End,End of 1st Period
+2026-11-03 19:51:06,401892636,2026-11-03,edm,nj,in,11:31 - 1st,1,11:31,0.0,0.0,4.0,6.0,Blocked,Evan Bouchard shot blocked by Colton Dach
+2026-11-03 19:52:05,401892635,2026-11-03,det,tb,in,End of 1st,1,0:00,0.0,2.0,11.0,2.0,Period End,End of 1st Period
+2026-11-03 19:52:05,401892636,2026-11-03,edm,nj,in,11:06 - 1st,1,11:06,1.0,0.0,4.0,6.0,Face Off,Nico Hischier faceoff won against Connor McDavid
