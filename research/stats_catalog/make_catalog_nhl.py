@@ -55,8 +55,9 @@ are almost exactly Poisson (variance/mean 1.01, and 1.02 in 2016-22). But the tw
 regulation ties are **22.8% (2024-26) and 22.5% (2016-22) vs 16.2% / 17.0% predicted by independent Poisson**. The score matrix in
 `nhl_mixed_model.score_matrix` multiplies two independent Poissons, so it under-counts ties by about 6 points every season. The calibration
 layer may absorb part of this for moneylines (not checked here), but it matters most for puck lines (every tie is a puck-line loss for the favorite at -1.5)
-and totals (every tie adds a goal, which is why finals are odd 68% of the time). **Next test:** a tie-inflated score matrix (the Dixon-Coles
-idea: inflate the diagonal), checked on 2016-22 puck lines and totals before anything changes live.
+and totals (every tie adds a goal, which is why finals are odd 68% of the time). **Tested (pre-registered, `backtests/TIE_INFLATION_RESULTS.md`):** a tie-inflated
+matrix fixes the tie rate but improves no market after the existing recalibration, and without recalibration it makes puck lines worse,
+because real games also have extra empty-net 2-goal wins. The calibration layer is doing its job: keep it, don't change the matrix.
 
 **2. The opener under-prices back-to-backs (A03). Confirmed out of sample.** Per back-to-back, the home team wins 6.4 pts less than the
 opening price says in 2024-26 and 3.6 pts less in 2016-22 (p = 0.005). The model already has it (residual vs model n.s. in both eras).

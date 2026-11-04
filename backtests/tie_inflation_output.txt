@@ -1,0 +1,38 @@
+live shot model 2024: 1312 games
+live shot model 2025: 1312 games
+live shot model 2026: 1312 games
+Fit on 2014-16 (2448 games): observed regulation tie rate 23.7%, independent Poisson 17.6% -> w = 0.0738 (frozen)
+
+== Holdout A: 2016-17..2021-22 (team-only model, SBR): regulation tie rate by season (observed / current matrix / tie-inflated)
+  2017: 23.4% / 17.6% / 23.7%; 2018: 23.1% / 17.2% / 23.3%; 2019: 21.4% / 16.9% / 23.1%; 2020: 23.1% / 16.8% / 22.9%; 2021: 22.5% / 16.9% / 23.0%; 2022: 22.0% / 16.4% / 22.6%
+  log loss, current minus tie-inflated (positive = inflated better), per game x1000, 95% interval by date:
+  moneyline  +0.02 [+0.00, +0.03]  by season 2017:+0.0, 2018:+0.0, 2019:+0.0, 2020:-0.0, 2021:-0.0, 2022:+0.1
+  home -1.5  +0.00 [-0.02, +0.02]  by season 2017:+0.0, 2018:+0.0, 2019:-0.0, 2020:+0.0, 2021:-0.0, 2022:+0.0
+  away -1.5  -0.00 [-0.02, +0.02]  by season 2017:-0.0, 2018:+0.0, 2019:+0.0, 2020:-0.0, 2021:+0.0, 2022:-0.0
+  over 5.5   -0.01 [-0.02, +0.00]  by season 2017:+0.0, 2018:+0.0, 2019:-0.0, 2020:+0.0, 2021:-0.0, 2022:-0.0
+  over 6.5   -0.01 [-0.02, +0.00]  by season 2017:+0.0, 2018:-0.0, 2019:-0.0, 2020:+0.0, 2021:-0.0, 2022:-0.0
+
+== Holdout B: 2024-25, 2025-26 (live shot model, DK): regulation tie rate by season (observed / current matrix / tie-inflated)
+  2025: 20.7% / 16.3% / 22.5%; 2026: 24.8% / 16.1% / 22.3%
+  log loss, current minus tie-inflated (positive = inflated better), per game x1000, 95% interval by date:
+  moneyline  -0.02 [-0.06, +0.01]  by season 2025:-0.0, 2026:-0.0
+  home -1.5  -0.02 [-0.08, +0.03]  by season 2025:+0.0, 2026:-0.1
+  away -1.5  +0.00 [-0.05, +0.05]  by season 2025:+0.0, 2026:-0.0
+  over 5.5   +0.04 [+0.01, +0.07]  by season 2025:+0.0, 2026:+0.0
+  over 6.5   +0.03 [+0.01, +0.06]  by season 2025:+0.0, 2026:+0.0
+
+== Decision (rule set in advance)
+  'better' (holdout A interval > 0 and holdout B gain > 0): ml: no, hb2: no, ab2: no, o55: no, o65: no
+  moneyline not worse: yes
+  -> Do NOT change the live matrix.
+
+== Descriptive: puck line EV 9%+ at DraftKings opening prices, 2024-26 (favorite -1.5 / dog +1.5 as posted)
+  current: 355 bets, +20.3u (+5.7%)
+  tie-inflated: 357 bets, +15.7u (+4.4%)
+
+== Why (descriptive): same holdout A comparison without the per-market recalibration, x1000
+  moneyline  -0.86 (raw)
+  home -1.5  -5.19 (raw)
+  away -1.5  -2.88 (raw)
+  over 5.5   -0.10 (raw)
+  over 6.5   +0.78 (raw)

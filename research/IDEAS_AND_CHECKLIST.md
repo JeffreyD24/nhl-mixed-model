@@ -65,8 +65,8 @@ Legend: [x] already in place  [~] partly  [ ] open  (O) = good job for Opus
 - [~] X public search done (research/community_notes). Reddit/4chan still open: re-do the sweep with the Claude desktop app browser or the Chrome extension (my shell cannot reach those sites)
 
 ## From the statistics catalog (Nov 4, 2026; research/stats_catalog/README.md)
-- [ ] Tie-inflated score matrix: regulation ties are 22.5-22.8% vs 16-17% under independent Poisson (both 2016-22 and 2024-26). Test a
-      diagonal-inflated (Dixon-Coles style) matrix on the 2016-22 holdout puck lines and totals, pre-registered, before any live change
+- [x] Tie-inflated score matrix (Nov 4): fixes the tie rate but no market improves after the existing recalibration; without it, puck lines
+      get worse (real games also have extra empty-net 2-goal wins). Not adopted. backtests/TIE_INFLATION_RESULTS.md
 - [ ] Rested team vs a back-to-back team at the opener (market-only): +2.2% on 1,520 holdout bets, +7.8% on 538 in 2024-26, closing price moved
       toward the rested team in every season. Pre-register as a filter for model bets and as a standalone rule
 - [ ] Re-measure the model's logistic weight vs the opener each season (82% with goalies 2024-26, 28% team-only 2016-22; live blend 55%)
