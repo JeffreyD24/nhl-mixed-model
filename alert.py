@@ -95,6 +95,10 @@ PREFER_ML = True         # Nov 4, 2026: one bet per game -> the MONEYLINE when i
 PIN_FOLLOWUP = False     # Nov 4, 2026: no DON'T BET when Pinnacle posts after the alert and disagrees. At the price still available
                          #   when Pinnacle posts, those bets made +9.1u on 187 (2021-26, live blend): the follow-up saved nothing.
                          #   The at-alert-time Pinnacle rule (USE_PINNACLE_RULE) stays.
+GOALIE_OVER_TEST = True  # Nov 4, 2026 (TEST only, never pushed): once both starters are confirmed, an over with EV 6%+ at DK's current
+GOALIE_OVER_EV = 0.06    #   price (shot model re-run with the confirmed starters) on a game with no over alerted at the opener is
+                         #   logged once per game to state/ovr_goalie_test.csv. Backtest (analysis/nhl_totals_research.py s.2a, DK price
+                         #   1 h before puck drop 2021-26): 162 bets +31.1u, 0 of 5 seasons negative; no out-of-sample check possible.
 ML_HOLD_NEAR_ALERT = True   # Nov 4, 2026: no moneyline DON'T BET just because EV dipped under the bar while DK's price is still
                          #   within NEAR_OPEN (1.5 win-% pts) of the alerted price (those bets halfway to puck drop: 113 bets
                          #   +26.0u, 4 of 5 seasons positive). Bigger moneyline moves and overs keep the DON'T BET.
@@ -334,6 +338,9 @@ def main():
     MV = pd.read_csv(mpath) if os.path.exists(mpath) else pd.DataFrame(columns=["game_id", "market"])
     moved_done = set(zip(MV.game_id, MV.market)); moves_new = []
     info = {}
+    gpath = os.path.join(STATE, "ovr_goalie_test.csv")
+    GT = pd.read_csv(gpath) if os.path.exists(gpath) else pd.DataFrame(columns=["game_id"])
+    gtest_done, gtest_new = set(GT.game_id), []
     NOWC, GINFO = {}, {}   # this check's price and EV for every (game, market, side, model), and game details, for reminders
     DKC = {}               # (game, market, side) -> DraftKings bet-slip link, so reminders carry the same button as the first alert
 
@@ -442,6 +449,16 @@ def main():
                     ev = p * espn.nd_dec(price) - 1
                     NOWC[(g["game_id"], mk, side, name)] = (lnum, price, p, ev, oprice)
                     if (name, mk) not in best or ev > best[(name, mk)][4]: best[(name, mk)] = (side, lnum, price, p, ev, oprice)
+            # ---- TEST: goalie-confirmed over (logged only, never pushed)
+            if GOALIE_OVER_TEST and gh_conf and ga_conf and g["game_id"] not in gtest_done:
+                v = NOWC.get((g["game_id"], "total", "over", "xg"))
+                over_alerted = len(A) and ((A.game_id == g["game_id"]) & (A.market == "total") & (A.side == "over") & A.skipped.isna()).any()
+                if v is not None and v[3] >= GOALIE_OVER_EV and not over_alerted and "xg" in est:
+                    gtest_new.append(dict(logged_at_et=str(NOW)[:16], game_id=g["game_id"], date=M["date"], home=g["home"], away=g["away"],
+                                          tip_et=g["tip_et"], side="over", line=v[0], price=v[1], open_total=o["total"], open_over_odds=o["over_odds"],
+                                          model_prob=round(v[2], 4), ev=round(v[3], 4), model_total=round(est["xg"][2], 2), goalies=goalies_txt,
+                                          sent=False, verdict="TEST: goalie-confirmed over (not a bet)"))
+                    gtest_done.add(g["game_id"]); print(f"TEST (not pushed): goalie-confirmed OVER {v[0]:g} ({fmt_price(v[1])}) {Aw} @ {H}, EV {v[3]:+.1%}")
             GINFO[g["game_id"]] = dict(H=H, Aw=Aw, tip=tip, tip_et=g["tip_et"], goalies=goalies_txt, conf=gh_conf and ga_conf,
                                       ph_open=ph_open, pin=PIN.get((g["home"], g["away"])))
             for _mk, _sides in (("moneyline", ("home", "away")), ("puck line", ("home", "away")), ("total", ("over", "under"))):
@@ -788,6 +805,7 @@ def main():
                         "\nNo injury news reported around the move yet: possibly a goalie announcement, breaking news or big bets."
                 notify(f"Line jump: {A2} @ {H2} {what}", body, priority="default", tags="zap")
                 print("LINE JUMP:", what, "|", body)
+    if gtest_new: pd.concat([GT, pd.DataFrame(gtest_new)], ignore_index=True).to_csv(gpath, index=False)
     if jumps_new: pd.concat([J, pd.DataFrame(jumps_new)], ignore_index=True).to_csv(jpath, index=False)
     if hist_new: pd.concat([H_, pd.DataFrame(hist_new)], ignore_index=True).to_csv(hpath, index=False)
     if moves_new: pd.concat([MV, pd.DataFrame(moves_new)], ignore_index=True).to_csv(mpath, index=False)

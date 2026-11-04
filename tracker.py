@@ -317,11 +317,51 @@ def grade_alerts(games, logdf):
         crow = {c: L[f"close_{c}"].get(r.game_id, np.nan) for c in LCOLS} if r.game_id in L.index else None
         clvs.append(clv(d, r.side, r.market, r.line, crow) if crow and not pd.isna(crow["home_ml"]) else np.nan)
     a["result"], a["profit"], a["clv"] = out, prof, clvs
+    add_total_clv(a, L)
     a.to_csv(path, index=False)
+    grade_goalie_over_test(res, L)
     g = a[a.result.isin(["W", "L"]) & a.skipped.isna()] if "skipped" in a else a[a.result.isin(["W", "L"])]
     if len(g):
         w, l = int((g.result == "W").sum()), int((g.result == "L").sum())
         say(f"Alerts graded so far: {w}-{l}, {g.profit.sum():+.2f} units at the alerted prices.")
+
+
+def add_total_clv(a, L):
+    """totals rows (BET and TEST): DraftKings' closing total and clv_points = goals the closing total moved in the bet's favor
+    (over: close - line; under: line - close). Nov 4, 2026."""
+    if "close_total" not in a: a["close_total"] = np.nan
+    if "clv_points" not in a: a["clv_points"] = np.nan
+    for i, r in a[a.market == "total"].iterrows():
+        ct = L["close_total"].get(r.game_id, np.nan) if r.game_id in L.index else np.nan
+        if pd.isna(ct) or pd.isna(r.line): continue
+        a.at[i, "close_total"] = ct
+        a.at[i, "clv_points"] = (ct - float(r.line)) * (1 if r.side == "over" else -1)
+
+
+def grade_goalie_over_test(res, L):
+    """grade state/ovr_goalie_test.csv (TEST rows from alert.py, never pushed): result, profit at the logged price, closing total,
+    clv_points and price CLV"""
+    import espn
+    path = os.path.join(STATE, "ovr_goalie_test.csv")
+    if not os.path.exists(path): return
+    t = pd.read_csv(path)
+    if not len(t): return
+    out, prof, clvs = [], [], []
+    for r in t.itertuples():
+        hg, ag = res.home_goals.get(r.game_id, np.nan), res.away_goals.get(r.game_id, np.nan)
+        result = settle("total", "over", r.line, hg, ag); out.append(result)
+        d = espn.nd_dec(r.price) if not pd.isna(r.price) else np.nan
+        prof.append(np.nan if result is None else (0.0 if result == "P" else (d - 1 if result == "W" else -1.0)))
+        crow = {c: L[f"close_{c}"].get(r.game_id, np.nan) for c in LCOLS} if r.game_id in L.index else None
+        clvs.append(clv(d, "over", "total", r.line, crow) if crow else np.nan)
+    t["result"], t["profit"], t["clv"] = out, prof, clvs
+    t["market"] = "total"
+    add_total_clv(t, L)
+    t.to_csv(path, index=False)
+    g = t[t.result.isin(["W", "L", "P"])]
+    if len(g):
+        say(f"TEST goalie-confirmed overs (not bets): {int((g.result == 'W').sum())}-{int((g.result == 'L').sum())}-{int((g.result == 'P').sum())}, "
+            f"{g.profit.sum():+.2f} units, closing total moved {g.clv_points.mean():+.2f} goals our way on average.")
 
 
 def settle(market, side, line, hg, ag):

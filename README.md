@@ -239,6 +239,11 @@ graded at a DraftKings price that was available at the time). New version rows i
 | Moneyline DON'T BET | **not sent** while DK's price is within 1.5 win-% points of the alerted price, even if EV dips under 4% | those bets halfway to puck drop: 113 bets +26.0u. Bigger moves still get DON'T BET; overs unchanged (moved-toward overs 101 bets -11.6u) |
 | Moved prices | info only (unchanged); moneylines at EV 9%+ off the opener stay logged as info rows | new moneyline bets at moved prices halfway: EV 9%+ 50 bets +18.5u; watch-only |
 
+**TEST tracking (Nov 4, 2026, never pushed):** goalie-confirmed overs (both starters confirmed, shot model with those starters gives
+the over EV 6%+ at DK's current price, no over alerted at the opener) go to `state/ovr_goalie_test.csv`, one row per game, graded each
+morning. Every totals alert and TEST row also gets `close_total` and `clv_points` (goals the closing total moved our way).
+Evidence: `analysis/nhl_totals_research_output.txt`.
+
 ## Phone alerts: bets only (since Nov 1, 2026)
 `BET_ONLY = True` in `alert.py`: your phone gets only bet alerts (the EV bar is met with no caution) and **DON'T BET**
 follow-ups (a bet alert you haven't logged whose EV fell below the bar before puck drop, or an opening-price-only long shot

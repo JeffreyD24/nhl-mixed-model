@@ -1,0 +1,196 @@
+DK era: 6504 games with DK opening total and a shot-model prediction (2022: 1308, 2023: 1295, 2024: 1295, 2025: 1294, 2026: 1312)
+Opening total lines: {5.0: 3, 5.5: 1740, 6.0: 1919, 6.5: 2722, 7.0: 120}
+
+============================================================================================================================================
+1a. BLIND OVERS vs THE MODEL'S OVERS at DK's opener (all games)
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                bets      win%    units      ROI   | by season 2021-22 2022-23 2023-24 2024-25 2025-26
+  blind: every over                                             6504 bets  50.3%  -271.7u ( -4.2%) |  +27.4  -65.3  -90.3 -111.9  -31.7  neg 4/5
+  blind: every under                                            6504 bets  49.7%  -282.8u ( -4.3%) | -135.7  -49.0  -16.4   +0.0  -81.6  neg 4/5
+  model overs, EV 6%+ (live rule)                                539 bets  57.4%   +50.5u ( +9.4%) |  +10.6   +8.6   +6.5   +6.1  +18.7  neg 0/5
+  blind overs at 5.5                                            1740 bets  54.0%   -25.4u ( -1.5%) |  +12.1  -15.0   -4.0  -17.0   -1.5  neg 4/5
+     model overs at 5.5                                          182 bets  61.5%   +21.4u (+11.8%) |  +10.3   +0.3   +0.7   +5.1   +5.0  neg 0/5
+  blind overs at 6.0                                            1919 bets  51.3%   -39.6u ( -2.1%) |   +0.9   +1.3  -13.4  -28.4   +0.0  neg 2/5
+     model overs at 6.0                                          116 bets  57.1%    +9.3u ( +8.0%) |   -3.5   +4.3   +7.1   +1.4   +0.0  neg 1/5
+  blind overs at 6.5                                            2722 bets  47.7%  -189.0u ( -6.9%) |  +15.6  -41.7  -66.3  -66.5  -30.1  neg 4/5
+     model overs at 6.5                                          236 bets  55.1%   +22.8u ( +9.7%) |   +3.8   +7.0   -1.3   -0.4  +13.8  neg 2/5
+  blind overs at 7.0                                             120 bets  39.6%   -17.5u (-14.5%) |   -0.9   -9.9   -6.6   +0.0   +0.0  neg 3/5
+     model overs at 7.0                                            5 bets   0.0%    -3.0u (-60.0%) |   +0.0   -3.0   +0.0   +0.0   +0.0  neg 1/5
+  blind overs, over price -1000..-131                            265 bets  56.1%    -7.5u ( -2.8%) |   +0.7   +2.9   -5.0   -2.4   -3.7  neg 3/5
+     model overs in that price band                               37 bets  54.1%    -2.3u ( -6.2%) |   +0.0   +0.0   +0.7   +1.5   -4.5  neg 1/5
+  blind overs, over price -130..-116                            1942 bets  53.8%   -46.7u ( -2.4%) |   +6.0   +0.1  -15.5  -36.0   -1.3  neg 3/5
+     model overs in that price band                              163 bets  61.6%   +18.3u (+11.2%) |   +6.3   +5.8   +1.1   -0.7   +5.9  neg 1/5
+  blind overs, over price -115..-101                            2573 bets  50.3%   -97.2u ( -3.8%) |   +8.2  -38.6  -59.1  -11.4   +3.7  neg 3/5
+     model overs in that price band                              158 bets  58.9%   +18.5u (+11.7%) |   -1.0   +3.8   +2.5   +5.4   +7.8  neg 1/5
+  blind overs, over price +100..+119                            1706 bets  45.4%  -122.1u ( -7.2%) |  +11.3  -28.7   -6.9  -63.5  -34.3  neg 4/5
+     model overs in that price band                              179 bets  52.5%   +13.6u ( +7.6%) |   +5.3   -1.0   +2.1   -1.3   +8.4  neg 2/5
+  blind overs, over price +120..+1000                             18 bets  50.0%    +1.8u (+10.2%) |   +1.2   -1.0   -3.8   +1.4   +4.0  neg 2/5
+     model overs in that price band                                2 bets 100.0%    +2.4u (+120.0%) |   +0.0   +0.0   +0.0   +1.2   +1.2  neg 0/5
+
+  Over rate vs DK's no-vig over chance, by line (decided games only):
+    5.5:  1740 games, over won 54.0%, DK no-vig said 52.5%
+    6.0:  1703 games, over won 51.3%, DK no-vig said 50.3%
+    6.5:  2722 games, over won 47.7%, DK no-vig said 49.0%
+
+  Model overs: 539 bets +50.5u; blind overs in the SAME line x price cells would expect -24.8u -> the model adds +75.3u beyond the cell
+  Logistic over ~ DK no-vig (offset) + model's disagreement: intercept +0.021 (se 0.026), model weight +0.480 (se 0.134) [1 = trust the model fully, 0 = no information]
+    2021-22: intercept +0.158  model weight +0.325 (se 0.295)
+    2022-23: intercept -0.005  model weight +0.278 (se 0.326)
+    2023-24: intercept +0.039  model weight +1.221 (se 0.362)
+    2024-25: intercept -0.087  model weight +0.109 (se 0.299)
+    2025-26: intercept +0.023  model weight +0.609 (se 0.276)
+  Model expected total minus the line: mean +0.11 goals; actual minus line +0.15
+  Model over chance vs result, by model over chance (decided):
+    model 0.00-0.45:  1320 games, over won 46.6%, DK no-vig 48.6%, blind over units -109.0
+    model 0.45-0.50:  2208 games, over won 47.5%, DK no-vig 49.8%, blind over units -193.7
+    model 0.50-0.55:  1860 games, over won 53.1%, DK no-vig 51.0%, blind over units -8.8
+    model 0.55-0.60:   708 games, over won 56.2%, DK no-vig 52.2%, blind over units +22.0
+    model 0.60-1.00:   162 games, over won 61.7%, DK no-vig 53.6%, blind over units +17.7
+
+============================================================================================================================================
+1b. CANDIDATE STRUCTURAL / MODEL RULES at DK's opener
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                bets      win%    units      ROI   | by season 2021-22 2022-23 2023-24 2024-25 2025-26
+  overs at 5.5 priced -115 or longer (plus side)                 556 bets  54.5%   +21.2u ( +3.8%) |   +8.2   -6.8   -1.2   +9.9  +11.1  neg 2/5
+  overs at 5.5 priced +100 or longer                              55 bets  40.0%   -10.4u (-19.0%) |   -6.5   -1.0   +0.0   -2.0   -1.0  neg 4/5
+  overs at 6.5 (any price)                                      2722 bets  47.7%  -189.0u ( -6.9%) |  +15.6  -41.7  -66.3  -66.5  -30.1  neg 4/5
+  overs, DK no-vig over chance under 47%                         861 bets  43.5%   -77.5u ( -9.0%) |   -6.5   -2.7   -9.9  -50.1   -8.3  neg 5/5
+  overs, DK no-vig over chance under 45%                         144 bets  47.1%    +1.7u ( +1.2%) |   +1.4   -2.9   -1.0   -3.4   +7.5  neg 3/5
+  model overs EV 3%+                                             933 bets  54.6%   +39.3u ( +4.2%) |  +22.4   -6.7   -1.0   -6.8  +31.4  neg 3/5
+  model overs EV 6%+                                             539 bets  57.4%   +50.5u ( +9.4%) |  +10.6   +8.6   +6.5   +6.1  +18.7  neg 0/5
+  model overs EV 9%+                                             280 bets  58.1%   +30.6u (+10.9%) |  +10.0   +7.7   +2.9   -3.1  +13.2  neg 1/5
+  model overs EV 12%+                                            137 bets  59.0%   +18.0u (+13.2%) |   +5.1   +3.2   +2.9   +2.1   +4.8  neg 0/5
+  model overs EV 6%+ AND model total > line                      536 bets  57.4%   +49.1u ( +9.2%) |  +10.6   +8.6   +6.5   +5.9  +17.5  neg 0/5
+  model overs EV 6%+ but model total <= line (price-driven)        3 bets  66.7%    +1.4u (+46.7%) |   +0.0   +0.0   +0.0   +0.2   +1.2  neg 0/5
+
+============================================================================================================================================
+1c. OUT OF SAMPLE: SBR openers 2011-2021 (over price rebuilt from the under price)
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                bets      win%    units      ROI   | by season 2011-12 2012-13 2013-14 2014-15 2015-16 2016-17 2017-18 2018-19 2019-20 2020-21
+  blind: every over                                            11358 bets  49.1%  -622.8u ( -5.5%) |  -73.8  -74.8  -69.1  -82.7  -50.3  -62.5  -23.4  -91.0  -46.9  -48.2  neg 10/10
+  blind: every under                                           11358 bets  50.9%  -340.4u ( -3.0%) |  -30.0   +9.0  -34.4  -20.7  -52.4  -30.8  -91.7  -17.5  -46.1  -25.9  neg 9/10
+  blind overs at 5.0                                            3048 bets  54.0%   -37.8u ( -1.2%) |  -24.0   -2.6  -18.0   +2.5   +3.7  -14.6   +5.6   -1.4   +3.0   +7.9  neg 5/10
+  blind overs at 5.5                                            5781 bets  47.1%  -456.4u ( -7.9%) |  -49.5  -65.6  -45.9  -87.4  -53.5  -44.4   -8.2  -54.9  -21.1  -25.8  neg 10/10
+  blind overs at 6.0                                            1798 bets  49.8%   -74.9u ( -4.2%) |   -0.3   -6.6   -5.2   +3.4   -1.0   -4.2  -16.1  -36.0   +1.3  -10.2  neg 8/10
+  blind overs at 6.5                                             692 bets  48.7%   -48.8u ( -7.1%) |   +0.0   +0.0   +0.0   +0.0   +0.0   +0.9   -2.6   +5.8  -32.8  -20.2  neg 3/10
+  overs at 5.5, under priced -115 or shorter (over plus-ish)    3005 bets  44.3%  -297.7u ( -9.9%) |  -34.8  -55.5  -37.5  -74.3  -47.8  -35.2  -24.1   +4.0   +3.9   +3.6  neg 7/10
+  overs at 5.5, under -121 or shorter                           1842 bets  43.6%  -174.2u ( -9.5%) |  -31.2  -31.2  -34.1  -33.4  -22.7  -21.7   -5.8   +2.1   +0.1   +3.8  neg 7/10
+  overs at 6.5 (any price)                                       692 bets  48.7%   -48.8u ( -7.1%) |   +0.0   +0.0   +0.0   +0.0   +0.0   +0.9   -2.6   +5.8  -32.8  -20.2  neg 3/10
+  overs, no-vig over chance under 47%                           1959 bets  43.6%  -179.6u ( -9.2%) |  -31.0  -35.8  -32.6  -33.0  -27.1  -16.9  -11.4   +2.2   -0.9   +7.0  neg 8/10
+  overs, no-vig over chance under 45%                            325 bets  42.6%   -25.7u ( -7.9%) |   -0.7   -7.9   -3.2   -8.4   -9.0   +9.1   -5.9   +0.0   +0.0   +0.2  neg 6/10
+  shot model's SBR overs (team-only model, EV 6%+)               398 bets  56.4%   +25.5u ( +6.4%) |   +0.0   +0.0   +0.0   -3.9   -1.5  +11.5   +7.3   +1.4   +9.8   +0.8  neg 2/10
+  SBR model overs: 398 bets +25.5u; blind overs in the same line x price cells expect -14.8u -> model adds +40.2u
+    5.0:  2240 games, over won 54.0%, no-vig said 52.5%
+    5.5:  5781 games, over won 47.1%, no-vig said 48.8%
+    6.0:  1607 games, over won 49.8%, no-vig said 49.8%
+    6.5:   692 games, over won 48.7%, no-vig said 50.0%
+
+============================================================================================================================================
+4. TIMING: the overs rule (shot model, EV 6%+) at later DK prices
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                bets      win%    units      ROI   | by season 2021-22 2022-23 2023-24 2024-25 2025-26
+  open              : rule re-applied (EV 6%+ at this price)     539 bets  57.4%   +50.5u ( +9.4%) |  +10.6   +8.6   +6.5   +6.1  +18.7  neg 0/5
+  open              : opener picks, same line still up, at this price   539 bets  57.4%   +50.5u ( +9.4%) |  +10.6   +8.6   +6.5   +6.1  +18.7  neg 0/5
+                      opener picks whose line moved off by then: 0 (up 0, down 0)
+  +15 min           : rule re-applied (EV 6%+ at this price)     540 bets  57.3%   +49.6u ( +9.2%) |  +10.6   +6.8   +6.5   +6.1  +19.6  neg 0/5
+  +15 min           : opener picks, same line still up, at this price   537 bets  57.4%   +50.5u ( +9.4%) |  +10.6   +7.8   +6.5   +6.1  +19.5  neg 0/5
+                      opener picks whose line moved off by then: 2 (up 2, down 0)
+  +30 min           : rule re-applied (EV 6%+ at this price)     536 bets  57.4%   +50.3u ( +9.4%) |  +10.4   +6.8   +6.5   +8.0  +18.6  neg 0/5
+  +30 min           : opener picks, same line still up, at this price   537 bets  57.4%   +50.2u ( +9.3%) |  +10.4   +7.8   +6.5   +6.0  +19.4  neg 0/5
+                      opener picks whose line moved off by then: 2 (up 2, down 0)
+  +60 min           : rule re-applied (EV 6%+ at this price)     522 bets  58.0%   +54.6u (+10.5%) |  +12.5   +8.8   +7.5   +6.9  +18.8  neg 0/5
+  +60 min           : opener picks, same line still up, at this price   525 bets  57.6%   +50.2u ( +9.6%) |  +11.2   +8.1   +6.4   +3.8  +20.7  neg 0/5
+                      opener picks whose line moved off by then: 14 (up 13, down 1)
+  +3 h              : rule re-applied (EV 6%+ at this price)     510 bets  58.0%   +53.8u (+10.5%) |   +8.4   +5.7   +5.8   +8.0  +25.9  neg 0/5
+  +3 h              : opener picks, same line still up, at this price   490 bets  57.9%   +49.0u (+10.0%) |   +9.0   +8.9   +7.5   +5.5  +18.0  neg 0/5
+                      opener picks whose line moved off by then: 49 (up 40, down 9)
+  halfway           : rule re-applied (EV 6%+ at this price)     447 bets  56.4%   +37.2u ( +8.3%) |   +8.2   +4.1   +5.5   +1.6  +17.7  neg 0/5
+  halfway           : opener picks, same line still up, at this price   408 bets  55.8%   +23.3u ( +5.7%) |   +4.8   +9.6   +2.8   -1.0   +7.1  neg 1/5
+                      opener picks whose line moved off by then: 131 (up 108, down 23)
+  game day 10 AM ET : rule re-applied (EV 6%+ at this price)     409 bets  56.2%   +32.9u ( +8.0%) |   +7.7   +6.8   +6.4   +0.6  +11.4  neg 0/5
+  game day 10 AM ET : opener picks, same line still up, at this price   375 bets  55.4%   +18.0u ( +4.8%) |   +3.9   +9.2   +2.4   -3.6   +6.2  neg 1/5
+                      opener picks whose line moved off by then: 164 (up 133, down 31)
+  3 h before        : rule re-applied (EV 6%+ at this price)     420 bets  53.8%   +17.0u ( +4.0%) |   +3.9  +10.8   +1.5   +3.7   -2.8  neg 1/5
+  3 h before        : opener picks, same line still up, at this price   346 bets  54.4%    +7.0u ( +2.0%) |   +1.6   +4.3   +0.4   -2.3   +3.1  neg 1/5
+                      opener picks whose line moved off by then: 193 (up 159, down 34)
+  1 h before        : rule re-applied (EV 6%+ at this price)     414 bets  54.5%   +21.8u ( +5.3%) |   +2.1  +10.3   +1.7   +6.4   +1.3  neg 0/5
+  1 h before        : opener picks, same line still up, at this price   340 bets  54.1%    +4.4u ( +1.3%) |   +0.2   +1.7   +0.2   -1.1   +3.5  neg 1/5
+                      opener picks whose line moved off by then: 199 (up 166, down 33)
+  close             : rule re-applied (EV 6%+ at this price)     434 bets  52.4%    +5.3u ( +1.2%) |   +2.3   +9.3   -1.2   -0.0   -5.0  neg 3/5
+  close             : opener picks, same line still up, at this price   333 bets  52.5%    -7.2u ( -2.2%) |   -2.4   +1.6   -0.6   -6.0   +0.3  neg 3/5
+                      opener picks whose line moved off by then: 206 (up 172, down 34)
+
+============================================================================================================================================
+2a. GOALIES, DK era: price 1 h before puck drop (starters known), model with the ACTUAL starters (+ actual lineup)
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                bets      win%    units      ROI   | by season 2021-22 2022-23 2023-24 2024-25 2025-26
+  blind overs at the 1-h price                                  6504 bets  50.4%  -256.3u ( -3.9%) |  +21.5  -54.1  -93.1  -92.4  -38.2  neg 4/5
+  model (actual starters) overs EV 6%+                           388 bets  57.7%   +42.4u (+10.9%) |   +7.6  +10.8   +1.6   +5.7  +16.7  neg 0/5
+  model (actual starters) unders EV 6%+                         1240 bets  49.2%   -49.6u ( -4.0%) |  -36.3   -6.3  +10.4  -14.1   -3.2  neg 4/5
+  model (opener info only) overs EV 6%+ at the 1-h price         414 bets  54.5%   +21.8u ( +5.3%) |   +2.1  +10.3   +1.7   +6.4   +1.3  neg 0/5
+  model (opener info only) unders EV 6%+ at the 1-h price        929 bets  47.9%   -56.0u ( -6.0%) |  -46.7   -6.4  +23.5   -7.6  -18.9  neg 4/5
+    goalie/lineup changed the model total 0.15+: actual-starter overs   102 bets  63.4%   +21.5u (+21.0%) |   +3.4   +9.0   -0.4   +5.0   +4.4  neg 1/5
+    actual-starter overs NOT already bet at the opener (new bets)   162 bets  61.9%   +31.1u (+19.2%) |   +3.7  +11.5   +0.7   +5.1  +10.2  neg 0/5
+    same, goalie/lineup changed the model total 0.15+             69 bets  66.2%   +18.6u (+26.9%) |   +0.9   +7.9   +0.6   +5.1   +4.0  neg 0/5
+    same, EV 9%+                                                  68 bets  65.7%   +18.9u (+27.8%) |   +1.5   +6.6   +2.0   +6.2   +2.5  neg 0/5
+    opener overs bet AND still EV 6%+ with actual starters at the 1-h price   226 bets  54.6%   +11.3u ( +5.0%) |   +4.0   -0.7   +0.9   +0.7   +6.5  neg 1/5
+    opener overs whose actual-starter EV at the 1-h price fell under 0 (graded at the OPENER)   133 bets  56.9%   +10.0u ( +7.5%) |   +2.6   +2.9   +2.4   +5.4   -3.2  neg 1/5
+    goalie/lineup changed the model total 0.15+: actual-starter unders   457 bets  50.6%    -9.2u ( -2.0%) |   -2.2  -10.0   +8.0   -4.3   -0.8  neg 4/5
+
+  Does the price react to the starters? corr(goalie surprise, open->1h total move) = -0.100; corr(goalie surprise, actual goals minus 1-h line) = -0.044; corr(starters' quality, goals minus 1-h line) = -0.028
+    backup / unexpected starter (share < 40%) in net:  2765 games, total moved open->1h +0.031, goals minus 1-h line +0.213, over won 51.9%
+    both expected starters                          :  3737 games, total moved open->1h -0.023, goals minus 1-h line +0.102, over won 49.4%
+  overs: goalies much WORSE than expected (surprise bottom 20%)  1301 bets  52.4%    -8.0u ( -0.6%) |  +29.8  -21.5  -16.8   -7.0   +7.5  neg 3/5
+  unders: goalies much BETTER than expected (surprise top 20%)  1301 bets  51.8%    -6.9u ( -0.5%) |   -2.3   +1.6  -11.8  +12.3   -6.6  neg 3/5
+  overs: a backup/unexpected starter in net                     2765 bets  51.9%   -38.0u ( -1.4%) |  +13.6  -18.4  -13.2  -29.7   +9.8  neg 3/5
+  unders: two strong starters (both top third)                   741 bets  51.0%   -15.5u ( -2.1%) |  -15.8   -9.1   -3.7   +1.2  +11.9  neg 3/5
+  overs: two weak starters (both bottom third)                   700 bets  49.0%   -52.4u ( -7.5%) |   +6.5  -13.9  -30.5  -17.4   +2.9  neg 3/5
+  unders: two strong starters AND model (actual) EV 3%+ under    263 bets  44.9%   -32.7u (-12.4%) |   +0.5   -4.7  -14.5   -5.6   -8.4  neg 4/5
+  overs at the OPENER: goalies worse than expected (known only later)  1301 bets  53.5%   +23.8u ( +1.8%) |  +34.7  -15.3  -12.6   -1.9  +18.9  neg 3/5
+
+============================================================================================================================================
+2b. GOALIES, SBR era: CLOSING price (starters known), out of sample
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                bets      win%    units      ROI   | by season 2011-12 2012-13 2013-14 2014-15 2015-16 2016-17 2017-18 2018-19 2019-20 2020-21
+  blind overs at the close                                     11359 bets  49.2%  -554.6u ( -4.9%) |  -64.0  -68.3  -57.6  -66.4  -34.5  -56.0  -18.1 -100.8  -50.1  -38.8  neg 10/10
+  overs: goalies much WORSE than expected (bottom 20%)          2268 bets  50.9%   -55.9u ( -2.5%) |   -5.1  -14.1   +7.4   +2.0   +0.5   -8.2  +13.0  -16.0  -16.8  -18.7  neg 6/10
+  unders: goalies much BETTER than expected (top 20%)           2268 bets  52.7%    -3.5u ( -0.2%) |   -2.8  +10.1  +20.6  +12.3  -15.7   -8.4  +30.7  -34.4  -18.1   +2.4  neg 5/10
+  overs: a backup/unexpected starter in net                     4849 bets  48.9%  -274.4u ( -5.7%) |  -15.7  -30.5  -46.5  -23.4  -37.0   -6.6  -17.2  -48.6  -19.1  -29.7  neg 10/10
+  unders: two strong starters (both top third)                  1227 bets  51.5%   -35.6u ( -2.9%) |   -3.4  +12.3   -8.0   +1.0   -6.6  -19.6   -0.7   -3.8  -18.0  +11.2  neg 7/10
+  overs: two weak starters (both bottom third)                  1246 bets  48.6%   -77.3u ( -6.2%) |  -10.8  -21.2   -3.4   +0.6  -15.5   -7.4   +7.6  -15.7  -11.3   -0.2  neg 8/10
+  corr(goalie surprise, open->close total move) = -0.003; corr(surprise, goals minus closing line) = -0.019
+    backup / unexpected starter   :  4849 games, total moved open->close +0.040, goals minus close +0.143
+    both expected starters        :  6489 games, total moved open->close -0.016, goals minus close +0.176
+
+============================================================================================================================================
+3. OTHER FEATURES at DK's opener: does the feature predict the over beyond DK's price? (logistic, DK no-vig as offset)
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                bets      win%    units      ROI   | by season 2021-22 2022-23 2023-24 2024-25 2025-26
+  Coefficient per 1 SD of the feature (binary: per 1). Choose on 2021-24; check on 2024-26 (DK) and SBR 2011-21 (opener).
+  feature                 train 21-24         test 24-26          SBR 11-21   over-bet units when the feature points over (train / test / SBR)
+  b2b_any              +0.071 (0.075)     -0.132 (0.090)     -0.046 (0.043)   over   -10.6u/1009 |  -66.7u/693 | -224.5u/3256
+  b2b_both             +0.111 (0.159)     -0.316 (0.187)     -0.056 (0.087)   over    +2.2u/175 |  -22.9u/128 |  -47.5u/619
+  rested_both          +0.053 (0.104)     -0.191 (0.132)     +0.041 (0.061)   over    -4.8u/434 |  -36.6u/265 |  -55.0u/1315
+  goals_form           +0.023 (0.034)     +0.023 (0.042)     +0.011 (0.022)   over   -22.9u/1004 |  -17.5u/551 |  -98.2u/2309
+  xg_form              +0.055 (0.034)     +0.038 (0.041)     +0.018 (0.019)   over   +10.4u/1002 |  -46.9u/730 |  -96.0u/2457
+  att_form             +0.005 (0.034)     +0.007 (0.039)     +0.023 (0.015)   over   -41.3u/1011 |  -36.7u/677 | -111.1u/3556
+  xg_level             +0.012 (0.034)     +0.076 (0.035)     +0.018 (0.015)   over   -38.4u/1007 |  +25.1u/611 |   -4.4u/221
+  goals_level          +0.008 (0.034)     +0.018 (0.047)     -0.003 (0.017)   over    -5.8u/1073 |  -23.3u/512 |  -14.8u/627
+  pp_level             -0.084 (0.034)     -0.001 (0.053)     -0.205 (0.306)   under -159.2u/1183 |  -63.5u/1550 | -308.0u/10353
+  early                -0.111 (0.084)     +0.137 (0.102)     -0.038 (0.048)   under   -7.9u/750 |  -40.4u/500 |  -43.2u/2368
+  late                 +0.156 (0.072)     +0.034 (0.088)     -0.008 (0.045)   over   +19.6u/1170 |  -34.3u/733 | -167.7u/3017
+  divisional           +0.024 (0.071)     -0.024 (0.085)     -0.028 (0.048)   over   -29.8u/1228 |  -54.3u/829 | -171.6u/2979
+  west_travel          -0.013 (0.033)     +0.058 (0.040)         n/a          under   +0.0u/0 |   +0.0u/0 |   +nanu/0
+  east_travel          +0.027 (0.033)     -0.066 (0.041)         n/a          over    -9.3u/720 |  -70.4u/480 |   +nanu/0
+  (z = coef/se; |z| >= 2 in train AND same sign in both checks would count as a lead.)
+  Leads passing train |z|>=2 and same sign in both checks: ['pp_level']
+
+============================================================================================================================================
+3b. LEADS as filters on the live overs rule (model overs EV 6%+ at the opener)
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                bets      win%    units      ROI   | by season 2021-22 2022-23 2023-24 2024-25 2025-26
+  live overs rule (reference)                                    539 bets  57.4%   +50.5u ( +9.4%) |  +10.6   +8.6   +6.5   +6.1  +18.7  neg 0/5
+    live overs, drop when pp_level points under                  239 bets  56.8%   +20.6u ( +8.6%) |  +10.6   -1.5   +2.5   +3.4   +5.6  neg 1/5
+    dropped bets                                                 300 bets  57.9%   +29.9u (+10.0%) |   +0.0  +10.1   +4.0   +2.7  +13.1  neg 0/5
+
+Multiple testing: 104 rule/feature variants printed with records above (plus the goalie correlations). At 5% per test, ~5 would look 'significant' by chance.
