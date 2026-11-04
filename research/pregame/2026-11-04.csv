@@ -1422,3 +1422,16 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 00:35:42,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,secondperiod,total,over,1.5,-170,normal
 2026-11-04 00:35:42,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,thirdperiod,total,under,2.0,-113,normal
 2026-11-04 00:35:42,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,thirdperiod,total,over,2.0,-116,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,event,moneyline,home,0.0,-250,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,event,moneyline,away,0.0,202,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,BetRivers,event,team_total,home_under,3.5,-112,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,BetRivers,event,moneyline,home,0.0,-240,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,BetRivers,event,moneyline,away,0.0,200,normal
+2026-11-04 00:39:20,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Consensus,event,moneyline,away,0.0,117,normal
+2026-11-04 00:39:20,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Consensus,event,moneyline,home,0.0,-140,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,firstperiod,spread,away,0.5,-166,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,BetRivers,firstperiod,team_total,home_under,0.5,165,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,BetRivers,firstperiod,team_total,away_under,0.5,-113,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,BetRivers,firstperiod,team_total,home_over,0.5,-245,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,BetRivers,firstperiod,total,over,1.5,-143,normal
+2026-11-04 00:39:20,293545,2026-11-04,2026-11-04 19:30,chi,fla,BetRivers,secondperiod,total,under,1.5,130,normal
