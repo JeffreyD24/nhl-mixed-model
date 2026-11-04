@@ -44,3 +44,9 @@ Two flaws in my own pre-registration, both confirmed by Fable:
    that minute. Graded with CLV to the close. This mirrors the overs goalie test already running (`GOALIE_OVER_TEST`).
 3. Opener bets stay as they are. Watch the CLV of opener moneylines whose own goalie is a surprise (about -1% so far).
 4. Even the opener model has information the game-day price lacks (w +0.34): the blend's value isn't only at the opener.
+
+## Live TEST logger (Nov 4 evening)
+`GOALIE_RECHECK_TEST` in alert.py, rows in `state/goalie_recheck_test.csv`, graded by tracker.py. First night: the file was missing from
+alert_loop.sh's commit list, so the rows written by the 5:25 PM job were never saved (fixed the same evening). The next job re-logs games
+still before puck drop at the price then, so Nov 4 rows were logged later than first confirmation: use `logged_at_et` vs `tip_et` and don't
+read the first night as a ~1-hour-before sample.
