@@ -1198,3 +1198,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 22:22:06,401892643,2026-11-03,ana,van,in,11:43 - 2nd,2,11:43,3.0,1.0,8.0,9.0,Shot,Linus Karlsson saved by Laurent Brossoit
 2026-11-03 22:23:05,401892642,2026-11-03,car,nsh,in,8:22 - 3rd,3,8:22,1.0,3.0,15.0,23.0,Stoppage,Hand Pass
 2026-11-03 22:23:05,401892643,2026-11-03,ana,van,in,11:03 - 2nd,2,11:03,3.0,2.0,7.0,10.0,Shot,Pavel Mintyukov saved by Kevin Lankinen
+2026-11-03 22:24:05,401892643,2026-11-03,ana,van,in,9:53 - 2nd,2,9:53,3.0,2.0,7.0,10.0,Missed,Brock Boeser Missed Shot High and Wide Right
+2026-11-03 22:25:06,401892643,2026-11-03,ana,van,in,9:09 - 2nd,2,9:09,3.0,2.0,7.0,10.0,Missed,Max Sasson Missed Shot High and Wide Right
+2026-11-03 22:26:06,401892642,2026-11-03,car,nsh,in,7:50 - 3rd,3,7:50,1.0,3.0,15.0,23.0,Stoppage,Puck Frozen - Goalie
+2026-11-03 22:26:06,401892643,2026-11-03,ana,van,in,8:27 - 2nd,2,8:27,3.0,2.0,7.0,10.0,Stoppage,Off-side
+2026-11-03 22:27:06,401892642,2026-11-03,car,nsh,in,7:32 - 3rd,3,7:32,1.0,3.0,15.0,24.0,Stoppage,Goalie Stopped
+2026-11-03 22:28:06,401892642,2026-11-03,car,nsh,in,6:48 - 3rd,3,6:48,1.0,3.0,15.0,24.0,Missed,Andrei Svechnikov Wrist Shot Above Crossbar
+2026-11-03 22:28:06,401892643,2026-11-03,ana,van,in,8:18 - 2nd,2,8:18,3.0,2.0,7.0,10.0,Face Off,Leo Carlsson faceoff won against Elias Pettersson
+2026-11-03 22:29:05,401892642,2026-11-03,car,nsh,in,6:18 - 3rd,3,6:18,1.0,3.0,15.0,25.0,Face Off,Logan Stankoven faceoff won against Jack Drury
+2026-11-03 22:29:05,401892643,2026-11-03,ana,van,in,7:56 - 2nd,2,7:56,3.0,2.0,7.0,10.0,Penalty Shot Infraction,Jamie Oleksiak Minor
