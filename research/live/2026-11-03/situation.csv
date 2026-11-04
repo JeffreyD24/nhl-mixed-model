@@ -979,3 +979,65 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 21:30:06,401892641,2026-11-03,col,cbj,in,3:22 - 3rd,3,3:22,2.0,7.0,14.0,24.0,Stoppage,Puck in Benches
 2026-11-03 21:30:06,401892642,2026-11-03,car,nsh,in,8:33 - 2nd,2,8:33,1.0,2.0,10.0,11.0,Blocked,Daemon Hunt shot blocked by Eric Robinson
 2026-11-03 21:30:06,401892643,2026-11-03,ana,van,in,9:01 - 1st,1,9:01,1.0,1.0,5.0,1.0,Face Off,Tim Washe faceoff won against Jacob Quillan
+2026-11-03 21:31:05,401892633,2026-11-03,uta,tor,in,5:42 - 3rd,3,5:42,3.0,2.0,25.0,33.0,Blocked,Vincent Trocheck shot blocked by Morgan Rielly
+2026-11-03 21:31:05,401892637,2026-11-03,stl,nyr,in,7:29 - 3rd,3,7:29,0.0,2.0,27.0,27.0,Shot,Dalibor Dvorsky Wrist Shot saved by Dylan Garand
+2026-11-03 21:31:05,401892638,2026-11-03,min,phi,in,2:02 - 3rd,3,2:02,3.0,2.0,23.0,18.0,Missed,Jamie Drysdale Missed Shot Wide Right
+2026-11-03 21:31:05,401892639,2026-11-03,vgk,pit,in,3:46 - 3rd,3,3:46,2.0,2.0,24.0,20.0,Face Off,William Karlsson faceoff won against Sidney Crosby
+2026-11-03 21:31:05,401892640,2026-11-03,dal,wsh,in,4:27 - 3rd,3,4:27,6.0,4.0,16.0,17.0,Missed,Tom Wilson Snap Shot High and Wide Left
+2026-11-03 21:31:05,401892641,2026-11-03,col,cbj,in,2:53 - 3rd,3,2:53,2.0,7.0,15.0,24.0,Face Off,Sean Monahan faceoff won against Nicolas Roy
+2026-11-03 21:31:05,401892636,2026-11-03,edm,nj,in,19:32 - 3rd,3,19:32,2.0,3.0,21.0,10.0,Missed,Missed Shot
+2026-11-03 21:31:05,401892642,2026-11-03,car,nsh,in,7:50 - 2nd,2,7:50,1.0,2.0,10.0,11.0,Blocked,Daemon Hunt shot blocked by Eric Robinson
+2026-11-03 21:31:05,401892643,2026-11-03,ana,van,in,8:04 - 1st,1,8:04,1.0,1.0,5.0,1.0,Face Off,Tim Washe faceoff won against Jacob Quillan
+2026-11-03 21:32:06,401892633,2026-11-03,uta,tor,in,5:21 - 3rd,3,5:21,3.0,2.0,24.0,33.0,Missed,Nick DeSimone Wrist Shot Wide Right
+2026-11-03 21:32:06,401892634,2026-11-03,wpg,mtl,in,9:10 - 3rd,3,9:10,0.0,4.0,15.0,34.0,Face Off,Phillip Danault faceoff won against Mark Scheifele
+2026-11-03 21:32:06,401892635,2026-11-03,det,tb,in,2:53 - 3rd,3,2:53,2.0,3.0,23.0,15.0,Stoppage,Off-side
+2026-11-03 21:32:06,401892637,2026-11-03,stl,nyr,in,7:08 - 3rd,3,7:08,0.0,2.0,27.0,27.0,Stoppage,Goalie Stopped
+2026-11-03 21:32:06,401892638,2026-11-03,min,phi,in,1:24 - 3rd,3,1:24,3.0,2.0,23.0,18.0,Blocked,Travis Konecny shot blocked by Olli Maatta
+2026-11-03 21:32:06,401892639,2026-11-03,vgk,pit,in,3:25 - 3rd,3,3:25,2.0,2.0,23.0,20.0,Stoppage,Icing
+2026-11-03 21:32:06,401892640,2026-11-03,dal,wsh,in,3:24 - 3rd,3,3:24,6.0,4.0,17.0,17.0,Shot,Tom Wilson Snap Shot saved by Jake Oettinger
+2026-11-03 21:32:06,401892641,2026-11-03,col,cbj,in,2:00 - 3rd,3,2:00,2.0,7.0,15.0,24.0,Face Off,Parker Kelly faceoff won against Sean Monahan
+2026-11-03 21:32:06,401892636,2026-11-03,edm,nj,in,19:00 - 3rd,3,19:00,3.0,3.0,21.0,10.0,Goal,"Leon Draisaitl Goal (13) Snap Shot, assists: none"
+2026-11-03 21:32:06,401892642,2026-11-03,car,nsh,in,7:31 - 2nd,2,7:31,1.0,2.0,10.0,12.0,Face Off,Shane Wright faceoff won against Mark Jankowski
+2026-11-03 21:32:06,401892643,2026-11-03,ana,van,in,7:00 - 1st,1,7:00,1.0,1.0,5.0,2.0,Shot,Leo Carlsson saved by Kevin Lankinen
+2026-11-03 21:33:05,401892633,2026-11-03,uta,tor,in,4:12 - 3rd,3,4:12,3.0,2.0,24.0,33.0,Missed,Nick DeSimone Wrist Shot Wide Right
+2026-11-03 21:33:05,401892634,2026-11-03,wpg,mtl,in,8:01 - 3rd,3,8:01,0.0,4.0,15.0,34.0,Shot,Lane Hutson Snap Shot saved by Stuart Skinner
+2026-11-03 21:33:05,401892635,2026-11-03,det,tb,in,2:30 - 3rd,3,2:30,2.0,3.0,23.0,16.0,Face Off,Andrew Copp faceoff won against Anthony Cirelli
+2026-11-03 21:33:05,401892637,2026-11-03,stl,nyr,in,6:50 - 3rd,3,6:50,0.0,2.0,27.0,28.0,Shot,Adam Fox saved by Joel Hofer
+2026-11-03 21:33:05,401892638,2026-11-03,min,phi,in,0:48 - 3rd,3,0:48,4.0,2.0,23.0,18.0,Stoppage,Icing
+2026-11-03 21:33:05,401892639,2026-11-03,vgk,pit,in,3:25 - 3rd,3,3:25,2.0,2.0,23.0,20.0,High-sticking,Brayden McNabb High-sticking against Sidney Crosby
+2026-11-03 21:33:05,401892640,2026-11-03,dal,wsh,in,2:23 - 3rd,3,2:23,6.0,4.0,17.0,17.0,Blocked,Jakob Chychrun shot blocked by Esa Lindell
+2026-11-03 21:33:05,401892641,2026-11-03,col,cbj,in,1:27 - 3rd,3,1:27,2.0,7.0,15.0,25.0,Stoppage,Goalie Stopped
+2026-11-03 21:33:05,401892636,2026-11-03,edm,nj,in,18:36 - 3rd,3,18:36,3.0,3.0,21.0,10.0,Face Off,Owen Michaels faceoff won against Jack Hughes
+2026-11-03 21:33:05,401892642,2026-11-03,car,nsh,in,6:20 - 2nd,2,6:20,1.0,2.0,10.0,14.0,Blocked,Roman Josi shot blocked by Juuso Valimaki
+2026-11-03 21:33:05,401892643,2026-11-03,ana,van,in,5:58 - 1st,1,5:58,1.0,1.0,5.0,2.0,Blocked,Paul Cotter shot blocked by Brendan Gallagher
+2026-11-03 21:34:06,401892633,2026-11-03,uta,tor,in,3:09 - 3rd,3,3:09,3.0,2.0,24.0,33.0,Blocked,Troy Stecher shot blocked by Lawson Crouse
+2026-11-03 21:34:06,401892634,2026-11-03,wpg,mtl,in,7:29 - 3rd,3,7:29,0.0,4.0,17.0,34.0,Face Off,Morgan Barron faceoff won against Owen Beck
+2026-11-03 21:34:06,401892635,2026-11-03,det,tb,in,2:02 - 3rd,3,2:02,2.0,3.0,23.0,16.0,Stoppage,Goalie Stopped
+2026-11-03 21:34:06,401892637,2026-11-03,stl,nyr,in,6:50 - 3rd,3,6:50,0.0,3.0,28.0,28.0,Goal,"Gabe Perreault Goal (5) Batted, assists: Adam Fox (17)"
+2026-11-03 21:34:06,401892638,2026-11-03,min,phi,in,0:38 - 3rd,3,0:38,4.0,2.0,23.0,18.0,Stoppage,Icing
+2026-11-03 21:34:06,401892639,2026-11-03,vgk,pit,in,2:35 - 3rd,3,2:35,2.0,2.0,23.0,20.0,Missed,Ben Kindel Slap Shot Wide Left
+2026-11-03 21:34:06,401892640,2026-11-03,dal,wsh,in,2:00 - 3rd,3,2:00,6.0,4.0,18.0,17.0,Face Off,Dylan Strome faceoff won against Wyatt Johnston
+2026-11-03 21:34:06,401892641,2026-11-03,col,cbj,in,1:04 - 3rd,3,1:04,2.0,7.0,16.0,25.0,Stoppage,Goalie Stopped
+2026-11-03 21:34:06,401892636,2026-11-03,edm,nj,in,17:55 - 3rd,3,17:55,3.0,3.0,21.0,11.0,Face Off,Jason Dickinson faceoff won against Jack Hughes
+2026-11-03 21:34:06,401892642,2026-11-03,car,nsh,in,5:32 - 2nd,2,5:32,1.0,2.0,10.0,13.0,Hit,Brady Skjei hit Nikolaj Ehlers
+2026-11-03 21:34:06,401892643,2026-11-03,ana,van,in,5:10 - 1st,1,5:10,1.0,1.0,5.0,2.0,Blocked,Paul Cotter shot blocked by Brendan Gallagher
+2026-11-03 21:35:05,401892633,2026-11-03,uta,tor,in,2:16 - 3rd,3,2:16,3.0,2.0,24.0,33.0,Blocked,Troy Stecher shot blocked by Lawson Crouse
+2026-11-03 21:35:05,401892634,2026-11-03,wpg,mtl,in,7:10 - 3rd,3,7:10,0.0,4.0,17.0,34.0,Blocked,Lane Hutson shot blocked by Oliver Kapanen
+2026-11-03 21:35:05,401892635,2026-11-03,det,tb,in,2:02 - 3rd,3,2:02,2.0,3.0,23.0,17.0,Stoppage,Timeout - Visitor
+2026-11-03 21:35:05,401892638,2026-11-03,min,phi,in,End of 3rd,3,0:00,4.0,2.0,23.0,18.0,Stoppage,Icing
+2026-11-03 21:35:05,401892639,2026-11-03,vgk,pit,in,1:42 - 3rd,3,1:42,2.0,2.0,23.0,20.0,Missed,Rickard Rakell Backhand High and Wide Right
+2026-11-03 21:35:05,401892640,2026-11-03,dal,wsh,in,1:16 - 3rd,3,1:16,6.0,4.0,18.0,17.0,Missed,Missed Shot
+2026-11-03 21:35:05,401892641,2026-11-03,col,cbj,in,0:53 - 3rd,3,0:53,2.0,7.0,16.0,25.0,Shot,T.J. Hughes saved by Cam Talbot
+2026-11-03 21:35:05,401892636,2026-11-03,edm,nj,in,17:11 - 3rd,3,17:11,3.0,3.0,21.0,11.0,Stoppage,Off-side
+2026-11-03 21:35:05,401892642,2026-11-03,car,nsh,in,5:32 - 2nd,2,5:32,1.0,2.0,10.0,13.0,Tripping,Steven Stamkos Tripping against K'Andre Miller
+2026-11-03 21:35:05,401892643,2026-11-03,ana,van,in,4:57 - 1st,1,4:57,1.0,1.0,5.0,2.0,Face Off,Elias Pettersson faceoff won against Roger McQueen
+2026-11-03 21:36:05,401892633,2026-11-03,uta,tor,in,1:48 - 3rd,3,1:48,3.0,2.0,24.0,33.0,Stoppage,Off-side
+2026-11-03 21:36:05,401892634,2026-11-03,wpg,mtl,in,6:46 - 3rd,3,6:46,0.0,4.0,17.0,34.0,Face Off,Mark Scheifele faceoff won against Jake Evans
+2026-11-03 21:36:05,401892635,2026-11-03,det,tb,in,1:23 - 3rd,3,1:23,2.0,3.0,23.0,17.0,Blocked,Lucas Raymond shot blocked by Erik Cernak
+2026-11-03 21:36:05,401892637,2026-11-03,stl,nyr,in,6:29 - 3rd,3,6:29,0.0,2.0,28.0,28.0,Stoppage,Puck in Netting
+2026-11-03 21:36:05,401892639,2026-11-03,vgk,pit,in,1:17 - 3rd,3,1:17,2.0,2.0,23.0,20.0,Penalty Shot Infraction,Tommy Novak Minor
+2026-11-03 21:36:05,401892640,2026-11-03,dal,wsh,in,1:11 - 3rd,3,1:11,6.0,4.0,20.0,17.0,Face Off,Roope Hintz faceoff won against Boone Jenner
+2026-11-03 21:36:05,401892641,2026-11-03,col,cbj,in,End of 3rd,3,0:00,2.0,7.0,17.0,26.0,Face Off,Sean Monahan faceoff won against Brock Nelson
+2026-11-03 21:36:05,401892636,2026-11-03,edm,nj,in,16:21 - 3rd,3,16:21,3.0,3.0,21.0,11.0,Blocked,Blocked Shot
+2026-11-03 21:36:05,401892642,2026-11-03,car,nsh,in,5:32 - 2nd,2,5:32,1.0,2.0,10.0,13.0,Stoppage,TV Timeout
+2026-11-03 21:36:05,401892643,2026-11-03,ana,van,in,3:47 - 1st,1,3:47,1.0,1.0,6.0,2.0,Shot,Brock Boeser saved by Laurent Brossoit
