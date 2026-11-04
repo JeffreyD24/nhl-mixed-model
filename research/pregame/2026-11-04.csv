@@ -4787,3 +4787,10 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 10:22:50,293548,2026-11-04,2026-11-04 22:00,sj,la,Consensus,thirdperiod,moneyline,away,0.0,134,normal
 2026-11-04 10:22:50,293548,2026-11-04,2026-11-04 22:00,sj,la,DraftKings,thirdperiod,team_total,away_under,0.5,145,normal
 2026-11-04 10:22:50,293548,2026-11-04,2026-11-04 22:00,sj,la,DraftKings,thirdperiod,team_total,away_over,0.5,-188,normal
+2026-11-04 10:27:29,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,event,total,over,6.0,-124,normal
+2026-11-04 10:27:29,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,event,total,under,6.0,104,normal
+2026-11-04 10:27:29,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,event,total,under,6.5,-142,normal
+2026-11-04 10:27:29,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,event,total,over,6.5,120,normal
+2026-11-04 10:27:29,293546,2026-11-04,2026-11-04 19:30,ott,buf,Consensus,event,total,under,6.5,101,normal
+2026-11-04 10:27:29,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,secondperiod,team_total,home_under,1.5,-255,normal
+2026-11-04 10:27:29,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,secondperiod,team_total,home_over,1.5,185,normal
