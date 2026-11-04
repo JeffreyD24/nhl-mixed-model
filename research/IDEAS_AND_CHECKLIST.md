@@ -64,6 +64,13 @@ Legend: [x] already in place  [~] partly  [ ] open  (O) = good job for Opus
 - [x] Four r/algobetting threads read from your pastes ("Has anyone done it", NBA props season review, LLM bots, comments from a deleted post); notes in research/community_notes. Only new ideas: bootstrap intervals, calibration table, stack with the market; live-line overreaction parked
 - [~] X public search done (research/community_notes). Reddit/4chan still open: re-do the sweep with the Claude desktop app browser or the Chrome extension (my shell cannot reach those sites)
 
+## From the statistics catalog (Nov 4, 2026; research/stats_catalog/README.md)
+- [ ] Tie-inflated score matrix: regulation ties are 22.5-22.8% vs 16-17% under independent Poisson (both 2016-22 and 2024-26). Test a
+      diagonal-inflated (Dixon-Coles style) matrix on the 2016-22 holdout puck lines and totals, pre-registered, before any live change
+- [ ] Rested team vs a back-to-back team at the opener (market-only): +2.2% on 1,520 holdout bets, +7.8% on 538 in 2024-26, closing price moved
+      toward the rested team in every season. Pre-register as a filter for model bets and as a standalone rule
+- [ ] Re-measure the model's logistic weight vs the opener each season (82% with goalies 2024-26, 28% team-only 2016-22; live blend 55%)
+
 ## When to switch to Opus
 Switch for: (1) the independent leakage audit, (2) choosing shrink thresholds and bet rules without overfitting, (3) any redesign of how
 the three models are combined. Stay on Sonnet for: data downloads, cleaning, running backtests, logging, wiring alerts, reports.

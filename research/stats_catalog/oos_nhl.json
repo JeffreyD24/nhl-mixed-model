@@ -1,0 +1,19 @@
+{
+ "A03": "2016-22: vs the market -0.036 per b2b (p=0.005); vs the team-only model -0.016 (p=0.218); b2b games 1520",
+ "A04": "2016-22: top-20% teams +0.106 -> +0.007, r=+0.06 (p=0.40, 186 team-seasons)",
+ "A08": "2016-22 ROI by EV bucket: 6-9% +2.5%, 9-12% +4.3%, 12-20% -1.4%, 20%+ -0.7%",
+ "A27": "2016-22 team-only model: r=+0.030 (p=0.011, n=6994)",
+ "A39": "2016-22 regulation goals mean 2.87, variance 2.92, dispersion 1.02",
+ "B55": "2016-22: favorites +2.5% (n=697), dogs +0.6% (n=2156), p=0.699",
+ "B57": "2016-22 team-only model: opener minus model log loss -0.0034, p=0.015",
+ "B59": "2016-22 month ANOVA on (goals - opener) p=0.292; means Oct +0.28, Nov +0.10, Dec +0.26, Jan +0.25, Feb +0.14, Mar +0.13, Apr +0.34",
+ "B73": "2016-22 regulation totals vs Poisson chi2=80.9, p=3.35e-13 (0:33/27, 1:96/146, 2:414/404, 3:605/748, 4:1118/1042, 5:1067/1168, 6:1229/1095, 7:910/884, 8:672/628, 9:399/398, 10:445/448); finals odd 68.9% vs regulation 46.2%",
+ "B75": "2016-22: moved toward us 1582 bets ROI +4.9% (won 49.2% vs market 45.1%); against 827 bets ROI -8.8% (39.5% vs 41.7%); share moving toward 55% vs against 29%",
+ "B76": "2016-22 team-only model: slope 0.258 (SE 0.101, p=0.011); totals slope 0.69 (SE 0.08)",
+ "B95": "2016-22 team-only model: opener only AIC 9303.5; model only AIC 9356.6; opener + model AIC 9295.3 (opener beats the model alone; the combination is best)",
+ "B98": "2016-22 team-only model: opener 0.865, model 0.339 (p=0.00142); weight on model 28%",
+ "X01": "2016-22 overs 293 bets, 62.1%, +53.9u (+18.4%); total rose 32.8%, fell 3.1%",
+ "A33": "2016-22 runs test p=0.097",
+ "ML": "2016-22 moneyline EV>=6% at the open (trusted): 2853 bets, +29.9u, ROI +1.0%; avg price move toward us +0.0097",
+ "X02": "2016-22 holdout 1520 bets, +33.6u (+2.2%), won 57.7% vs price 54.2%; the close moved toward the rested team in 6 of 6 seasons. By season 2017: -6.1% (price move +0.010), 2018: +2.6% (price move +0.009), 2019: +1.7% (price move +0.010), 2020: -4.1% (price move +0.010), 2021: +22.9% (price move +0.016), 2022: +11.0% (price move +0.017)"
+}
