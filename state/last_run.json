@@ -2,36 +2,92 @@
  "active_model": "xg",
  "today": [
   {
-   "home": "buf",
-   "away": "ott",
-   "tip": "2026-11-04 19:30:00",
-   "home_win_prob": 0.505,
-   "expected_goals": "3.25-3.13 (regulation)",
+   "home": "mtl",
+   "away": "uta",
+   "tip": "2026-11-05 19:00:00",
+   "home_win_prob": 0.433,
+   "expected_goals": "3.11-3.46 (regulation)",
+   "expected_total": 6.73
+  },
+  {
+   "home": "det",
+   "away": "vgk",
+   "tip": "2026-11-05 19:00:00",
+   "home_win_prob": 0.46,
+   "expected_goals": "2.93-3.11 (regulation)",
+   "expected_total": 6.21
+  },
+  {
+   "home": "tb",
+   "away": "chi",
+   "tip": "2026-11-05 19:00:00",
+   "home_win_prob": 0.722,
+   "expected_goals": "4.02-2.38 (regulation)",
+   "expected_total": 6.53
+  },
+  {
+   "home": "nj",
+   "away": "stl",
+   "tip": "2026-11-05 19:00:00",
+   "home_win_prob": 0.614,
+   "expected_goals": "3.33-2.51 (regulation)",
+   "expected_total": 6.0
+  },
+  {
+   "home": "nyi",
+   "away": "car",
+   "tip": "2026-11-05 19:00:00",
+   "home_win_prob": 0.328,
+   "expected_goals": "2.65-3.75 (regulation)",
    "expected_total": 6.54
   },
   {
-   "home": "fla",
-   "away": "chi",
-   "tip": "2026-11-04 19:30:00",
-   "home_win_prob": 0.686,
-   "expected_goals": "3.74-2.40 (regulation)",
-   "expected_total": 6.29
+   "home": "nyr",
+   "away": "phi",
+   "tip": "2026-11-05 19:00:00",
+   "home_win_prob": 0.561,
+   "expected_goals": "3.13-2.65 (regulation)",
+   "expected_total": 5.95
   },
   {
-   "home": "la",
-   "away": "sj",
-   "tip": "2026-11-04 22:00:00",
-   "home_win_prob": 0.651,
-   "expected_goals": "3.57-2.48 (regulation)",
-   "expected_total": 6.21
+   "home": "pit",
+   "away": "bos",
+   "tip": "2026-11-05 19:00:00",
+   "home_win_prob": 0.503,
+   "expected_goals": "3.20-3.08 (regulation)",
+   "expected_total": 6.44
   },
   {
-   "home": "sea",
-   "away": "cgy",
-   "tip": "2026-11-04 22:00:00",
-   "home_win_prob": 0.539,
-   "expected_goals": "3.20-2.85 (regulation)",
-   "expected_total": 6.21
+   "home": "cbj",
+   "away": "dal",
+   "tip": "2026-11-05 19:00:00",
+   "home_win_prob": 0.445,
+   "expected_goals": "2.65-2.91 (regulation)",
+   "expected_total": 5.74
+  },
+  {
+   "home": "wpg",
+   "away": "van",
+   "tip": "2026-11-05 20:00:00",
+   "home_win_prob": 0.628,
+   "expected_goals": "3.69-2.73 (regulation)",
+   "expected_total": 6.56
+  },
+  {
+   "home": "edm",
+   "away": "ana",
+   "tip": "2026-11-05 20:00:00",
+   "home_win_prob": 0.606,
+   "expected_goals": "3.70-2.88 (regulation)",
+   "expected_total": 6.74
+  },
+  {
+   "home": "col",
+   "away": "nsh",
+   "tip": "2026-11-05 21:30:00",
+   "home_win_prob": 0.603,
+   "expected_goals": "3.60-2.81 (regulation)",
+   "expected_total": 6.57
   }
  ],
  "models": {
@@ -56,16 +112,16 @@
    "sd_goalie": 0.30097154583376634,
    "sd_residual": 1.6499830720969402,
    "rho": {
-    "offense": 0.4472036457486218,
-    "defense": 0.4267262069267935,
-    "goalie": 0.2040210791781649
+    "offense": 0.44720364574862187,
+    "defense": 0.4267262069267936,
+    "goalie": 0.20402107917816487
    },
    "h_ot": 0.5243317340644277,
    "tuning_rmse_on_validation": {
     "None|None": 2.402828504261853,
     "60|None": 2.400011745767145,
     "30|None": 2.400936601787434,
-    "15|None": 2.4040384142221636
+    "15|None": 2.404038414222164
    },
    "chosen_halflife": 60,
    "chosen_adapt_n0": null
@@ -94,8 +150,8 @@
    "sd_resid_xg": 0.7333068700930937,
    "sd_resid_conv": 1.5989017907088423,
    "rho": {
-    "O": 0.6740587103518054,
-    "D": 0.6121450450205199,
+    "O": 0.6740587103518052,
+    "D": 0.61214504502052,
     "F": 0.16464362158765664,
     "G": 0.1505910703254889
    },
@@ -105,21 +161,21 @@
   }
  },
  "log": [
-  "NHL tracker run on 2026-11-03 (ET), predicting games on 2026-11-04.",
-  "Schedule: 250 regular-season games through 2026-11-04; 243 finished, results through 2026-11-03; box scores on file for 243 games.",
-  "Shots: 243 games with shot data; expected goals computed for 243.",
-  "[goals] Locked 0 live picks for 2026-11-04 and 0 backfilled.",
-  "Lines: pulled DraftKings lines from ESPN for 15 games.",
-  "[xg] Locked 0 live picks for 2026-11-04 and 0 backfilled.",
-  "Lines: pulled DraftKings lines from ESPN for 15 games.",
-  "Line histories 2026-11-02: 0 new price changes saved.",
-  "Line histories 2026-11-03: 3948 new price changes saved.",
-  "Line histories 2026-11-04: 1309 new price changes saved.",
-  "Scorecard [goals]: 75-107 on rule bets, -32.7 units (20 live), average CLV -3.65%; alerts -2.5 units on 14; moneyline Brier 0.2394.",
-  "Scorecard [xg]: 72-82 on rule bets, -12.8 units (16 live), average CLV +0.92%; alerts -0.4 units on 4; moneyline Brier 0.2319.",
-  "Saved 2 models for intraday checks (4 games).",
-  "Alerts graded so far: 10-15, -5.55 units at the alerted prices.",
-  "Your logged bets: 8-10, -1.71u on 18 units staked.",
-  "Line jumps graded: 15; the result matched the jump's direction 9 times."
+  "NHL tracker run on 2026-11-04 (ET), predicting games on 2026-11-05.",
+  "Schedule: 261 regular-season games through 2026-11-05; 246 finished, results through 2026-11-03; box scores on file for 246 games.",
+  "Shots: 246 games with shot data; expected goals computed for 246.",
+  "[goals] Locked 11 live picks for 2026-11-05 and 0 backfilled.",
+  "Lines: ESPN returned no odds.",
+  "[xg] Locked 11 live picks for 2026-11-05 and 0 backfilled.",
+  "Lines: ESPN returned no odds.",
+  "Line histories 2026-11-03: 0 new price changes saved.",
+  "Line histories 2026-11-04: 0 new price changes saved.",
+  "Line histories 2026-11-05: 280 new price changes saved.",
+  "Scorecard [goals]: 76-108 on rule bets, -33.2 units (22 live), average CLV -3.70%; alerts -4.5 units on 16; moneyline Brier 0.2399.",
+  "Scorecard [xg]: 72-84 on rule bets, -14.8 units (18 live), average CLV +0.92%; alerts -2.0 units on 10; moneyline Brier 0.2325.",
+  "Saved 2 models for intraday checks (11 games).",
+  "Alerts graded so far: 10-16, -6.55 units at the alerted prices.",
+  "Your logged bets: 8-11, -2.71u on 19 units staked.",
+  "Line jumps graded: 16; the result matched the jump's direction 10 times."
  ]
 }
