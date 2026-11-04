@@ -99,6 +99,10 @@ GOALIE_OVER_TEST = True  # Nov 4, 2026 (TEST only, never pushed): once both star
 GOALIE_OVER_EV = 0.06    #   price (shot model re-run with the confirmed starters) on a game with no over alerted at the opener is
                          #   logged once per game to state/ovr_goalie_test.csv. Backtest (analysis/nhl_totals_research.py s.2a, DK price
                          #   1 h before puck drop 2021-26): 162 bets +31.1u, 0 of 5 seasons negative; no out-of-sample check possible.
+REST_TEST = True         # Nov 4, 2026 (TEST only, never pushed): games where exactly one team is on the 2nd night of a back-to-back.
+                         #   The RESTED team's moneyline at DK's opening price is logged once per game to state/rest_b2b_test.csv and graded
+                         #   by tracker.py (market-only rule, no model). Statistics catalog X02: 2016-22 holdout 1,520 bets +2.2%,
+                         #   2024-26 538 bets +7.8%; the closing price moved toward the rested team in every season.
 ML_HOLD_NEAR_ALERT = True   # Nov 4, 2026: no moneyline DON'T BET just because EV dipped under the bar while DK's price is still
                          #   within NEAR_OPEN (1.5 win-% pts) of the alerted price (those bets halfway to puck drop: 113 bets
                          #   +26.0u, 4 of 5 seasons positive). Bigger moneyline moves and overs keep the DON'T BET.
@@ -341,6 +345,9 @@ def main():
     gpath = os.path.join(STATE, "ovr_goalie_test.csv")
     GT = pd.read_csv(gpath) if os.path.exists(gpath) else pd.DataFrame(columns=["game_id"])
     gtest_done, gtest_new = set(GT.game_id), []
+    rpath = os.path.join(STATE, "rest_b2b_test.csv")
+    RT = pd.read_csv(rpath) if os.path.exists(rpath) else pd.DataFrame(columns=["game_id"])
+    rtest_done, rtest_new = set(RT.game_id), []
     NOWC, GINFO = {}, {}   # this check's price and EV for every (game, market, side, model), and game details, for reminders
     DKC = {}               # (game, market, side) -> DraftKings bet-slip link, so reminders carry the same button as the first alert
 
@@ -449,6 +456,16 @@ def main():
                     ev = p * espn.nd_dec(price) - 1
                     NOWC[(g["game_id"], mk, side, name)] = (lnum, price, p, ev, oprice)
                     if (name, mk) not in best or ev > best[(name, mk)][4]: best[(name, mk)] = (side, lnum, price, p, ev, oprice)
+            # ---- TEST: rested team vs a back-to-back team, at DK's opening moneyline (logged only, never pushed)
+            if REST_TEST and g["game_id"] not in rtest_done and ((g["home"] in B2B) != (g["away"] in B2B)):
+                rs = "away" if g["home"] in B2B else "home"
+                if not pd.isna(o[f"{rs}_ml"]) and not pd.isna(o[f"{'home' if rs == 'away' else 'away'}_ml"]):
+                    p_open = ph_open if rs == "home" else 1 - ph_open
+                    rtest_new.append(dict(logged_at_et=str(NOW)[:16], game_id=g["game_id"], date=M["date"], home=g["home"], away=g["away"],
+                                          tip_et=g["tip_et"], side=rs, team=g[rs], b2b_team=g["away" if rs == "home" else "home"],
+                                          price=o[f"{rs}_ml"], open_fair=round(p_open, 4), current_price=c[f"{rs}_ml"],
+                                          verdict="TEST: rested team vs back-to-back (not a bet)"))
+                    rtest_done.add(g["game_id"]); print(f"TEST (not pushed): rested {g[rs].upper()} {fmt_price(o[rs + '_ml'])} vs b2b, {Aw} @ {H}")
             # ---- TEST: goalie-confirmed over (logged only, never pushed)
             if GOALIE_OVER_TEST and gh_conf and ga_conf and g["game_id"] not in gtest_done:
                 v = NOWC.get((g["game_id"], "total", "over", "xg"))
@@ -806,6 +823,7 @@ def main():
                 notify(f"Line jump: {A2} @ {H2} {what}", body, priority="default", tags="zap")
                 print("LINE JUMP:", what, "|", body)
     if gtest_new: pd.concat([GT, pd.DataFrame(gtest_new)], ignore_index=True).to_csv(gpath, index=False)
+    if rtest_new: pd.concat([RT, pd.DataFrame(rtest_new)], ignore_index=True).to_csv(rpath, index=False)
     if jumps_new: pd.concat([J, pd.DataFrame(jumps_new)], ignore_index=True).to_csv(jpath, index=False)
     if hist_new: pd.concat([H_, pd.DataFrame(hist_new)], ignore_index=True).to_csv(hpath, index=False)
     if moves_new: pd.concat([MV, pd.DataFrame(moves_new)], ignore_index=True).to_csv(mpath, index=False)

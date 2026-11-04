@@ -77,7 +77,7 @@ if SPORT == "nhl":
                     "research/model": (30, "Model output archive", "warn"), "research/nhl_pbp": (48, "Play-by-play", "warn"),
                     "research/shifts": (48, "Shift charts", "warn"), "research/media": (168, "Media log", "warn"),
                     "state/box_2026_27.csv": (30, "Box scores 2026-27", "warn"), "state/shots_2026_27.csv": (30, "Shots 2026-27", "warn"),
-                    "state/early": (30, "Early model files", "warn"), "state/ovr_goalie_test.csv": (168, "TEST goalie-confirmed overs (sparse)", "warn"), "state/picks_log_xg.csv": (30, "xG picks log", "warn"),
+                    "state/early": (30, "Early model files", "warn"), "state/ovr_goalie_test.csv": (168, "TEST goalie-confirmed overs (sparse)", "warn"), "state/rest_b2b_test.csv": (168, "TEST rested vs back-to-back (sparse)", "warn"), "state/picks_log_xg.csv": (30, "xG picks log", "warn"),
                     "state/leaderboard.json": (30, "Leaderboard", "warn"), "state/goalie_news.json": (72, "Goalie news", "warn")})
 if SPORT == "nba":
     STREAMS.update({"state/injury_reports_2026_27.csv": (30, "Official injury reports"),

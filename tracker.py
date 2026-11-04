@@ -320,6 +320,7 @@ def grade_alerts(games, logdf):
     add_total_clv(a, L)
     a.to_csv(path, index=False)
     grade_goalie_over_test(res, L)
+    grade_rest_test(res, L)
     g = a[a.result.isin(["W", "L"]) & a.skipped.isna()] if "skipped" in a else a[a.result.isin(["W", "L"])]
     if len(g):
         w, l = int((g.result == "W").sum()), int((g.result == "L").sum())
@@ -362,6 +363,36 @@ def grade_goalie_over_test(res, L):
     if len(g):
         say(f"TEST goalie-confirmed overs (not bets): {int((g.result == 'W').sum())}-{int((g.result == 'L').sum())}-{int((g.result == 'P').sum())}, "
             f"{g.profit.sum():+.2f} units, closing total moved {g.clv_points.mean():+.2f} goals our way on average.")
+
+
+def grade_rest_test(res, L):
+    """grade state/rest_b2b_test.csv (TEST rows from alert.py, never pushed): rested team's moneyline at DK's opening price.
+    clv = EV of the opening price at the no-vig closing chance; move = closing no-vig chance minus opening no-vig chance (our side)"""
+    import espn
+    path = os.path.join(STATE, "rest_b2b_test.csv")
+    if not os.path.exists(path): return
+    t = pd.read_csv(path)
+    if not len(t): return
+    out, prof, clvs, mv = [], [], [], []
+    for r in t.itertuples():
+        hg, ag = res.home_goals.get(r.game_id, np.nan), res.away_goals.get(r.game_id, np.nan)
+        result = settle("moneyline", r.side, np.nan, hg, ag); out.append(result)
+        d = espn.nd_dec(r.price) if not pd.isna(r.price) else np.nan
+        prof.append(np.nan if result is None else (0.0 if result == "P" else (d - 1 if result == "W" else -1.0)))
+        crow = {c: L[f"close_{c}"].get(r.game_id, np.nan) for c in LCOLS} if r.game_id in L.index else None
+        ok = crow is not None and not pd.isna(crow["home_ml"]) and not pd.isna(crow["away_ml"])
+        clvs.append(clv(d, r.side, "moneyline", np.nan, crow) if ok else np.nan)
+        if ok:
+            ia, ib = 1 / espn.nd_dec(crow["home_ml"]), 1 / espn.nd_dec(crow["away_ml"]); pc = ia / (ia + ib)
+            mv.append(round((pc if r.side == "home" else 1 - pc) - r.open_fair, 4))
+        else:
+            mv.append(np.nan)
+    t["result"], t["profit"], t["clv"], t["move"] = out, prof, clvs, mv
+    t.to_csv(path, index=False)
+    g = t[t.result.isin(["W", "L"])]
+    if len(g):
+        say(f"TEST rested team vs back-to-back (not bets): {int((g.result == 'W').sum())}-{int((g.result == 'L').sum())}, {g.profit.sum():+.2f} units "
+            f"({g.profit.mean():+.1%}), closing price moved {100 * g.move.mean():+.1f} win-% pts toward the rested team on average.")
 
 
 def settle(market, side, line, hg, ag):
