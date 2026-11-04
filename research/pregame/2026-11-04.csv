@@ -5732,3 +5732,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 11:59:50,293548,2026-11-04,2026-11-04 22:00,sj,la,Fanatics,thirdperiod,team_total,home_over,1.5,175,normal
 2026-11-04 11:59:50,293548,2026-11-04,2026-11-04 22:00,sj,la,Fanatics,thirdperiod,total,under,1.5,150,normal
 2026-11-04 11:59:50,293548,2026-11-04,2026-11-04 22:00,sj,la,Fanatics,thirdperiod,total,over,1.5,-205,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Fanatics,firstperiod,team_total,home_under,0.5,145,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Fanatics,firstperiod,team_total,home_over,0.5,-190,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Fanatics,firstperiod,spread,away,0.5,-210,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Fanatics,firstperiod,spread,home,-0.5,155,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Fanatics,secondperiod,spread,away,0.5,-195,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Fanatics,secondperiod,spread,home,-0.5,145,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Fanatics,secondperiod,total,over,1.5,-175,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Fanatics,secondperiod,total,under,1.5,130,normal
+2026-11-04 12:00:56,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,thirdperiod,total,under,1.5,145,normal
+2026-11-04 12:00:56,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,thirdperiod,total,over,1.5,-195,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,thirdperiod,spread,home,-0.5,140,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,thirdperiod,spread,away,0.5,-180,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Fanatics,thirdperiod,total,over,1.5,-195,normal
+2026-11-04 12:00:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Fanatics,thirdperiod,total,under,1.5,145,normal
