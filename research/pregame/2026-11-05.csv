@@ -7231,3 +7231,7 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 18:31:20,293550,2026-11-05,2026-11-05 19:00,chi,tb,bet365,event,total,over,6.5,104,normal
 2026-11-04 18:31:20,293550,2026-11-05,2026-11-05 19:00,chi,tb,DraftKings,thirdperiod,spread,away,0.5,124,normal
 2026-11-04 18:31:20,293550,2026-11-05,2026-11-05 19:00,chi,tb,DraftKings,thirdperiod,spread,home,-0.5,-160,normal
+2026-11-04 18:37:45,293550,2026-11-05,2026-11-05 19:00,chi,tb,Consensus,event,total,under,6.5,-117,normal
+2026-11-04 18:37:45,293550,2026-11-05,2026-11-05 19:00,chi,tb,Consensus,event,total,over,6.5,-100,normal
+2026-11-04 18:37:45,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,event,moneyline,away,0.0,175,normal
+2026-11-04 18:37:45,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,event,moneyline,home,0.0,-202,normal
