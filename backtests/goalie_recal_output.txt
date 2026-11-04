@@ -1,0 +1,56 @@
+NHL holdout with goalies + recalibration (pre-registered: backtests/GOALIE_RECAL_PREREG.md). Holdout 2017-22, trusted rows unless noted.
+Recalibration fits (each on earlier seasons only): {"2017": {"a": -0.016, "b": 0.965, "w_dog": 0.279, "w_fav": 0.678, "w_shared": 0.402}, "2018": {"a": 0.03, "b": 0.983, "w_dog": 0.235, "w_fav": 0.632, "w_shared": 0.34}, "2019": {"a": 0.025, "b": 0.99, "w_dog": 0.234, "w_fav": 0.522, "w_shared": 0.319}, "2020": {"a": 0.01, "b": 0.946, "w_dog": 0.245, "w_fav": 0.427, "w_shared": 0.303}, "2021": {"a": 0.006, "b": 0.957, "w_dog": 0.325, "w_fav": 0.405, "w_shared": 0.348}, "2022": {"a": -0.002, "b": 1.013, "w_dog": 0.313, "w_fav": 0.405, "w_shared": 0.337}}
+
+1. Accuracy on every holdout game (moneyline, home win): log loss / Brier; lower is better
+  opener (no-vig)                          logloss 0.6668  Brier 0.2369  n=7031  by season 17:0.6695 18:0.6680 19:0.6747 20:0.6819 21:0.6568 22:0.6495
+  closer (no-vig)                          logloss 0.6638  Brier 0.2356  n=7031  by season 17:0.6672 18:0.6682 19:0.6726 20:0.6791 21:0.6530 22:0.6421
+  G0 no goalies                            logloss 0.6690  Brier 0.2381  n=7031  by season 17:0.6745 18:0.6729 19:0.6794 20:0.6811 21:0.6603 22:0.6458
+  G1 expected goalie                       logloss 0.6677  Brier 0.2375  n=7031  by season 17:0.6730 18:0.6709 19:0.6785 20:0.6800 21:0.6593 22:0.6444
+  G1 confirmed goalie (after the open)     logloss 0.6675  Brier 0.2374  n=7031  by season 17:0.6728 18:0.6710 19:0.6781 20:0.6800 21:0.6592 22:0.6439
+  G1 + R1 recal                            logloss 0.6680  Brier 0.2376  n=7031  by season 17:0.6737 18:0.6710 19:0.6790 20:0.6801 21:0.6600 22:0.6445
+  G1 + R2 dog/fav weight                   logloss 0.6656  Brier 0.2365  n=7031  by season 17:0.6693 18:0.6679 19:0.6745 20:0.6803 21:0.6565 22:0.6453
+  G1 + R2s shared weight                   logloss 0.6656  Brier 0.2365  n=7031  by season 17:0.6695 18:0.6677 19:0.6742 20:0.6800 21:0.6565 22:0.6456
+  G1 + live 55/45 blend                    logloss 0.6656  Brier 0.2365  n=7031  by season 17:0.6700 18:0.6682 19:0.6748 20:0.6794 21:0.6570 22:0.6444
+
+2. Bet rules at the opening price (1 unit). CLV = win-% points the de-vigged line moved toward the bet by the close.
+  -- trusted rows (headline)
+  G0 ML plain EV6               2853 bets 45.9%   +29.9u ROI +1.0% [-2.5%,+4.8%]  CLV +0.97 [+0.89,+1.06]  +150..+249: n=855 said 42.0% won 34.7%  by season 17:+2 18:+4 19:+17 20:+12 21:-18 22:+13
+  G1 ML plain EV6               2465 bets 47.3%   +41.7u ROI +1.7% [-2.1%,+5.6%]  CLV +1.17 [+1.08,+1.26]  +150..+249: n=695 said 41.6% won 33.7%  by season 17:+17 18:-6 19:+12 20:+18 21:-10 22:+11
+  G1+R1 ML plain EV6            2527 bets 47.4%   +52.6u ROI +2.1% [-1.8%,+5.9%]  CLV +1.14 [+1.05,+1.23]  +150..+249: n=719 said 41.6% won 33.9%  by season 17:+14 18:+11 19:+5 20:+30 21:-23 22:+16
+  G0 ML blend55 EV4 noB2B       1499 bets 44.6%   +18.1u ROI +1.2% [-3.7%,+6.2%]  CLV +1.14 [+1.02,+1.26]  +150..+249: n=516 said 39.3% won 32.9%  by season 17:-10 18:+5 19:+27 20:-9 21:-11 22:+16
+  G1 ML blend55 EV4 noB2B       1239 bets 45.4%   +18.0u ROI +1.5% [-3.8%,+6.6%]  CLV +1.37 [+1.24,+1.50]  +150..+249: n=389 said 39.1% won 33.9%  by season 17:-6 18:+1 19:-12 20:+7 21:+9 22:+19
+  G1+R2s ML blend EV4 noB2B      337 bets 41.8%    +5.9u ROI +1.8% [-8.9%,+12.8%]  CLV +1.72 [+1.48,+1.96]  +150..+249: n=155 said 38.5% won 31.0%  by season 17:-7 18:+4 19:-9 20:+5 21:+5 22:+8
+  G1+R2 ML blend EV4 noB2B       321 bets 50.5%    +3.6u ROI +1.1% [-8.5%,+10.9%]  CLV +1.79 [+1.53,+2.05]  +150..+249: n=73 said 37.1% won 26.0%  by season 17:-11 18:+6 19:-7 20:-2 21:+3 22:+15
+  -- all rows
+  G0 ML plain EV6               2881 bets 46.0%   +82.4u ROI +2.9% [-1.1%,+6.7%]  CLV +1.19 [+1.08,+1.31]  +150..+249: n=859 said 42.1% won 34.7%  by season 17:+5 18:+6 19:+24 20:+27 21:-11 22:+32
+  G1 ML plain EV6               2492 bets 47.4%   +93.7u ROI +3.8% [-0.2%,+7.8%]  CLV +1.42 [+1.30,+1.55]  +150..+249: n=699 said 41.7% won 33.6%  by season 17:+19 18:-3 19:+19 20:+33 21:-3 22:+29
+  G1+R1 ML plain EV6            2555 bets 47.6%  +105.1u ROI +4.1% [+0.1%,+8.1%]  CLV +1.39 [+1.26,+1.51]  +150..+249: n=723 said 41.7% won 33.9%  by season 17:+17 18:+13 19:+12 20:+45 21:-16 22:+34
+  G0 ML blend55 EV4 noB2B       1517 bets 44.8%   +57.7u ROI +3.8% [-1.3%,+9.1%]  CLV +1.41 [+1.25,+1.56]  +150..+249: n=519 said 39.4% won 32.9%  by season 17:-6 18:+8 19:+35 20:+8 21:-11 22:+25
+  G1 ML blend55 EV4 noB2B       1257 bets 45.7%   +57.7u ROI +4.6% [-1.0%,+10.3%]  CLV +1.69 [+1.52,+1.87]  +150..+249: n=392 said 39.2% won 33.9%  by season 17:-2 18:+4 19:-4 20:+23 21:+9 22:+28
+  G1+R2s ML blend EV4 noB2B      355 bets 42.8%   +43.3u ROI +12.2% [-0.6%,+26.4%]  CLV +2.69 [+2.19,+3.23]  +150..+249: n=158 said 38.6% won 31.0%  by season 17:-3 18:+5 19:-1 20:+22 21:+5 22:+15
+  G1+R2 ML blend EV4 noB2B       336 bets 51.2%   +41.5u ROI +12.4% [-0.4%,+25.8%]  CLV +2.66 [+2.16,+3.21]  +150..+249: n=76 said 37.2% won 26.3%  by season 17:-7 18:+8 19:-0 20:+17 21:+3 22:+22
+
+3. Pre-registered decisions (trusted rows; paired CLV difference, 90% interval resampling game days)
+  Goalies help?: CLV G1 ML blend55 EV4 noB2B minus G0 ML blend55 EV4 noB2B = +0.23 [+0.16,+0.30] 
+    -> YES (interval excludes 0)
+  R1 improves plain?: CLV G1+R1 ML plain EV6 minus G1 ML plain EV6 = -0.03 [-0.06,-0.00] ; log loss 0.6677 -> 0.6680
+    -> NOT SHOWN
+  R2 improves blend?: CLV G1+R2 ML blend EV4 noB2B minus G1+R2s ML blend EV4 noB2B = +0.07 [-0.17,+0.31] ; log loss 0.6656 -> 0.6656
+    -> NOT SHOWN
+  Confirmed edge (CLV > 0 and 90% ROI interval excludes 0):
+    G0 ML plain EV6              CLV +0.97, ROI +1.0% [-2.5%,+4.8%] -> not confirmed
+    G1 ML plain EV6              CLV +1.17, ROI +1.7% [-2.1%,+5.6%] -> not confirmed
+    G1+R1 ML plain EV6           CLV +1.14, ROI +2.1% [-1.8%,+5.9%] -> not confirmed
+    G0 ML blend55 EV4 noB2B      CLV +1.14, ROI +1.2% [-3.7%,+6.2%] -> not confirmed
+    G1 ML blend55 EV4 noB2B      CLV +1.37, ROI +1.5% [-3.8%,+6.6%] -> not confirmed
+    G1+R2s ML blend EV4 noB2B    CLV +1.72, ROI +1.8% [-8.9%,+12.8%] -> not confirmed
+    G1+R2 ML blend EV4 noB2B     CLV +1.79, ROI +1.1% [-8.5%,+10.9%] -> not confirmed
+
+4. Overs at the opening total, EV 6%+ (rebuilt over price), trusted rows: G0 vs G1
+  G0: 325 bets 56.3% +53.7u ROI +16.5% [+8.6%,+24.7%]  total rose 33.5% fell 2.8%
+  G1: 256 bets 56.6% +42.3u ROI +16.5% [+7.3%,+25.7%]  total rose 38.3% fell 1.2%
+
+5. EXPLORATORY (added after seeing the results, not pre-registered): is positive CLV automatic? Null model = no-vig opener + random noise with
+   the same spread as (G1 - opener) (sd 0.055), EV 6%+, trusted rows, 20 draws: about 2,541 bets, CLV -0.04 (range -0.13..+0.06), ROI -5.0%.
+   G1 plain: CLV +1.17, ROI +1.7%. So the +1 point of line movement toward the model's picks is information, not an artifact of selecting
+   against the opener; the null loses the vig (-5%), the model makes back about 6.7 points of it.
