@@ -377,3 +377,51 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 20:10:05,401892640,2026-11-03,dal,wsh,in,14:44 - 2nd,2,14:44,3.0,0.0,7.0,6.0,Missed,Matt Roy Missed Shot Hit Left Post
 2026-11-03 20:10:05,401892641,2026-11-03,col,cbj,in,15:41 - 2nd,2,15:41,1.0,3.0,3.0,12.0,Goal,"Jake Christiansen Goal (2) Slap Shot, assists: Mathieu Olivier (2), Charlie Coyle (10)"
 2026-11-03 20:10:05,401892636,2026-11-03,edm,nj,in,2:16 - 1st,1,2:16,1.0,0.0,8.0,7.0,Hit,Shakir Mukhamadullin hit Connor Brown
+2026-11-03 20:11:06,401892633,2026-11-03,uta,tor,in,17:33 - 2nd,2,17:33,1.0,0.0,9.0,14.0,Face Off,Auston Matthews faceoff won against Jack McBain
+2026-11-03 20:11:06,401892634,2026-11-03,wpg,mtl,in,17:42 - 2nd,2,17:42,0.0,2.0,6.0,12.0,Face Off,Alex Newhook faceoff won against Adam Lowry
+2026-11-03 20:11:06,401892635,2026-11-03,det,tb,in,15:14 - 2nd,2,15:14,0.0,2.0,12.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 20:11:06,401892637,2026-11-03,stl,nyr,in,18:11 - 2nd,2,18:11,0.0,0.0,9.0,14.0,Missed,Missed Shot
+2026-11-03 20:11:06,401892638,2026-11-03,min,phi,in,15:57 - 2nd,2,15:57,3.0,0.0,9.0,8.0,Blocked,Tyler Pitlick shot blocked by Nick Seeler
+2026-11-03 20:11:06,401892639,2026-11-03,vgk,pit,in,16:18 - 2nd,2,16:18,1.0,0.0,9.0,11.0,Missed,Erik Karlsson Slap Shot Wide Left
+2026-11-03 20:11:06,401892640,2026-11-03,dal,wsh,in,14:32 - 2nd,2,14:32,3.0,0.0,7.0,6.0,Stoppage,Puck Frozen - Goalie
+2026-11-03 20:11:06,401892641,2026-11-03,col,cbj,in,15:13 - 2nd,2,15:13,1.0,3.0,4.0,12.0,Stoppage,Icing
+2026-11-03 20:11:06,401892636,2026-11-03,edm,nj,in,1:58 - 1st,1,1:58,1.0,0.0,9.0,7.0,Stoppage,Goalie Stopped
+2026-11-03 20:12:06,401892633,2026-11-03,uta,tor,in,16:34 - 2nd,2,16:34,1.0,0.0,9.0,14.0,Giveaway,Giveaway by Jack McBain
+2026-11-03 20:12:06,401892634,2026-11-03,wpg,mtl,in,16:57 - 2nd,2,16:57,0.0,2.0,6.0,12.0,Interference,Morgan Barron Interference
+2026-11-03 20:12:06,401892635,2026-11-03,det,tb,in,15:10 - 2nd,2,15:10,0.0,2.0,13.0,2.0,Stoppage,Puck in Crowd
+2026-11-03 20:12:06,401892637,2026-11-03,stl,nyr,in,17:31 - 2nd,2,17:31,0.0,1.0,9.0,16.0,Shot,Brandon Carlo saved by Dylan Garand
+2026-11-03 20:12:06,401892638,2026-11-03,min,phi,in,14:58 - 2nd,2,14:58,3.0,0.0,9.0,8.0,Blocked,Tyler Pitlick shot blocked by Nick Seeler
+2026-11-03 20:12:06,401892639,2026-11-03,vgk,pit,in,15:56 - 2nd,2,15:56,1.0,0.0,9.0,11.0,Shot,Justin Brazeau Wrist Shot saved by Adin Hill
+2026-11-03 20:12:06,401892640,2026-11-03,dal,wsh,in,14:17 - 2nd,2,14:17,4.0,0.0,7.0,7.0,Shot,Jason Robertson saved by Logan Thompson
+2026-11-03 20:12:06,401892641,2026-11-03,col,cbj,in,14:33 - 2nd,2,14:33,1.0,3.0,4.0,12.0,Blocked,Brent Burns shot blocked by Jake Christiansen
+2026-11-03 20:12:06,401892636,2026-11-03,edm,nj,in,1:00 - 1st,1,1:00,1.0,0.0,9.0,7.0,Missed,Jesper Boqvist Wrist Shot Wide Left
+2026-11-03 20:12:06,401892642,2026-11-03,car,nsh,in,19:58 - 1st,1,19:58,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-03 20:13:05,401892633,2026-11-03,uta,tor,in,15:36 - 2nd,2,15:36,1.0,0.0,9.0,14.0,Missed,Liam O'Brien Wrist Shot Wide Left
+2026-11-03 20:13:05,401892634,2026-11-03,wpg,mtl,in,16:57 - 2nd,2,16:57,0.0,2.0,7.0,12.0,Stoppage,Timeout - Home
+2026-11-03 20:13:05,401892635,2026-11-03,det,tb,in,14:25 - 2nd,2,14:25,0.0,2.0,13.0,2.0,Face Off,J.T. Compher faceoff won against Jake Guentzel
+2026-11-03 20:13:05,401892637,2026-11-03,stl,nyr,in,16:33 - 2nd,2,16:33,0.0,1.0,9.0,16.0,Blocked,Alberts Smits shot blocked by Philip Broberg
+2026-11-03 20:13:05,401892638,2026-11-03,min,phi,in,13:59 - 2nd,2,13:59,3.0,0.0,10.0,9.0,Shot,Cam York Wrist Shot saved by Jesper Wallstedt
+2026-11-03 20:13:05,401892639,2026-11-03,vgk,pit,in,15:39 - 2nd,2,15:39,1.0,0.0,10.0,11.0,Stoppage,Off-side
+2026-11-03 20:13:05,401892640,2026-11-03,dal,wsh,in,14:14 - 2nd,2,14:14,4.0,0.0,7.0,7.0,Face Off,Radek Faksa faceoff won against Dylan Strome
+2026-11-03 20:13:05,401892641,2026-11-03,col,cbj,in,14:12 - 2nd,2,14:12,1.0,3.0,3.0,12.0,Face Off,Adam Fantilli faceoff won against Nazem Kadri
+2026-11-03 20:13:05,401892636,2026-11-03,edm,nj,in,0:53 - 1st,1,0:53,1.0,0.0,9.0,8.0,Face Off,Leon Draisaitl faceoff won against Nico Hischier
+2026-11-03 20:13:05,401892642,2026-11-03,car,nsh,in,19:25 - 1st,1,19:25,0.0,0.0,0.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 20:14:05,401892633,2026-11-03,uta,tor,in,14:36 - 2nd,2,14:36,1.0,0.0,9.0,16.0,Shot,Anders Lee Wrist Shot saved by Sergei Bobrovsky
+2026-11-03 20:14:05,401892634,2026-11-03,wpg,mtl,in,16:26 - 2nd,2,16:26,0.0,2.0,7.0,12.0,Face Off,Phillip Danault faceoff won against Adam Lowry
+2026-11-03 20:14:05,401892635,2026-11-03,det,tb,in,13:35 - 2nd,2,13:35,0.0,2.0,14.0,2.0,Shot,Victor Hedman saved by Daniil Tarasov
+2026-11-03 20:14:05,401892637,2026-11-03,stl,nyr,in,16:02 - 2nd,2,16:02,0.0,1.0,10.0,16.0,Stoppage,Goalie Stopped
+2026-11-03 20:14:05,401892638,2026-11-03,min,phi,in,13:14 - 2nd,2,13:14,3.0,0.0,11.0,9.0,Shot,Cam York Wrist Shot saved by Jesper Wallstedt
+2026-11-03 20:14:05,401892639,2026-11-03,vgk,pit,in,14:42 - 2nd,2,14:42,1.0,0.0,10.0,11.0,Face Off,Sidney Crosby faceoff won against William Karlsson
+2026-11-03 20:14:05,401892640,2026-11-03,dal,wsh,in,13:50 - 2nd,2,13:50,4.0,0.0,8.0,7.0,Stoppage,TV Timeout
+2026-11-03 20:14:05,401892641,2026-11-03,col,cbj,in,13:15 - 2nd,2,13:15,1.0,3.0,3.0,12.0,Face Off,Adam Fantilli faceoff won against Nazem Kadri
+2026-11-03 20:14:05,401892636,2026-11-03,edm,nj,in,0:26 - 1st,1,0:26,1.0,0.0,9.0,8.0,Stoppage,Puck in Netting
+2026-11-03 20:14:05,401892642,2026-11-03,car,nsh,in,19:02 - 1st,1,19:02,0.0,0.0,0.0,1.0,Face Off,Jack Drury faceoff won against Jackson Blake
+2026-11-03 20:15:05,401892633,2026-11-03,uta,tor,in,14:34 - 2nd,2,14:34,1.0,0.0,9.0,17.0,Face Off,Teddy Blueger faceoff won against Logan Cooley
+2026-11-03 20:15:05,401892634,2026-11-03,wpg,mtl,in,16:00 - 2nd,2,16:00,0.0,3.0,8.0,12.0,Goal,"Cole Caufield Goal (9), assists: Noah Dobson (6), Juraj Slafkovský (8)"
+2026-11-03 20:15:05,401892635,2026-11-03,det,tb,in,13:00 - 2nd,2,13:00,0.0,2.0,14.0,2.0,Face Off,Dominic James faceoff won against Emmitt Finnie
+2026-11-03 20:15:05,401892637,2026-11-03,stl,nyr,in,15:25 - 2nd,2,15:25,0.0,1.0,10.0,16.0,Stoppage,Puck in Netting
+2026-11-03 20:15:05,401892638,2026-11-03,min,phi,in,12:36 - 2nd,2,12:36,3.0,0.0,11.0,9.0,Stoppage,TV Timeout
+2026-11-03 20:15:05,401892639,2026-11-03,vgk,pit,in,14:31 - 2nd,2,14:31,1.0,0.0,10.0,12.0,Stoppage,Goalie Stopped
+2026-11-03 20:15:05,401892641,2026-11-03,col,cbj,in,12:40 - 2nd,2,12:40,1.0,3.0,5.0,12.0,Missed,Cole Sillinger Backhand
+2026-11-03 20:15:05,401892636,2026-11-03,edm,nj,in,End of 1st,1,0:00,1.0,0.0,9.0,8.0,Stoppage,Goalie Stopped
+2026-11-03 20:15:05,401892642,2026-11-03,car,nsh,in,18:23 - 1st,1,18:23,0.0,0.0,0.0,1.0,Face Off,Mark Jankowski faceoff won against Shane Wright
