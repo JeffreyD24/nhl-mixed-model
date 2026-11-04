@@ -1,0 +1,27 @@
+seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,home_score,away_saves,home_saves,last_play_type,last_play
+2026-11-03 19:07:06,401892634,2026-11-03,wpg,mtl,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-03 19:07:06,401892639,2026-11-03,vgk,pit,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-03 19:08:05,401892635,2026-11-03,det,tb,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-03 19:08:05,401892637,2026-11-03,stl,nyr,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-03 19:08:05,401892640,2026-11-03,dal,wsh,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-03 19:09:05,401892634,2026-11-03,wpg,mtl,in,19:32 - 1st,1,19:32,0.0,0.0,,,Face Off,Jake Evans faceoff won against Adam Lowry
+2026-11-03 19:09:05,401892638,2026-11-03,min,phi,in,19:50 - 1st,1,19:50,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-03 19:09:05,401892639,2026-11-03,vgk,pit,in,19:30 - 1st,1,19:30,0.0,0.0,,,Face Off,Jack Eichel faceoff won against Blake Lizotte
+2026-11-03 19:09:05,401892640,2026-11-03,dal,wsh,in,19:33 - 1st,1,19:33,0.0,0.0,0.0,0.0,Face Off,Roope Hintz faceoff won against Pierre-Luc Dubois
+2026-11-03 19:09:05,401892641,2026-11-03,col,cbj,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-03 19:10:05,401892633,2026-11-03,uta,tor,in,20:00 - 1st,1,20:00,0.0,0.0,,,Face Off,Barrett Hayton faceoff won against Nick Paul
+2026-11-03 19:10:05,401892634,2026-11-03,wpg,mtl,in,18:49 - 1st,1,18:49,0.0,0.0,0.0,0.0,Giveaway,Giveaway by Stuart Skinner
+2026-11-03 19:10:05,401892635,2026-11-03,det,tb,in,19:53 - 1st,1,19:53,0.0,0.0,,,Blocked,Dominic James shot blocked by Andrew Copp
+2026-11-03 19:10:05,401892637,2026-11-03,stl,nyr,in,19:40 - 1st,1,19:40,0.0,0.0,,,Shot,Vladislav Gavrikov saved by Joel Hofer
+2026-11-03 19:10:05,401892638,2026-11-03,min,phi,in,19:16 - 1st,1,19:16,0.0,0.0,,,Missed,Trevor Zegras Wrist Shot High and Wide Left
+2026-11-03 19:10:05,401892639,2026-11-03,vgk,pit,in,18:58 - 1st,1,18:58,0.0,0.0,0.0,1.0,Stoppage,Icing
+2026-11-03 19:10:05,401892640,2026-11-03,dal,wsh,in,18:51 - 1st,1,18:51,0.0,0.0,0.0,0.0,Stoppage,Icing
+2026-11-03 19:10:05,401892641,2026-11-03,col,cbj,in,19:32 - 1st,1,19:32,0.0,0.0,0.0,0.0,Face Off,Nathan MacKinnon faceoff won against Charlie Coyle
+2026-11-03 19:11:05,401892633,2026-11-03,uta,tor,in,19:07 - 1st,1,19:07,0.0,0.0,0.0,0.0,Shot,Easton Cowan saved by Sebastian Cossa
+2026-11-03 19:11:05,401892634,2026-11-03,wpg,mtl,in,17:31 - 1st,1,17:31,0.0,0.0,0.0,0.0,Hit,Neal Pionk hit Alex Newhook
+2026-11-03 19:11:05,401892635,2026-11-03,det,tb,in,18:50 - 1st,1,18:50,0.0,0.0,0.0,0.0,Blocked,Brandon Hagel shot blocked by Anthony Cirelli
+2026-11-03 19:11:05,401892637,2026-11-03,stl,nyr,in,19:18 - 1st,1,19:18,0.0,0.0,0.0,0.0,Missed,Missed Shot
+2026-11-03 19:11:05,401892638,2026-11-03,min,phi,in,18:46 - 1st,1,18:46,0.0,0.0,1.0,1.0,Blocked,Oliver Bonk shot blocked by Blake Coleman
+2026-11-03 19:11:05,401892639,2026-11-03,vgk,pit,in,18:13 - 1st,1,18:13,0.0,0.0,0.0,1.0,Face Off,William Karlsson faceoff won against Blake Lizotte
+2026-11-03 19:11:05,401892640,2026-11-03,dal,wsh,in,18:45 - 1st,1,18:45,0.0,0.0,0.0,0.0,Face Off,Jamie Benn faceoff won against Dylan Strome
+2026-11-03 19:11:05,401892641,2026-11-03,col,cbj,in,19:12 - 1st,1,19:12,0.0,1.0,1.0,0.0,Shot,Charlie Coyle Wrist Shot saved by Scott Wedgewood
