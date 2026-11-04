@@ -5483,3 +5483,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 11:41:56,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,firstperiod,total,under,1.5,110,normal
 2026-11-04 11:41:56,293545,2026-11-04,2026-11-04 19:30,chi,fla,DraftKings,firstperiod,total,over,1.5,-140,normal
 2026-11-04 11:41:56,293548,2026-11-04,2026-11-04 22:00,sj,la,DraftKings,firstperiod,moneyline,home,0.0,-145,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,event,total,under,5.5,110,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,event,total,over,5.5,-135,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,firstperiod,moneyline,away,0.0,-200,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,firstperiod,moneyline,home,0.0,150,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,secondperiod,team_total,home_under,1.5,-215,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,secondperiod,team_total,home_over,1.5,160,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,secondperiod,moneyline,home,0.0,175,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,secondperiod,moneyline,away,0.0,-235,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,secondperiod,spread,away,0.5,-130,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,secondperiod,spread,home,-0.5,100,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,secondperiod,total,over,1.5,-180,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,secondperiod,total,under,1.5,135,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,thirdperiod,moneyline,away,0.0,-235,normal
+2026-11-04 11:46:39,293545,2026-11-04,2026-11-04 19:30,chi,fla,Fanatics,thirdperiod,moneyline,home,0.0,175,normal
