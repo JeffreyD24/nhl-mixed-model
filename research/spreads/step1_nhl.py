@@ -63,7 +63,7 @@ def pl_bets(H):
                              team=np.where(home, H.home, H.away), price=np.where(home, H.open_home_pl_odds, H.open_away_pl_odds),
                              point=pt, ev=np.where(home, evh, eva), dec=d, win=win, u=np.where(win, d - 1, -1.0),
                              clv=d * pcl - 1, clv_pts=pcl - po, b2b=np.where(home, H.b2b_h, H.b2b_a),
-                             ok_pl=~np.isnan(hpt)))
+                             ok_pl=np.abs(hpt) == 1.5))   # fix after Fable review: -2.5 lines were priced/graded as -1.5
 
 
 def select(H, ver):

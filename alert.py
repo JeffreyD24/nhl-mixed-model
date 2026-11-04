@@ -442,7 +442,9 @@ def main():
                 if not pd.isna(c["home_ml"]):
                     for side, p, price in (("home", p_ml, c["home_ml"]), ("away", 1 - p_ml, c["away_ml"])):
                         cands.append(("moneyline", side, np.nan, price, p, o[f"{side}_ml"]))
-                if not pd.isna(c["home_pl"]):
+                # Nov 4, 2026 (spreads step 1 review): only +/-1.5 puck lines. p_hby2 / p_aby2 are "win by 2+" chances, so a -2.5
+                # line (DK opened 22 games 2021-26 at -2.5) was priced and alerted as if it were -1.5 (fake EV 15-47%).
+                if not pd.isna(c["home_pl"]) and abs(float(c["home_pl"])) == 1.5:
                     hl = c["home_pl"]; p_hc = p_hby2 if hl < 0 else 1 - p_aby2
                     cands += [("puck line", "home", hl, c["home_pl_odds"], p_hc, o["home_pl_odds"] if o["home_pl"] == hl else np.nan),
                               ("puck line", "away", -hl, c["away_pl_odds"], 1 - p_hc, o["away_pl_odds"] if o["home_pl"] == hl else np.nan)]

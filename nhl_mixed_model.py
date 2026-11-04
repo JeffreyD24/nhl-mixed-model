@@ -277,8 +277,9 @@ def bets(P, lines, suf="", cal=None, h_ot=H_OT_DEFAULT):
         out.append(pd.DataFrame(dict(idx=P.index, market="moneyline", side=side, line=np.nan, price=P[f"{lines}_{side}_ml"],
                                      p=p, ev=p * d - 1, win=np.where(np.isnan(margin), np.nan, won.astype(float)), push=0.0, dec=d)))
     # puck line: home line is -1.5 or +1.5
-    hl = P[f"{lines}_home_pl"].values
-    p_home_cover = np.where(hl < 0, P[f"p_home_by2{suf}"].values, 1 - P[f"p_away_by2{suf}"].values)
+    hl = P[f"{lines}_home_pl"].values.astype(float)
+    hl = np.where(np.abs(hl) == 1.5, hl, np.nan)     # Nov 4, 2026: +/-2.5 lines were priced/graded as +/-1.5 (spreads step 1 review)
+    p_home_cover = np.where(np.isnan(hl), np.nan, np.where(hl < 0, P[f"p_home_by2{suf}"].values, 1 - P[f"p_away_by2{suf}"].values))
     home_cover = np.where(hl < 0, margin >= 2, margin >= -1).astype(float)
     for side, p, odds, won, ln in (("home", p_home_cover, P[f"{lines}_home_pl_odds"], home_cover, hl),
                                    ("away", 1 - p_home_cover, P[f"{lines}_away_pl_odds"], 1 - home_cover, -hl)):
