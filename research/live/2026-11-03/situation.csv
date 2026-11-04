@@ -524,3 +524,50 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 20:27:05,401892640,2026-11-03,dal,wsh,in,6:48 - 2nd,2,6:48,4.0,1.0,10.0,13.0,Blocked,Justin Hryckowian shot blocked by Matt Roy
 2026-11-03 20:27:05,401892641,2026-11-03,col,cbj,in,7:09 - 2nd,2,7:09,1.0,6.0,6.0,13.0,Goal,"Valeri Nichushkin Goal (2), assists: Sean Monahan (4), Denton Mateychuk (2)"
 2026-11-03 20:27:05,401892642,2026-11-03,car,nsh,in,10:41 - 1st,1,10:41,0.0,0.0,2.0,6.0,Stoppage,Goalie Stopped
+2026-11-03 20:28:06,401892633,2026-11-03,uta,tor,in,6:55 - 2nd,2,6:55,1.0,1.0,12.0,23.0,Stoppage,TV Timeout
+2026-11-03 20:28:06,401892634,2026-11-03,wpg,mtl,in,9:01 - 2nd,2,9:01,0.0,3.0,10.0,18.0,Stoppage,Icing
+2026-11-03 20:28:06,401892635,2026-11-03,det,tb,in,8:11 - 2nd,2,8:11,1.0,3.0,16.0,3.0,Penalty Shot Infraction,Ben Chiarot Minor
+2026-11-03 20:28:06,401892637,2026-11-03,stl,nyr,in,9:47 - 2nd,2,9:47,0.0,1.0,14.0,17.0,Blocked,J.T. Miller shot blocked by Adam Jiricek
+2026-11-03 20:28:06,401892638,2026-11-03,min,phi,in,5:00 - 2nd,2,5:00,3.0,1.0,13.0,13.0,Face Off,Christian Dvorak faceoff won against Joel Eriksson Ek
+2026-11-03 20:28:06,401892640,2026-11-03,dal,wsh,in,6:10 - 2nd,2,6:10,4.0,1.0,10.0,13.0,Stoppage,TV Timeout
+2026-11-03 20:28:06,401892641,2026-11-03,col,cbj,in,6:25 - 2nd,2,6:25,1.0,6.0,6.0,13.0,Face Off,Brock Nelson faceoff won against Cole Sillinger
+2026-11-03 20:28:06,401892642,2026-11-03,car,nsh,in,9:46 - 1st,1,9:46,0.0,0.0,2.0,6.0,Face Off,Nicolas Deslauriers faceoff won against Alexander Kerfoot
+2026-11-03 20:29:05,401892634,2026-11-03,wpg,mtl,in,8:57 - 2nd,2,8:57,0.0,3.0,10.0,19.0,Stoppage,Goalie Stopped
+2026-11-03 20:29:05,401892635,2026-11-03,det,tb,in,7:42 - 2nd,2,7:42,1.0,3.0,16.0,3.0,Missed,Nikita Kucherov Missed Shot Wide Right
+2026-11-03 20:29:05,401892637,2026-11-03,stl,nyr,in,9:47 - 2nd,2,9:47,0.0,1.0,14.0,17.0,Stoppage,On-Ice Official
+2026-11-03 20:29:05,401892638,2026-11-03,min,phi,in,3:49 - 2nd,2,3:49,3.0,1.0,13.0,15.0,Missed,Travis Konecny Wrist Shot Above Crossbar
+2026-11-03 20:29:05,401892639,2026-11-03,vgk,pit,in,7:43 - 2nd,2,7:43,1.0,0.0,14.0,12.0,Face Off,Jack Eichel faceoff won against Hendrix Lapierre
+2026-11-03 20:29:05,401892641,2026-11-03,col,cbj,in,5:43 - 2nd,2,5:43,1.0,6.0,6.0,13.0,Stoppage,Icing
+2026-11-03 20:29:05,401892642,2026-11-03,car,nsh,in,8:42 - 1st,1,8:42,0.0,0.0,2.0,6.0,Blocked,Nikolaj Ehlers shot blocked by Ryan O'Reilly
+2026-11-03 20:30:05,401892633,2026-11-03,uta,tor,in,6:35 - 2nd,2,6:35,1.0,1.0,12.0,23.0,Face Off,Nick Paul faceoff won against Barrett Hayton
+2026-11-03 20:30:05,401892635,2026-11-03,det,tb,in,7:00 - 2nd,2,7:00,1.0,3.0,17.0,3.0,Blocked,Nikita Kucherov shot blocked by Keegan Kolesar
+2026-11-03 20:30:05,401892638,2026-11-03,min,phi,in,3:36 - 2nd,2,3:36,3.0,1.0,13.0,15.0,Stoppage,TV Timeout
+2026-11-03 20:30:05,401892639,2026-11-03,vgk,pit,in,7:29 - 2nd,2,7:29,1.0,0.0,14.0,12.0,Penalty Shot Infraction,Erik Karlsson Minor against Mark Stone
+2026-11-03 20:30:05,401892640,2026-11-03,dal,wsh,in,5:50 - 2nd,2,5:50,4.0,1.0,10.0,13.0,Face Off,Dylan Strome faceoff won against Wyatt Johnston
+2026-11-03 20:30:05,401892641,2026-11-03,col,cbj,in,5:13 - 2nd,2,5:13,1.0,6.0,6.0,13.0,Stoppage,Off-side
+2026-11-03 20:30:05,401892642,2026-11-03,car,nsh,in,8:42 - 1st,1,8:42,0.0,0.0,2.0,6.0,Stoppage,Goalie Stopped
+2026-11-03 20:31:06,401892633,2026-11-03,uta,tor,in,6:18 - 2nd,2,6:18,1.0,1.0,12.0,24.0,Face Off,Barrett Hayton faceoff won against Colton Sissons
+2026-11-03 20:31:06,401892634,2026-11-03,wpg,mtl,in,8:47 - 2nd,2,8:47,0.0,3.0,10.0,20.0,Stoppage,Goalie Stopped
+2026-11-03 20:31:06,401892635,2026-11-03,det,tb,in,6:38 - 2nd,2,6:38,1.0,3.0,17.0,3.0,Stoppage,Puck in Benches
+2026-11-03 20:31:06,401892637,2026-11-03,stl,nyr,in,9:29 - 2nd,2,9:29,0.0,1.0,14.0,17.0,Stoppage,Goalie Stopped
+2026-11-03 20:31:06,401892639,2026-11-03,vgk,pit,in,6:27 - 2nd,2,6:27,1.0,0.0,14.0,13.0,Blocked,Mark Stone shot blocked by Kaedan Korczak
+2026-11-03 20:31:06,401892640,2026-11-03,dal,wsh,in,5:10 - 2nd,2,5:10,4.0,1.0,10.0,13.0,Missed,Jordan Kyrou Snap Shot Above Crossbar
+2026-11-03 20:32:05,401892633,2026-11-03,uta,tor,in,6:18 - 2nd,2,6:18,2.0,1.0,12.0,24.0,Goal,"Andrew Peeke Goal (2) Wrist Shot, assists: none"
+2026-11-03 20:32:05,401892634,2026-11-03,wpg,mtl,in,8:22 - 2nd,2,8:22,0.0,3.0,10.0,21.0,Blocked,Kyle Connor shot blocked by Lane Hutson
+2026-11-03 20:32:05,401892635,2026-11-03,det,tb,in,5:50 - 2nd,2,5:50,1.0,3.0,17.0,3.0,Shot,Alex DeBrincat saved by Andrei Vasilevskiy
+2026-11-03 20:32:05,401892637,2026-11-03,stl,nyr,in,9:07 - 2nd,2,9:07,0.0,1.0,14.0,18.0,Stoppage,Goalie Stopped
+2026-11-03 20:32:05,401892638,2026-11-03,min,phi,in,3:20 - 2nd,2,3:20,3.0,1.0,13.0,15.0,Face Off,Ryan Hartman faceoff won against Cole Knuble
+2026-11-03 20:32:05,401892639,2026-11-03,vgk,pit,in,6:01 - 2nd,2,6:01,1.0,0.0,14.0,14.0,Face Off,William Karlsson faceoff won against Blake Lizotte
+2026-11-03 20:32:05,401892640,2026-11-03,dal,wsh,in,4:29 - 2nd,2,4:29,5.0,1.0,10.0,13.0,Face Off,Pierre-Luc Dubois faceoff won against Radek Faksa
+2026-11-03 20:32:05,401892641,2026-11-03,col,cbj,in,4:58 - 2nd,2,4:58,1.0,6.0,6.0,13.0,Face Off,Nathan MacKinnon faceoff won against Charlie Coyle
+2026-11-03 20:32:05,401892636,2026-11-03,edm,nj,in,20:00 - 2nd,2,20:00,1.0,0.0,9.0,8.0,Period End,End of 1st Period
+2026-11-03 20:32:05,401892642,2026-11-03,car,nsh,in,8:16 - 1st,1,8:16,0.0,0.0,2.0,6.0,Stoppage,Off-side
+2026-11-03 20:33:05,401892633,2026-11-03,uta,tor,in,6:15 - 2nd,2,6:15,2.0,1.0,12.0,24.0,Goal,"Andrew Peeke Goal (2) Wrist Shot, assists: Clayton Keller (16), Anders Lee (4)"
+2026-11-03 20:33:05,401892634,2026-11-03,wpg,mtl,in,8:01 - 2nd,2,8:01,0.0,3.0,10.0,21.0,Blocked,Mario Ferraro shot blocked by Juraj Slafkovský
+2026-11-03 20:33:05,401892635,2026-11-03,det,tb,in,5:50 - 2nd,2,5:50,1.0,3.0,17.0,4.0,Tripping,Pontus Holmberg Tripping against Emmitt Finnie
+2026-11-03 20:33:05,401892637,2026-11-03,stl,nyr,in,8:13 - 2nd,2,8:13,0.0,1.0,14.0,18.0,Blocked,Cam Fowler shot blocked by Mason McTavish
+2026-11-03 20:33:05,401892638,2026-11-03,min,phi,in,2:50 - 2nd,2,2:50,3.0,1.0,13.0,15.0,Stoppage,Icing
+2026-11-03 20:33:05,401892639,2026-11-03,vgk,pit,in,5:23 - 2nd,2,5:23,1.0,0.0,14.0,17.0,Stoppage,TV Timeout
+2026-11-03 20:33:05,401892640,2026-11-03,dal,wsh,in,4:05 - 2nd,2,4:05,5.0,1.0,10.0,13.0,Stoppage,TV Timeout
+2026-11-03 20:33:05,401892641,2026-11-03,col,cbj,in,4:16 - 2nd,2,4:16,1.0,6.0,7.0,13.0,Shot,Artturi Lehkonen saved by Cam Talbot
+2026-11-03 20:33:05,401892642,2026-11-03,car,nsh,in,7:56 - 1st,1,7:56,0.0,0.0,2.0,6.0,Stoppage,Off-side
