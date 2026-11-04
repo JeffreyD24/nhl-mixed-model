@@ -7288,3 +7288,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 16:47:44,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,event,total,under,6.0,104,normal
 2026-11-04 16:47:44,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Consensus,event,team_total,away_under,3.0,-106,normal
 2026-11-04 16:47:44,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Consensus,event,team_total,away_over,3.0,-129,normal
+2026-11-04 16:49:32,293548,2026-11-04,2026-11-04 22:00,sj,la,Consensus,firstperiod,moneyline,home,0.0,-152,normal
+2026-11-04 16:49:32,293545,2026-11-04,2026-11-04 19:30,chi,fla,Consensus,thirdperiod,team_total,away_over,0.5,-145,normal
