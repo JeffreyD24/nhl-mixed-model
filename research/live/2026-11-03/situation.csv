@@ -1115,3 +1115,19 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 21:48:05,401892637,2026-11-03,stl,nyr,in,0:56 - 3rd,3,0:56,0.0,3.0,28.0,32.0,Missed,Pius Suter Missed Shot Wide Right
 2026-11-03 21:48:05,401892636,2026-11-03,edm,nj,in,8:45 - 3rd,3,8:45,3.0,3.0,23.0,13.0,Stoppage,Off-side
 2026-11-03 21:48:05,401892643,2026-11-03,ana,van,in,0:13 - 1st,1,0:13,2.0,1.0,7.0,7.0,Missed,Liam Ohgren Missed Shot Wide Left
+2026-11-03 21:49:05,401892634,2026-11-03,wpg,mtl,in,1:43 - 3rd,3,1:43,2.0,4.0,17.0,36.0,Shot,Cole Perfetti Snap Shot saved by Jacob Fowler
+2026-11-03 21:49:05,401892637,2026-11-03,stl,nyr,in,0:21 - 3rd,3,0:21,1.0,3.0,28.0,32.0,Goal,"Pius Suter Goal (4) Backhand, assists: Alexey Toropchenko (2), Theo Lindstein (2)"
+2026-11-03 21:49:05,401892636,2026-11-03,edm,nj,in,8:20 - 3rd,3,8:20,3.0,3.0,23.0,13.0,Face Off,Ryan Nugent-Hopkins faceoff won against Jack Hughes
+2026-11-03 21:49:05,401892643,2026-11-03,ana,van,in,End of 1st,1,0:00,2.0,1.0,7.0,8.0,Period End,End of 1st Period
+2026-11-03 21:50:05,401892634,2026-11-03,wpg,mtl,in,1:13 - 3rd,3,1:13,2.0,4.0,17.0,39.0,Stoppage,Goalie Stopped
+2026-11-03 21:50:05,401892637,2026-11-03,stl,nyr,in,0:08 - 3rd,3,0:08,1.0,3.0,28.0,32.0,Delaying Game - Puck over Glass,Alberts Smits Delaying Game - Puck over glass
+2026-11-03 21:50:05,401892636,2026-11-03,edm,nj,in,7:36 - 3rd,3,7:36,3.0,3.0,23.0,13.0,Face Off,Jack Hughes faceoff won against Colton Dach
+2026-11-03 21:51:06,401892634,2026-11-03,wpg,mtl,in,0:59 - 3rd,3,0:59,3.0,4.0,17.0,39.0,Goal,"Kyle Connor Goal (12), assists: Mark Scheifele (11)"
+2026-11-03 21:51:06,401892637,2026-11-03,stl,nyr,in,End of 3rd,3,0:00,1.0,3.0,28.0,32.0,Delaying Game - Puck over Glass,Alberts Smits Delaying Game - Puck over glass
+2026-11-03 21:51:06,401892636,2026-11-03,edm,nj,in,6:31 - 3rd,3,6:31,3.0,3.0,23.0,14.0,Missed,Declan Chisholm Missed Shot Wide Left
+2026-11-03 21:52:05,401892634,2026-11-03,wpg,mtl,in,0:59 - 3rd,3,0:59,3.0,4.0,17.0,39.0,Stoppage,Timeout - Visitor
+2026-11-03 21:52:05,401892636,2026-11-03,edm,nj,in,5:41 - 3rd,3,5:41,3.0,3.0,23.0,14.0,Blocked,Ryan Shea shot blocked by Anthony Mantha
+2026-11-03 21:53:05,401892634,2026-11-03,wpg,mtl,in,0:43 - 3rd,3,0:43,3.0,4.0,17.0,39.0,Face Off,Gabriel Vilardi faceoff won against Phillip Danault
+2026-11-03 21:53:05,401892636,2026-11-03,edm,nj,in,4:35 - 3rd,3,4:35,3.0,3.0,23.0,14.0,Blocked,Ryan Shea shot blocked by Anthony Mantha
+2026-11-03 21:54:05,401892634,2026-11-03,wpg,mtl,in,0:34 - 3rd,3,0:34,3.0,4.0,17.0,39.0,Stoppage,Icing
+2026-11-03 21:54:05,401892636,2026-11-03,edm,nj,in,3:49 - 3rd,3,3:49,3.0,3.0,24.0,14.0,Stoppage,Off-side
