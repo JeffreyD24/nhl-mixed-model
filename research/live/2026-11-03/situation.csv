@@ -73,3 +73,46 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 19:17:05,401892639,2026-11-03,vgk,pit,in,14:12 - 1st,1,14:12,0.0,0.0,1.0,2.0,Stoppage,Goalie Stopped
 2026-11-03 19:17:05,401892640,2026-11-03,dal,wsh,in,14:14 - 1st,1,14:14,0.0,0.0,1.0,0.0,Missed,Dylan Strome Tip-In Wide Right
 2026-11-03 19:17:05,401892641,2026-11-03,col,cbj,in,14:42 - 1st,1,14:42,0.0,1.0,1.0,3.0,Face Off,Nazem Kadri faceoff won against Sean Monahan
+2026-11-03 19:18:05,401892633,2026-11-03,uta,tor,in,14:43 - 1st,1,14:43,0.0,0.0,2.0,2.0,Missed,MacKenzie Weegar Wrist Shot Wide Left
+2026-11-03 19:18:05,401892634,2026-11-03,wpg,mtl,in,14:01 - 1st,1,14:01,0.0,1.0,3.0,4.0,Stoppage,Icing
+2026-11-03 19:18:05,401892635,2026-11-03,det,tb,in,13:07 - 1st,1,13:07,0.0,0.0,1.0,1.0,Penalty Shot Infraction,Moritz Seider Minor
+2026-11-03 19:18:05,401892637,2026-11-03,stl,nyr,in,13:58 - 1st,1,13:58,0.0,0.0,0.0,3.0,Blocked,Gabe Perreault shot blocked by Justin Barron
+2026-11-03 19:18:05,401892638,2026-11-03,min,phi,in,15:04 - 1st,1,15:04,2.0,0.0,1.0,4.0,Face Off,Danila Yurov faceoff won against Denver Barkey
+2026-11-03 19:18:05,401892639,2026-11-03,vgk,pit,in,13:44 - 1st,1,13:44,0.0,0.0,1.0,2.0,Face Off,William Karlsson faceoff won against Sidney Crosby
+2026-11-03 19:18:05,401892640,2026-11-03,dal,wsh,in,13:57 - 1st,1,13:57,0.0,0.0,1.0,0.0,Stoppage,TV Timeout
+2026-11-03 19:18:05,401892641,2026-11-03,col,cbj,in,14:00 - 1st,1,14:00,0.0,1.0,1.0,3.0,Missed,Gabriel Landeskog Deflected Wide Right
+2026-11-03 19:19:05,401892633,2026-11-03,uta,tor,in,14:26 - 1st,1,14:26,0.0,0.0,2.0,2.0,Missed,Liam O'Brien Missed Shot Above Crossbar
+2026-11-03 19:19:05,401892634,2026-11-03,wpg,mtl,in,13:19 - 1st,1,13:19,0.0,1.0,3.0,4.0,Shot,Neal Pionk Slap Shot saved by Jacob Fowler
+2026-11-03 19:19:05,401892635,2026-11-03,det,tb,in,13:07 - 1st,1,13:07,0.0,0.0,2.0,1.0,Interference,Moritz Seider Interference against Jeff Viel
+2026-11-03 19:19:05,401892637,2026-11-03,stl,nyr,in,13:51 - 1st,1,13:51,0.0,0.0,0.0,4.0,Stoppage,Goalie Stopped
+2026-11-03 19:19:05,401892638,2026-11-03,min,phi,in,14:42 - 1st,1,14:42,2.0,0.0,2.0,4.0,Penalty Shot Infraction,Denver Barkey Minor against Danila Yurov
+2026-11-03 19:19:05,401892639,2026-11-03,vgk,pit,in,13:16 - 1st,1,13:16,0.0,0.0,2.0,2.0,Face Off,Nic Dowd faceoff won against Hendrix Lapierre
+2026-11-03 19:19:05,401892641,2026-11-03,col,cbj,in,13:50 - 1st,1,13:50,0.0,1.0,1.0,3.0,Stoppage,TV Timeout
+2026-11-03 19:20:05,401892633,2026-11-03,uta,tor,in,14:13 - 1st,1,14:13,0.0,0.0,2.0,3.0,Hooking,Liam O'Brien Hooking against Troy Stecher
+2026-11-03 19:20:05,401892634,2026-11-03,wpg,mtl,in,12:35 - 1st,1,12:35,0.0,1.0,3.0,6.0,Penalty Shot Infraction,Noah Dobson Minor
+2026-11-03 19:20:05,401892635,2026-11-03,det,tb,in,13:07 - 1st,1,13:07,0.0,0.0,2.0,1.0,Stoppage,TV Timeout
+2026-11-03 19:20:05,401892637,2026-11-03,stl,nyr,in,13:51 - 1st,1,13:51,0.0,0.0,1.0,4.0,Stoppage,Goalie Stopped
+2026-11-03 19:20:05,401892638,2026-11-03,min,phi,in,14:16 - 1st,1,14:16,2.0,0.0,3.0,4.0,Face Off,Sean Couturier faceoff won against Joel Eriksson Ek
+2026-11-03 19:20:05,401892639,2026-11-03,vgk,pit,in,12:06 - 1st,1,12:06,0.0,0.0,2.0,2.0,Blocked,Blake Lizotte shot blocked by Rasmus Andersson
+2026-11-03 19:20:05,401892640,2026-11-03,dal,wsh,in,13:54 - 1st,1,13:54,0.0,0.0,1.0,0.0,Face Off,Justin Hryckowian faceoff won against Justin Sourdif
+2026-11-03 19:21:05,401892633,2026-11-03,uta,tor,in,13:11 - 1st,1,13:11,0.0,0.0,2.0,4.0,Shot,Gavin McKenna saved by Sebastian Cossa
+2026-11-03 19:21:05,401892634,2026-11-03,wpg,mtl,in,12:35 - 1st,1,12:35,0.0,1.0,3.0,7.0,Stoppage,TV Timeout
+2026-11-03 19:21:05,401892635,2026-11-03,det,tb,in,12:06 - 1st,1,12:06,0.0,0.0,3.0,1.0,Blocked,Nikita Kucherov shot blocked by Ben Chiarot
+2026-11-03 19:21:05,401892637,2026-11-03,stl,nyr,in,13:00 - 1st,1,13:00,0.0,0.0,1.0,4.0,Face Off,Mika Zibanejad faceoff won against Dalibor Dvorsky
+2026-11-03 19:21:05,401892638,2026-11-03,min,phi,in,13:07 - 1st,1,13:07,2.0,0.0,3.0,4.0,Face Off,Sean Couturier faceoff won against Joel Eriksson Ek
+2026-11-03 19:21:05,401892639,2026-11-03,vgk,pit,in,11:46 - 1st,1,11:46,0.0,0.0,2.0,2.0,Stoppage,Puck in Crowd
+2026-11-03 19:21:05,401892640,2026-11-03,dal,wsh,in,13:12 - 1st,1,13:12,0.0,0.0,1.0,0.0,Face Off,Anthony Beauvillier faceoff won against Arttu Hyry
+2026-11-03 19:21:05,401892641,2026-11-03,col,cbj,in,13:20 - 1st,1,13:20,0.0,1.0,1.0,3.0,Face Off,Adam Fantilli faceoff won against Brock Nelson
+2026-11-03 19:22:06,401892633,2026-11-03,uta,tor,in,12:11 - 1st,1,12:11,0.0,0.0,3.0,4.0,Shot,Gavin McKenna Wrist Shot saved by Sebastian Cossa
+2026-11-03 19:22:06,401892635,2026-11-03,det,tb,in,11:52 - 1st,1,11:52,0.0,1.0,3.0,1.0,Goal,"Brayden Point Goal (4) Slap Shot, assists: Nikita Kucherov (15), Charle-Edouard D'Astous (6)"
+2026-11-03 19:22:06,401892637,2026-11-03,stl,nyr,in,12:16 - 1st,1,12:16,0.0,0.0,1.0,4.0,Stoppage,Puck in Netting
+2026-11-03 19:22:06,401892638,2026-11-03,min,phi,in,12:06 - 1st,1,12:06,2.0,0.0,3.0,5.0,Blocked,Matt Boldy shot blocked by Maxim Shabanov
+2026-11-03 19:22:06,401892640,2026-11-03,dal,wsh,in,12:34 - 1st,1,12:34,0.0,0.0,1.0,0.0,Stoppage,Goalie Stopped
+2026-11-03 19:22:06,401892641,2026-11-03,col,cbj,in,12:32 - 1st,1,12:32,0.0,1.0,1.0,3.0,Face Off,Adam Fantilli faceoff won against Brock Nelson
+2026-11-03 19:23:05,401892633,2026-11-03,uta,tor,in,11:15 - 1st,1,11:15,0.0,0.0,3.0,6.0,Shot,Dmitri Simashev saved by Sergei Bobrovsky
+2026-11-03 19:23:05,401892634,2026-11-03,wpg,mtl,in,11:46 - 1st,1,11:46,0.0,1.0,3.0,7.0,Face Off,Phillip Danault faceoff won against Gabriel Vilardi
+2026-11-03 19:23:05,401892635,2026-11-03,det,tb,in,11:29 - 1st,1,11:29,0.0,1.0,3.0,2.0,Stoppage,Goalie Stopped
+2026-11-03 19:23:05,401892637,2026-11-03,stl,nyr,in,12:07 - 1st,1,12:07,0.0,0.0,1.0,5.0,Stoppage,Goalie Stopped
+2026-11-03 19:23:05,401892638,2026-11-03,min,phi,in,11:09 - 1st,1,11:09,2.0,0.0,3.0,5.0,Missed,Travis Konecny Wrist Shot Wide Right
+2026-11-03 19:23:05,401892640,2026-11-03,dal,wsh,in,11:54 - 1st,1,11:54,0.0,0.0,2.0,0.0,Face Off,Pierre-Luc Dubois faceoff won against Jamie Benn
+2026-11-03 19:23:05,401892641,2026-11-03,col,cbj,in,12:23 - 1st,1,12:23,0.0,1.0,2.0,3.0,Missed,Missed Shot
