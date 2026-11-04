@@ -1,0 +1,43 @@
+name: Spreads step 1 NHL - rebuild history and holdout predictions
+# Runs research/spreads/step1_nhl_build.py (pre-registration: research/spreads/STEP1_NHL_PREREG.md).
+# Triggered by a push that changes the build script or the trigger file, or by hand.
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - research/spreads/step1_nhl_build.py
+      - research/spreads/step1_nhl_build.trigger
+permissions:
+  contents: write
+concurrency:
+  group: fetch-data
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -q -r requirements.txt
+      - name: Rebuild box/shots and walk-forward predictions (lag 1 and lag 0)
+        run: python research/spreads/step1_nhl_build.py . 2>&1 | tee research/spreads/nhl_holdout/build_log.txt
+      - name: Commit holdout predictions to main
+        run: |
+          git config user.name "nhl-tracker-bot"; git config user.email "actions@users.noreply.github.com"
+          git add research/spreads/nhl_holdout
+          git diff --cached --quiet || git commit -q -m "Spreads step 1 NHL: holdout predictions (lag 1 / lag 0), 2021-22..2025-26"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 15; done
+      - name: Push gzipped box/shots history to the data-rebuild branch
+        run: |
+          mkdir -p /tmp/rebuild && gzip -c data/box_hist.csv > /tmp/rebuild/box_hist.csv.gz && gzip -c data/shots_hist.csv > /tmp/rebuild/shots_hist.csv.gz
+          ls -la /tmp/rebuild
+          cd /tmp/rebuild && git init -q && git checkout -q -b data-rebuild
+          git config user.name "nhl-tracker-bot"; git config user.email "actions@users.noreply.github.com"
+          printf "Rebuilt %s by step1-nhl-build.yml. Unzip into data/ to run analysis/rule_audit_nhl.py or dev/dk_holdout.py.\n" "$(date -u +%F)" > README.md
+          git add . && git commit -q -m "box_hist / shots_hist rebuilt $(date -u +%F)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data-rebuild
