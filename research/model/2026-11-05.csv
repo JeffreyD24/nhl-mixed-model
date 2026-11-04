@@ -21,3 +21,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-04 10:03,goals,401892657,2026-11-05,ana,edm,0.6063,3.815,3.029,6.99,Lukas Dostal (expected),Tristan Jarry (expected),"ANA: Greer, Hinds | EDM: Frederic, Howard, Emberson"
 2026-11-04 10:03,xg,401892658,2026-11-05,nsh,col,0.5757,3.544,2.812,6.51,Juuse Saros (expected),Mackenzie Blackwood (expected),"NSH: Marchessault, Wood, Hague | COL: -"
 2026-11-04 10:03,goals,401892658,2026-11-05,nsh,col,0.5639,3.473,2.996,6.63,Juuse Saros (expected),Mackenzie Blackwood (expected),"NSH: Marchessault, Wood, Hague | COL: -"
+2026-11-04 10:24,xg,401892658,2026-11-05,nsh,col,0.5746,3.544,2.819,6.52,Juuse Saros (expected),Mackenzie Blackwood (expected),"NSH: Marchessault?, Wood, Hague | COL: -"
+2026-11-04 10:24,goals,401892658,2026-11-05,nsh,col,0.563,3.473,3.001,6.63,Juuse Saros (expected),Mackenzie Blackwood (expected),"NSH: Marchessault?, Wood, Hague | COL: -"
