@@ -2,3 +2,4 @@ checked_utc,status,problems,warnings,alert_checks_failed,polymarket_timeouts,det
 2026-11-03 21:56 UTC,ALL OK,0,0,0,1,
 2026-11-03 22:00 UTC,ALL OK,0,0,0,1,
 2026-11-03 23:38 UTC,WARNINGS,0,2,0,0,Market moves log (state/market_moves.csv): newest data 78.3 h old (limit 72 h) | no state/heartbeat_alert.txt yet (written after the first good alert.py call)
+2026-11-04 13:26 UTC,WARNINGS,0,1,0,0,UNREGISTERED data path state/heartbeat_alert.txt: add it to STREAMS (or IGNORE) in health_check.py
