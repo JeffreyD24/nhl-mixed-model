@@ -1088,3 +1088,30 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-03 21:42:06,401892636,2026-11-03,edm,nj,in,12:32 - 3rd,3,12:32,3.0,3.0,23.0,12.0,Shot,Connor McDavid saved by Connor Hellebuyck
 2026-11-03 21:42:06,401892642,2026-11-03,car,nsh,in,2:21 - 2nd,2,2:21,1.0,2.0,10.0,16.0,Face Off,William Carrier faceoff won against Shane Wright
 2026-11-03 21:42:06,401892643,2026-11-03,ana,van,in,3:01 - 1st,1,3:01,1.0,1.0,6.0,5.0,Hooking,Liam Ohgren Hooking against Jackson LaCombe
+2026-11-03 21:43:05,401892634,2026-11-03,wpg,mtl,in,4:32 - 3rd,3,4:32,0.0,4.0,17.0,36.0,Face Off,Gabriel Vilardi faceoff won against Phillip Danault
+2026-11-03 21:43:05,401892637,2026-11-03,stl,nyr,in,2:18 - 3rd,3,2:18,0.0,2.0,28.0,29.0,Stoppage,Goalie Stopped
+2026-11-03 21:43:05,401892636,2026-11-03,edm,nj,in,11:20 - 3rd,3,11:20,3.0,3.0,23.0,12.0,Blocked,Connor Murphy shot blocked by Johnathan Kovacevic
+2026-11-03 21:43:05,401892642,2026-11-03,car,nsh,in,1:45 - 2nd,2,1:45,1.0,2.0,10.0,16.0,Blocked,Blocked Shot
+2026-11-03 21:43:05,401892643,2026-11-03,ana,van,in,2:53 - 1st,1,2:53,1.0,1.0,6.0,5.0,Hooking,Liam Ohgren Hooking against Jackson LaCombe
+2026-11-03 21:44:05,401892634,2026-11-03,wpg,mtl,in,3:55 - 3rd,3,3:55,0.0,4.0,17.0,36.0,Face Off,Phillip Danault faceoff won against Gabriel Vilardi
+2026-11-03 21:44:05,401892637,2026-11-03,stl,nyr,in,2:01 - 3rd,3,2:01,0.0,2.0,28.0,30.0,Missed,Missed Shot
+2026-11-03 21:44:05,401892636,2026-11-03,edm,nj,in,10:25 - 3rd,3,10:25,3.0,3.0,23.0,12.0,Missed,Timo Meier Wrist Shot Wide Left
+2026-11-03 21:44:05,401892642,2026-11-03,car,nsh,in,0:56 - 2nd,2,0:56,1.0,2.0,10.0,17.0,Stoppage,Icing
+2026-11-03 21:44:05,401892643,2026-11-03,ana,van,in,2:37 - 1st,1,2:37,2.0,1.0,6.0,5.0,Goal,"Cutter Gauthier Goal (8), assists: Beckett Sennecke (6), Jackson LaCombe (16)"
+2026-11-03 21:45:06,401892634,2026-11-03,wpg,mtl,in,2:52 - 3rd,3,2:52,0.0,4.0,17.0,37.0,Missed,Dawson Mercer Snap Shot
+2026-11-03 21:45:06,401892637,2026-11-03,stl,nyr,in,1:36 - 3rd,3,1:36,0.0,3.0,28.0,30.0,Stoppage,Puck Frozen - Goalie
+2026-11-03 21:45:06,401892636,2026-11-03,edm,nj,in,9:38 - 3rd,3,9:38,3.0,3.0,23.0,13.0,Takeaway,Takeaway by Vasily Podkolzin
+2026-11-03 21:45:06,401892642,2026-11-03,car,nsh,in,0:17 - 2nd,2,0:17,1.0,2.0,10.0,17.0,Blocked,Brady Skjei shot blocked by Adam Edstrom
+2026-11-03 21:45:06,401892643,2026-11-03,ana,van,in,1:55 - 1st,1,1:55,2.0,1.0,6.0,5.0,Stoppage,Goalie Stopped
+2026-11-03 21:46:05,401892634,2026-11-03,wpg,mtl,in,2:39 - 3rd,3,2:39,0.0,4.0,17.0,37.0,Missed,Missed Shot
+2026-11-03 21:46:05,401892637,2026-11-03,stl,nyr,in,1:09 - 3rd,3,1:09,0.0,3.0,28.0,30.0,Blocked,Brandon Carlo shot blocked by Noah Laba
+2026-11-03 21:46:05,401892636,2026-11-03,edm,nj,in,9:03 - 3rd,3,9:03,3.0,3.0,23.0,13.0,Stoppage,Off-side
+2026-11-03 21:46:05,401892642,2026-11-03,car,nsh,in,End of 2nd,2,0:00,1.0,2.0,10.0,17.0,Period End,End of 2nd Period
+2026-11-03 21:46:05,401892643,2026-11-03,ana,van,in,1:21 - 1st,1,1:21,2.0,1.0,6.0,6.0,Shot,Drew O'Connor saved by Laurent Brossoit
+2026-11-03 21:47:05,401892634,2026-11-03,wpg,mtl,in,2:12 - 3rd,3,2:12,1.0,4.0,17.0,36.0,Goal,"Tyrel Bauer Goal (1), assists: none"
+2026-11-03 21:47:05,401892637,2026-11-03,stl,nyr,in,1:04 - 3rd,3,1:04,0.0,3.0,28.0,31.0,Shot,Theo Lindstein saved by Dylan Garand
+2026-11-03 21:47:05,401892643,2026-11-03,ana,van,in,0:37 - 1st,1,0:37,2.0,1.0,7.0,6.0,Stoppage,On-Ice Official
+2026-11-03 21:48:05,401892634,2026-11-03,wpg,mtl,in,1:57 - 3rd,3,1:57,2.0,4.0,17.0,36.0,Goal,"Morgan Barron Goal (2), assists: Tyrel Bauer (1), Dylan DeMelo (5)"
+2026-11-03 21:48:05,401892637,2026-11-03,stl,nyr,in,0:56 - 3rd,3,0:56,0.0,3.0,28.0,32.0,Missed,Pius Suter Missed Shot Wide Right
+2026-11-03 21:48:05,401892636,2026-11-03,edm,nj,in,8:45 - 3rd,3,8:45,3.0,3.0,23.0,13.0,Stoppage,Off-side
+2026-11-03 21:48:05,401892643,2026-11-03,ana,van,in,0:13 - 1st,1,0:13,2.0,1.0,7.0,7.0,Missed,Liam Ohgren Missed Shot Wide Left
