@@ -1,0 +1,260 @@
+Games with DK opener + shot model prediction: 6560 (2022: 1312, 2023: 1312, 2024: 1312, 2025: 1312, 2026: 1312)
+Pinnacle first moneyline seen for 100% of games; posted after DK's opener in 88%; median lag 4.0 h; Pinnacle already up at DK's opener 12%
+
+==================================================================================================================================
+0. THE LIVE RULES AT DK'S OPENER (2021-22..2025-26)
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  moneyline: blend EV 4%+, all                                1269 bets  55.9%   +147.0u  (+11.6%)  |  +22.2  +51.5  +21.8  +25.4  +26.2  neg 0/5
+  moneyline: + no b2b + Pinnacle (only if up at DK open)      1165 bets  56.7%   +155.0u  (+13.3%)  |  +21.4  +54.5  +22.0  +26.5  +30.6  neg 0/5
+  puck line: EV 6%+, all                                      1405 bets  48.0%    +41.8u  ( +3.0%)  |  +10.9  +31.8   -1.4   +5.2   -4.6  neg 2/5
+  puck line: + no b2b                                         1268 bets  49.4%    +79.1u  ( +6.2%)  |  +13.1  +41.5   -2.4  +12.2  +14.7  neg 1/5
+  overs: EV 6%+                                                539 bets  56.0%    +50.5u  ( +9.4%)  |  +10.6   +8.6   +6.5   +6.1  +18.7  neg 0/5
+
+==================================================================================================================================
+1. SKIP_B2B: no bet on a team playing the 2nd night of a back-to-back (b2b known from the schedule: no timing issue)
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  ML (live blend, incl. travel adj.) kept: not b2b            1192 bets  56.2%   +146.2u  (+12.3%)  |  +19.0  +50.4  +19.7  +26.5  +30.6  neg 0/5
+  ML (live blend) BLOCKED: our team on b2b                      77 bets  51.9%     +0.9u  ( +1.1%)  |   +3.2   +1.0   +2.1   -1.1   -4.4  neg 2/5
+  ML raw shot model EV 6%+ BLOCKED (no travel adj, as originally tested)   196 bets  47.4%    -18.5u  ( -9.5%)  |   -0.4   -5.7   +3.9  -11.1   -5.3  neg 4/5
+  PL kept: not b2b                                            1268 bets  49.4%    +79.1u  ( +6.2%)  |  +13.1  +41.5   -2.4  +12.2  +14.7  neg 1/5
+  PL BLOCKED: our team on b2b                                  137 bets  35.0%    -37.3u  (-27.2%)  |   -2.2   -9.7   +1.0   -7.0  -19.3  neg 4/5
+    of which both teams on b2b (ML)                             57 bets  56.1%     +5.3u  ( +9.3%)  |   +3.1   +0.6   +2.0   -0.0   -0.4  neg 2/5
+    of which both teams on b2b (PL)                             77 bets  36.4%    -18.6u  (-24.1%)  |   -3.6   -2.0   +3.3   -5.6  -10.7  neg 4/5
+  overs with either team on b2b (rule does not apply)          212 bets  50.9%     +2.7u  ( +1.3%)  |   +1.7   +3.9   +4.4   -1.2   -6.1  neg 2/5
+
+==================================================================================================================================
+2. PINNACLE at alert time (USE_PINNACLE_RULE): Pinnacle already posted when DK opens and gives our side 0.5+ pts less -> NO BET
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  ML: Pinnacle up at DK open, agrees/same (kept)               108 bets  63.9%    +21.7u  (+20.1%)  |   +6.5  +12.3   +1.1   +0.0   +1.7  neg 0/5
+  ML: Pinnacle up at DK open, disagrees (BLOCKED)               27 bets  37.0%     -8.8u  (-32.7%)  |   -2.4   -4.1   -2.4   +0.0   +0.0  neg 3/5
+  ML: Pinnacle not up yet at DK open (alert goes out)         1134 bets  55.6%   +134.2u  (+11.8%)  |  +18.1  +43.3  +23.0  +25.4  +24.5  neg 0/5
+
+==================================================================================================================================
+3. PINNACLE after the alert (DON'T BET follow-up): bet alerted at DK open, Pinnacle posts later and disagrees
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  (a) graded at DK's OPENING price with Pinnacle's later verdict = the quoted record (LOOK-AHEAD: cannot both bet the open and filter)
+      Pinnacle first price agrees/same                         865 bets  57.6%   +128.5u  (+14.9%)  |  +21.5  +36.3  +21.5  +24.2  +24.9  neg 0/5
+      Pinnacle first price disagrees                           193 bets  48.7%     +5.4u  ( +2.8%)  |   -6.6   +6.5   -0.7   +2.3   +3.9  neg 2/5
+  (b) bettable: you did NOT bet the open; you look again when Pinnacle posts (median 10.6 h later) and bet DK's price THEN
+      all opener alerts, at DK's price when Pinnacle posts    1051 bets  56.2%   +122.9u  (+11.7%)  |  +14.1  +40.6  +18.2  +23.8  +26.3  neg 0/5
+      still a bet then (live bar) & Pinnacle agrees/same -> REMINDER   582 bets  56.5%    +91.5u  (+15.7%)  |  +14.2  +36.2   +3.1  +14.4  +23.6  neg 0/5
+      still a bet then & Pinnacle disagrees -> DON'T BET (blocked)   124 bets  48.4%     +0.2u  ( +0.2%)  |   -0.4   -1.2   +8.8   -4.7   -2.3  neg 4/5
+      no longer a bet then (DON'T BET for EV anyway)           345 bets  58.6%    +31.2u  ( +9.0%)  |   +0.3   +5.6   +6.2  +14.1   +5.0  neg 0/5
+      AS CODED (Pinnacle vs DK's OPENER): still a bet, Pinnacle disagrees -> DON'T BET   187 bets  48.1%     +9.1u  ( +4.9%)  |   -5.0   +4.3   -0.4   +5.5   +4.7  neg 2/5
+      AS CODED: still a bet, Pinnacle agrees/same -> REMINDER   519 bets  57.6%    +82.6u  (+15.9%)  |  +18.7  +30.7  +12.4   +4.2  +16.6  neg 0/5
+  (c) the same opener alerts if simply bet at the open (what the follow-up costs a bettor who bets immediately: nothing)
+      all late-Pinnacle opener alerts, at the opener          1058 bets  56.0%   +133.9u  (+12.7%)  |  +14.9  +42.8  +20.9  +26.5  +28.9  neg 0/5
+  (d) Pinnacle disagreeing vs DK's CURRENT price (what the live follow-up actually compares: Pinnacle vs DK's OPENER)
+      disagrees with DK opener but NOT with DK's price at that time    80 bets  52.5%    +15.1u  (+18.9%)  |   -2.0   +6.0   -3.8  +10.3   +4.6  neg 2/5
+      agrees with DK opener but disagrees with DK's price at that time    17 bets  70.6%     +6.2u  (+36.5%)  |   +2.6   +0.5   +5.5   +0.0   -2.4  neg 1/5
+  (e) other markets (no Pinnacle rule live). Puck line: Pinnacle's first MONEYLINE vs DK opener for our team
+      PL at open, Pinnacle agrees/same                         873 bets  50.3%    +69.6u  ( +8.0%)  |   +5.6  +26.6  +12.1  +14.1  +11.1  neg 0/5
+      PL at open, Pinnacle disagrees (look-ahead grade)        189 bets  47.6%     +7.0u  ( +3.7%)  |  +10.6   +4.5  -12.1   +1.1   +2.9  neg 1/5
+      PL at DK price when Pinnacle posts, still EV 6%+, Pinnacle disagrees   174 bets  48.3%     +9.9u  ( +5.7%)  |  +11.6   +6.5  -11.7   +2.8   +0.8  neg 1/5
+      PL at DK price when Pinnacle posts, still EV 6%+, Pinnacle agrees   650 bets  48.9%    +46.7u  ( +7.2%)  |   +1.5  +15.8   +6.2  +12.2  +11.1  neg 0/5
+      overs at open, Pinnacle's first total lower (disagrees)    65 bets  58.5%    +14.6u  (+22.5%)  |   +1.2   -1.0   +0.1   +3.6  +10.6  neg 1/5
+      overs at open, Pinnacle's first total same/higher        433 bets  56.4%    +35.9u  ( +8.3%)  |   +9.7   +6.2   +7.4   +3.4   +9.1  neg 0/5
+
+==================================================================================================================================
+4. TOTAL_SIDES = over only (unders never alerted)
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  overs EV 6%+ (kept)                                          539 bets  56.0%    +50.5u  ( +9.4%)  |  +10.6   +8.6   +6.5   +6.1  +18.7  neg 0/5
+  unders EV 6%+ (BLOCKED)                                     1096 bets  48.6%     -6.0u  ( -0.6%)  |  -17.1   -9.0  +24.2   -8.6   +4.4  neg 3/5
+  unders EV 9%+ (BLOCKED)                                      628 bets  47.9%     +0.1u  ( +0.0%)  |  -14.8   -5.2  +16.9   -0.3   +3.5  neg 3/5
+
+==================================================================================================================================
+5. EV bars at the opener (ML_THRESHOLD 4% on the blend; THRESHOLD 6% puck line / overs)  [b2b removed]
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  ML blended EV 0%-2%  (BLOCKED)                              1107 bets  54.9%    -25.8u  ( -2.3%)  |   +7.2  -10.8  -17.9  -12.1   +7.8  neg 3/5
+  ML blended EV 2%-4%  (BLOCKED)                               783 bets  55.2%    +12.5u  ( +1.6%)  |  +29.2   -1.9   -9.9   +1.4   -6.3  neg 3/5
+  ML blended EV 4%-6%                                          502 bets  58.0%    +49.5u  ( +9.9%)  |   +0.5  +28.8   -1.0   +9.3  +12.0  neg 1/5
+  ML blended EV 6%-9%                                          389 bets  55.0%    +35.4u  ( +9.1%)  |   +3.2  +10.8   +6.2   +3.8  +11.3  neg 0/5
+  ML blended EV 9%-900%                                        301 bets  54.8%    +61.2u  (+20.3%)  |  +15.3  +10.8  +14.5  +13.4   +7.3  neg 0/5
+  PL EV 2%-4%  (BLOCKED)                                       629 bets  54.1%     +9.9u  ( +1.6%)  |   -4.6   -3.9  -11.3  +18.4  +11.4  neg 3/5
+  PL EV 4%-6%  (BLOCKED)                                       490 bets  52.0%    -12.9u  ( -2.6%)  |   -0.1   +5.9   -1.3   -2.9  -14.4  neg 4/5
+  PL EV 6%-9%                                                  514 bets  50.6%    -11.1u  ( -2.2%)  |   -0.2  +10.3   -0.7  -10.0  -10.6  neg 4/5
+  PL EV 9%-900%                                                754 bets  48.5%    +90.2u  (+12.0%)  |  +13.3  +31.1   -1.7  +22.2  +25.3  neg 1/5
+  overs EV 2%-4%  (BLOCKED)                                    300 bets  51.3%     +6.1u  ( +2.0%)  |   +3.9  +10.1   +9.0   -9.5   -7.4  neg 2/5
+  overs EV 4%-6%  (BLOCKED)                                    257 bets  49.4%     -5.8u  ( -2.2%)  |   +3.9  -14.9   -5.9   -1.0  +12.2  neg 3/5
+  overs EV 6%-9%                                               259 bets  55.6%    +19.9u  ( +7.7%)  |   +0.6   +0.9   +3.6   +9.2   +5.6  neg 0/5
+  overs EV 9%-900%                                             280 bets  56.4%    +30.6u  (+10.9%)  |  +10.0   +7.7   +2.9   -3.1  +13.2  neg 1/5
+
+==================================================================================================================================
+6. MOVED_SKIP / NEAR_OPEN / THRESHOLD_MOVED at DK's price +60 min (bets placed AT that price)
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  ML near open (within 1.5 pts), EV>=4% -> alert              1139 bets  56.7%   +157.0u  (+13.8%)  |  +27.7  +54.2  +23.2  +26.3  +25.5  neg 0/5
+  ML moved TOWARD us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)     1 bets   0.0%     -1.0u  (-100.0%)  |   +0.0   +0.0   -1.0   +0.0   +0.0  neg 1/5
+  ML moved AGAINST us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)    10 bets  50.0%     -0.2u  ( -1.6%)  |   +0.7   +2.0   +0.0   -1.9   -1.0  neg 2/5
+  ML moved (either way), EV 4%-9% -> silent                     40 bets  55.0%     +3.5u  ( +8.7%)  |   -1.5   -3.5   -2.6   +4.0   +7.1  neg 3/5
+  ML NEW (no bet at the open), moved, EV>=4% (blocked/silent)    29 bets  65.5%     +9.2u  (+31.8%)  |   +1.2   -0.1   -1.0   +4.1   +5.0  neg 2/5
+  ML NEW (no bet at the open), moved, EV 9%+ (blocked)           3 bets  100.0%     +2.8u  (+95.0%)  |   +1.7   +0.0   +0.0   +1.1   +0.0  neg 0/5
+  PL near open (within 1.5 pts), EV>=6% -> alert              1168 bets  49.7%    +83.1u  ( +7.1%)  |  +14.3  +36.5   -6.4  +20.8  +17.9  neg 1/5
+  PL moved TOWARD us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)    15 bets  53.3%     +4.0u  (+26.9%)  |   -1.0   +2.4   +0.8   +0.3   +1.5  neg 1/5
+  PL moved AGAINST us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)    27 bets  59.3%     +6.3u  (+23.3%)  |   +1.8   +4.3   +0.9   +1.7   -2.3  neg 1/5
+  PL moved (either way), EV 6%-9% -> silent                     29 bets  58.6%     +4.7u  (+16.3%)  |   +0.7   +2.1   +0.0   +1.4   +0.5  neg 0/5
+  PL line NUMBER changed since open, EV 9%+ (treated as moved)    11 bets  18.2%     -7.8u  (-70.8%)  |   +0.0   -5.6   -1.0   -1.2   +0.0  neg 3/5
+  PL NEW (no bet at the open), moved, EV>=6% (blocked/silent)    30 bets  50.0%     +1.9u  ( +6.5%)  |   +0.1   -1.5   +2.0   +0.8   +0.5  neg 1/5
+  PL NEW (no bet at the open), moved, EV 9%+ (blocked)           9 bets  44.4%     +1.1u  (+12.2%)  |   +0.0   -0.3   +1.6   +0.8   -1.0  neg 2/5
+  overs near open (within 1.5 pts), EV>=6% -> alert            499 bets  56.1%    +46.7u  ( +9.3%)  |   +9.7   +7.9   +6.6   +4.8  +17.6  neg 0/5
+  overs moved TOWARD us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)     5 bets  80.0%     +2.8u  (+56.4%)  |   +0.0   +0.0   +0.0   +0.0   +2.8  neg 0/5
+  overs moved AGAINST us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)     4 bets  50.0%     -0.1u  ( -3.3%)  |   +0.0   +0.0   +0.0   +0.0   -0.1  neg 1/5
+  overs moved (either way), EV 6%-9% -> silent                  10 bets  90.0%     +7.2u  (+71.7%)  |   +2.8   +0.8   +0.9   +1.0   +1.5  neg 0/5
+  overs line NUMBER changed since open, EV 9%+ (treated as moved)     4 bets  25.0%     -1.9u  (-47.5%)  |   +0.0   +0.0   +0.0   +1.1   -3.0  neg 1/5
+  overs NEW (no bet at the open), moved, EV>=6% (blocked/silent)     8 bets  75.0%     +3.3u  (+41.6%)  |   +1.9   +0.8   +0.0   +0.0   +0.6  neg 0/5
+  overs NEW (no bet at the open), moved, EV 9%+ (blocked)        3 bets  66.7%     +0.9u  (+29.0%)  |   +0.0   +0.0   +0.0   +0.0   +0.9  neg 0/5
+
+==================================================================================================================================
+6. MOVED_SKIP / NEAR_OPEN / THRESHOLD_MOVED at DK's price halfway to puck drop (bets placed AT that price)
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  ML near open (within 1.5 pts), EV>=4% -> alert               752 bets  54.8%    +74.3u  ( +9.9%)  |  +29.1  +24.4  +11.6   +2.3   +6.9  neg 0/5
+  ML moved TOWARD us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)    17 bets  64.7%     +4.6u  (+26.9%)  |   +2.9   +0.9   -2.0   +1.4   +1.3  neg 1/5
+  ML moved AGAINST us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)   114 bets  50.9%    +23.6u  (+20.7%)  |  +10.0   +5.9   -0.2   +4.0   +3.9  neg 1/5
+  ML moved (either way), EV 4%-9% -> silent                    300 bets  51.0%    +23.2u  ( +7.7%)  |  -15.7   +3.8   +7.9  +17.7   +9.5  neg 1/5
+  ML NEW (no bet at the open), moved, EV>=4% (blocked/silent)   266 bets  50.4%    +35.0u  (+13.2%)  |   -0.8   +5.7  +10.6  +14.6   +4.9  neg 1/5
+  ML NEW (no bet at the open), moved, EV 9%+ (blocked)          50 bets  58.0%    +18.5u  (+37.0%)  |   +7.1   +4.2   +3.7   +2.9   +0.6  neg 0/5
+  PL near open (within 1.5 pts), EV>=6% -> alert               861 bets  49.5%    +74.3u  ( +8.6%)  |  +12.0  +37.4   -9.0  +14.8  +19.1  neg 1/5
+  PL moved TOWARD us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)    59 bets  40.7%     -6.0u  (-10.2%)  |   +1.4   -3.1   +1.4   -4.7   -1.0  neg 3/5
+  PL moved AGAINST us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)   165 bets  41.2%     -8.0u  ( -4.9%)  |   -5.2   -0.3   +4.3   +0.5   -7.2  neg 3/5
+  PL moved (either way), EV 6%-9% -> silent                    138 bets  45.7%     -9.5u  ( -6.9%)  |   +2.9  -10.8   -1.3   +6.4   -6.6  neg 3/5
+  PL line NUMBER changed since open, EV 9%+ (treated as moved)    38 bets  34.2%     -3.0u  ( -8.0%)  |   +0.4   -6.3   -1.3   -4.0   +8.1  neg 3/5
+  PL NEW (no bet at the open), moved, EV>=6% (blocked/silent)   189 bets  42.3%    -10.5u  ( -5.6%)  |   -1.0   -9.5   +3.8   -4.1   +0.3  neg 3/5
+  PL NEW (no bet at the open), moved, EV 9%+ (blocked)          98 bets  39.8%     -4.6u  ( -4.7%)  |   -4.9   -1.8   +4.4   -7.9   +5.6  neg 3/5
+  overs near open (within 1.5 pts), EV>=6% -> alert            264 bets  57.2%    +33.3u  (+12.6%)  |   +7.1   +3.4   +3.8   +7.4  +11.6  neg 0/5
+  overs moved TOWARD us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)    18 bets  66.7%     +4.6u  (+25.7%)  |   +0.0   +0.9   +0.0   +1.4   +2.3  neg 0/5
+  overs moved AGAINST us >1.5 pts, EV 9%+ -> INFO ONLY (blocked)    33 bets  36.4%     -8.0u  (-24.4%)  |   +1.0   +0.9   +0.0   -5.1   -4.8  neg 2/5
+  overs moved (either way), EV 6%-9% -> silent                  79 bets  55.7%     +6.4u  ( +8.1%)  |   -0.7   +0.2   +1.8   -0.5   +5.6  neg 2/5
+  overs line NUMBER changed since open, EV 9%+ (treated as moved)    56 bets  53.6%     +3.6u  ( +6.5%)  |   +2.5   -1.2   +0.0   -0.7   +2.9  neg 2/5
+  overs NEW (no bet at the open), moved, EV>=6% (blocked/silent)    49 bets  51.0%     -0.6u  ( -1.2%)  |   +4.5   +0.5   -1.0   -3.7   -0.9  neg 3/5
+  overs NEW (no bet at the open), moved, EV 9%+ (blocked)       22 bets  50.0%     +0.3u  ( +1.1%)  |   +3.8   +0.7   +0.0   -3.2   -1.1  neg 2/5
+
+==================================================================================================================================
+7. DON'T BET / REMINDER follow-up: bets alerted at DK's opener, not yet placed, re-checked later (graded at the LATER price)
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  ML @+60 min: unmoved (within 1.5), still a bet -> REMINDER  1071 bets  57.2%   +156.9u  (+14.7%)  |  +24.5  +60.3  +21.6  +22.4  +28.1  neg 0/5
+  ML @+60 min: unmoved, below bar -> DON'T BET                  47 bets  61.7%     +9.1u  (+19.4%)  |   +0.7   -3.1   +5.1   +5.4   +1.0  neg 1/5
+  ML @+60 min: moved toward us, EV 9%+ left -> REMINDER          1 bets   0.0%     -1.0u  (-100.0%)  |   +0.0   +0.0   -1.0   +0.0   +0.0  neg 1/5
+  ML @+60 min: moved toward us, EV <9% -> DON'T BET             37 bets  43.2%     -8.2u  (-22.2%)  |   -2.7   -3.7   -4.6   +1.2   +1.7  neg 3/5
+  ML @+60 min: moved against us (better price), EV 9%+ -> REMINDER     6 bets  16.7%     -4.3u  (-71.0%)  |   -1.0   +0.7   +0.0   -3.0   -1.0  neg 3/5
+  ML @+60 min: moved against us (better price), EV <9% -> DON'T BET     0 bets   0.0%     +0.0u  ( +0.0%)  |   +0.0   +0.0   +0.0   +0.0   +0.0  neg 0/5
+  PL @+60 min: unmoved (within 1.5), still a bet -> REMINDER  1154 bets  49.6%    +80.8u  ( +7.0%)  |  +13.7  +37.1   -7.5  +20.3  +17.3  neg 1/5
+  PL @+60 min: unmoved, below bar -> DON'T BET                  25 bets  32.0%    -10.7u  (-42.7%)  |   +0.6   -0.0   +2.7   -8.0   -6.0  neg 3/5
+  PL @+60 min: moved toward us, EV 9%+ left -> REMINDER         15 bets  53.3%     +4.0u  (+26.9%)  |   -1.0   +2.4   +0.8   +0.3   +1.5  neg 1/5
+  PL @+60 min: moved toward us, EV <9% -> DON'T BET             39 bets  48.7%     -0.6u  ( -1.5%)  |   -1.7   +2.7   +2.5   -4.6   +0.6  neg 2/5
+  PL @+60 min: moved against us (better price), EV 9%+ -> REMINDER    23 bets  56.5%     +2.0u  ( +8.7%)  |   +1.8   +0.6   -0.7   +1.7   -1.3  neg 2/5
+  PL @+60 min: moved against us (better price), EV <9% -> DON'T BET     0 bets   0.0%     +0.0u  ( +0.0%)  |   +0.0   +0.0   +0.0   +0.0   +0.0  neg 0/5
+  PL @+60 min: line number changed (not graded at a comparable price)    12 bets  50.0%     +0.5u  ( +4.2%)  |   +0.0   -2.2   -1.0   +1.9   +1.8  neg 2/5
+  overs @+60 min: unmoved (within 1.5), still a bet -> REMINDER   495 bets  56.4%    +48.8u  ( +9.9%)  |   +9.7   +9.1   +6.6   +5.8  +17.6  neg 0/5
+  overs @+60 min: unmoved, below bar -> DON'T BET                4 bets  50.0%     -0.2u  ( -5.4%)  |   +0.8   +0.0   +0.0   -1.0   +0.0  neg 1/5
+  overs @+60 min: moved toward us, EV 9%+ left -> REMINDER       5 bets  80.0%     +2.8u  (+56.4%)  |   +0.0   +0.0   +0.0   +0.0   +2.8  neg 0/5
+  overs @+60 min: moved toward us, EV <9% -> DON'T BET          20 bets  50.0%     -0.2u  ( -1.1%)  |   +0.8   -1.0   -0.2   -1.0   +1.3  neg 3/5
+  overs @+60 min: moved against us (better price), EV 9%+ -> REMINDER     1 bets   0.0%     -1.0u  (-100.0%)  |   +0.0   +0.0   +0.0   +0.0   -1.0  neg 1/5
+  overs @+60 min: moved against us (better price), EV <9% -> DON'T BET     0 bets   0.0%     +0.0u  ( +0.0%)  |   +0.0   +0.0   +0.0   +0.0   +0.0  neg 0/5
+  overs @+60 min: line number changed (not graded at a comparable price)    14 bets  50.0%     -1.3u  ( -9.2%)  |   -1.0   +0.5   +0.0   +2.2   -3.0  neg 2/5
+  ML @halfway: unmoved (within 1.5), still a bet -> REMINDER   628 bets  57.3%    +92.3u  (+14.7%)  |  +24.5  +32.2  +19.1   +4.5  +11.9  neg 0/5
+  ML @halfway: unmoved, below bar -> DON'T BET                 113 bets  62.8%    +26.0u  (+23.0%)  |   +3.7   +8.1   +7.5   +7.9   -1.1  neg 1/5
+  ML @halfway: moved toward us, EV 9%+ left -> REMINDER         17 bets  64.7%     +4.6u  (+26.9%)  |   +2.9   +0.9   -2.0   +1.4   +1.3  neg 1/5
+  ML @halfway: moved toward us, EV <9% -> DON'T BET            322 bets  54.7%     +5.0u  ( +1.6%)  |  -14.3   +5.6   -1.9   +4.4  +11.2  neg 2/5
+  ML @halfway: moved against us (better price), EV 9%+ -> REMINDER    61 bets  45.9%     +5.8u  ( +9.5%)  |   +2.9   +1.4   -2.9   +1.1   +3.3  neg 1/5
+  ML @halfway: moved against us (better price), EV <9% -> DON'T BET     8 bets  75.0%     +3.6u  (+44.4%)  |   -0.4   +0.9   +0.0   +0.7   +2.4  neg 1/5
+  PL @halfway: unmoved (within 1.5), still a bet -> REMINDER   760 bets  49.7%    +66.0u  ( +8.7%)  |   +8.5  +36.4   -5.8   +8.6  +18.3  neg 1/5
+  PL @halfway: unmoved, below bar -> DON'T BET                  77 bets  49.4%     -0.5u  ( -0.6%)  |   +5.2   -0.7   -0.4   -4.3   -0.2  neg 4/5
+  PL @halfway: moved toward us, EV 9%+ left -> REMINDER         59 bets  40.7%     -6.0u  (-10.2%)  |   +1.4   -3.1   +1.4   -4.7   -1.0  neg 3/5
+  PL @halfway: moved toward us, EV <9% -> DON'T BET            229 bets  53.7%     +6.8u  ( +3.0%)  |   -5.0  +14.8   -0.7   +2.1   -4.5  neg 3/5
+  PL @halfway: moved against us (better price), EV 9%+ -> REMINDER    90 bets  41.1%     -3.6u  ( -4.0%)  |   -0.3   -6.5   +0.6   +6.4   -3.7  neg 3/5
+  PL @halfway: moved against us (better price), EV <9% -> DON'T BET     0 bets   0.0%     +0.0u  ( +0.0%)  |   +0.0   +0.0   +0.0   +0.0   +0.0  neg 0/5
+  PL @halfway: line number changed (not graded at a comparable price)    53 bets  49.1%     +0.7u  ( +1.2%)  |   +2.1   -4.0   +0.7   -0.4   +2.1  neg 2/5
+  overs @halfway: unmoved (within 1.5), still a bet -> REMINDER   246 bets  58.1%    +33.8u  (+13.7%)  |   +8.3   +7.6   +2.7   +4.8  +10.4  neg 0/5
+  overs @halfway: unmoved, below bar -> DON'T BET               25 bets  56.0%     +2.7u  (+10.8%)  |   -0.1   +2.4   +0.8   +0.0   -0.5  neg 2/5
+  overs @halfway: moved toward us, EV 9%+ left -> REMINDER      18 bets  66.7%     +4.6u  (+25.7%)  |   +0.0   +0.9   +0.0   +1.4   +2.3  neg 0/5
+  overs @halfway: moved toward us, EV <9% -> DON'T BET         101 bets  47.5%    -11.6u  (-11.5%)  |   -1.4   -2.1   -0.7   -5.2   -2.2  neg 5/5
+  overs @halfway: moved against us (better price), EV 9%+ -> REMINDER    17 bets  29.4%     -6.9u  (-40.6%)  |   -2.0   +0.0   +0.0   -2.0   -2.9  neg 3/5
+  overs @halfway: moved against us (better price), EV <9% -> DON'T BET     0 bets   0.0%     +0.0u  ( +0.0%)  |   +0.0   +0.0   +0.0   +0.0   +0.0  neg 0/5
+  overs @halfway: line number changed (not graded at a comparable price)   132 bets  60.6%    +20.5u  (+15.5%)  |   +4.6   -1.2   +3.3   +5.7   +8.1  neg 1/5
+
+==================================================================================================================================
+8. ONE BET PER GAME: ML and PL on the same team both qualify at the open -> only the higher EV (blended ML EV vs raw PL EV)
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  same-team games: 597; puck line chosen in 470 (79%)
+  chosen leg: PL (ML dropped)                                  470 bets  51.1%    +41.8u  ( +8.9%)  |   +4.9  +19.9   +0.1   -0.1  +17.1  neg 1/5
+  dropped leg: ML                                              470 bets  59.6%    +57.3u  (+12.2%)  |   +8.9  +19.5  +11.8   +0.2  +17.0  neg 0/5
+  chosen leg: ML (PL dropped)                                  127 bets  46.5%    +12.3u  ( +9.7%)  |   -5.3   +5.8   -0.1  +11.4   +0.5  neg 2/5
+  dropped leg: PL                                              127 bets  63.0%     +7.0u  ( +5.5%)  |   -1.7   +5.6   -5.0   +4.9   +3.2  neg 2/5
+  chosen legs +54.2u on 597; dropped legs +64.3u on 597 (by season dropped: +7.2 +25.1 +6.8 +5.1 +20.2)
+  alternative: always the ML in these games                    597 bets  56.8%    +69.7u  (+11.7%)  |   +3.6  +25.3  +11.7  +11.6  +17.5  neg 0/5
+  alternative: always the PL in these games                    597 bets  53.6%    +48.8u  ( +8.2%)  |   +3.2  +25.5   -4.9   +4.8  +20.3  neg 1/5
+  alternative: bet both legs: +118.5u on 1194 units (by season +6.9 +50.8 +6.7 +16.4 +37.8)
+
+==================================================================================================================================
+9. MODELS DISAGREE / both sides: ML and PL qualify on OPPOSITE teams -> NO BET on either
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  ML leg (blocked)                                               1 bets   0.0%     -1.0u  (-100.0%)  |   +0.0   +0.0   -1.0   +0.0   +0.0  neg 1/5
+  PL leg (blocked)                                               0 bets   0.0%     +0.0u  ( +0.0%)  |   +0.0   +0.0   +0.0   +0.0   +0.0  neg 0/5
+
+==================================================================================================================================
+10. SECOND CHANCE (adds bets): raw shot model EV<6% at DK open, 6%+ at DK's price when Pinnacle posts, Pinnacle agrees/same
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  as coded (raw model, 6%), incl. b2b teams                    174 bets  51.1%    +17.3u  ( +9.9%)  |   +1.8   +0.4   +2.5   +7.2   +5.3  neg 0/5
+  as coded, b2b teams removed (the b2b skip applies live)      143 bets  51.7%    +17.1u  (+12.0%)  |   +0.8   +4.3   +3.5   +4.0   +4.5  neg 0/5
+    of which the live blended ML ALREADY alerted at the open (duplicate)    10 bets  40.0%     +1.9u  (+18.9%)  |   +0.0   -1.0   +0.2   +1.1   +1.5  neg 1/5
+  consistent version: blended EV<4% at open, 4%+ when Pinnacle posts   186 bets  52.7%    +26.0u  (+14.0%)  |  +12.8   +3.9   -1.4   +9.5   +1.3  neg 1/5
+
+==================================================================================================================================
+11. MAX_MOVE caution (moneyline moved 5+ win-% pts against the bet since open): reachable only for non-opener bets
+----------------------------------------------------------------------------------------------------------------------------------
+                                                              bets   win%     units       ROI  | by season 21-22 22-23 23-24 24-25 25-26
+  games whose ML moved 5+ pts by +60 min: 7 of 6560; an opener-price bet (within 1.5 pts) can't trigger it, so it only applies to SECOND CHANCE bets.
+
+==================================================================================================================================
+LIVE 2026-27: how often each gate fired (state/alerts.csv, shot model rows; one row per game/market/model)
+----------------------------------------------------------------------------------------------------------------------------------
+  all shot-model rows since Oct 30:
+    BET (pushed)                        12 rows, graded 10: 4-6, -2.00u
+    Pinnacle disagrees                   1 rows, graded 1: 0-1, -1.00u
+    SKIP_B2B                             3 rows, graded 3: 0-3, -3.00u
+    goalie caution (removed Nov 1)      11 rows, graded 11: 6-5, -0.49u
+    one bet per game                     2 rows, graded 2: 1-1, -0.20u
+  v3 rules (since 2026-11-02 11:08):
+    BET (pushed)                         8 rows, graded 6: 2-4, -1.63u
+    Pinnacle disagrees                   1 rows, graded 1: 0-1, -1.00u
+    SKIP_B2B                             3 rows, graded 3: 0-3, -3.00u
+    one bet per game                     2 rows, graded 2: 1-1, -0.20u
+  DON'T BET follow-ups sent: 3 game-markets; their results at the alert price: tor/uta puck line away L (11:29 -> DON'T BET 12:48); tor/uta total over L (11:29 -> DON'T BET 11:32); mtl/wpg total over W (12:04 -> DON'T BET 12:34)
+  REMINDER rows: 3; BACK IN RANGE rows: 0; second-chance alerts: 0
+  'market agrees' info notes: 2
+  line jumps logged: 17
+
+==================================================================================================================================
+VERDICTS (written Nov 4, 2026 from the tables above; all records 2021-22..2025-26 at DK prices you could actually take)
+----------------------------------------------------------------------------------------------------------------------------------
+SKIP_B2B            PL: KEEP (blocked 137 bets -37.3u, 4/5 seasons negative). ML: no longer earns its place under the live blend +
+                    travel adj. (blocked 77 bets +0.9u; the quoted -40u is a puck-line-sized figure / raw model). CHANGE: puck line only.
+Pinnacle at alert   KEEP (bettable; 27 bets -8.8u, small, 2 seasons with no cases).
+Pinnacle DON'T BET  Quoted -42u (405 bets) is the raw model graded at DK's OPENER with Pinnacle's later price (look-ahead). Under the live
+  follow-up         blend, at the price you could get when Pinnacle posts: blocked 187 bets +9.1u as coded (vs DK's opener), +0.2u on 124
+                    if compared with DK's current price. Saves nothing. CHANGE (low stakes): compare Pinnacle with DK's CURRENT price, or
+                    DROP; the real fix is to bet the opener at once (reminders) since waiting costs ~11u per 1,000 bets.
+Overs only          KEEP (unders 1,096 bets -6.0u, 3/5 negative).
+ML_THRESHOLD 4%     KEEP (2-4% band 783 bets +12.5u, 3/5 negative; 4-6% +49.5u).
+THRESHOLD 6% (PL)   CHANGE to 9% (6-9% band 514 bets -11.1u, 4/5 negative; 9%+ 754 bets +90.2u). In-sample choice: re-test on 2026-27.
+THRESHOLD 6% overs  KEEP (6-9% +19.9u, 0/5 negative).
+MOVED_SKIP          PL and overs: KEEP (new moved-price bets halfway: PL 189 -10.5u, overs 49 -0.6u). ML: CHANGE: push moved-price
+                    moneylines at blended EV 9%+ (new bets halfway: 50 bets +18.5u, 0/5 negative; EV 4%+ 266 bets +35.0u).
+DON'T BET on EV     ML: CHANGE: don't stop an opener alert while the price is within 1.5 pts of the alert price (those 'below bar'
+                    bets at halfway: 113 bets +26.0u, 4/5 positive). Overs moved toward us: KEEP the stop (101 bets -11.6u, 5/5 neg).
+One bet per game    CHANGE: the live comparison (blended ML EV vs raw PL EV) picks the puck line 79% of the time and the dropped ML
+                    legs made more (+57.3u on 470). Always the ML in those games +69.7u vs +54.2u as now (597 games).
+Models disagree     KEEP (inert: 1 case in five seasons).  MAX_MOVE caution: inert (opener bets can't trigger it).
+Goalie caution      already removed for opener bets (Nov 1).  ALERT_MODELS / OPEN_ONLY_LONGSHOTS: not re-tested (goals model).
+
