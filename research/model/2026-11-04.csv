@@ -29,3 +29,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-04 13:14,goals,401892644,2026-11-04,ott,buf,0.5248,3.346,3.127,6.63,Samuel Ersson (confirmed),Colten Ellis (confirmed),"OTT: Burakovsky, Kleven | BUF: Helenius"
 2026-11-04 13:38,xg,401892647,2026-11-04,cgy,sea,0.5283,3.181,2.906,6.25,Dustin Wolf (expected),Joey Daccord (confirmed),CGY: - | SEA: -
 2026-11-04 13:38,goals,401892647,2026-11-04,cgy,sea,0.5366,3.368,3.072,6.6,Dustin Wolf (expected),Joey Daccord (confirmed),CGY: - | SEA: -
+2026-11-04 14:12,xg,401892646,2026-11-04,sj,la,0.6674,3.585,2.463,6.2,Yaroslav Askarov (expected),Darcy Kuemper (confirmed),SJ: Dellandrea | LA: Kempe?
+2026-11-04 14:12,goals,401892646,2026-11-04,sj,la,0.5479,3.092,2.739,6.0,Yaroslav Askarov (expected),Darcy Kuemper (confirmed),SJ: Dellandrea | LA: Kempe?
