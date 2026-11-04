@@ -7831,3 +7831,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 18:49:25,293545,2026-11-04,2026-11-04 19:30,chi,fla,FanDuel,thirdperiod,total,over,2.5,154,normal
 2026-11-04 18:49:25,293546,2026-11-04,2026-11-04 19:30,ott,buf,DraftKings,thirdperiod,team_total,away_under,0.5,175,normal
 2026-11-04 18:49:25,293546,2026-11-04,2026-11-04 19:30,ott,buf,DraftKings,thirdperiod,team_total,away_over,0.5,-230,normal
+2026-11-04 18:50:55,293545,2026-11-04,2026-11-04 19:30,chi,fla,bet365,event,spread,away,1.5,-122,normal
+2026-11-04 18:50:55,293545,2026-11-04,2026-11-04 19:30,chi,fla,bet365,event,spread,home,-1.5,102,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,firstperiod,spread,away,0.5,-210,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,firstperiod,spread,home,-0.5,155,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,secondperiod,team_total,away_over,0.5,-220,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,secondperiod,team_total,home_over,0.5,-250,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,secondperiod,team_total,away_under,0.5,165,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,secondperiod,team_total,home_under,0.5,185,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,secondperiod,spread,home,-0.5,145,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,secondperiod,spread,away,0.5,-195,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,thirdperiod,team_total,home_over,0.5,-235,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,thirdperiod,team_total,home_under,0.5,175,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,thirdperiod,team_total,away_over,0.5,-215,normal
+2026-11-04 18:50:55,293546,2026-11-04,2026-11-04 19:30,ott,buf,Fanatics,thirdperiod,team_total,away_under,0.5,160,normal
