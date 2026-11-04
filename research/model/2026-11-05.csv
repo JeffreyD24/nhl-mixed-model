@@ -33,3 +33,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-04 10:35,goals,401892654,2026-11-05,bos,pit,0.4571,2.947,3.174,6.29,Jeremy Swayman (expected),Arturs Silovs (expected),BOS: Poitras? | PIT: Malkin?
 2026-11-04 10:35,xg,401892656,2026-11-05,van,wpg,0.6461,3.68,2.636,6.47,Leevi Merilainen (expected),Stuart Skinner (expected),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
 2026-11-04 10:35,goals,401892656,2026-11-05,van,wpg,0.6092,3.569,2.792,6.52,Leevi Merilainen (expected),Stuart Skinner (expected),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
+2026-11-04 10:37,xg,401892648,2026-11-05,uta,mtl,0.4347,3.086,3.401,6.65,Karel Vejmelka (expected),Jacob Fowler (expected),UTA: Yamamoto? | MTL: Dach?
+2026-11-04 10:37,goals,401892648,2026-11-05,uta,mtl,0.5499,3.349,2.97,6.48,Karel Vejmelka (expected),Jacob Fowler (expected),UTA: Yamamoto? | MTL: Dach?
