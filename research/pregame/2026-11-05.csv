@@ -8789,3 +8789,7 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 23:55:28,293557,2026-11-05,2026-11-05 20:00,ana,edm,FanDuel,event,moneyline,away,0.0,146,normal
 2026-11-04 23:55:28,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,thirdperiod,spread,home,-0.5,147,normal
 2026-11-04 23:55:28,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,thirdperiod,spread,away,0.5,-202,normal
+2026-11-04 23:57:41,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,event,moneyline,away,0.0,-142,normal
+2026-11-04 23:57:41,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,event,spread,home,1.5,-216,normal
+2026-11-04 23:57:41,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,event,spread,away,-1.5,176,normal
+2026-11-04 23:57:41,293557,2026-11-05,2026-11-05 20:00,ana,edm,Consensus,event,moneyline,away,0.0,150,normal
