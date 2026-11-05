@@ -1,0 +1,17 @@
+
+== TEST END-year 2012..2016: 1424 games ==
+won 58.1% vs no-vig close 55.4% vs no-vig open 53.9%
+PRIMARY win - close: +0.0271 (SE 0.0128, 90% CI [+0.0060, +0.0482], one-sided p=0.017)
+win - open: +0.0416 | ROI at open +3.7% (+53.1u) | price move to rested (close-open) +0.0145
+ season_end   n    won  nv_close  win-close  ROI_open   move
+       2012 310 0.6226    0.5487     0.0739    0.1268 0.0150
+       2013 180 0.5611    0.5425     0.0186    0.0133 0.0175
+       2014 325 0.5262    0.5491    -0.0229   -0.0578 0.0140
+       2015 297 0.6128    0.5715     0.0413    0.0889 0.0188
+       2016 312 0.5769    0.5529     0.0240    0.0122 0.0089
+  rested side = away: n=337, win-close +0.0223, ROI +4.1%
+  rested side = home: n=1087, win-close +0.0286, ROI +3.6%
+
+== POOLED 2011-12..2021-22 (descriptive, secondary): 2944 games ==
+won 57.9% vs close 55.4%; win-close +0.0252 (SE 0.0089, 95% CI [+0.0077,+0.0426]); ROI open +2.9% (+86.8u); seasons positive 8/11
+ROI 95% CI [-0.4%,+6.2%]
