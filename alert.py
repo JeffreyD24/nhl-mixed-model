@@ -18,6 +18,7 @@ import nhl_data as nd                                    # noqa: E402
 import nhl_mixed_model as nm                             # noqa: E402
 import espn                                              # noqa: E402
 import nhl_travel                                        # noqa: E402
+import fanduel                                           # noqa: E402
 
 REMIND_EVERY_MIN = 30               # Nov 2, 2026: an alerted bet still not logged and still a bet -> REMINDER every 30 min,
 REMIND_HOURS = (6, 20)              #   only 6 AM - 8 PM ET
@@ -156,19 +157,19 @@ def log_link(date, away, home, market, pick, line, odds):
 DK_NHL = "https://sportsbook.draftkings.com/leagues/hockey/nhl"
 
 
-def notify(title, body, priority="high", tags="ice_hockey", link=None, dk=None, kind="info"):
-    """kind: 'bet', 'stop' (DON'T BET follow-up), 'test', or 'info' (not pushed while BET_ONLY)"""
+def notify(title, body, priority="high", tags="ice_hockey", link=None, dk=None, kind="info", fd=None, best=None):
+    """kind: 'bet', 'stop' (DON'T BET follow-up), 'test', or 'info' (not pushed while BET_ONLY).
+    dk / fd: DraftKings / FanDuel links (better book first, from fanduel.compare). link: unused since Nov 4, 2026 (Log button removed)."""
     if BET_ONLY and kind not in ("bet", "stop", "test"):
         print("Logged only (not pushed):", title); return "quiet"     # kept in alerts.csv, not retried
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
-        print("NTFY_TOPIC not set; would have sent:", title, "|", body); return False
+        print("NTFY_TOPIC not set; would have sent:", title, "|", body, "| DK:", dk or "-", "| FD:", fd or "-"); return False
+    actions = fanduel.actions(dk, fd, best)
+    if best == "FanDuel" and "BEST AT FANDUEL" not in title: title += " | BEST AT FANDUEL"     # every alert type (Fable review)
     req = urllib.request.Request(f"https://ntfy.sh/{topic}", data=body.encode("utf-8"), method="POST",
                                  headers={"Title": title.encode("ascii", "ignore").decode(), "Priority": priority, "Tags": tags,
-                                          **({"Actions": "; ".join(a for a in ((f"view, Bet on DraftKings, {dk}" if "outcomes=" in dk
-                                                                                else f"view, Open DraftKings NHL, {dk}") if dk else "",
-                                                                               f"view, Log this bet, {link}" if link else "") if a)}
-                                             if (link or dk) else {})})
+                                          **({"Actions": actions} if actions else {})})
     with urllib.request.urlopen(req, timeout=20) as resp:
         try: mid = json.loads(resp.read()).get("id")
         except Exception: mid = None
@@ -666,6 +667,11 @@ def main():
                         dk = DK_NHL  # so the button opens DraftKings' NHL page instead and the body says to find the bet
                         body += "\nNo one-tap DraftKings link yet (line is brand new); the button opens DraftKings' NHL page."
                     recs = "; ".join(f"{SHORT.get(n, n)} {record(n, bool(skip))}" for n, _ in pending)
+                    best_book = None
+                    def fd_cmp():
+                        """FanDuel next to DraftKings (Nov 4, 2026): both books' lines, the better one first and marked"""
+                        return fanduel.compare("nhl", M["date"], g["home"], g["away"], mk, side,
+                                               None if mk == "moneyline" else lnum, price, label=(team if mk != "total" else side))
                     if at_open and not pd.isna(oprice):
                         floor = min(open_only_floor(bt[3], oprice, thr_for(mk, price, oprice)) for _, bt in pending)
                         body = f"Bet only at {fmt_price(floor)} or better. If DraftKings shows a shorter price, skip it.\n" + body
@@ -681,7 +687,9 @@ def main():
                         if same: body = f"ALREADY BET: you logged {same}.\n" + body; ctitle = "ALREADY BET - " + ctitle
                         if other: body += f"\nYour other bets on this game: {other}."
                         if "OTHER SIDE" in other: ctitle = "YOU BET THE OTHER SIDE - " + ctitle
-                        sent = notify(ctitle, body, priority="default", tags="warning,ice_hockey", link=link, dk=dk)
+                        fd_txt, fd_link, best_book = fd_cmp()
+                        if fd_txt: body = fd_txt + "\n" + body
+                        sent = notify(ctitle, body, priority="default", tags="warning,ice_hockey", link=link, dk=dk, fd=fd_link, best=best_book)
                     else:
                         if toward: body += f"\nMarket agrees: the moneyline has moved {abs(move):.1f} win-% points toward this side since open."
                         if mk == "moneyline":
@@ -712,13 +720,16 @@ def main():
                             body = f"NO BET: {conflict}.\n" + why + body
                             sent = notify(title, body, priority="low", link=link, dk=dk, kind="info")
                         else:
-                            sent = notify(title, why + body, priority=prio, link=link, dk=dk, kind="bet")
+                            fd_txt, fd_link, best_book = fd_cmp()
+                            sent = notify(title + (" | BEST AT FANDUEL" if best_book == "FanDuel" else ""), (fd_txt + "\n" if fd_txt else "") + why + body, priority=prio, link=link, dk=dk, kind="bet",
+                                          fd=fd_link, best=best_book)
                     for n, bt in pending:
                         new.append(dict(alerted_at_et=str(NOW), model=n, both_models=len(pending) > 1, game_id=g["game_id"], date=M["date"],
                                         home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,
                                         open_price=oprice, model_prob=round(bt[3], 4), ev=round(bt[4], 4), goalies=goalies_txt, sent=sent,
                                         skipped=skip or (conflict if not skip else None),
-                                        open_only=is_open_only(n, price), remind_ok=skip != MOVED_SKIP and not conflict, second_chance=bool(is_sc)))
+                                        open_only=is_open_only(n, price), remind_ok=skip != MOVED_SKIP and not conflict, second_chance=bool(is_sc),
+                                        best_book=best_book))
                         (skipped if (skip or conflict) else done).add((g["game_id"], mk, n))
                     print(("CAUTION " if skip else "") + "ALERT:", title, "|", skip or "")
     # ---- DON'T BET follow-up: a pushed bet alert, still not logged, that no longer meets the bar before puck drop
@@ -782,8 +793,11 @@ def main():
                                     f"[{SHORT.get(m_best, m_best)}] win chance {p:.1%}. Goalies: {gi['goalies']}. If you already bet it, log it to stop these.")
                 rlink = log_link(str(r.date), r.away, r.home, mk, team if mk != "total" else r.side,
                                  "" if mk == "moneyline" else f"{lnum:+g}" if mk == "puck line" else f"{lnum:g}", f"{price:+.0f}")
+                fdt, fdl, bb = fanduel.compare("nhl", str(r.date), r.home, r.away, mk, r.side, None if mk == "moneyline" else lnum, price,
+                                               label=(team if mk != "total" else str(r.side)))
+                if fdt: body = fdt + "\n" + body
                 notify(f"REMINDER - BET {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body, priority="default", tags="alarm_clock",
-                       link=rlink, dk=DKC.get((gid, mk, r.side), DK_NHL), kind="bet")
+                       link=rlink, dk=DKC.get((gid, mk, r.side), DK_NHL), kind="bet", fd=fdl, best=bb)
                 A2.loc[rows.index, "last_reminder_at_et"] = str(NOW)[:16]; print("REMINDER:", what); return 1
             if resumed:
                 same_line = mk == "moneyline" or (not pd.isna(lnum) and float(lnum) == float(r.line))
@@ -801,7 +815,11 @@ def main():
                 body = floor_txt + (f"BET: back in range. The DON'T BET earlier no longer applies: EV {ev:+.1%} at {fmt_price(price)}, no worse than the "
                         f"original alert ({fmt_price(r.price)}). [{SHORT.get(m_best, m_best)}] win chance {p:.1%}. Goalies: {gi['goalies']}."
                         + " Bet it now if you still want it; log it after.")
-                notify(f"BACK IN RANGE - BET {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body, priority="high", tags="white_check_mark", kind="bet")
+                fdt, fdl, bb = fanduel.compare("nhl", str(r.date), r.home, r.away, mk, r.side, None if mk == "moneyline" else lnum, price,
+                                               label=(team if mk != "total" else str(r.side)))
+                if fdt: body = fdt + "\n" + body
+                notify(f"BACK IN RANGE - BET {what}: {gi['Aw']} @ {gi['H']}, {gi['tip']}", body, priority="high", tags="white_check_mark", kind="bet",
+                       dk=DKC.get((gid, mk, r.side), DK_NHL), fd=fdl, best=bb)
                 A2.loc[rows.index, "resumed_at_et"] = str(NOW)[:16]; n_rem += 1
                 print("BACK IN RANGE:", what); continue
             if ok_now and not pin_txt:
