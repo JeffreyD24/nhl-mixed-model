@@ -1,0 +1,24 @@
+games with a result and an opener-time model: 6560
+
+===== at DK's OPEN: decided games 6258, mean |model - market| 3.78 pts of chance
+  all five seasons             n  6258   w +0.481 (se 0.134)  90% [+0.260, +0.702]   intercept +0.021
+  train 2021-22..2023-24       n  3696   w +0.558 (se 0.185)  90% [+0.253, +0.863]   intercept +0.053
+  TEST 2024-25 + 2025-26       n  2562   w +0.434 (se 0.198)  90% [+0.109, +0.759]   intercept -0.019
+    2021-22                    n  1227   w +0.325 (se 0.295)  90% [-0.160, +0.810]   intercept +0.158
+    2022-23                    n  1234   w +0.278 (se 0.326)  90% [-0.259, +0.814]   intercept -0.005
+    2023-24                    n  1235   w +1.225 (se 0.362)  90% [+0.630, +1.821]   intercept +0.040
+    2024-25                    n  1250   w +0.109 (se 0.299)  90% [-0.384, +0.601]   intercept -0.087
+    2025-26                    n  1312   w +0.608 (se 0.276)  90% [+0.155, +1.062]   intercept +0.022
+
+===== at DK's CLOSE: decided games 6315, mean |model - market| 3.51 pts of chance
+  all five seasons             n  6315   w +0.154 (se 0.145)  90% [-0.084, +0.393]   intercept +0.010
+  train 2021-22..2023-24       n  3730   w +0.226 (se 0.196)  90% [-0.096, +0.548]   intercept +0.037
+  TEST 2024-25 + 2025-26       n  2585   w +0.100 (se 0.219)  90% [-0.260, +0.459]   intercept -0.024
+    2021-22                    n  1249   w -0.171 (se 0.320)  90% [-0.698, +0.355]   intercept +0.123
+    2022-23                    n  1234   w +0.157 (se 0.336)  90% [-0.397, +0.710]   intercept +0.010
+    2023-24                    n  1247   w +0.947 (se 0.395)  90% [+0.298, +1.597]   intercept +0.007
+    2024-25                    n  1273   w -0.072 (se 0.318)  90% [-0.595, +0.451]   intercept -0.084
+    2025-26                    n  1312   w +0.166 (se 0.310)  90% [-0.344, +0.676]   intercept +0.026
+
+PRE-REGISTERED VERDICT: close weight on test seasons +0.100, 90% lower bound -0.260 -> NO PASS
+Share of the model's opener information left at the close (all seasons, descriptive): 0.32
