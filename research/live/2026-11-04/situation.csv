@@ -313,3 +313,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 23:11:05,401892647,2026-11-04,cgy,sea,in,15:23 - 2nd,2,15:23,1.0,0.0,11.0,10.0,Stoppage,Goalie Stopped
 2026-11-04 23:12:05,401892646,2026-11-04,sj,la,in,20:00 - 2nd,2,20:00,0.0,3.0,10.0,11.0,Period End,End of 1st Period
 2026-11-04 23:12:05,401892647,2026-11-04,cgy,sea,in,14:27 - 2nd,2,14:27,1.0,0.0,12.0,10.0,Shot,Vince Dunn Slap Shot saved by Dustin Wolf
+2026-11-04 23:13:05,401892647,2026-11-04,cgy,sea,in,14:27 - 2nd,2,14:27,1.0,0.0,13.0,10.0,Too Many Men on the Ice,Too many men/ice served by Kaapo Kakko
+2026-11-04 23:14:05,401892646,2026-11-04,sj,la,in,19:20 - 2nd,2,19:20,0.0,3.0,10.0,11.0,Missed,Sam Dickinson Slap Shot Wide Left
+2026-11-04 23:14:05,401892647,2026-11-04,cgy,sea,in,13:22 - 2nd,2,13:22,1.0,0.0,13.0,11.0,Shot,Zayne Parekh Wrist Shot saved by Joey Daccord
+2026-11-04 23:15:05,401892646,2026-11-04,sj,la,in,18:39 - 2nd,2,18:39,0.0,3.0,11.0,11.0,Stoppage,
+2026-11-04 23:15:05,401892647,2026-11-04,cgy,sea,in,12:21 - 2nd,2,12:21,1.0,0.0,13.0,12.0,Missed,Matvei Gridin Missed Shot Wide Right
+2026-11-04 23:16:05,401892646,2026-11-04,sj,la,in,18:04 - 2nd,2,18:04,0.0,3.0,10.0,12.0,Shot,Mason Marchment Wrist Shot saved by Darcy Kuemper
+2026-11-04 23:16:05,401892647,2026-11-04,cgy,sea,in,11:39 - 2nd,2,11:39,1.0,0.0,14.0,13.0,Blocked,Simon Nemec shot blocked by Ryker Evans
+2026-11-04 23:17:05,401892646,2026-11-04,sj,la,in,17:11 - 2nd,2,17:11,0.0,3.0,10.0,12.0,Face Off,Ty Dellandrea faceoff won against Adrian Kempe
+2026-11-04 23:17:05,401892647,2026-11-04,cgy,sea,in,11:39 - 2nd,2,11:39,1.0,0.0,14.0,12.0,Stoppage,Puck in Netting
+2026-11-04 23:18:06,401892646,2026-11-04,sj,la,in,16:43 - 2nd,2,16:43,0.0,3.0,10.0,12.0,Stoppage,Puck in Netting
