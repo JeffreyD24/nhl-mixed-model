@@ -9149,3 +9149,11 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 00:27:17,293554,2026-11-05,2026-11-05 19:00,phi,nyr,bet365,firstperiod,spread,home,-0.5,158,opener
 2026-11-05 00:27:17,293554,2026-11-05,2026-11-05 19:00,phi,nyr,bet365,firstperiod,total,under,1.5,100,opener
 2026-11-05 00:27:17,293554,2026-11-05,2026-11-05 19:00,phi,nyr,bet365,firstperiod,total,over,1.5,-120,opener
+2026-11-05 00:29:08,293556,2026-11-05,2026-11-05 19:00,uta,mtl,Consensus,firstperiod,total,under,1.5,110,normal
+2026-11-05 00:29:08,293556,2026-11-05,2026-11-05 19:00,uta,mtl,bet365,firstperiod,spread,home,0.5,-196,normal
+2026-11-05 00:29:08,293556,2026-11-05,2026-11-05 19:00,uta,mtl,bet365,firstperiod,spread,away,-0.5,163,normal
+2026-11-05 00:29:08,293556,2026-11-05,2026-11-05 19:00,uta,mtl,bet365,firstperiod,total,over,1.5,-133,normal
+2026-11-05 00:29:08,293556,2026-11-05,2026-11-05 19:00,uta,mtl,bet365,firstperiod,total,under,1.5,113,normal
+2026-11-05 00:29:08,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,firstperiod,spread,away,0.5,-160,normal
+2026-11-05 00:29:08,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,firstperiod,total,over,1.5,-133,normal
+2026-11-05 00:29:08,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,firstperiod,total,under,1.5,105,normal
