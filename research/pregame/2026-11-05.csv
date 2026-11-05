@@ -14448,3 +14448,12 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 07:52:14,293550,2026-11-05,2026-11-05 19:00,chi,tb,FanDuel,firstperiod,total,over,1.5,-152,normal
 2026-11-05 07:52:14,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,thirdperiod,spread,away,-0.5,145,normal
 2026-11-05 07:52:14,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,thirdperiod,spread,home,0.5,-210,normal
+2026-11-05 07:53:54,293549,2026-11-05,2026-11-05 19:00,dal,cbj,BetMGM,event,spread,home,1.5,-225,normal
+2026-11-05 07:53:54,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,event,moneyline,home,0.0,-198,normal
+2026-11-05 07:53:54,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,event,moneyline,away,0.0,163,normal
+2026-11-05 07:53:54,293554,2026-11-05,2026-11-05 19:00,phi,nyr,BetMGM,event,moneyline,away,0.0,125,normal
+2026-11-05 07:53:54,293554,2026-11-05,2026-11-05 19:00,phi,nyr,BetMGM,event,moneyline,home,0.0,-150,normal
+2026-11-05 07:53:54,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,event,spread,away,1.5,-143,normal
+2026-11-05 07:53:54,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,event,spread,home,-1.5,121,normal
+2026-11-05 07:53:54,293558,2026-11-05,2026-11-05 19:00,van,wpg,BetMGM,event,moneyline,home,0.0,-220,normal
+2026-11-05 07:53:54,293558,2026-11-05,2026-11-05 19:00,van,wpg,BetMGM,event,moneyline,away,0.0,180,normal
