@@ -10609,3 +10609,15 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 03:17:42,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,thirdperiod,spread,away,0.5,-122,opener
 2026-11-05 03:17:42,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,thirdperiod,total,over,2.5,130,opener
 2026-11-05 03:17:42,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,thirdperiod,total,under,2.5,-166,opener
+2026-11-05 03:20:47,293554,2026-11-05,2026-11-05 19:00,phi,nyr,DraftKings,event,total,under,5.5,110,normal
+2026-11-05 03:20:47,293554,2026-11-05,2026-11-05 19:00,phi,nyr,DraftKings,event,total,over,5.5,-130,normal
+2026-11-05 03:20:47,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,event,team_total,away_over,3.5,115,normal
+2026-11-05 03:20:47,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,event,team_total,home_under,2.5,105,normal
+2026-11-05 03:20:47,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,event,team_total,away_under,3.5,-155,normal
+2026-11-05 03:20:47,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,event,team_total,home_over,2.5,-145,normal
+2026-11-05 03:20:47,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,secondperiod,team_total,away_under,0.5,165,normal
+2026-11-05 03:20:47,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,secondperiod,team_total,away_over,0.5,-225,normal
+2026-11-05 03:20:47,293554,2026-11-05,2026-11-05 19:00,phi,nyr,DraftKings,thirdperiod,team_total,home_under,1.5,-238,normal
+2026-11-05 03:20:47,293554,2026-11-05,2026-11-05 19:00,phi,nyr,DraftKings,thirdperiod,team_total,home_over,1.5,180,normal
+2026-11-05 03:20:47,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,thirdperiod,team_total,away_under,1.5,-238,normal
+2026-11-05 03:20:47,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,thirdperiod,team_total,away_over,1.5,180,normal
