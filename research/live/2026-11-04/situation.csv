@@ -159,3 +159,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 21:35:05,401892644,2026-11-04,ott,buf,in,20:00 - 3rd,3,20:00,0.0,1.0,17.0,23.0,Period End,End of 2nd Period
 2026-11-04 21:36:05,401892644,2026-11-04,ott,buf,in,19:28 - 3rd,3,19:28,0.0,1.0,17.0,23.0,Face Off,Peyton Krebs faceoff won against Shane Pinto
 2026-11-04 21:36:05,401892645,2026-11-04,chi,fla,in,20:00 - 3rd,3,20:00,1.0,3.0,16.0,13.0,Period End,End of 2nd Period
+2026-11-04 21:37:05,401892644,2026-11-04,ott,buf,in,18:57 - 3rd,3,18:57,0.0,1.0,17.0,23.0,Stoppage,Puck Frozen - Goalie
+2026-11-04 21:38:05,401892644,2026-11-04,ott,buf,in,18:26 - 3rd,3,18:26,0.0,1.0,17.0,23.0,Stoppage,Off-side
+2026-11-04 21:38:05,401892645,2026-11-04,chi,fla,in,19:58 - 3rd,3,19:58,1.0,3.0,16.0,13.0,Period Start,Start of 3rd Period
+2026-11-04 21:39:05,401892644,2026-11-04,ott,buf,in,18:13 - 3rd,3,18:13,0.0,1.0,17.0,23.0,Penalty Shot Infraction,Nikolas Matinpalo Minor
+2026-11-04 21:39:05,401892645,2026-11-04,chi,fla,in,19:34 - 3rd,3,19:34,1.0,3.0,16.0,13.0,Blocked,Eetu Luostarinen shot blocked by Artyom Levshunov
+2026-11-04 21:40:05,401892644,2026-11-04,ott,buf,in,17:18 - 3rd,3,17:18,0.0,1.0,17.0,23.0,Face Off,Claude Giroux faceoff won against Tage Thompson
+2026-11-04 21:40:05,401892645,2026-11-04,chi,fla,in,18:58 - 3rd,3,18:58,1.0,3.0,16.0,13.0,Missed,Missed Shot
+2026-11-04 21:41:06,401892644,2026-11-04,ott,buf,in,16:19 - 3rd,3,16:19,0.0,1.0,17.0,23.0,Blocked,Jack Quinn shot blocked by Jordan Spence
+2026-11-04 21:41:06,401892645,2026-11-04,chi,fla,in,17:58 - 3rd,3,17:58,1.0,3.0,16.0,14.0,Shot,Anton Frondell saved by Jacob Markstrom
+2026-11-04 21:42:06,401892644,2026-11-04,ott,buf,in,15:46 - 3rd,3,15:46,0.0,1.0,17.0,23.0,Stoppage,Puck in Benches
+2026-11-04 21:42:06,401892645,2026-11-04,chi,fla,in,17:20 - 3rd,3,17:20,1.0,3.0,16.0,14.0,Blocked,Connor Bedard shot blocked by Niko Mikkola
