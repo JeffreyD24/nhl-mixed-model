@@ -8933,3 +8933,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 21:50:04,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Consensus,firstperiod,spread,home,-0.5,152,normal
 2026-11-04 21:50:04,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Consensus,thirdperiod,team_total,home_under,1.5,-165,normal
 2026-11-04 21:50:04,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Consensus,thirdperiod,team_total,home_over,1.5,124,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,event,team_total,away_under,2.5,130,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,event,team_total,home_under,3.5,-150,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,event,team_total,home_over,3.5,110,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,event,team_total,away_over,2.5,-170,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,event,moneyline,away,0.0,120,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,event,moneyline,home,0.0,-142,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,event,total,under,6.5,-118,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,event,total,over,6.5,-102,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,firstperiod,spread,home,-0.5,154,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,firstperiod,spread,away,0.5,-200,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,thirdperiod,team_total,home_under,1.5,-238,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,thirdperiod,team_total,home_over,1.5,180,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,thirdperiod,spread,home,-0.5,135,normal
+2026-11-04 21:52:10,293547,2026-11-04,2026-11-04 22:00,cgy,sea,DraftKings,thirdperiod,spread,away,0.5,-175,normal
