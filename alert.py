@@ -529,6 +529,49 @@ def main():
                 for _sd in _sides:
                     _col = {"moneyline": f"dk_link_{_sd}_ml", "puck line": f"dk_link_{_sd}_pl", "total": f"dk_link_{_sd}"}[_mk]
                     DKC[(g["game_id"], _mk, _sd)] = ln.get(_col) if isinstance(ln.get(_col), str) else DK_NHL
+            # ---- goalie what-ifs (Nov 5, 2026): the bet's EV under each likely starter for every goalie not yet confirmed,
+            # so an alert shows whether a goalie announcement could push it out of range (UTA -1.5 on Nov 5: alerted at
+            # +10.2% with Vejmelka expected, Cossa was confirmed 13 minutes later and it fell to +8.9%, under the 9% bar)
+            def goalie_whatifs(name, mk, side, lnum, price, oprice):
+                OM = Mall["models"][name]
+                og = next((x for x in OM["games"] if x["game_id"] == g["game_id"]), None)
+                if og is None: return []
+                gv = {int(k): v for k, v in OM["goalies"].items()}
+                cal = OM["cal"]["pretip" if (gh_known and ga_known) else "open"]   # same calibration as the headline EV
+                eff = {d: goalie(d, gv)[0] for d in ("home", "away")}
+                out = []
+                for d, conf in (("home", gh_conf), ("away", ga_conf)):
+                    if conf: continue
+                    mix = {int(k): w for k, w in g[f"{d}_gmix"].items()}
+                    cands = [k for k, w in sorted(mix.items(), key=lambda x: -x[1]) if w >= 0.10][:3]
+                    p_ = pr.get(d); rn = GNEWS.get(f"{g['game_id']}|{d}")
+                    cur = int(rn["goalie_id"]) if rn else (int(p_[0]) if p_ else None)
+                    if cur is not None and cur not in cands: cands = [cur] + cands
+                    if len(cands) < 2: continue
+                    opts = []
+                    for gid in cands:
+                        e = dict(eff); e[d] = gv.get(gid, 0.0)
+                        lh = og["base_home"] + OM["c_miss"] * mh + e["away"]; la = og["base_away"] + OM["c_miss"] * ma + e["home"]
+                        if mk == "total":
+                            po, pu, _ = nm.over_prob(np.array([lh]), np.array([la]), np.array([lnum]), OM["h_ot"], cal)
+                            p = float(po[0]) if side == "over" else float(pu[0])
+                        else:
+                            mp = nm.market_probs(np.array([lh]), np.array([la]), OM["h_ot"], cal)
+                            if mk == "moneyline":
+                                ph = float(mp["home_win"][0])
+                                if name in ALERT_MODELS and TADJ: ph = min(max(ph + TADJ, 0.02), 0.98)
+                                if name in ALERT_MODELS and not pd.isna(ph_open): ph = ML_BLEND * ph + (1 - ML_BLEND) * ph_open
+                                p = ph if side == "home" else 1 - ph
+                            else:
+                                hl = c["home_pl"]; phc = float(mp["home_by2"][0]) if hl < 0 else 1 - float(mp["away_by2"][0])
+                                p = phc if side == "home" else 1 - phc
+                        ev = p * espn.nd_dec(price) - 1
+                        ok = ev >= thr_for(mk, price, oprice)
+                        nm_ = gname.get(gid, "?").split()[-1]
+                        opts.append(f"{nm_} {ev:+.1%} {'✅' if ok else '❌'}" + ("" if gid != cur else " (listed)"))
+                    out.append(f"If {g[d].upper()} starts: " + " | ".join(opts))
+                return out
+
             # ---- alerts: one per side; both models in one alert when they agree
             def second_chance(name, bt, mk):
                 """moneyline only: no value at the opener, 6%+ now, Pinnacle posted in the last hour and agrees or matches"""
@@ -636,9 +679,7 @@ def main():
                     for n, bt in pending:
                         p, ev = bt[3], bt[4]
                         s_ = f"{SHORT.get(n, n)}: {p:.1%} to win (needs {1 / espn.nd_dec(price):.1%}), EV {ev:+.1%}"
-                        if not pd.isna(oprice) and oprice != price: s_ += f" (EV at the opening {fmt_price(oprice)}: {p * espn.nd_dec(oprice) - 1:+.1%})"
-                        lh, la, et, _ = est[n]
-                        lines_.append(s_ + f"; score {Aw} {la:.2f}, {H} {lh:.2f} in regulation, total {et:.2f}.")
+                        lines_.append(s_ + ".")
                     body = ("DraftKings " + fmt_price(price) + (" (opening price)." if oprice == price else
                             (f" (opened {fmt_price(oprice)})." if not pd.isna(oprice) else ".")) + "\n" + "\n".join(lines_))
                     if oo:
@@ -657,8 +698,16 @@ def main():
                                 f"(+10%) 2021-26, every season positive. Bet at {fmt_price(price)} or better, now.\n" + body)
                     elif threshold_for(price, oprice) > THRESHOLD:
                         body += f"\nThe price has moved since it opened, so this needed {THRESHOLD_MOVED:.0%}+ EV (vs {THRESHOLD:.0%} at the opening price)."
-                    tail = f"\nGoalies: {goalies_txt}." + (f"\nSchedule: {TWHY} ({100 * TADJ:+.1f} win-% pts to {H} in the shot model's moneyline)." if TADJ else "")
-                    if outs_a or outs_h: tail += f"\nMissing: {Aw} {', '.join(outs_a) or 'none'}; {H} {', '.join(outs_h) or 'none'}."
+                    # Nov 5, 2026: alerts trimmed to what decides the bet. Goalies plus the EV under each possible starter stay;
+                    # schedule, missing skaters, line history, news and the running record are left out (still in the model).
+                    tail = f"\nGoalies: {goalies_txt}."
+                    try:
+                        wi = []
+                        n_wi = next((n_ for n_, _ in pending if n_ in ALERT_MODELS), pending[0][0])   # the model the bet is graded on
+                        wi = goalie_whatifs(n_wi, mk, side, lnum, price, oprice)
+                        if wi: tail += "\nEV by starter (✅ still a bet at this price):\n" + "\n".join(wi)
+                    except Exception as e:
+                        print("goalie what-ifs skipped:", e)
                     link = log_link(M["date"], g["away"], g["home"], mk, team if mk != "total" else side,
                                     "" if mk == "moneyline" else f"{lnum:+g}" if mk == "puck line" else f"{lnum:g}", f"{price:+.0f}")
                     dkcol = {"moneyline": f"dk_link_{side}_ml", "puck line": f"dk_link_{side}_pl", "total": f"dk_link_{side}"}[mk]
@@ -677,11 +726,11 @@ def main():
                         body = f"Bet only at {fmt_price(floor)} or better. If DraftKings shows a shorter price, skip it.\n" + body
                     if skip == MOVED_SKIP:
                         body = ("INFO ONLY, DON'T BET: the price has moved off its opening number "
-                                f"({fmt_price(oprice)} at open). In the backtests the model loses at moved prices.\n" + body + tail + hist_txt)
+                                f"({fmt_price(oprice)} at open). In the backtests the model loses at moved prices.\n" + body + tail)
                         sent = notify("INFO ONLY - " + title.replace("] Bet ", "] "), body, priority="low", tags="information_source,ice_hockey")
                     elif skip:
                         body += f"\nCAUTION: {skip}. The model may be missing news here; bet with caution." + tail + \
-                                f"\nCaution alerts so far: {recs}." + hist_txt + news_for(g)
+                                ""
                         same, other = bets_note(M["date"], g["home"], g["away"], mk, (team if mk != "total" else side))
                         ctitle = "CAUTION " + title
                         if same: body = f"ALREADY BET: you logged {same}.\n" + body; ctitle = "ALREADY BET - " + ctitle
@@ -691,12 +740,7 @@ def main():
                         if fd_txt: body = fd_txt + "\n" + body
                         sent = notify(ctitle, body, priority="default", tags="warning,ice_hockey", link=link, dk=dk, fd=fd_link, best=best_book)
                     else:
-                        if toward: body += f"\nMarket agrees: the moneyline has moved {abs(move):.1f} win-% points toward this side since open."
-                        if mk == "moneyline":
-                            ev_b = max([bt_[4] for n_, bt_ in pending if n_ in ALERT_MODELS] or [bt_[4] for _, bt_ in pending])   # shot model, as recorded
-                            body += (f"\nRecord bucket: moneyline EV {'9%+' if ev_b >= ML_EV_SPLIT else '4-9%'} (graded separately; "
-                                     f"2021-26 the 9%+ bucket beat the closing line, the 4-9% bucket did not).")
-                        body += tail + f"\nAlerts so far: {recs}. Tracking test: neither model has proven an edge live yet." + hist_txt + news_for(g)
+                        body += tail
                         prio = "high"; why = ""
                         cb = caution_before(g["game_id"], mk, [n for n, _ in pending])
                         if cb is not None:      # a caution went out earlier: say why this one follows it
@@ -705,8 +749,7 @@ def main():
                                        "both starting goalies are now confirmed" if "goalies" in reason else
                                        "the moneyline is no longer moving against this side" if "against" in reason else
                                        "the caution no longer applies")
-                            why = (f"UPDATE to the CAUTION alert at {pd.Timestamp(cb.alerted_at_et):%-I:%M %p}: {cleared}. "
-                                   f"EV now {max(bt[4] for _, bt in pending):+.1%} (was {float(cb.ev):+.1%} at {fmt_price(cb.price)}).\n")
+                            why = f"UPDATE to the {pd.Timestamp(cb.alerted_at_et):%-I:%M %p} caution: {cleared}.\n"
                             title = "UPDATE - " + title
                         same, other = bets_note(M["date"], g["home"], g["away"], mk, (team if mk != "total" else side))
                         if same:
