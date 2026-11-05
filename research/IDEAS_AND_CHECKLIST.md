@@ -71,6 +71,12 @@ Legend: [x] already in place  [~] partly  [ ] open  (O) = good job for Opus
       toward the rested team in every season. Pre-register as a filter for model bets and as a standalone rule
 - [ ] Re-measure the model's logistic weight vs the opener each season (82% with goalies 2024-26, 28% team-only 2016-22; live blend 55%)
 
+## Leads and ideas from Nov 5, 2026 (details in nba-mixed-model analysis/FINDINGS.md)
+- [ ] [LEAD] Separate puck line EV bars for the -1.5 and +1.5 sides (+1.5 at EV 6-8% mildly positive, -1.5 clearly negative, in-sample;
+      analysis/pl_ev_bands_output.txt). Re-test on 2026-27 with the puck line TEST rows (EV 6-9%) the live code already logs.
+- [ ] [IDEA] Goalie-fragile bets: split backtest opener bets by whether the bet still clears the bar under every likely starter;
+      if fragile bets do worse, wait for confirmation on those or grade them as their own group.
+
 ## When to switch to Opus
 Switch for: (1) the independent leakage audit, (2) choosing shrink thresholds and bet rules without overfitting, (3) any redesign of how
 the three models are combined. Stay on Sonnet for: data downloads, cleaning, running backtests, logging, wiring alerts, reports.
