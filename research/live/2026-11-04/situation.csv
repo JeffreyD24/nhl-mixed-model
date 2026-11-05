@@ -440,3 +440,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 00:35:05,401892647,2026-11-04,cgy,sea,in,0:44 - 3rd,3,0:44,1.0,1.0,27.0,25.0,Face Off,Freddy Gaudreau faceoff won against Ryan Strome
 2026-11-05 00:36:05,401892646,2026-11-04,sj,la,in,7:16 - 3rd,3,7:16,2.0,6.0,17.0,28.0,Blocked,Zack Ostapchuk shot blocked by Alex Laferriere
 2026-11-05 00:36:05,401892647,2026-11-04,cgy,sea,in,0:05 - 3rd,3,0:05,1.0,1.0,27.0,25.0,Missed,Missed Shot
+2026-11-05 00:37:05,401892646,2026-11-04,sj,la,in,7:05 - 3rd,3,7:05,2.0,6.0,17.0,28.0,Face Off,Erik Haula faceoff won against Collin Graf
+2026-11-05 00:37:05,401892647,2026-11-04,cgy,sea,in,5:00 - OT,4,5:00,1.0,1.0,27.0,25.0,Period End,End of 3rd Period
+2026-11-05 00:38:05,401892646,2026-11-04,sj,la,in,6:25 - 3rd,3,6:25,2.0,6.0,18.0,28.0,Shot,Martin Chromiak saved by Yaroslav Askarov
+2026-11-05 00:39:05,401892646,2026-11-04,sj,la,in,5:51 - 3rd,3,5:51,2.0,6.0,20.0,28.0,Face Off,Alex Laferriere faceoff won against Barclay Goodrow
+2026-11-05 00:39:05,401892647,2026-11-04,cgy,sea,in,4:54 - OT,4,4:54,1.0,1.0,27.0,25.0,Face Off,Jonathan Castagna faceoff won against Matty Beniers
+2026-11-05 00:40:05,401892646,2026-11-04,sj,la,in,5:31 - 3rd,3,5:31,2.0,7.0,20.0,28.0,Goal,"Quinton Byfield Goal (4), assists: Artemi Panarin (9), Erik Gustafsson (4)"
+2026-11-05 00:40:05,401892647,2026-11-04,cgy,sea,in,4:05 - OT,4,4:05,1.0,1.0,27.0,25.0,Face Off,Jonathan Castagna faceoff won against Matty Beniers
+2026-11-05 00:41:05,401892646,2026-11-04,sj,la,in,4:37 - 3rd,3,4:37,2.0,7.0,20.0,28.0,Face Off,Macklin Celebrini faceoff won against Kenny Connors
+2026-11-05 00:42:06,401892646,2026-11-04,sj,la,in,4:05 - 3rd,3,4:05,2.0,7.0,20.0,29.0,Stoppage,Goalie Stopped
