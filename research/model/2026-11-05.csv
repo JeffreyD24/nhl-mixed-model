@@ -97,3 +97,7 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 12:07,goals,401892657,2026-11-05,ana,edm,0.6017,3.817,3.055,7.02,Lukas Dostal (expected),Matt Tomkins (confirmed),"ANA: Greer, Hinds | EDM: Frederic, Howard, Emberson"
 2026-11-05 12:19,xg,401892653,2026-11-05,phi,nyr,0.5461,3.097,2.724,5.99,Joseph Woll (confirmed),Dylan Garand (confirmed),"PHI: Bump, McDonald | NYR: Raddysh, Durzi, Glendening"
 2026-11-05 12:19,goals,401892653,2026-11-05,phi,nyr,0.5318,3.013,2.764,5.95,Joseph Woll (confirmed),Dylan Garand (confirmed),"PHI: Bump, McDonald | NYR: Raddysh, Durzi, Glendening"
+2026-11-05 12:40,xg,401892648,2026-11-05,uta,mtl,0.4119,3.146,3.586,6.89,Sebastian Cossa (confirmed),Jakub Dobes (confirmed),UTA: Yamamoto? | MTL: Dach
+2026-11-05 12:40,goals,401892648,2026-11-05,uta,mtl,0.518,3.365,3.192,6.72,Sebastian Cossa (confirmed),Jakub Dobes (confirmed),UTA: Yamamoto? | MTL: Dach
+2026-11-05 12:40,xg,401892651,2026-11-05,stl,nj,0.6468,3.463,2.48,6.1,Jordan Binnington (confirmed),Connor Hellebuyck (confirmed),"STL: Kaskimaki, Parayko | NJ: Dillon"
+2026-11-05 12:40,goals,401892651,2026-11-05,stl,nj,0.5666,3.218,2.74,6.12,Jordan Binnington (confirmed),Connor Hellebuyck (confirmed),"STL: Kaskimaki, Parayko | NJ: Dillon"
