@@ -9627,3 +9627,11 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 01:52:35,293557,2026-11-05,2026-11-05 20:00,ana,edm,Consensus,event,moneyline,away,0.0,154,normal
 2026-11-05 01:55:46,293551,2026-11-05,2026-11-05 19:00,car,nyi,Consensus,event,moneyline,home,0.0,145,normal
 2026-11-05 01:55:46,293551,2026-11-05,2026-11-05 19:00,car,nyi,Consensus,event,moneyline,away,0.0,-173,normal
+2026-11-05 01:57:37,293551,2026-11-05,2026-11-05 19:00,car,nyi,bet365,event,moneyline,away,0.0,-172,normal
+2026-11-05 01:57:37,293551,2026-11-05,2026-11-05 19:00,car,nyi,bet365,event,moneyline,home,0.0,146,normal
+2026-11-05 01:57:37,293550,2026-11-05,2026-11-05 19:00,chi,tb,Consensus,firstperiod,total,under,1.5,114,normal
+2026-11-05 01:57:37,293550,2026-11-05,2026-11-05 19:00,chi,tb,Consensus,firstperiod,total,over,1.5,-142,normal
+2026-11-05 01:57:37,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,secondperiod,total,under,2.0,-114,normal
+2026-11-05 01:57:37,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,secondperiod,total,over,2.0,-113,normal
+2026-11-05 01:57:37,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,thirdperiod,total,over,2.5,135,normal
+2026-11-05 01:57:37,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,thirdperiod,total,under,2.5,-178,normal
