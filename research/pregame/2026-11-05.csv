@@ -12297,3 +12297,7 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 04:45:41,293554,2026-11-05,2026-11-05 19:00,phi,nyr,Fanatics,thirdperiod,team_total,away_over,0.5,-180,normal
 2026-11-05 04:45:41,293554,2026-11-05,2026-11-05 19:00,phi,nyr,Fanatics,thirdperiod,total,over,2.5,150,normal
 2026-11-05 04:45:41,293554,2026-11-05,2026-11-05 19:00,phi,nyr,Fanatics,thirdperiod,total,under,2.5,-205,normal
+2026-11-05 04:47:25,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,event,spread,away,-1.5,205,normal
+2026-11-05 04:47:25,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,event,spread,home,1.5,-250,normal
+2026-11-05 04:47:25,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,thirdperiod,spread,home,0.5,-192,normal
+2026-11-05 04:47:25,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,thirdperiod,spread,away,-0.5,150,normal
