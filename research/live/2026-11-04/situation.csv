@@ -118,3 +118,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 20:59:05,401892645,2026-11-04,chi,fla,in,8:23 - 2nd,2,8:23,0.0,2.0,9.0,10.0,Stoppage,Goalie Stopped
 2026-11-04 21:00:05,401892644,2026-11-04,ott,buf,in,9:23 - 2nd,2,9:23,0.0,0.0,17.0,18.0,Stoppage,Goalie Stopped
 2026-11-04 21:00:05,401892645,2026-11-04,chi,fla,in,7:15 - 2nd,2,7:15,0.0,2.0,9.0,10.0,Face Off,Anton Lundell faceoff won against Connor Bedard
+2026-11-04 21:01:06,401892645,2026-11-04,chi,fla,in,7:13 - 2nd,2,7:13,0.0,2.0,9.0,10.0,Stoppage,Goalie Stopped
+2026-11-04 21:03:05,401892644,2026-11-04,ott,buf,in,8:49 - 2nd,2,8:49,0.0,0.0,17.0,18.0,Face Off,Stephen Halliday faceoff won against Peyton Krebs
+2026-11-04 21:03:05,401892645,2026-11-04,chi,fla,in,6:56 - 2nd,2,6:56,0.0,2.0,9.0,11.0,Face Off,Anton Frondell faceoff won against Sam Reinhart
+2026-11-04 21:04:05,401892644,2026-11-04,ott,buf,in,7:58 - 2nd,2,7:58,0.0,0.0,16.0,18.0,Face Off,Noah Ostlund faceoff won against Shane Pinto
+2026-11-04 21:04:05,401892645,2026-11-04,chi,fla,in,6:40 - 2nd,2,6:40,0.0,3.0,10.0,11.0,Goal,"Seth Jones Goal (3) Wrist Shot, assists: Sandis Vilmanis (3), Sam Reinhart (7)"
+2026-11-04 21:05:05,401892644,2026-11-04,ott,buf,in,7:13 - 2nd,2,7:13,0.0,0.0,16.0,18.0,Stoppage,Puck in Netting
+2026-11-04 21:05:05,401892645,2026-11-04,chi,fla,in,5:48 - 2nd,2,5:48,0.0,3.0,9.0,11.0,Stoppage,TV Timeout
+2026-11-04 21:06:05,401892644,2026-11-04,ott,buf,in,6:24 - 2nd,2,6:24,0.0,0.0,16.0,18.0,Missed,Dylan Cozens Missed Shot Wide Right
+2026-11-04 21:06:05,401892645,2026-11-04,chi,fla,in,5:48 - 2nd,2,5:48,0.0,3.0,9.0,11.0,Interference,Ian Cole Interference against Garnet Hathaway
