@@ -8202,3 +8202,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 22:54:42,293557,2026-11-05,2026-11-05 20:00,ana,edm,Fanatics,thirdperiod,team_total,home_over,1.5,130,normal
 2026-11-04 22:54:42,293557,2026-11-05,2026-11-05 20:00,ana,edm,Fanatics,thirdperiod,team_total,away_under,0.5,150,normal
 2026-11-04 22:54:42,293557,2026-11-05,2026-11-05 20:00,ana,edm,Fanatics,thirdperiod,team_total,home_under,1.5,-170,normal
+2026-11-04 22:59:46,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,event,team_total,home_over,2.5,-120,normal
+2026-11-04 22:59:46,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,event,team_total,home_under,2.5,-110,normal
+2026-11-04 22:59:46,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,firstperiod,spread,home,0.5,-205,normal
+2026-11-04 22:59:46,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,firstperiod,spread,away,-0.5,150,normal
+2026-11-04 22:59:46,293556,2026-11-05,2026-11-05 19:00,uta,mtl,Fanatics,firstperiod,moneyline,home,0.0,-120,normal
+2026-11-04 22:59:46,293556,2026-11-05,2026-11-05 19:00,uta,mtl,Fanatics,firstperiod,moneyline,away,0.0,-110,normal
+2026-11-04 22:59:46,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,secondperiod,moneyline,home,0.0,-160,normal
+2026-11-04 22:59:46,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,secondperiod,moneyline,away,0.0,120,normal
+2026-11-04 22:59:46,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,secondperiod,spread,away,-0.5,130,normal
+2026-11-04 22:59:46,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,secondperiod,spread,home,0.5,-175,normal
+2026-11-04 22:59:46,293556,2026-11-05,2026-11-05 19:00,uta,mtl,Fanatics,thirdperiod,moneyline,away,0.0,105,normal
+2026-11-04 22:59:46,293556,2026-11-05,2026-11-05 19:00,uta,mtl,Fanatics,thirdperiod,moneyline,home,0.0,-140,normal
+2026-11-04 22:59:46,293556,2026-11-05,2026-11-05 19:00,uta,mtl,Fanatics,thirdperiod,spread,home,0.5,-165,normal
+2026-11-04 22:59:46,293556,2026-11-05,2026-11-05 19:00,uta,mtl,Fanatics,thirdperiod,spread,away,-0.5,125,normal
