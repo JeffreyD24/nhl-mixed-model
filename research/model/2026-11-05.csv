@@ -109,3 +109,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 12:47,goals,401892656,2026-11-05,van,wpg,0.6087,3.568,2.788,6.51,Leevi Merilainen (confirmed),Stuart Skinner (confirmed),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
 2026-11-05 13:09,xg,401892658,2026-11-05,nsh,col,0.5747,3.542,2.836,6.53,Juuse Saros (expected),Mackenzie Blackwood (confirmed),"NSH: Marchessault?, Wood, Hague | COL: -"
 2026-11-05 13:09,goals,401892658,2026-11-05,nsh,col,0.5626,3.473,3.001,6.63,Juuse Saros (expected),Mackenzie Blackwood (confirmed),"NSH: Marchessault?, Wood, Hague | COL: -"
+2026-11-05 14:37,xg,401892657,2026-11-05,ana,edm,0.6148,3.695,2.868,6.71,Laurent Brossoit (confirmed),Matt Tomkins (confirmed),"ANA: Greer, Hinds | EDM: Frederic, Howard, Emberson"
+2026-11-05 14:37,goals,401892657,2026-11-05,ana,edm,0.6,3.804,3.055,7.01,Laurent Brossoit (confirmed),Matt Tomkins (confirmed),"ANA: Greer, Hinds | EDM: Frederic, Howard, Emberson"
