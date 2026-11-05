@@ -5,3 +5,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 19:42:05,401892644,2026-11-04,ott,buf,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
 2026-11-04 19:42:05,401892645,2026-11-04,chi,fla,in,17:42 - 1st,1,17:42,0.0,0.0,0.0,0.0,Stoppage,Goalie Stopped
 2026-11-04 19:43:05,401892645,2026-11-04,chi,fla,in,17:25 - 1st,1,17:25,0.0,0.0,2.0,0.0,Stoppage,Goalie Stopped
+2026-11-04 19:44:05,401892645,2026-11-04,chi,fla,in,16:33 - 1st,1,16:33,0.0,0.0,3.0,0.0,Blocked,Alex Vlasic shot blocked by Bokondji Imama
+2026-11-04 19:45:05,401892645,2026-11-04,chi,fla,in,15:33 - 1st,1,15:33,0.0,0.0,3.0,0.0,Blocked,Brady Tkachuk shot blocked by Wyatt Kaiser
+2026-11-04 19:46:05,401892644,2026-11-04,ott,buf,in,19:32 - 1st,1,19:32,0.0,0.0,,,Shot,Philip Tomasino saved by Colten Ellis
+2026-11-04 19:46:05,401892645,2026-11-04,chi,fla,in,15:17 - 1st,1,15:17,0.0,0.0,4.0,0.0,Shot,Sandis Vilmanis saved by Spencer Knight
+2026-11-04 19:47:06,401892644,2026-11-04,ott,buf,in,18:45 - 1st,1,18:45,0.0,0.0,0.0,1.0,Stoppage,Puck in Crowd
+2026-11-04 19:47:06,401892645,2026-11-04,chi,fla,in,14:19 - 1st,1,14:19,0.0,1.0,3.0,0.0,Face Off,Anton Frondell faceoff won against Sam Reinhart
+2026-11-04 19:48:06,401892644,2026-11-04,ott,buf,in,18:04 - 1st,1,18:04,0.0,0.0,0.0,2.0,Shot,Josh Norris saved by Samuel Ersson
+2026-11-04 19:48:06,401892645,2026-11-04,chi,fla,in,13:44 - 1st,1,13:44,0.0,1.0,3.0,0.0,Face Off,Ryan Greene faceoff won against Anton Lundell
+2026-11-04 19:49:06,401892644,2026-11-04,ott,buf,in,17:40 - 1st,1,17:40,0.0,0.0,1.0,3.0,Face Off,Stephen Halliday faceoff won against Tage Thompson
+2026-11-04 19:49:06,401892645,2026-11-04,chi,fla,in,12:43 - 1st,1,12:43,0.0,1.0,3.0,0.0,Missed,Brady Tkachuk Missed Shot Wide Right
