@@ -15,3 +15,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 19:48:06,401892645,2026-11-04,chi,fla,in,13:44 - 1st,1,13:44,0.0,1.0,3.0,0.0,Face Off,Ryan Greene faceoff won against Anton Lundell
 2026-11-04 19:49:06,401892644,2026-11-04,ott,buf,in,17:40 - 1st,1,17:40,0.0,0.0,1.0,3.0,Face Off,Stephen Halliday faceoff won against Tage Thompson
 2026-11-04 19:49:06,401892645,2026-11-04,chi,fla,in,12:43 - 1st,1,12:43,0.0,1.0,3.0,0.0,Missed,Brady Tkachuk Missed Shot Wide Right
+2026-11-04 19:50:05,401892644,2026-11-04,ott,buf,in,17:06 - 1st,1,17:06,0.0,0.0,1.0,4.0,Blocked,Shane Pinto shot blocked by Zach Benson
+2026-11-04 19:50:05,401892645,2026-11-04,chi,fla,in,11:42 - 1st,1,11:42,0.0,1.0,3.0,0.0,Hit,Brady Tkachuk hit Artyom Levshunov
+2026-11-04 19:51:06,401892644,2026-11-04,ott,buf,in,16:15 - 1st,1,16:15,0.0,0.0,2.0,4.0,Face Off,Tyson Kozak faceoff won against Stephen Halliday
+2026-11-04 19:51:06,401892645,2026-11-04,chi,fla,in,11:25 - 1st,1,11:25,0.0,1.0,4.0,0.0,Stoppage,Goalie Stopped
+2026-11-04 19:52:05,401892644,2026-11-04,ott,buf,in,15:15 - 1st,1,15:15,0.0,0.0,2.0,4.0,Shot,Noah Ostlund saved by Samuel Ersson
+2026-11-04 19:53:05,401892644,2026-11-04,ott,buf,in,14:32 - 1st,1,14:32,0.0,0.0,2.0,4.0,Shot,Noah Ostlund Wrist Shot saved by Samuel Ersson
+2026-11-04 19:54:05,401892644,2026-11-04,ott,buf,in,13:31 - 1st,1,13:31,0.0,0.0,2.0,4.0,Missed,Zach Metsa Missed Shot Wide Left
+2026-11-04 19:54:05,401892645,2026-11-04,chi,fla,in,11:02 - 1st,1,11:02,0.0,1.0,4.0,0.0,Stoppage,High Stick
+2026-11-04 19:55:05,401892644,2026-11-04,ott,buf,in,12:30 - 1st,1,12:30,0.0,0.0,2.0,4.0,Missed,Zach Metsa Missed Shot Wide Left
+2026-11-04 19:55:05,401892645,2026-11-04,chi,fla,in,10:25 - 1st,1,10:25,0.0,1.0,4.0,0.0,Stoppage,Goalie Stopped
