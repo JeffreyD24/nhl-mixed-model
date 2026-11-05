@@ -72,8 +72,11 @@ Legend: [x] already in place  [~] partly  [ ] open  (O) = good job for Opus
 - [ ] Re-measure the model's logistic weight vs the opener each season (82% with goalies 2024-26, 28% team-only 2016-22; live blend 55%)
 
 ## Leads and ideas from Nov 5, 2026 (details in nba-mixed-model analysis/FINDINGS.md)
-- [ ] [LEAD] Separate puck line EV bars for the -1.5 and +1.5 sides (+1.5 at EV 6-8% mildly positive, -1.5 clearly negative, in-sample;
-      analysis/pl_ev_bands_output.txt). Being tested NOW on past seasons (research/spreads/PL_SIDE_BARS_PREREG.md), not 2026-27.
+- [x] [LEAD, TESTED Nov 5] Separate puck line EV bars for -1.5 and +1.5: NOT SUPPORTED by the pre-registered rule
+      (research/spreads/PL_SIDE_BARS_RESULTS.md). Leave-one-season-out favored a 4% +1.5 bar (+98.5u vs +66.2u, 4/5 folds), but the
+      approximate older-season openers failed one clause. Do not re-suggest without a new reason.
+- [ ] [LEAD] -1.5 at EV 9%+ lost on approximate 2015-2021 openers (139 bets -12.2%) but won on DK 2021-26 (+11.8%). First remove
+      the home/away bias in the rebuilt opening puck line price, then re-run (new pre-registration).
 - [ ] [IDEA] Goalie-fragile bets: split backtest opener bets by whether the bet still clears the bar under every likely starter;
       if fragile bets do worse, wait for confirmation on those or grade them as their own group.
 

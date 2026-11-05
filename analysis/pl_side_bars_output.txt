@@ -1,0 +1,49 @@
+T1. Leave-one-season-out, DK openers 2021-22..2025-26 (shot model, +/-1.5, b2b removed)
+    bar chosen on the other 4 seasons by max units from {4..12}%, then graded on the held-out season
+  held out  shared bar   units  bets   -1.5 bar +1.5 bar   units  bets   per-side better?
+      2022          9%   +13.3    64         8%       4%   +18.3   125   yes
+      2023          9%   +33.2   261         9%       4%   +31.7   346   no
+      2024          9%    -7.1   111         9%       4%    -6.9   283   yes
+      2025          7%   +10.1   213         8%       4%   +27.4   273   yes
+      2026          8%   +16.8   167         8%       4%   +28.0   228   yes
+     total               +66.2                             +98.5         per-side better in 4/5 folds
+  +1.5 bar picked per fold: 4%, 4%, 4%, 4%, 4%
+
+T1 context: the same DK seasons by side and band (in-sample, from pl_ev_bands)
+                                           bets   win%     units      ROI    | by season   2022   2023   2024   2025   2026
+  -1.5 EV 4%-6%                              245 bets  37.6%    -26.1u  (-10.6%)  |   +1.0   +8.7   -4.8  -11.5  -19.4  neg 3/5
+  -1.5 EV 6%-9%                              272 bets  38.6%    -18.4u  ( -6.8%)  |   -5.8   +8.0   +2.6   -6.6  -16.4  neg 3/5
+  -1.5 EV 9%+                                569 bets  43.6%    +67.4u  (+11.8%)  |  +13.7  +27.6   -7.4  +16.6  +16.9  neg 1/5
+  +1.5 EV 4%-6%                              245 bets  66.5%    +13.1u  ( +5.4%)  |   -1.1   -2.9   +3.5   +8.6   +5.0  neg 2/5
+  +1.5 EV 6%-9%                              241 bets  63.9%     +6.3u  ( +2.6%)  |   +5.7   +1.3   -3.3   -3.3   +5.9  neg 2/5
+  +1.5 EV 9%+                                167 bets  64.7%    +20.4u  (+12.2%)  |   -0.4   +5.6   +0.3   +6.6   +8.4  neg 1/5
+
+Older seasons: 8186 games with predictions, END-year 2015-2021 (2014-15..2020-21)
+
+T2. Older seasons at SBR CLOSING puck lines (supporting only; closing prices are not where we bet)
+                                           bets   win%     units      ROI    | by season   2015   2016   2017   2018   2019   2020   2021
+  -1.5 EV 4%-6%                              254 bets  30.3%    -22.9u  ( -9.0%)  |   -6.8   +6.1   -1.9   +8.2  -11.3  -15.2   -2.0  neg 5/7
+  -1.5 EV 6%-9%                              319 bets  33.5%     -5.7u  ( -1.8%)  |   +0.6   -2.5  +10.5  -14.3   +0.2   +0.4   -0.7  neg 3/7
+  -1.5 EV 9%+                                559 bets  31.7%     -8.8u  ( -1.6%)  |   +2.2  +19.2  -13.2  -15.3   -3.8   -0.5   +2.7  neg 4/7
+  +1.5 EV 4%-6%                              493 bets  66.3%     -0.1u  ( -0.0%)  |   +3.5   +1.0   +2.0   -1.8   -3.8   -5.2   +4.1  neg 3/7
+  +1.5 EV 6%-9%                              474 bets  63.7%     -3.5u  ( -0.7%)  |   +1.1   +4.9   +1.8   -2.3   -5.1   +5.4   -9.2  neg 3/7
+  +1.5 EV 9%+                                470 bets  58.1%     -7.0u  ( -1.5%)  |   +0.1   -1.6  -11.7  -10.6   +6.3   -5.7  +16.3  neg 4/7
+
+T3 mapping, fit on 5563 DK openers: favorite -1.5 implied prob residual sd 0.0105 (in-sample)
+T3 validation on 8022 SBR closing lines: rebuilt minus real implied prob, home side mean +0.0147 sd 0.0326; away side mean -0.0101 sd 0.0323
+   (SBR's -1.5 side was the moneyline favorite in 98.5% of games)
+
+T3. Older seasons at an APPROXIMATE opening puck line (rebuilt from SBR's opening moneyline)
+                                           bets   win%     units      ROI    | by season   2015   2016   2017   2018   2019   2020   2021
+  -1.5 EV 4%-6%                               90 bets  36.7%     -2.0u  ( -2.2%)  |   +1.5   +0.6   -1.5   -1.9   +4.4   -1.3   -3.8  neg 4/7
+  -1.5 EV 6%-9%                               87 bets  36.8%     +3.6u  ( +4.1%)  |   -2.6   -1.4   -2.9   +1.1   +3.1   +4.3   +2.0  neg 3/7
+  -1.5 EV 9%+                                139 bets  31.7%    -16.9u  (-12.2%)  |   -4.3   +1.4   +0.7   -0.4   -6.5   -7.9   +0.1  neg 4/7
+  +1.5 EV 4%-6%                              707 bets  64.2%    -17.8u  ( -2.5%)  |   -2.4  -10.1   +0.8   -6.3   +1.1   -2.4   +1.5  neg 4/7
+  +1.5 EV 6%-9%                              884 bets  66.5%    +21.2u  ( +2.4%)  |  +12.3   +1.3   -4.7  +10.4   +0.2   -3.2   +5.0  neg 2/7
+  +1.5 EV 9%+                               1293 bets  65.1%    +71.0u  ( +5.5%)  |  +31.1  +25.5   +3.7   +4.7   +5.3   -5.7   +6.4  neg 1/7
+
+Decision rule (pre-registered)
+  1. T1 per-side bars beat the shared bar in total and in 3+/5 folds: PASS (+98.5u vs +66.2u, 4/5 folds)
+  2. T3 +1.5 at 6-9%: units > 0, positive in 4+/7 seasons, ROI above -1.5 at 6-9%: FAIL (+21.2u, 5/7 seasons, ROI +2.4% vs +4.1%)
+  3. T2 does not contradict (+1.5 6-9% ROI >= -1.5 6-9% ROI at the close): PASS (-0.7% vs -1.8%)
+  => H (+1.5 deserves a lower bar) NOT SUPPORTED
