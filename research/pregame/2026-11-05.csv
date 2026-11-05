@@ -7825,3 +7825,8 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 21:02:56,293556,2026-11-05,2026-11-05 19:00,uta,mtl,Fanatics,thirdperiod,team_total,home_over,0.5,-215,normal
 2026-11-04 21:04:53,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,thirdperiod,total,under,2.5,-130,normal
 2026-11-04 21:04:53,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,thirdperiod,total,over,2.5,-102,normal
+2026-11-04 21:06:56,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,firstperiod,spread,home,-0.5,115,normal
+2026-11-04 21:06:56,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,secondperiod,spread,home,-0.5,107,normal
+2026-11-04 21:06:56,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,secondperiod,spread,away,0.5,-151,normal
+2026-11-04 21:06:56,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,secondperiod,total,under,2.0,109,normal
+2026-11-04 21:06:56,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,secondperiod,total,over,2.0,-147,normal
