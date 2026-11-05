@@ -12301,3 +12301,10 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 04:47:25,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,event,spread,home,1.5,-250,normal
 2026-11-05 04:47:25,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,thirdperiod,spread,home,0.5,-192,normal
 2026-11-05 04:47:25,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,thirdperiod,spread,away,-0.5,150,normal
+2026-11-05 04:49:08,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,event,spread,away,-1.5,217,normal
+2026-11-05 04:49:08,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,event,spread,away,1.5,-250,normal
+2026-11-05 04:49:08,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,event,spread,home,-1.5,200,normal
+2026-11-05 04:49:08,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,secondperiod,moneyline,home,0.0,-165,normal
+2026-11-05 04:49:08,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,secondperiod,moneyline,away,0.0,125,normal
+2026-11-05 04:49:08,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,thirdperiod,spread,away,0.5,-210,normal
+2026-11-05 04:49:08,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,thirdperiod,spread,home,-0.5,145,normal
