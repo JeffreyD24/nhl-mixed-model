@@ -25,3 +25,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 19:54:05,401892645,2026-11-04,chi,fla,in,11:02 - 1st,1,11:02,0.0,1.0,4.0,0.0,Stoppage,High Stick
 2026-11-04 19:55:05,401892644,2026-11-04,ott,buf,in,12:30 - 1st,1,12:30,0.0,0.0,2.0,4.0,Missed,Zach Metsa Missed Shot Wide Left
 2026-11-04 19:55:05,401892645,2026-11-04,chi,fla,in,10:25 - 1st,1,10:25,0.0,1.0,4.0,0.0,Stoppage,Goalie Stopped
+2026-11-04 19:56:05,401892644,2026-11-04,ott,buf,in,12:15 - 1st,1,12:15,0.0,0.0,2.0,5.0,Stoppage,Puck in Netting
+2026-11-04 19:56:05,401892645,2026-11-04,chi,fla,in,9:42 - 1st,1,9:42,0.0,1.0,4.0,1.0,Blocked,Ian Cole shot blocked by Sam Bennett
+2026-11-04 19:57:05,401892644,2026-11-04,ott,buf,in,12:15 - 1st,1,12:15,0.0,0.0,3.0,5.0,Stoppage,Puck in Netting
+2026-11-04 19:57:05,401892645,2026-11-04,chi,fla,in,9:42 - 1st,1,9:42,0.0,1.0,4.0,3.0,Stoppage,Goalie Stopped
+2026-11-04 19:58:05,401892644,2026-11-04,ott,buf,in,11:39 - 1st,1,11:39,0.0,0.0,3.0,5.0,Missed,Owen Power Missed Shot Wide Left
+2026-11-04 19:59:05,401892644,2026-11-04,ott,buf,in,10:38 - 1st,1,10:38,0.0,0.0,3.0,5.0,Missed,Owen Power Missed Shot Wide Left
+2026-11-04 19:59:05,401892645,2026-11-04,chi,fla,in,9:21 - 1st,1,9:21,0.0,1.0,4.0,3.0,Stoppage,Goalie Stopped
+2026-11-04 20:00:06,401892644,2026-11-04,ott,buf,in,9:58 - 1st,1,9:58,0.0,0.0,3.0,5.0,Stoppage,Goalie Stopped
+2026-11-04 20:00:06,401892645,2026-11-04,chi,fla,in,9:03 - 1st,1,9:03,0.0,1.0,4.0,3.0,Stoppage,Goalie Stopped
+2026-11-04 20:01:05,401892644,2026-11-04,ott,buf,in,9:58 - 1st,1,9:58,0.0,0.0,4.0,5.0,Stoppage,Goalie Stopped
+2026-11-04 20:01:05,401892645,2026-11-04,chi,fla,in,8:21 - 1st,1,8:21,0.0,1.0,5.0,3.0,Face Off,Cole Schwindt faceoff won against Ryan Greene
