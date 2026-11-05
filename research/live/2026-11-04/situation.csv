@@ -394,3 +394,15 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 00:10:05,401892647,2026-11-04,cgy,sea,in,13:01 - 3rd,3,13:01,1.0,1.0,22.0,20.0,Missed,Matthew Wood Wrist Shot Off Crossbar
 2026-11-05 00:11:05,401892646,2026-11-04,sj,la,in,20:00 - 3rd,3,20:00,1.0,5.0,13.0,20.0,Period End,End of 2nd Period
 2026-11-05 00:11:05,401892647,2026-11-04,cgy,sea,in,12:22 - 3rd,3,12:22,1.0,1.0,24.0,21.0,Stoppage,Goalie Stopped
+2026-11-05 00:13:06,401892646,2026-11-04,sj,la,in,19:46 - 3rd,3,19:46,1.0,5.0,13.0,20.0,Face Off,Quinton Byfield faceoff won against Macklin Celebrini
+2026-11-05 00:13:06,401892647,2026-11-04,cgy,sea,in,12:12 - 3rd,3,12:12,1.0,1.0,24.0,21.0,Face Off,Jonathan Castagna faceoff won against Berkly Catton
+2026-11-05 00:14:05,401892646,2026-11-04,sj,la,in,18:44 - 3rd,3,18:44,1.0,5.0,13.0,20.0,Missed,Will Smith Tip-In Wide Right
+2026-11-05 00:14:05,401892647,2026-11-04,cgy,sea,in,12:00 - 3rd,3,12:00,1.0,1.0,24.0,22.0,Stoppage,Goalie Stopped
+2026-11-05 00:15:05,401892646,2026-11-04,sj,la,in,17:47 - 3rd,3,17:47,1.0,5.0,13.0,20.0,Missed,Will Smith Tip-In Wide Right
+2026-11-05 00:15:05,401892647,2026-11-04,cgy,sea,in,11:15 - 3rd,3,11:15,1.0,1.0,24.0,22.0,Face Off,Chandler Stephenson faceoff won against Yegor Sharangovich
+2026-11-05 00:16:05,401892646,2026-11-04,sj,la,in,17:45 - 3rd,3,17:45,1.0,6.0,13.0,20.0,Goal,"Joel Armia Goal (3) Tip-In, assists: Erik Haula (4)"
+2026-11-05 00:16:05,401892647,2026-11-04,cgy,sea,in,10:16 - 3rd,3,10:16,1.0,1.0,24.0,23.0,Shot,Simon Nemec Backhand saved by Joey Daccord
+2026-11-05 00:17:06,401892646,2026-11-04,sj,la,in,16:44 - 3rd,3,16:44,1.0,6.0,14.0,20.0,Shot,Martin Chromiak saved by Yaroslav Askarov
+2026-11-05 00:17:06,401892647,2026-11-04,cgy,sea,in,9:11 - 3rd,3,9:11,1.0,1.0,24.0,24.0,Shot,Simon Nemec Backhand saved by Joey Daccord
+2026-11-05 00:18:05,401892646,2026-11-04,sj,la,in,16:31 - 3rd,3,16:31,1.0,6.0,14.0,20.0,Face Off,Macklin Celebrini faceoff won against Quinton Byfield
+2026-11-05 00:18:05,401892647,2026-11-04,cgy,sea,in,9:11 - 3rd,3,9:11,1.0,1.0,24.0,24.0,Stoppage,On-Ice Official
