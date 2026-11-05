@@ -84,3 +84,15 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 20:41:06,401892645,2026-11-04,chi,fla,in,19:28 - 2nd,2,19:28,0.0,2.0,8.0,5.0,Face Off,Connor Bedard faceoff won against Anton Lundell
 2026-11-04 20:42:05,401892644,2026-11-04,ott,buf,in,19:02 - 2nd,2,19:02,0.0,0.0,11.0,12.0,Stoppage,Icing
 2026-11-04 20:42:05,401892645,2026-11-04,chi,fla,in,18:27 - 2nd,2,18:27,0.0,2.0,8.0,6.0,Missed,Connor Bedard Missed Shot High and Wide Left
+2026-11-04 20:43:05,401892644,2026-11-04,ott,buf,in,18:40 - 2nd,2,18:40,0.0,0.0,11.0,12.0,Stoppage,Icing
+2026-11-04 20:43:05,401892645,2026-11-04,chi,fla,in,17:49 - 2nd,2,17:49,0.0,2.0,8.0,6.0,Stoppage,Icing
+2026-11-04 20:44:05,401892644,2026-11-04,ott,buf,in,17:56 - 2nd,2,17:56,0.0,0.0,11.0,12.0,Face Off,Shane Pinto faceoff won against Noah Ostlund
+2026-11-04 20:44:05,401892645,2026-11-04,chi,fla,in,17:18 - 2nd,2,17:18,0.0,2.0,8.0,6.0,Face Off,Sam Bennett faceoff won against Oliver Moore
+2026-11-04 20:45:05,401892644,2026-11-04,ott,buf,in,16:56 - 2nd,2,16:56,0.0,0.0,12.0,13.0,Blocked,Hayden Hodgson shot blocked by Mattias Samuelsson
+2026-11-04 20:45:05,401892645,2026-11-04,chi,fla,in,16:16 - 2nd,2,16:16,0.0,2.0,8.0,7.0,Hit,Brady Tkachuk hit Ian Cole
+2026-11-04 20:46:06,401892644,2026-11-04,ott,buf,in,16:22 - 2nd,2,16:22,0.0,0.0,12.0,13.0,Face Off,Tim Stützle faceoff won against Peyton Krebs
+2026-11-04 20:46:06,401892645,2026-11-04,chi,fla,in,15:16 - 2nd,2,15:16,0.0,2.0,8.0,6.0,Stoppage,Icing
+2026-11-04 20:47:06,401892644,2026-11-04,ott,buf,in,15:50 - 2nd,2,15:50,0.0,0.0,12.0,14.0,Face Off,Shane Pinto faceoff won against Tyson Kozak
+2026-11-04 20:47:06,401892645,2026-11-04,chi,fla,in,14:35 - 2nd,2,14:35,0.0,2.0,8.0,6.0,Missed,Ryan Donato Missed Shot Wide Left
+2026-11-04 20:48:05,401892644,2026-11-04,ott,buf,in,15:20 - 2nd,2,15:20,0.0,0.0,14.0,14.0,Blocked,Sam Carrick shot blocked by Carter Yakemchuk
+2026-11-04 20:48:05,401892645,2026-11-04,chi,fla,in,14:06 - 2nd,2,14:06,0.0,2.0,8.0,7.0,Blocked,Brady Tkachuk shot blocked by Sam Rinzel
