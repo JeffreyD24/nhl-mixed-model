@@ -150,3 +150,7 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 21:17:05,401892644,2026-11-04,ott,buf,in,End of 2nd,2,0:00,0.0,1.0,17.0,21.0,Period End,End of 2nd Period
 2026-11-04 21:17:05,401892645,2026-11-04,chi,fla,in,0:48 - 2nd,2,0:48,1.0,3.0,15.0,12.0,Stoppage,Icing
 2026-11-04 21:18:05,401892645,2026-11-04,chi,fla,in,0:19 - 2nd,2,0:19,1.0,3.0,17.0,13.0,Stoppage,Goalie Stopped
+2026-11-04 21:19:06,401892645,2026-11-04,chi,fla,in,End of 2nd,2,0:00,1.0,3.0,17.0,13.0,Period End,End of 2nd Period
+2026-11-04 21:20:05,401892644,2026-11-04,ott,buf,in,End of 2nd,2,0:00,0.0,1.0,17.0,22.0,Period End,End of 2nd Period
+2026-11-04 21:21:06,401892644,2026-11-04,ott,buf,in,End of 2nd,2,0:00,0.0,1.0,17.0,23.0,Period End,End of 2nd Period
+2026-11-04 21:22:06,401892645,2026-11-04,chi,fla,in,End of 2nd,2,0:00,1.0,3.0,16.0,13.0,Period End,End of 2nd Period
