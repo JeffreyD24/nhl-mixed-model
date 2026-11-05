@@ -345,3 +345,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 23:29:05,401892647,2026-11-04,cgy,sea,in,5:12 - 2nd,2,5:12,1.0,1.0,17.0,15.0,Missed,Chandler Stephenson Wrist Shot High and Wide Left
 2026-11-04 23:30:06,401892646,2026-11-04,sj,la,in,10:28 - 2nd,2,10:28,1.0,3.0,11.0,14.0,Blocked,Erik Haula shot blocked by Macklin Celebrini
 2026-11-04 23:30:06,401892647,2026-11-04,cgy,sea,in,4:35 - 2nd,2,4:35,1.0,1.0,17.0,15.0,Stoppage,Puck Frozen - Goalie
+2026-11-04 23:31:06,401892646,2026-11-04,sj,la,in,10:15 - 2nd,2,10:15,1.0,3.0,11.0,14.0,Stoppage,Puck in Netting
+2026-11-04 23:32:06,401892646,2026-11-04,sj,la,in,10:00 - 2nd,2,10:00,1.0,3.0,11.0,15.0,Stoppage,Goalie Stopped
+2026-11-04 23:32:06,401892647,2026-11-04,cgy,sea,in,4:35 - 2nd,2,4:35,1.0,1.0,17.0,15.0,Face Off,Morgan Frost faceoff won against Freddy Gaudreau
+2026-11-04 23:33:05,401892646,2026-11-04,sj,la,in,9:08 - 2nd,2,9:08,1.0,3.0,11.0,15.0,Shot,Mason Marchment Snap Shot saved by Darcy Kuemper
+2026-11-04 23:33:05,401892647,2026-11-04,cgy,sea,in,4:11 - 2nd,2,4:11,1.0,1.0,17.0,16.0,Face Off,Freddy Gaudreau faceoff won against Morgan Frost
+2026-11-04 23:34:05,401892646,2026-11-04,sj,la,in,8:50 - 2nd,2,8:50,1.0,4.0,11.0,16.0,Face Off,Ty Dellandrea faceoff won against Scott Laughton
+2026-11-04 23:34:05,401892647,2026-11-04,cgy,sea,in,3:31 - 2nd,2,3:31,1.0,1.0,17.0,16.0,Stoppage,Puck in Crowd
+2026-11-04 23:35:05,401892646,2026-11-04,sj,la,in,7:50 - 2nd,2,7:50,1.0,4.0,11.0,16.0,Missed,Joel Edmundson Slap Shot Wide Left
+2026-11-04 23:35:05,401892647,2026-11-04,cgy,sea,in,3:03 - 2nd,2,3:03,1.0,1.0,17.0,16.0,Face Off,Jonathan Castagna faceoff won against Berkly Catton
+2026-11-04 23:36:06,401892646,2026-11-04,sj,la,in,7:39 - 2nd,2,7:39,1.0,4.0,11.0,17.0,Stoppage,Goalie Stopped
+2026-11-04 23:36:06,401892647,2026-11-04,cgy,sea,in,2:39 - 2nd,2,2:39,1.0,1.0,18.0,16.0,Stoppage,Puck in Netting
