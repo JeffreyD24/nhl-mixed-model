@@ -111,3 +111,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 13:09,goals,401892658,2026-11-05,nsh,col,0.5626,3.473,3.001,6.63,Juuse Saros (expected),Mackenzie Blackwood (confirmed),"NSH: Marchessault?, Wood, Hague | COL: -"
 2026-11-05 14:37,xg,401892657,2026-11-05,ana,edm,0.6148,3.695,2.868,6.71,Laurent Brossoit (confirmed),Matt Tomkins (confirmed),"ANA: Greer, Hinds | EDM: Frederic, Howard, Emberson"
 2026-11-05 14:37,goals,401892657,2026-11-05,ana,edm,0.6,3.804,3.055,7.01,Laurent Brossoit (confirmed),Matt Tomkins (confirmed),"ANA: Greer, Hinds | EDM: Frederic, Howard, Emberson"
+2026-11-05 17:05,xg,401892652,2026-11-05,car,nyi,0.3356,2.843,3.778,6.77,Brandon Bussi (confirmed),Semyon Varlamov (confirmed),CAR: - | NYI: Pulock
+2026-11-05 17:05,goals,401892652,2026-11-05,car,nyi,0.4332,2.784,3.168,6.12,Brandon Bussi (confirmed),Semyon Varlamov (confirmed),CAR: - | NYI: Pulock
