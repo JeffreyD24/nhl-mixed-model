@@ -46,3 +46,24 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-04 22:17,goals,401892656,2026-11-05,van,wpg,0.6063,3.569,2.81,6.53,Leevi Merilainen (expected),Stuart Skinner (expected),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
 2026-11-04 22:17,xg,401892658,2026-11-05,nsh,col,0.5747,3.544,2.819,6.52,Juuse Saros (expected),Mackenzie Blackwood (expected),"NSH: Marchessault?, Wood, Hague | COL: -"
 2026-11-04 22:17,goals,401892658,2026-11-05,nsh,col,0.5631,3.473,3.001,6.63,Juuse Saros (expected),Mackenzie Blackwood (expected),"NSH: Marchessault?, Wood, Hague | COL: -"
+2026-11-05 10:06,xg,401892648,2026-11-05,uta,mtl,0.4388,3.118,3.383,6.66,Karel Vejmelka (expected),Jacob Fowler (expected),UTA: Yamamoto? | MTL: Dach?
+2026-11-05 10:06,goals,401892648,2026-11-05,uta,mtl,0.5491,3.351,2.974,6.49,Karel Vejmelka (expected),Jacob Fowler (expected),UTA: Yamamoto? | MTL: Dach?
+2026-11-05 10:06,xg,401892649,2026-11-05,vgk,det,0.4464,2.914,3.125,6.2,Carter Hart (expected),John Gibson (expected),VGK: - | DET: Danielson
+2026-11-05 10:06,goals,401892649,2026-11-05,vgk,det,0.457,2.881,3.111,6.16,Carter Hart (expected),John Gibson (expected),VGK: - | DET: Danielson
+2026-11-05 10:06,xg,401892650,2026-11-05,chi,tb,0.8047,4.178,2.222,6.52,Arvid Soderblom (expected),Andrei Vasilevskiy (expected),CHI: Kane | TB: -
+2026-11-05 10:06,goals,401892650,2026-11-05,chi,tb,0.7108,3.9,2.398,6.43,Arvid Soderblom (expected),Andrei Vasilevskiy (expected),CHI: Kane | TB: -
+2026-11-05 10:06,xg,401892651,2026-11-05,stl,nj,0.6194,3.282,2.48,5.92,Joel Hofer (expected),Connor Hellebuyck (expected),"STL: Kaskimaki, Parayko? | NJ: Dillon"
+2026-11-05 10:06,xg,401892652,2026-11-05,car,nyi,0.3103,2.657,3.75,6.55,Pyotr Kochetkov (expected),Ilya Sorokin (expected),CAR: - | NYI: Pulock
+2026-11-05 10:06,goals,401892652,2026-11-05,car,nyi,0.4002,2.519,3.104,5.79,Pyotr Kochetkov (expected),Ilya Sorokin (expected),CAR: - | NYI: Pulock
+2026-11-05 10:06,xg,401892653,2026-11-05,phi,nyr,0.5517,3.114,2.709,5.99,Dan Vladar (expected),James Reimer (expected),"PHI: Bump, McDonald | NYR: Raddysh, Durzi?, Glendening"
+2026-11-05 10:06,goals,401892653,2026-11-05,phi,nyr,0.5405,2.998,2.696,5.86,Dan Vladar (expected),James Reimer (expected),"PHI: Bump, McDonald | NYR: Raddysh, Durzi?, Glendening"
+2026-11-05 10:06,xg,401892654,2026-11-05,bos,pit,0.516,3.227,3.021,6.41,Jeremy Swayman (expected),Arturs Silovs (expected),BOS: Poitras? | PIT: Malkin?
+2026-11-05 10:06,goals,401892654,2026-11-05,bos,pit,0.458,2.944,3.169,6.28,Jeremy Swayman (expected),Arturs Silovs (expected),BOS: Poitras? | PIT: Malkin?
+2026-11-05 10:06,xg,401892655,2026-11-05,dal,cbj,0.4409,2.701,2.938,5.81,Jake Oettinger (expected),Jet Greaves (expected),"DAL: Blackwell, Seminoff, Heiskanen? | CBJ: Gudbranson"
+2026-11-05 10:06,goals,401892655,2026-11-05,dal,cbj,0.4356,2.702,3.064,5.93,Jake Oettinger (expected),Jet Greaves (expected),"DAL: Blackwell, Seminoff, Heiskanen? | CBJ: Gudbranson"
+2026-11-05 10:06,xg,401892656,2026-11-05,van,wpg,0.6398,3.639,2.671,6.46,Leevi Merilainen (expected),Stuart Skinner (expected),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
+2026-11-05 10:06,goals,401892656,2026-11-05,van,wpg,0.6087,3.568,2.788,6.51,Leevi Merilainen (expected),Stuart Skinner (expected),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
+2026-11-05 10:06,xg,401892657,2026-11-05,ana,edm,0.606,3.665,2.895,6.71,Lukas Dostal (expected),Tristan Jarry (expected),"ANA: Greer, Hinds | EDM: Frederic, Howard, Emberson"
+2026-11-05 10:06,goals,401892657,2026-11-05,ana,edm,0.6048,3.817,3.034,7.0,Lukas Dostal (expected),Tristan Jarry (expected),"ANA: Greer, Hinds | EDM: Frederic, Howard, Emberson"
+2026-11-05 10:06,xg,401892658,2026-11-05,nsh,col,0.5747,3.542,2.836,6.53,Juuse Saros (expected),Mackenzie Blackwood (expected),"NSH: Marchessault?, Wood, Hague | COL: -"
+2026-11-05 10:06,goals,401892658,2026-11-05,nsh,col,0.5626,3.473,3.001,6.63,Juuse Saros (expected),Mackenzie Blackwood (expected),"NSH: Marchessault?, Wood, Hague | COL: -"

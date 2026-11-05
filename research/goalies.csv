@@ -171,3 +171,9 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-11-04 14:36,401892645,2026-11-04,away,chi,4565234,Spencer Knight,Confirmed
 2026-11-04 14:42,401892646,2026-11-04,away,sj,4697394,Yaroslav Askarov,Confirmed
 2026-11-04 15:39,401892647,2026-11-04,away,cgy,4587952,Dustin Wolf,Confirmed
+2026-11-05 10:06,401892659,2026-11-06,home,buf,4233889,Ukko-Pekka Luukkonen,Expected
+2026-11-05 10:06,401892659,2026-11-06,away,cbj,5734,Cam Talbot,Expected
+2026-11-05 10:06,401892660,2026-11-06,home,min,4874737,Jesper Wallstedt,Expected
+2026-11-05 10:06,401892660,2026-11-06,away,sj,4697394,Yaroslav Askarov,Expected
+2026-11-05 10:06,401892661,2026-11-06,home,cgy,4587952,Dustin Wolf,Expected
+2026-11-05 10:06,401892661,2026-11-06,away,ana,3151137,Ville Husso,Expected

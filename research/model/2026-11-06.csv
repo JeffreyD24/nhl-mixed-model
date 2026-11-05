@@ -1,0 +1,7 @@
+seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_total,away_goalie,home_goalie,missing
+2026-11-05 10:06,xg,401892659,2026-11-06,cbj,buf,0.5508,3.163,2.904,6.23,Cam Talbot (expected),Ukko-Pekka Luukkonen (expected),CBJ: Gudbranson | BUF: -
+2026-11-05 10:06,goals,401892659,2026-11-06,cbj,buf,0.5182,3.056,2.89,6.11,Cam Talbot (expected),Ukko-Pekka Luukkonen (expected),CBJ: Gudbranson | BUF: -
+2026-11-05 10:06,xg,401892660,2026-11-06,sj,min,0.7821,4.219,2.17,6.51,Yaroslav Askarov (expected),Jesper Wallstedt (expected),"SJ: Gaudette, Allan | MIN: -"
+2026-11-05 10:06,goals,401892660,2026-11-06,sj,min,0.7053,3.586,2.198,5.93,Yaroslav Askarov (expected),Jesper Wallstedt (expected),"SJ: Gaudette, Allan | MIN: -"
+2026-11-05 10:06,xg,401892661,2026-11-06,ana,cgy,0.5048,3.269,3.294,6.72,Ville Husso (expected),Dustin Wolf (expected),"ANA: Greer, Hinds | CGY: -"
+2026-11-05 10:06,goals,401892661,2026-11-06,ana,cgy,0.4934,3.24,3.231,6.63,Ville Husso (expected),Dustin Wolf (expected),"ANA: Greer, Hinds | CGY: -"
