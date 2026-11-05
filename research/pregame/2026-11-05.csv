@@ -8134,3 +8134,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 22:34:48,293554,2026-11-05,2026-11-05 19:00,phi,nyr,BetMGM,thirdperiod,spread,away,-0.5,190,normal
 2026-11-04 22:34:48,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,thirdperiod,total,under,2.5,-188,normal
 2026-11-04 22:34:48,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,thirdperiod,total,over,2.5,145,normal
+2026-11-04 22:35:53,293553,2026-11-05,2026-11-05 19:00,stl,nj,FanDuel,event,total,under,5.5,114,normal
+2026-11-04 22:35:53,293553,2026-11-05,2026-11-05 19:00,stl,nj,FanDuel,event,total,over,5.5,-140,normal
