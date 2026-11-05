@@ -356,3 +356,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 23:35:05,401892647,2026-11-04,cgy,sea,in,3:03 - 2nd,2,3:03,1.0,1.0,17.0,16.0,Face Off,Jonathan Castagna faceoff won against Berkly Catton
 2026-11-04 23:36:06,401892646,2026-11-04,sj,la,in,7:39 - 2nd,2,7:39,1.0,4.0,11.0,17.0,Stoppage,Goalie Stopped
 2026-11-04 23:36:06,401892647,2026-11-04,cgy,sea,in,2:39 - 2nd,2,2:39,1.0,1.0,18.0,16.0,Stoppage,Puck in Netting
+2026-11-04 23:37:06,401892647,2026-11-04,cgy,sea,in,1:38 - 2nd,2,1:38,1.0,1.0,18.0,16.0,Face Off,Mikael Backlund faceoff won against Jordan Eberle
+2026-11-04 23:38:05,401892646,2026-11-04,sj,la,in,7:24 - 2nd,2,7:24,1.0,4.0,11.0,17.0,Blocked,Michael Kesselring shot blocked by Erik Haula
+2026-11-04 23:38:05,401892647,2026-11-04,cgy,sea,in,0:39 - 2nd,2,0:39,1.0,1.0,18.0,17.0,Shot,Yegor Sharangovich Wrist Shot saved by Joey Daccord
+2026-11-04 23:39:05,401892646,2026-11-04,sj,la,in,6:48 - 2nd,2,6:48,1.0,4.0,11.0,17.0,Face Off,Collin Graf faceoff won against Kenny Connors
+2026-11-04 23:39:05,401892647,2026-11-04,cgy,sea,in,End of 2nd,2,0:00,1.0,1.0,18.0,18.0,Period End,End of 2nd Period
+2026-11-04 23:40:05,401892646,2026-11-04,sj,la,in,6:29 - 2nd,2,6:29,1.0,4.0,11.0,17.0,Face Off,Collin Graf faceoff won against Alex Laferriere
+2026-11-04 23:40:05,401892647,2026-11-04,cgy,sea,in,End of 2nd,2,0:00,1.0,1.0,17.0,18.0,Period End,End of 2nd Period
+2026-11-04 23:41:05,401892646,2026-11-04,sj,la,in,5:39 - 2nd,2,5:39,1.0,4.0,12.0,18.0,Shot,Zack Ostapchuk Wrist Shot saved by Darcy Kuemper
+2026-11-04 23:42:05,401892646,2026-11-04,sj,la,in,5:05 - 2nd,2,5:05,1.0,4.0,12.0,18.0,Holding,Filip Bystedt Holding
