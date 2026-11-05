@@ -8740,3 +8740,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 21:08:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,event,spread,home,-1.5,170,normal
 2026-11-04 21:08:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,BetRivers,event,spread,away,1.5,-215,normal
 2026-11-04 21:08:56,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Consensus,thirdperiod,spread,away,0.5,-182,normal
+2026-11-04 21:19:09,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Caesars,event,total,over,6.5,100,normal
+2026-11-04 21:19:09,293547,2026-11-04,2026-11-04 22:00,cgy,sea,Caesars,event,total,under,6.5,-122,normal
