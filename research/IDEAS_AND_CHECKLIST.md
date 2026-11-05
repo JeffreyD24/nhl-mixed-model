@@ -75,8 +75,10 @@ Legend: [x] already in place  [~] partly  [ ] open  (O) = good job for Opus
 - [x] [LEAD, TESTED Nov 5] Separate puck line EV bars for -1.5 and +1.5: NOT SUPPORTED by the pre-registered rule
       (research/spreads/PL_SIDE_BARS_RESULTS.md). Leave-one-season-out favored a 4% +1.5 bar (+98.5u vs +66.2u, 4/5 folds), but the
       approximate older-season openers failed one clause. Do not re-suggest without a new reason.
-- [ ] [LEAD] -1.5 at EV 9%+ lost on approximate 2015-2021 openers (139 bets -12.2%) but won on DK 2021-26 (+11.8%). First remove
-      the home/away bias in the rebuilt opening puck line price, then re-run (new pre-registration).
+- [x] [LEAD, TESTED Nov 5] -1.5 at EV 9%+ on 2014-21 with the price rebuild fixed (research/spreads/PL_FAV_9PLUS_RESULTS.md):
+      CONFIRMED by the written rule, 654 bets -1.0% (interval -9.8% to +7.9%) vs DK +11.8%. Pooled 12 seasons +5.0%.
+- [ ] [LEAD] Does puck line EV predict profit at all? EV bands don't repeat their order across 2014-21 and 2021-26. Pre-register a
+      pooled 12-season test (profit vs EV slope, leave-one-season-out) before touching the puck line bar again.
 - [ ] [IDEA] Goalie-fragile bets: split backtest opener bets by whether the bet still clears the bar under every likely starter;
       if fragile bets do worse, wait for confirmation on those or grade them as their own group.
 
