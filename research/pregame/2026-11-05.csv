@@ -9284,3 +9284,6 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 00:52:42,293557,2026-11-05,2026-11-05 20:00,ana,edm,BetMGM,event,total,over,6.5,-145,normal
 2026-11-05 00:52:42,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,event,moneyline,away,0.0,180,normal
 2026-11-05 00:52:42,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,event,moneyline,home,0.0,-220,normal
+2026-11-05 00:54:32,293551,2026-11-05,2026-11-05 19:00,car,nyi,Consensus,event,moneyline,away,0.0,-171,normal
+2026-11-05 00:54:32,293551,2026-11-05,2026-11-05 19:00,car,nyi,FanDuel,event,spread,home,1.5,-184,normal
+2026-11-05 00:54:32,293551,2026-11-05,2026-11-05 19:00,car,nyi,FanDuel,event,spread,away,-1.5,146,normal
