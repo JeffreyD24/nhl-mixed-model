@@ -8611,3 +8611,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 20:34:51,293548,2026-11-04,2026-11-04 22:00,sj,la,Fanatics,event,moneyline,away,0.0,140,normal
 2026-11-04 20:34:51,293548,2026-11-04,2026-11-04 22:00,sj,la,Fanatics,secondperiod,team_total,home_under,1.5,-250,normal
 2026-11-04 20:34:51,293548,2026-11-04,2026-11-04 22:00,sj,la,Fanatics,secondperiod,team_total,home_over,1.5,185,normal
+2026-11-04 20:39:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,bet365,event,spread,home,-1.5,180,normal
+2026-11-04 20:39:12,293547,2026-11-04,2026-11-04 22:00,cgy,sea,bet365,event,spread,away,1.5,-220,normal
