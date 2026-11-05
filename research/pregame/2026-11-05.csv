@@ -11685,3 +11685,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 04:10:44,293553,2026-11-05,2026-11-05 19:00,stl,nj,Fanatics,thirdperiod,spread,home,-0.5,105,normal
 2026-11-05 04:10:44,293553,2026-11-05,2026-11-05 19:00,stl,nj,Fanatics,thirdperiod,total,under,2.5,-210,normal
 2026-11-05 04:10:44,293553,2026-11-05,2026-11-05 19:00,stl,nj,Fanatics,thirdperiod,total,over,2.5,155,normal
+2026-11-05 04:14:29,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,event,spread,away,-1.5,215,normal
+2026-11-05 04:14:29,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,event,spread,home,1.5,-245,normal
