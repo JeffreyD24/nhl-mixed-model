@@ -14457,3 +14457,10 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 07:53:54,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,event,spread,home,-1.5,121,normal
 2026-11-05 07:53:54,293558,2026-11-05,2026-11-05 19:00,van,wpg,BetMGM,event,moneyline,home,0.0,-220,normal
 2026-11-05 07:53:54,293558,2026-11-05,2026-11-05 19:00,van,wpg,BetMGM,event,moneyline,away,0.0,180,normal
+2026-11-05 07:58:56,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,spread,away,-1.5,200,normal
+2026-11-05 07:58:56,293554,2026-11-05,2026-11-05 19:00,phi,nyr,Consensus,event,spread,home,-1.5,161,normal
+2026-11-05 07:58:56,293554,2026-11-05,2026-11-05 19:00,phi,nyr,Consensus,event,spread,away,1.5,-196,normal
+2026-11-05 07:58:56,293554,2026-11-05,2026-11-05 19:00,phi,nyr,bet365,event,spread,home,-1.5,162,normal
+2026-11-05 07:58:56,293554,2026-11-05,2026-11-05 19:00,phi,nyr,bet365,event,spread,away,1.5,-194,normal
+2026-11-05 07:58:56,293553,2026-11-05,2026-11-05 19:00,stl,nj,BetRivers,firstperiod,total,under,1.5,-106,normal
+2026-11-05 07:58:56,293553,2026-11-05,2026-11-05 19:00,stl,nj,BetRivers,firstperiod,total,over,1.5,-136,normal
