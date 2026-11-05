@@ -68,3 +68,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 20:18:05,401892645,2026-11-04,chi,fla,in,1:26 - 1st,1,1:26,0.0,2.0,8.0,5.0,Shot,Connor Bedard Backhand saved by Jacob Markstrom
 2026-11-04 20:19:06,401892644,2026-11-04,ott,buf,in,1:05 - 1st,1,1:05,0.0,0.0,10.0,12.0,Blocked,Jake Sanderson shot blocked by Mattias Samuelsson
 2026-11-04 20:19:06,401892645,2026-11-04,chi,fla,in,0:53 - 1st,1,0:53,0.0,2.0,8.0,5.0,Stoppage,Puck in Netting
+2026-11-04 20:20:06,401892644,2026-11-04,ott,buf,in,0:48 - 1st,1,0:48,0.0,0.0,11.0,12.0,Face Off,Shane Pinto faceoff won against Josh Norris
+2026-11-04 20:20:06,401892645,2026-11-04,chi,fla,in,0:46 - 1st,1,0:46,0.0,2.0,8.0,5.0,Missed,Wyatt Kaiser Missed Shot High and Wide Right
+2026-11-04 20:21:05,401892644,2026-11-04,ott,buf,in,0:16 - 1st,1,0:16,0.0,0.0,10.0,12.0,Face Off,Dylan Cozens faceoff won against Tyson Kozak
+2026-11-04 20:21:05,401892645,2026-11-04,chi,fla,in,0:10 - 1st,1,0:10,0.0,2.0,8.0,5.0,Slashing,Sam Bennett Slashing against Artyom Levshunov
+2026-11-04 20:22:05,401892644,2026-11-04,ott,buf,in,End of 1st,1,0:00,0.0,0.0,10.0,12.0,Period End,End of 1st Period
+2026-11-04 20:22:05,401892645,2026-11-04,chi,fla,in,End of 1st,1,0:00,0.0,2.0,8.0,5.0,Period End,End of 1st Period
