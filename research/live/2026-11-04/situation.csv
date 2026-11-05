@@ -181,3 +181,15 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 21:47:05,401892645,2026-11-04,chi,fla,in,14:42 - 3rd,3,14:42,1.0,3.0,21.0,14.0,Face Off,Lars Eller faceoff won against Connor Bedard
 2026-11-04 21:48:05,401892644,2026-11-04,ott,buf,in,12:28 - 3rd,3,12:28,0.0,1.0,17.0,24.0,Face Off,Shane Pinto faceoff won against Peyton Krebs
 2026-11-04 21:48:05,401892645,2026-11-04,chi,fla,in,14:03 - 3rd,3,14:03,1.0,3.0,21.0,14.0,Stoppage,Icing
+2026-11-04 21:49:05,401892644,2026-11-04,ott,buf,in,11:21 - 3rd,3,11:21,0.0,1.0,17.0,24.0,Shot,Nick Cousins saved by Colten Ellis
+2026-11-04 21:49:05,401892645,2026-11-04,chi,fla,in,13:47 - 3rd,3,13:47,1.0,3.0,21.0,14.0,Face Off,Lars Eller faceoff won against Ryan Donato
+2026-11-04 21:50:05,401892644,2026-11-04,ott,buf,in,11:21 - 3rd,3,11:21,0.0,1.0,17.0,25.0,Penalty Shot Infraction,Jordan Spence Minor
+2026-11-04 21:50:05,401892645,2026-11-04,chi,fla,in,12:45 - 3rd,3,12:45,1.0,3.0,21.0,14.0,Face Off,Lars Eller faceoff won against Ryan Donato
+2026-11-04 21:51:05,401892644,2026-11-04,ott,buf,in,10:59 - 3rd,3,10:59,0.0,1.0,17.0,25.0,Face Off,Claude Giroux faceoff won against Tage Thompson
+2026-11-04 21:51:05,401892645,2026-11-04,chi,fla,in,12:24 - 3rd,3,12:24,1.0,3.0,21.0,14.0,Giveaway,Giveaway by Dmitry Kulikov
+2026-11-04 21:52:05,401892644,2026-11-04,ott,buf,in,10:32 - 3rd,3,10:32,0.0,1.0,19.0,25.0,Stoppage,Goalie Stopped
+2026-11-04 21:52:05,401892645,2026-11-04,chi,fla,in,12:24 - 3rd,3,12:24,1.0,3.0,21.0,14.0,Tripping,Alex Vlasic Tripping against Sandis Vilmanis
+2026-11-04 21:53:06,401892644,2026-11-04,ott,buf,in,9:34 - 3rd,3,9:34,0.0,1.0,19.0,25.0,Face Off,Tage Thompson faceoff won against Shane Pinto
+2026-11-04 21:53:06,401892645,2026-11-04,chi,fla,in,12:07 - 3rd,3,12:07,1.0,3.0,21.0,14.0,Face Off,Brady Tkachuk faceoff won against Anton Frondell
+2026-11-04 21:54:05,401892644,2026-11-04,ott,buf,in,8:47 - 3rd,3,8:47,0.0,1.0,19.0,25.0,Face Off,Tage Thompson faceoff won against Shane Pinto
+2026-11-04 21:54:05,401892645,2026-11-04,chi,fla,in,11:31 - 3rd,3,11:31,1.0,3.0,22.0,14.0,Face Off,Sam Reinhart faceoff won against Anton Frondell
