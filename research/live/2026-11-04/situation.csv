@@ -127,3 +127,15 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 21:05:05,401892645,2026-11-04,chi,fla,in,5:48 - 2nd,2,5:48,0.0,3.0,9.0,11.0,Stoppage,TV Timeout
 2026-11-04 21:06:05,401892644,2026-11-04,ott,buf,in,6:24 - 2nd,2,6:24,0.0,0.0,16.0,18.0,Missed,Dylan Cozens Missed Shot Wide Right
 2026-11-04 21:06:05,401892645,2026-11-04,chi,fla,in,5:48 - 2nd,2,5:48,0.0,3.0,9.0,11.0,Interference,Ian Cole Interference against Garnet Hathaway
+2026-11-04 21:07:05,401892644,2026-11-04,ott,buf,in,6:00 - 2nd,2,6:00,0.0,0.0,17.0,19.0,Shot,Peyton Krebs Tip-In saved by Samuel Ersson
+2026-11-04 21:07:05,401892645,2026-11-04,chi,fla,in,5:21 - 2nd,2,5:21,0.0,3.0,9.0,11.0,Interference,Ian Cole Interference against Garnet Hathaway
+2026-11-04 21:08:05,401892644,2026-11-04,ott,buf,in,5:18 - 2nd,2,5:18,0.0,1.0,16.0,19.0,Face Off,Tim Stützle faceoff won against Tage Thompson
+2026-11-04 21:08:05,401892645,2026-11-04,chi,fla,in,5:04 - 2nd,2,5:04,0.0,3.0,9.0,11.0,Blocked,Carter Verhaeghe shot blocked by Ryan Greene
+2026-11-04 21:09:06,401892644,2026-11-04,ott,buf,in,4:37 - 2nd,2,4:37,0.0,1.0,16.0,20.0,Face Off,Tim Stützle faceoff won against Noah Ostlund
+2026-11-04 21:09:06,401892645,2026-11-04,chi,fla,in,4:29 - 2nd,2,4:29,0.0,3.0,12.0,11.0,Shot,Carter Verhaeghe saved by Spencer Knight
+2026-11-04 21:10:05,401892644,2026-11-04,ott,buf,in,3:48 - 2nd,2,3:48,0.0,1.0,16.0,20.0,Face Off,Tim Stützle faceoff won against Noah Ostlund
+2026-11-04 21:10:05,401892645,2026-11-04,chi,fla,in,4:01 - 2nd,2,4:01,0.0,3.0,13.0,11.0,Stoppage,Goalie Stopped
+2026-11-04 21:11:05,401892644,2026-11-04,ott,buf,in,3:35 - 2nd,2,3:35,0.0,1.0,16.0,20.0,Penalty Shot Infraction,Owen Power Minor
+2026-11-04 21:11:05,401892645,2026-11-04,chi,fla,in,3:33 - 2nd,2,3:33,0.0,3.0,14.0,11.0,Stoppage,Off-side
+2026-11-04 21:12:05,401892644,2026-11-04,ott,buf,in,3:35 - 2nd,2,3:35,0.0,1.0,16.0,20.0,Holding,Owen Power Holding against Drake Batherson
+2026-11-04 21:12:05,401892645,2026-11-04,chi,fla,in,3:12 - 2nd,2,3:12,0.0,3.0,14.0,11.0,Blocked,Ethan Del Mastro shot blocked by Gustav Forsling
