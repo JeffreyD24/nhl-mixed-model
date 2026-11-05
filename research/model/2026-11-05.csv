@@ -103,3 +103,7 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 12:40,goals,401892651,2026-11-05,stl,nj,0.5666,3.218,2.74,6.12,Jordan Binnington (confirmed),Connor Hellebuyck (confirmed),"STL: Kaskimaki, Parayko | NJ: Dillon"
 2026-11-05 12:44,xg,401892655,2026-11-05,dal,cbj,0.4717,2.701,2.76,5.64,Jake Oettinger (expected),Cam Talbot (confirmed),"DAL: Blackwell, Seminoff, Heiskanen, Steel | CBJ: Gudbranson"
 2026-11-05 12:44,goals,401892655,2026-11-05,dal,cbj,0.4768,2.702,2.8,5.68,Jake Oettinger (expected),Cam Talbot (confirmed),"DAL: Blackwell, Seminoff, Heiskanen, Steel | CBJ: Gudbranson"
+2026-11-05 12:47,xg,401892655,2026-11-05,dal,cbj,0.4785,2.739,2.76,5.67,Casey DeSmith (confirmed),Cam Talbot (confirmed),"DAL: Blackwell, Seminoff, Heiskanen, Steel | CBJ: Gudbranson"
+2026-11-05 12:47,goals,401892655,2026-11-05,dal,cbj,0.4964,2.824,2.8,5.8,Casey DeSmith (confirmed),Cam Talbot (confirmed),"DAL: Blackwell, Seminoff, Heiskanen, Steel | CBJ: Gudbranson"
+2026-11-05 12:47,xg,401892656,2026-11-05,van,wpg,0.6398,3.639,2.671,6.46,Leevi Merilainen (confirmed),Stuart Skinner (confirmed),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
+2026-11-05 12:47,goals,401892656,2026-11-05,van,wpg,0.6087,3.568,2.788,6.51,Leevi Merilainen (confirmed),Stuart Skinner (confirmed),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
