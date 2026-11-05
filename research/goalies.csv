@@ -191,3 +191,5 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-11-05 12:07,401892657,2026-11-05,home,edm,3069614,Matt Tomkins,Confirmed
 2026-11-05 12:40,401892648,2026-11-05,away,uta,4874732,Sebastian Cossa,Confirmed
 2026-11-05 12:40,401892651,2026-11-05,away,stl,2590874,Jordan Binnington,Confirmed
+2026-11-05 12:44,401892655,2026-11-05,away,dal,3025540,Casey DeSmith,Confirmed
+2026-11-05 12:44,401892656,2026-11-05,away,van,4894703,Leevi Merilainen,Confirmed

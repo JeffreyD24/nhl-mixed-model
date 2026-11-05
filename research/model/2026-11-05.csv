@@ -101,3 +101,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 12:40,goals,401892648,2026-11-05,uta,mtl,0.518,3.365,3.192,6.72,Sebastian Cossa (confirmed),Jakub Dobes (confirmed),UTA: Yamamoto? | MTL: Dach
 2026-11-05 12:40,xg,401892651,2026-11-05,stl,nj,0.6468,3.463,2.48,6.1,Jordan Binnington (confirmed),Connor Hellebuyck (confirmed),"STL: Kaskimaki, Parayko | NJ: Dillon"
 2026-11-05 12:40,goals,401892651,2026-11-05,stl,nj,0.5666,3.218,2.74,6.12,Jordan Binnington (confirmed),Connor Hellebuyck (confirmed),"STL: Kaskimaki, Parayko | NJ: Dillon"
+2026-11-05 12:44,xg,401892655,2026-11-05,dal,cbj,0.4717,2.701,2.76,5.64,Jake Oettinger (expected),Cam Talbot (confirmed),"DAL: Blackwell, Seminoff, Heiskanen, Steel | CBJ: Gudbranson"
+2026-11-05 12:44,goals,401892655,2026-11-05,dal,cbj,0.4768,2.702,2.8,5.68,Jake Oettinger (expected),Cam Talbot (confirmed),"DAL: Blackwell, Seminoff, Heiskanen, Steel | CBJ: Gudbranson"
