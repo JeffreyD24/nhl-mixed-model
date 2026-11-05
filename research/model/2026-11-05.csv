@@ -71,3 +71,9 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 10:42,goals,401892652,2026-11-05,car,nyi,0.3908,2.519,3.168,5.85,Pyotr Kochetkov (expected),Semyon Varlamov (expected),CAR: - | NYI: Pulock
 2026-11-05 10:44,xg,401892649,2026-11-05,vgk,det,0.46,2.914,3.043,6.12,Carter Hart (expected),Daniil Tarasov (expected),VGK: - | DET: Danielson
 2026-11-05 10:44,goals,401892649,2026-11-05,vgk,det,0.4669,2.881,3.045,6.09,Carter Hart (expected),Daniil Tarasov (expected),VGK: - | DET: Danielson
+2026-11-05 11:06,xg,401892648,2026-11-05,uta,mtl,0.4074,3.118,3.586,6.86,Karel Vejmelka (expected),Jakub Dobes (confirmed),UTA: Yamamoto? | MTL: Dach?
+2026-11-05 11:06,goals,401892648,2026-11-05,uta,mtl,0.5159,3.351,3.192,6.7,Karel Vejmelka (expected),Jakub Dobes (confirmed),UTA: Yamamoto? | MTL: Dach?
+2026-11-05 11:06,xg,401892653,2026-11-05,phi,nyr,0.5489,3.114,2.724,6.01,Dan Vladar (expected),Dylan Garand (confirmed),"PHI: Bump, McDonald | NYR: Raddysh, Durzi?, Glendening"
+2026-11-05 11:06,goals,401892653,2026-11-05,phi,nyr,0.5294,2.998,2.764,5.93,Dan Vladar (expected),Dylan Garand (confirmed),"PHI: Bump, McDonald | NYR: Raddysh, Durzi?, Glendening"
+2026-11-05 11:06,xg,401892654,2026-11-05,bos,pit,0.516,3.227,3.021,6.41,Jeremy Swayman (expected),Arturs Silovs (confirmed),BOS: Poitras? | PIT: Malkin?
+2026-11-05 11:06,goals,401892654,2026-11-05,bos,pit,0.458,2.944,3.169,6.28,Jeremy Swayman (expected),Arturs Silovs (confirmed),BOS: Poitras? | PIT: Malkin?

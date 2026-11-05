@@ -179,3 +179,6 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-11-05 10:06,401892661,2026-11-06,away,ana,3151137,Ville Husso,Expected
 2026-11-05 10:42,401892652,2026-11-05,home,nyi,3759,Semyon Varlamov,Expected
 2026-11-05 10:44,401892649,2026-11-05,home,det,4587994,Daniil Tarasov,Expected
+2026-11-05 11:06,401892648,2026-11-05,home,mtl,4697686,Jakub Dobes,Confirmed
+2026-11-05 11:06,401892653,2026-11-05,home,nyr,4697705,Dylan Garand,Confirmed
+2026-11-05 11:06,401892654,2026-11-05,home,pit,4576894,Arturs Silovs,Confirmed
