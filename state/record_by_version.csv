@@ -3,7 +3,7 @@ NHL overs v1.1,total,2,1,0,1,0,1,-1.0,-1.0,overs v1 + reporter goalie/lineup new
 NHL v1 (goals + shot models),moneyline,11,11,5,6,0,0,-0.26,-0.0236,goals model then both models side by side; EV 6%+ (higher once the price moved)
 NHL v1 (goals + shot models),puck line,5,5,2,3,0,0,-2.05,-0.41,goals model then both models side by side; EV 6%+ (higher once the price moved)
 NHL v3,puck line,2,2,1,1,0,0,0.6,0.3,"55/45 blend with DK opener, EV 4%+; b2b skip; Pinnacle rule; travel adj; second chance; one bet per game"
-NHL v3.1,moneyline,1,0,0,0,0,1,0.0,,v3 + reporter goalie/lineup news from Bluesky (confirmed starter used until ESPN confirms; clear skater out/in for that game); same rules
-NHL v3.1,puck line,2,0,0,0,0,2,0.0,,v3 + reporter goalie/lineup news from Bluesky (confirmed starter used until ESPN confirms; clear skater out/in for that game); same rules
+NHL v3.1,moneyline,1,1,1,0,0,0,1.24,1.24,v3 + reporter goalie/lineup news from Bluesky (confirmed starter used until ESPN confirms; clear skater out/in for that game); same rules
+NHL v3.1,puck line,2,1,1,0,0,1,1.54,1.54,v3 + reporter goalie/lineup news from Bluesky (confirmed starter used until ESPN confirms; clear skater out/in for that game); same rules
 NHL v4 [ML EV 9%+],moneyline,1,0,0,0,0,1,0.0,,v3.1 + rule audit: no back-to-back skip; one bet per game prefers the moneyline; no DON'T BET while price within 1.5 pts of the alert; Pinnacle post-alert follow-up dropped (at-alert Pinnacle rule kept)
-OVERALL,all,24,19,8,11,0,5,-2.71,-0.1426,
+OVERALL,all,24,21,10,11,0,3,0.07,0.0033,

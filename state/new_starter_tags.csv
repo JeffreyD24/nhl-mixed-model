@@ -202,21 +202,24 @@ source,game_id,date,home,away,home_goalie,away_goalie,new_starter,pick_type,bet,
 "shot model side at the open, every game",401892636,2026-11-03,nj,edm,Jake Allen,Tristan Jarry,False,live,away,-1.0,-0.0891,False
 "shot model side at the open, every game",401892642,2026-11-03,nsh,car,Juuse Saros,Pyotr Kochetkov,False,live,away,-1.0,-0.0093,False
 "shot model side at the open, every game",401892643,2026-11-03,van,ana,Leevi Merilainen,Lukas Dostal,False,live,away,0.676,0.0573,False
-"shot model side at the open, every game",401892644,2026-11-04,buf,ott,Ukko-Pekka Luukkonen,Samuel Ersson,False,live,away,,,
-"shot model side at the open, every game",401892645,2026-11-04,fla,chi,Akira Schmid,Spencer Knight,False,live,home,,,
-"shot model side at the open, every game",401892646,2026-11-04,la,sj,Darcy Kuemper,Alex Nedeljkovic,False,live,home,,,
-"shot model side at the open, every game",401892647,2026-11-04,sea,cgy,Philipp Grubauer,Dustin Wolf,False,live,away,,,
-"shot model side at the open, every game",401892648,2026-11-05,mtl,uta,Jacob Fowler,Karel Vejmelka,False,live,,,,
-"shot model side at the open, every game",401892649,2026-11-05,det,vgk,Daniil Tarasov,Adin Hill,False,live,,,,
-"shot model side at the open, every game",401892650,2026-11-05,tb,chi,Andrei Vasilevskiy,Arvid Soderblom,False,live,,,,
-"shot model side at the open, every game",401892651,2026-11-05,nj,stl,Jake Allen,Joel Hofer,False,live,,,,
-"shot model side at the open, every game",401892652,2026-11-05,nyi,car,Ilya Sorokin,Pyotr Kochetkov,False,live,,,,
-"shot model side at the open, every game",401892653,2026-11-05,nyr,phi,Dylan Garand,Dan Vladar,False,live,,,,
-"shot model side at the open, every game",401892654,2026-11-05,pit,bos,Arturs Silovs,Jeremy Swayman,False,live,,,,
-"shot model side at the open, every game",401892655,2026-11-05,cbj,dal,Jet Greaves,Jake Oettinger,False,live,,,,
-"shot model side at the open, every game",401892656,2026-11-05,wpg,van,Stuart Skinner,Leevi Merilainen,False,live,,,,
-"shot model side at the open, every game",401892657,2026-11-05,edm,ana,Tristan Jarry,Lukas Dostal,False,live,,,,
-"shot model side at the open, every game",401892658,2026-11-05,col,nsh,Mackenzie Blackwood,Juuse Saros,False,live,,,,
+"shot model side at the open, every game",401892644,2026-11-04,buf,ott,Ukko-Pekka Luukkonen,Samuel Ersson,False,live,away,1.24,0.0243,False
+"shot model side at the open, every game",401892645,2026-11-04,fla,chi,Akira Schmid,Spencer Knight,False,live,home,0.4,-0.0329,False
+"shot model side at the open, every game",401892646,2026-11-04,la,sj,Darcy Kuemper,Alex Nedeljkovic,False,live,home,0.602,-0.0391,False
+"shot model side at the open, every game",401892647,2026-11-04,sea,cgy,Philipp Grubauer,Dustin Wolf,False,live,away,-1.0,0.0765,False
+"shot model side at the open, every game",401892648,2026-11-05,mtl,uta,Jacob Fowler,Karel Vejmelka,False,live,away,,,
+"shot model side at the open, every game",401892649,2026-11-05,det,vgk,Daniil Tarasov,Adin Hill,False,live,home,,,
+"shot model side at the open, every game",401892650,2026-11-05,tb,chi,Andrei Vasilevskiy,Arvid Soderblom,False,live,away,,,
+"shot model side at the open, every game",401892651,2026-11-05,nj,stl,Jake Allen,Joel Hofer,False,live,away,,,
+"shot model side at the open, every game",401892652,2026-11-05,nyi,car,Ilya Sorokin,Pyotr Kochetkov,False,live,away,,,
+"shot model side at the open, every game",401892653,2026-11-05,nyr,phi,Dylan Garand,Dan Vladar,False,live,away,,,
+"shot model side at the open, every game",401892654,2026-11-05,pit,bos,Arturs Silovs,Jeremy Swayman,False,live,away,,,
+"shot model side at the open, every game",401892655,2026-11-05,cbj,dal,Jet Greaves,Jake Oettinger,False,live,away,,,
+"shot model side at the open, every game",401892656,2026-11-05,wpg,van,Stuart Skinner,Leevi Merilainen,False,live,away,,,
+"shot model side at the open, every game",401892657,2026-11-05,edm,ana,Tristan Jarry,Lukas Dostal,False,live,away,,,
+"shot model side at the open, every game",401892658,2026-11-05,col,nsh,Mackenzie Blackwood,Juuse Saros,False,live,away,,,
+"shot model side at the open, every game",401892659,2026-11-06,buf,cbj,Ukko-Pekka Luukkonen,Cam Talbot,False,live,,,,
+"shot model side at the open, every game",401892660,2026-11-06,min,sj,Jesper Wallstedt,Yaroslav Askarov,False,live,,,,
+"shot model side at the open, every game",401892661,2026-11-06,cgy,ana,Dustin Wolf,Ville Husso,False,live,,,,
 "sent alert (goals, moneyline)",401892612,2026-10-30,fla,wpg,Nico Daws; Akira Schmid,,False,alert,away,-1.0,-0.0238,False
 "sent alert (goals, moneyline)",401892613,2026-10-30,cgy,sea,Philipp Grubauer; Dustin Wolf,,False,alert,away,-1.0,-0.045,False
 "sent alert (goals, puck line)",401892613,2026-10-30,cgy,sea,Philipp Grubauer; Dustin Wolf,,False,alert,away,-1.0,-0.0415,False
@@ -237,8 +240,8 @@ source,game_id,date,home,away,home_goalie,away_goalie,new_starter,pick_type,bet,
 "sent alert (xg, moneyline)",401892626,2026-11-01,phi,uta,Karel Vejmelka; Dan Vladar,,False,alert,away,-1.0,-0.0135,False
 "sent alert (goals, moneyline)",401892626,2026-11-01,phi,uta,Karel Vejmelka; Dan Vladar,,False,alert,home,1.2999999999999998,-0.0792,False
 "sent alert (xg, moneyline)",401892625,2026-11-01,wsh,min,Jesper Wallstedt; Charlie Lindgren,,False,alert,away,0.925925925925926,0.0132,False
-"sent alert (xg, puck line)",401892625,2026-11-01,wsh,min,Jesper Wallstedt; Charlie Lindgren,,False,alert,away,0.4081632653061224,,False
-"sent alert (goals, puck line)",401892625,2026-11-01,wsh,min,Jesper Wallstedt; Charlie Lindgren,,False,alert,away,0.4081632653061224,,False
+"sent alert (xg, puck line)",401892625,2026-11-01,wsh,min,Jesper Wallstedt; Charlie Lindgren,,False,alert,away,0.40816326530612246,,False
+"sent alert (goals, puck line)",401892625,2026-11-01,wsh,min,Jesper Wallstedt; Charlie Lindgren,,False,alert,away,0.40816326530612246,,False
 "sent alert (xg, moneyline)",401892627,2026-11-01,nyr,edm,Matt Tomkins; Dylan Garand,,False,alert,away,1.1,-0.0182,False
 "sent alert (goals, moneyline)",401892627,2026-11-01,nyr,edm,Matt Tomkins; Dylan Garand,,False,alert,away,1.1,-0.0182,False
 "sent alert (goals, puck line)",401892627,2026-11-01,nyr,edm,Matt Tomkins; Dylan Garand,,False,alert,away,0.4444444444444444,-0.0337,False
@@ -274,9 +277,9 @@ source,game_id,date,home,away,home_goalie,away_goalie,new_starter,pick_type,bet,
 "sent alert (xg, puck line)",401892642,2026-11-03,nsh,car,Pyotr Kochetkov; Juuse Saros,,False,alert,away,-1.0,0.0271,False
 "sent alert (xg, total)",401892635,2026-11-03,tb,det,John Gibson; Andrei Vasilevskiy,,False,alert,over,-1.0,-0.058,False
 "sent alert (goals, total)",401892635,2026-11-03,tb,det,John Gibson; Andrei Vasilevskiy,,False,alert,over,-1.0,-0.058,False
-"sent alert (xg, puck line)",401892646,2026-11-04,la,sj,Yaroslav Askarov; Darcy Kuemper,,False,alert,home,,,
-"sent alert (xg, moneyline)",401892644,2026-11-04,buf,ott,Samuel Ersson; Ukko-Pekka Luukkonen,,False,alert,away,,,
-"sent alert (goals, moneyline)",401892644,2026-11-04,buf,ott,Samuel Ersson; Ukko-Pekka Luukkonen,,False,alert,away,,,
+"sent alert (xg, puck line)",401892646,2026-11-04,la,sj,Yaroslav Askarov; Darcy Kuemper,,False,alert,home,1.54,-0.0411,False
+"sent alert (xg, moneyline)",401892644,2026-11-04,buf,ott,Samuel Ersson; Ukko-Pekka Luukkonen,,False,alert,away,1.2400000000000002,0.0243,False
+"sent alert (goals, moneyline)",401892644,2026-11-04,buf,ott,Samuel Ersson; Ukko-Pekka Luukkonen,,False,alert,away,1.2400000000000002,0.0243,False
 "sent alert (xg, total)",401892634,2026-11-03,mtl,wpg,Nico Daws; Jacob Fowler,,False,alert,over,0.7692307692307692,-0.0244,False
 "sent alert (xg, puck line)",401892652,2026-11-05,nyi,car,Pyotr Kochetkov; Ilya Sorokin,,False,alert,away,,,
 "sent alert (xg, total)",401892652,2026-11-05,nyi,car,Pyotr Kochetkov; Ilya Sorokin,,False,alert,over,,,
