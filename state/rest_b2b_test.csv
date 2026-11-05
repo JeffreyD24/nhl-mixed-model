@@ -1,2 +1,2 @@
-game_id,logged_at_et,date,home,away,tip_et,side,team,b2b_team,price,open_fair,current_price,verdict
-401892650,2026-11-04 15:07,2026-11-05,tb,chi,2026-11-05 19:00:00,home,tb,chi,-395.0,0.7659,-380.0,TEST: rested team vs back-to-back (not a bet)
+game_id,logged_at_et,date,home,away,tip_et,side,team,b2b_team,price,open_fair,current_price,verdict,result,profit,clv,move
+401892650,2026-11-04 15:07,2026-11-05,tb,chi,2026-11-05 19:00:00,home,tb,chi,-395.0,0.7659,-380.0,TEST: rested team vs back-to-back (not a bet),,,,
