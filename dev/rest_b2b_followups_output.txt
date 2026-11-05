@@ -1,0 +1,27 @@
+F1 eligible b2b games 2012-22 with a goalie id: 2936 (dropped for no goalie id: 8)
+grp        BACKUP  STARTER
+period                    
+A 2012-16     778      644
+B 2017-22     918      596
+share backup by period: {'A 2012-16': 0.547, 'B 2017-22': 0.606}
+   period     grp    n    won  nv_close    gap     se     p1  roi_open
+A 2012-16  BACKUP  778 0.5823    0.5600 0.0222 0.0174 0.1005    0.0334
+A 2012-16 STARTER  644 0.5792    0.5460 0.0332 0.0191 0.0411    0.0427
+B 2017-22  BACKUP  918 0.5937    0.5580 0.0357 0.0158 0.0118    0.0521
+B 2017-22 STARTER  596 0.5470    0.5466 0.0004 0.0199 0.4917   -0.0310
+      ALL  BACKUP 1696 0.5884    0.5589 0.0295 0.0117 0.0057    0.0435
+      ALL STARTER 1240 0.5637    0.5463 0.0175 0.0138 0.1030    0.0073
+      ALL     ALL 2936 0.5780    0.5536 0.0244 0.0089 0.0031    0.0282
+
+D_B - D_S = +0.0121 (90% CI [-0.0176, +0.0418])
+PRIMARY F1: D_S = +0.0175 (SE 0.0138), one-sided p = 0.103, positive in both periods: True
+VERDICT F1: NOT SHOWN without backups (could be mostly backup starts; not proof)
+
+F2 all trusted decided games 2015-21: 8142; eligible b2b games: 1814; seasons [np.int64(2015), np.int64(2016), np.int64(2017), np.int64(2018), np.int64(2019), np.int64(2020), np.int64(2021)]
+REFERENCE opener only: adv coef +0.1376 (SE 0.0504), one-sided p = 0.003; lo +1.074
+PRIMARY opener + model: adv coef +0.1022 (SE 0.0522), one-sided p = 0.025; lo +0.837, lm +0.297
+SECONDARY close + model: adv coef +0.0702 (SE 0.0517), one-sided p = 0.087; lc +0.957, lm +0.146
+
+Eligible b2b games (1814), rested side: won 57.6%; model 56.6%; open 54.5%; close 55.7%
+win - model: +0.0092 (SE 0.0114) | win - open: +0.0302 (SE 0.0114) | win - close: +0.0188 (SE 0.0114) | model - open: +0.0210 (SE 0.0012)
+VERDICT F2: PASS: the shot model does NOT already price it

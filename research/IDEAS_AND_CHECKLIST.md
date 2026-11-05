@@ -67,8 +67,16 @@ Legend: [x] already in place  [~] partly  [ ] open  (O) = good job for Opus
 ## From the statistics catalog (Nov 4, 2026; research/stats_catalog/README.md)
 - [x] Tie-inflated score matrix (Nov 4): fixes the tie rate but no market improves after the existing recalibration; without it, puck lines
       get worse (real games also have extra empty-net 2-goal wins). Not adopted. backtests/TIE_INFLATION_RESULTS.md
-- [ ] Rested team vs a back-to-back team at the opener (market-only): +2.2% on 1,520 holdout bets, +7.8% on 538 in 2024-26, closing price moved
-      toward the rested team in every season. Pre-register as a filter for model bets and as a standalone rule
+- [x] Rested team vs a back-to-back team (Nov 5): PASSED the pre-registered 2011-16 test (+2.7 pts vs the no-vig close, p = 0.017, 4 of 5 seasons).
+      backtests/REST_B2B_PREREG.md, REST_B2B_RESULTS.md
+- [x] Follow-up 1 (Nov 5): backup-goalie split. NOT SHOWN without backups: starter games +1.75 pts (p = 0.10), backup games +2.95 (p = 0.006), difference
+      not distinguishable. Inconclusive, power about 57%. backtests/REST_B2B_FOLLOWUPS_PREREG.md, REST_B2B_FOLLOWUPS_RESULTS.md
+- [x] Follow-up 2 (Nov 5): does the shot model already price it? Prices about 70% of it (model leans +2.1 pts toward the rested team); rest still adds
+      beyond opener + model (p = 0.025), but not vs the close + model (p = 0.087) and the leftover win - model is only +0.9 pts (SE 1.1)
+- [ ] [IDEA, untested] Split the rest effect by rest days (b2b vs 1 day vs 2+ days) and by whether the b2b team is on the road the second night; same
+      data (derived/oos_games_g.csv.gz), pre-register first
+- [ ] [IDEA, untested] Add rest as an explicit term in the model and test leave-one-season-out on 2012-22 whether the leftover ~1 pt is real (RULE 2: past seasons)
+- [ ] (Original idea, now partly answered) as a standalone rule or a filter for model bets: the model already captures most of it, so only the filter version is open
 - [ ] Re-measure the model's logistic weight vs the opener each season (82% with goalies 2024-26, 28% team-only 2016-22; live blend 55%)
 
 ## Leads and ideas from Nov 5, 2026 (details in nba-mixed-model analysis/FINDINGS.md)
