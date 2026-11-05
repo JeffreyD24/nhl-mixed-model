@@ -1,7 +1,7 @@
 # Saved build products (check here BEFORE building anything)
 
 Started Nov 5, 2026, after the 2021-26 DK predictions and the 2015-2021 goalie-model predictions were rebuilt from scratch because
-they had only ever lived in the gitignored `_tmp/` folder. Rule (CLAUDE.md RULE 3): anything that takes more than a minute to
+they had only ever lived in the gitignored `_tmp/` folder. Rule (CLAUDE.md RULE 4): anything that takes more than a minute to
 build is saved here, gzipped, with a row in this table, in the same session it is built.
 
 Restore everything into `_tmp/` (where the scripts read from): `python derived.py .`
