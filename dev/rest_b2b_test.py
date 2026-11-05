@@ -7,8 +7,8 @@ from scipy import stats
 dec = lambda o: np.where(np.asarray(o, float) > 0, 1 + np.asarray(o, float) / 100, 1 + 100 / np.abs(np.asarray(o, float)))
 def novig(a, b):
     pa, pb = 1 / dec(a), 1 / dec(b); return pa / (pa + pb)
-def load():
-    d = pd.read_csv("derived/oos_games.csv.gz"); d["date"] = pd.to_datetime(d.date)
+def load(path="derived/oos_games.csv.gz"):
+    d = pd.read_csv(path); d["date"] = pd.to_datetime(d.date)
     # b2b from the full schedule: team played the previous calendar day (all rows count, odds or not)
     t = pd.concat([d[["game_id", "date", "home"]].rename(columns={"home": "team"}), d[["game_id", "date", "away"]].rename(columns={"away": "team"})])
     played = set(zip(t.team, t.date))
