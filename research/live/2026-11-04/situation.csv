@@ -382,3 +382,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 23:58:06,401892647,2026-11-04,cgy,sea,in,19:50 - 3rd,3,19:50,1.0,1.0,17.0,17.0,Face Off,Martin Pospisil faceoff won against Chandler Stephenson
 2026-11-04 23:59:05,401892647,2026-11-04,cgy,sea,in,19:15 - 3rd,3,19:15,1.0,1.0,17.0,19.0,Stoppage,Goalie Stopped
 2026-11-05 00:00:05,401892647,2026-11-04,cgy,sea,in,19:01 - 3rd,3,19:01,1.0,1.0,18.0,19.0,Stoppage,Puck in Netting
+2026-11-05 00:01:05,401892647,2026-11-04,cgy,sea,in,18:52 - 3rd,3,18:52,1.0,1.0,18.0,19.0,Face Off,Berkly Catton faceoff won against Jonathan Castagna
+2026-11-05 00:02:06,401892647,2026-11-04,cgy,sea,in,17:59 - 3rd,3,17:59,1.0,1.0,19.0,19.0,Missed,Adam Larsson Wrist Shot High and Wide Left
+2026-11-05 00:03:05,401892647,2026-11-04,cgy,sea,in,17:47 - 3rd,3,17:47,1.0,1.0,19.0,19.0,Face Off,Ryan Strome faceoff won against Matty Beniers
+2026-11-05 00:04:06,401892647,2026-11-04,cgy,sea,in,17:08 - 3rd,3,17:08,1.0,1.0,20.0,19.0,Missed,Jani Nyman Tip-In Wide Right
+2026-11-05 00:05:05,401892647,2026-11-04,cgy,sea,in,16:33 - 3rd,3,16:33,1.0,1.0,20.0,19.0,Hooking,Morgan Frost Hooking against Jordan Eberle
+2026-11-05 00:06:06,401892647,2026-11-04,cgy,sea,in,15:37 - 3rd,3,15:37,1.0,1.0,20.0,19.0,Face Off,Chandler Stephenson faceoff won against Mikael Backlund
