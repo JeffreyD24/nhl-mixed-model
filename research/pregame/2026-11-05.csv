@@ -23879,3 +23879,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 14:29:57,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,thirdperiod,team_total,home_under,1.0,-107,normal
 2026-11-05 14:29:57,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,thirdperiod,moneyline,away,0.0,-142,normal
 2026-11-05 14:29:57,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,thirdperiod,moneyline,home,0.0,112,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,event,moneyline,away,0.0,-115,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,event,moneyline,home,0.0,-105,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,firstperiod,moneyline,home,0.0,-120,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,firstperiod,moneyline,away,0.0,-110,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,secondperiod,team_total,away_over,0.5,-235,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,secondperiod,team_total,away_under,0.5,175,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,secondperiod,spread,home,0.5,-220,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,secondperiod,spread,away,-0.5,160,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,secondperiod,total,under,2.5,-205,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,secondperiod,total,over,2.5,150,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,thirdperiod,team_total,away_over,0.5,-235,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,thirdperiod,team_total,away_under,0.5,175,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,thirdperiod,spread,away,-0.5,145,normal
+2026-11-05 14:32:07,293552,2026-11-05,2026-11-05 19:00,bos,pit,Fanatics,thirdperiod,spread,home,0.5,-195,normal
