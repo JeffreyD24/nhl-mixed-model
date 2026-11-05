@@ -7832,3 +7832,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 21:06:56,293558,2026-11-05,2026-11-05 19:00,van,wpg,Consensus,secondperiod,total,over,2.0,-147,normal
 2026-11-04 21:13:00,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,firstperiod,moneyline,away,0.0,-135,normal
 2026-11-04 21:13:00,293555,2026-11-05,2026-11-05 19:00,vgk,det,DraftKings,firstperiod,moneyline,home,0.0,100,normal
+2026-11-04 21:21:11,293550,2026-11-05,2026-11-05 19:00,chi,tb,DraftKings,secondperiod,team_total,home_over,1.5,130,normal
+2026-11-04 21:21:11,293550,2026-11-05,2026-11-05 19:00,chi,tb,DraftKings,secondperiod,team_total,home_under,1.5,-170,normal
