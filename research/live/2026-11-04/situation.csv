@@ -108,3 +108,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 20:53:06,401892645,2026-11-04,chi,fla,in,10:37 - 2nd,2,10:37,0.0,2.0,9.0,8.0,Stoppage,Icing
 2026-11-04 20:54:06,401892644,2026-11-04,ott,buf,in,13:09 - 2nd,2,13:09,0.0,0.0,15.0,17.0,Blocked,Tim Stützle shot blocked by Mattias Samuelsson
 2026-11-04 20:54:06,401892645,2026-11-04,chi,fla,in,10:25 - 2nd,2,10:25,0.0,2.0,9.0,8.0,Face Off,Cole Schwindt faceoff won against Roman Kantserov
+2026-11-04 20:55:05,401892644,2026-11-04,ott,buf,in,12:35 - 2nd,2,12:35,0.0,0.0,15.0,17.0,Missed,Fabian Zetterlund Missed Shot Above Crossbar
+2026-11-04 20:55:05,401892645,2026-11-04,chi,fla,in,9:11 - 2nd,2,9:11,0.0,2.0,9.0,8.0,Hit,Dillon Boucher hit Niko Mikkola
+2026-11-04 20:56:05,401892644,2026-11-04,ott,buf,in,11:36 - 2nd,2,11:36,0.0,0.0,15.0,18.0,Shot,Fabian Zetterlund saved by Colten Ellis
+2026-11-04 20:56:05,401892645,2026-11-04,chi,fla,in,8:41 - 2nd,2,8:41,0.0,2.0,9.0,9.0,Stoppage,Puck Frozen - Goalie
+2026-11-04 20:57:06,401892644,2026-11-04,ott,buf,in,11:12 - 2nd,2,11:12,0.0,0.0,15.0,18.0,Face Off,Dylan Cozens faceoff won against Noah Ostlund
+2026-11-04 20:58:05,401892644,2026-11-04,ott,buf,in,10:12 - 2nd,2,10:12,0.0,0.0,16.0,18.0,Blocked,Jack Quinn shot blocked by Michael Amadio
+2026-11-04 20:59:05,401892644,2026-11-04,ott,buf,in,9:37 - 2nd,2,9:37,0.0,0.0,16.0,18.0,Face Off,Tim Stützle faceoff won against Josh Norris
+2026-11-04 20:59:05,401892645,2026-11-04,chi,fla,in,8:23 - 2nd,2,8:23,0.0,2.0,9.0,10.0,Stoppage,Goalie Stopped
+2026-11-04 21:00:05,401892644,2026-11-04,ott,buf,in,9:23 - 2nd,2,9:23,0.0,0.0,17.0,18.0,Stoppage,Goalie Stopped
+2026-11-04 21:00:05,401892645,2026-11-04,chi,fla,in,7:15 - 2nd,2,7:15,0.0,2.0,9.0,10.0,Face Off,Anton Lundell faceoff won against Connor Bedard
