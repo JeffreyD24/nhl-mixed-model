@@ -1524,3 +1524,11 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 16:05:02,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetRivers,thirdperiod,team_total,away_over,0.5,-195,normal
 2026-11-05 16:05:02,293560,2026-11-06,2026-11-06 19:00,cbj,buf,Fanatics,thirdperiod,spread,away,0.5,-145,normal
 2026-11-05 16:05:02,293560,2026-11-06,2026-11-06 19:00,cbj,buf,Fanatics,thirdperiod,spread,home,-0.5,110,normal
+2026-11-05 16:07:12,293561,2026-11-06,2026-11-06 20:00,sj,min,Fanatics,firstperiod,moneyline,away,0.0,-200,normal
+2026-11-05 16:07:12,293561,2026-11-06,2026-11-06 20:00,sj,min,Fanatics,firstperiod,moneyline,home,0.0,150,normal
+2026-11-05 16:07:12,293561,2026-11-06,2026-11-06 20:00,sj,min,Fanatics,firstperiod,total,over,1.5,-130,normal
+2026-11-05 16:07:12,293561,2026-11-06,2026-11-06 20:00,sj,min,Fanatics,firstperiod,total,under,1.5,100,normal
+2026-11-05 16:07:12,293561,2026-11-06,2026-11-06 20:00,sj,min,Fanatics,secondperiod,total,over,1.5,-195,normal
+2026-11-05 16:07:12,293561,2026-11-06,2026-11-06 20:00,sj,min,Fanatics,secondperiod,total,under,1.5,145,normal
+2026-11-05 16:07:12,293561,2026-11-06,2026-11-06 20:00,sj,min,Fanatics,thirdperiod,team_total,home_over,1.5,130,normal
+2026-11-05 16:07:12,293561,2026-11-06,2026-11-06 20:00,sj,min,Fanatics,thirdperiod,team_total,home_under,1.5,-170,normal
