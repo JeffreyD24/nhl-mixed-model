@@ -229,3 +229,15 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 22:11:05,401892647,2026-11-04,cgy,sea,in,17:35 - 1st,1,17:35,0.0,0.0,0.0,1.0,Shot,Yan Kuznetsov Snap Shot saved by Joey Daccord
 2026-11-04 22:12:06,401892645,2026-11-04,chi,fla,in,3:37 - 3rd,3,3:37,3.0,4.0,24.0,16.0,Face Off,Sam Bennett faceoff won against Oliver Moore
 2026-11-04 22:12:06,401892647,2026-11-04,cgy,sea,in,16:34 - 1st,1,16:34,0.0,0.0,0.0,1.0,Missed,Martin Pospisil Wrist Shot
+2026-11-04 22:13:05,401892645,2026-11-04,chi,fla,in,3:04 - 3rd,3,3:04,3.0,4.0,24.0,16.0,Face Off,Ryan Greene faceoff won against Sam Bennett
+2026-11-04 22:13:05,401892647,2026-11-04,cgy,sea,in,16:03 - 1st,1,16:03,0.0,0.0,0.0,1.0,Stoppage,Goalie Stopped
+2026-11-04 22:14:06,401892645,2026-11-04,chi,fla,in,2:23 - 3rd,3,2:23,3.0,4.0,24.0,16.0,Missed,Anton Lundell Missed Shot Above Crossbar
+2026-11-04 22:14:06,401892647,2026-11-04,cgy,sea,in,15:36 - 1st,1,15:36,0.0,0.0,1.0,1.0,Missed,Bobby McMann Wrist Shot Wide Left
+2026-11-04 22:15:06,401892645,2026-11-04,chi,fla,in,1:56 - 3rd,3,1:56,3.0,4.0,25.0,17.0,Stoppage,Timeout - Visitor
+2026-11-04 22:15:06,401892647,2026-11-04,cgy,sea,in,15:13 - 1st,1,15:13,0.0,0.0,1.0,2.0,Face Off,Yegor Sharangovich faceoff won against Freddy Gaudreau
+2026-11-04 22:16:05,401892645,2026-11-04,chi,fla,in,1:51 - 3rd,3,1:51,3.0,4.0,25.0,17.0,Stoppage,Puck in Netting
+2026-11-04 22:16:05,401892647,2026-11-04,cgy,sea,in,14:03 - 1st,1,14:03,0.0,0.0,1.0,2.0,Blocked,Jonathan Castagna shot blocked by Berkly Catton
+2026-11-04 22:17:05,401892645,2026-11-04,chi,fla,in,1:27 - 3rd,3,1:27,3.0,4.0,25.0,17.0,Missed,Missed Shot
+2026-11-04 22:17:05,401892647,2026-11-04,cgy,sea,in,13:03 - 1st,1,13:03,0.0,0.0,1.0,2.0,Blocked,Jonathan Castagna shot blocked by Berkly Catton
+2026-11-04 22:18:06,401892645,2026-11-04,chi,fla,in,1:27 - 3rd,3,1:27,3.0,5.0,25.0,17.0,Goal,"Sam Reinhart Goal (9) Wrist Shot, assists: Sandis Vilmanis (4)"
+2026-11-04 22:18:06,401892647,2026-11-04,cgy,sea,in,12:09 - 1st,1,12:09,0.0,0.0,1.0,2.0,Stoppage,Icing
