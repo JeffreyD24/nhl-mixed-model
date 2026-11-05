@@ -8039,3 +8039,6 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-04 22:08:00,293551,2026-11-05,2026-11-05 19:00,car,nyi,Caesars,event,total,under,5.5,104,normal
 2026-11-04 22:08:00,293551,2026-11-05,2026-11-05 19:00,car,nyi,Caesars,event,total,over,5.5,-127,normal
 2026-11-04 22:08:00,293554,2026-11-05,2026-11-05 19:00,phi,nyr,bet365,event,total,over,5.5,-123,normal
+2026-11-04 22:12:10,293549,2026-11-05,2026-11-05 19:00,dal,cbj,bet365,event,spread,home,1.5,-270,normal
+2026-11-04 22:12:10,293549,2026-11-05,2026-11-05 19:00,dal,cbj,bet365,event,total,over,5.5,-121,normal
+2026-11-04 22:12:10,293554,2026-11-05,2026-11-05 19:00,phi,nyr,bet365,event,total,under,5.5,103,normal
