@@ -6,4 +6,5 @@ NHL v3,puck line,2,2,1,1,0,0,0.6,0.3,"55/45 blend with DK opener, EV 4%+; b2b sk
 NHL v3.1,moneyline,1,1,1,0,0,0,1.24,1.24,v3 + reporter goalie/lineup news from Bluesky (confirmed starter used until ESPN confirms; clear skater out/in for that game); same rules
 NHL v3.1,puck line,2,1,1,0,0,1,1.54,1.54,v3 + reporter goalie/lineup news from Bluesky (confirmed starter used until ESPN confirms; clear skater out/in for that game); same rules
 NHL v4 [ML EV 9%+],moneyline,1,0,0,0,0,1,0.0,,v3.1 + rule audit: no back-to-back skip; one bet per game prefers the moneyline; no DON'T BET while price within 1.5 pts of the alert; Pinnacle post-alert follow-up dropped (at-alert Pinnacle rule kept)
-OVERALL,all,25,21,10,11,0,4,0.07,0.0033,
+NHL v4.1,puck line,1,0,0,0,0,1,0.0,,v4 + bug fix: only +/-1.5 puck lines are priced (a -2.5 line was priced with the win-by-2 chance; spreads step 1 review)
+OVERALL,all,26,21,10,11,0,5,0.07,0.0033,
