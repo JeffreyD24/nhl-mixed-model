@@ -35,3 +35,14 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-04 10:35,goals,401892656,2026-11-05,van,wpg,0.6092,3.569,2.792,6.52,Leevi Merilainen (expected),Stuart Skinner (expected),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
 2026-11-04 10:37,xg,401892648,2026-11-05,uta,mtl,0.4347,3.086,3.401,6.65,Karel Vejmelka (expected),Jacob Fowler (expected),UTA: Yamamoto? | MTL: Dach?
 2026-11-04 10:37,goals,401892648,2026-11-05,uta,mtl,0.5499,3.349,2.97,6.48,Karel Vejmelka (expected),Jacob Fowler (expected),UTA: Yamamoto? | MTL: Dach?
+2026-11-04 22:17,xg,401892649,2026-11-05,vgk,det,0.4427,2.895,3.15,6.21,Carter Hart (expected),John Gibson (expected),VGK: - | DET: Danielson
+2026-11-04 22:17,goals,401892649,2026-11-05,vgk,det,0.4595,2.897,3.106,6.17,Carter Hart (expected),John Gibson (expected),VGK: - | DET: Danielson
+2026-11-04 22:17,goals,401892650,2026-11-05,chi,tb,0.666,3.754,2.585,6.49,Arvid Soderblom (expected),Andrei Vasilevskiy (expected),"CHI: Greenway, Kane, Korchinski | TB: -"
+2026-11-04 22:17,goals,401892652,2026-11-05,car,nyi,0.3986,2.518,3.106,5.79,Pyotr Kochetkov (expected),Ilya Sorokin (expected),CAR: - | NYI: Pulock
+2026-11-04 22:17,goals,401892653,2026-11-05,phi,nyr,0.5401,2.993,2.695,5.86,Dan Vladar (expected),James Reimer (expected),"PHI: Bump, McDonald | NYR: Raddysh, Durzi?, Glendening"
+2026-11-04 22:17,goals,401892654,2026-11-05,bos,pit,0.4572,2.947,3.174,6.29,Jeremy Swayman (expected),Arturs Silovs (expected),BOS: Poitras? | PIT: Malkin?
+2026-11-04 22:17,goals,401892655,2026-11-05,dal,cbj,0.4341,2.701,3.068,5.94,Jake Oettinger (expected),Jet Greaves (expected),"DAL: Blackwell, Seminoff, Heiskanen? | CBJ: Gudbranson"
+2026-11-04 22:17,xg,401892656,2026-11-05,van,wpg,0.6451,3.68,2.643,6.47,Leevi Merilainen (expected),Stuart Skinner (expected),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
+2026-11-04 22:17,goals,401892656,2026-11-05,van,wpg,0.6063,3.569,2.81,6.53,Leevi Merilainen (expected),Stuart Skinner (expected),"VAN: Bains, Chytil, Willander? | WPG: Rosen"
+2026-11-04 22:17,xg,401892658,2026-11-05,nsh,col,0.5747,3.544,2.819,6.52,Juuse Saros (expected),Mackenzie Blackwood (expected),"NSH: Marchessault?, Wood, Hague | COL: -"
+2026-11-04 22:17,goals,401892658,2026-11-05,nsh,col,0.5631,3.473,3.001,6.63,Juuse Saros (expected),Mackenzie Blackwood (expected),"NSH: Marchessault?, Wood, Hague | COL: -"
