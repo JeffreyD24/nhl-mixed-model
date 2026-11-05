@@ -32,12 +32,9 @@ jobs:
           git add research/spreads/nhl_holdout
           git diff --cached --quiet || git commit -q -m "Spreads step 1 NHL: holdout predictions (lag 1 / lag 0), 2021-22..2025-26"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 15; done
-      - name: Push gzipped box/shots history to the data-rebuild branch
+      - name: Commit the rebuilt box/shots history to main (data-source audit, Nov 5 2026; was a force-pushed orphan branch)
         run: |
-          mkdir -p /tmp/rebuild && gzip -c data/box_hist.csv > /tmp/rebuild/box_hist.csv.gz && gzip -c data/shots_hist.csv > /tmp/rebuild/shots_hist.csv.gz
-          ls -la /tmp/rebuild
-          cd /tmp/rebuild && git init -q && git checkout -q -b data-rebuild
           git config user.name "nhl-tracker-bot"; git config user.email "actions@users.noreply.github.com"
-          printf "Rebuilt %s by step1-nhl-build.yml. Unzip into data/ to run analysis/rule_audit_nhl.py or dev/dk_holdout.py.\n" "$(date -u +%F)" > README.md
-          git add . && git commit -q -m "box_hist / shots_hist rebuilt $(date -u +%F)"
-          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data-rebuild
+          git add data/box_hist.csv.gz data/shots_hist.csv.gz
+          git diff --cached --quiet || git commit -q -m "NHL box/shots history rebuilt $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 15; done

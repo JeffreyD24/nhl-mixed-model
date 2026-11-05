@@ -6,7 +6,7 @@ W = os.path.abspath(sys.argv[1]); sys.path.insert(0, W)
 import nhl_mixed_model as nm, nhl_xg_model as xm
 
 T = pd.read_csv(os.path.join(W, "data", "training_games.csv"))
-S = pd.read_csv(os.path.join(W, "data", "shots_hist.csv"), low_memory=False)
+S = pd.read_csv(os.path.join(W, "data", "shots_hist.csv.gz"), low_memory=False)
 SPLITS = ((2023, [2020, 2021, 2022]), (2024, [2020, 2021, 2022, 2023]), (2025, [2021, 2022, 2023, 2024]), (2026, [2022, 2023, 2024, 2025]))
 dec = lambda o: np.where(o > 0, 1 + o / 100, 1 + 100 / np.abs(o))
 out = {}

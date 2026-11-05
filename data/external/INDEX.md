@@ -23,3 +23,8 @@ MANIFEST.csv lists every file with size and checksum.** Re-run `python3 -I make_
 | Folder | What | Status |
 |---|---|---|
 | `nhl_box/` | starting goalies and skater ice time 2011-12..2022-23 from the NHL API | script + workflow written; run `fetch-nhl-box.yml` in GitHub Actions |
+
+## Nov 5, 2026 (data-source audit)
+- `data/box_hist.csv.gz` and `data/shots_hist.csv.gz` (ESPN box scores and shots, 2019-20..2025-26) are now on main. They
+  used to be gitignored, with the only copy on a force-pushed `data-rebuild` branch. `step1-nhl-build.yml` now commits them to main.
+- `hockeyr/` fetch script pinned to upstream commit 333b1ee; `UPSTREAM_PIN.csv` has each raw file's git hash.

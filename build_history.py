@@ -1,7 +1,7 @@
 """
 One-time build of the training data (rerun to refresh). Writes:
   data/games_hist.csv   every regular-season game 2019-20 .. last season: teams, regulation and final goals, how it ended
-  data/box_hist.csv     player time on ice, goals, assists; goalies with starter flag and goals against
+  data/box_hist.csv.gz     player time on ice, goals, assists; goalies with starter flag and goals against
   data/lines_hist.csv   Action Network opening line (book 'Open'), consensus close, and DraftKings close, 2021-22 on
 
   python build_history.py WORKDIR [CACHE_DIR]
@@ -48,7 +48,7 @@ def main():
     L = pd.DataFrame([r for rows in ln for r in rows]).drop(columns=["_raw", "_goalies"])
     print("line rows", len(L), L.book.value_counts().to_dict())
     G.to_csv(os.path.join(W, "data", "games_hist.csv"), index=False)
-    B.to_csv(os.path.join(W, "data", "box_hist.csv"), index=False)
+    B.to_csv(os.path.join(W, "data", "box_hist.csv.gz"), index=False)
     L.to_csv(os.path.join(W, "data", "lines_hist.csv"), index=False)
 
 

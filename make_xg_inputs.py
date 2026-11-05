@@ -2,7 +2,7 @@
 Precomputes what the live xG model needs, so daily runs don't need the 53 MB shot history:
   data/xg_model.json            xG coefficients fit on the live training seasons' shots (2021-22..2025-26)
   data/training_games.csv       gains home_xg/away_xg/home_att/away_att (regulation xG and unblocked attempts)
-Needs data/shots_hist.csv (python build_shots.py .).
+Needs data/shots_hist.csv.gz (python build_shots.py .).
 
   python make_xg_inputs.py WORKDIR
 """
@@ -13,7 +13,7 @@ import nhl_xg_model as xm
 
 TRAIN = [2022, 2023, 2024, 2025, 2026]
 T = pd.read_csv(os.path.join(W, "data", "training_games.csv"))
-S = pd.read_csv(os.path.join(W, "data", "shots_hist.csv"), low_memory=False)
+S = pd.read_csv(os.path.join(W, "data", "shots_hist.csv.gz"), low_memory=False)
 mod = xm.xg_model(S, T, TRAIN)
 json.dump(mod, open(os.path.join(W, "data", "xg_model.json"), "w"), indent=1)
 TG = xm.team_game_xg(xm.apply_xg(S, T, mod), T)

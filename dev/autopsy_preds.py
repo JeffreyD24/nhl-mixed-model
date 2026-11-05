@@ -5,8 +5,8 @@ import numpy as np, pandas as pd
 W = os.path.abspath(sys.argv[1]); sys.path.insert(0, W)
 import nhl_mixed_model as nm, nhl_xg_model as xm, build_features as bf
 T0 = pd.read_csv(os.path.join(W, "data", "training_games.csv"))
-G = pd.read_csv(os.path.join(W, "data", "games_hist.csv"), parse_dates=["date"]); B = pd.read_csv(os.path.join(W, "data", "box_hist.csv"))
-S = pd.read_csv(os.path.join(W, "data", "shots_hist.csv"), low_memory=False)
+G = pd.read_csv(os.path.join(W, "data", "games_hist.csv"), parse_dates=["date"]); B = pd.read_csv(os.path.join(W, "data", "box_hist.csv.gz"))
+S = pd.read_csv(os.path.join(W, "data", "shots_hist.csv.gz"), low_memory=False)
 F1, _ = bf.build(G, B, lag_days=1)
 T1 = T0.copy().set_index("game_id")
 for c in ("home_gmix", "away_gmix", "home_miss_off_open", "away_miss_off_open", "home_n_out_open", "away_n_out_open"):

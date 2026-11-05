@@ -14,10 +14,10 @@ Data (WORK = a copy of this repo with the gitignored files rebuilt; see analysis
   WORK/_tmp/dk_holdout_{2022..2026}.csv   shot model walk-forward predictions, one-day lag, DK prices (rule_audit_nhl.py --build)
   WORK/_tmp/rule_audit_snaps.pkl          every hourly DK/Pinnacle snapshot (built by rule_audit_nhl.py)
   WORK/_tmp/oos_games.csv                 SBR lines + hockeyR xG + NHL starters 2011-23 (dev/oos_sbr_build.py)
-  WORK/data/shots_hist.csv                ESPN shots (power-play attempts)
+  WORK/data/shots_hist.csv.gz                ESPN shots (power-play attempts)
   NBA/analysis/travel_nhl_games.csv       rest days and time-zone moves (DK era)
   backtests/oos_sbr_bets.csv              the shot model's SBR overs (from dev/oos_sbr_backtest.py)
-How WORK was built (Nov 4, 2026): a copy of this repo; data/box_hist.csv and data/shots_hist.csv re-fetched from ESPN with the repo's own
+How WORK was built (Nov 4, 2026): a copy of this repo; data/box_hist.csv.gz and data/shots_hist.csv.gz re-fetched from ESPN with the repo's own
 parsers (nhl_data.box, build_shots.shots); _tmp/dk_holdout_*.csv from analysis/rule_audit_nhl.py --build; _tmp/oos_games.csv from
 dev/oos_sbr_build.py; DK/Pinnacle snapshots from nba-mixed-model data/odds_history/nhl/*.csv.gz; SBR starters from
 data/external/nhl_box/goalies_2011_2023.csv; hockeyR xG from data/external/hockeyr.
@@ -402,7 +402,7 @@ def divisional(df):
 
 
 # power-play attempts per game (DK era, ESPN shots)
-SH = pd.read_csv(os.path.join(WORK, "data", "shots_hist.csv"), usecols=["game_id", "team", "strength"], low_memory=False)
+SH = pd.read_csv(os.path.join(WORK, "data", "shots_hist.csv.gz"), usecols=["game_id", "team", "strength"], low_memory=False)
 ppg = SH[SH.strength.astype(str).str.lower().isin(["power-play", "short-handed"])].groupby(["game_id", "team"]).size()
 ppH = {"h": {}, "a": {}}
 for i, r in H[["game_id", "home", "away"]].iterrows():

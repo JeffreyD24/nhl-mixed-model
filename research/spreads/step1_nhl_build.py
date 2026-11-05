@@ -6,8 +6,8 @@ Pre-registration: research/spreads/STEP1_NHL_PREREG.md.
   python research/spreads/step1_nhl_build.py .
 
 Writes
-  data/box_hist.csv, data/shots_hist.csv                    (gitignored; the workflow also pushes gzipped copies to the
-                                                              `data-rebuild` branch so later audits do not need to refetch)
+  data/box_hist.csv.gz, data/shots_hist.csv.gz                    (committed to main by step1-nhl-build.yml since the Nov 5, 2026
+                                                              data-source audit; the old `data-rebuild` branch is retired)
   research/spreads/nhl_holdout/dk_holdout_lag{1,0}_{season}.csv
       lag 1 = results and goalie/skater history through two days before the game (live setting; DK's opener posts ~31 h before
               puck drop, before the previous night's games are played)
@@ -58,8 +58,8 @@ S = pd.DataFrame([r for _, s, _ in out for r in s])
 print("box rows", len(B), "games", B.game_id.nunique(), "| shots", len(S), "games", S.game_id.nunique(), flush=True)
 if B.game_id.nunique() < 0.98 * len(G) or S.game_id.nunique() < 0.98 * len(G):
     sys.exit("ABORT: fewer than 98% of games fetched; not building predictions on partial data")
-B.to_csv(os.path.join(W, "data", "box_hist.csv"), index=False)
-S.to_csv(os.path.join(W, "data", "shots_hist.csv"), index=False)
+B.to_csv(os.path.join(W, "data", "box_hist.csv.gz"), index=False)
+S.to_csv(os.path.join(W, "data", "shots_hist.csv.gz"), index=False)
 
 # ------------------------------------------------------------------ walk-forward predictions (code from analysis/rule_audit_nhl.py)
 import nhl_xg_model as xm, build_features as bf                                  # noqa: E402

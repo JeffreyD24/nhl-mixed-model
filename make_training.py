@@ -12,7 +12,7 @@ import build_features as bf
 from nhl_mixed_model import run
 
 G = pd.read_csv(os.path.join(W, "data", "games_hist.csv"), parse_dates=["date"])
-B = pd.read_csv(os.path.join(W, "data", "box_hist.csv"))
+B = pd.read_csv(os.path.join(W, "data", "box_hist.csv.gz"))
 L = pd.read_csv(os.path.join(W, "data", "lines_hist.csv"), parse_dates=["date"])
 F, _ = bf.build(G, B)
 cols = ["home_ml", "away_ml", "home_pl", "home_pl_odds", "away_pl_odds", "total", "over_odds", "under_odds"]

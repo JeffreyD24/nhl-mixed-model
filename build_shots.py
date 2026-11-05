@@ -1,5 +1,5 @@
 """
-Shot-level data from ESPN play-by-play, for the expected-goals (xG) model. Writes data/shots_hist.csv
+Shot-level data from ESPN play-by-play, for the expected-goals (xG) model. Writes data/shots_hist.csv.gz
 (or state/shots_2026_27.csv with --season 2027 for the live season).
 
 One row per shot attempt (on goal, missed, blocked, goal): game, period, seconds into the period, shooting team,
@@ -77,7 +77,7 @@ def main():
     with ThreadPoolExecutor(24) as ex:
         rows = list(ex.map(one, G.game_id))
     S = pd.DataFrame([r for rs in rows for r in rs])
-    S.to_csv(os.path.join(W, "data", "shots_hist.csv"), index=False)
+    S.to_csv(os.path.join(W, "data", "shots_hist.csv.gz"), index=False)
     print(len(S), "shot attempts in", S.game_id.nunique(), "of", len(G), "games")
     print(S.event.value_counts().to_dict()); print(S.strength.value_counts().to_dict()); print(S.shot_type.value_counts().head(10).to_dict())
 

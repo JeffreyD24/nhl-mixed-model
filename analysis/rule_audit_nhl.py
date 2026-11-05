@@ -8,7 +8,7 @@ vs the bets it keeps, using only information available at the moment the bet wou
 Data
   - Shot model walk-forward predictions at DraftKings' opener, 2021-22..2025-26, one-day information lag (as live):
     WORK/_tmp/dk_holdout_{2022..2026}.csv. Built by dev/dk_holdout.py with SPLITS extended to 2025 ([2021-24]) and 2026
-    ([2022-25]); run this script with --build to make them (needs data/box_hist.csv and data/shots_hist.csv, gitignored).
+    ([2022-25]); run this script with --build to make them (needs data/box_hist.csv.gz and data/shots_hist.csv.gz, both in git).
     Reproduces nba-mixed-model analysis/sharp_nhl_output.txt exactly for 2021-22..2024-25 (2025-26 is close: 330 vs 298 bets).
   - Hourly snapshots of DraftKings and Pinnacle, every market (nba-mixed-model data/odds_history/nhl/*.csv.gz): prices at
     DK's open, +60 min, halfway to puck drop, and at the moment Pinnacle first posts.
@@ -42,7 +42,7 @@ def build_holdout():
     import nhl_xg_model as xm, build_features as bf
     T0 = pd.read_csv(os.path.join(WORK, "data", "training_games.csv"))
     G = pd.read_csv(os.path.join(WORK, "data", "games_hist.csv"), parse_dates=["date"])
-    B = pd.read_csv(os.path.join(WORK, "data", "box_hist.csv")); S = pd.read_csv(os.path.join(WORK, "data", "shots_hist.csv"), low_memory=False)
+    B = pd.read_csv(os.path.join(WORK, "data", "box_hist.csv.gz")); S = pd.read_csv(os.path.join(WORK, "data", "shots_hist.csv.gz"), low_memory=False)
     F1, _ = bf.build(G, B, lag_days=1); T1 = T0.copy().set_index("game_id")
     for c in ("home_gmix", "away_gmix", "home_miss_off_open", "away_miss_off_open", "home_n_out_open", "away_n_out_open"):
         T1[c] = F1.set_index("game_id")[c].reindex(T1.index)
