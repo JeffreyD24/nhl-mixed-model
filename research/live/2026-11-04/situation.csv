@@ -264,3 +264,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 22:29:06,401892647,2026-11-04,cgy,sea,in,7:32 - 1st,1,7:32,0.0,0.0,4.0,6.0,Face Off,Freddy Gaudreau faceoff won against Martin Pospisil
 2026-11-04 22:30:05,401892646,2026-11-04,sj,la,in,12:37 - 1st,1,12:37,0.0,1.0,4.0,4.0,Stoppage,Goalie Stopped
 2026-11-04 22:30:05,401892647,2026-11-04,cgy,sea,in,7:15 - 1st,1,7:15,0.0,0.0,4.0,6.0,Face Off,Morgan Frost faceoff won against Freddy Gaudreau
+2026-11-04 22:31:05,401892647,2026-11-04,cgy,sea,in,7:05 - 1st,1,7:05,1.0,0.0,4.0,6.0,Face Off,Jonathan Castagna faceoff won against Ben Meyers
+2026-11-04 22:32:05,401892646,2026-11-04,sj,la,in,12:37 - 1st,1,12:37,0.0,1.0,4.0,4.0,Face Off,Kenny Connors faceoff won against Macklin Celebrini
+2026-11-04 22:32:05,401892647,2026-11-04,cgy,sea,in,5:56 - 1st,1,5:56,1.0,0.0,4.0,6.0,Hit,Jani Nyman hit Simon Nemec
+2026-11-04 22:33:05,401892646,2026-11-04,sj,la,in,12:08 - 1st,1,12:08,0.0,1.0,4.0,4.0,Stoppage,Puck in Netting
+2026-11-04 22:33:05,401892647,2026-11-04,cgy,sea,in,5:37 - 1st,1,5:37,1.0,0.0,4.0,7.0,Stoppage,Goalie Stopped
+2026-11-04 22:34:05,401892646,2026-11-04,sj,la,in,11:30 - 1st,1,11:30,0.0,1.0,4.0,4.0,Face Off,Alex Laferriere faceoff won against Michael Misa
+2026-11-04 22:35:05,401892646,2026-11-04,sj,la,in,10:32 - 1st,1,10:32,0.0,1.0,4.0,5.0,Stoppage,
+2026-11-04 22:35:05,401892647,2026-11-04,cgy,sea,in,5:36 - 1st,1,5:36,1.0,0.0,4.0,7.0,Stoppage,Goalie Stopped
+2026-11-04 22:36:05,401892646,2026-11-04,sj,la,in,10:18 - 1st,1,10:18,0.0,1.0,4.0,5.0,Face Off,Quinton Byfield faceoff won against Ty Dellandrea
+2026-11-04 22:36:05,401892647,2026-11-04,cgy,sea,in,5:19 - 1st,1,5:19,1.0,0.0,4.0,7.0,Face Off,Martin Pospisil faceoff won against Ben Meyers
