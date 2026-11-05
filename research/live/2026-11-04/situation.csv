@@ -203,3 +203,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 21:58:05,401892645,2026-11-04,chi,fla,in,9:06 - 3rd,3,9:06,2.0,3.0,23.0,14.0,Stoppage,Puck in Crowd
 2026-11-04 21:59:05,401892645,2026-11-04,chi,fla,in,9:06 - 3rd,3,9:06,2.0,3.0,24.0,14.0,Stoppage,Puck in Crowd
 2026-11-04 22:00:06,401892645,2026-11-04,chi,fla,in,8:59 - 3rd,3,8:59,2.0,3.0,24.0,14.0,Shot,Sandis Vilmanis saved by Spencer Knight
+2026-11-04 22:01:05,401892644,2026-11-04,ott,buf,in,6:32 - 3rd,3,6:32,1.0,1.0,22.0,27.0,Face Off,Shane Pinto faceoff won against Peyton Krebs
+2026-11-04 22:01:05,401892645,2026-11-04,chi,fla,in,8:42 - 3rd,3,8:42,2.0,4.0,25.0,14.0,Face Off,Roman Kantserov faceoff won against Anton Lundell
+2026-11-04 22:02:06,401892644,2026-11-04,ott,buf,in,6:02 - 3rd,3,6:02,1.0,1.0,23.0,27.0,Stoppage,Icing
+2026-11-04 22:02:06,401892645,2026-11-04,chi,fla,in,8:23 - 3rd,3,8:23,2.0,4.0,24.0,14.0,Stoppage,Puck in Netting
+2026-11-04 22:03:05,401892644,2026-11-04,ott,buf,in,4:59 - 3rd,3,4:59,1.0,1.0,23.0,27.0,Face Off,Claude Giroux faceoff won against Tyson Kozak
+2026-11-04 22:03:05,401892645,2026-11-04,chi,fla,in,8:02 - 3rd,3,8:02,2.0,4.0,24.0,14.0,Face Off,Connor Bedard faceoff won against Sam Bennett
+2026-11-04 22:04:06,401892644,2026-11-04,ott,buf,in,3:56 - 3rd,3,3:56,1.0,1.0,23.0,27.0,Shot,Peyton Krebs saved by Samuel Ersson
+2026-11-04 22:04:06,401892645,2026-11-04,chi,fla,in,6:50 - 3rd,3,6:50,2.0,4.0,24.0,14.0,Blocked,Brady Tkachuk shot blocked by Sam Rinzel
+2026-11-04 22:05:06,401892644,2026-11-04,ott,buf,in,3:43 - 3rd,3,3:43,1.0,1.0,25.0,27.0,Stoppage,Off-side
+2026-11-04 22:05:06,401892645,2026-11-04,chi,fla,in,6:29 - 3rd,3,6:29,2.0,4.0,24.0,14.0,Missed,Gustav Forsling Missed Shot Wide Right
+2026-11-04 22:06:05,401892645,2026-11-04,chi,fla,in,5:23 - 3rd,3,5:23,2.0,4.0,24.0,15.0,Stoppage,TV Timeout
