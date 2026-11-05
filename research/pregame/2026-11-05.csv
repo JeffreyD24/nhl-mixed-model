@@ -11620,3 +11620,7 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 04:04:30,293558,2026-11-05,2026-11-05 19:00,van,wpg,Fanatics,thirdperiod,team_total,away_under,0.5,130,normal
 2026-11-05 04:04:30,293557,2026-11-05,2026-11-05 20:00,ana,edm,Fanatics,thirdperiod,team_total,home_over,1.5,135,normal
 2026-11-05 04:04:30,293557,2026-11-05,2026-11-05 20:00,ana,edm,Fanatics,thirdperiod,team_total,home_under,1.5,-180,normal
+2026-11-05 04:05:45,293557,2026-11-05,2026-11-05 20:00,ana,edm,Fanatics,secondperiod,team_total,home_over,1.5,150,normal
+2026-11-05 04:05:45,293557,2026-11-05,2026-11-05 20:00,ana,edm,Fanatics,secondperiod,team_total,home_under,1.5,-200,normal
+2026-11-05 04:05:45,293557,2026-11-05,2026-11-05 20:00,ana,edm,Fanatics,thirdperiod,total,over,2.5,110,normal
+2026-11-05 04:05:45,293557,2026-11-05,2026-11-05 20:00,ana,edm,Fanatics,thirdperiod,total,under,2.5,-145,normal
