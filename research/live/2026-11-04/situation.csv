@@ -1,0 +1,7 @@
+seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,home_score,away_saves,home_saves,last_play_type,last_play
+2026-11-04 19:37:55,401892645,2026-11-04,chi,fla,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-04 19:40:06,401892645,2026-11-04,chi,fla,in,19:18 - 1st,1,19:18,0.0,0.0,0.0,0.0,Stoppage,Puck in Crowd
+2026-11-04 19:41:05,401892645,2026-11-04,chi,fla,in,18:32 - 1st,1,18:32,0.0,0.0,0.0,0.0,Missed,Cole Smith Missed Shot Wide Left
+2026-11-04 19:42:05,401892644,2026-11-04,ott,buf,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-04 19:42:05,401892645,2026-11-04,chi,fla,in,17:42 - 1st,1,17:42,0.0,0.0,0.0,0.0,Stoppage,Goalie Stopped
+2026-11-04 19:43:05,401892645,2026-11-04,chi,fla,in,17:25 - 1st,1,17:25,0.0,0.0,2.0,0.0,Stoppage,Goalie Stopped
