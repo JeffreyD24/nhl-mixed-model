@@ -14072,3 +14072,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 07:07:40,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,thirdperiod,spread,home,0.5,-192,normal
 2026-11-05 07:07:40,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,thirdperiod,spread,away,-0.5,150,normal
 2026-11-05 07:07:40,293558,2026-11-05,2026-11-05 19:00,van,wpg,BetRivers,thirdperiod,team_total,away_under,0.5,123,normal
+2026-11-05 07:09:30,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,spread,away,-1.5,205,normal
+2026-11-05 07:09:30,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,spread,home,1.5,-250,normal
