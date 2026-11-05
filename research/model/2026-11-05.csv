@@ -85,3 +85,9 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 11:14,goals,401892655,2026-11-05,dal,cbj,0.4714,2.702,2.834,5.71,Jake Oettinger (expected),Cam Talbot (expected),"DAL: Blackwell, Seminoff, Heiskanen? | CBJ: Gudbranson"
 2026-11-05 11:16,xg,401892654,2026-11-05,bos,pit,0.5105,3.193,3.021,6.38,Jeremy Swayman (expected),Arturs Silovs (confirmed),BOS: Poitras? | PIT: Malkin
 2026-11-05 11:16,goals,401892654,2026-11-05,bos,pit,0.4536,2.916,3.169,6.25,Jeremy Swayman (expected),Arturs Silovs (confirmed),BOS: Poitras? | PIT: Malkin
+2026-11-05 11:42,xg,401892648,2026-11-05,uta,mtl,0.4067,3.113,3.586,6.85,Karel Vejmelka (expected),Jakub Dobes (confirmed),UTA: Yamamoto? | MTL: Dach
+2026-11-05 11:42,goals,401892648,2026-11-05,uta,mtl,0.5153,3.347,3.192,6.7,Karel Vejmelka (expected),Jakub Dobes (confirmed),UTA: Yamamoto? | MTL: Dach
+2026-11-05 11:42,xg,401892651,2026-11-05,stl,nj,0.6194,3.282,2.48,5.92,Joel Hofer (expected),Connor Hellebuyck (confirmed),"STL: Kaskimaki, Parayko? | NJ: Dillon"
+2026-11-05 11:42,goals,401892651,2026-11-05,stl,nj,0.5381,3.028,2.739,5.94,Joel Hofer (expected),Connor Hellebuyck (confirmed),"STL: Kaskimaki, Parayko? | NJ: Dillon"
+2026-11-05 11:42,xg,401892653,2026-11-05,phi,nyr,0.5483,3.111,2.724,6.0,Joseph Woll (confirmed),Dylan Garand (confirmed),"PHI: Bump, McDonald | NYR: Raddysh, Durzi?, Glendening"
+2026-11-05 11:42,goals,401892653,2026-11-05,phi,nyr,0.5336,3.025,2.764,5.96,Joseph Woll (confirmed),Dylan Garand (confirmed),"PHI: Bump, McDonald | NYR: Raddysh, Durzi?, Glendening"
