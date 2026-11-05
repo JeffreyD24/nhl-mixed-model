@@ -170,3 +170,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 21:41:06,401892645,2026-11-04,chi,fla,in,17:58 - 3rd,3,17:58,1.0,3.0,16.0,14.0,Shot,Anton Frondell saved by Jacob Markstrom
 2026-11-04 21:42:06,401892644,2026-11-04,ott,buf,in,15:46 - 3rd,3,15:46,0.0,1.0,17.0,23.0,Stoppage,Puck in Benches
 2026-11-04 21:42:06,401892645,2026-11-04,chi,fla,in,17:20 - 3rd,3,17:20,1.0,3.0,16.0,14.0,Blocked,Connor Bedard shot blocked by Niko Mikkola
+2026-11-04 21:43:05,401892644,2026-11-04,ott,buf,in,14:54 - 3rd,3,14:54,0.0,1.0,17.0,23.0,Face Off,Dylan Cozens faceoff won against Sam Carrick
+2026-11-04 21:43:05,401892645,2026-11-04,chi,fla,in,16:31 - 3rd,3,16:31,1.0,3.0,17.0,14.0,Blocked,Carter Verhaeghe shot blocked by Sandis Vilmanis
+2026-11-04 21:44:06,401892644,2026-11-04,ott,buf,in,13:56 - 3rd,3,13:56,0.0,1.0,17.0,24.0,Shot,Tim Stützle saved by Colten Ellis
+2026-11-04 21:44:06,401892645,2026-11-04,chi,fla,in,16:24 - 3rd,3,16:24,1.0,3.0,17.0,14.0,Face Off,Anton Frondell faceoff won against Sam Bennett
+2026-11-04 21:45:06,401892644,2026-11-04,ott,buf,in,13:04 - 3rd,3,13:04,0.0,1.0,17.0,24.0,Blocked,Olen Zellweger shot blocked by Artem Zub
+2026-11-04 21:45:06,401892645,2026-11-04,chi,fla,in,15:25 - 3rd,3,15:25,1.0,3.0,18.0,14.0,Blocked,Alex Vlasic shot blocked by Tyler Bertuzzi
+2026-11-04 21:46:05,401892644,2026-11-04,ott,buf,in,12:31 - 3rd,3,12:31,0.0,1.0,17.0,24.0,Stoppage,Off-side
+2026-11-04 21:46:05,401892645,2026-11-04,chi,fla,in,15:05 - 3rd,3,15:05,1.0,3.0,19.0,14.0,Shot,Seth Jones saved by Spencer Knight
+2026-11-04 21:47:05,401892645,2026-11-04,chi,fla,in,14:42 - 3rd,3,14:42,1.0,3.0,21.0,14.0,Face Off,Lars Eller faceoff won against Connor Bedard
+2026-11-04 21:48:05,401892644,2026-11-04,ott,buf,in,12:28 - 3rd,3,12:28,0.0,1.0,17.0,24.0,Face Off,Shane Pinto faceoff won against Peyton Krebs
+2026-11-04 21:48:05,401892645,2026-11-04,chi,fla,in,14:03 - 3rd,3,14:03,1.0,3.0,21.0,14.0,Stoppage,Icing
