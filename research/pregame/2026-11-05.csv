@@ -28030,3 +28030,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 17:59:30,293557,2026-11-05,2026-11-05 20:00,ana,edm,FanDuel,thirdperiod,spread,away,0.5,-136,normal
 2026-11-05 17:59:30,293557,2026-11-05,2026-11-05 20:00,ana,edm,FanDuel,thirdperiod,total,over,2.5,104,normal
 2026-11-05 17:59:30,293557,2026-11-05,2026-11-05 20:00,ana,edm,FanDuel,thirdperiod,total,under,2.5,-130,normal
+2026-11-05 18:00:47,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,moneyline,home,0.0,-114,normal
+2026-11-05 18:00:47,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,moneyline,away,0.0,-106,normal
+2026-11-05 18:00:47,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,spread,away,1.5,-250,normal
+2026-11-05 18:00:47,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,spread,home,-1.5,205,normal
+2026-11-05 18:00:47,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,total,under,6.5,-103,normal
+2026-11-05 18:00:47,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,total,over,6.5,-117,normal
+2026-11-05 18:00:47,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,event,team_total,home_over,3.5,-116,normal
+2026-11-05 18:00:47,293553,2026-11-05,2026-11-05 19:00,stl,nj,DraftKings,event,moneyline,away,0.0,190,normal
+2026-11-05 18:00:47,293553,2026-11-05,2026-11-05 19:00,stl,nj,DraftKings,event,moneyline,home,0.0,-230,normal
+2026-11-05 18:00:47,293553,2026-11-05,2026-11-05 19:00,stl,nj,DraftKings,event,spread,away,1.5,-142,normal
+2026-11-05 18:00:47,293553,2026-11-05,2026-11-05 19:00,stl,nj,DraftKings,event,spread,home,-1.5,120,normal
+2026-11-05 18:00:47,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,firstperiod,moneyline,away,0.0,140,normal
+2026-11-05 18:00:47,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,firstperiod,moneyline,home,0.0,-185,normal
+2026-11-05 18:00:47,293557,2026-11-05,2026-11-05 20:00,ana,edm,Consensus,thirdperiod,team_total,home_under,1.5,-170,normal
