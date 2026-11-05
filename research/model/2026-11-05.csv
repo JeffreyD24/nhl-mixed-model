@@ -115,3 +115,7 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 17:05,goals,401892652,2026-11-05,car,nyi,0.4332,2.784,3.168,6.12,Brandon Bussi (confirmed),Semyon Varlamov (confirmed),CAR: - | NYI: Pulock
 2026-11-05 18:05,xg,401892654,2026-11-05,bos,pit,0.5214,3.255,3.016,6.43,Michael DiPietro (confirmed),Arturs Silovs (confirmed),BOS: Poitras | PIT: Malkin
 2026-11-05 18:05,goals,401892654,2026-11-05,bos,pit,0.471,3.024,3.165,6.35,Michael DiPietro (confirmed),Arturs Silovs (confirmed),BOS: Poitras | PIT: Malkin
+2026-11-05 18:37,xg,401892649,2026-11-05,vgk,det,0.46,2.914,3.043,6.12,Carter Hart (confirmed),Daniil Tarasov (confirmed),VGK: - | DET: Danielson
+2026-11-05 18:37,goals,401892649,2026-11-05,vgk,det,0.4669,2.881,3.045,6.09,Carter Hart (confirmed),Daniil Tarasov (confirmed),VGK: - | DET: Danielson
+2026-11-05 18:37,xg,401892650,2026-11-05,chi,tb,0.8047,4.178,2.222,6.52,Arvid Soderblom (confirmed),Andrei Vasilevskiy (confirmed),CHI: Kane | TB: -
+2026-11-05 18:37,goals,401892650,2026-11-05,chi,tb,0.7108,3.9,2.398,6.43,Arvid Soderblom (confirmed),Andrei Vasilevskiy (confirmed),CHI: Kane | TB: -
