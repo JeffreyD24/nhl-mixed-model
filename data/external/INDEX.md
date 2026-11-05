@@ -28,3 +28,4 @@ MANIFEST.csv lists every file with size and checksum.** Re-run `python3 -I make_
 - `data/box_hist.csv.gz` and `data/shots_hist.csv.gz` (ESPN box scores and shots, 2019-20..2025-26) are now on main. They
   used to be gitignored, with the only copy on a force-pushed `data-rebuild` branch. `step1-nhl-build.yml` now commits them to main.
 - `hockeyr/` fetch script pinned to upstream commit 333b1ee; `UPSTREAM_PIN.csv` has each raw file's git hash.
+- hockeyR raw play-by-play (14 lite files, 380 MB) backed up in the PRIVATE repo JeffreyD24/hockey-private (keep private: no license).
