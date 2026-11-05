@@ -48,6 +48,10 @@ def bands(B, seasons, title):
             print(line(lab, B[m & (B.ev >= lo) & (B.ev < hi)], seasons))
 
 
+sys.path.insert(0, WORK)
+import derived                                   # saved build products (derived/MANIFEST.md)
+_miss = derived.ensure(WORK, [f"dk_holdout_{s}.csv" for s in (2022, 2023, 2024, 2025, 2026)] + [f"gr_G1_{k}_{s}.{e}" for s in range(2015, 2022) for k, e in (("pred", "csv"), ("meta", "json"))])
+if _miss and '--build' not in sys.argv: sys.exit(f'missing saved build products {_miss}: build them, then python derived.py . --save')
 # ================================================================ T1: leave-one-season-out on DK openers 2021-26
 DKS = (2022, 2023, 2024, 2025, 2026)
 H = pd.concat([pd.read_csv(os.path.join(TMP, f"dk_holdout_{s}.csv")) for s in DKS], ignore_index=True)

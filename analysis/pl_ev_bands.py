@@ -41,6 +41,10 @@ def build_holdout():          # copied from rule_audit_nhl.py so the two use ide
         print("built", test, len(P), flush=True)
 
 
+sys.path.insert(0, WORK)
+import derived                                   # saved build products (derived/MANIFEST.md)
+_miss = derived.ensure(WORK, [f"dk_holdout_{s}.csv" for s in SEASONS])
+if _miss and '--build' not in sys.argv: sys.exit(f'missing saved build products {_miss}: build them, then python derived.py . --save')
 if "--build" in sys.argv: build_holdout()
 H = pd.concat([pd.read_csv(os.path.join(WORK, "_tmp", f"dk_holdout_{s}.csv")) for s in SEASONS], ignore_index=True)
 H = H[H.open_home_ml.notna() & H.home_goals.notna() & H.p_home_win_open.notna()].reset_index(drop=True)
