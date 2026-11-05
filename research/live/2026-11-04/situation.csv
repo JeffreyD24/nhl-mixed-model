@@ -96,3 +96,15 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 20:47:06,401892645,2026-11-04,chi,fla,in,14:35 - 2nd,2,14:35,0.0,2.0,8.0,6.0,Missed,Ryan Donato Missed Shot Wide Left
 2026-11-04 20:48:05,401892644,2026-11-04,ott,buf,in,15:20 - 2nd,2,15:20,0.0,0.0,14.0,14.0,Blocked,Sam Carrick shot blocked by Carter Yakemchuk
 2026-11-04 20:48:05,401892645,2026-11-04,chi,fla,in,14:06 - 2nd,2,14:06,0.0,2.0,8.0,7.0,Blocked,Brady Tkachuk shot blocked by Sam Rinzel
+2026-11-04 20:49:06,401892644,2026-11-04,ott,buf,in,14:48 - 2nd,2,14:48,0.0,0.0,15.0,14.0,Stoppage,Goalie Stopped
+2026-11-04 20:49:06,401892645,2026-11-04,chi,fla,in,13:50 - 2nd,2,13:50,0.0,2.0,8.0,7.0,Face Off,Roman Kantserov faceoff won against Anton Lundell
+2026-11-04 20:50:06,401892644,2026-11-04,ott,buf,in,14:33 - 2nd,2,14:33,0.0,0.0,15.0,14.0,Shot,Jake Sanderson saved by Colten Ellis
+2026-11-04 20:50:06,401892645,2026-11-04,chi,fla,in,13:01 - 2nd,2,13:01,0.0,2.0,8.0,7.0,Face Off,Roman Kantserov faceoff won against Anton Lundell
+2026-11-04 20:51:06,401892644,2026-11-04,ott,buf,in,13:56 - 2nd,2,13:56,0.0,0.0,15.0,15.0,Penalty Shot Infraction,Rasmus Dahlin Minor
+2026-11-04 20:51:06,401892645,2026-11-04,chi,fla,in,12:26 - 2nd,2,12:26,0.0,2.0,8.0,7.0,Stoppage,Goalie Stopped
+2026-11-04 20:52:06,401892644,2026-11-04,ott,buf,in,13:56 - 2nd,2,13:56,0.0,0.0,15.0,16.0,Stoppage,TV Timeout
+2026-11-04 20:52:06,401892645,2026-11-04,chi,fla,in,11:29 - 2nd,2,11:29,0.0,2.0,8.0,8.0,Shot,Brady Tkachuk saved by Spencer Knight
+2026-11-04 20:53:06,401892644,2026-11-04,ott,buf,in,13:51 - 2nd,2,13:51,0.0,0.0,15.0,16.0,Stoppage,Goalie Stopped
+2026-11-04 20:53:06,401892645,2026-11-04,chi,fla,in,10:37 - 2nd,2,10:37,0.0,2.0,9.0,8.0,Stoppage,Icing
+2026-11-04 20:54:06,401892644,2026-11-04,ott,buf,in,13:09 - 2nd,2,13:09,0.0,0.0,15.0,17.0,Blocked,Tim Stützle shot blocked by Mattias Samuelsson
+2026-11-04 20:54:06,401892645,2026-11-04,chi,fla,in,10:25 - 2nd,2,10:25,0.0,2.0,9.0,8.0,Face Off,Cole Schwindt faceoff won against Roman Kantserov
