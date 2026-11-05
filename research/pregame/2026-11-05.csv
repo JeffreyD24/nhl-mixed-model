@@ -9780,3 +9780,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 02:57:40,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,event,total,under,5.5,112,normal
 2026-11-05 02:57:40,293555,2026-11-05,2026-11-05 19:00,vgk,det,FanDuel,event,total,over,5.5,-138,normal
 2026-11-05 02:57:40,293555,2026-11-05,2026-11-05 19:00,vgk,det,FanDuel,event,total,under,5.5,112,normal
+2026-11-05 03:00:45,293549,2026-11-05,2026-11-05 19:00,dal,cbj,bet365,event,moneyline,home,0.0,110,normal
+2026-11-05 03:00:45,293549,2026-11-05,2026-11-05 19:00,dal,cbj,bet365,event,moneyline,away,0.0,-130,normal
