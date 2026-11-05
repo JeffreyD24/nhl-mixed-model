@@ -24644,3 +24644,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 15:07:59,293551,2026-11-05,2026-11-05 19:00,car,nyi,FanDuel,thirdperiod,total,under,2.5,-190,normal
 2026-11-05 15:07:59,293553,2026-11-05,2026-11-05 19:00,stl,nj,DraftKings,thirdperiod,spread,home,-0.5,105,normal
 2026-11-05 15:07:59,293553,2026-11-05,2026-11-05 19:00,stl,nj,DraftKings,thirdperiod,spread,away,0.5,-135,normal
+2026-11-05 15:10:03,293556,2026-11-05,2026-11-05 19:00,uta,mtl,Consensus,event,moneyline,away,0.0,-124,normal
+2026-11-05 15:10:03,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,firstperiod,moneyline,away,0.0,143,normal
+2026-11-05 15:10:03,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,firstperiod,moneyline,home,0.0,-187,normal
+2026-11-05 15:10:03,293557,2026-11-05,2026-11-05 20:00,ana,edm,Consensus,firstperiod,moneyline,home,0.0,-112,normal
+2026-11-05 15:10:03,293557,2026-11-05,2026-11-05 20:00,ana,edm,Consensus,firstperiod,moneyline,away,0.0,-113,normal
+2026-11-05 15:10:03,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,secondperiod,moneyline,away,0.0,140,normal
+2026-11-05 15:10:03,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,secondperiod,moneyline,home,0.0,-200,normal
+2026-11-05 15:10:03,293557,2026-11-05,2026-11-05 20:00,ana,edm,Consensus,secondperiod,moneyline,away,0.0,-175,normal
+2026-11-05 15:10:03,293557,2026-11-05,2026-11-05 20:00,ana,edm,Consensus,secondperiod,moneyline,home,0.0,125,normal
+2026-11-05 15:10:03,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,thirdperiod,moneyline,away,0.0,145,normal
+2026-11-05 15:10:03,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,thirdperiod,moneyline,home,0.0,-210,normal
+2026-11-05 15:10:03,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,thirdperiod,total,over,2.0,-118,normal
+2026-11-05 15:10:03,293557,2026-11-05,2026-11-05 20:00,ana,edm,Consensus,thirdperiod,moneyline,home,0.0,130,normal
+2026-11-05 15:10:03,293557,2026-11-05,2026-11-05 20:00,ana,edm,Consensus,thirdperiod,moneyline,away,0.0,-185,normal
