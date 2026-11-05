@@ -25012,3 +25012,11 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 15:29:43,293551,2026-11-05,2026-11-05 19:00,car,nyi,Fanatics,thirdperiod,total,under,2.5,-205,normal
 2026-11-05 15:29:43,293554,2026-11-05,2026-11-05 19:00,phi,nyr,Fanatics,thirdperiod,team_total,home_under,0.5,170,normal
 2026-11-05 15:29:43,293554,2026-11-05,2026-11-05 19:00,phi,nyr,Fanatics,thirdperiod,team_total,home_over,0.5,-230,normal
+2026-11-05 15:30:53,293550,2026-11-05,2026-11-05 19:00,chi,tb,Consensus,event,spread,away,2.0,114,normal
+2026-11-05 15:30:53,293550,2026-11-05,2026-11-05 19:00,chi,tb,bet365,event,spread,away,1.5,144,normal
+2026-11-05 15:30:53,293550,2026-11-05,2026-11-05 19:00,chi,tb,bet365,event,spread,home,-1.5,-169,normal
+2026-11-05 15:30:53,293551,2026-11-05,2026-11-05 19:00,car,nyi,Consensus,event,moneyline,home,0.0,163,normal
+2026-11-05 15:30:53,293551,2026-11-05,2026-11-05 19:00,car,nyi,Consensus,event,moneyline,away,0.0,-193,normal
+2026-11-05 15:30:53,293551,2026-11-05,2026-11-05 19:00,car,nyi,Consensus,event,total,over,6.0,-110,normal
+2026-11-05 15:30:53,293551,2026-11-05,2026-11-05 19:00,car,nyi,Consensus,event,total,under,6.0,-110,normal
+2026-11-05 15:30:53,293552,2026-11-05,2026-11-05 19:00,bos,pit,Consensus,event,spread,home,1.5,-245,normal
