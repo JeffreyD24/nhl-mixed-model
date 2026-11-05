@@ -323,3 +323,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-04 23:17:05,401892646,2026-11-04,sj,la,in,17:11 - 2nd,2,17:11,0.0,3.0,10.0,12.0,Face Off,Ty Dellandrea faceoff won against Adrian Kempe
 2026-11-04 23:17:05,401892647,2026-11-04,cgy,sea,in,11:39 - 2nd,2,11:39,1.0,0.0,14.0,12.0,Stoppage,Puck in Netting
 2026-11-04 23:18:06,401892646,2026-11-04,sj,la,in,16:43 - 2nd,2,16:43,0.0,3.0,10.0,12.0,Stoppage,Puck in Netting
+2026-11-04 23:19:06,401892646,2026-11-04,sj,la,in,16:17 - 2nd,2,16:17,0.0,3.0,11.0,12.0,Face Off,Macklin Celebrini faceoff won against Kenny Connors
+2026-11-04 23:19:06,401892647,2026-11-04,cgy,sea,in,10:48 - 2nd,2,10:48,1.0,0.0,15.0,12.0,Shot,Vince Dunn Wrist Shot saved by Dustin Wolf
+2026-11-04 23:20:06,401892646,2026-11-04,sj,la,in,16:14 - 2nd,2,16:14,0.0,3.0,11.0,12.0,Face Off,Quinton Byfield faceoff won against Macklin Celebrini
+2026-11-04 23:20:06,401892647,2026-11-04,cgy,sea,in,10:32 - 2nd,2,10:32,1.0,0.0,15.0,14.0,Stoppage,Goalie Stopped
+2026-11-04 23:21:05,401892646,2026-11-04,sj,la,in,15:14 - 2nd,2,15:14,0.0,3.0,11.0,12.0,Stoppage,Puck in Crowd
+2026-11-04 23:21:05,401892647,2026-11-04,cgy,sea,in,10:13 - 2nd,2,10:13,1.0,0.0,15.0,14.0,Stoppage,Hand Pass
+2026-11-04 23:22:05,401892646,2026-11-04,sj,la,in,14:53 - 2nd,2,14:53,1.0,3.0,11.0,12.0,Goal,"Macklin Celebrini Goal (6) Wrist Shot, assists: Dmitry Orlov (5), Michael Misa (6)"
+2026-11-04 23:22:05,401892647,2026-11-04,cgy,sea,in,9:46 - 2nd,2,9:46,1.0,0.0,16.0,14.0,Stoppage,Goalie Stopped
+2026-11-04 23:23:05,401892646,2026-11-04,sj,la,in,14:25 - 2nd,2,14:25,1.0,3.0,11.0,12.0,Face Off,Ty Dellandrea faceoff won against Adrian Kempe
+2026-11-04 23:24:05,401892646,2026-11-04,sj,la,in,13:24 - 2nd,2,13:24,1.0,3.0,11.0,13.0,Shot,Darnell Nurse Wrist Shot saved by Darcy Kuemper
+2026-11-04 23:24:05,401892647,2026-11-04,cgy,sea,in,9:36 - 2nd,2,9:36,1.0,0.0,16.0,14.0,Blocked,Vince Dunn shot blocked by Joel Farabee
