@@ -21,7 +21,7 @@ import nhl_travel                                        # noqa: E402
 import fanduel                                           # noqa: E402
 
 REMIND_EVERY_MIN = 30               # Nov 2, 2026: an alerted bet still not logged and still a bet -> REMINDER every 30 min,
-REMIND_HOURS = (6, 20)              #   only 6 AM - 8 PM ET
+REMIND_HOURS = (0, 24)              #   24 hours a day (Jeffrey, Nov 5, 2026: alerts and reminders are never held for sleep hours; was 6 AM - 8 PM)
 REMIND_GAPS = ((24, 240), (6, 120), (2, 60))   # Nov 4, 2026: reminders spaced by time to start: 24h+ every 4 h, 6-24 h every 2 h,
                                               #   2-6 h hourly, under 2 h every REMIND_EVERY_MIN (an opener alerted the day before
                                               #   no longer sends ~25 reminders)
