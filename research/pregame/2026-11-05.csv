@@ -9772,3 +9772,11 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 02:55:45,293549,2026-11-05,2026-11-05 19:00,dal,cbj,FanDuel,event,moneyline,away,0.0,-134,normal
 2026-11-05 02:55:45,293549,2026-11-05,2026-11-05 19:00,dal,cbj,FanDuel,event,spread,away,-1.5,184,normal
 2026-11-05 02:55:45,293549,2026-11-05,2026-11-05 19:00,dal,cbj,FanDuel,event,spread,home,1.5,-230,normal
+2026-11-05 02:57:40,293549,2026-11-05,2026-11-05 19:00,dal,cbj,Consensus,event,moneyline,away,0.0,-131,normal
+2026-11-05 02:57:40,293549,2026-11-05,2026-11-05 19:00,dal,cbj,Consensus,event,spread,away,-1.5,190,normal
+2026-11-05 02:57:40,293549,2026-11-05,2026-11-05 19:00,dal,cbj,Consensus,event,spread,home,1.5,-234,normal
+2026-11-05 02:57:40,293553,2026-11-05,2026-11-05 19:00,stl,nj,Consensus,event,moneyline,away,0.0,155,normal
+2026-11-05 02:57:40,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,event,total,over,5.5,-135,normal
+2026-11-05 02:57:40,293555,2026-11-05,2026-11-05 19:00,vgk,det,Consensus,event,total,under,5.5,112,normal
+2026-11-05 02:57:40,293555,2026-11-05,2026-11-05 19:00,vgk,det,FanDuel,event,total,over,5.5,-138,normal
+2026-11-05 02:57:40,293555,2026-11-05,2026-11-05 19:00,vgk,det,FanDuel,event,total,under,5.5,112,normal
