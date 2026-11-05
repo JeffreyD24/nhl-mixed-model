@@ -3216,3 +3216,15 @@ seen_at_et,espn_event_id,date,away,home,period,clock,away_score,home_score,book,
 2026-11-04 21:29:06,401892644,2026-11-04,ott,buf,thirdperiod,0:00,0.0,1.0,Consensus,spread,home,-0.5,112,True,normal
 2026-11-04 21:29:06,401892644,2026-11-04,ott,buf,thirdperiod,0:00,0.0,1.0,Consensus,spread,away,0.5,-155,True,normal
 2026-11-04 21:29:06,401892644,2026-11-04,ott,buf,thirdperiod,0:00,0.0,1.0,Consensus,total,under,2.5,-152,True,normal
+2026-11-04 21:31:05,401892645,2026-11-04,chi,fla,event,0:00,1.0,3.0,BetRivers,team_total,home_under,4.5,-167,True,normal
+2026-11-04 21:31:05,401892645,2026-11-04,chi,fla,event,0:00,1.0,3.0,BetRivers,spread,away,1.5,380,True,normal
+2026-11-04 21:31:05,401892645,2026-11-04,chi,fla,event,0:00,1.0,3.0,BetRivers,total,over,5.5,-200,True,normal
+2026-11-04 21:31:05,401892644,2026-11-04,ott,buf,event,0:00,0.0,1.0,BetRivers,total,under,3.5,-150,True,normal
+2026-11-04 21:31:05,401892645,2026-11-04,chi,fla,secondperiod,0:00,1.0,3.0,BetRivers,team_total,home_under,1.5,-2500,True,normal
+2026-11-04 21:31:05,401892645,2026-11-04,chi,fla,secondperiod,0:00,1.0,3.0,BetRivers,moneyline,home,0.0,-278,True,normal
+2026-11-04 21:31:05,401892645,2026-11-04,chi,fla,secondperiod,0:00,1.0,3.0,BetRivers,total,under,2.5,-1000,True,normal
+2026-11-04 21:31:05,401892645,2026-11-04,chi,fla,secondperiod,0:00,1.0,3.0,BetRivers,total,over,2.5,400,True,normal
+2026-11-04 21:31:05,401892645,2026-11-04,chi,fla,thirdperiod,0:00,1.0,3.0,BetRivers,team_total,away_over,0.5,-127,True,normal
+2026-11-04 21:31:05,401892645,2026-11-04,chi,fla,thirdperiod,0:00,1.0,3.0,BetRivers,moneyline,away,0.0,270,True,normal
+2026-11-04 21:31:05,401892644,2026-11-04,ott,buf,thirdperiod,0:00,0.0,1.0,BetRivers,team_total,home_over,1.5,128,True,normal
+2026-11-04 21:32:05,401892645,2026-11-04,chi,fla,thirdperiod,0:00,1.0,3.0,Consensus,total,under,2.5,-200,False,normal
