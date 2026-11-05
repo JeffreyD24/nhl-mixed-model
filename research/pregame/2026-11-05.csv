@@ -14422,3 +14422,14 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 07:48:53,293557,2026-11-05,2026-11-05 20:00,ana,edm,BetRivers,thirdperiod,team_total,home_under,1.5,-200,normal
 2026-11-05 07:48:53,293557,2026-11-05,2026-11-05 20:00,ana,edm,BetRivers,thirdperiod,team_total,home_over,1.5,138,normal
 2026-11-05 07:48:53,293557,2026-11-05,2026-11-05 20:00,ana,edm,BetRivers,thirdperiod,total,over,2.5,118,normal
+2026-11-05 07:50:35,293550,2026-11-05,2026-11-05 19:00,chi,tb,BetMGM,event,moneyline,away,0.0,320,normal
+2026-11-05 07:50:35,293550,2026-11-05,2026-11-05 19:00,chi,tb,BetMGM,event,moneyline,home,0.0,-425,normal
+2026-11-05 07:50:35,293550,2026-11-05,2026-11-05 19:00,chi,tb,bet365,event,spread,away,1.5,130,normal
+2026-11-05 07:50:35,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,event,spread,away,-1.5,200,normal
+2026-11-05 07:50:35,293552,2026-11-05,2026-11-05 19:00,bos,pit,BetMGM,event,spread,home,1.5,-250,normal
+2026-11-05 07:50:35,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,spread,away,-1.5,205,normal
+2026-11-05 07:50:35,293552,2026-11-05,2026-11-05 19:00,bos,pit,bet365,event,spread,home,1.5,-250,normal
+2026-11-05 07:50:35,293556,2026-11-05,2026-11-05 19:00,uta,mtl,BetMGM,event,moneyline,away,0.0,-120,normal
+2026-11-05 07:50:35,293556,2026-11-05,2026-11-05 19:00,uta,mtl,BetMGM,event,moneyline,home,0.0,100,normal
+2026-11-05 07:50:35,293559,2026-11-05,2026-11-05 21:30,nsh,col,BetMGM,event,moneyline,home,0.0,-220,normal
+2026-11-05 07:50:35,293559,2026-11-05,2026-11-05 21:30,nsh,col,BetMGM,event,moneyline,away,0.0,180,normal
