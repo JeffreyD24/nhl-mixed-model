@@ -23,3 +23,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-06 11:39,goals,401892661,2026-11-06,ana,cgy,0.522,3.274,3.077,6.51,Lukas Dostal (expected),Dustin Wolf (confirmed),ANA: Greer | CGY: -
 2026-11-06 12:05,xg,401892659,2026-11-06,cbj,buf,0.6197,3.44,2.762,6.36,Jet Greaves (confirmed),Ukko-Pekka Luukkonen (confirmed),"CBJ: Gudbranson, Heinen | BUF: -"
 2026-11-06 12:05,goals,401892659,2026-11-06,cbj,buf,0.6033,3.381,2.657,6.2,Jet Greaves (confirmed),Ukko-Pekka Luukkonen (confirmed),"CBJ: Gudbranson, Heinen | BUF: -"
+2026-11-06 13:39,xg,401892660,2026-11-06,sj,min,0.7779,4.178,2.232,6.53,Yaroslav Askarov (confirmed),Jesper Wallstedt (confirmed),"SJ: Gaudette, Allan | MIN: -"
+2026-11-06 13:39,goals,401892660,2026-11-06,sj,min,0.7026,3.587,2.205,5.94,Yaroslav Askarov (confirmed),Jesper Wallstedt (confirmed),"SJ: Gaudette, Allan | MIN: -"
