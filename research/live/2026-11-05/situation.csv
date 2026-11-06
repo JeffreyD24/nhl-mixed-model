@@ -963,3 +963,53 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 21:29:06,401892655,2026-11-05,dal,cbj,in,4:36 - 3rd,3,4:36,1.0,0.0,27.0,22.0,Stoppage,Goalie Stopped
 2026-11-05 21:29:06,401892656,2026-11-05,van,wpg,in,5:20 - 3rd,3,5:20,1.0,6.0,22.0,22.0,Blocked,Mario Ferraro shot blocked by Elias Pettersson
 2026-11-05 21:29:06,401892657,2026-11-05,ana,edm,in,11:55 - 2nd,2,11:55,3.0,2.0,9.0,8.0,Missed,Drew Helleson Missed Shot Wide Right
+2026-11-05 21:30:05,401892648,2026-11-05,uta,mtl,in,11:00 - 3rd,3,11:00,4.0,3.0,23.0,13.0,Blocked,Kaiden Guhle shot blocked by Mikhail Sergachev
+2026-11-05 21:30:05,401892649,2026-11-05,vgk,det,in,6:37 - 3rd,3,6:37,1.0,1.0,25.0,27.0,Shot,Braeden Bowman Wrist Shot saved by Daniil Tarasov
+2026-11-05 21:30:05,401892650,2026-11-05,chi,tb,in,11:36 - 3rd,3,11:36,0.0,4.0,24.0,20.0,Missed,Ryan Donato Missed Shot Wide Left
+2026-11-05 21:30:05,401892651,2026-11-05,stl,nj,in,5:24 - 3rd,3,5:24,3.0,4.0,29.0,26.0,Goal,"Philip Broberg Goal (4) Wrist Shot, assists: none"
+2026-11-05 21:30:05,401892652,2026-11-05,car,nyi,in,6:36 - 3rd,3,6:36,3.0,3.0,20.0,32.0,Face Off,Jesperi Kotkaniemi faceoff won against Casey Cizikas
+2026-11-05 21:30:05,401892653,2026-11-05,phi,nyr,in,1:15 - 3rd,3,1:15,2.0,3.0,24.0,21.0,Stoppage,Goalie Stopped
+2026-11-05 21:30:05,401892654,2026-11-05,bos,pit,in,0:58 - 3rd,3,0:58,6.0,2.0,16.0,18.0,Missed,Evgeni Malkin Missed Shot Wide Left
+2026-11-05 21:30:05,401892656,2026-11-05,van,wpg,in,4:51 - 3rd,3,4:51,2.0,6.0,22.0,22.0,Goal,"Brock Boeser Goal (6) Backhand, assists: none"
+2026-11-05 21:30:05,401892657,2026-11-05,ana,edm,in,10:47 - 2nd,2,10:47,3.0,2.0,10.0,8.0,Shot,Ryan Shea saved by Laurent Brossoit
+2026-11-05 21:31:06,401892648,2026-11-05,uta,mtl,in,10:15 - 3rd,3,10:15,4.0,3.0,23.0,13.0,Face Off,Vincent Trocheck faceoff won against Nick Suzuki
+2026-11-05 21:31:06,401892649,2026-11-05,vgk,det,in,5:42 - 3rd,3,5:42,1.0,1.0,25.0,28.0,Shot,Braeden Bowman Wrist Shot saved by Daniil Tarasov
+2026-11-05 21:31:06,401892650,2026-11-05,chi,tb,in,11:01 - 3rd,3,11:01,0.0,4.0,25.0,20.0,Stoppage,Goalie Stopped
+2026-11-05 21:31:06,401892651,2026-11-05,stl,nj,in,5:06 - 3rd,3,5:06,3.0,4.0,29.0,27.0,Shot,Dalibor Dvorsky Tip-In saved by Connor Hellebuyck
+2026-11-05 21:31:06,401892652,2026-11-05,car,nyi,in,5:52 - 3rd,3,5:52,3.0,3.0,20.0,32.0,Stoppage,Off-side
+2026-11-05 21:31:06,401892653,2026-11-05,phi,nyr,in,1:02 - 3rd,3,1:02,2.0,3.0,24.0,22.0,Face Off,Mika Zibanejad faceoff won against Sean Couturier
+2026-11-05 21:31:06,401892654,2026-11-05,bos,pit,in,End of 3rd,3,0:00,6.0,2.0,16.0,18.0,Giveaway,Giveaway by Kris Letang
+2026-11-05 21:31:06,401892655,2026-11-05,dal,cbj,in,4:36 - 3rd,3,4:36,1.0,0.0,27.0,22.0,Face Off,Justin Hryckowian faceoff won against Charlie Coyle
+2026-11-05 21:31:06,401892656,2026-11-05,van,wpg,in,3:52 - 3rd,3,3:52,2.0,6.0,22.0,22.0,Missed,Dylan Samberg Wrist Shot Wide Left
+2026-11-05 21:31:06,401892657,2026-11-05,ana,edm,in,10:17 - 2nd,2,10:17,3.0,2.0,13.0,8.0,Stoppage,Goalie Stopped
+2026-11-05 21:32:05,401892648,2026-11-05,uta,mtl,in,9:39 - 3rd,3,9:39,4.0,3.0,23.0,13.0,Stoppage,Goalie Stopped
+2026-11-05 21:32:05,401892649,2026-11-05,vgk,det,in,5:42 - 3rd,3,5:42,1.0,1.0,25.0,28.0,Stoppage,TV Timeout
+2026-11-05 21:32:05,401892650,2026-11-05,chi,tb,in,10:26 - 3rd,3,10:26,0.0,4.0,25.0,21.0,Stoppage,Goalie Stopped
+2026-11-05 21:32:05,401892651,2026-11-05,stl,nj,in,5:05 - 3rd,3,5:05,4.0,4.0,29.0,26.0,Stoppage,Timeout - Home
+2026-11-05 21:32:05,401892653,2026-11-05,phi,nyr,in,0:13 - 3rd,3,0:13,2.0,3.0,24.0,22.0,Stoppage,Icing
+2026-11-05 21:32:05,401892655,2026-11-05,dal,cbj,in,3:48 - 3rd,3,3:48,1.0,0.0,27.0,22.0,Face Off,Justin Hryckowian faceoff won against Charlie Coyle
+2026-11-05 21:32:05,401892656,2026-11-05,van,wpg,in,3:00 - 3rd,3,3:00,2.0,6.0,22.0,22.0,Missed,Cole Koepke Wrist Shot
+2026-11-05 21:32:05,401892657,2026-11-05,ana,edm,in,10:13 - 2nd,2,10:13,3.0,2.0,14.0,8.0,Penalty Shot Infraction,Noah Warren Minor
+2026-11-05 21:33:05,401892648,2026-11-05,uta,mtl,in,9:39 - 3rd,3,9:39,4.0,3.0,24.0,13.0,Stoppage,Goalie Stopped
+2026-11-05 21:33:05,401892650,2026-11-05,chi,tb,in,10:01 - 3rd,3,10:01,0.0,4.0,25.0,22.0,Stoppage,Puck in Benches
+2026-11-05 21:33:05,401892651,2026-11-05,stl,nj,in,4:09 - 3rd,3,4:09,4.0,4.0,29.0,26.0,Face Off,Robert Thomas faceoff won against Nico Hischier
+2026-11-05 21:33:05,401892652,2026-11-05,car,nyi,in,5:43 - 3rd,3,5:43,3.0,3.0,20.0,32.0,Face Off,Jean-Gabriel Pageau faceoff won against Sebastian Aho
+2026-11-05 21:33:05,401892653,2026-11-05,phi,nyr,in,End of 3rd,3,0:00,2.0,3.0,24.0,22.0,Period End,End of 3rd Period
+2026-11-05 21:33:05,401892655,2026-11-05,dal,cbj,in,3:14 - 3rd,3,3:14,1.0,1.0,27.0,23.0,Goal,"Zach Werenski Goal (1), assists: Kent Johnson (7), Matthew Knies (4)"
+2026-11-05 21:33:05,401892656,2026-11-05,van,wpg,in,3:00 - 3rd,3,3:00,2.0,6.0,22.0,22.0,Stoppage,TV Timeout
+2026-11-05 21:33:05,401892657,2026-11-05,ana,edm,in,9:21 - 2nd,2,9:21,3.0,2.0,14.0,8.0,Face Off,Leon Draisaitl faceoff won against Tim Washe
+2026-11-05 21:34:05,401892648,2026-11-05,uta,mtl,in,9:35 - 3rd,3,9:35,4.0,3.0,24.0,13.0,Stoppage,Goalie Stopped
+2026-11-05 21:34:05,401892649,2026-11-05,vgk,det,in,5:21 - 3rd,3,5:21,1.0,1.0,25.0,28.0,Stoppage,Icing
+2026-11-05 21:34:05,401892650,2026-11-05,chi,tb,in,9:13 - 3rd,3,9:13,0.0,4.0,25.0,22.0,Shot,Ryan Greene saved by Andrei Vasilevskiy
+2026-11-05 21:34:05,401892651,2026-11-05,stl,nj,in,3:57 - 3rd,3,3:57,4.0,4.0,29.0,27.0,Stoppage,Puck in Netting
+2026-11-05 21:34:05,401892652,2026-11-05,car,nyi,in,5:08 - 3rd,3,5:08,3.0,3.0,20.0,32.0,Shot,Andrei Svechnikov saved by Semyon Varlamov
+2026-11-05 21:34:05,401892653,2026-11-05,phi,nyr,in,End of 3rd,3,0:00,2.0,3.0,24.0,23.0,Period End,End of 3rd Period
+2026-11-05 21:34:05,401892655,2026-11-05,dal,cbj,in,2:44 - 3rd,3,2:44,1.0,1.0,27.0,23.0,Face Off,Charlie Coyle faceoff won against Arttu Hyry
+2026-11-05 21:34:05,401892657,2026-11-05,ana,edm,in,8:19 - 2nd,2,8:19,3.0,2.0,14.0,8.0,Takeaway,Takeaway by Pavel Mintyukov
+2026-11-05 21:35:06,401892648,2026-11-05,uta,mtl,in,8:48 - 3rd,3,8:48,4.0,3.0,25.0,14.0,Missed,Lane Hutson Missed Shot High and Wide Left
+2026-11-05 21:35:06,401892649,2026-11-05,vgk,det,in,4:59 - 3rd,3,4:59,1.0,1.0,25.0,28.0,Stoppage,Goalie Stopped
+2026-11-05 21:35:06,401892650,2026-11-05,chi,tb,in,8:44 - 3rd,3,8:44,0.0,4.0,26.0,22.0,Stoppage,Icing
+2026-11-05 21:35:06,401892652,2026-11-05,car,nyi,in,4:41 - 3rd,3,4:41,4.0,3.0,22.0,34.0,Blocked,Adam Pelech shot blocked by Brayden Schenn
+2026-11-05 21:35:06,401892655,2026-11-05,dal,cbj,in,2:04 - 3rd,3,2:04,1.0,1.0,27.0,24.0,Shot,Jason Robertson Wrist Shot saved by Cam Talbot
+2026-11-05 21:35:06,401892656,2026-11-05,van,wpg,in,2:42 - 3rd,3,2:42,2.0,6.0,22.0,22.0,Stoppage,TV Timeout
+2026-11-05 21:35:06,401892657,2026-11-05,ana,edm,in,7:57 - 2nd,2,7:57,3.0,2.0,14.0,8.0,Stoppage,TV Timeout
