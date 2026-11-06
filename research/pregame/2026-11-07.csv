@@ -1177,3 +1177,9 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 12:28:03,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Caesars,event,total,over,5.5,-120,normal
 2026-11-06 12:28:03,293572,2026-11-07,2026-11-07 21:00,det,col,Caesars,event,total,over,6.5,-106,normal
 2026-11-06 12:28:03,293572,2026-11-07,2026-11-07 21:00,det,col,Caesars,event,total,under,6.5,-117,normal
+2026-11-06 12:30:06,293571,2026-11-07,2026-11-07 20:00,chi,car,BetRivers,event,moneyline,away,0.0,300,normal
+2026-11-06 12:30:06,293571,2026-11-07,2026-11-07 20:00,chi,car,BetRivers,event,moneyline,home,0.0,-385,normal
+2026-11-06 12:30:06,293571,2026-11-07,2026-11-07 20:00,chi,car,BetRivers,event,spread,away,1.5,114,normal
+2026-11-06 12:30:06,293571,2026-11-07,2026-11-07 20:00,chi,car,BetRivers,event,spread,home,-1.5,-141,normal
+2026-11-06 12:30:06,293571,2026-11-07,2026-11-07 20:00,chi,car,BetRivers,event,total,under,6.5,-127,normal
+2026-11-06 12:30:06,293571,2026-11-07,2026-11-07 20:00,chi,car,BetRivers,event,total,over,6.5,102,normal
