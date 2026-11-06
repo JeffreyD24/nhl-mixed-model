@@ -144,3 +144,50 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 19:26:05,401892654,2026-11-05,bos,pit,in,9:56 - 1st,1,9:56,0.0,1.0,0.0,4.0,Stoppage,Hand Pass
 2026-11-05 19:26:05,401892655,2026-11-05,dal,cbj,in,11:04 - 1st,1,11:04,0.0,0.0,5.0,2.0,Face Off,Arttu Hyry faceoff won against Charlie Coyle
 2026-11-05 19:26:05,401892656,2026-11-05,van,wpg,in,11:23 - 1st,1,11:23,1.0,2.0,6.0,1.0,Stoppage,Goalie Stopped
+2026-11-05 19:27:06,401892648,2026-11-05,uta,mtl,in,10:46 - 1st,1,10:46,1.0,0.0,1.0,1.0,Tripping,Josh Anderson Tripping against Jack McBain
+2026-11-05 19:27:06,401892649,2026-11-05,vgk,det,in,10:23 - 1st,1,10:23,0.0,0.0,2.0,9.0,Face Off,Andrew Copp faceoff won against Jack Eichel
+2026-11-05 19:27:06,401892650,2026-11-05,chi,tb,in,9:23 - 1st,1,9:23,0.0,1.0,5.0,1.0,Blocked,Roman Kantserov shot blocked by Ryan McDonagh
+2026-11-05 19:27:06,401892651,2026-11-05,stl,nj,in,9:43 - 1st,1,9:43,0.0,1.0,7.0,1.0,Face Off,Robert Thomas faceoff won against Arseny Gritsyuk
+2026-11-05 19:27:06,401892652,2026-11-05,car,nyi,in,9:39 - 1st,1,9:39,2.0,0.0,3.0,3.0,Missed,K'Andre Miller Missed Shot Wide Right
+2026-11-05 19:27:06,401892653,2026-11-05,phi,nyr,in,8:21 - 1st,1,8:21,0.0,1.0,5.0,5.0,Stoppage,Off-side
+2026-11-05 19:27:06,401892655,2026-11-05,dal,cbj,in,10:49 - 1st,1,10:49,0.0,0.0,5.0,3.0,Tripping,Jason Robertson Tripping against Mathieu Olivier
+2026-11-05 19:27:06,401892656,2026-11-05,van,wpg,in,11:00 - 1st,1,11:00,1.0,2.0,6.0,1.0,Stoppage,Puck in Crowd
+2026-11-05 19:28:05,401892649,2026-11-05,vgk,det,in,9:19 - 1st,1,9:19,0.0,0.0,3.0,9.0,Shot,Viktor Arvidsson Snap Shot saved by Carter Hart
+2026-11-05 19:28:05,401892650,2026-11-05,chi,tb,in,8:44 - 1st,1,8:44,0.0,1.0,5.0,1.0,Stoppage,Goalie Stopped
+2026-11-05 19:28:05,401892651,2026-11-05,stl,nj,in,8:59 - 1st,1,8:59,0.0,1.0,7.0,1.0,Stoppage,Puck Frozen - Goalie
+2026-11-05 19:28:05,401892652,2026-11-05,car,nyi,in,9:39 - 1st,1,9:39,2.0,0.0,3.0,3.0,Stoppage,Off-side
+2026-11-05 19:28:05,401892654,2026-11-05,bos,pit,in,8:57 - 1st,1,8:57,0.0,1.0,0.0,4.0,Giveaway,Giveaway by Sidney Crosby
+2026-11-05 19:28:05,401892655,2026-11-05,dal,cbj,in,9:48 - 1st,1,9:48,0.0,0.0,6.0,5.0,Missed,Adam Fantilli Wrist Shot Wide Left
+2026-11-05 19:28:05,401892656,2026-11-05,van,wpg,in,10:05 - 1st,1,10:05,1.0,2.0,6.0,2.0,Missed,Brayden Yager Missed Shot Hit Right Post
+2026-11-05 19:29:05,401892648,2026-11-05,uta,mtl,in,10:36 - 1st,1,10:36,2.0,0.0,1.0,1.0,Goal,"Logan Cooley Goal (10), assists: Nick Schmaltz (10), Mikhail Sergachev (15)"
+2026-11-05 19:29:05,401892649,2026-11-05,vgk,det,in,8:42 - 1st,1,8:42,0.0,0.0,4.0,9.0,Stoppage,TV Timeout
+2026-11-05 19:29:05,401892650,2026-11-05,chi,tb,in,8:42 - 1st,1,8:42,0.0,1.0,5.0,2.0,Stoppage,Goalie Stopped
+2026-11-05 19:29:05,401892651,2026-11-05,stl,nj,in,8:59 - 1st,1,8:59,0.0,1.0,8.0,1.0,Stoppage,Puck Frozen - Goalie
+2026-11-05 19:29:05,401892652,2026-11-05,car,nyi,in,9:38 - 1st,1,9:38,2.0,0.0,3.0,3.0,Stoppage,Off-side
+2026-11-05 19:29:05,401892653,2026-11-05,phi,nyr,in,7:35 - 1st,1,7:35,0.0,1.0,6.0,5.0,Blocked,Gabe Perreault shot blocked by Travis Sanheim
+2026-11-05 19:29:05,401892654,2026-11-05,bos,pit,in,8:56 - 1st,1,8:56,0.0,1.0,0.0,4.0,Stoppage,Puck in Netting
+2026-11-05 19:29:05,401892655,2026-11-05,dal,cbj,in,9:12 - 1st,1,9:12,0.0,0.0,7.0,5.0,Stoppage,Goalie Stopped
+2026-11-05 19:29:05,401892656,2026-11-05,van,wpg,in,9:45 - 1st,1,9:45,1.0,2.0,5.0,2.0,Stoppage,TV Timeout
+2026-11-05 19:30:06,401892648,2026-11-05,uta,mtl,in,10:01 - 1st,1,10:01,2.0,0.0,1.0,1.0,Blocked,Arber Xhekaj shot blocked by Kevin Stenlund
+2026-11-05 19:30:06,401892651,2026-11-05,stl,nj,in,8:48 - 1st,1,8:48,0.0,1.0,8.0,1.0,Stoppage,Puck Frozen - Goalie
+2026-11-05 19:30:06,401892652,2026-11-05,car,nyi,in,8:38 - 1st,1,8:38,2.0,0.0,3.0,3.0,Blocked,Taylor Hall shot blocked by Matthew Kessel
+2026-11-05 19:30:06,401892653,2026-11-05,phi,nyr,in,7:13 - 1st,1,7:13,0.0,1.0,6.0,5.0,Face Off,Noah Cates faceoff won against Mika Zibanejad
+2026-11-05 19:30:06,401892655,2026-11-05,dal,cbj,in,8:40 - 1st,1,8:40,0.0,0.0,8.0,6.0,Shot,Valeri Nichushkin Wrist Shot saved by Casey DeSmith
+2026-11-05 19:30:06,401892656,2026-11-05,van,wpg,in,9:45 - 1st,1,9:45,1.0,2.0,5.0,3.0,Stoppage,TV Timeout
+2026-11-05 19:31:06,401892648,2026-11-05,uta,mtl,in,9:06 - 1st,1,9:06,2.0,0.0,1.0,2.0,Shot,Dmitri Simashev Snap Shot saved by Jakub Dobes
+2026-11-05 19:31:06,401892650,2026-11-05,chi,tb,in,8:36 - 1st,1,8:36,0.0,1.0,5.0,2.0,Stoppage,Icing
+2026-11-05 19:31:06,401892651,2026-11-05,stl,nj,in,7:54 - 1st,1,7:54,0.0,1.0,8.0,2.0,Shot,Luke Evangelista Slap Shot saved by Jordan Binnington
+2026-11-05 19:31:06,401892652,2026-11-05,car,nyi,in,7:43 - 1st,1,7:43,2.0,0.0,5.0,3.0,Missed,Missed Shot
+2026-11-05 19:31:06,401892653,2026-11-05,phi,nyr,in,6:18 - 1st,1,6:18,0.0,1.0,6.0,6.0,Hit,Mika Zibanejad hit Tyson Foerster
+2026-11-05 19:31:06,401892654,2026-11-05,bos,pit,in,8:36 - 1st,1,8:36,0.0,1.0,0.0,4.0,Face Off,Blake Lizotte faceoff won against Pavel Zacha
+2026-11-05 19:31:06,401892655,2026-11-05,dal,cbj,in,8:23 - 1st,1,8:23,0.0,0.0,8.0,6.0,Face Off,Radek Faksa faceoff won against Sean Monahan
+2026-11-05 19:31:06,401892656,2026-11-05,van,wpg,in,9:35 - 1st,1,9:35,1.0,2.0,5.0,4.0,Face Off,Brayden Yager faceoff won against Max Sasson
+2026-11-05 19:32:05,401892648,2026-11-05,uta,mtl,in,8:20 - 1st,1,8:20,2.0,0.0,1.0,2.0,Shot,Clayton Keller saved by Jakub Dobes
+2026-11-05 19:32:05,401892649,2026-11-05,vgk,det,in,7:55 - 1st,1,7:55,0.0,0.0,5.0,9.0,Face Off,J.T. Compher faceoff won against William Karlsson
+2026-11-05 19:32:05,401892650,2026-11-05,chi,tb,in,8:09 - 1st,1,8:09,0.0,1.0,5.0,2.0,Face Off,Zemgus Girgensons faceoff won against Roman Kantserov
+2026-11-05 19:32:05,401892651,2026-11-05,stl,nj,in,7:27 - 1st,1,7:27,0.0,1.0,11.0,2.0,Missed,Jesper Bratt Missed Shot Wide Left
+2026-11-05 19:32:05,401892652,2026-11-05,car,nyi,in,6:58 - 1st,1,6:58,2.0,0.0,5.0,3.0,Missed,Bo Horvat Missed Shot Wide Left
+2026-11-05 19:32:05,401892653,2026-11-05,phi,nyr,in,6:17 - 1st,1,6:17,0.0,1.0,6.0,6.0,Face Off,Will Cuylle faceoff won against Cole Knuble
+2026-11-05 19:32:05,401892654,2026-11-05,bos,pit,in,8:26 - 1st,1,8:26,0.0,1.0,0.0,4.0,Stoppage,On-Ice Official
+2026-11-05 19:32:05,401892655,2026-11-05,dal,cbj,in,8:23 - 1st,1,8:23,0.0,0.0,8.0,6.0,Roughing,Valeri Nichushkin Roughing against Lian Bichsel
+2026-11-05 19:32:05,401892656,2026-11-05,van,wpg,in,9:08 - 1st,1,9:08,1.0,2.0,5.0,5.0,Shot,Brayden Yager Tip-In saved by Leevi Merilainen
