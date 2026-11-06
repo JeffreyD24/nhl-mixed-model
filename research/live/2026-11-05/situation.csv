@@ -1115,3 +1115,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 21:52:05,401892650,2026-11-05,chi,tb,in,0:26 - 3rd,3,0:26,1.0,4.0,31.0,24.0,Goal,"Roman Kantserov Goal (8) Tip-In, assists: Sam Rinzel (4), Ethan Del Mastro (3)"
 2026-11-05 21:52:05,401892655,2026-11-05,dal,cbj,in,In SO,5,0:00,1.0,1.0,29.0,27.0,Shot,Tyler Seguin Snap Shot saved by Cam Talbot
 2026-11-05 21:53:06,401892658,2026-11-05,nsh,col,in,11:52 - 1st,1,11:52,1.0,0.0,3.0,4.0,Face Off,Nathan MacKinnon faceoff won against Shane Wright
+2026-11-05 21:54:05,401892648,2026-11-05,uta,mtl,in,5:00 - OT,4,5:00,4.0,4.0,30.0,16.0,Period End,End of 3rd Period
+2026-11-05 21:54:05,401892658,2026-11-05,nsh,col,in,11:40 - 1st,1,11:40,1.0,0.0,4.0,4.0,Shot,Martin Necas Snap Shot saved by Justus Annunen
+2026-11-05 21:55:06,401892648,2026-11-05,uta,mtl,in,4:47 - OT,4,4:47,4.0,4.0,30.0,16.0,Face Off,Vincent Trocheck faceoff won against Phillip Danault
+2026-11-05 21:55:06,401892658,2026-11-05,nsh,col,in,10:49 - 1st,1,10:49,1.0,0.0,5.0,4.0,Shot,Jaden Schwartz saved by Justus Annunen
+2026-11-05 21:56:05,401892648,2026-11-05,uta,mtl,in,4:30 - OT,4,4:30,4.0,5.0,30.0,16.0,Period End,End of OT
+2026-11-05 21:56:05,401892658,2026-11-05,nsh,col,in,10:41 - 1st,1,10:41,1.0,1.0,5.0,4.0,Face Off,Brock Nelson faceoff won against Shane Wright
+2026-11-05 21:57:05,401892648,2026-11-05,uta,mtl,in,End of OT,4,0:00,4.0,5.0,30.0,16.0,Period End,End of OT
+2026-11-05 21:57:05,401892658,2026-11-05,nsh,col,in,10:04 - 1st,1,10:04,1.0,1.0,5.0,4.0,Face Off,Nathan MacKinnon faceoff won against Shane Wright
+2026-11-05 21:58:05,401892658,2026-11-05,nsh,col,in,9:47 - 1st,1,9:47,1.0,1.0,5.0,5.0,Stoppage,Hand Pass
+2026-11-05 21:59:05,401892658,2026-11-05,nsh,col,in,9:47 - 1st,1,9:47,1.0,1.0,5.0,4.0,Stoppage,Hand Pass
