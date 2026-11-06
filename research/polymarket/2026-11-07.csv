@@ -4011,3 +4011,4 @@ seen_at_et,game_id,date,away,home,market,line_home,long_side,slug,bid,ask,bid_de
 2026-11-06 07:00,401892671,2026-11-07,det,col,moneyline,,away,aec-nhl-det-col-2026-11-07,0.33,0.34,9.0,10.0,0.665,0.33,40.66,32.66,team
 2026-11-06 07:02,401892671,2026-11-07,det,col,moneyline,,away,aec-nhl-det-col-2026-11-07,0.33,0.34,9.0,9.0,0.665,0.33,40.66,32.66,team
 2026-11-06 07:12,401892667,2026-11-07,nj,nyi,moneyline,,away,aec-nhl-nj-nyi-2026-11-07,0.58,0.59,12.0,8.0,0.415,0.59,39.76,39.73,team
+2026-11-06 07:18,401892664,2026-11-07,nyr,sea,moneyline,,away,aec-nhl-nyr-sea-2026-11-07,0.52,0.53,8.0,10.0,0.475,0.52,311.44,145.03,team
