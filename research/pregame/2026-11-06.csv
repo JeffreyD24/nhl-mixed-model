@@ -2328,3 +2328,7 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 22:52:23,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,event,total,under,6.5,-124,normal
 2026-11-05 22:52:23,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,event,total,over,6.5,102,normal
 2026-11-05 22:52:23,293560,2026-11-06,2026-11-06 19:00,cbj,buf,Consensus,firstperiod,spread,away,0.5,-185,normal
+2026-11-05 22:54:08,293560,2026-11-06,2026-11-06 19:00,cbj,buf,bet365,firstperiod,spread,home,-0.5,146,normal
+2026-11-05 22:54:08,293560,2026-11-06,2026-11-06 19:00,cbj,buf,bet365,firstperiod,spread,away,0.5,-172,normal
+2026-11-05 22:54:08,293560,2026-11-06,2026-11-06 19:00,cbj,buf,bet365,firstperiod,total,over,1.5,-127,normal
+2026-11-05 22:54:08,293560,2026-11-06,2026-11-06 19:00,cbj,buf,bet365,firstperiod,total,under,1.5,107,normal
