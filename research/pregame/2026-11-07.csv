@@ -7707,3 +7707,4 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 18:47:51,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Fanatics,thirdperiod,total,under,1.5,140,normal
 2026-11-06 18:47:51,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,thirdperiod,spread,home,-0.5,-110,normal
 2026-11-06 18:47:51,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,thirdperiod,spread,away,0.5,-125,normal
+2026-11-06 18:49:53,293568,2026-11-07,2026-11-07 19:00,nj,nyi,BetMGM,event,moneyline,away,0.0,-155,normal

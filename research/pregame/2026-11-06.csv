@@ -8489,3 +8489,11 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 18:47:51,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetRivers,thirdperiod,team_total,home_under,1.5,-240,normal
 2026-11-06 18:47:51,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetRivers,thirdperiod,moneyline,away,0.0,117,normal
 2026-11-06 18:47:51,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetRivers,thirdperiod,moneyline,home,0.0,-162,normal
+2026-11-06 18:49:53,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetMGM,event,moneyline,home,0.0,145,normal
+2026-11-06 18:49:53,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetMGM,event,moneyline,away,0.0,-175,normal
+2026-11-06 18:49:53,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetMGM,firstperiod,moneyline,away,0.0,-155,normal
+2026-11-06 18:49:53,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetMGM,firstperiod,moneyline,home,0.0,120,normal
+2026-11-06 18:49:53,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetMGM,secondperiod,moneyline,home,0.0,118,normal
+2026-11-06 18:49:53,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetMGM,secondperiod,moneyline,away,0.0,-165,normal
+2026-11-06 18:49:53,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetMGM,thirdperiod,moneyline,away,0.0,-165,normal
+2026-11-06 18:49:53,293560,2026-11-06,2026-11-06 19:00,cbj,buf,BetMGM,thirdperiod,moneyline,home,0.0,120,normal
