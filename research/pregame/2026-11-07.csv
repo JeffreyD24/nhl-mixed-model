@@ -5012,3 +5012,7 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 15:50:44,293564,2026-11-07,2026-11-07 13:00,stl,nsh,bet365,event,spread,home,1.5,-270,normal
 2026-11-06 15:50:44,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,thirdperiod,spread,home,-0.5,145,normal
 2026-11-06 15:50:44,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,thirdperiod,spread,away,0.5,-210,normal
+2026-11-06 15:52:35,293564,2026-11-07,2026-11-07 13:00,stl,nsh,FanDuel,event,moneyline,home,0.0,-110,normal
+2026-11-06 15:52:35,293564,2026-11-07,2026-11-07 13:00,stl,nsh,FanDuel,event,moneyline,away,0.0,-110,normal
+2026-11-06 15:52:35,293574,2026-11-07,2026-11-07 22:00,van,edm,Caesars,event,total,over,7.0,108,normal
+2026-11-06 15:52:35,293574,2026-11-07,2026-11-07 22:00,van,edm,Caesars,event,total,under,7.0,-132,normal
