@@ -1,0 +1,21 @@
+seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds,line_status
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,event,moneyline,home,0.0,-105,opener
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,event,moneyline,away,0.0,-116,opener
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,event,spread,home,1.5,-278,opener
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,event,spread,away,-1.5,220,opener
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,event,total,under,6.5,105,opener
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,event,total,over,6.5,-125,opener
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Open,event,moneyline,away,0.0,-116,
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Open,event,moneyline,home,0.0,-105,
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Open,event,total,over,6.5,-125,
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Open,event,total,under,6.5,105,
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Open,event,spread,home,1.5,-278,
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Open,event,spread,away,-1.5,220,
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,firstperiod,spread,away,-0.5,154,opener
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,firstperiod,spread,home,0.5,-222,opener
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,firstperiod,total,over,1.5,-156,opener
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,firstperiod,total,under,1.5,120,opener
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Open,firstperiod,total,over,1.5,-156,
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Open,firstperiod,total,under,1.5,120,
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Open,firstperiod,spread,home,0.5,-222,
+2026-11-06 06:28:40,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Open,firstperiod,spread,away,-0.5,154,
