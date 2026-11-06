@@ -718,3 +718,13 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 20:53:06,401892648,2026-11-05,uta,mtl,in,End of 2nd,2,0:00,3.0,2.0,21.0,10.0,Period End,End of 2nd Period
 2026-11-05 20:53:06,401892650,2026-11-05,chi,tb,in,End of 2nd,2,0:00,0.0,2.0,22.0,15.0,Face Off,Ryan Greene faceoff won against Conor Geekie
 2026-11-05 20:53:06,401892657,2026-11-05,ana,edm,in,End of 1st,1,0:00,1.0,1.0,7.0,6.0,Period End,End of 1st Period
+2026-11-05 20:54:05,401892650,2026-11-05,chi,tb,in,End of 2nd,2,0:00,0.0,2.0,22.0,15.0,Period End,End of 2nd Period
+2026-11-05 20:55:06,401892653,2026-11-05,phi,nyr,in,20:00 - 3rd,3,20:00,2.0,1.0,17.0,15.0,Period End,End of 2nd Period
+2026-11-05 20:56:05,401892654,2026-11-05,bos,pit,in,20:00 - 3rd,3,20:00,5.0,2.0,13.0,15.0,Period End,End of 2nd Period
+2026-11-05 20:57:05,401892653,2026-11-05,phi,nyr,in,19:21 - 3rd,3,19:21,2.0,1.0,17.0,15.0,Face Off,Noah Cates faceoff won against Mika Zibanejad
+2026-11-05 20:58:05,401892649,2026-11-05,vgk,det,in,20:00 - 3rd,3,20:00,0.0,0.0,19.0,22.0,Period End,End of 2nd Period
+2026-11-05 20:58:05,401892653,2026-11-05,phi,nyr,in,18:53 - 3rd,3,18:53,2.0,1.0,17.0,15.0,Stoppage,Icing
+2026-11-05 20:58:05,401892654,2026-11-05,bos,pit,in,19:54 - 3rd,3,19:54,5.0,2.0,13.0,15.0,Stoppage,Icing
+2026-11-05 20:58:05,401892655,2026-11-05,dal,cbj,in,20:00 - 3rd,3,20:00,0.0,0.0,19.0,19.0,Period End,End of 2nd Period
+2026-11-05 20:59:06,401892653,2026-11-05,phi,nyr,in,18:01 - 3rd,3,18:01,2.0,1.0,17.0,16.0,Blocked,Scott Morrow shot blocked by Simon Benoit
+2026-11-05 20:59:06,401892654,2026-11-05,bos,pit,in,18:55 - 3rd,3,18:55,5.0,2.0,13.0,15.0,Face Off,Elias Lindholm faceoff won against Sidney Crosby
