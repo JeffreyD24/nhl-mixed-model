@@ -20911,3 +20911,5 @@ seen_at_et,espn_event_id,date,away,home,period,clock,away_score,home_score,book,
 2026-11-05 23:14:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,FanDuel,moneyline,home,0.0,-200,True,normal
 2026-11-05 23:14:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,FanDuel,spread,home,-0.5,125,True,normal
 2026-11-05 23:14:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,FanDuel,total,over,2.5,120,True,normal
+2026-11-05 23:17:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,Consensus,spread,home,-0.5,-106,False,normal
+2026-11-05 23:17:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,Consensus,total,over,2.5,120,False,normal
