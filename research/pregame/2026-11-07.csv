@@ -2304,3 +2304,12 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 13:07:38,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,firstperiod,spread,away,0.5,-215,opener
 2026-11-06 13:07:38,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,firstperiod,total,under,1.5,114,opener
 2026-11-06 13:07:38,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,firstperiod,total,over,1.5,-145,opener
+2026-11-06 13:09:21,293571,2026-11-07,2026-11-07 20:00,chi,car,FanDuel,event,total,under,6.5,-122,normal
+2026-11-06 13:09:21,293571,2026-11-07,2026-11-07 20:00,chi,car,FanDuel,event,total,over,6.5,-100,normal
+2026-11-06 13:09:21,293573,2026-11-07,2026-11-07 21:00,pit,la,FanDuel,event,total,under,6.5,-110,normal
+2026-11-06 13:09:21,293573,2026-11-07,2026-11-07 21:00,pit,la,FanDuel,event,total,over,6.5,-110,normal
+2026-11-06 13:09:21,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,event,total,under,6.5,114,opener
+2026-11-06 13:09:21,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,event,total,over,6.5,-140,opener
+2026-11-06 13:09:21,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,firstperiod,spread,home,-0.5,170,normal
+2026-11-06 13:09:21,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,firstperiod,total,over,1.5,-118,normal
+2026-11-06 13:09:21,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,firstperiod,total,under,1.5,-107,normal
