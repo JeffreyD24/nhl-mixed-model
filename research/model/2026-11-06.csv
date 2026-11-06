@@ -9,3 +9,9 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 22:17,goals,401892659,2026-11-06,cbj,buf,0.5683,3.179,2.696,6.04,Cam Talbot (expected),Ukko-Pekka Luukkonen (expected),CBJ: Gudbranson | BUF: -
 2026-11-06 01:38,xg,401892661,2026-11-06,ana,cgy,0.4986,3.228,3.294,6.68,Lukas Dostal (expected),Dustin Wolf (expected),"ANA: Greer, Hinds | CGY: -"
 2026-11-06 01:38,goals,401892661,2026-11-06,ana,cgy,0.4799,3.15,3.231,6.54,Lukas Dostal (expected),Dustin Wolf (expected),"ANA: Greer, Hinds | CGY: -"
+2026-11-06 10:01,xg,401892659,2026-11-06,cbj,buf,0.5921,3.265,2.762,6.19,Cam Talbot (expected),Ukko-Pekka Luukkonen (expected),"CBJ: Gudbranson, Heinen | BUF: -"
+2026-11-06 10:01,goals,401892659,2026-11-06,cbj,buf,0.5632,3.106,2.657,5.93,Cam Talbot (expected),Ukko-Pekka Luukkonen (expected),"CBJ: Gudbranson, Heinen | BUF: -"
+2026-11-06 10:01,xg,401892660,2026-11-06,sj,min,0.7779,4.178,2.232,6.53,Yaroslav Askarov (expected),Jesper Wallstedt (expected),"SJ: Gaudette, Allan | MIN: -"
+2026-11-06 10:01,goals,401892660,2026-11-06,sj,min,0.7026,3.587,2.205,5.94,Yaroslav Askarov (expected),Jesper Wallstedt (expected),"SJ: Gaudette, Allan | MIN: -"
+2026-11-06 10:01,xg,401892661,2026-11-06,ana,cgy,0.5356,3.369,3.193,6.72,Lukas Dostal (expected),Dustin Wolf (expected),ANA: Greer | CGY: -
+2026-11-06 10:01,goals,401892661,2026-11-06,ana,cgy,0.522,3.274,3.077,6.51,Lukas Dostal (expected),Dustin Wolf (expected),ANA: Greer | CGY: -
