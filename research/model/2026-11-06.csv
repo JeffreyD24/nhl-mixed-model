@@ -7,3 +7,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 10:06,goals,401892661,2026-11-06,ana,cgy,0.4934,3.24,3.231,6.63,Ville Husso (expected),Dustin Wolf (expected),"ANA: Greer, Hinds | CGY: -"
 2026-11-05 22:17,xg,401892659,2026-11-06,cbj,buf,0.5924,3.292,2.774,6.23,Cam Talbot (expected),Ukko-Pekka Luukkonen (expected),CBJ: Gudbranson | BUF: -
 2026-11-05 22:17,goals,401892659,2026-11-06,cbj,buf,0.5683,3.179,2.696,6.04,Cam Talbot (expected),Ukko-Pekka Luukkonen (expected),CBJ: Gudbranson | BUF: -
+2026-11-06 01:38,xg,401892661,2026-11-06,ana,cgy,0.4986,3.228,3.294,6.68,Lukas Dostal (expected),Dustin Wolf (expected),"ANA: Greer, Hinds | CGY: -"
+2026-11-06 01:38,goals,401892661,2026-11-06,ana,cgy,0.4799,3.15,3.231,6.54,Lukas Dostal (expected),Dustin Wolf (expected),"ANA: Greer, Hinds | CGY: -"
