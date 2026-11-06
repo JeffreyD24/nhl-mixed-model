@@ -20913,3 +20913,15 @@ seen_at_et,espn_event_id,date,away,home,period,clock,away_score,home_score,book,
 2026-11-05 23:14:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,FanDuel,total,over,2.5,120,True,normal
 2026-11-05 23:17:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,Consensus,spread,home,-0.5,-106,False,normal
 2026-11-05 23:17:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,Consensus,total,over,2.5,120,False,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,event,0:00,2.0,2.0,DraftKings,team_total,home_over,3.5,-110,True,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,event,0:00,2.0,2.0,DraftKings,team_total,away_under,2.5,150,True,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,event,0:00,2.0,2.0,DraftKings,team_total,home_under,3.5,-130,True,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,event,0:00,2.0,2.0,DraftKings,moneyline,home,0.0,-218,False,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,event,0:00,2.0,2.0,DraftKings,spread,away,1.5,-298,True,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,event,0:00,2.0,2.0,DraftKings,total,over,6.5,-140,True,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,event,0:00,2.0,2.0,DraftKings,total,under,6.5,110,True,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,secondperiod,0:00,2.0,2.0,DraftKings,spread,home,-0.5,114,False,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,DraftKings,moneyline,home,0.0,-205,True,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,DraftKings,moneyline,away,0.0,150,True,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,DraftKings,total,under,2.5,-160,True,normal
+2026-11-05 23:22:05,401892658,2026-11-05,nsh,col,thirdperiod,0:00,2.0,2.0,DraftKings,total,over,2.5,120,True,normal
