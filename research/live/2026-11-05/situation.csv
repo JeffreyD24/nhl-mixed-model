@@ -1181,3 +1181,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 22:39:05,401892658,2026-11-05,nsh,col,in,18:11 - 2nd,2,18:11,2.0,1.0,11.0,7.0,Missed,Cale Makar Snap Shot High and Wide Left
 2026-11-05 22:40:05,401892657,2026-11-05,ana,edm,in,0:43 - 3rd,3,0:43,5.0,3.0,22.0,16.0,Missed,Missed Shot
 2026-11-05 22:40:05,401892658,2026-11-05,nsh,col,in,17:44 - 2nd,2,17:44,2.0,1.0,12.0,7.0,Blocked,Brent Burns shot blocked by Fedor Svechkov
+2026-11-05 22:41:05,401892657,2026-11-05,ana,edm,in,0:43 - 3rd,3,0:43,5.0,4.0,21.0,16.0,Goal,"Leon Draisaitl Goal (14) Snap Shot, assists: Connor McDavid (34), Evan Bouchard (20)"
+2026-11-05 22:41:05,401892658,2026-11-05,nsh,col,in,17:15 - 2nd,2,17:15,2.0,1.0,12.0,8.0,Face Off,Nathan MacKinnon faceoff won against Steven Stamkos
+2026-11-05 22:42:05,401892657,2026-11-05,ana,edm,in,0:23 - 3rd,3,0:23,5.0,4.0,21.0,16.0,Stoppage,Goalie Stopped
+2026-11-05 22:42:05,401892658,2026-11-05,nsh,col,in,16:39 - 2nd,2,16:39,2.0,1.0,12.0,8.0,Stoppage,Goalie Stopped
+2026-11-05 22:43:05,401892657,2026-11-05,ana,edm,in,End of 3rd,3,0:00,5.0,4.0,23.0,16.0,Blocked,Evan Bouchard shot blocked by Jackson LaCombe
+2026-11-05 22:43:05,401892658,2026-11-05,nsh,col,in,16:04 - 2nd,2,16:04,2.0,1.0,12.0,9.0,Stoppage,Goalie Stopped
+2026-11-05 22:44:06,401892658,2026-11-05,nsh,col,in,15:12 - 2nd,2,15:12,2.0,1.0,13.0,9.0,Missed,Jayden Struble Wrist Shot Wide Right
+2026-11-05 22:45:05,401892658,2026-11-05,nsh,col,in,14:52 - 2nd,2,14:52,2.0,2.0,13.0,9.0,Goal,"Parker Kelly Goal (3) Snap Shot, assists: none"
+2026-11-05 22:46:05,401892658,2026-11-05,nsh,col,in,14:10 - 2nd,2,14:10,2.0,2.0,13.0,9.0,Missed,Mavrik Bourque Wrist Shot Wide Right
