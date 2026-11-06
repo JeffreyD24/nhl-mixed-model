@@ -227,3 +227,5 @@ seen_at_et,game_id,date,side,team,goalie_id,goalie,status
 2026-11-06 10:01,401892672,2026-11-07,away,pit,4576894,Arturs Silovs,Expected
 2026-11-06 10:01,401892673,2026-11-07,home,edm,3042020,Tristan Jarry,Expected
 2026-11-06 10:01,401892673,2026-11-07,away,van,4894703,Leevi Merilainen,Expected
+2026-11-06 10:36,401892659,2026-11-06,home,buf,4233889,Ukko-Pekka Luukkonen,Confirmed
+2026-11-06 10:36,401892659,2026-11-06,away,cbj,4894366,Jet Greaves,Expected
