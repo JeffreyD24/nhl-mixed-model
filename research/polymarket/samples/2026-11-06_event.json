@@ -1,0 +1,567 @@
+{
+ "id": "220728",
+ "chatChannel": {
+  "id": "nhl-cbj-buf-2026-11-06",
+  "type": "CHAT_CHANNEL_TYPE_MESSAGING",
+  "chatMemberCount": 207
+ },
+ "ticker": "nhl-cbj-buf-2026-11-06",
+ "slug": "nhl-cbj-buf-2026-11-06",
+ "title": "CBJ Blue Jackets vs. BUF Sabres",
+ "description": "CBJ Blue Jackets vs. BUF Sabres",
+ "startDate": "2026-11-07T00:00:00Z",
+ "endDate": "2026-11-07T04:59:00Z",
+ "active": true,
+ "closed": false,
+ "archived": false,
+ "category": "sports",
+ "createdAt": "2026-11-02T05:00:26Z",
+ "updatedAt": "2026-11-06T04:59:37Z",
+ "startTime": "2026-11-07T00:00:00Z",
+ "seriesSlug": "nhl-2025",
+ "period": "NS",
+ "markets": [
+  {
+   "id": "2082306",
+   "question": "Who will win in the upcoming hockey event CBJ Blue Jackets vs BUF Sabres scheduled for November 7, 2026 at 12:00 AM UTC?",
+   "slug": "aec-nhl-cbj-buf-2026-11-06",
+   "endDate": "2026-11-21T05:00:00Z",
+   "category": "sports",
+   "startDate": "2026-11-02T05:00:25Z",
+   "description": "This market will settle to the winner of the CBJ Blue Jackets vs BUF Sabres NHL game scheduled for November 6, 2026 at 7:00PM ET (as of the listing of the event's first instrument). Overtime and any shootout are included if played. If the game is delayed, postponed, suspended or otherwise rescheduled to a date and time not within two days of the originally scheduled date and time, the market will settle to the last fair market price. Outcome sourced from NHL.",
+   "active": true,
+   "marketType": "moneyline",
+   "closed": false,
+   "createdAt": "2026-11-02T05:00:26Z",
+   "updatedAt": "2026-11-06T04:59:37Z",
+   "archived": false,
+   "orderPriceMinTickSize": 0.01,
+   "gameStartTime": "2026-11-07T00:00:00Z",
+   "manualActivation": false,
+   "sportsMarketType": "hockey_team_full_game_winner",
+   "marketSides": [
+    {
+     "id": "4164070",
+     "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+     "identifier": "aec-nhl-cbj-buf-2026-11-06",
+     "createdAt": "2026-11-02T05:00:26Z",
+     "updatedAt": "2026-11-02T05:00:26Z",
+     "description": "Blue Jackets",
+     "price": "0.3900",
+     "marketId": 2082306,
+     "long": true,
+     "teamId": 1499,
+     "team": {
+      "id": 1499,
+      "name": "Blue Jackets",
+      "abbreviation": "cbj",
+      "league": "nhl",
+      "record": "40-30-12",
+      "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_dark.png",
+      "alias": "Blue Jackets",
+      "safeName": "Columbus Blue Jackets",
+      "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_dark.png",
+      "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_dark.png",
+      "colorPrimary": "#0258ca",
+      "providerId": 16,
+      "ordering": "away",
+      "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_light.png",
+      "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_light.png",
+      "displayAbbreviation": "CBJ",
+      "providerIds": [
+       {
+        "provider": "PROVIDER_SPORTSDATAIO",
+        "providerId": "16"
+       },
+       {
+        "provider": "PROVIDER_SPORTRADAR",
+        "providerId": "44167db4-0f24-11e2-8525-18a905767e44"
+       },
+       {
+        "provider": "PROVIDER_OPTICODDS",
+        "providerId": "B59FF9985C9C"
+       }
+      ],
+      "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_dark.png",
+      "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_dark.png",
+      "color": {
+       "light": "#0258CA",
+       "dark": "#0258CA"
+      },
+      "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+     },
+     "quote": {
+      "value": "0.4000",
+      "currency": "USD"
+     },
+     "tradable": true
+    },
+    {
+     "id": "4164071",
+     "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+     "identifier": "aec-nhl-cbj-buf-2026-11-06",
+     "createdAt": "2026-11-02T05:00:26Z",
+     "updatedAt": "2026-11-02T05:00:26Z",
+     "description": "Sabres",
+     "price": "0.4000",
+     "marketId": 2082306,
+     "long": false,
+     "teamId": 1485,
+     "team": {
+      "id": 1485,
+      "name": "Sabres",
+      "abbreviation": "buf",
+      "league": "nhl",
+      "record": "50-23-9",
+      "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_dark.png",
+      "alias": "Sabres",
+      "safeName": "Buffalo Sabres",
+      "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_dark.png",
+      "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_dark.png",
+      "colorPrimary": "#0257bb",
+      "providerId": 2,
+      "ordering": "home",
+      "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_light.png",
+      "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_light.png",
+      "displayAbbreviation": "BUF",
+      "providerIds": [
+       {
+        "provider": "PROVIDER_SPORTSDATAIO",
+        "providerId": "2"
+       },
+       {
+        "provider": "PROVIDER_SPORTRADAR",
+        "providerId": "4416d559-0f24-11e2-8525-18a905767e44"
+       },
+       {
+        "provider": "PROVIDER_OPTICODDS",
+        "providerId": "64FAFFEA2020"
+       }
+      ],
+      "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_dark.png",
+      "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_dark.png",
+      "color": {
+       "light": "#E4AB39",
+       "dark": "#E0B14F"
+      },
+      "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+     },
+     "quote": {
+      "value": "0.61",
+      "currency": "USD"
+     },
+     "tradable": true
+    }
+   ],
+   "outcomes": "[\"Blue Jackets\",\"Sabres\"]",
+   "outcomePrices": "[\"0.3900\",\"0.4000\"]",
+   "ep3Status": "OPEN",
+   "status": "MARKET_STATUS_OPEN",
+   "assetPriceTerms": null,
+   "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_MONEYLINE",
+   "hidden": false,
+   "tags": [],
+   "title": "Blue Jackets vs Sabres",
+   "feeCoefficient": 0.0695,
+   "bestBidQuote": {
+    "value": "0.3900",
+    "currency": "USD"
+   },
+   "bestAskQuote": {
+    "value": "0.4000",
+    "currency": "USD"
+   },
+   "titleShort": "CBJ vs BUF",
+   "ep3SyncedAt": "2026-11-05T12:38:01Z",
+   "minimumTradeQty": 0.01,
+   "comboEnabled": true,
+   "politics": null,
+   "eventSubcategory": "HOCKEY"
+  }
+ ],
+ "sportradarGameId": "7d8d3744-def2-420b-80c4-c3327026d14d",
+ "participants": [],
+ "hidden": false,
+ "tags": [
+  {
+   "id": "2",
+   "label": "Sports",
+   "slug": "sports",
+   "createdAt": "2025-09-25T16:13:27Z",
+   "updatedAt": "2026-11-06T04:32:52Z",
+   "subtags": [],
+   "hub": null,
+   "featuredEventIds": []
+  },
+  {
+   "id": "3",
+   "label": "Games",
+   "slug": "games",
+   "createdAt": "2025-09-25T16:13:27Z",
+   "updatedAt": "2026-11-06T04:32:52Z",
+   "subtags": [],
+   "hub": null,
+   "featuredEventIds": []
+  },
+  {
+   "id": "7",
+   "label": "NHL",
+   "slug": "nhl",
+   "createdAt": "2025-12-02T21:54:38Z",
+   "updatedAt": "2026-11-06T04:32:52Z",
+   "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+   "tradable": false,
+   "league": {
+    "id": 3,
+    "name": "NHL",
+    "sportId": 4,
+    "tagId": 7,
+    "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+    "resolution": "https://www.nhl.com/",
+    "ordering": "away",
+    "activeSeriesId": 6,
+    "isOperational": true,
+    "automaticResolution": false,
+    "createdAt": "2026-03-05T18:30:42Z",
+    "slug": "nhl",
+    "abbreviation": "NHL"
+   },
+   "parentId": 14,
+   "subtags": [],
+   "hub": null,
+   "featuredEventIds": []
+  },
+  {
+   "id": "14",
+   "label": "Hockey",
+   "slug": "ice-hockey",
+   "createdAt": "2026-03-05T18:30:42Z",
+   "updatedAt": "2026-11-06T04:32:52Z",
+   "tradable": false,
+   "sport": {
+    "id": 4,
+    "name": "Hockey",
+    "tagId": 14,
+    "createdAt": "2026-03-05T18:30:42Z",
+    "slug": "ice-hockey",
+    "image": "https://static.polymarket.us/images/category-icons/hockey-stick.png"
+   },
+   "subtags": [
+    {
+     "id": "7",
+     "label": "NHL",
+     "slug": "nhl",
+     "createdAt": "2025-12-02T21:54:38Z",
+     "updatedAt": "2026-11-06T04:32:52Z",
+     "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+     "tradable": false,
+     "league": {
+      "id": 3,
+      "name": "NHL",
+      "sportId": 4,
+      "tagId": 7,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+      "resolution": "https://www.nhl.com/",
+      "ordering": "away",
+      "activeSeriesId": 6,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-03-05T18:30:42Z",
+      "slug": "nhl",
+      "abbreviation": "NHL"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1551",
+     "label": "Liiga",
+     "slug": "liiga",
+     "updatedAt": "2026-10-21T18:32:16Z",
+     "image": "https://static.polymarket.us/images/Random/Liiga_logo.png",
+     "tradable": false,
+     "league": {
+      "id": 334,
+      "name": "Liiga",
+      "sportId": 4,
+      "tagId": 1551,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/liiga.png",
+      "ordering": "home",
+      "activeSeriesId": 453,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-29T00:39:42Z",
+      "slug": "liiga"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1357",
+     "label": "KHL",
+     "slug": "khl",
+     "updatedAt": "2026-11-06T01:19:28Z",
+     "image": "https://static.polymarket.us/images/sports/pbp/hockey/khl2.png",
+     "tradable": false,
+     "league": {
+      "id": 258,
+      "name": "KHL",
+      "sportId": 4,
+      "tagId": 1357,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/khl.png",
+      "ordering": "home",
+      "activeSeriesId": 338,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-17T23:32:56Z",
+      "slug": "khl"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1463",
+     "label": "SHL",
+     "slug": "shl",
+     "updatedAt": "2026-10-31T19:48:48Z",
+     "image": "https://static.polymarket.us/images/Random/SHL-logo-black-1028.png",
+     "tradable": false,
+     "league": {
+      "id": 288,
+      "name": "SHL",
+      "sportId": 4,
+      "tagId": 1463,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/shl.png",
+      "ordering": "home",
+      "activeSeriesId": 390,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-23T16:42:23Z",
+      "slug": "shl"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1465",
+     "label": "National League",
+     "slug": "snhl",
+     "updatedAt": "2026-10-31T21:33:29Z",
+     "image": "https://static.polymarket.us/images/Random/e79d8317-3869-4a45-a209-007abccd917e.png",
+     "tradable": false,
+     "league": {
+      "id": 289,
+      "name": "National League",
+      "sportId": 4,
+      "tagId": 1465,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/snhl.png",
+      "ordering": "home",
+      "activeSeriesId": 391,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-23T19:07:16Z",
+      "slug": "snhl"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1468",
+     "label": "Czech Extraliga",
+     "slug": "cehl",
+     "updatedAt": "2026-10-30T19:44:53Z",
+     "image": "https://static.polymarket.us/images/Random/Hokejove-karty-z-ceskych-lig-540x540.png",
+     "tradable": false,
+     "league": {
+      "id": 290,
+      "name": "Czech Extraliga",
+      "sportId": 4,
+      "tagId": 1468,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/cehl.png",
+      "ordering": "home",
+      "activeSeriesId": 392,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-23T20:55:53Z",
+      "slug": "cehl"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1456",
+     "label": "DEL",
+     "slug": "del",
+     "updatedAt": "2026-10-30T21:15:27Z",
+     "image": "https://static.polymarket.us/images/7a364eba-97f8-42e5-bfeb-c909d957e995.png",
+     "tradable": false,
+     "league": {
+      "id": 286,
+      "name": "DEL",
+      "sportId": 4,
+      "tagId": 1456,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/del.png",
+      "ordering": "home",
+      "activeSeriesId": 386,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-23T02:26:55Z",
+      "slug": "del"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    }
+   ],
+   "hub": null,
+   "featuredEventIds": []
+  }
+ ],
+ "teams": [
+  {
+   "id": 1499,
+   "name": "Blue Jackets",
+   "abbreviation": "cbj",
+   "league": "nhl",
+   "record": "40-30-12",
+   "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_dark.png",
+   "alias": "Blue Jackets",
+   "safeName": "Columbus Blue Jackets",
+   "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_dark.png",
+   "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_dark.png",
+   "colorPrimary": "#0258ca",
+   "providerId": 16,
+   "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_light.png",
+   "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_light.png",
+   "displayAbbreviation": "CBJ",
+   "providerIds": [
+    {
+     "provider": "PROVIDER_SPORTSDATAIO",
+     "providerId": "16"
+    },
+    {
+     "provider": "PROVIDER_SPORTRADAR",
+     "providerId": "44167db4-0f24-11e2-8525-18a905767e44"
+    },
+    {
+     "provider": "PROVIDER_OPTICODDS",
+     "providerId": "B59FF9985C9C"
+    }
+   ],
+   "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_dark.png",
+   "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/CBJ_dark.png",
+   "color": {
+    "light": "#0258CA",
+    "dark": "#0258CA"
+   },
+   "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+  },
+  {
+   "id": 1485,
+   "name": "Sabres",
+   "abbreviation": "buf",
+   "league": "nhl",
+   "record": "50-23-9",
+   "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_dark.png",
+   "alias": "Sabres",
+   "safeName": "Buffalo Sabres",
+   "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_dark.png",
+   "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_dark.png",
+   "colorPrimary": "#0257bb",
+   "providerId": 2,
+   "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_light.png",
+   "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_light.png",
+   "displayAbbreviation": "BUF",
+   "providerIds": [
+    {
+     "provider": "PROVIDER_SPORTSDATAIO",
+     "providerId": "2"
+    },
+    {
+     "provider": "PROVIDER_SPORTRADAR",
+     "providerId": "4416d559-0f24-11e2-8525-18a905767e44"
+    },
+    {
+     "provider": "PROVIDER_OPTICODDS",
+     "providerId": "64FAFFEA2020"
+    }
+   ],
+   "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_dark.png",
+   "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/BUF_dark.png",
+   "color": {
+    "light": "#E4AB39",
+    "dark": "#E0B14F"
+   },
+   "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+  }
+ ],
+ "sortType": "price",
+ "marketGroups": [
+  {
+   "id": "PRIMARY",
+   "title": "Primary",
+   "order": 0,
+   "marketIds": [
+    "2082306"
+   ],
+   "initialCollapsed": false,
+   "live": false
+  }
+ ],
+ "primaryTag": {
+  "id": "7",
+  "label": "NHL",
+  "slug": "nhl",
+  "createdAt": "2025-12-02T21:54:38Z",
+  "updatedAt": "2026-11-06T04:32:52Z",
+  "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+  "tradable": false,
+  "league": {
+   "id": 3,
+   "name": "NHL",
+   "sportId": 4,
+   "tagId": 7,
+   "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+   "resolution": "https://www.nhl.com/",
+   "ordering": "away",
+   "activeSeriesId": 6,
+   "isOperational": true,
+   "automaticResolution": false,
+   "createdAt": "2026-03-05T18:30:42Z",
+   "slug": "nhl",
+   "abbreviation": "NHL"
+  },
+  "parentId": 14,
+  "subtags": [],
+  "hub": null,
+  "featuredEventIds": []
+ },
+ "streamProvider": "",
+ "streamRequiresAuth": false,
+ "combos": {
+  "enabled": true,
+  "numMarkets": 162,
+  "numSpreadsAndTotalsMarkets": 32
+ },
+ "marketCounts": {
+  "numMarkets": 162,
+  "numSpreadsAndTotalsMarkets": 32
+ },
+ "fixtureId": "",
+ "insiderTradingRules": null,
+ "payoutEstimateMessage": "",
+ "payoutEstimateTime": ""
+}

@@ -1,0 +1,48 @@
+{
+ "marketData": {
+  "marketSlug": "aec-nhl-ana-cgy-2026-11-06",
+  "currentPx": {
+   "value": "0.4650",
+   "currency": "USD"
+  },
+  "lastTradePx": {
+   "value": "0.4600",
+   "currency": "USD"
+  },
+  "settlementPx": null,
+  "sharesTraded": "583.7200",
+  "openInterest": "340.6800",
+  "bestAsk": {
+   "value": "0.4700",
+   "currency": "USD"
+  },
+  "bestBid": {
+   "value": "0.4600",
+   "currency": "USD"
+  },
+  "askDepth": 20,
+  "bidDepth": 15,
+  "lastPriceSample": {
+   "longPx": {
+    "value": "0.4600",
+    "currency": "USD"
+   },
+   "shortPx": {
+    "value": "0.54",
+    "currency": "USD"
+   },
+   "ts": "2026-11-06T05:00:20.324656369Z"
+  },
+  "longQuote": {
+   "value": "0.4700",
+   "currency": "USD"
+  },
+  "shortQuote": {
+   "value": "0.54",
+   "currency": "USD"
+  },
+  "state": "MARKET_STATE_OPEN",
+  "bidShares": "110000",
+  "askShares": "110000"
+ }
+}
