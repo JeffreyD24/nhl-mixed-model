@@ -2015,3 +2015,14 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 21:38:02,293561,2026-11-06,2026-11-06 20:00,sj,min,BetMGM,event,spread,home,-1.5,-102,normal
 2026-11-05 21:38:02,293561,2026-11-06,2026-11-06 20:00,sj,min,BetMGM,thirdperiod,spread,home,-0.5,-110,normal
 2026-11-05 21:38:02,293561,2026-11-06,2026-11-06 20:00,sj,min,BetMGM,thirdperiod,spread,away,0.5,-125,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,Consensus,event,moneyline,away,0.0,206,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,Consensus,event,spread,away,1.5,-120,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,DraftKings,event,team_total,home_over,3.5,-135,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,DraftKings,event,team_total,home_under,3.5,-105,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,DraftKings,event,spread,away,1.5,-122,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,DraftKings,event,spread,home,-1.5,102,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,DraftKings,firstperiod,moneyline,away,0.0,135,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,DraftKings,secondperiod,team_total,away_under,0.5,115,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,DraftKings,secondperiod,team_total,away_over,0.5,-155,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,DraftKings,secondperiod,spread,home,-0.5,114,normal
+2026-11-05 21:42:12,293561,2026-11-06,2026-11-06 20:00,sj,min,DraftKings,secondperiod,spread,away,0.5,-145,normal
