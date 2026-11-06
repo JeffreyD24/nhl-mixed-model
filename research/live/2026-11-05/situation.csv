@@ -1013,3 +1013,49 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 21:35:06,401892655,2026-11-05,dal,cbj,in,2:04 - 3rd,3,2:04,1.0,1.0,27.0,24.0,Shot,Jason Robertson Wrist Shot saved by Cam Talbot
 2026-11-05 21:35:06,401892656,2026-11-05,van,wpg,in,2:42 - 3rd,3,2:42,2.0,6.0,22.0,22.0,Stoppage,TV Timeout
 2026-11-05 21:35:06,401892657,2026-11-05,ana,edm,in,7:57 - 2nd,2,7:57,3.0,2.0,14.0,8.0,Stoppage,TV Timeout
+2026-11-05 21:36:06,401892648,2026-11-05,uta,mtl,in,7:46 - 3rd,3,7:46,4.0,3.0,25.0,14.0,Missed,Dmitri Simashev Wrist Shot High and Wide Right
+2026-11-05 21:36:06,401892649,2026-11-05,vgk,det,in,4:02 - 3rd,3,4:02,1.0,1.0,25.0,29.0,Blocked,Jeremy Lauzon shot blocked by Viktor Arvidsson
+2026-11-05 21:36:06,401892650,2026-11-05,chi,tb,in,8:17 - 3rd,3,8:17,0.0,4.0,26.0,23.0,Missed,Erik Cernak Missed Shot Wide Left
+2026-11-05 21:36:06,401892651,2026-11-05,stl,nj,in,3:40 - 3rd,3,3:40,4.0,4.0,29.0,27.0,Face Off,Jack Hughes faceoff won against Mason McTavish
+2026-11-05 21:36:06,401892652,2026-11-05,car,nyi,in,3:41 - 3rd,3,3:41,4.0,3.0,22.0,34.0,Blocked,Adam Pelech shot blocked by Brayden Schenn
+2026-11-05 21:36:06,401892655,2026-11-05,dal,cbj,in,1:54 - 3rd,3,1:54,1.0,1.0,27.0,24.0,Stoppage,Puck Frozen - Goalie
+2026-11-05 21:36:06,401892656,2026-11-05,van,wpg,in,1:46 - 3rd,3,1:46,2.0,6.0,22.0,22.0,Blocked,Dylan Samberg shot blocked by Elias Pettersson
+2026-11-05 21:37:05,401892648,2026-11-05,uta,mtl,in,7:37 - 3rd,3,7:37,4.0,3.0,25.0,14.0,Interference,Liam O'Brien Interference against Arber Xhekaj
+2026-11-05 21:37:05,401892649,2026-11-05,vgk,det,in,3:43 - 3rd,3,3:43,1.0,1.0,25.0,30.0,Stoppage,Goalie Stopped
+2026-11-05 21:37:05,401892650,2026-11-05,chi,tb,in,8:17 - 3rd,3,8:17,0.0,4.0,27.0,23.0,Stoppage,Goalie Stopped
+2026-11-05 21:37:05,401892651,2026-11-05,stl,nj,in,3:01 - 3rd,3,3:01,4.0,4.0,29.0,27.0,Face Off,Jack Hughes faceoff won against Mason McTavish
+2026-11-05 21:37:05,401892652,2026-11-05,car,nyi,in,2:36 - 3rd,3,2:36,4.0,3.0,22.0,34.0,Blocked,Adam Pelech shot blocked by Brayden Schenn
+2026-11-05 21:37:05,401892655,2026-11-05,dal,cbj,in,1:21 - 3rd,3,1:21,1.0,1.0,28.0,24.0,Stoppage,Goalie Stopped
+2026-11-05 21:37:05,401892656,2026-11-05,van,wpg,in,0:51 - 3rd,3,0:51,2.0,6.0,22.0,22.0,Blocked,Dylan Samberg shot blocked by Alex Iafallo
+2026-11-05 21:37:05,401892657,2026-11-05,ana,edm,in,7:31 - 2nd,2,7:31,3.0,2.0,14.0,8.0,Missed,Tim Washe Wrist Shot Above Crossbar
+2026-11-05 21:38:05,401892648,2026-11-05,uta,mtl,in,7:16 - 3rd,3,7:16,4.0,3.0,25.0,14.0,Face Off,Juraj Slafkovský faceoff won against Jack McBain
+2026-11-05 21:38:05,401892649,2026-11-05,vgk,det,in,3:43 - 3rd,3,3:43,1.0,1.0,25.0,31.0,Stoppage,Player Equipment
+2026-11-05 21:38:05,401892651,2026-11-05,stl,nj,in,2:02 - 3rd,3,2:02,4.0,4.0,29.0,27.0,Face Off,Anthony Mantha faceoff won against Pius Suter
+2026-11-05 21:38:05,401892652,2026-11-05,car,nyi,in,2:07 - 3rd,3,2:07,4.0,3.0,22.0,34.0,Hit,Seth Jarvis hit Matthew Schaefer
+2026-11-05 21:38:05,401892655,2026-11-05,dal,cbj,in,0:55 - 3rd,3,0:55,1.0,1.0,28.0,24.0,Stoppage,Icing
+2026-11-05 21:38:05,401892656,2026-11-05,van,wpg,in,0:25 - 3rd,3,0:25,2.0,6.0,22.0,23.0,Shot,Jonathan Lekkerimaki Wrist Shot saved by Stuart Skinner
+2026-11-05 21:38:05,401892657,2026-11-05,ana,edm,in,6:54 - 2nd,2,6:54,3.0,2.0,14.0,8.0,Blocked,Tristan Luneau shot blocked by Shakir Mukhamadullin
+2026-11-05 21:39:05,401892648,2026-11-05,uta,mtl,in,6:12 - 3rd,3,6:12,4.0,3.0,26.0,14.0,Shot,Zachary Bolduc saved by Sebastian Cossa
+2026-11-05 21:39:05,401892649,2026-11-05,vgk,det,in,3:14 - 3rd,3,3:14,1.0,1.0,25.0,31.0,Face Off,William Karlsson faceoff won against Andrew Copp
+2026-11-05 21:39:05,401892650,2026-11-05,chi,tb,in,7:32 - 3rd,3,7:32,0.0,4.0,27.0,23.0,Shot,Gage Goncalves saved by Arvid Soderblom
+2026-11-05 21:39:05,401892651,2026-11-05,stl,nj,in,1:42 - 3rd,3,1:42,4.0,4.0,31.0,27.0,Blocked,Dougie Hamilton shot blocked by Pavel Buchnevich
+2026-11-05 21:39:05,401892652,2026-11-05,car,nyi,in,2:07 - 3rd,3,2:07,4.0,3.0,21.0,34.0,Stoppage,On-Ice Official
+2026-11-05 21:39:05,401892655,2026-11-05,dal,cbj,in,0:24 - 3rd,3,0:24,1.0,1.0,28.0,24.0,Stoppage,Icing
+2026-11-05 21:39:05,401892657,2026-11-05,ana,edm,in,6:43 - 2nd,2,6:43,3.0,2.0,14.0,8.0,Face Off,Owen Michaels faceoff won against Mikael Granlund
+2026-11-05 21:39:05,401892658,2026-11-05,nsh,col,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-05 21:40:05,401892648,2026-11-05,uta,mtl,in,5:58 - 3rd,3,5:58,4.0,3.0,29.0,14.0,Face Off,Kevin Stenlund faceoff won against Oliver Kapanen
+2026-11-05 21:40:05,401892649,2026-11-05,vgk,det,in,2:44 - 3rd,3,2:44,1.0,1.0,25.0,31.0,Stoppage,Puck in Netting
+2026-11-05 21:40:05,401892650,2026-11-05,chi,tb,in,7:00 - 3rd,3,7:00,0.0,4.0,29.0,23.0,Face Off,Ryan Greene faceoff won against Conor Geekie
+2026-11-05 21:40:05,401892651,2026-11-05,stl,nj,in,0:39 - 3rd,3,0:39,4.0,4.0,31.0,27.0,Blocked,Luke Hughes shot blocked by Brandon Carlo
+2026-11-05 21:40:05,401892652,2026-11-05,car,nyi,in,1:33 - 3rd,3,1:33,4.0,3.0,22.0,34.0,Blocked,Brayden Schenn shot blocked by Kyle Palmieri
+2026-11-05 21:40:05,401892655,2026-11-05,dal,cbj,in,End of 3rd,3,0:00,1.0,1.0,28.0,24.0,Period End,End of 3rd Period
+2026-11-05 21:40:05,401892657,2026-11-05,ana,edm,in,5:43 - 2nd,2,5:43,3.0,2.0,14.0,9.0,Face Off,Owen Michaels faceoff won against Mikael Granlund
+2026-11-05 21:40:05,401892658,2026-11-05,nsh,col,in,19:36 - 1st,1,19:36,0.0,0.0,,,Face Off,Ryan O'Reilly faceoff won against Nicolas Roy
+2026-11-05 21:41:05,401892648,2026-11-05,uta,mtl,in,5:17 - 3rd,3,5:17,4.0,3.0,28.0,15.0,Missed,Missed Shot
+2026-11-05 21:41:05,401892649,2026-11-05,vgk,det,in,2:07 - 3rd,3,2:07,1.0,1.0,25.0,32.0,Shot,Rasmus Andersson Wrist Shot saved by Daniil Tarasov
+2026-11-05 21:41:05,401892650,2026-11-05,chi,tb,in,6:01 - 3rd,3,6:01,0.0,4.0,29.0,23.0,Giveaway,Giveaway by Sam Rinzel
+2026-11-05 21:41:05,401892651,2026-11-05,stl,nj,in,End of 3rd,3,0:00,4.0,4.0,31.0,27.0,Missed,Missed Shot
+2026-11-05 21:41:05,401892652,2026-11-05,car,nyi,in,1:09 - 3rd,3,1:09,4.0,3.0,22.0,34.0,Blocked,Simon Holmstrom shot blocked by Jaccob Slavin
+2026-11-05 21:41:05,401892655,2026-11-05,dal,cbj,in,5:00 - OT,4,5:00,1.0,1.0,28.0,24.0,Period End,End of 3rd Period
+2026-11-05 21:41:05,401892657,2026-11-05,ana,edm,in,4:38 - 2nd,2,4:38,3.0,2.0,14.0,9.0,Giveaway,Giveaway by Jackson LaCombe
+2026-11-05 21:41:05,401892658,2026-11-05,nsh,col,in,18:29 - 1st,1,18:29,0.0,0.0,0.0,0.0,Blocked,Sam Malinski shot blocked by Adam Edstrom
