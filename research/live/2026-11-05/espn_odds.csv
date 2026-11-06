@@ -1,0 +1,4 @@
+seen_at_et,espn_event_id,date,away,home,period,clock,away_score,home_score,provider,provider_id,home_pl,home_pl_odds,away_pl_odds,total,over_odds,under_odds,home_ml,away_ml
+2026-11-05 19:07:05,401892651,2026-11-05,stl,nj,1,20:00,0.0,0.0,DraftKings,100,-1.5,114.0,-135.0,5.5,-130.0,110.0,-238.0,195.0
+2026-11-05 19:07:05,401892652,2026-11-05,car,nyi,1,20:00,0.0,0.0,DraftKings,100,1.5,-155.0,130.0,6.5,114.0,-135.0,170.0,-205.0
+2026-11-05 19:07:05,401892655,2026-11-05,dal,cbj,1,20:00,0.0,0.0,DraftKings,100,1.5,-238.0,195.0,5.5,-122.0,102.0,110.0,-130.0
