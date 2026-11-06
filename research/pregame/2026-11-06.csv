@@ -8229,3 +8229,7 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 18:12:49,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,thirdperiod,team_total,home_over,1.5,107,normal
 2026-11-06 18:12:49,293562,2026-11-06,2026-11-06 20:00,ana,cgy,BetMGM,thirdperiod,team_total,home_under,1.0,100,normal
 2026-11-06 18:12:49,293562,2026-11-06,2026-11-06 20:00,ana,cgy,BetMGM,thirdperiod,team_total,home_over,1.0,-140,normal
+2026-11-06 18:14:41,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,event,total,under,6.5,-102,normal
+2026-11-06 18:14:41,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,event,total,over,6.5,-118,normal
+2026-11-06 18:14:41,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,secondperiod,spread,away,0.5,-180,normal
+2026-11-06 18:14:41,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,secondperiod,spread,home,-0.5,140,normal
