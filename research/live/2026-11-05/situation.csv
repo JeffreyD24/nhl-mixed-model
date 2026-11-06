@@ -1139,3 +1139,15 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 22:09:05,401892657,2026-11-05,ana,edm,in,18:57 - 3rd,3,18:57,4.0,2.0,15.0,10.0,Hit,Alex Killorn hit Evan Bouchard
 2026-11-05 22:09:05,401892658,2026-11-05,nsh,col,in,5:08 - 1st,1,5:08,2.0,1.0,6.0,6.0,Stoppage,Goalie Stopped
 2026-11-05 22:10:05,401892657,2026-11-05,ana,edm,in,18:50 - 3rd,3,18:50,4.0,2.0,15.0,10.0,Tripping,Mathieu Joseph Tripping against Beckett Sennecke
+2026-11-05 22:11:05,401892657,2026-11-05,ana,edm,in,18:18 - 3rd,3,18:18,5.0,2.0,15.0,10.0,Missed,Missed Shot
+2026-11-05 22:11:05,401892658,2026-11-05,nsh,col,in,4:56 - 1st,1,4:56,2.0,1.0,6.0,6.0,Shot,Sam Malinski Snap Shot saved by Justus Annunen
+2026-11-05 22:12:06,401892657,2026-11-05,ana,edm,in,17:39 - 3rd,3,17:39,5.0,2.0,15.0,10.0,Blocked,Shakir Mukhamadullin shot blocked by Sam Colangelo
+2026-11-05 22:12:06,401892658,2026-11-05,nsh,col,in,3:40 - 1st,1,3:40,2.0,1.0,7.0,6.0,Blocked,Jaden Schwartz shot blocked by Brady Skjei
+2026-11-05 22:13:05,401892657,2026-11-05,ana,edm,in,17:16 - 3rd,3,17:16,5.0,2.0,15.0,10.0,Stoppage,Icing
+2026-11-05 22:13:05,401892658,2026-11-05,nsh,col,in,3:31 - 1st,1,3:31,2.0,1.0,7.0,6.0,Stoppage,Icing
+2026-11-05 22:14:05,401892657,2026-11-05,ana,edm,in,16:49 - 3rd,3,16:49,5.0,2.0,15.0,10.0,Face Off,Leon Draisaitl faceoff won against Roger McQueen
+2026-11-05 22:14:05,401892658,2026-11-05,nsh,col,in,2:30 - 1st,1,2:30,2.0,1.0,9.0,6.0,Blocked,Cale Makar shot blocked by Ross Colton
+2026-11-05 22:15:05,401892657,2026-11-05,ana,edm,in,16:16 - 3rd,3,16:16,5.0,2.0,15.0,10.0,Shot,Pavel Mintyukov saved by Matt Tomkins
+2026-11-05 22:15:05,401892658,2026-11-05,nsh,col,in,1:38 - 1st,1,1:38,2.0,1.0,9.0,6.0,Blocked,Fedor Svechkov shot blocked by Jayden Struble
+2026-11-05 22:16:06,401892657,2026-11-05,ana,edm,in,15:01 - 3rd,3,15:01,5.0,2.0,15.0,12.0,Shot,Noah Warren saved by Matt Tomkins
+2026-11-05 22:16:06,401892658,2026-11-05,nsh,col,in,0:35 - 1st,1,0:35,2.0,1.0,9.0,7.0,Blocked,Cale Makar shot blocked by Reid Schaefer
