@@ -762,3 +762,43 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 21:05:05,401892654,2026-11-05,bos,pit,in,15:12 - 3rd,3,15:12,5.0,2.0,13.0,15.0,Stoppage,Off-side
 2026-11-05 21:05:05,401892655,2026-11-05,dal,cbj,in,15:28 - 3rd,3,15:28,0.0,0.0,20.0,19.0,Stoppage,Puck in Netting
 2026-11-05 21:05:05,401892656,2026-11-05,van,wpg,in,17:26 - 3rd,3,17:26,1.0,5.0,17.0,18.0,Missed,Jake DeBrusk Missed Shot Hit Left Post
+2026-11-05 21:06:05,401892649,2026-11-05,vgk,det,in,17:24 - 3rd,3,17:24,0.0,1.0,20.0,23.0,Face Off,Tomas Hertl faceoff won against J.T. Compher
+2026-11-05 21:06:05,401892651,2026-11-05,stl,nj,in,17:47 - 3rd,3,17:47,1.0,4.0,21.0,20.0,Missed,Justin Barron Wrist Shot Wide Right
+2026-11-05 21:06:05,401892652,2026-11-05,car,nyi,in,18:26 - 3rd,3,18:26,3.0,3.0,16.0,23.0,Missed,Jackson Blake Missed Shot High and Wide Right
+2026-11-05 21:06:05,401892654,2026-11-05,bos,pit,in,14:23 - 3rd,3,14:23,5.0,2.0,13.0,15.0,Missed,Kris Letang Wrist Shot Above Crossbar
+2026-11-05 21:06:05,401892655,2026-11-05,dal,cbj,in,15:12 - 3rd,3,15:12,0.0,0.0,20.0,19.0,Stoppage,Off-side
+2026-11-05 21:06:05,401892656,2026-11-05,van,wpg,in,16:48 - 3rd,3,16:48,1.0,5.0,17.0,18.0,Stoppage,Off-side
+2026-11-05 21:07:06,401892649,2026-11-05,vgk,det,in,16:32 - 3rd,3,16:32,0.0,1.0,20.0,23.0,Face Off,William Karlsson faceoff won against Emmitt Finnie
+2026-11-05 21:07:06,401892651,2026-11-05,stl,nj,in,16:45 - 3rd,3,16:45,1.0,4.0,21.0,20.0,Blocked,Nico Hischier shot blocked by Mason McTavish
+2026-11-05 21:07:06,401892652,2026-11-05,car,nyi,in,18:20 - 3rd,3,18:20,3.0,3.0,16.0,24.0,Face Off,Logan Stankoven faceoff won against Emil Heineman
+2026-11-05 21:07:06,401892653,2026-11-05,phi,nyr,in,12:52 - 3rd,3,12:52,2.0,1.0,19.0,18.0,Shot,Gabe Perreault saved by Joseph Woll
+2026-11-05 21:07:06,401892654,2026-11-05,bos,pit,in,13:42 - 3rd,3,13:42,5.0,2.0,13.0,15.0,Shot,David Pastrnak Backhand saved by Arturs Silovs
+2026-11-05 21:07:06,401892655,2026-11-05,dal,cbj,in,13:58 - 3rd,3,13:58,0.0,0.0,20.0,19.0,Blocked,Tyler Seguin shot blocked by David Perron
+2026-11-05 21:07:06,401892656,2026-11-05,van,wpg,in,15:49 - 3rd,3,15:49,1.0,5.0,19.0,18.0,Shot,Cole Koepke Wrist Shot saved by Leevi Merilainen
+2026-11-05 21:08:05,401892649,2026-11-05,vgk,det,in,15:59 - 3rd,3,15:59,0.0,1.0,20.0,23.0,Stoppage,
+2026-11-05 21:08:05,401892651,2026-11-05,stl,nj,in,16:21 - 3rd,3,16:21,1.0,4.0,21.0,20.0,Face Off,Nico Hischier faceoff won against Robert Thomas
+2026-11-05 21:08:05,401892652,2026-11-05,car,nyi,in,17:20 - 3rd,3,17:20,3.0,3.0,16.0,24.0,Face Off,Logan Stankoven faceoff won against Emil Heineman
+2026-11-05 21:08:05,401892653,2026-11-05,phi,nyr,in,11:49 - 3rd,3,11:49,2.0,1.0,19.0,18.0,Hit,Nick Seeler hit Mika Zibanejad
+2026-11-05 21:08:05,401892654,2026-11-05,bos,pit,in,13:05 - 3rd,3,13:05,5.0,2.0,13.0,16.0,Stoppage,Off-side
+2026-11-05 21:08:05,401892655,2026-11-05,dal,cbj,in,13:33 - 3rd,3,13:33,1.0,0.0,20.0,21.0,Goal,"Mikko Rantanen Goal (9) Wrist Shot, assists: Wyatt Johnston (11)"
+2026-11-05 21:08:05,401892656,2026-11-05,van,wpg,in,15:42 - 3rd,3,15:42,1.0,5.0,21.0,18.0,Stoppage,Goalie Stopped
+2026-11-05 21:09:06,401892649,2026-11-05,vgk,det,in,15:42 - 3rd,3,15:42,0.0,1.0,21.0,23.0,Face Off,Tomas Hertl faceoff won against Sheldon Dries
+2026-11-05 21:09:06,401892650,2026-11-05,chi,tb,in,20:00 - 3rd,3,20:00,0.0,2.0,22.0,15.0,Period End,End of 2nd Period
+2026-11-05 21:09:06,401892651,2026-11-05,stl,nj,in,15:28 - 3rd,3,15:28,1.0,4.0,21.0,22.0,Missed,Amadeus Lombardi Wrist Shot Wide Left
+2026-11-05 21:09:06,401892652,2026-11-05,car,nyi,in,16:26 - 3rd,3,16:26,3.0,3.0,16.0,25.0,Shot,K'Andre Miller saved by Semyon Varlamov
+2026-11-05 21:09:06,401892653,2026-11-05,phi,nyr,in,10:59 - 3rd,3,10:59,2.0,1.0,19.0,19.0,Shot,Owen Tippett saved by Dylan Garand
+2026-11-05 21:10:05,401892648,2026-11-05,uta,mtl,in,20:00 - 3rd,3,20:00,3.0,2.0,21.0,10.0,Period End,End of 2nd Period
+2026-11-05 21:10:05,401892649,2026-11-05,vgk,det,in,15:22 - 3rd,3,15:22,1.0,1.0,21.0,23.0,Blocked,Brayden McNabb shot blocked by William Wallinder
+2026-11-05 21:10:05,401892651,2026-11-05,stl,nj,in,14:52 - 3rd,3,14:52,1.0,4.0,21.0,22.0,Missed,Luke Hughes Wrist Shot Above Crossbar
+2026-11-05 21:10:05,401892652,2026-11-05,car,nyi,in,16:13 - 3rd,3,16:13,3.0,3.0,16.0,27.0,Face Off,Jean-Gabriel Pageau faceoff won against Logan Stankoven
+2026-11-05 21:10:05,401892653,2026-11-05,phi,nyr,in,10:10 - 3rd,3,10:10,2.0,1.0,19.0,19.0,Blocked,Adam Fox shot blocked by Travis Sanheim
+2026-11-05 21:10:05,401892655,2026-11-05,dal,cbj,in,13:24 - 3rd,3,13:24,1.0,0.0,20.0,21.0,Face Off,Arttu Hyry faceoff won against Charlie Coyle
+2026-11-05 21:10:05,401892656,2026-11-05,van,wpg,in,15:03 - 3rd,3,15:03,1.0,5.0,20.0,18.0,Blocked,Liam Ohgren shot blocked by Tyrel Bauer
+2026-11-05 21:10:05,401892657,2026-11-05,ana,edm,in,20:00 - 2nd,2,20:00,1.0,1.0,7.0,6.0,Period End,End of 1st Period
+2026-11-05 21:11:05,401892649,2026-11-05,vgk,det,in,14:44 - 3rd,3,14:44,1.0,1.0,21.0,23.0,Blocked,Shea Theodore shot blocked by William Wallinder
+2026-11-05 21:11:05,401892651,2026-11-05,stl,nj,in,14:20 - 3rd,3,14:20,1.0,4.0,22.0,22.0,Stoppage,Puck in Netting
+2026-11-05 21:11:05,401892652,2026-11-05,car,nyi,in,15:39 - 3rd,3,15:39,3.0,3.0,16.0,27.0,Blocked,Nikolaj Ehlers shot blocked by Kyle Palmieri
+2026-11-05 21:11:05,401892653,2026-11-05,phi,nyr,in,8:51 - 3rd,3,8:51,2.0,1.0,19.0,20.0,Shot,Trevor Zegras saved by Dylan Garand
+2026-11-05 21:11:05,401892654,2026-11-05,bos,pit,in,12:34 - 3rd,3,12:34,5.0,2.0,14.0,16.0,Shot,Rickard Rakell Slap Shot saved by Michael DiPietro
+2026-11-05 21:11:05,401892655,2026-11-05,dal,cbj,in,13:01 - 3rd,3,13:01,1.0,0.0,20.0,21.0,Face Off,Arttu Hyry faceoff won against Charlie Coyle
+2026-11-05 21:11:05,401892656,2026-11-05,van,wpg,in,13:48 - 3rd,3,13:48,1.0,5.0,20.0,18.0,Blocked,Liam Ohgren shot blocked by Tyrel Bauer
