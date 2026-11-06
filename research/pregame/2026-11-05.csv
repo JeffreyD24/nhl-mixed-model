@@ -31009,3 +31009,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 21:32:35,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,thirdperiod,moneyline,away,0.0,150,normal
 2026-11-05 21:32:35,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,thirdperiod,total,over,2.5,116,normal
 2026-11-05 21:32:35,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,thirdperiod,total,under,2.5,-148,normal
+2026-11-05 21:34:40,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,secondperiod,moneyline,away,0.0,140,normal
+2026-11-05 21:34:40,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,thirdperiod,moneyline,away,0.0,140,normal
