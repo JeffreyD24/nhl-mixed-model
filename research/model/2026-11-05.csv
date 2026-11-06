@@ -123,3 +123,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-05 18:43,goals,401892648,2026-11-05,uta,mtl,0.519,3.365,3.185,6.71,Sebastian Cossa (confirmed),Jakub Dobes (confirmed),UTA: Yamamoto | MTL: Dach
 2026-11-05 18:57,xg,401892656,2026-11-05,van,wpg,0.6411,3.639,2.663,6.45,Leevi Merilainen (confirmed),Stuart Skinner (confirmed),"VAN: Bains, Chytil, Willander | WPG: Rosen"
 2026-11-05 18:57,goals,401892656,2026-11-05,van,wpg,0.6097,3.568,2.782,6.5,Leevi Merilainen (confirmed),Stuart Skinner (confirmed),"VAN: Bains, Chytil, Willander | WPG: Rosen"
+2026-11-05 21:11,xg,401892658,2026-11-05,nsh,col,0.6008,3.718,2.836,6.7,Justus Annunen (confirmed),Mackenzie Blackwood (confirmed),"NSH: Marchessault?, Wood, Hague | COL: -"
+2026-11-05 21:11,goals,401892658,2026-11-05,nsh,col,0.5877,3.653,3.001,6.81,Justus Annunen (confirmed),Mackenzie Blackwood (confirmed),"NSH: Marchessault?, Wood, Hague | COL: -"
