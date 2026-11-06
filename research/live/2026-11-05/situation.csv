@@ -1249,3 +1249,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 00:05:06,401892658,2026-11-05,nsh,col,in,2:43 - 3rd,3,2:43,2.0,2.0,27.0,21.0,Face Off,Jack Drury faceoff won against Nazem Kadri
 2026-11-06 00:06:05,401892658,2026-11-05,nsh,col,in,2:20 - 3rd,3,2:20,2.0,2.0,27.0,21.0,Blocked,Cale Makar shot blocked by Nathan MacKinnon
 2026-11-06 00:07:05,401892658,2026-11-05,nsh,col,in,1:18 - 3rd,3,1:18,2.0,2.0,27.0,21.0,Missed,Martin Necas Missed Shot Wide Right
+2026-11-06 00:08:05,401892658,2026-11-05,nsh,col,in,0:19 - 3rd,3,0:19,2.0,2.0,28.0,21.0,Blocked,Brock Nelson shot blocked by Brady Skjei
+2026-11-06 00:09:05,401892658,2026-11-05,nsh,col,in,End of 3rd,3,0:00,2.0,2.0,28.0,22.0,Period End,End of 3rd Period
+2026-11-06 00:10:05,401892658,2026-11-05,nsh,col,in,5:00 - OT,4,5:00,2.0,2.0,28.0,22.0,Period End,End of 3rd Period
+2026-11-06 00:11:05,401892658,2026-11-05,nsh,col,in,4:45 - OT,4,4:45,2.0,2.0,28.0,22.0,Shot,Devon Toews Snap Shot saved by Justus Annunen
+2026-11-06 00:12:05,401892658,2026-11-05,nsh,col,in,3:44 - OT,4,3:44,2.0,2.0,29.0,22.0,Shot,Nathan MacKinnon Backhand saved by Justus Annunen
+2026-11-06 00:13:06,401892658,2026-11-05,nsh,col,in,2:58 - OT,4,2:58,2.0,2.0,31.0,22.0,Missed,Devon Toews Wrist Shot Hit Left Post
