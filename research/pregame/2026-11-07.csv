@@ -337,3 +337,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 08:37:18,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,firstperiod,spread,away,0.5,-167,normal
 2026-11-06 09:05:54,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,event,spread,home,-1.5,130,normal
 2026-11-06 09:05:54,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,event,spread,away,1.5,-156,normal
+2026-11-06 09:07:35,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,event,spread,home,-1.5,-147,normal
+2026-11-06 09:07:35,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,event,spread,away,1.5,120,normal
