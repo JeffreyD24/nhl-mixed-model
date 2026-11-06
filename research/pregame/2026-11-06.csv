@@ -7504,3 +7504,7 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 16:50:06,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,thirdperiod,team_total,away_under,1.0,103,normal
 2026-11-06 16:50:06,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,thirdperiod,moneyline,home,0.0,-145,normal
 2026-11-06 16:50:06,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,thirdperiod,moneyline,away,0.0,114,normal
+2026-11-06 16:52:14,293560,2026-11-06,2026-11-06 19:00,cbj,buf,Caesars,event,moneyline,home,0.0,-180,normal
+2026-11-06 16:52:14,293560,2026-11-06,2026-11-06 19:00,cbj,buf,Caesars,event,moneyline,away,0.0,150,normal
+2026-11-06 16:52:14,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,thirdperiod,total,under,2.5,-166,normal
+2026-11-06 16:52:14,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,thirdperiod,total,over,2.5,130,normal
