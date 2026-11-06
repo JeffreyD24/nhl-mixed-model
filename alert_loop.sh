@@ -19,7 +19,7 @@ busy() {   # 0 if another state-writing workflow is running
 }
 
 save() {
-  for f in state/heartbeat_alert.txt state/alerts.csv state/market_moves.csv state/line_history.csv state/line_jumps.csv state/test_alert_result.txt state/openers_seen.json state/poly_paper.csv state/poly_last.json state/bluesky_seen.json state/goalie_news.json state/news_overrides.json state/ovr_goalie_test.csv state/goalie_recheck_test.csv state/rest_b2b_test.csv; do
+  for f in state/heartbeat_alert.txt state/alerts.csv state/fanatics_shadow.csv state/market_moves.csv state/line_history.csv state/line_jumps.csv state/test_alert_result.txt state/openers_seen.json state/poly_paper.csv state/poly_last.json state/bluesky_seen.json state/goalie_news.json state/news_overrides.json state/ovr_goalie_test.csv state/goalie_recheck_test.csv state/rest_b2b_test.csv; do
     if [ -f "$f" ]; then git add "$f"; fi
   done
   if [ -d research ]; then git add research; fi

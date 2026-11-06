@@ -19,6 +19,7 @@ import nhl_mixed_model as nm                             # noqa: E402
 import espn                                              # noqa: E402
 import nhl_travel                                        # noqa: E402
 import fanduel                                           # noqa: E402
+import fanatics            # Nov 6, 2026: Fanatics SHADOW log only (not in phone alerts until Jeffrey says so)
 
 REMIND_EVERY_MIN = 30               # Nov 2, 2026: an alerted bet still not logged and still a bet -> REMINDER every 30 min,
 REMIND_HOURS = (6, 20)              #   reminders 6 AM - 8 PM ET only (Jeffrey, Nov 5, 2026 18:16); first-time BET alerts, bail-outs and DON'T BETs go out 24 hours a day
@@ -782,6 +783,9 @@ def main():
                             fd_txt, fd_link, best_book = fd_cmp()
                             sent = notify(title + (" | BEST AT FANDUEL" if best_book == "FanDuel" else ""), (fd_txt + "\n" if fd_txt else "") + why + body, priority=prio, link=link, dk=dk, kind="bet",
                                           fd=fd_link, best=best_book)
+                            # Nov 6, 2026: Fanatics for this bet -> state/fanatics_shadow.csv only (NOT in the alert; fanatics.SHOW_IN_ALERTS)
+                            fanatics.shadow(STATE, "game", "nhl", M["date"], mk, side, "DraftKings", None if mk == "moneyline" else lnum, price,
+                                            home=g["home"], away=g["away"])
                     for n, bt in pending:
                         new.append(dict(alerted_at_et=str(NOW), model=n, both_models=len(pending) > 1, game_id=g["game_id"], date=M["date"],
                                         home=g["home"], away=g["away"], tip_et=g["tip_et"], market=mk, side=side, line=lnum, price=price,
