@@ -663,3 +663,37 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 20:41:05,401892655,2026-11-05,dal,cbj,in,End of 2nd,2,0:00,0.0,0.0,18.0,19.0,Period End,End of 2nd Period
 2026-11-05 20:41:05,401892656,2026-11-05,van,wpg,in,1:46 - 2nd,2,1:46,1.0,5.0,17.0,17.0,Face Off,Marco Rossi faceoff won against Mark Scheifele
 2026-11-05 20:41:05,401892657,2026-11-05,ana,edm,in,3:39 - 1st,1,3:39,1.0,0.0,5.0,6.0,Missed,Ryan Nugent-Hopkins Missed Shot Above Crossbar
+2026-11-05 20:42:05,401892648,2026-11-05,uta,mtl,in,5:17 - 2nd,2,5:17,3.0,2.0,16.0,9.0,Stoppage,TV Timeout
+2026-11-05 20:42:05,401892649,2026-11-05,vgk,det,in,End of 2nd,2,0:00,0.0,0.0,19.0,22.0,Period End,End of 2nd Period
+2026-11-05 20:42:05,401892650,2026-11-05,chi,tb,in,5:11 - 2nd,2,5:11,0.0,2.0,15.0,12.0,Face Off,Anthony Cirelli faceoff won against Oliver Moore
+2026-11-05 20:42:05,401892651,2026-11-05,stl,nj,in,1:41 - 2nd,2,1:41,1.0,4.0,22.0,14.0,Goal,"Anthony Mantha Goal (5) Backhand, assists: none"
+2026-11-05 20:42:05,401892652,2026-11-05,car,nyi,in,0:58 - 2nd,2,0:58,3.0,3.0,17.0,21.0,Stoppage,Goalie Stopped
+2026-11-05 20:42:05,401892655,2026-11-05,dal,cbj,in,End of 2nd,2,0:00,0.0,0.0,19.0,19.0,Period End,End of 2nd Period
+2026-11-05 20:42:05,401892656,2026-11-05,van,wpg,in,0:41 - 2nd,2,0:41,1.0,5.0,17.0,17.0,Stoppage,Off-side
+2026-11-05 20:42:05,401892657,2026-11-05,ana,edm,in,3:32 - 1st,1,3:32,1.0,0.0,6.0,6.0,Stoppage,Puck in Crowd
+2026-11-05 20:43:06,401892648,2026-11-05,uta,mtl,in,4:39 - 2nd,2,4:39,3.0,2.0,16.0,9.0,Face Off,Nick Suzuki faceoff won against Kevin Stenlund
+2026-11-05 20:43:06,401892650,2026-11-05,chi,tb,in,4:56 - 2nd,2,4:56,0.0,2.0,15.0,13.0,Shot,Ryan Donato saved by Andrei Vasilevskiy
+2026-11-05 20:43:06,401892651,2026-11-05,stl,nj,in,1:22 - 2nd,2,1:22,1.0,4.0,22.0,14.0,Face Off,Pius Suter faceoff won against Jack Hughes
+2026-11-05 20:43:06,401892652,2026-11-05,car,nyi,in,0:49 - 2nd,2,0:49,3.0,3.0,18.0,22.0,Stoppage,Goalie Stopped
+2026-11-05 20:43:06,401892656,2026-11-05,van,wpg,in,0:19 - 2nd,2,0:19,1.0,5.0,17.0,17.0,Face Off,Adam Lowry faceoff won against Max Sasson
+2026-11-05 20:44:06,401892648,2026-11-05,uta,mtl,in,3:31 - 2nd,2,3:31,3.0,2.0,18.0,9.0,Missed,Alexandre Texier Tip-In Wide Left
+2026-11-05 20:44:06,401892650,2026-11-05,chi,tb,in,4:56 - 2nd,2,4:56,0.0,2.0,15.0,14.0,Stoppage,On-Ice Official Video Review
+2026-11-05 20:44:06,401892651,2026-11-05,stl,nj,in,0:35 - 2nd,2,0:35,1.0,4.0,22.0,16.0,Shot,Robert Thomas Wrist Shot saved by Connor Hellebuyck
+2026-11-05 20:44:06,401892652,2026-11-05,car,nyi,in,0:34 - 2nd,2,0:34,3.0,3.0,18.0,22.0,Face Off,Jean-Gabriel Pageau faceoff won against Logan Stankoven
+2026-11-05 20:44:06,401892656,2026-11-05,van,wpg,in,End of 2nd,2,0:00,1.0,5.0,17.0,17.0,Period End,End of 2nd Period
+2026-11-05 20:44:06,401892657,2026-11-05,ana,edm,in,3:22 - 1st,1,3:22,1.0,0.0,6.0,6.0,Penalty Shot Infraction,Noah Warren Minor against Jake Walman
+2026-11-05 20:45:05,401892648,2026-11-05,uta,mtl,in,2:25 - 2nd,2,2:25,3.0,2.0,18.0,9.0,Blocked,Oliver Kapanen shot blocked by Alex Newhook
+2026-11-05 20:45:05,401892650,2026-11-05,chi,tb,in,4:32 - 2nd,2,4:32,0.0,2.0,15.0,14.0,Face Off,Ryan Greene faceoff won against Conor Geekie
+2026-11-05 20:45:05,401892651,2026-11-05,stl,nj,in,End of 2nd,2,0:00,1.0,4.0,22.0,16.0,Period End,End of 2nd Period
+2026-11-05 20:45:05,401892652,2026-11-05,car,nyi,in,0:23 - 2nd,2,0:23,3.0,3.0,18.0,22.0,Face Off,Jean-Gabriel Pageau faceoff won against Sebastian Aho
+2026-11-05 20:45:05,401892657,2026-11-05,ana,edm,in,3:08 - 1st,1,3:08,1.0,0.0,6.0,6.0,Face Off,Leon Draisaitl faceoff won against Tim Washe
+2026-11-05 20:46:05,401892648,2026-11-05,uta,mtl,in,1:24 - 2nd,2,1:24,3.0,2.0,18.0,9.0,Blocked,Josh Anderson shot blocked by Nick Schmaltz
+2026-11-05 20:46:05,401892650,2026-11-05,chi,tb,in,3:45 - 2nd,2,3:45,0.0,2.0,15.0,14.0,Stoppage,Goalie Stopped
+2026-11-05 20:46:05,401892652,2026-11-05,car,nyi,in,End of 2nd,2,0:00,3.0,3.0,18.0,22.0,Period End,End of 2nd Period
+2026-11-05 20:46:05,401892654,2026-11-05,bos,pit,in,End of 2nd,2,0:00,5.0,2.0,13.0,15.0,Period End,End of 2nd Period
+2026-11-05 20:46:05,401892657,2026-11-05,ana,edm,in,3:08 - 1st,1,3:08,1.0,0.0,6.0,6.0,Penalty Shot Infraction,Ryan Nugent-Hopkins Minor
+2026-11-05 20:47:05,401892648,2026-11-05,uta,mtl,in,0:54 - 2nd,2,0:54,3.0,2.0,19.0,10.0,Stoppage,Goalie Stopped
+2026-11-05 20:47:05,401892650,2026-11-05,chi,tb,in,3:08 - 2nd,2,3:08,0.0,2.0,17.0,14.0,Stoppage,Goalie Stopped
+2026-11-05 20:47:05,401892651,2026-11-05,stl,nj,in,End of 2nd,2,0:00,1.0,4.0,22.0,17.0,Period End,End of 2nd Period
+2026-11-05 20:47:05,401892652,2026-11-05,car,nyi,in,End of 2nd,2,0:00,3.0,3.0,17.0,22.0,Period End,End of 2nd Period
+2026-11-05 20:47:05,401892657,2026-11-05,ana,edm,in,3:08 - 1st,1,3:08,1.0,0.0,6.0,6.0,Face Off,Leon Draisaitl faceoff won against Mikael Granlund
