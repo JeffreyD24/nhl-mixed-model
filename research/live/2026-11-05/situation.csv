@@ -1200,3 +1200,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 22:56:05,401892658,2026-11-05,nsh,col,in,9:16 - 2nd,2,9:16,2.0,2.0,14.0,9.0,Stoppage,Goalie Stopped
 2026-11-05 22:57:05,401892658,2026-11-05,nsh,col,in,8:56 - 2nd,2,8:56,2.0,2.0,14.0,9.0,Stoppage,Hand Pass
 2026-11-05 22:58:05,401892658,2026-11-05,nsh,col,in,8:37 - 2nd,2,8:37,2.0,2.0,14.0,9.0,Stoppage,Goalie Stopped
+2026-11-05 22:59:05,401892658,2026-11-05,nsh,col,in,7:53 - 2nd,2,7:53,2.0,2.0,15.0,9.0,Stoppage,Icing
+2026-11-05 23:00:06,401892658,2026-11-05,nsh,col,in,6:52 - 2nd,2,6:52,2.0,2.0,16.0,9.0,Shot,Sam Malinski Wrist Shot saved by Justus Annunen
+2026-11-05 23:01:05,401892658,2026-11-05,nsh,col,in,6:23 - 2nd,2,6:23,2.0,2.0,16.0,9.0,Face Off,Nathan MacKinnon faceoff won against Ryan O'Reilly
+2026-11-05 23:02:05,401892658,2026-11-05,nsh,col,in,5:32 - 2nd,2,5:32,2.0,2.0,16.0,9.0,Face Off,Nathan MacKinnon faceoff won against Ryan O'Reilly
+2026-11-05 23:03:06,401892658,2026-11-05,nsh,col,in,4:54 - 2nd,2,4:54,2.0,2.0,16.0,9.0,Face Off,Steven Stamkos faceoff won against Brock Nelson
+2026-11-05 23:04:05,401892658,2026-11-05,nsh,col,in,4:40 - 2nd,2,4:40,2.0,2.0,16.0,9.0,Stoppage,Off-side
