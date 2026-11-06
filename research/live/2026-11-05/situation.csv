@@ -1210,3 +1210,6 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 23:07:05,401892658,2026-11-05,nsh,col,in,4:13 - 2nd,2,4:13,2.0,2.0,16.0,9.0,Holding,Brent Burns Holding against Adam Edstrom
 2026-11-05 23:08:05,401892658,2026-11-05,nsh,col,in,3:14 - 2nd,2,3:14,2.0,2.0,16.0,11.0,Shot,Mavrik Bourque Backhand saved by Mackenzie Blackwood
 2026-11-05 23:09:05,401892658,2026-11-05,nsh,col,in,1:54 - 2nd,2,1:54,2.0,2.0,16.0,13.0,Shot,Mavrik Bourque Tip-In saved by Mackenzie Blackwood
+2026-11-05 23:10:06,401892658,2026-11-05,nsh,col,in,1:27 - 2nd,2,1:27,2.0,2.0,17.0,13.0,Face Off,Jack Drury faceoff won against Nathan MacKinnon
+2026-11-05 23:11:05,401892658,2026-11-05,nsh,col,in,0:37 - 2nd,2,0:37,2.0,2.0,17.0,13.0,Face Off,Jack Drury faceoff won against Nathan MacKinnon
+2026-11-05 23:12:06,401892658,2026-11-05,nsh,col,in,End of 2nd,2,0:00,2.0,2.0,18.0,13.0,Period End,End of 2nd Period
