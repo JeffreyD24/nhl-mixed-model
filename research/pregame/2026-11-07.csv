@@ -5124,3 +5124,16 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 15:58:48,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,thirdperiod,spread,home,-0.5,150,normal
 2026-11-06 15:58:48,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,thirdperiod,spread,home,0.5,-210,normal
 2026-11-06 15:58:48,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,thirdperiod,spread,away,-0.5,150,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,firstperiod,team_total,home_under,0.5,120,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,firstperiod,team_total,home_over,0.5,-160,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,firstperiod,moneyline,away,0.0,-115,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,firstperiod,spread,home,-0.5,175,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,firstperiod,spread,away,0.5,-230,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Fanatics,firstperiod,team_total,home_over,0.5,-170,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Fanatics,firstperiod,team_total,home_under,0.5,130,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,secondperiod,spread,home,-0.5,160,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,secondperiod,spread,away,0.5,-210,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,thirdperiod,team_total,away_over,0.5,-200,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,thirdperiod,team_total,home_under,0.5,165,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,thirdperiod,team_total,home_over,0.5,-215,normal
+2026-11-06 16:00:58,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,thirdperiod,team_total,away_under,0.5,154,normal
