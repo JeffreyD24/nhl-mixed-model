@@ -289,3 +289,33 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 19:44:05,401892654,2026-11-05,bos,pit,in,3:21 - 1st,1,3:21,2.0,1.0,2.0,7.0,Shot,Casey Mittelstadt Wrist Shot saved by Arturs Silovs
 2026-11-05 19:44:05,401892655,2026-11-05,dal,cbj,in,0:34 - 1st,1,0:34,0.0,0.0,11.0,8.0,Shot,Ryan Lomberg Wrist Shot saved by Casey DeSmith
 2026-11-05 19:44:05,401892656,2026-11-05,van,wpg,in,2:26 - 1st,1,2:26,1.0,3.0,8.0,5.0,Stoppage,Goalie Stopped
+2026-11-05 19:45:05,401892648,2026-11-05,uta,mtl,in,2:50 - 1st,1,2:50,2.0,2.0,4.0,3.0,Goal,"Arber Xhekaj Goal (1), assists: none"
+2026-11-05 19:45:05,401892649,2026-11-05,vgk,det,in,1:08 - 1st,1,1:08,0.0,0.0,7.0,14.0,Face Off,Emmitt Finnie faceoff won against Jack Eichel
+2026-11-05 19:45:05,401892651,2026-11-05,stl,nj,in,End of 1st,1,0:00,0.0,1.0,14.0,3.0,Period End,End of 1st Period
+2026-11-05 19:45:05,401892652,2026-11-05,car,nyi,in,0:09 - 1st,1,0:09,2.0,0.0,10.0,6.0,Shot,Victor Eklund saved by Brandon Bussi
+2026-11-05 19:45:05,401892654,2026-11-05,bos,pit,in,2:54 - 1st,1,2:54,2.0,1.0,3.0,7.0,Face Off,Hendrix Lapierre faceoff won against Fraser Minten
+2026-11-05 19:45:05,401892655,2026-11-05,dal,cbj,in,End of 1st,1,0:00,0.0,0.0,11.0,8.0,Period End,End of 1st Period
+2026-11-05 19:45:05,401892656,2026-11-05,van,wpg,in,2:13 - 1st,1,2:13,1.0,3.0,9.0,5.0,Face Off,Marco Rossi faceoff won against Cole Perfetti
+2026-11-05 19:46:05,401892648,2026-11-05,uta,mtl,in,2:46 - 1st,1,2:46,2.0,2.0,4.0,3.0,Face Off,Kevin Stenlund faceoff won against Jake Evans
+2026-11-05 19:46:05,401892649,2026-11-05,vgk,det,in,0:44 - 1st,1,0:44,0.0,0.0,8.0,14.0,Blocked,Moritz Seider shot blocked by Rasmus Andersson
+2026-11-05 19:46:05,401892650,2026-11-05,chi,tb,in,0:37 - 1st,1,0:37,0.0,2.0,6.0,7.0,Stoppage,Icing
+2026-11-05 19:46:05,401892652,2026-11-05,car,nyi,in,End of 1st,1,0:00,2.0,0.0,10.0,6.0,Period End,End of 1st Period
+2026-11-05 19:46:05,401892654,2026-11-05,bos,pit,in,1:47 - 1st,1,1:47,2.0,1.0,4.0,7.0,Blocked,Erik Karlsson shot blocked by Frederic Brunet
+2026-11-05 19:46:05,401892656,2026-11-05,van,wpg,in,1:26 - 1st,1,1:26,1.0,3.0,9.0,5.0,Face Off,Jacob Quillan faceoff won against Morgan Barron
+2026-11-05 19:47:05,401892648,2026-11-05,uta,mtl,in,2:46 - 1st,1,2:46,2.0,2.0,4.0,3.0,Fighting,Liam O'Brien Fighting against Arber Xhekaj
+2026-11-05 19:47:05,401892649,2026-11-05,vgk,det,in,End of 1st,1,0:00,0.0,0.0,8.0,14.0,Period End,End of 1st Period
+2026-11-05 19:47:05,401892650,2026-11-05,chi,tb,in,0:30 - 1st,1,0:30,0.0,2.0,6.0,7.0,Stoppage,Puck in Netting
+2026-11-05 19:47:05,401892654,2026-11-05,bos,pit,in,1:07 - 1st,1,1:07,2.0,1.0,4.0,7.0,Shot,Elias Lindholm Wrist Shot saved by Arturs Silovs
+2026-11-05 19:47:05,401892656,2026-11-05,van,wpg,in,1:21 - 1st,1,1:21,1.0,3.0,9.0,5.0,Delaying Game - Puck over Glass,Zeev Buium Delaying Game - Puck over glass
+2026-11-05 19:48:05,401892648,2026-11-05,uta,mtl,in,2:08 - 1st,1,2:08,2.0,2.0,4.0,3.0,Blocked,Chris Kreider shot blocked by Kevin Stenlund
+2026-11-05 19:48:05,401892650,2026-11-05,chi,tb,in,End of 1st,1,0:00,0.0,2.0,6.0,7.0,Face Off,Brayden Point faceoff won against Frank Nazar
+2026-11-05 19:48:05,401892654,2026-11-05,bos,pit,in,0:24 - 1st,1,0:24,3.0,1.0,4.0,7.0,Face Off,Mark Kastelic faceoff won against Ben Kindel
+2026-11-05 19:48:05,401892656,2026-11-05,van,wpg,in,0:32 - 1st,1,0:32,1.0,3.0,9.0,5.0,Missed,Cole Perfetti Wrist Shot Wide Left
+2026-11-05 19:49:05,401892648,2026-11-05,uta,mtl,in,1:17 - 1st,1,1:17,2.0,2.0,4.0,3.0,Shot,Chris Kreider Snap Shot saved by Sebastian Cossa
+2026-11-05 19:49:05,401892650,2026-11-05,chi,tb,in,End of 1st,1,0:00,0.0,2.0,6.0,7.0,Period End,End of 1st Period
+2026-11-05 19:49:05,401892652,2026-11-05,car,nyi,in,End of 1st,1,0:00,2.0,0.0,11.0,6.0,Period End,End of 1st Period
+2026-11-05 19:49:05,401892654,2026-11-05,bos,pit,in,End of 1st,1,0:00,3.0,1.0,4.0,7.0,Blocked,Justin Brazeau shot blocked by William Borgen
+2026-11-05 19:49:05,401892656,2026-11-05,van,wpg,in,End of 1st,1,0:00,1.0,3.0,9.0,5.0,Period End,End of 1st Period
+2026-11-05 19:50:05,401892648,2026-11-05,uta,mtl,in,0:42 - 1st,1,0:42,2.0,2.0,6.0,3.0,Face Off,Phillip Danault faceoff won against Kevin Stenlund
+2026-11-05 19:50:05,401892654,2026-11-05,bos,pit,in,End of 1st,1,0:00,3.0,1.0,4.0,7.0,Period End,End of 1st Period
+2026-11-05 19:50:05,401892655,2026-11-05,dal,cbj,in,End of 1st,1,0:00,0.0,0.0,10.0,7.0,Period End,End of 1st Period
