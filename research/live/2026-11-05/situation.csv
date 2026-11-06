@@ -2,3 +2,45 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 19:07:05,401892651,2026-11-05,stl,nj,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
 2026-11-05 19:07:05,401892652,2026-11-05,car,nyi,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
 2026-11-05 19:07:05,401892655,2026-11-05,dal,cbj,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-05 19:09:05,401892649,2026-11-05,vgk,det,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-05 19:09:05,401892653,2026-11-05,phi,nyr,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-05 19:09:05,401892654,2026-11-05,bos,pit,in,19:44 - 1st,1,19:44,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-05 19:10:05,401892649,2026-11-05,vgk,det,in,19:24 - 1st,1,19:24,0.0,0.0,1.0,0.0,Stoppage,Goalie Stopped
+2026-11-05 19:10:05,401892650,2026-11-05,chi,tb,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-05 19:10:05,401892651,2026-11-05,stl,nj,in,19:03 - 1st,1,19:03,0.0,0.0,0.0,1.0,Shot,Dylan Holloway Wrist Shot saved by Connor Hellebuyck
+2026-11-05 19:10:05,401892652,2026-11-05,car,nyi,in,19:03 - 1st,1,19:03,0.0,0.0,0.0,0.0,Face Off,Bo Horvat faceoff won against Sebastian Aho
+2026-11-05 19:10:05,401892653,2026-11-05,phi,nyr,in,19:20 - 1st,1,19:20,0.0,0.0,0.0,1.0,Stoppage,Goalie Stopped
+2026-11-05 19:10:05,401892654,2026-11-05,bos,pit,in,19:10 - 1st,1,19:10,0.0,0.0,0.0,0.0,Face Off,Sidney Crosby faceoff won against Pavel Zacha
+2026-11-05 19:10:05,401892655,2026-11-05,dal,cbj,in,19:22 - 1st,1,19:22,0.0,0.0,0.0,0.0,Face Off,Sean Monahan faceoff won against Wyatt Johnston
+2026-11-05 19:10:05,401892656,2026-11-05,van,wpg,in,19:12 - 1st,1,19:12,0.0,0.0,1.0,0.0,Shot,Isak Rosén Snap Shot saved by Leevi Merilainen
+2026-11-05 19:11:05,401892648,2026-11-05,uta,mtl,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-05 19:11:05,401892649,2026-11-05,vgk,det,in,19:13 - 1st,1,19:13,0.0,0.0,2.0,0.0,Face Off,Emmitt Finnie faceoff won against William Karlsson
+2026-11-05 19:11:05,401892651,2026-11-05,stl,nj,in,18:17 - 1st,1,18:17,0.0,0.0,0.0,1.0,Stoppage,Puck in Netting
+2026-11-05 19:11:05,401892652,2026-11-05,car,nyi,in,18:54 - 1st,1,18:54,1.0,0.0,0.0,0.0,Goal,"Logan Stankoven Goal (11) Snap Shot, assists: Jackson Blake (14), K'Andre Miller (4)"
+2026-11-05 19:11:05,401892653,2026-11-05,phi,nyr,in,18:40 - 1st,1,18:40,0.0,0.0,0.0,1.0,Blocked,Marcus Pettersson shot blocked by Oliver Bonk
+2026-11-05 19:11:05,401892654,2026-11-05,bos,pit,in,18:30 - 1st,1,18:30,0.0,0.0,0.0,0.0,Stoppage,Off-side
+2026-11-05 19:11:05,401892655,2026-11-05,dal,cbj,in,18:51 - 1st,1,18:51,0.0,0.0,0.0,0.0,Penalty Shot Infraction,Tyler Myers Minor
+2026-11-05 19:11:05,401892656,2026-11-05,van,wpg,in,18:40 - 1st,1,18:40,0.0,0.0,1.0,0.0,Face Off,Elias Pettersson faceoff won against Mark Scheifele
+2026-11-05 19:12:05,401892649,2026-11-05,vgk,det,in,18:54 - 1st,1,18:54,0.0,0.0,2.0,1.0,Face Off,William Karlsson faceoff won against J.T. Compher
+2026-11-05 19:12:05,401892651,2026-11-05,stl,nj,in,17:47 - 1st,1,17:47,0.0,0.0,1.0,1.0,Shot,Declan Chisholm Snap Shot saved by Jordan Binnington
+2026-11-05 19:12:05,401892652,2026-11-05,car,nyi,in,18:31 - 1st,1,18:31,1.0,0.0,1.0,0.0,Stoppage,Goalie Stopped
+2026-11-05 19:12:05,401892653,2026-11-05,phi,nyr,in,17:45 - 1st,1,17:45,0.0,0.0,1.0,1.0,Missed,Alberts Smits Missed Shot High and Wide Left
+2026-11-05 19:12:05,401892654,2026-11-05,bos,pit,in,18:00 - 1st,1,18:00,0.0,0.0,0.0,0.0,Stoppage,Goalie Stopped
+2026-11-05 19:12:05,401892655,2026-11-05,dal,cbj,in,18:23 - 1st,1,18:23,0.0,0.0,0.0,0.0,Face Off,Justin Hryckowian faceoff won against Charlie Coyle
+2026-11-05 19:12:05,401892656,2026-11-05,van,wpg,in,18:03 - 1st,1,18:03,0.0,0.0,1.0,0.0,Stoppage,Hand Pass
+2026-11-05 19:13:05,401892649,2026-11-05,vgk,det,in,18:03 - 1st,1,18:03,0.0,0.0,2.0,1.0,Missed,Nate Danielson Snap Shot Wide Left
+2026-11-05 19:13:05,401892651,2026-11-05,stl,nj,in,17:01 - 1st,1,17:01,0.0,0.0,2.0,1.0,Face Off,Robert Thomas faceoff won against Evan Rodrigues
+2026-11-05 19:13:05,401892652,2026-11-05,car,nyi,in,18:02 - 1st,1,18:02,1.0,0.0,2.0,1.0,Face Off,Casey Cizikas faceoff won against Mark Jankowski
+2026-11-05 19:13:05,401892653,2026-11-05,phi,nyr,in,16:23 - 1st,1,16:23,0.0,0.0,2.0,1.0,Missed,Alberts Smits Missed Shot High and Wide Left
+2026-11-05 19:13:05,401892654,2026-11-05,bos,pit,in,17:58 - 1st,1,17:58,0.0,0.0,1.0,2.0,Missed,David Pastrnak Wrist Shot Wide Left
+2026-11-05 19:13:05,401892655,2026-11-05,dal,cbj,in,17:37 - 1st,1,17:37,0.0,0.0,0.0,0.0,Blocked,Ivan Provorov shot blocked by Esa Lindell
+2026-11-05 19:13:05,401892656,2026-11-05,van,wpg,in,17:28 - 1st,1,17:28,0.0,0.0,2.0,0.0,Face Off,Elias Pettersson faceoff won against Gabriel Vilardi
+2026-11-05 19:14:05,401892648,2026-11-05,uta,mtl,in,20:00 - 1st,1,20:00,0.0,0.0,,,Face Off,Nick Suzuki faceoff won against Barrett Hayton
+2026-11-05 19:14:05,401892649,2026-11-05,vgk,det,in,17:16 - 1st,1,17:16,0.0,0.0,2.0,1.0,Missed,Nate Danielson Snap Shot Wide Left
+2026-11-05 19:14:05,401892650,2026-11-05,chi,tb,in,19:33 - 1st,1,19:33,0.0,0.0,1.0,0.0,Stoppage,Goalie Stopped
+2026-11-05 19:14:05,401892651,2026-11-05,stl,nj,in,16:56 - 1st,1,16:56,0.0,0.0,2.0,1.0,Face Off,Nico Hischier faceoff won against Robert Thomas
+2026-11-05 19:14:05,401892652,2026-11-05,car,nyi,in,17:04 - 1st,1,17:04,1.0,0.0,2.0,1.0,Missed,Bo Horvat Missed Shot Wide Right
+2026-11-05 19:14:05,401892653,2026-11-05,phi,nyr,in,15:47 - 1st,1,15:47,0.0,0.0,2.0,1.0,Blocked,Adam Fox shot blocked by Tyson Foerster
+2026-11-05 19:14:05,401892654,2026-11-05,bos,pit,in,16:48 - 1st,1,16:48,0.0,0.0,0.0,2.0,Missed,Samuel Girard Missed Shot Wide Right
+2026-11-05 19:14:05,401892655,2026-11-05,dal,cbj,in,17:05 - 1st,1,17:05,0.0,0.0,0.0,0.0,Missed,Zach Werenski Wrist Shot Hit Right Post
+2026-11-05 19:14:05,401892656,2026-11-05,van,wpg,in,16:48 - 1st,1,16:48,0.0,0.0,2.0,0.0,Missed,Cole Perfetti Tip-In Wide Left
