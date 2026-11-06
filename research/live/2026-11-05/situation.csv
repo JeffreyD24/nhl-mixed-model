@@ -1243,3 +1243,9 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 23:58:05,401892658,2026-11-05,nsh,col,in,5:24 - 3rd,3,5:24,2.0,2.0,25.0,21.0,Missed,Gabriel Landeskog Tip-In
 2026-11-05 23:59:06,401892658,2026-11-05,nsh,col,in,5:14 - 3rd,3,5:14,2.0,2.0,25.0,21.0,Stoppage,Objects on Ice
 2026-11-06 00:01:06,401892658,2026-11-05,nsh,col,in,4:43 - 3rd,3,4:43,2.0,2.0,25.0,21.0,Face Off,Fedor Svechkov faceoff won against Jack Drury
+2026-11-06 00:02:05,401892658,2026-11-05,nsh,col,in,4:20 - 3rd,3,4:20,2.0,2.0,25.0,21.0,Face Off,Nathan MacKinnon faceoff won against Alexander Kerfoot
+2026-11-06 00:03:05,401892658,2026-11-05,nsh,col,in,3:38 - 3rd,3,3:38,2.0,2.0,26.0,21.0,Stoppage,Goalie Stopped
+2026-11-06 00:04:05,401892658,2026-11-05,nsh,col,in,3:07 - 3rd,3,3:07,2.0,2.0,27.0,21.0,Face Off,Nazem Kadri faceoff won against Steven Stamkos
+2026-11-06 00:05:06,401892658,2026-11-05,nsh,col,in,2:43 - 3rd,3,2:43,2.0,2.0,27.0,21.0,Face Off,Jack Drury faceoff won against Nazem Kadri
+2026-11-06 00:06:05,401892658,2026-11-05,nsh,col,in,2:20 - 3rd,3,2:20,2.0,2.0,27.0,21.0,Blocked,Cale Makar shot blocked by Nathan MacKinnon
+2026-11-06 00:07:05,401892658,2026-11-05,nsh,col,in,1:18 - 3rd,3,1:18,2.0,2.0,27.0,21.0,Missed,Martin Necas Missed Shot Wide Right
