@@ -191,3 +191,51 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 19:32:05,401892654,2026-11-05,bos,pit,in,8:26 - 1st,1,8:26,0.0,1.0,0.0,4.0,Stoppage,On-Ice Official
 2026-11-05 19:32:05,401892655,2026-11-05,dal,cbj,in,8:23 - 1st,1,8:23,0.0,0.0,8.0,6.0,Roughing,Valeri Nichushkin Roughing against Lian Bichsel
 2026-11-05 19:32:05,401892656,2026-11-05,van,wpg,in,9:08 - 1st,1,9:08,1.0,2.0,5.0,5.0,Shot,Brayden Yager Tip-In saved by Leevi Merilainen
+2026-11-05 19:33:05,401892648,2026-11-05,uta,mtl,in,7:12 - 1st,1,7:12,2.0,0.0,1.0,3.0,Stoppage,Goalie Stopped
+2026-11-05 19:33:05,401892649,2026-11-05,vgk,det,in,7:23 - 1st,1,7:23,0.0,0.0,5.0,10.0,Face Off,Andrew Copp faceoff won against Brett Howden
+2026-11-05 19:33:05,401892650,2026-11-05,chi,tb,in,6:59 - 1st,1,6:59,0.0,1.0,5.0,2.0,Missed,Ryan Donato Missed Shot Wide Left
+2026-11-05 19:33:05,401892651,2026-11-05,stl,nj,in,6:13 - 1st,1,6:13,0.0,1.0,11.0,2.0,Hit,Ross Johnston hit Anthony Mantha
+2026-11-05 19:33:05,401892652,2026-11-05,car,nyi,in,6:03 - 1st,1,6:03,2.0,0.0,5.0,3.0,Stoppage,Puck in Benches
+2026-11-05 19:33:05,401892653,2026-11-05,phi,nyr,in,5:11 - 1st,1,5:11,0.0,1.0,6.0,6.0,Blocked,Oliver Bonk shot blocked by Noah Laba
+2026-11-05 19:33:05,401892654,2026-11-05,bos,pit,in,8:07 - 1st,1,8:07,0.0,1.0,0.0,5.0,Missed,Missed Shot
+2026-11-05 19:33:05,401892655,2026-11-05,dal,cbj,in,8:23 - 1st,1,8:23,0.0,0.0,8.0,6.0,Stoppage,TV Timeout
+2026-11-05 19:33:05,401892656,2026-11-05,van,wpg,in,8:15 - 1st,1,8:15,1.0,2.0,7.0,4.0,Face Off,Elias Pettersson faceoff won against Mark Scheifele
+2026-11-05 19:34:06,401892648,2026-11-05,uta,mtl,in,7:12 - 1st,1,7:12,2.0,0.0,2.0,3.0,Stoppage,Goalie Stopped
+2026-11-05 19:34:06,401892649,2026-11-05,vgk,det,in,6:59 - 1st,1,6:59,0.0,0.0,5.0,9.0,Shot,Victor Olofsson Snap Shot saved by Daniil Tarasov
+2026-11-05 19:34:06,401892650,2026-11-05,chi,tb,in,6:04 - 1st,1,6:04,0.0,1.0,5.0,2.0,Shot,Charle-Edouard D'Astous saved by Arvid Soderblom
+2026-11-05 19:34:06,401892651,2026-11-05,stl,nj,in,5:28 - 1st,1,5:28,0.0,1.0,11.0,2.0,Hit,Ross Johnston hit Anthony Mantha
+2026-11-05 19:34:06,401892652,2026-11-05,car,nyi,in,5:57 - 1st,1,5:57,2.0,0.0,5.0,3.0,Stoppage,Puck in Netting
+2026-11-05 19:34:06,401892653,2026-11-05,phi,nyr,in,5:01 - 1st,1,5:01,0.0,1.0,6.0,7.0,Stoppage,Puck in Netting
+2026-11-05 19:34:06,401892654,2026-11-05,bos,pit,in,7:44 - 1st,1,7:44,1.0,1.0,0.0,5.0,Goal,"Pavel Zacha Goal (4) Wrist Shot, assists: David Pastrnak (13), JJ Peterka (8)"
+2026-11-05 19:34:06,401892655,2026-11-05,dal,cbj,in,8:17 - 1st,1,8:17,0.0,0.0,8.0,6.0,Face Off,Adam Fantilli faceoff won against Wyatt Johnston
+2026-11-05 19:34:06,401892656,2026-11-05,van,wpg,in,7:49 - 1st,1,7:49,1.0,2.0,7.0,4.0,Stoppage,Puck in Netting
+2026-11-05 19:35:05,401892649,2026-11-05,vgk,det,in,6:35 - 1st,1,6:35,0.0,0.0,5.0,11.0,Face Off,Emmitt Finnie faceoff won against Nic Dowd
+2026-11-05 19:35:05,401892650,2026-11-05,chi,tb,in,5:14 - 1st,1,5:14,0.0,1.0,6.0,2.0,Stoppage,Puck in Benches
+2026-11-05 19:35:05,401892651,2026-11-05,stl,nj,in,4:30 - 1st,1,4:30,0.0,1.0,11.0,2.0,Missed,Cam Fowler Wrist Shot Hit Left Post
+2026-11-05 19:35:05,401892652,2026-11-05,car,nyi,in,5:57 - 1st,1,5:57,2.0,0.0,6.0,3.0,Stoppage,Puck in Netting
+2026-11-05 19:35:05,401892654,2026-11-05,bos,pit,in,7:24 - 1st,1,7:24,1.0,1.0,0.0,5.0,Face Off,Sean Kuraly faceoff won against Hendrix Lapierre
+2026-11-05 19:35:05,401892655,2026-11-05,dal,cbj,in,7:03 - 1st,1,7:03,0.0,0.0,8.0,7.0,Shot,Thomas Harley Wrist Shot saved by Cam Talbot
+2026-11-05 19:35:05,401892656,2026-11-05,van,wpg,in,6:44 - 1st,1,6:44,1.0,2.0,7.0,4.0,Face Off,Jacob Quillan faceoff won against Mark Scheifele
+2026-11-05 19:36:05,401892648,2026-11-05,uta,mtl,in,6:59 - 1st,1,6:59,2.0,0.0,2.0,3.0,Stoppage,Icing
+2026-11-05 19:36:05,401892649,2026-11-05,vgk,det,in,5:44 - 1st,1,5:44,0.0,0.0,5.0,11.0,Face Off,Emmitt Finnie faceoff won against Nic Dowd
+2026-11-05 19:36:05,401892651,2026-11-05,stl,nj,in,4:30 - 1st,1,4:30,0.0,1.0,11.0,2.0,Stoppage,Puck Frozen - Goalie
+2026-11-05 19:36:05,401892652,2026-11-05,car,nyi,in,5:57 - 1st,1,5:57,2.0,0.0,6.0,4.0,Stoppage,Puck in Netting
+2026-11-05 19:36:05,401892654,2026-11-05,bos,pit,in,7:00 - 1st,1,7:00,1.0,1.0,0.0,6.0,Missed,Elias Lindholm Wrist Shot Wide Left
+2026-11-05 19:36:05,401892655,2026-11-05,dal,cbj,in,6:14 - 1st,1,6:14,0.0,0.0,8.0,7.0,Missed,Jason Robertson Wrist Shot Wide Left
+2026-11-05 19:36:05,401892656,2026-11-05,van,wpg,in,6:30 - 1st,1,6:30,1.0,2.0,8.0,4.0,Stoppage,Puck in Benches
+2026-11-05 19:37:05,401892648,2026-11-05,uta,mtl,in,6:13 - 1st,1,6:13,2.0,0.0,2.0,3.0,Face Off,Vincent Trocheck faceoff won against Nick Suzuki
+2026-11-05 19:37:05,401892649,2026-11-05,vgk,det,in,5:40 - 1st,1,5:40,0.0,0.0,5.0,11.0,Stoppage,TV Timeout
+2026-11-05 19:37:05,401892651,2026-11-05,stl,nj,in,4:30 - 1st,1,4:30,0.0,1.0,11.0,3.0,Stoppage,Puck Frozen - Goalie
+2026-11-05 19:37:05,401892652,2026-11-05,car,nyi,in,5:26 - 1st,1,5:26,2.0,0.0,6.0,4.0,Face Off,Brayden Schenn faceoff won against Jesperi Kotkaniemi
+2026-11-05 19:37:05,401892653,2026-11-05,phi,nyr,in,4:00 - 1st,1,4:00,0.0,1.0,6.0,7.0,Blocked,Marcus Pettersson shot blocked by Jamie Drysdale
+2026-11-05 19:37:05,401892654,2026-11-05,bos,pit,in,6:31 - 1st,1,6:31,1.0,1.0,0.0,6.0,Face Off,Ben Kindel faceoff won against Fraser Minten
+2026-11-05 19:37:05,401892655,2026-11-05,dal,cbj,in,5:04 - 1st,1,5:04,0.0,0.0,8.0,7.0,Blocked,Zach Werenski shot blocked by Justin Hryckowian
+2026-11-05 19:37:05,401892656,2026-11-05,van,wpg,in,5:56 - 1st,1,5:56,1.0,2.0,8.0,4.0,Blocked,Dawson Mercer shot blocked by Filip Hronek
+2026-11-05 19:38:05,401892648,2026-11-05,uta,mtl,in,5:19 - 1st,1,5:19,2.0,0.0,2.0,3.0,Missed,Kevin Stenlund Snap Shot Wide Left
+2026-11-05 19:38:05,401892650,2026-11-05,chi,tb,in,4:42 - 1st,1,4:42,0.0,1.0,6.0,2.0,Face Off,Zemgus Girgensons faceoff won against Connor Bedard
+2026-11-05 19:38:05,401892651,2026-11-05,stl,nj,in,3:53 - 1st,1,3:53,0.0,1.0,11.0,3.0,Stoppage,
+2026-11-05 19:38:05,401892652,2026-11-05,car,nyi,in,4:51 - 1st,1,4:51,2.0,0.0,7.0,4.0,Shot,Victor Eklund saved by Brandon Bussi
+2026-11-05 19:38:05,401892653,2026-11-05,phi,nyr,in,3:01 - 1st,1,3:01,0.0,1.0,6.0,7.0,Blocked,Marcus Pettersson shot blocked by Jamie Drysdale
+2026-11-05 19:38:05,401892654,2026-11-05,bos,pit,in,5:53 - 1st,1,5:53,1.0,1.0,0.0,6.0,Face Off,Blake Lizotte faceoff won against Pavel Zacha
+2026-11-05 19:38:05,401892655,2026-11-05,dal,cbj,in,4:50 - 1st,1,4:50,0.0,0.0,8.0,7.0,Stoppage,Puck in Netting
+2026-11-05 19:38:05,401892656,2026-11-05,van,wpg,in,5:05 - 1st,1,5:05,1.0,2.0,8.0,4.0,Face Off,Elias Pettersson faceoff won against Mark Scheifele
