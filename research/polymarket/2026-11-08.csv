@@ -1295,3 +1295,4 @@ seen_at_et,game_id,date,away,home,market,line_home,long_side,slug,bid,ask,bid_de
 2026-11-06 16:27,401892677,2026-11-08,tb,wpg,moneyline,,away,aec-nhl-tb-wpg-2026-11-08,0.56,0.58,9.0,12.0,0.43,0.59,8.24,6.24,team
 2026-11-06 16:29,401892677,2026-11-08,tb,wpg,moneyline,,away,aec-nhl-tb-wpg-2026-11-08,0.57,0.58,9.0,12.0,0.425,0.59,8.24,6.24,team
 2026-11-06 16:39,401892675,2026-11-08,vgk,buf,moneyline,,away,aec-nhl-veg-buf-2026-11-08,0.5,0.51,11.0,8.0,0.495,0.5,49.43,13.41,team
+2026-11-06 16:44,401892675,2026-11-08,vgk,buf,moneyline,,away,aec-nhl-veg-buf-2026-11-08,0.5,0.51,10.0,8.0,0.495,0.5,49.43,13.41,team
