@@ -1213,3 +1213,6 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 23:10:06,401892658,2026-11-05,nsh,col,in,1:27 - 2nd,2,1:27,2.0,2.0,17.0,13.0,Face Off,Jack Drury faceoff won against Nathan MacKinnon
 2026-11-05 23:11:05,401892658,2026-11-05,nsh,col,in,0:37 - 2nd,2,0:37,2.0,2.0,17.0,13.0,Face Off,Jack Drury faceoff won against Nathan MacKinnon
 2026-11-05 23:12:06,401892658,2026-11-05,nsh,col,in,End of 2nd,2,0:00,2.0,2.0,18.0,13.0,Period End,End of 2nd Period
+2026-11-05 23:30:05,401892658,2026-11-05,nsh,col,in,20:00 - 3rd,3,20:00,2.0,2.0,18.0,13.0,Period End,End of 2nd Period
+2026-11-05 23:31:06,401892658,2026-11-05,nsh,col,in,19:42 - 3rd,3,19:42,2.0,2.0,18.0,13.0,Face Off,Ryan O'Reilly faceoff won against Nicolas Roy
+2026-11-05 23:32:05,401892658,2026-11-05,nsh,col,in,19:15 - 3rd,3,19:15,2.0,2.0,18.0,14.0,Face Off,Nazem Kadri faceoff won against Steven Stamkos
