@@ -2273,3 +2273,11 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 22:18:20,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Fanatics,thirdperiod,moneyline,away,0.0,-130,normal
 2026-11-05 22:18:20,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Fanatics,thirdperiod,total,over,2.5,140,normal
 2026-11-05 22:18:20,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Fanatics,thirdperiod,total,under,2.5,-190,normal
+2026-11-05 22:22:14,293560,2026-11-06,2026-11-06 19:00,cbj,buf,Consensus,event,moneyline,home,0.0,-177,normal
+2026-11-05 22:22:14,293560,2026-11-06,2026-11-06 19:00,cbj,buf,Consensus,event,spread,home,-1.5,138,normal
+2026-11-05 22:22:14,293560,2026-11-06,2026-11-06 19:00,cbj,buf,Consensus,event,spread,away,1.5,-166,normal
+2026-11-05 22:22:14,293560,2026-11-06,2026-11-06 19:00,cbj,buf,Consensus,event,total,over,6.5,-102,normal
+2026-11-05 22:22:14,293560,2026-11-06,2026-11-06 19:00,cbj,buf,FanDuel,event,moneyline,home,0.0,-176,normal
+2026-11-05 22:22:14,293560,2026-11-06,2026-11-06 19:00,cbj,buf,FanDuel,event,spread,away,1.5,-168,normal
+2026-11-05 22:22:14,293560,2026-11-06,2026-11-06 19:00,cbj,buf,FanDuel,event,spread,home,-1.5,136,normal
+2026-11-05 22:22:14,293561,2026-11-06,2026-11-06 20:00,sj,min,DraftKings,firstperiod,moneyline,away,0.0,140,normal
