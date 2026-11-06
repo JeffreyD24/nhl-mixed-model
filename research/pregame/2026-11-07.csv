@@ -4887,3 +4887,11 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 15:35:43,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Fanatics,thirdperiod,total,under,1.5,145,normal
 2026-11-06 15:35:43,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Fanatics,thirdperiod,team_total,away_over,0.5,-235,normal
 2026-11-06 15:35:43,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Fanatics,thirdperiod,team_total,away_under,0.5,175,normal
+2026-11-06 15:37:36,293565,2026-11-07,2026-11-07 17:00,nyr,sea,BetRivers,event,moneyline,away,0.0,-122,normal
+2026-11-06 15:37:36,293565,2026-11-07,2026-11-07 17:00,nyr,sea,BetRivers,event,moneyline,home,0.0,104,normal
+2026-11-06 15:37:36,293565,2026-11-07,2026-11-07 17:00,nyr,sea,BetRivers,event,spread,away,-1.5,200,normal
+2026-11-06 15:37:36,293565,2026-11-07,2026-11-07 17:00,nyr,sea,BetRivers,event,spread,home,1.5,-265,normal
+2026-11-06 15:37:36,293566,2026-11-07,2026-11-07 19:00,uta,ott,BetRivers,event,moneyline,away,0.0,-118,normal
+2026-11-06 15:37:36,293566,2026-11-07,2026-11-07 19:00,uta,ott,BetRivers,event,moneyline,home,0.0,-103,normal
+2026-11-06 15:37:36,293566,2026-11-07,2026-11-07 19:00,uta,ott,BetRivers,event,spread,away,-1.5,215,normal
+2026-11-06 15:37:36,293566,2026-11-07,2026-11-07 19:00,uta,ott,BetRivers,event,spread,home,1.5,-278,normal
