@@ -30310,3 +30310,13 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-05 19:22:44,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,secondperiod,team_total,away_over,0.5,-166,normal
 2026-11-05 19:22:44,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,secondperiod,spread,away,0.5,-145,normal
 2026-11-05 19:22:44,293559,2026-11-05,2026-11-05 21:30,nsh,col,Consensus,thirdperiod,team_total,away_under,0.5,127,normal
+2026-11-05 19:27:47,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,event,spread,home,-1.5,118,normal
+2026-11-05 19:27:47,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,event,spread,away,1.5,-144,normal
+2026-11-05 19:27:47,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,firstperiod,spread,away,0.5,-164,normal
+2026-11-05 19:27:47,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,firstperiod,spread,home,-0.5,128,normal
+2026-11-05 19:27:47,293557,2026-11-05,2026-11-05 20:00,ana,edm,FanDuel,secondperiod,spread,away,0.5,-154,normal
+2026-11-05 19:27:47,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,secondperiod,spread,home,-0.5,110,normal
+2026-11-05 19:27:47,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,secondperiod,spread,away,0.5,-140,normal
+2026-11-05 19:27:47,293557,2026-11-05,2026-11-05 20:00,ana,edm,FanDuel,thirdperiod,spread,home,-0.5,102,normal
+2026-11-05 19:27:47,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,thirdperiod,spread,home,-0.5,-102,normal
+2026-11-05 19:27:47,293559,2026-11-05,2026-11-05 21:30,nsh,col,FanDuel,thirdperiod,spread,away,0.5,-126,normal
