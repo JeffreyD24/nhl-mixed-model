@@ -1540,3 +1540,16 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 12:45:58,293573,2026-11-07,2026-11-07 21:00,pit,la,Fanatics,thirdperiod,spread,home,-0.5,135,normal
 2026-11-06 12:45:58,293573,2026-11-07,2026-11-07 21:00,pit,la,Fanatics,thirdperiod,total,under,2.5,-180,normal
 2026-11-06 12:45:58,293573,2026-11-07,2026-11-07 21:00,pit,la,Fanatics,thirdperiod,total,over,2.5,135,normal
+2026-11-06 12:47:41,293567,2026-11-07,2026-11-07 19:00,mtl,tor,Consensus,event,spread,home,1.5,-250,normal
+2026-11-06 12:47:41,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,event,moneyline,home,0.0,-105,normal
+2026-11-06 12:47:41,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,event,moneyline,away,0.0,-115,normal
+2026-11-06 12:47:41,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,event,spread,home,1.5,-245,normal
+2026-11-06 12:47:41,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,event,spread,away,-1.5,200,normal
+2026-11-06 12:47:41,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,event,total,under,6.5,-112,normal
+2026-11-06 12:47:41,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,event,total,over,6.5,-108,normal
+2026-11-06 12:47:41,293571,2026-11-07,2026-11-07 20:00,chi,car,DraftKings,event,moneyline,home,0.0,-395,normal
+2026-11-06 12:47:41,293571,2026-11-07,2026-11-07 20:00,chi,car,DraftKings,event,moneyline,away,0.0,310,normal
+2026-11-06 12:47:41,293571,2026-11-07,2026-11-07 20:00,chi,car,DraftKings,event,spread,home,-2.5,-102,normal
+2026-11-06 12:47:41,293571,2026-11-07,2026-11-07 20:00,chi,car,DraftKings,event,spread,away,2.5,-118,normal
+2026-11-06 12:47:41,293571,2026-11-07,2026-11-07 20:00,chi,car,DraftKings,event,total,under,6.5,-130,normal
+2026-11-06 12:47:41,293571,2026-11-07,2026-11-07 20:00,chi,car,DraftKings,event,total,over,6.5,110,normal
