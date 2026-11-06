@@ -25,6 +25,22 @@ REMIND_HOURS = (6, 20)              #   reminders 6 AM - 8 PM ET only (Jeffrey, 
 REMIND_GAPS = ((24, 240), (6, 120), (2, 60))   # Nov 4, 2026: reminders spaced by time to start: 24h+ every 4 h, 6-24 h every 2 h,
                                               #   2-6 h hourly, under 2 h every REMIND_EVERY_MIN (an opener alerted the day before
                                               #   no longer sends ~25 reminders)
+
+def ntfy_open(req, tries=4):
+    """urlopen for ntfy pushes with retries (Nov 6, 2026): ntfy.sh answers HTTP 429 to bursts, and a refused push used to be lost.
+    Retries after 5, 15, 30 s on 429 / 5xx / network errors; the last error is raised as before."""
+    import time, urllib.error
+    for i in range(tries):
+        try:
+            return urllib.request.urlopen(req, timeout=20)
+        except urllib.error.HTTPError as e:
+            if e.code != 429 and e.code < 500 or i == tries - 1: raise
+            print(f"ntfy refused (HTTP {e.code}); retrying")
+        except OSError:
+            if i == tries - 1: raise
+            print("ntfy unreachable; retrying")
+        time.sleep((5, 15, 30)[min(i, 2)])
+
 def remind_gap_min(tip, now):
     try: h = (pd.Timestamp(tip) - now).total_seconds() / 3600
     except Exception: return REMIND_EVERY_MIN
@@ -170,7 +186,7 @@ def notify(title, body, priority="high", tags="ice_hockey", link=None, dk=None, 
     req = urllib.request.Request(f"https://ntfy.sh/{topic}", data=body.encode("utf-8"), method="POST",
                                  headers={"Title": title.encode("ascii", "ignore").decode(), "Priority": priority, "Tags": tags,
                                           **({"Actions": actions} if actions else {})})
-    with urllib.request.urlopen(req, timeout=20) as resp:
+    with ntfy_open(req) as resp:
         try: mid = json.loads(resp.read()).get("id")
         except Exception: mid = None
         print(f"ntfy accepted (HTTP {resp.status}, id {mid}, {len(body.encode('utf-8'))} bytes): {title[:70]}")
