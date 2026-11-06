@@ -357,3 +357,49 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 20:07:05,401892653,2026-11-05,phi,nyr,in,16:26 - 2nd,2,16:26,0.0,1.0,9.0,10.0,Shot,Cole Knuble saved by Dylan Garand
 2026-11-05 20:07:05,401892655,2026-11-05,dal,cbj,in,17:10 - 2nd,2,17:10,0.0,0.0,10.0,9.0,Blocked,Thomas Harley shot blocked by Jake Christiansen
 2026-11-05 20:07:05,401892657,2026-11-05,ana,edm,in,20:00 - 1st,1,20:00,0.0,0.0,,,,
+2026-11-05 20:08:05,401892649,2026-11-05,vgk,det,in,17:59 - 2nd,2,17:59,0.0,0.0,8.0,15.0,Missed,Emmitt Finnie Missed Shot Wide Left
+2026-11-05 20:08:05,401892650,2026-11-05,chi,tb,in,18:50 - 2nd,2,18:50,0.0,2.0,6.0,6.0,Stoppage,High Stick
+2026-11-05 20:08:05,401892651,2026-11-05,stl,nj,in,17:55 - 2nd,2,17:55,0.0,1.0,15.0,5.0,Instigator,Timo Meier Instigator against Jake Neighbours
+2026-11-05 20:08:05,401892652,2026-11-05,car,nyi,in,16:45 - 2nd,2,16:45,2.0,0.0,11.0,11.0,Shot,Shayne Gostisbehere saved by Semyon Varlamov
+2026-11-05 20:08:05,401892653,2026-11-05,phi,nyr,in,14:39 - 2nd,2,14:39,0.0,1.0,10.0,14.0,Takeaway,Takeaway by Noah Cates
+2026-11-05 20:08:05,401892654,2026-11-05,bos,pit,in,18:30 - 2nd,2,18:30,3.0,1.0,4.0,9.0,Shot,Spencer Stastney Wrist Shot saved by Michael DiPietro
+2026-11-05 20:08:05,401892655,2026-11-05,dal,cbj,in,15:55 - 2nd,2,15:55,0.0,0.0,11.0,9.0,Shot,Denton Mateychuk Wrist Shot saved by Casey DeSmith
+2026-11-05 20:08:05,401892656,2026-11-05,van,wpg,in,19:12 - 2nd,2,19:12,1.0,3.0,9.0,7.0,Shot,Brock Boeser Wrist Shot saved by Stuart Skinner
+2026-11-05 20:08:05,401892657,2026-11-05,ana,edm,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-05 20:09:05,401892648,2026-11-05,uta,mtl,in,20:00 - 2nd,2,20:00,2.0,2.0,6.0,3.0,Period End,End of 1st Period
+2026-11-05 20:09:05,401892649,2026-11-05,vgk,det,in,17:25 - 2nd,2,17:25,0.0,0.0,8.0,15.0,Missed,Emmitt Finnie Missed Shot Failed Bank Attempt
+2026-11-05 20:09:05,401892650,2026-11-05,chi,tb,in,18:50 - 2nd,2,18:50,0.0,2.0,6.0,6.0,Face Off,Anthony Cirelli faceoff won against Frank Nazar
+2026-11-05 20:09:05,401892651,2026-11-05,stl,nj,in,17:55 - 2nd,2,17:55,0.0,1.0,15.0,5.0,Fighting,Jake Neighbours Fighting against Timo Meier
+2026-11-05 20:09:05,401892652,2026-11-05,car,nyi,in,16:33 - 2nd,2,16:33,2.0,0.0,11.0,11.0,Blocked,Mitchell Chaffee shot blocked by Jaccob Slavin
+2026-11-05 20:09:05,401892653,2026-11-05,phi,nyr,in,14:36 - 2nd,2,14:36,0.0,1.0,11.0,14.0,Stoppage,Icing
+2026-11-05 20:09:05,401892654,2026-11-05,bos,pit,in,18:07 - 2nd,2,18:07,3.0,1.0,5.0,9.0,Shot,Spencer Stastney Wrist Shot saved by Michael DiPietro
+2026-11-05 20:09:05,401892655,2026-11-05,dal,cbj,in,15:30 - 2nd,2,15:30,0.0,0.0,11.0,9.0,Shot,Denton Mateychuk Wrist Shot saved by Casey DeSmith
+2026-11-05 20:10:05,401892649,2026-11-05,vgk,det,in,16:34 - 2nd,2,16:34,0.0,0.0,10.0,16.0,Blocked,Anton Johansson shot blocked by Shea Theodore
+2026-11-05 20:10:05,401892650,2026-11-05,chi,tb,in,18:18 - 2nd,2,18:18,0.0,2.0,7.0,6.0,Blocked,Brandon Hagel shot blocked by Alex Vlasic
+2026-11-05 20:10:05,401892651,2026-11-05,stl,nj,in,17:04 - 2nd,2,17:04,0.0,1.0,16.0,6.0,Shot,Jimmy Snuggerud Wrist Shot saved by Connor Hellebuyck
+2026-11-05 20:10:05,401892652,2026-11-05,car,nyi,in,16:20 - 2nd,2,16:20,2.0,1.0,12.0,11.0,Goal,"Mitchell Chaffee Goal (1) Tip-In, assists: Matthew Schaefer (11), Casey Cizikas (2)"
+2026-11-05 20:10:05,401892653,2026-11-05,phi,nyr,in,14:05 - 2nd,2,14:05,0.0,1.0,11.0,14.0,Face Off,Christian Dvorak faceoff won against Noah Laba
+2026-11-05 20:10:05,401892654,2026-11-05,bos,pit,in,17:56 - 2nd,2,17:56,3.0,1.0,5.0,10.0,Stoppage,Goalie Stopped
+2026-11-05 20:10:05,401892655,2026-11-05,dal,cbj,in,14:48 - 2nd,2,14:48,0.0,0.0,11.0,12.0,Shot,Arttu Hyry Backhand saved by Cam Talbot
+2026-11-05 20:10:05,401892656,2026-11-05,van,wpg,in,18:26 - 2nd,2,18:26,1.0,3.0,9.0,7.0,Blocked,Liam Ohgren shot blocked by Mario Ferraro
+2026-11-05 20:10:05,401892657,2026-11-05,ana,edm,in,19:40 - 1st,1,19:40,0.0,0.0,,,Blocked,Vasily Podkolzin shot blocked by Connor McDavid
+2026-11-05 20:11:05,401892648,2026-11-05,uta,mtl,in,19:34 - 2nd,2,19:34,2.0,2.0,6.0,3.0,Missed,Clayton Keller Snap Shot Above Crossbar
+2026-11-05 20:11:05,401892649,2026-11-05,vgk,det,in,16:05 - 2nd,2,16:05,0.0,0.0,11.0,16.0,Missed,Alex DeBrincat Snap Shot High and Wide Left
+2026-11-05 20:11:05,401892650,2026-11-05,chi,tb,in,18:01 - 2nd,2,18:01,0.0,2.0,8.0,6.0,Face Off,Ryan Greene faceoff won against Brayden Point
+2026-11-05 20:11:05,401892651,2026-11-05,stl,nj,in,16:41 - 2nd,2,16:41,0.0,1.0,16.0,7.0,Stoppage,Goalie Stopped
+2026-11-05 20:11:05,401892652,2026-11-05,car,nyi,in,15:36 - 2nd,2,15:36,2.0,1.0,11.0,11.0,Face Off,Bo Horvat faceoff won against Sebastian Aho
+2026-11-05 20:11:05,401892653,2026-11-05,phi,nyr,in,13:06 - 2nd,2,13:06,0.0,1.0,11.0,14.0,Face Off,Christian Dvorak faceoff won against Noah Laba
+2026-11-05 20:11:05,401892654,2026-11-05,bos,pit,in,17:08 - 2nd,2,17:08,3.0,1.0,7.0,10.0,Shot,Samuel Girard Wrist Shot saved by Michael DiPietro
+2026-11-05 20:11:05,401892655,2026-11-05,dal,cbj,in,14:19 - 2nd,2,14:19,0.0,0.0,11.0,10.0,Face Off,Wyatt Johnston faceoff won against Adam Fantilli
+2026-11-05 20:11:05,401892656,2026-11-05,van,wpg,in,17:46 - 2nd,2,17:46,1.0,3.0,9.0,8.0,Missed,Jake DeBrusk Wrist Shot Wide Right
+2026-11-05 20:11:05,401892657,2026-11-05,ana,edm,in,18:43 - 1st,1,18:43,0.0,0.0,1.0,0.0,Blocked,Connor Murphy shot blocked by Jackson LaCombe
+2026-11-05 20:12:06,401892648,2026-11-05,uta,mtl,in,18:20 - 2nd,2,18:20,2.0,2.0,6.0,3.0,Missed,Clayton Keller Snap Shot Hit Right Post
+2026-11-05 20:12:06,401892649,2026-11-05,vgk,det,in,16:00 - 2nd,2,16:00,0.0,0.0,12.0,16.0,Stoppage,Puck in Netting
+2026-11-05 20:12:06,401892650,2026-11-05,chi,tb,in,18:01 - 2nd,2,18:01,0.0,2.0,8.0,6.0,Fighting,Dillon Boucher Fighting against Jeff Viel
+2026-11-05 20:12:06,401892651,2026-11-05,stl,nj,in,16:06 - 2nd,2,16:06,0.0,1.0,16.0,7.0,Stoppage,Puck in Netting
+2026-11-05 20:12:06,401892652,2026-11-05,car,nyi,in,14:32 - 2nd,2,14:32,2.0,1.0,11.0,13.0,Missed,Anthony Duclair Missed Shot Wide Left
+2026-11-05 20:12:06,401892653,2026-11-05,phi,nyr,in,13:00 - 2nd,2,13:00,0.0,1.0,11.0,14.0,Stoppage,Goalie Stopped
+2026-11-05 20:12:06,401892654,2026-11-05,bos,pit,in,15:54 - 2nd,2,15:54,3.0,1.0,7.0,10.0,Missed,Nick Robertson Tip-In High and Wide Left
+2026-11-05 20:12:06,401892655,2026-11-05,dal,cbj,in,13:45 - 2nd,2,13:45,0.0,0.0,11.0,11.0,Blocked,Jake Christiansen shot blocked by Trey Taylor
+2026-11-05 20:12:06,401892656,2026-11-05,van,wpg,in,17:01 - 2nd,2,17:01,1.0,3.0,9.0,8.0,Stoppage,Goalie Stopped
+2026-11-05 20:12:06,401892657,2026-11-05,ana,edm,in,18:09 - 1st,1,18:09,0.0,0.0,1.0,0.0,Face Off,Mikael Granlund faceoff won against Ryan Nugent-Hopkins
