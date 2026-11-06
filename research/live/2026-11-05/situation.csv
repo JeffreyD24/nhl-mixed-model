@@ -44,3 +44,55 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 19:14:05,401892654,2026-11-05,bos,pit,in,16:48 - 1st,1,16:48,0.0,0.0,0.0,2.0,Missed,Samuel Girard Missed Shot Wide Right
 2026-11-05 19:14:05,401892655,2026-11-05,dal,cbj,in,17:05 - 1st,1,17:05,0.0,0.0,0.0,0.0,Missed,Zach Werenski Wrist Shot Hit Right Post
 2026-11-05 19:14:05,401892656,2026-11-05,van,wpg,in,16:48 - 1st,1,16:48,0.0,0.0,2.0,0.0,Missed,Cole Perfetti Tip-In Wide Left
+2026-11-05 19:15:06,401892648,2026-11-05,uta,mtl,in,19:05 - 1st,1,19:05,0.0,0.0,0.0,0.0,Blocked,Nick Suzuki shot blocked by MacKenzie Weegar
+2026-11-05 19:15:06,401892649,2026-11-05,vgk,det,in,17:01 - 1st,1,17:01,0.0,0.0,2.0,1.0,Face Off,J.T. Compher faceoff won against Jack Eichel
+2026-11-05 19:15:06,401892650,2026-11-05,chi,tb,in,18:53 - 1st,1,18:53,0.0,0.0,2.0,0.0,Blocked,Brayden Point shot blocked by Wyatt Kaiser
+2026-11-05 19:15:06,401892651,2026-11-05,stl,nj,in,15:51 - 1st,1,15:51,0.0,0.0,2.0,1.0,Blocked,Connor Brown shot blocked by Nico Hischier
+2026-11-05 19:15:06,401892652,2026-11-05,car,nyi,in,16:39 - 1st,1,16:39,2.0,0.0,2.0,2.0,Face Off,Jesperi Kotkaniemi faceoff won against Brayden Schenn
+2026-11-05 19:15:06,401892653,2026-11-05,phi,nyr,in,15:21 - 1st,1,15:21,0.0,1.0,4.0,1.0,Face Off,Christian Dvorak faceoff won against Oliver Bjorkstrand
+2026-11-05 19:15:06,401892654,2026-11-05,bos,pit,in,15:51 - 1st,1,15:51,0.0,0.0,0.0,2.0,Stoppage,Off-side
+2026-11-05 19:15:06,401892655,2026-11-05,dal,cbj,in,16:22 - 1st,1,16:22,0.0,0.0,1.0,0.0,Stoppage,Puck in Netting
+2026-11-05 19:15:06,401892656,2026-11-05,van,wpg,in,16:11 - 1st,1,16:11,0.0,1.0,3.0,0.0,Goal,"Alex Iafallo Goal (4) Tip-In, assists: Haydn Fleury (2), Dawson Mercer (7)"
+2026-11-05 19:16:05,401892648,2026-11-05,uta,mtl,in,18:18 - 1st,1,18:18,1.0,0.0,0.0,0.0,Goal,"Logan Cooley Goal (9), assists: none"
+2026-11-05 19:16:05,401892649,2026-11-05,vgk,det,in,16:52 - 1st,1,16:52,0.0,0.0,2.0,2.0,Stoppage,Puck Frozen - Goalie
+2026-11-05 19:16:05,401892650,2026-11-05,chi,tb,in,17:50 - 1st,1,17:50,0.0,0.0,2.0,0.0,Missed,Ethan Del Mastro Missed Shot Wide Left
+2026-11-05 19:16:05,401892651,2026-11-05,stl,nj,in,14:51 - 1st,1,14:51,0.0,0.0,2.0,1.0,Shot,Timo Meier saved by Jordan Binnington
+2026-11-05 19:16:05,401892652,2026-11-05,car,nyi,in,16:25 - 1st,1,16:25,2.0,0.0,2.0,1.0,Holding the Stick,Sean Walker Holding the stick against Emil Heineman
+2026-11-05 19:16:05,401892653,2026-11-05,phi,nyr,in,14:34 - 1st,1,14:34,0.0,1.0,4.0,1.0,Face Off,Christian Dvorak faceoff won against Oliver Bjorkstrand
+2026-11-05 19:16:05,401892654,2026-11-05,bos,pit,in,15:23 - 1st,1,15:23,0.0,0.0,0.0,2.0,Face Off,Sean Kuraly faceoff won against Ben Kindel
+2026-11-05 19:16:05,401892655,2026-11-05,dal,cbj,in,16:00 - 1st,1,16:00,0.0,0.0,1.0,0.0,Face Off,Roope Hintz faceoff won against Mathieu Olivier
+2026-11-05 19:16:05,401892656,2026-11-05,van,wpg,in,15:57 - 1st,1,15:57,0.0,2.0,3.0,0.0,Face Off,Elias Pettersson faceoff won against Adam Lowry
+2026-11-05 19:17:05,401892648,2026-11-05,uta,mtl,in,18:05 - 1st,1,18:05,1.0,0.0,0.0,0.0,Face Off,Nick Schmaltz faceoff won against Jake Evans
+2026-11-05 19:17:05,401892649,2026-11-05,vgk,det,in,16:16 - 1st,1,16:16,0.0,0.0,2.0,3.0,Face Off,Jack Eichel faceoff won against Andrew Copp
+2026-11-05 19:17:05,401892650,2026-11-05,chi,tb,in,17:37 - 1st,1,17:37,0.0,0.0,2.0,0.0,Tripping,Ethan Del Mastro Tripping against Jeff Viel
+2026-11-05 19:17:05,401892651,2026-11-05,stl,nj,in,14:43 - 1st,1,14:43,0.0,0.0,2.0,1.0,Stoppage,Off-side
+2026-11-05 19:17:05,401892652,2026-11-05,car,nyi,in,16:14 - 1st,1,16:14,2.0,0.0,2.0,1.0,Face Off,Brayden Schenn faceoff won against Mark Jankowski
+2026-11-05 19:17:05,401892653,2026-11-05,phi,nyr,in,13:58 - 1st,1,13:58,0.0,1.0,4.0,2.0,Shot,Porter Martone saved by Dylan Garand
+2026-11-05 19:17:05,401892654,2026-11-05,bos,pit,in,14:59 - 1st,1,14:59,0.0,0.0,0.0,2.0,Blocked,Sean Kuraly shot blocked by Sean Kuraly
+2026-11-05 19:17:05,401892655,2026-11-05,dal,cbj,in,15:23 - 1st,1,15:23,0.0,0.0,1.0,1.0,Shot,Esa Lindell Wrist Shot saved by Cam Talbot
+2026-11-05 19:17:05,401892656,2026-11-05,van,wpg,in,15:35 - 1st,1,15:35,0.0,2.0,3.0,0.0,Missed,Jake DeBrusk Tip-In Wide Left
+2026-11-05 19:18:05,401892648,2026-11-05,uta,mtl,in,16:48 - 1st,1,16:48,1.0,0.0,0.0,1.0,Stoppage,Off-side
+2026-11-05 19:18:05,401892649,2026-11-05,vgk,det,in,15:22 - 1st,1,15:22,0.0,0.0,2.0,4.0,Stoppage,Puck in Crowd
+2026-11-05 19:18:05,401892650,2026-11-05,chi,tb,in,16:41 - 1st,1,16:41,0.0,0.0,2.0,0.0,Missed,Nikita Kucherov Missed Shot Wide Left
+2026-11-05 19:18:05,401892651,2026-11-05,stl,nj,in,13:58 - 1st,1,13:58,0.0,0.0,3.0,1.0,Shot,Nico Hischier Wrist Shot saved by Jordan Binnington
+2026-11-05 19:18:05,401892652,2026-11-05,car,nyi,in,14:46 - 1st,1,14:46,2.0,0.0,2.0,1.0,Face Off,Brayden Schenn faceoff won against Mark Jankowski
+2026-11-05 19:18:05,401892653,2026-11-05,phi,nyr,in,12:32 - 1st,1,12:32,0.0,1.0,4.0,2.0,Takeaway,Takeaway by Jamie Drysdale
+2026-11-05 19:18:05,401892654,2026-11-05,bos,pit,in,14:31 - 1st,1,14:31,0.0,0.0,0.0,2.0,Penalty Shot Infraction,Kris Letang Minor
+2026-11-05 19:18:05,401892655,2026-11-05,dal,cbj,in,14:50 - 1st,1,14:50,0.0,0.0,1.0,1.0,Stoppage,Puck in Netting
+2026-11-05 19:18:05,401892656,2026-11-05,van,wpg,in,14:11 - 1st,1,14:11,0.0,2.0,4.0,0.0,Missed,Kyle Connor Tip-In High and Wide Right
+2026-11-05 19:19:05,401892648,2026-11-05,uta,mtl,in,16:21 - 1st,1,16:21,1.0,0.0,0.0,1.0,Face Off,Nick Suzuki faceoff won against Anders Lee
+2026-11-05 19:19:05,401892649,2026-11-05,vgk,det,in,15:01 - 1st,1,15:01,0.0,0.0,2.0,6.0,Stoppage,Puck in Netting
+2026-11-05 19:19:05,401892650,2026-11-05,chi,tb,in,15:48 - 1st,1,15:48,0.0,0.0,2.0,0.0,Missed,Missed Shot
+2026-11-05 19:19:05,401892651,2026-11-05,stl,nj,in,13:43 - 1st,1,13:43,0.0,0.0,5.0,1.0,Stoppage,Goalie Stopped
+2026-11-05 19:19:05,401892652,2026-11-05,car,nyi,in,14:07 - 1st,1,14:07,2.0,0.0,3.0,1.0,Stoppage,High Stick
+2026-11-05 19:19:05,401892653,2026-11-05,phi,nyr,in,11:36 - 1st,1,11:36,0.0,1.0,4.0,4.0,Stoppage,Goalie Stopped
+2026-11-05 19:19:05,401892654,2026-11-05,bos,pit,in,13:30 - 1st,1,13:30,0.0,0.0,0.0,3.0,Missed,Morgan Geekie Wrist Shot Above Crossbar
+2026-11-05 19:19:05,401892655,2026-11-05,dal,cbj,in,14:05 - 1st,1,14:05,0.0,0.0,1.0,2.0,Shot,Jason Robertson Snap Shot saved by Cam Talbot
+2026-11-05 19:19:05,401892656,2026-11-05,van,wpg,in,13:11 - 1st,1,13:11,0.0,2.0,5.0,0.0,Shot,Cole Perfetti Wrist Shot saved by Leevi Merilainen
+2026-11-05 19:20:05,401892648,2026-11-05,uta,mtl,in,15:51 - 1st,1,15:51,1.0,0.0,0.0,1.0,Face Off,Nick Suzuki faceoff won against Vincent Trocheck
+2026-11-05 19:20:05,401892649,2026-11-05,vgk,det,in,14:26 - 1st,1,14:26,0.0,0.0,2.0,6.0,Face Off,Marc Gatcomb faceoff won against Andrew Copp
+2026-11-05 19:20:05,401892650,2026-11-05,chi,tb,in,15:30 - 1st,1,15:30,0.0,1.0,2.0,0.0,Face Off,Zemgus Girgensons faceoff won against Connor Bedard
+2026-11-05 19:20:05,401892652,2026-11-05,car,nyi,in,13:26 - 1st,1,13:26,2.0,0.0,3.0,1.0,Missed,William Carrier Wrist Shot Wide Right
+2026-11-05 19:20:05,401892654,2026-11-05,bos,pit,in,12:36 - 1st,1,12:36,0.0,0.0,0.0,4.0,Blocked,JJ Peterka shot blocked by Declan Carlile
+2026-11-05 19:20:05,401892655,2026-11-05,dal,cbj,in,13:31 - 1st,1,13:31,0.0,0.0,2.0,2.0,Face Off,Radek Faksa faceoff won against Luca Del Bel Belluz
+2026-11-05 19:20:05,401892656,2026-11-05,van,wpg,in,13:01 - 1st,1,13:01,1.0,2.0,5.0,0.0,Stoppage,Icing
