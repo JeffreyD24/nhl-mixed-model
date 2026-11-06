@@ -1130,3 +1130,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 22:02:05,401892658,2026-11-05,nsh,col,in,8:18 - 1st,1,8:18,1.0,1.0,6.0,4.0,Face Off,Brock Nelson faceoff won against Shane Wright
 2026-11-05 22:03:05,401892658,2026-11-05,nsh,col,in,7:52 - 1st,1,7:52,1.0,1.0,6.0,4.0,Stoppage,Icing
 2026-11-05 22:04:05,401892658,2026-11-05,nsh,col,in,7:01 - 1st,1,7:01,1.0,1.0,6.0,4.0,Face Off,Nathan MacKinnon faceoff won against Jack Drury
+2026-11-05 22:05:05,401892658,2026-11-05,nsh,col,in,6:28 - 1st,1,6:28,1.0,1.0,6.0,4.0,Face Off,Ryan O'Reilly faceoff won against Nathan MacKinnon
+2026-11-05 22:06:05,401892657,2026-11-05,ana,edm,in,20:00 - 3rd,3,20:00,4.0,2.0,15.0,10.0,Period End,End of 2nd Period
+2026-11-05 22:06:05,401892658,2026-11-05,nsh,col,in,6:06 - 1st,1,6:06,1.0,1.0,6.0,5.0,Stoppage,Puck Frozen - Goalie
+2026-11-05 22:07:05,401892658,2026-11-05,nsh,col,in,5:42 - 1st,1,5:42,1.0,1.0,6.0,5.0,Face Off,Alexander Kerfoot faceoff won against Nicolas Roy
+2026-11-05 22:08:05,401892657,2026-11-05,ana,edm,in,19:55 - 3rd,3,19:55,4.0,2.0,15.0,10.0,Face Off,Connor McDavid faceoff won against Leo Carlsson
+2026-11-05 22:08:05,401892658,2026-11-05,nsh,col,in,5:12 - 1st,1,5:12,2.0,1.0,6.0,5.0,Face Off,Fedor Svechkov faceoff won against Jack Drury
+2026-11-05 22:09:05,401892657,2026-11-05,ana,edm,in,18:57 - 3rd,3,18:57,4.0,2.0,15.0,10.0,Hit,Alex Killorn hit Evan Bouchard
+2026-11-05 22:09:05,401892658,2026-11-05,nsh,col,in,5:08 - 1st,1,5:08,2.0,1.0,6.0,6.0,Stoppage,Goalie Stopped
+2026-11-05 22:10:05,401892657,2026-11-05,ana,edm,in,18:50 - 3rd,3,18:50,4.0,2.0,15.0,10.0,Tripping,Mathieu Joseph Tripping against Beckett Sennecke
