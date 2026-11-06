@@ -440,3 +440,12 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 11:32:46,293570,2026-11-07,2026-11-07 20:00,tb,min,Consensus,firstperiod,total,over,1.5,-135,normal
 2026-11-06 11:32:46,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,firstperiod,total,over,1.5,-152,normal
 2026-11-06 11:32:46,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,firstperiod,total,under,1.5,115,normal
+2026-11-06 11:34:40,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,event,spread,home,-1.5,120,normal
+2026-11-06 11:34:40,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,event,spread,away,1.5,-147,normal
+2026-11-06 11:34:40,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,event,total,over,5.5,-105,normal
+2026-11-06 11:34:40,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,event,total,under,5.5,-116,normal
+2026-11-06 11:34:40,293573,2026-11-07,2026-11-07 21:00,pit,la,Consensus,event,moneyline,home,0.0,-141,normal
+2026-11-06 11:34:40,293573,2026-11-07,2026-11-07 21:00,pit,la,Consensus,event,moneyline,away,0.0,120,normal
+2026-11-06 11:34:40,293565,2026-11-07,2026-11-07 17:00,nyr,sea,Consensus,firstperiod,total,under,1.5,115,normal
+2026-11-06 11:34:40,293565,2026-11-07,2026-11-07 17:00,nyr,sea,Consensus,firstperiod,total,over,1.5,-152,normal
+2026-11-06 11:34:40,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,firstperiod,total,under,1.5,-116,normal
