@@ -728,3 +728,37 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 20:58:05,401892655,2026-11-05,dal,cbj,in,20:00 - 3rd,3,20:00,0.0,0.0,19.0,19.0,Period End,End of 2nd Period
 2026-11-05 20:59:06,401892653,2026-11-05,phi,nyr,in,18:01 - 3rd,3,18:01,2.0,1.0,17.0,16.0,Blocked,Scott Morrow shot blocked by Simon Benoit
 2026-11-05 20:59:06,401892654,2026-11-05,bos,pit,in,18:55 - 3rd,3,18:55,5.0,2.0,13.0,15.0,Face Off,Elias Lindholm faceoff won against Sidney Crosby
+2026-11-05 21:00:05,401892649,2026-11-05,vgk,det,in,20:00 - 3rd,3,20:00,0.0,0.0,19.0,22.0,Period Start,Start of 3rd Period
+2026-11-05 21:00:05,401892653,2026-11-05,phi,nyr,in,17:23 - 3rd,3,17:23,2.0,1.0,17.0,17.0,Shot,Cam York saved by Dylan Garand
+2026-11-05 21:00:05,401892654,2026-11-05,bos,pit,in,18:49 - 3rd,3,18:49,5.0,2.0,13.0,15.0,Stoppage,Icing
+2026-11-05 21:00:05,401892655,2026-11-05,dal,cbj,in,19:53 - 3rd,3,19:53,0.0,0.0,19.0,19.0,Stoppage,Icing
+2026-11-05 21:01:05,401892649,2026-11-05,vgk,det,in,19:50 - 3rd,3,19:50,0.0,0.0,19.0,22.0,Stoppage,
+2026-11-05 21:01:05,401892653,2026-11-05,phi,nyr,in,15:59 - 3rd,3,15:59,2.0,1.0,17.0,17.0,Hit,Braden Schneider hit Porter Martone
+2026-11-05 21:01:05,401892654,2026-11-05,bos,pit,in,18:06 - 3rd,3,18:06,5.0,2.0,13.0,15.0,Stoppage,Puck in Netting
+2026-11-05 21:01:05,401892655,2026-11-05,dal,cbj,in,19:07 - 3rd,3,19:07,0.0,0.0,19.0,19.0,Missed,Wyatt Johnston Missed Shot Wide Right
+2026-11-05 21:01:05,401892656,2026-11-05,van,wpg,in,20:00 - 3rd,3,20:00,1.0,5.0,17.0,17.0,Period End,End of 2nd Period
+2026-11-05 21:02:05,401892649,2026-11-05,vgk,det,in,18:45 - 3rd,3,18:45,0.0,0.0,19.0,23.0,Blocked,Mitch Marner shot blocked by Justin Faulk
+2026-11-05 21:02:05,401892652,2026-11-05,car,nyi,in,20:00 - 3rd,3,20:00,3.0,3.0,16.0,22.0,Period End,End of 2nd Period
+2026-11-05 21:02:05,401892653,2026-11-05,phi,nyr,in,14:55 - 3rd,3,14:55,2.0,1.0,17.0,17.0,Blocked,Alexis Lafrenière shot blocked by Nick Seeler
+2026-11-05 21:02:05,401892654,2026-11-05,bos,pit,in,16:49 - 3rd,3,16:49,5.0,2.0,13.0,15.0,Face Off,Sean Kuraly faceoff won against Ben Kindel
+2026-11-05 21:02:05,401892655,2026-11-05,dal,cbj,in,17:53 - 3rd,3,17:53,0.0,0.0,19.0,19.0,Blocked,Jamie Benn shot blocked by Damon Severson
+2026-11-05 21:02:05,401892656,2026-11-05,van,wpg,in,19:44 - 3rd,3,19:44,1.0,5.0,17.0,17.0,Period Start,Start of 3rd Period
+2026-11-05 21:03:05,401892649,2026-11-05,vgk,det,in,18:33 - 3rd,3,18:33,0.0,0.0,19.0,23.0,Stoppage,Net Dislodged Offensive Skater
+2026-11-05 21:03:05,401892651,2026-11-05,stl,nj,in,20:00 - 3rd,3,20:00,1.0,4.0,21.0,19.0,Period End,End of 2nd Period
+2026-11-05 21:03:05,401892653,2026-11-05,phi,nyr,in,13:59 - 3rd,3,13:59,2.0,1.0,17.0,17.0,Shot,Owen Tippett saved by Dylan Garand
+2026-11-05 21:03:05,401892654,2026-11-05,bos,pit,in,15:53 - 3rd,3,15:53,5.0,2.0,13.0,15.0,Blocked,Ville Koivunen shot blocked by William Borgen
+2026-11-05 21:03:05,401892655,2026-11-05,dal,cbj,in,16:54 - 3rd,3,16:54,0.0,0.0,20.0,19.0,Shot,Adam Fantilli saved by Casey DeSmith
+2026-11-05 21:03:05,401892656,2026-11-05,van,wpg,in,19:15 - 3rd,3,19:15,1.0,5.0,17.0,17.0,Stoppage,Icing
+2026-11-05 21:04:05,401892649,2026-11-05,vgk,det,in,18:04 - 3rd,3,18:04,0.0,0.0,19.0,23.0,Stoppage,
+2026-11-05 21:04:05,401892651,2026-11-05,stl,nj,in,19:38 - 3rd,3,19:38,1.0,4.0,21.0,19.0,Face Off,Robert Thomas faceoff won against Cody Glass
+2026-11-05 21:04:05,401892653,2026-11-05,phi,nyr,in,13:36 - 3rd,3,13:36,2.0,1.0,18.0,18.0,Stoppage,Icing
+2026-11-05 21:04:05,401892654,2026-11-05,bos,pit,in,15:12 - 3rd,3,15:12,5.0,2.0,13.0,15.0,Blocked,Ville Koivunen shot blocked by William Borgen
+2026-11-05 21:04:05,401892655,2026-11-05,dal,cbj,in,16:13 - 3rd,3,16:13,0.0,0.0,20.0,19.0,Blocked,Adam Fantilli shot blocked by Valeri Nichushkin
+2026-11-05 21:04:05,401892656,2026-11-05,van,wpg,in,18:26 - 3rd,3,18:26,1.0,5.0,17.0,18.0,Shot,Brendan Gallagher Wrist Shot saved by Stuart Skinner
+2026-11-05 21:05:05,401892649,2026-11-05,vgk,det,in,17:58 - 3rd,3,17:58,0.0,1.0,20.0,23.0,Goal,"Anton Johansson Goal (2), assists: none"
+2026-11-05 21:05:05,401892651,2026-11-05,stl,nj,in,18:52 - 3rd,3,18:52,1.0,4.0,21.0,20.0,Missed,Jimmy Snuggerud Wrist Shot Hit Right Post
+2026-11-05 21:05:05,401892652,2026-11-05,car,nyi,in,19:30 - 3rd,3,19:30,3.0,3.0,16.0,22.0,Face Off,Sebastian Aho faceoff won against Jean-Gabriel Pageau
+2026-11-05 21:05:05,401892653,2026-11-05,phi,nyr,in,13:32 - 3rd,3,13:32,2.0,1.0,18.0,18.0,Stoppage,Puck in Crowd
+2026-11-05 21:05:05,401892654,2026-11-05,bos,pit,in,15:12 - 3rd,3,15:12,5.0,2.0,13.0,15.0,Stoppage,Off-side
+2026-11-05 21:05:05,401892655,2026-11-05,dal,cbj,in,15:28 - 3rd,3,15:28,0.0,0.0,20.0,19.0,Stoppage,Puck in Netting
+2026-11-05 21:05:05,401892656,2026-11-05,van,wpg,in,17:26 - 3rd,3,17:26,1.0,5.0,17.0,18.0,Missed,Jake DeBrusk Missed Shot Hit Left Post
