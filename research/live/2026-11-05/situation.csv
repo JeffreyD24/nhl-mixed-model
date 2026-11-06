@@ -460,3 +460,53 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 20:18:06,401892655,2026-11-05,dal,cbj,in,10:44 - 2nd,2,10:44,0.0,0.0,12.0,11.0,Stoppage,Goalie Stopped
 2026-11-05 20:18:06,401892656,2026-11-05,van,wpg,in,13:08 - 2nd,2,13:08,1.0,4.0,12.0,10.0,Goal,"Neal Pionk Goal (4), assists: none"
 2026-11-05 20:18:06,401892657,2026-11-05,ana,edm,in,14:24 - 1st,1,14:24,0.0,0.0,2.0,1.0,Shot,Leo Carlsson saved by Matt Tomkins
+2026-11-05 20:19:05,401892648,2026-11-05,uta,mtl,in,13:50 - 2nd,2,13:50,2.0,2.0,8.0,4.0,Stoppage,Icing
+2026-11-05 20:19:05,401892649,2026-11-05,vgk,det,in,9:53 - 2nd,2,9:53,0.0,0.0,14.0,16.0,Missed,Andrew Copp Missed Shot Wide Left
+2026-11-05 20:19:05,401892650,2026-11-05,chi,tb,in,15:52 - 2nd,2,15:52,0.0,2.0,10.0,8.0,Face Off,Anthony Cirelli faceoff won against Ryan Greene
+2026-11-05 20:19:05,401892651,2026-11-05,stl,nj,in,12:13 - 2nd,2,12:13,0.0,1.0,18.0,11.0,Stoppage,Goalie Stopped
+2026-11-05 20:19:05,401892652,2026-11-05,car,nyi,in,12:37 - 2nd,2,12:37,3.0,2.0,11.0,14.0,Face Off,Logan Stankoven faceoff won against Casey Cizikas
+2026-11-05 20:19:05,401892653,2026-11-05,phi,nyr,in,8:56 - 2nd,2,8:56,1.0,1.0,13.0,14.0,Face Off,Noah Laba faceoff won against Noel Acciari
+2026-11-05 20:19:05,401892654,2026-11-05,bos,pit,in,11:47 - 2nd,2,11:47,3.0,2.0,9.0,10.0,Stoppage,TV Timeout
+2026-11-05 20:19:05,401892655,2026-11-05,dal,cbj,in,10:33 - 2nd,2,10:33,0.0,0.0,12.0,14.0,Stoppage,On-Ice Official
+2026-11-05 20:19:05,401892656,2026-11-05,van,wpg,in,12:56 - 2nd,2,12:56,1.0,4.0,14.0,10.0,Face Off,Adam Lowry faceoff won against Elias Pettersson
+2026-11-05 20:19:05,401892657,2026-11-05,ana,edm,in,13:18 - 1st,1,13:18,0.0,0.0,2.0,2.0,Missed,Ryan Nugent-Hopkins Missed Shot Wide Left
+2026-11-05 20:20:05,401892648,2026-11-05,uta,mtl,in,13:50 - 2nd,2,13:50,2.0,2.0,10.0,4.0,Stoppage,Goalie Stopped
+2026-11-05 20:20:05,401892649,2026-11-05,vgk,det,in,8:49 - 2nd,2,8:49,0.0,0.0,15.0,17.0,Shot,Mitch Marner saved by Daniil Tarasov
+2026-11-05 20:20:05,401892650,2026-11-05,chi,tb,in,15:17 - 2nd,2,15:17,0.0,2.0,10.0,8.0,Stoppage,Puck Frozen - Goalie
+2026-11-05 20:20:05,401892651,2026-11-05,stl,nj,in,12:13 - 2nd,2,12:13,0.0,1.0,18.0,11.0,Fighting,Timo Meier Fighting against Jake Neighbours
+2026-11-05 20:20:05,401892652,2026-11-05,car,nyi,in,12:37 - 2nd,2,12:37,3.0,2.0,11.0,14.0,Holding,Shayne Gostisbehere Holding against Mitchell Chaffee
+2026-11-05 20:20:05,401892653,2026-11-05,phi,nyr,in,8:34 - 2nd,2,8:34,1.0,1.0,13.0,14.0,Stoppage,Puck in Netting
+2026-11-05 20:20:05,401892654,2026-11-05,bos,pit,in,11:47 - 2nd,2,11:47,3.0,2.0,9.0,10.0,Stoppage,High Stick
+2026-11-05 20:20:05,401892655,2026-11-05,dal,cbj,in,10:10 - 2nd,2,10:10,0.0,0.0,12.0,14.0,Face Off,Adam Fantilli faceoff won against Tyler Seguin
+2026-11-05 20:20:05,401892656,2026-11-05,van,wpg,in,12:39 - 2nd,2,12:39,1.0,4.0,14.0,10.0,Stoppage,TV Timeout
+2026-11-05 20:20:05,401892657,2026-11-05,ana,edm,in,12:38 - 1st,1,12:38,0.0,0.0,3.0,2.0,Stoppage,TV Timeout
+2026-11-05 20:21:05,401892649,2026-11-05,vgk,det,in,8:36 - 2nd,2,8:36,0.0,0.0,16.0,17.0,Stoppage,TV Timeout
+2026-11-05 20:21:05,401892650,2026-11-05,chi,tb,in,14:40 - 2nd,2,14:40,0.0,2.0,10.0,8.0,Shot,Jake Guentzel saved by Arvid Soderblom
+2026-11-05 20:21:05,401892651,2026-11-05,stl,nj,in,11:46 - 2nd,2,11:46,0.0,1.0,18.0,11.0,Face Off,Jack Hughes faceoff won against Dalibor Dvorsky
+2026-11-05 20:21:05,401892652,2026-11-05,car,nyi,in,12:02 - 2nd,2,12:02,3.0,2.0,11.0,14.0,Stoppage,Goalie Stopped
+2026-11-05 20:21:05,401892655,2026-11-05,dal,cbj,in,9:53 - 2nd,2,9:53,0.0,0.0,12.0,15.0,Stoppage,Goalie Stopped
+2026-11-05 20:21:05,401892657,2026-11-05,ana,edm,in,12:38 - 1st,1,12:38,0.0,0.0,3.0,2.0,Stoppage,Goalie Stopped
+2026-11-05 20:22:05,401892648,2026-11-05,uta,mtl,in,13:20 - 2nd,2,13:20,2.0,2.0,11.0,5.0,Shot,Noah Dobson Snap Shot saved by Sebastian Cossa
+2026-11-05 20:22:05,401892650,2026-11-05,chi,tb,in,13:41 - 2nd,2,13:41,0.0,2.0,11.0,8.0,Takeaway,Takeaway by Teuvo Teravainen
+2026-11-05 20:22:05,401892651,2026-11-05,stl,nj,in,10:48 - 2nd,2,10:48,0.0,1.0,18.0,11.0,Missed,Luke Hughes Slap Shot Above Crossbar
+2026-11-05 20:22:05,401892652,2026-11-05,car,nyi,in,11:12 - 2nd,2,11:12,3.0,2.0,12.0,14.0,Face Off,Sebastian Aho faceoff won against Bo Horvat
+2026-11-05 20:22:05,401892654,2026-11-05,bos,pit,in,11:19 - 2nd,2,11:19,3.0,2.0,10.0,10.0,Face Off,Blake Lizotte faceoff won against Casey Mittelstadt
+2026-11-05 20:22:05,401892656,2026-11-05,van,wpg,in,12:08 - 2nd,2,12:08,1.0,4.0,14.0,10.0,Face Off,Adam Lowry faceoff won against Elias Pettersson
+2026-11-05 20:23:05,401892648,2026-11-05,uta,mtl,in,13:02 - 2nd,2,13:02,2.0,2.0,12.0,5.0,Shot,Adam Engstrom Wrist Shot saved by Sebastian Cossa
+2026-11-05 20:23:05,401892650,2026-11-05,chi,tb,in,12:46 - 2nd,2,12:46,0.0,2.0,11.0,8.0,Stoppage,Icing
+2026-11-05 20:23:05,401892651,2026-11-05,stl,nj,in,9:43 - 2nd,2,9:43,0.0,1.0,18.0,11.0,Blocked,Brandon Carlo shot blocked by Jonas Siegenthaler
+2026-11-05 20:23:05,401892652,2026-11-05,car,nyi,in,10:26 - 2nd,2,10:26,3.0,2.0,12.0,15.0,Missed,Kyle Palmieri Missed Shot Wide Left
+2026-11-05 20:23:05,401892653,2026-11-05,phi,nyr,in,7:51 - 2nd,2,7:51,1.0,1.0,13.0,14.0,Missed,Missed Shot
+2026-11-05 20:23:05,401892654,2026-11-05,bos,pit,in,10:30 - 2nd,2,10:30,3.0,2.0,10.0,10.0,Stoppage,Puck in Netting
+2026-11-05 20:23:05,401892656,2026-11-05,van,wpg,in,11:04 - 2nd,2,11:04,1.0,4.0,15.0,10.0,Shot,Cole Perfetti Wrist Shot saved by Leevi Merilainen
+2026-11-05 20:23:05,401892657,2026-11-05,ana,edm,in,11:54 - 1st,1,11:54,0.0,0.0,4.0,2.0,Face Off,Connor McDavid faceoff won against Leo Carlsson
+2026-11-05 20:24:05,401892648,2026-11-05,uta,mtl,in,12:39 - 2nd,2,12:39,2.0,2.0,12.0,5.0,Face Off,Jack McBain faceoff won against Jake Evans
+2026-11-05 20:24:05,401892649,2026-11-05,vgk,det,in,7:36 - 2nd,2,7:36,0.0,0.0,16.0,17.0,Blocked,Braeden Bowman shot blocked by Braeden Bowman
+2026-11-05 20:24:05,401892650,2026-11-05,chi,tb,in,12:24 - 2nd,2,12:24,0.0,2.0,12.0,8.0,Face Off,Frank Nazar faceoff won against Brayden Point
+2026-11-05 20:24:05,401892651,2026-11-05,stl,nj,in,8:47 - 2nd,2,8:47,0.0,1.0,18.0,11.0,Blocked,Brandon Carlo shot blocked by Jonas Siegenthaler
+2026-11-05 20:24:05,401892652,2026-11-05,car,nyi,in,10:17 - 2nd,2,10:17,3.0,2.0,12.0,15.0,Face Off,Logan Stankoven faceoff won against Ondrej Palat
+2026-11-05 20:24:05,401892653,2026-11-05,phi,nyr,in,7:42 - 2nd,2,7:42,2.0,1.0,13.0,14.0,Goal,"Noel Acciari Goal (2) Snap Shot, assists: Denver Barkey (6), Jamie Drysdale (7)"
+2026-11-05 20:24:05,401892654,2026-11-05,bos,pit,in,9:58 - 2nd,2,9:58,3.0,2.0,10.0,10.0,Face Off,Fraser Minten faceoff won against Ben Kindel
+2026-11-05 20:24:05,401892655,2026-11-05,dal,cbj,in,9:01 - 2nd,2,9:01,0.0,0.0,12.0,15.0,Missed,Jamie Benn Tip-In Above Crossbar
+2026-11-05 20:24:05,401892656,2026-11-05,van,wpg,in,10:47 - 2nd,2,10:47,1.0,4.0,15.0,10.0,Face Off,Morgan Barron faceoff won against Max Sasson
+2026-11-05 20:24:05,401892657,2026-11-05,ana,edm,in,11:54 - 1st,1,11:54,0.0,0.0,5.0,2.0,Stoppage,Net Dislodged Offensive Skater
