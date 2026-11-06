@@ -7837,3 +7837,16 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 17:44:51,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,secondperiod,spread,home,-0.5,-100,normal
 2026-11-06 17:44:51,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,thirdperiod,spread,away,0.5,-110,normal
 2026-11-06 17:44:51,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,thirdperiod,spread,home,-0.5,-116,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,event,team_total,home_under,3.5,128,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,event,team_total,away_over,2.5,104,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,event,team_total,home_over,3.5,-164,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,firstperiod,team_total,home_under,0.5,190,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,firstperiod,total,under,1.5,122,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,firstperiod,total,over,1.5,-154,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,secondperiod,team_total,home_over,1.5,148,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,secondperiod,team_total,away_under,0.5,126,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,secondperiod,total,over,2.5,154,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,thirdperiod,team_total,home_under,1.5,-156,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,thirdperiod,team_total,away_under,0.5,120,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,thirdperiod,team_total,home_over,1.5,122,normal
+2026-11-06 17:45:45,293561,2026-11-06,2026-11-06 20:00,sj,min,FanDuel,thirdperiod,total,under,2.5,-166,normal
