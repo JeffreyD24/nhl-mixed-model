@@ -1279,3 +1279,4 @@ seen_at_et,game_id,date,away,home,market,line_home,long_side,slug,bid,ask,bid_de
 2026-11-06 14:02,401892679,2026-11-08,pit,ana,moneyline,,away,aec-nhl-pit-ana-2026-11-08,0.47,0.48,5.0,6.0,0.525,0.45,80.74,76.54,team
 2026-11-06 14:07,401892675,2026-11-08,vgk,buf,moneyline,,away,aec-nhl-veg-buf-2026-11-08,0.5,0.51,11.0,8.0,0.495,0.5,49.43,13.41,team
 2026-11-06 14:09,401892679,2026-11-08,pit,ana,moneyline,,away,aec-nhl-pit-ana-2026-11-08,0.47,0.48,6.0,6.0,0.525,0.45,80.74,76.54,team
+2026-11-06 14:24,401892675,2026-11-08,vgk,buf,moneyline,,away,aec-nhl-veg-buf-2026-11-08,0.5,0.51,12.0,8.0,0.495,0.5,49.43,13.41,team
