@@ -96,3 +96,51 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 19:20:05,401892654,2026-11-05,bos,pit,in,12:36 - 1st,1,12:36,0.0,0.0,0.0,4.0,Blocked,JJ Peterka shot blocked by Declan Carlile
 2026-11-05 19:20:05,401892655,2026-11-05,dal,cbj,in,13:31 - 1st,1,13:31,0.0,0.0,2.0,2.0,Face Off,Radek Faksa faceoff won against Luca Del Bel Belluz
 2026-11-05 19:20:05,401892656,2026-11-05,van,wpg,in,13:01 - 1st,1,13:01,1.0,2.0,5.0,0.0,Stoppage,Icing
+2026-11-05 19:21:05,401892648,2026-11-05,uta,mtl,in,14:53 - 1st,1,14:53,1.0,0.0,0.0,1.0,Missed,Lawson Crouse Tip-In Wide Right
+2026-11-05 19:21:05,401892649,2026-11-05,vgk,det,in,13:18 - 1st,1,13:18,0.0,0.0,2.0,6.0,Missed,Missed Shot
+2026-11-05 19:21:05,401892650,2026-11-05,chi,tb,in,14:37 - 1st,1,14:37,0.0,1.0,3.0,0.0,Stoppage,Puck in Netting
+2026-11-05 19:21:05,401892651,2026-11-05,stl,nj,in,13:10 - 1st,1,13:10,0.0,0.0,5.0,1.0,Blocked,Declan Chisholm shot blocked by Colton Parayko
+2026-11-05 19:21:05,401892652,2026-11-05,car,nyi,in,13:14 - 1st,1,13:14,2.0,0.0,3.0,1.0,Stoppage,Puck in Netting
+2026-11-05 19:21:05,401892654,2026-11-05,bos,pit,in,12:08 - 1st,1,12:08,0.0,0.0,0.0,4.0,Face Off,Sean Kuraly faceoff won against Sidney Crosby
+2026-11-05 19:21:05,401892655,2026-11-05,dal,cbj,in,12:52 - 1st,1,12:52,0.0,0.0,2.0,2.0,Blocked,Esa Lindell shot blocked by Wyatt Johnston
+2026-11-05 19:21:05,401892656,2026-11-05,van,wpg,in,12:18 - 1st,1,12:18,1.0,2.0,5.0,0.0,Face Off,Elias Pettersson faceoff won against Adam Lowry
+2026-11-05 19:22:06,401892648,2026-11-05,uta,mtl,in,14:14 - 1st,1,14:14,1.0,0.0,0.0,1.0,Blocked,Dylan Guenther shot blocked by Jake Evans
+2026-11-05 19:22:06,401892649,2026-11-05,vgk,det,in,12:42 - 1st,1,12:42,0.0,0.0,2.0,7.0,Stoppage,TV Timeout
+2026-11-05 19:22:06,401892650,2026-11-05,chi,tb,in,14:17 - 1st,1,14:17,0.0,1.0,4.0,0.0,Blocked,J.J. Moser shot blocked by Artyom Levshunov
+2026-11-05 19:22:06,401892651,2026-11-05,stl,nj,in,13:02 - 1st,1,13:02,0.0,0.0,5.0,1.0,Stoppage,Puck in Crowd
+2026-11-05 19:22:06,401892653,2026-11-05,phi,nyr,in,11:32 - 1st,1,11:32,0.0,1.0,4.0,4.0,Stoppage,Goalie Stopped
+2026-11-05 19:22:06,401892654,2026-11-05,bos,pit,in,11:07 - 1st,1,11:07,0.0,0.0,0.0,4.0,Face Off,Sean Kuraly faceoff won against Sidney Crosby
+2026-11-05 19:22:06,401892655,2026-11-05,dal,cbj,in,12:40 - 1st,1,12:40,0.0,0.0,2.0,3.0,Stoppage,Goalie Stopped
+2026-11-05 19:22:06,401892656,2026-11-05,van,wpg,in,11:50 - 1st,1,11:50,1.0,2.0,5.0,1.0,Stoppage,Icing
+2026-11-05 19:23:05,401892648,2026-11-05,uta,mtl,in,13:07 - 1st,1,13:07,1.0,0.0,0.0,1.0,Missed,Alexandre Carrier Snap Shot Wide Left
+2026-11-05 19:23:05,401892650,2026-11-05,chi,tb,in,13:10 - 1st,1,13:10,0.0,1.0,4.0,0.0,Blocked,Max Crozier shot blocked by Ian Cole
+2026-11-05 19:23:05,401892651,2026-11-05,stl,nj,in,12:26 - 1st,1,12:26,0.0,0.0,5.0,1.0,Shot,Luke Hughes saved by Jordan Binnington
+2026-11-05 19:23:05,401892652,2026-11-05,car,nyi,in,12:43 - 1st,1,12:43,2.0,0.0,3.0,1.0,Stoppage,Puck in Netting
+2026-11-05 19:23:05,401892653,2026-11-05,phi,nyr,in,10:26 - 1st,1,10:26,0.0,1.0,4.0,4.0,Stoppage,Puck in Crowd
+2026-11-05 19:23:05,401892654,2026-11-05,bos,pit,in,10:47 - 1st,1,10:47,0.0,1.0,0.0,4.0,Face Off,Pavel Zacha faceoff won against Ben Kindel
+2026-11-05 19:23:05,401892656,2026-11-05,van,wpg,in,11:46 - 1st,1,11:46,1.0,2.0,5.0,1.0,Stoppage,TV Timeout
+2026-11-05 19:24:06,401892648,2026-11-05,uta,mtl,in,12:10 - 1st,1,12:10,1.0,0.0,0.0,1.0,Missed,Lane Hutson Snap Shot Above Crossbar
+2026-11-05 19:24:06,401892650,2026-11-05,chi,tb,in,12:13 - 1st,1,12:13,0.0,1.0,4.0,0.0,Giveaway,Giveaway by Sam Rinzel
+2026-11-05 19:24:06,401892651,2026-11-05,stl,nj,in,11:54 - 1st,1,11:54,0.0,1.0,5.0,1.0,Face Off,Cody Glass faceoff won against Dalibor Dvorsky
+2026-11-05 19:24:06,401892652,2026-11-05,car,nyi,in,12:15 - 1st,1,12:15,2.0,0.0,3.0,1.0,Blocked,Jaccob Slavin shot blocked by Casey Cizikas
+2026-11-05 19:24:06,401892653,2026-11-05,phi,nyr,in,8:28 - 1st,1,8:28,0.0,1.0,5.0,4.0,Face Off,Christian Dvorak faceoff won against J.T. Miller
+2026-11-05 19:24:06,401892654,2026-11-05,bos,pit,in,10:02 - 1st,1,10:02,0.0,1.0,0.0,4.0,Stoppage,Icing
+2026-11-05 19:24:06,401892655,2026-11-05,dal,cbj,in,12:18 - 1st,1,12:18,0.0,0.0,2.0,2.0,Shot,Kent Johnson saved by Casey DeSmith
+2026-11-05 19:25:06,401892648,2026-11-05,uta,mtl,in,11:05 - 1st,1,11:05,1.0,0.0,1.0,1.0,Missed,Logan Cooley Snap Shot Wide Left
+2026-11-05 19:25:06,401892649,2026-11-05,vgk,det,in,12:04 - 1st,1,12:04,0.0,0.0,2.0,9.0,Stoppage,Goalie Stopped
+2026-11-05 19:25:06,401892650,2026-11-05,chi,tb,in,11:09 - 1st,1,11:09,0.0,1.0,5.0,1.0,Shot,Roman Kantserov Wrist Shot saved by Andrei Vasilevskiy
+2026-11-05 19:25:06,401892651,2026-11-05,stl,nj,in,10:53 - 1st,1,10:53,0.0,1.0,5.0,1.0,Blocked,Dougie Hamilton shot blocked by Philip Broberg
+2026-11-05 19:25:06,401892652,2026-11-05,car,nyi,in,11:20 - 1st,1,11:20,2.0,0.0,3.0,1.0,Shot,Jordan Martinook saved by Semyon Varlamov
+2026-11-05 19:25:06,401892653,2026-11-05,phi,nyr,in,8:28 - 1st,1,8:28,0.0,1.0,5.0,5.0,Missed,Vladislav Gavrikov Missed Shot Wide Right
+2026-11-05 19:25:06,401892654,2026-11-05,bos,pit,in,9:56 - 1st,1,9:56,0.0,1.0,0.0,4.0,Stoppage,TV Timeout
+2026-11-05 19:25:06,401892655,2026-11-05,dal,cbj,in,11:34 - 1st,1,11:34,0.0,0.0,4.0,2.0,Stoppage,Goalie Stopped
+2026-11-05 19:25:06,401892656,2026-11-05,van,wpg,in,11:34 - 1st,1,11:34,1.0,2.0,5.0,1.0,Stoppage,Off-side
+2026-11-05 19:26:05,401892648,2026-11-05,uta,mtl,in,10:56 - 1st,1,10:56,1.0,0.0,1.0,1.0,Penalty Shot Infraction,Josh Anderson Minor
+2026-11-05 19:26:05,401892649,2026-11-05,vgk,det,in,11:30 - 1st,1,11:30,0.0,0.0,2.0,9.0,Face Off,Andrew Copp faceoff won against Jack Eichel
+2026-11-05 19:26:05,401892650,2026-11-05,chi,tb,in,10:08 - 1st,1,10:08,0.0,1.0,5.0,1.0,Blocked,Roman Kantserov shot blocked by Ryan McDonagh
+2026-11-05 19:26:05,401892651,2026-11-05,stl,nj,in,10:03 - 1st,1,10:03,0.0,1.0,5.0,1.0,Shot,Evan Rodrigues saved by Jordan Binnington
+2026-11-05 19:26:05,401892652,2026-11-05,car,nyi,in,10:20 - 1st,1,10:20,2.0,0.0,3.0,3.0,Missed,K'Andre Miller Missed Shot Wide Right
+2026-11-05 19:26:05,401892653,2026-11-05,phi,nyr,in,8:21 - 1st,1,8:21,0.0,1.0,5.0,5.0,Missed,Vladislav Gavrikov Missed Shot Wide Right
+2026-11-05 19:26:05,401892654,2026-11-05,bos,pit,in,9:56 - 1st,1,9:56,0.0,1.0,0.0,4.0,Stoppage,Hand Pass
+2026-11-05 19:26:05,401892655,2026-11-05,dal,cbj,in,11:04 - 1st,1,11:04,0.0,0.0,5.0,2.0,Face Off,Arttu Hyry faceoff won against Charlie Coyle
+2026-11-05 19:26:05,401892656,2026-11-05,van,wpg,in,11:23 - 1st,1,11:23,1.0,2.0,6.0,1.0,Stoppage,Goalie Stopped
