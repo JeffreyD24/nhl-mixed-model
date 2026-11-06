@@ -1094,3 +1094,24 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-05 21:47:05,401892655,2026-11-05,dal,cbj,in,0:38 - OT,4,0:38,1.0,1.0,29.0,25.0,Face Off,Arttu Hyry faceoff won against Adam Fantilli
 2026-11-05 21:47:05,401892657,2026-11-05,ana,edm,in,1:15 - 2nd,2,1:15,3.0,2.0,15.0,9.0,Face Off,Leo Carlsson faceoff won against Owen Michaels
 2026-11-05 21:47:05,401892658,2026-11-05,nsh,col,in,14:45 - 1st,1,14:45,1.0,0.0,2.0,0.0,Face Off,Shane Wright faceoff won against Brock Nelson
+2026-11-05 21:48:05,401892648,2026-11-05,uta,mtl,in,1:55 - 3rd,3,1:55,4.0,4.0,28.0,16.0,Face Off,Jake Evans faceoff won against Barrett Hayton
+2026-11-05 21:48:05,401892650,2026-11-05,chi,tb,in,2:45 - 3rd,3,2:45,0.0,4.0,31.0,24.0,Missed,Anton Frondell Missed Shot Wide Right
+2026-11-05 21:48:05,401892655,2026-11-05,dal,cbj,in,End of OT,4,0:00,1.0,1.0,29.0,25.0,Face Off,Arttu Hyry faceoff won against Adam Fantilli
+2026-11-05 21:48:05,401892657,2026-11-05,ana,edm,in,0:39 - 2nd,2,0:39,3.0,2.0,15.0,10.0,Missed,Missed Shot
+2026-11-05 21:48:05,401892658,2026-11-05,nsh,col,in,14:01 - 1st,1,14:01,1.0,0.0,2.0,3.0,Shot,Daemon Hunt Snap Shot saved by Mackenzie Blackwood
+2026-11-05 21:49:06,401892648,2026-11-05,uta,mtl,in,1:48 - 3rd,3,1:48,4.0,4.0,29.0,16.0,Stoppage,Goalie Stopped
+2026-11-05 21:49:06,401892650,2026-11-05,chi,tb,in,2:01 - 3rd,3,2:01,0.0,4.0,31.0,24.0,Missed,Anton Frondell Wrist Shot Wide Right
+2026-11-05 21:49:06,401892655,2026-11-05,dal,cbj,in,In SO,5,0:00,1.0,1.0,29.0,27.0,Period Start,Start of Shootout
+2026-11-05 21:49:06,401892657,2026-11-05,ana,edm,in,0:05 - 2nd,2,0:05,4.0,2.0,15.0,10.0,Face Off,Tim Washe faceoff won against Ryan Nugent-Hopkins
+2026-11-05 21:49:06,401892658,2026-11-05,nsh,col,in,12:59 - 1st,1,12:59,1.0,0.0,2.0,4.0,Missed,Vitali Pinchuk Snap Shot Wide Left
+2026-11-05 21:50:06,401892648,2026-11-05,uta,mtl,in,1:38 - 3rd,3,1:38,4.0,4.0,29.0,16.0,Roughing,Alex Newhook Roughing against Kevin Stenlund
+2026-11-05 21:50:06,401892650,2026-11-05,chi,tb,in,1:11 - 3rd,3,1:11,0.0,4.0,31.0,24.0,Face Off,Ryan Greene faceoff won against Anthony Cirelli
+2026-11-05 21:50:06,401892657,2026-11-05,ana,edm,in,End of 2nd,2,0:00,4.0,2.0,15.0,10.0,Period End,End of 2nd Period
+2026-11-05 21:50:06,401892658,2026-11-05,nsh,col,in,12:25 - 1st,1,12:25,1.0,0.0,2.0,4.0,Shot, saved by Justus Annunen
+2026-11-05 21:51:05,401892648,2026-11-05,uta,mtl,in,0:44 - 3rd,3,0:44,4.0,4.0,29.0,16.0,Face Off,Nick Schmaltz faceoff won against Nick Suzuki
+2026-11-05 21:51:05,401892650,2026-11-05,chi,tb,in,0:48 - 3rd,3,0:48,0.0,4.0,31.0,25.0,Shot,Roman Kantserov saved by Andrei Vasilevskiy
+2026-11-05 21:51:05,401892658,2026-11-05,nsh,col,in,11:56 - 1st,1,11:56,1.0,0.0,3.0,4.0,Stoppage,Off-side
+2026-11-05 21:52:05,401892648,2026-11-05,uta,mtl,in,End of 3rd,3,0:00,4.0,4.0,30.0,16.0,Period End,End of 3rd Period
+2026-11-05 21:52:05,401892650,2026-11-05,chi,tb,in,0:26 - 3rd,3,0:26,1.0,4.0,31.0,24.0,Goal,"Roman Kantserov Goal (8) Tip-In, assists: Sam Rinzel (4), Ethan Del Mastro (3)"
+2026-11-05 21:52:05,401892655,2026-11-05,dal,cbj,in,In SO,5,0:00,1.0,1.0,29.0,27.0,Shot,Tyler Seguin Snap Shot saved by Cam Talbot
+2026-11-05 21:53:06,401892658,2026-11-05,nsh,col,in,11:52 - 1st,1,11:52,1.0,0.0,3.0,4.0,Face Off,Nathan MacKinnon faceoff won against Shane Wright
