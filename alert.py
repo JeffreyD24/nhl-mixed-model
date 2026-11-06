@@ -179,6 +179,11 @@ def notify(title, body, priority="high", tags="ice_hockey", link=None, dk=None, 
     dk / fd: DraftKings / FanDuel links (better book first, from fanduel.compare). link: unused since Nov 4, 2026 (Log button removed)."""
     if BET_ONLY and kind not in ("bet", "stop", "test"):
         print("Logged only (not pushed):", title); return "quiet"     # kept in alerts.csv, not retried
+    # Nov 6, 2026 (Jeffrey): bet alerts, reminders, BACK IN RANGE and DON'T BET say only what to bet, where, and when to stop
+    # (fanduel.compact_alert; the full text stays in the alert records). Anything it can't read goes out unchanged.
+    if kind in ("bet", "stop"):
+        _c = fanduel.compact_alert(title, body, best)
+        if _c: title, body = _c
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
         print("NTFY_TOPIC not set; would have sent:", title, "|", body, "| DK:", dk or "-", "| FD:", fd or "-"); return False
