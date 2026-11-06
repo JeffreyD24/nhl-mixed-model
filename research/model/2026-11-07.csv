@@ -29,3 +29,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-06 11:37,goals,401892670,2026-11-07,tb,min,0.5121,3.214,3.083,6.46,Andrei Vasilevskiy (expected),Calvin Pickard (confirmed),TB: James | MIN: -
 2026-11-06 12:27,xg,401892666,2026-11-07,uta,ott,0.4476,3.11,3.341,6.61,Karel Vejmelka (expected),Samuel Ersson (expected),"UTA: Schmidt? | OTT: Greig, Kleven"
 2026-11-06 12:27,goals,401892666,2026-11-07,uta,ott,0.5128,3.328,3.19,6.68,Karel Vejmelka (expected),Samuel Ersson (expected),"UTA: Schmidt? | OTT: Greig, Kleven"
+2026-11-06 14:02,xg,401892669,2026-11-07,sj,dal,0.7174,3.567,2.262,5.98,Alex Nedeljkovic (expected),Jake Oettinger (expected),"SJ: Gaudette, Allan | DAL: Heiskanen, Steel?"
+2026-11-06 14:02,goals,401892669,2026-11-07,sj,dal,0.6248,3.223,2.393,5.78,Alex Nedeljkovic (expected),Jake Oettinger (expected),"SJ: Gaudette, Allan | DAL: Heiskanen, Steel?"
