@@ -293,3 +293,13 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 06:42:27,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,event,moneyline,away,0.0,180,normal
 2026-11-06 06:42:27,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,event,spread,home,-1.5,115,normal
 2026-11-06 06:42:27,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,event,spread,away,1.5,-141,normal
+2026-11-06 06:47:42,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,moneyline,home,0.0,-278,normal
+2026-11-06 06:47:42,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,moneyline,away,0.0,225,normal
+2026-11-06 06:47:42,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,spread,home,-1.5,-105,normal
+2026-11-06 06:47:42,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,spread,away,1.5,-116,normal
+2026-11-06 06:47:42,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,total,under,6.5,105,normal
+2026-11-06 06:47:42,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,total,over,6.5,-125,normal
+2026-11-06 06:47:42,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,firstperiod,spread,away,0.5,-133,normal
+2026-11-06 06:47:42,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,firstperiod,spread,home,-0.5,-105,normal
+2026-11-06 06:47:42,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,firstperiod,total,over,1.5,-156,normal
+2026-11-06 06:47:42,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,firstperiod,total,under,1.5,120,normal
