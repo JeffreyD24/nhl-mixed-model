@@ -3019,3 +3019,6 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 03:11:32,293561,2026-11-06,2026-11-06 20:00,sj,min,bet365,event,moneyline,away,0.0,220,normal
 2026-11-06 03:11:32,293560,2026-11-06,2026-11-06 19:00,cbj,buf,DraftKings,secondperiod,team_total,home_under,1.5,-255,normal
 2026-11-06 03:11:32,293560,2026-11-06,2026-11-06 19:00,cbj,buf,DraftKings,secondperiod,team_total,home_over,1.5,185,normal
+2026-11-06 03:14:43,293560,2026-11-06,2026-11-06 19:00,cbj,buf,DraftKings,event,team_total,home_under,3.5,-125,normal
+2026-11-06 03:14:43,293560,2026-11-06,2026-11-06 19:00,cbj,buf,DraftKings,event,team_total,home_over,3.5,-115,normal
+2026-11-06 03:14:43,293560,2026-11-06,2026-11-06 19:00,cbj,buf,DraftKings,secondperiod,team_total,home_over,1.5,180,normal
