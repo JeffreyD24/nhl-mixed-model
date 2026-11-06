@@ -1,5 +1,5 @@
 {
- "updated_et": "2026-11-05 10:02:46.183700",
+ "updated_et": "2026-11-05 22:17:35.214487",
  "active": "xg",
  "rule": {
   "line": "open",
@@ -12,35 +12,35 @@
  "models": {
   "goals": {
    "label": "Goals model (team offense/defense + goalie, on goals)",
-   "rule_bets": 189,
-   "wins": 77,
-   "losses": 112,
-   "units": -35.94,
-   "return_per_bet": -0.1902,
-   "avg_clv": -0.0361,
-   "bets_with_clv": 187,
-   "live_rule_bets": 27,
-   "live_units": -9.0,
+   "rule_bets": 198,
+   "wins": 80,
+   "losses": 118,
+   "units": -40.39,
+   "return_per_bet": -0.204,
+   "avg_clv": -0.0381,
+   "bets_with_clv": 196,
+   "live_rule_bets": 36,
+   "live_units": -13.45,
    "alerts_graded": 17,
    "alert_units": -3.31,
-   "moneyline_brier": 0.2394,
-   "games_graded": 250
+   "moneyline_brier": 0.2383,
+   "games_graded": 259
   },
   "xg": {
    "label": "Shot model (expected goals from shot location + finishing + goalie)",
-   "rule_bets": 159,
-   "wins": 74,
-   "losses": 85,
-   "units": -12.97,
-   "return_per_bet": -0.0816,
-   "avg_clv": 0.0094,
-   "bets_with_clv": 151,
-   "live_rule_bets": 21,
-   "live_units": 0.72,
+   "rule_bets": 164,
+   "wins": 76,
+   "losses": 88,
+   "units": -13.87,
+   "return_per_bet": -0.0846,
+   "avg_clv": 0.0076,
+   "bets_with_clv": 156,
+   "live_rule_bets": 26,
+   "live_units": -0.18,
    "alerts_graded": 12,
    "alert_units": 0.78,
-   "moneyline_brier": 0.2316,
-   "games_graded": 250
+   "moneyline_brier": 0.2303,
+   "games_graded": 259
   }
  }
 }
