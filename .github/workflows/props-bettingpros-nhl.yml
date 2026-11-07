@@ -1,0 +1,51 @@
+name: Past NHL player props backfill (BettingPros)
+
+# Nov 7, 2026 (NHL player props model): one job per half-season; saves after each batch of dates. Runs on the working branch
+# (claude/nhl-player-props-model-owr4ts) and commits the data there. Re-run (workflow_dispatch) resumes: saved dates are skipped.
+on:
+  push:
+    branches: [claude/nhl-player-props-model-owr4ts]
+    paths: [".github/workflows/props-bettingpros-nhl.yml", "props_bettingpros_nhl.py"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  part:
+    strategy:
+      fail-fast: false
+      matrix:
+        range:
+          - "--from 2022-04-01 --to 2022-06-30"
+          - "--from 2022-10-01 --to 2022-12-31"
+          - "--from 2023-01-01 --to 2023-06-30"
+          - "--from 2023-10-01 --to 2023-12-31"
+          - "--from 2024-01-01 --to 2024-06-30"
+          - "--from 2024-10-01 --to 2024-12-31"
+          - "--from 2025-01-01 --to 2025-06-30"
+          - "--from 2025-10-01 --to 2025-12-31"
+          - "--from 2026-01-01 --to 2026-06-30"
+          - "--from 2026-10-01 --to 2027-06-30"
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: claude/nhl-player-props-model-owr4ts }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q pandas
+      - name: Download this range, saving after each batch
+        run: |
+          git config user.name "nhl-tracker-bot"; git config user.email "actions@users.noreply.github.com"
+          START=$(date +%s)
+          while [ $(( $(date +%s) - START )) -lt 19800 ]; do
+            OUT=$(python props_bettingpros_nhl.py . ${{ matrix.range }} --max-dates 8 2>&1); RC=$?
+            echo "$OUT" | tail -9
+            git add data/props_history/bettingpros_nhl
+            if ! git diff --cached --quiet; then
+              git commit -q -m "BettingPros NHL props: $(echo "$OUT" | grep -o '^[0-9-]*' | tail -1)"
+              for i in 1 2 3 4 5 6 7 8 9 10; do git pull --rebase --autostash -q origin claude/nhl-player-props-model-owr4ts && git push -q origin HEAD:claude/nhl-player-props-model-owr4ts && break; sleep $((5 + RANDOM % 25)); done
+            fi
+            if [ $RC -ne 0 ] || echo "$OUT" | grep -q "already saved"; then break; fi
+          done
