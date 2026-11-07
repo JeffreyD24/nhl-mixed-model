@@ -12120,3 +12120,8 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-07 02:30:25,293574,2026-11-07,2026-11-07 22:00,van,edm,bet365,firstperiod,spread,home,-0.5,100,normal
 2026-11-07 02:30:25,293574,2026-11-07,2026-11-07 22:00,van,edm,bet365,firstperiod,total,over,1.5,-165,normal
 2026-11-07 02:30:25,293574,2026-11-07,2026-11-07 22:00,van,edm,bet365,firstperiod,total,under,1.5,140,normal
+2026-11-07 02:32:11,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,event,spread,home,-2.0,-117,normal
+2026-11-07 02:32:11,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,secondperiod,total,over,2.0,-109,normal
+2026-11-07 02:32:11,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,secondperiod,total,under,2.0,-118,normal
+2026-11-07 02:32:11,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,thirdperiod,total,over,2.5,132,normal
+2026-11-07 02:32:11,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,thirdperiod,total,under,2.5,-175,normal
