@@ -10529,3 +10529,16 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 23:42:32,293570,2026-11-07,2026-11-07 20:00,tb,min,DraftKings,thirdperiod,team_total,home_over,0.5,-210,normal
 2026-11-06 23:42:32,293570,2026-11-07,2026-11-07 20:00,tb,min,DraftKings,thirdperiod,total,over,2.5,130,normal
 2026-11-06 23:42:32,293570,2026-11-07,2026-11-07 20:00,tb,min,DraftKings,thirdperiod,total,under,2.5,-166,normal
+2026-11-06 23:44:18,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Consensus,event,moneyline,away,0.0,101,normal
+2026-11-06 23:44:18,293565,2026-11-07,2026-11-07 17:00,nyr,sea,Consensus,event,moneyline,home,0.0,107,normal
+2026-11-06 23:44:18,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,event,moneyline,home,0.0,-292,normal
+2026-11-06 23:44:18,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,event,total,under,6.5,-120,normal
+2026-11-06 23:44:18,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,event,total,over,6.5,100,normal
+2026-11-06 23:44:18,293570,2026-11-07,2026-11-07 20:00,tb,min,Consensus,event,team_total,away_under,3.5,-150,normal
+2026-11-06 23:44:18,293570,2026-11-07,2026-11-07 20:00,tb,min,Consensus,event,team_total,away_over,3.5,110,normal
+2026-11-06 23:44:18,293570,2026-11-07,2026-11-07 20:00,tb,min,Consensus,event,moneyline,away,0.0,-134,normal
+2026-11-06 23:44:18,293573,2026-11-07,2026-11-07 21:00,pit,la,Consensus,event,moneyline,home,0.0,-126,normal
+2026-11-06 23:44:18,293573,2026-11-07,2026-11-07 21:00,pit,la,Consensus,event,moneyline,away,0.0,106,normal
+2026-11-06 23:44:18,293570,2026-11-07,2026-11-07 20:00,tb,min,Consensus,firstperiod,total,under,1.5,102,normal
+2026-11-06 23:44:18,293570,2026-11-07,2026-11-07 20:00,tb,min,Consensus,thirdperiod,total,under,2.0,-105,normal
+2026-11-06 23:44:18,293570,2026-11-07,2026-11-07 20:00,tb,min,Consensus,thirdperiod,total,over,2.0,-123,normal
