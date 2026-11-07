@@ -160,3 +160,21 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 21:08:05,401892659,2026-11-06,cbj,buf,in,20:00 - 3rd,3,20:00,1.0,5.0,28.0,17.0,Period End,End of 2nd Period
 2026-11-06 21:08:05,401892660,2026-11-06,sj,min,in,18:27 - 2nd,2,18:27,0.0,1.0,10.0,9.0,Stoppage,Off-side
 2026-11-06 21:09:05,401892660,2026-11-06,sj,min,in,17:55 - 2nd,2,17:55,0.0,1.0,10.0,9.0,Face Off,Ty Dellandrea faceoff won against Yakov Trenin
+2026-11-06 21:10:05,401892659,2026-11-06,cbj,buf,in,19:28 - 3rd,3,19:28,1.0,5.0,28.0,17.0,Face Off,Tyson Kozak faceoff won against Jack Williams
+2026-11-06 21:10:05,401892660,2026-11-06,sj,min,in,16:54 - 2nd,2,16:54,0.0,1.0,10.0,9.0,Blocked,Quinn Hughes shot blocked by Nico Sturm
+2026-11-06 21:10:05,401892661,2026-11-06,ana,cgy,in,19:17 - 2nd,2,19:17,1.0,3.0,8.0,5.0,Blocked,Cutter Gauthier shot blocked by Zach Whitecloud
+2026-11-06 21:11:05,401892659,2026-11-06,cbj,buf,in,18:54 - 3rd,3,18:54,1.0,5.0,28.0,17.0,Stoppage,Goalie Stopped
+2026-11-06 21:11:05,401892660,2026-11-06,sj,min,in,15:53 - 2nd,2,15:53,0.0,1.0,10.0,9.0,Shot,Matt Boldy Wrist Shot saved by Yaroslav Askarov
+2026-11-06 21:11:05,401892661,2026-11-06,ana,cgy,in,18:51 - 2nd,2,18:51,1.0,3.0,8.0,5.0,Shot,Alex Killorn Wrist Shot saved by Dustin Wolf
+2026-11-06 21:12:05,401892659,2026-11-06,cbj,buf,in,18:29 - 3rd,3,18:29,1.0,5.0,28.0,18.0,Blocked,Damon Severson shot blocked by Mathieu Olivier
+2026-11-06 21:12:05,401892660,2026-11-06,sj,min,in,14:52 - 2nd,2,14:52,0.0,1.0,11.0,9.0,Blocked,Joel Eriksson Ek shot blocked by Macklin Celebrini
+2026-11-06 21:12:05,401892661,2026-11-06,ana,cgy,in,18:16 - 2nd,2,18:16,1.0,3.0,8.0,6.0,Stoppage,Goalie Stopped
+2026-11-06 21:13:05,401892659,2026-11-06,cbj,buf,in,18:07 - 3rd,3,18:07,1.0,5.0,28.0,18.0,Face Off,Sam Carrick faceoff won against Charlie Coyle
+2026-11-06 21:13:05,401892660,2026-11-06,sj,min,in,14:10 - 2nd,2,14:10,0.0,1.0,11.0,9.0,Stoppage,Icing
+2026-11-06 21:13:05,401892661,2026-11-06,ana,cgy,in,17:33 - 2nd,2,17:33,1.0,3.0,8.0,6.0,Shot,Nico Myatovic Backhand saved by Dustin Wolf
+2026-11-06 21:14:05,401892659,2026-11-06,cbj,buf,in,17:52 - 3rd,3,17:52,1.0,5.0,29.0,18.0,Stoppage,Goalie Stopped
+2026-11-06 21:14:05,401892660,2026-11-06,sj,min,in,13:54 - 2nd,2,13:54,0.0,1.0,11.0,10.0,Stoppage,Goalie Stopped
+2026-11-06 21:14:05,401892661,2026-11-06,ana,cgy,in,17:09 - 2nd,2,17:09,1.0,3.0,9.0,7.0,Face Off,Jonathan Castagna faceoff won against Roger McQueen
+2026-11-06 21:15:06,401892659,2026-11-06,cbj,buf,in,17:10 - 3rd,3,17:10,1.0,5.0,29.0,18.0,Shot,Jiri Kulich saved by Jet Greaves
+2026-11-06 21:15:06,401892660,2026-11-06,sj,min,in,13:54 - 2nd,2,13:54,0.0,1.0,11.0,12.0,Stoppage,Goalie Stopped
+2026-11-06 21:15:06,401892661,2026-11-06,ana,cgy,in,16:55 - 2nd,2,16:55,1.0,3.0,9.0,8.0,Face Off,Mikael Backlund faceoff won against Roger McQueen
