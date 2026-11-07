@@ -8331,3 +8331,10 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 20:07:43,293570,2026-11-07,2026-11-07 20:00,tb,min,BetRivers,thirdperiod,moneyline,away,0.0,-141,normal
 2026-11-06 20:07:43,293570,2026-11-07,2026-11-07 20:00,tb,min,BetRivers,thirdperiod,total,under,1.5,150,normal
 2026-11-06 20:07:43,293570,2026-11-07,2026-11-07 20:00,tb,min,BetRivers,thirdperiod,total,over,1.5,-220,normal
+2026-11-06 20:09:52,293570,2026-11-07,2026-11-07 20:00,tb,min,Consensus,event,moneyline,away,0.0,-138,normal
+2026-11-06 20:09:52,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,event,moneyline,away,0.0,312,normal
+2026-11-06 20:09:52,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,moneyline,away,0.0,262,normal
+2026-11-06 20:09:52,293567,2026-11-07,2026-11-07 19:00,mtl,tor,Consensus,firstperiod,total,under,1.5,117,normal
+2026-11-06 20:09:52,293567,2026-11-07,2026-11-07 19:00,mtl,tor,Consensus,firstperiod,total,over,1.5,-153,normal
+2026-11-06 20:09:52,293567,2026-11-07,2026-11-07 19:00,mtl,tor,Consensus,thirdperiod,team_total,home_under,1.5,-238,normal
+2026-11-06 20:09:52,293567,2026-11-07,2026-11-07 19:00,mtl,tor,Consensus,thirdperiod,team_total,home_over,1.5,180,normal
