@@ -102,3 +102,20 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 20:33:05,401892659,2026-11-06,cbj,buf,in,9:07 - 2nd,2,9:07,1.0,5.0,23.0,15.0,Stoppage,Challenge Vis - goal interference
 2026-11-06 20:33:05,401892660,2026-11-06,sj,min,in,7:45 - 1st,1,7:45,0.0,1.0,9.0,3.0,Missed,Ivar Stenberg Poke Wide Right
 2026-11-06 20:33:05,401892661,2026-11-06,ana,cgy,in,9:25 - 1st,1,9:25,1.0,1.0,4.0,3.0,Blocked,Judd Caulfield shot blocked by Judd Caulfield
+2026-11-06 20:34:05,401892659,2026-11-06,cbj,buf,in,8:43 - 2nd,2,8:43,1.0,5.0,23.0,15.0,Face Off,Charlie Coyle faceoff won against Tage Thompson
+2026-11-06 20:34:05,401892660,2026-11-06,sj,min,in,7:05 - 1st,1,7:05,0.0,1.0,9.0,4.0,Missed,Olli Maatta Tip-In Wide Right
+2026-11-06 20:34:05,401892661,2026-11-06,ana,cgy,in,8:45 - 1st,1,8:45,1.0,1.0,4.0,3.0,Shot,Adam Klapka Wrist Shot saved by Lukas Dostal
+2026-11-06 20:35:05,401892659,2026-11-06,cbj,buf,in,8:08 - 2nd,2,8:08,1.0,5.0,23.0,16.0,Stoppage,
+2026-11-06 20:35:05,401892660,2026-11-06,sj,min,in,6:24 - 1st,1,6:24,0.0,1.0,9.0,4.0,Stoppage,Off-side
+2026-11-06 20:35:05,401892661,2026-11-06,ana,cgy,in,7:45 - 1st,1,7:45,1.0,1.0,5.0,4.0,Blocked,Simon Nemec shot blocked by Jeff Malott
+2026-11-06 20:36:06,401892659,2026-11-06,cbj,buf,in,7:07 - 2nd,2,7:07,1.0,5.0,23.0,16.0,Blocked,Josh Doan shot blocked by Denton Mateychuk
+2026-11-06 20:36:06,401892660,2026-11-06,sj,min,in,6:04 - 1st,1,6:04,0.0,1.0,9.0,5.0,Stoppage,Goalie Stopped
+2026-11-06 20:36:06,401892661,2026-11-06,ana,cgy,in,6:32 - 1st,1,6:32,1.0,1.0,5.0,4.0,Blocked,Zach Whitecloud shot blocked by Jackson LaCombe
+2026-11-06 20:37:05,401892659,2026-11-06,cbj,buf,in,6:59 - 2nd,2,6:59,1.0,5.0,25.0,16.0,Penalty Shot Infraction,Dante Fabbro Minor
+2026-11-06 20:37:05,401892660,2026-11-06,sj,min,in,5:52 - 1st,1,5:52,0.0,1.0,9.0,6.0,Face Off,Ty Dellandrea faceoff won against Blake Coleman
+2026-11-06 20:37:05,401892661,2026-11-06,ana,cgy,in,5:30 - 1st,1,5:30,1.0,1.0,5.0,4.0,Giveaway,Giveaway by Jackson LaCombe
+2026-11-06 20:38:05,401892660,2026-11-06,sj,min,in,5:19 - 1st,1,5:19,0.0,1.0,9.0,6.0,Face Off,Danila Yurov faceoff won against Ty Dellandrea
+2026-11-06 20:38:05,401892661,2026-11-06,ana,cgy,in,4:30 - 1st,1,4:30,1.0,1.0,5.0,4.0,Missed,Leo Carlsson Wrist Shot Wide Left
+2026-11-06 20:39:05,401892659,2026-11-06,cbj,buf,in,6:59 - 2nd,2,6:59,1.0,5.0,27.0,16.0,High-sticking,Dante Fabbro High-sticking
+2026-11-06 20:39:05,401892660,2026-11-06,sj,min,in,4:41 - 1st,1,4:41,0.0,1.0,9.0,7.0,Penalty Shot Infraction,Yakov Trenin Minor
+2026-11-06 20:39:05,401892661,2026-11-06,ana,cgy,in,3:38 - 1st,1,3:38,1.0,1.0,5.0,4.0,Stoppage,Goalie Stopped
