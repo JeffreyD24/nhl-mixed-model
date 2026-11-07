@@ -86,3 +86,19 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 20:27:05,401892659,2026-11-06,cbj,buf,in,10:05 - 2nd,2,10:05,1.0,4.0,21.0,14.0,Stoppage,Goalie Stopped
 2026-11-06 20:27:05,401892660,2026-11-06,sj,min,in,9:45 - 1st,1,9:45,0.0,1.0,9.0,3.0,Face Off,Ty Dellandrea faceoff won against Michael McCarron
 2026-11-06 20:27:05,401892661,2026-11-06,ana,cgy,in,12:21 - 1st,1,12:21,1.0,1.0,4.0,3.0,Stoppage,Puck in Netting
+2026-11-06 20:28:05,401892660,2026-11-06,sj,min,in,9:45 - 1st,1,9:45,0.0,1.0,9.0,3.0,Stoppage,Hand Pass
+2026-11-06 20:28:05,401892661,2026-11-06,ana,cgy,in,11:42 - 1st,1,11:42,1.0,1.0,4.0,3.0,Face Off,Martin Pospisil faceoff won against Leo Carlsson
+2026-11-06 20:29:05,401892659,2026-11-06,cbj,buf,in,9:47 - 2nd,2,9:47,1.0,4.0,21.0,15.0,Shot,Ivan Provorov saved by Ukko-Pekka Luukkonen
+2026-11-06 20:29:05,401892661,2026-11-06,ana,cgy,in,11:03 - 1st,1,11:03,1.0,1.0,4.0,3.0,Stoppage,Off-side
+2026-11-06 20:30:05,401892659,2026-11-06,cbj,buf,in,9:21 - 2nd,2,9:21,1.0,4.0,21.0,15.0,Stoppage,Goalie Stopped
+2026-11-06 20:30:05,401892660,2026-11-06,sj,min,in,9:27 - 1st,1,9:27,0.0,1.0,9.0,3.0,Face Off,Blake Coleman faceoff won against Macklin Celebrini
+2026-11-06 20:30:05,401892661,2026-11-06,ana,cgy,in,10:50 - 1st,1,10:50,1.0,1.0,4.0,3.0,Stoppage,Puck in Crowd
+2026-11-06 20:31:05,401892659,2026-11-06,cbj,buf,in,9:07 - 2nd,2,9:07,1.0,5.0,24.0,15.0,Goal,"Josh Doan Goal (3) Tip-In, assists: none"
+2026-11-06 20:31:05,401892660,2026-11-06,sj,min,in,9:03 - 1st,1,9:03,0.0,1.0,9.0,3.0,Missed,Matt Boldy Wrist Shot Wide Left
+2026-11-06 20:31:05,401892661,2026-11-06,ana,cgy,in,10:42 - 1st,1,10:42,1.0,1.0,4.0,3.0,Stoppage,Icing
+2026-11-06 20:32:06,401892659,2026-11-06,cbj,buf,in,9:07 - 2nd,2,9:07,1.0,5.0,23.0,15.0,Goal,"Josh Doan Goal (3) Deflected, assists: Noah Ostlund (6), Jack Quinn (7)"
+2026-11-06 20:32:06,401892660,2026-11-06,sj,min,in,8:31 - 1st,1,8:31,0.0,1.0,9.0,3.0,Blocked,Blake Coleman shot blocked by Mason Marchment
+2026-11-06 20:32:06,401892661,2026-11-06,ana,cgy,in,10:08 - 1st,1,10:08,1.0,1.0,4.0,3.0,Stoppage,Icing
+2026-11-06 20:33:05,401892659,2026-11-06,cbj,buf,in,9:07 - 2nd,2,9:07,1.0,5.0,23.0,15.0,Stoppage,Challenge Vis - goal interference
+2026-11-06 20:33:05,401892660,2026-11-06,sj,min,in,7:45 - 1st,1,7:45,0.0,1.0,9.0,3.0,Missed,Ivar Stenberg Poke Wide Right
+2026-11-06 20:33:05,401892661,2026-11-06,ana,cgy,in,9:25 - 1st,1,9:25,1.0,1.0,4.0,3.0,Blocked,Judd Caulfield shot blocked by Judd Caulfield
