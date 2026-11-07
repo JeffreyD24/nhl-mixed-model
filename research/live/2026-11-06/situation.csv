@@ -268,3 +268,11 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 21:48:05,401892661,2026-11-06,ana,cgy,in,0:23 - 2nd,2,0:23,2.0,3.0,13.0,18.0,Blocked,Cutter Gauthier shot blocked by Zayne Parekh
 2026-11-06 21:49:05,401892661,2026-11-06,ana,cgy,in,End of 2nd,2,0:00,2.0,3.0,13.0,18.0,Period End,End of 2nd Period
 2026-11-06 21:50:05,401892661,2026-11-06,ana,cgy,in,End of 2nd,2,0:00,2.0,3.0,14.0,18.0,Period End,End of 2nd Period
+2026-11-06 22:04:05,401892660,2026-11-06,sj,min,in,20:00 - 3rd,3,20:00,1.0,2.0,19.0,18.0,Period End,End of 2nd Period
+2026-11-06 22:05:05,401892660,2026-11-06,sj,min,in,19:12 - 3rd,3,19:12,1.0,2.0,19.0,19.0,Shot,Macklin Celebrini Wrist Shot saved by Jesper Wallstedt
+2026-11-06 22:05:05,401892661,2026-11-06,ana,cgy,in,20:00 - 3rd,3,20:00,2.0,3.0,14.0,18.0,Period End,End of 2nd Period
+2026-11-06 22:06:05,401892660,2026-11-06,sj,min,in,18:10 - 3rd,3,18:10,1.0,2.0,19.0,19.0,Blocked,Sam Dickinson shot blocked by Olli Maatta
+2026-11-06 22:07:05,401892660,2026-11-06,sj,min,in,17:11 - 3rd,3,17:11,1.0,2.0,19.0,19.0,Missed,Blake Coleman Wrist Shot Above Crossbar
+2026-11-06 22:07:05,401892661,2026-11-06,ana,cgy,in,20:00 - 3rd,3,20:00,2.0,3.0,14.0,18.0,Period Start,Start of 3rd Period
+2026-11-06 22:08:05,401892660,2026-11-06,sj,min,in,16:10 - 3rd,3,16:10,1.0,2.0,19.0,19.0,Shot,Quinn Hughes Backhand saved by Yaroslav Askarov
+2026-11-06 22:08:05,401892661,2026-11-06,ana,cgy,in,19:43 - 3rd,3,19:43,2.0,3.0,14.0,18.0,Elbowing,Matt Coronato Elbowing
