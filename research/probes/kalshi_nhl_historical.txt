@@ -1,0 +1,12 @@
+cutoff {'market_positions_last_updated_ts': '2026-09-07T00:00:00Z', 'market_settled_ts': '2026-09-07T00:00:00Z', 'orders_updated_ts': '2026-10-23T00:00:00Z', 'trades_created_ts': '2026-09-07T00:00:00Z'}
+KXNHLGOAL	historical=37973	2025-11-22..2026-06-15
+KXNHLPTS	historical=41919	2025-11-25..2026-06-15
+KXNHLAST	historical=29869	2025-11-25..2026-06-15
+KXNHLFIRSTGOAL	historical=24006	2025-11-22..2026-06-15
+KXNHLSAVE	historical=0	None..None
+KXNHLSAVES	historical=0	None..None
+KXNHLANYGOAL	historical=0	None..None
+KXNHLSEASONPPTS	historical=0	None..None
+KXNHLPSEASONGOALS	historical=0	None..None
+KXNHLSEASONGOALS	historical=0	None..None
+KXNHLGAME	historical=3076	2025-04-20..2026-06-15

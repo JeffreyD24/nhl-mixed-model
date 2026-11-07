@@ -1,0 +1,20 @@
+www.sportsbookreview.com/betting-odds/nhl-hockey/*: 2863 distinct urls before 2022-04 (2 with prop-ish words in url)
+   20160328195335 http://www.sportsbookreview.com:80/betting-odds/nhl-hockey/pointspread/ bytes=150113 text_chars=1173 prop_words=0 odds=246 x.5_lines=0
+   20190716141216 https://www.sportsbookreview.com/betting-odds/nhl-hockey/pointspread/3rd-quarter/ bytes=442584 text_chars=741 prop_words=0 odds=2 x.5_lines=1
+www.scoresandodds.com/nhl/props*: 1 distinct urls before 2022-04 (1 with prop-ish words in url)
+   20210203163422 https://www.scoresandodds.com/nhl/props bytes=199669 text_chars=1348 prop_words=1 odds=310 x.5_lines=0
+rotowire.com/betting/nhl/player-props.php: 1 distinct urls before 2022-04 (1 with prop-ish words in url)
+   20210624061239 https://www.rotowire.com/betting/nhl/player-props.php bytes=58074 text_chars=526 prop_words=0 odds=0 x.5_lines=0
+www.numberfire.com/nhl/*: 5000 distinct urls before 2022-04 (63 with prop-ish words in url)
+   20141205013326 http://www.numberfire.com:80/nhl/daily-fantasy-hockey-projections bytes=974734 text_chars=15649 prop_words=0 odds=0 x.5_lines=77
+   20161219195949 http://www.numberfire.com:80/nhl/daily-fantasy/daily-hockey-projections/forwards bytes=343872 text_chars=4442 prop_words=0 odds=0 x.5_lines=7
+   20141015213900 http://www.numberfire.com:80/nhl/fantasy/remaining-projections/forwards bytes=246081 text_chars=4833 prop_words=0 odds=0 x.5_lines=0
+www.bovada.lv/sports/hockey/nhl*: 152 distinct urls before 2022-04 (1 with prop-ish words in url)
+   20190114172451 https://www.bovada.lv/sports/hockey/nhl-season-props bytes=69654 text_chars=198 prop_words=0 odds=0 x.5_lines=0
+sportsbook.fanduel.com/navigation/nhl*: 6 distinct urls before 2022-04 (1 with prop-ish words in url)
+   20211018202610 https://sportsbook.fanduel.com/navigation/nhl?tab=player-coach-futures bytes=6960 text_chars=11 prop_words=0 odds=0 x.5_lines=0
+app.prizepicks.com/*: 867 distinct urls before 2022-04 (2 with prop-ish words in url)
+   20220216211723 https://app.prizepicks.com/sign-up?invite_code=breakingpoint bytes=13190 text_chars=5 prop_words=0 odds=0 x.5_lines=0
+   20220116104356 https://app.prizepicks.com/sign-up?invite_code=PROPSHQ bytes=13279 text_chars=5 prop_words=0 odds=0 x.5_lines=0
+api.prizepicks.com/projections*: 1 distinct urls before 2022-04 (1 with prop-ish words in url)
+   20210525112638 https://api.prizepicks.com/projections?league_id=124&per_page=250&projection_type_id=1&sin bytes=3419 text_chars=78 prop_words=0 odds=0 x.5_lines=0

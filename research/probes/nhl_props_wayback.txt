@@ -1,0 +1,19 @@
+rotowire.com/betting/nhl/player-props.php: 135 ok snapshots on 119 days; by year {'2021': 3, '2022': 5, '2023': 23, '2024': 24, '2025': 67, '2026': 13}
+www.bettingpros.com/nhl/props/*: 23 ok snapshots on 14 days; by year {'2024': 2, '2025': 6, '2026': 15}
+www.scoresandodds.com/nhl/props*: 33 ok snapshots on 33 days; by year {'2021': 7, '2022': 3, '2023': 7, '2024': 8, '2025': 5, '2026': 3}
+www.covers.com/sport/hockey/nhl/player-props*: 196 ok snapshots on 163 days; by year {'2022': 9, '2023': 55, '2024': 36, '2025': 45, '2026': 51}
+www.oddstrader.com/nhl/player-props*: 4 ok snapshots on 4 days; by year {'2025': 3, '2026': 1}
+www.actionnetwork.com/nhl/props*: 43 ok snapshots on 31 days; by year {'2022': 2, '2023': 4, '2024': 12, '2025': 8, '2026': 17}
+sportsbook.draftkings.com/leagues/hockey/nhl*: 827 ok snapshots on 431 days; by year {'2022': 77, '2023': 140, '2024': 220, '2025': 289, '2026': 101}
+sportsbook.fanduel.com/navigation/nhl*: 430 ok snapshots on 177 days; by year {'2021': 22, '2022': 128, '2023': 39, '2024': 7, '2025': 13, '2026': 221}
+www.oddsshark.com/nhl/player-props*: 23 ok snapshots on 15 days; by year {'2024': 10, '2025': 13}
+www.vegasinsider.com/nhl/odds/player-props*: 10 ok snapshots on 10 days; by year {'2025': 8, '2026': 2}
+www.pickswise.com/nhl/props*: 0 ok snapshots on 0 days; by year {}
+www.dimers.com/nhl/props*: 1 ok snapshots on 1 days; by year {'2026': 1}
+www.numberfire.com/nhl/*: 48432 ok snapshots on 2448 days; by year {'2014': 380, '2015': 3797, '2016': 3932, '2017': 2850, '2018': 4610, '2019': 6423, '2020': 4675, '2021': 7465, '2022': 8426, '2023': 3784, '2024': 1614, '2025': 476}
+www.rotogrinders.com/*nhl*prop*: 0 ok snapshots on 0 days; by year {}
+www.sportsbookreview.com/betting-odds/nhl-hockey/*: 4969 ok snapshots on 646 days; by year {'2014': 2, '2015': 14, '2016': 481, '2017': 72, '2018': 34, '2019': 577, '2020': 116, '2021': 2678, '2022': 511, '2023': 176, '2024': 107, '2025': 91, '2026': 110}
+app.prizepicks.com/*: 49522 ok snapshots on 956 days; by year {'2020': 3, '2021': 33, '2022': 296, '2023': 1067, '2024': 1863, '2025': 40743, '2026': 5517}
+api.prizepicks.com/projections*: 26 ok snapshots on 20 days; by year {'2021': 1, '2022': 4, '2023': 3, '2024': 10, '2026': 8}
+www.bovada.lv/sports/hockey/nhl*: 1134 ok snapshots on 432 days; by year {'2019': 123, '2020': 11, '2021': 36, '2022': 81, '2023': 45, '2024': 194, '2025': 396, '2026': 248}
+sports.core.api.espn.com/v2/sports/hockey/leagues/nhl/events/*/propBets*: 0 ok snapshots on 0 days; by year {}

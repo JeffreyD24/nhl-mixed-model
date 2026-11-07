@@ -1,0 +1,90 @@
+series total 4156
+KXWOMHOCKEYGOAL	Olympic Hockey Goalscorer	settled=0	None..None	open=0
+KXNCAAHGAME	College Hockey Game	settled=400	2026-10-03..2026-11-06	open=54
+KXNHLFIRSTGOAL	NHL First Goal	settled=9461	2026-09-29..2026-11-06	open=73
+KXWO-HOCKEY	Winter Olympics Hockey	settled=0	None..None	open=0
+KXNCAAHOCKEY	College Hockey National Champion	settled=0	None..None	open=0
+KXNHLSAVES	Pro Hockey Saves	settled=0	None..None	open=0
+KXNHLWEST	Western Conference Champion	settled=0	None..None	open=16
+KXNHLDRAFTTOP	Pro Hockey Top Pick	settled=0	None..None	open=0
+KXNHLCALDER	NHL Calder Memorial Trophy	settled=0	None..None	open=40
+KXNHL3PTOTAL	3rd Period Total	settled=1357	2026-09-30..2026-11-06	open=56
+KXNHLOT	NHL Overtime	settled=261	2026-09-30..2026-11-06	open=18
+KXNCAAHOCKEYGAME	College Hockey Game	settled=0	None..None	open=0
+KXNHLROSS	NHL Art Ross Trophy	settled=0	None..None	open=40
+KXNHLDRAFTPICK	Pro Hockey Draft Pick	settled=0	None..None	open=0
+KXNHL1PSPREAD	1st Period Spread	settled=635	2026-09-29..2026-11-07	open=34
+KXNHLRECORDWORST	Worst NHL Record	settled=0	None..None	open=32
+KXWOMHOCKEYTOTAL	Winter Olympics Men's Hockey Goal Total	settled=0	None..None	open=0
+KXPHLGAME	Polish Hockey Game	settled=50	2026-10-20..2026-10-31	open=0
+KXNHLHART	NHL Hart Memorial Trophy	settled=0	None..None	open=29
+KXNHLSEASONPTS	NHL Season Point Totals	settled=0	None..None	open=320
+KXNCAAH	College Hockey National Champion	settled=0	None..None	open=58
+KXNHLSERIESSPREAD	NHL Series Game Spread	settled=0	None..None	open=0
+KXNHL2PBTTS	NHL Both Teams to Score in 2nd Period	settled=0	None..None	open=0
+KXNHLSPREAD	NHL Spread	settled=2293	2026-09-20..2026-11-06	open=90
+KXNHL1PTOTAL	NHL 1st Period Total	settled=1255	2026-09-29..2026-11-07	open=51
+KXNHLANYGOAL	Pro Hockey Goalscorer	settled=0	None..None	open=0
+KXNHLMVP	NHL Hart Memorial Trophy Winner	settled=0	None..None	open=0
+KXNHLSEASONPPTS	Season Player Points	settled=0	None..None	open=90
+KXWOWHOCKEY	Winter Olympics Women's Hockey	settled=0	None..None	open=0
+KXWOMHOCKEYMVP	Men's Winter Olympics Hockey MVP	settled=0	None..None	open=0
+KXNHLEXPANSION	NHL Expansion	settled=0	None..None	open=1
+KXNHLOVERTIME	NHL Overtime	settled=0	None..None	open=0
+KXEUCHLGAME	Champions League Hockey	settled=12	2026-10-14..2026-10-14	open=0
+KXNHL3P	NHL 3rd Period Winner	settled=783	2026-09-30..2026-11-06	open=54
+KXNHLADAMS	NHL Jack Adams Award	settled=0	None..None	open=32
+KXNHLNORRIS	NHL James Norris Memorial Trophy	settled=0	None..None	open=30
+KXNHLF10G	NHL Goal in First 10 Minutes	settled=262	2026-09-29..2026-11-07	open=17
+KXNHL	Stanley Cup	settled=0	None..None	open=32
+KXNHLTEAMTOTAL	NHL Team Goals Scored During Game	settled=2611	2026-09-30..2026-11-07	open=179
+KXNHLGOAL	NHL Goalscorer	settled=15524	2026-09-29..2026-11-06	open=182
+KXNHL30COMEBACK	NHL 3-0 Series Comeback	settled=0	None..None	open=0
+KXNHLSERIESGAMES	NHL Series Total Games	settled=0	None..None	open=0
+KXWOMHOCKEYFGOAL	Winter Olympics Hockey First Goal	settled=0	None..None	open=0
+KXNHL1STTEAM	All NHL First Team	settled=0	None..None	open=0
+KXNHLAST	Pro Hockey Assists	settled=9203	2026-09-30..2026-11-06	open=104
+KXNHLNEXTGM	Next NHL GM	settled=0	None..None	open=0
+KXNHL1PBTTS	NHL Both Teams to Score in 1st Period	settled=0	None..None	open=0
+KXNHLSAVE	Goaltender Saves	settled=604	2026-09-30..2026-11-06	open=6
+KXNHLSERIESTOTALGOALS	NHL Series Total Goals	settled=0	None..None	open=0
+KXNHLPLAYOFF	Playoff Qualifier	settled=0	None..None	open=32
+KXNHLPLAYOFFGOALS	NHL Playoffs Goal Leader (by Round)	settled=0	None..None	open=0
+KXNHLSERIES	NHL Series Winner	settled=0	None..None	open=0
+KXNHLSERIESOT	NHL Series Overtime	settled=0	None..None	open=0
+KXNHLWSTREAK	Longest NHL win streak in regular season	settled=0	None..None	open=32
+KXNHLPRES	NHL President's Trophy Winner	settled=0	None..None	open=32
+KXNHLATLANTIC	NHL Atlantic Division Winner	settled=0	None..None	open=8
+KXINTHOCKEY	International Hockey	settled=0	None..None	open=0
+KXNHLNEXTTEAM	NHL Next Team	settled=33	2026-11-01..2026-11-01	open=0
+KXNHL2PTOTAL	2nd Period Total	settled=1365	2026-09-29..2026-11-06	open=57
+KXNHL3PSPREAD	NHL 3rd Period Spread	settled=748	2026-09-30..2026-11-06	open=37
+KXNHLRICHARD	NHL Maurice "Rocket" Richard Trophy	settled=0	None..None	open=40
+KXNHLLINDSAY	NHL Ted Lindsay Winner	settled=0	None..None	open=28
+KXNHL3PBTTS	NHL Both Teams to Score in 3rd Period	settled=0	None..None	open=0
+KXNHLPACIFIC	NHL Pacific Division Winner	settled=0	None..None	open=8
+KXWOHOCKEY	Winter Olympics Hockey	settled=0	None..None	open=0
+KXNHL1P	NHL 1st Period Winner	settled=786	2026-09-29..2026-11-07	open=51
+KXNHLPTS	Pro Hockey Points	settled=11890	2026-09-30..2026-11-06	open=141
+KXNHLSEASONGOALS	Player to score X Goals in Season	settled=0	None..None	open=87
+KXNHLVEZINA	NHL Vezina Trophy	settled=0	None..None	open=40
+KXNEXTTEAMNHL	Next Team NHL	settled=263	2026-10-23..2026-11-01	open=0
+KXNHLGAME	NHL Game	settled=640	2026-09-20..2026-11-06	open=96
+KXWOMHOCKEY	Winter Olympics Men's Hockey	settled=0	None..None	open=0
+KXNHLCENTRAL	NHL Central Division Winner	settled=0	None..None	open=8
+KXNHLTOTAL	NHL Total Goals	settled=3128	2026-09-20..2026-11-06	open=191
+KXNHL4NATIONS	4 nations face off	settled=0	None..None	open=0
+KXNHLMETROPOLITAN	NHL Metropolitan Division Winner	settled=0	None..None	open=8
+KXNHL2OT	NHL Double Overtime	settled=0	None..None	open=0
+KXNHLRETIRE	NHL Retire	settled=0	None..None	open=0
+KXNHLEAST	Eastern Conference Championship	settled=0	None..None	open=16
+KXWOMHOCKEYFIRSTGOAL	Winter Olympics Hockey First Goal	settled=0	None..None	open=0
+KXWOMHOCKEYSPREAD	Winter Olympics Men's Hockey Spread	settled=0	None..None	open=0
+KXNHLSERIESSCORE	NHL Series Exact Score	settled=0	None..None	open=0
+KXNHLFINALSEXACT	NHL Championship Series Score	settled=0	None..None	open=0
+KXNBANHL	NBA + NHL Champion Combo	settled=0	None..None	open=0
+KXNHL2PSPREAD	2nd Period Spread	settled=690	2026-09-29..2026-11-06	open=36
+KXNHL2P	NHL 2nd Period Winner	settled=783	2026-09-29..2026-11-06	open=54
+KXNHLSERIESTOTALGOAL	NHL Series Total Goals	settled=0	None..None	open=0
+KXNHLPSEASONGOALS	Player Goals Scored in Season	settled=0	None..None	open=17
+KXNHLWINS	NHL wins 	settled=0	None..None	open=0
