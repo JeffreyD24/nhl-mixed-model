@@ -287,3 +287,15 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 22:13:06,401892661,2026-11-06,ana,cgy,in,17:37 - 3rd,3,17:37,3.0,3.0,15.0,18.0,Shot,Zayne Parekh Wrist Shot saved by Ville Husso
 2026-11-06 22:14:05,401892660,2026-11-06,sj,min,in,13:21 - 3rd,3,13:21,1.0,2.0,20.0,20.0,Missed,Will Smith Deflected Wide Left
 2026-11-06 22:14:05,401892661,2026-11-06,ana,cgy,in,16:17 - 3rd,3,16:17,3.0,3.0,15.0,18.0,Shot,Tim Washe Wrist Shot saved by Dustin Wolf
+2026-11-06 22:15:05,401892660,2026-11-06,sj,min,in,13:05 - 3rd,3,13:05,1.0,3.0,20.0,20.0,Goal,"Quinn Hughes Goal (6) Wrist Shot, assists: Kirill Kaprizov (13), Jonas Brodin (7)"
+2026-11-06 22:15:05,401892661,2026-11-06,ana,cgy,in,16:06 - 3rd,3,16:06,3.0,3.0,16.0,19.0,Blocked,Simon Nemec shot blocked by Roger McQueen
+2026-11-06 22:16:05,401892660,2026-11-06,sj,min,in,12:54 - 3rd,3,12:54,1.0,3.0,20.0,20.0,Face Off,Ryan Hartman faceoff won against Collin Graf
+2026-11-06 22:16:05,401892661,2026-11-06,ana,cgy,in,15:20 - 3rd,3,15:20,3.0,3.0,16.0,20.0,Stoppage,Icing
+2026-11-06 22:17:06,401892660,2026-11-06,sj,min,in,12:36 - 3rd,3,12:36,1.0,3.0,20.0,20.0,Face Off,Macklin Celebrini faceoff won against Ryan Hartman
+2026-11-06 22:17:06,401892661,2026-11-06,ana,cgy,in,14:36 - 3rd,3,14:36,3.0,3.0,16.0,20.0,Face Off,Mikael Granlund faceoff won against Mikael Backlund
+2026-11-06 22:18:06,401892660,2026-11-06,sj,min,in,11:57 - 3rd,3,11:57,1.0,3.0,21.0,21.0,Stoppage,Goalie Stopped
+2026-11-06 22:18:06,401892661,2026-11-06,ana,cgy,in,13:38 - 3rd,3,13:38,3.0,3.0,16.0,21.0,Blocked,Alex Killorn shot blocked by Zayne Parekh
+2026-11-06 22:19:05,401892660,2026-11-06,sj,min,in,11:26 - 3rd,3,11:26,1.0,3.0,21.0,21.0,Stoppage,Goalie Stopped
+2026-11-06 22:19:05,401892661,2026-11-06,ana,cgy,in,12:43 - 3rd,3,12:43,3.0,3.0,16.0,21.0,Missed,Yegor Sharangovich Slap Shot Wide Right
+2026-11-06 22:20:05,401892660,2026-11-06,sj,min,in,10:24 - 3rd,3,10:24,1.0,3.0,21.0,21.0,Missed,David Spacek Missed Shot Wide Right
+2026-11-06 22:20:05,401892661,2026-11-06,ana,cgy,in,12:43 - 3rd,3,12:43,3.0,3.0,16.0,21.0,Stoppage,TV Timeout
