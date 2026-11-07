@@ -151,3 +151,5 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 20:50:05,401892661,2026-11-06,ana,cgy,in,0:26 - 1st,1,0:26,1.0,3.0,8.0,4.0,Shot,Cutter Gauthier Snap Shot saved by Dustin Wolf
 2026-11-06 20:51:05,401892659,2026-11-06,cbj,buf,in,End of 2nd,2,0:00,1.0,5.0,28.0,17.0,Missed,Owen Power Missed Shot Wide Right
 2026-11-06 20:51:05,401892661,2026-11-06,ana,cgy,in,End of 1st,1,0:00,1.0,3.0,8.0,6.0,Period End,End of 1st Period
+2026-11-06 20:52:06,401892659,2026-11-06,cbj,buf,in,End of 2nd,2,0:00,1.0,5.0,28.0,17.0,Period End,End of 2nd Period
+2026-11-06 20:53:05,401892661,2026-11-06,ana,cgy,in,End of 1st,1,0:00,1.0,3.0,8.0,5.0,Period End,End of 1st Period
