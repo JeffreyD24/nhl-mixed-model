@@ -8582,3 +8582,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 20:40:21,293572,2026-11-07,2026-11-07 21:00,det,col,BetRivers,thirdperiod,team_total,away_under,0.5,118,normal
 2026-11-06 20:40:21,293572,2026-11-07,2026-11-07 21:00,det,col,BetRivers,thirdperiod,moneyline,away,0.0,148,normal
 2026-11-06 20:40:21,293573,2026-11-07,2026-11-07 21:00,pit,la,BetRivers,thirdperiod,moneyline,home,0.0,-125,normal
+2026-11-06 20:42:35,293568,2026-11-07,2026-11-07 19:00,nj,nyi,BetMGM,event,moneyline,home,0.0,-150,normal
+2026-11-06 20:42:35,293568,2026-11-07,2026-11-07 19:00,nj,nyi,BetMGM,event,moneyline,away,0.0,125,normal
