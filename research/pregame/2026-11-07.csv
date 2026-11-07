@@ -7802,3 +7802,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 19:02:47,293573,2026-11-07,2026-11-07 21:00,pit,la,Fanatics,thirdperiod,spread,home,-0.5,135,normal
 2026-11-06 19:02:47,293573,2026-11-07,2026-11-07 21:00,pit,la,Fanatics,thirdperiod,total,under,2.5,-180,normal
 2026-11-06 19:02:47,293573,2026-11-07,2026-11-07 21:00,pit,la,Fanatics,thirdperiod,total,over,2.5,135,normal
+2026-11-06 19:04:04,293573,2026-11-07,2026-11-07 21:00,pit,la,Fanatics,secondperiod,moneyline,away,0.0,-125,normal
+2026-11-06 19:04:04,293573,2026-11-07,2026-11-07 21:00,pit,la,Fanatics,secondperiod,moneyline,home,0.0,-105,normal
