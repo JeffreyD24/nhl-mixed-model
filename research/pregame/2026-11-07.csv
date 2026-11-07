@@ -12152,3 +12152,9 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-07 02:44:04,293570,2026-11-07,2026-11-07 20:00,tb,min,BetMGM,event,moneyline,home,0.0,-140,normal
 2026-11-07 02:44:04,293571,2026-11-07,2026-11-07 20:00,chi,car,BetMGM,event,moneyline,away,0.0,-450,normal
 2026-11-07 02:44:04,293571,2026-11-07,2026-11-07 20:00,chi,car,BetMGM,event,moneyline,home,0.0,340,normal
+2026-11-07 02:45:46,293572,2026-11-07,2026-11-07 21:00,det,col,BetMGM,event,moneyline,away,0.0,-225,normal
+2026-11-07 02:45:46,293572,2026-11-07,2026-11-07 21:00,det,col,BetMGM,event,moneyline,home,0.0,185,normal
+2026-11-07 02:45:46,293573,2026-11-07,2026-11-07 21:00,pit,la,BetMGM,event,moneyline,home,0.0,105,normal
+2026-11-07 02:45:46,293573,2026-11-07,2026-11-07 21:00,pit,la,BetMGM,event,moneyline,away,0.0,-130,normal
+2026-11-07 02:45:46,293574,2026-11-07,2026-11-07 22:00,van,edm,BetMGM,event,moneyline,away,0.0,-350,normal
+2026-11-07 02:45:46,293574,2026-11-07,2026-11-07 22:00,van,edm,BetMGM,event,moneyline,home,0.0,280,normal
