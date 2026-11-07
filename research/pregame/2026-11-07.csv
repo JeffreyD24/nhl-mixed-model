@@ -8488,3 +8488,10 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 20:32:37,293572,2026-11-07,2026-11-07 21:00,det,col,DraftKings,firstperiod,moneyline,away,0.0,135,normal
 2026-11-06 20:32:37,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,secondperiod,spread,home,0.5,-210,normal
 2026-11-06 20:32:37,293567,2026-11-07,2026-11-07 19:00,mtl,tor,DraftKings,secondperiod,spread,away,-0.5,160,normal
+2026-11-06 20:34:48,293567,2026-11-07,2026-11-07 19:00,mtl,tor,Consensus,event,team_total,away_under,3.5,-155,normal
+2026-11-06 20:34:48,293567,2026-11-07,2026-11-07 19:00,mtl,tor,Consensus,event,team_total,away_over,3.5,115,normal
+2026-11-06 20:34:48,293572,2026-11-07,2026-11-07 21:00,det,col,Consensus,firstperiod,moneyline,away,0.0,135,normal
+2026-11-06 20:34:48,293567,2026-11-07,2026-11-07 19:00,mtl,tor,Consensus,secondperiod,spread,home,0.5,-210,normal
+2026-11-06 20:34:48,293567,2026-11-07,2026-11-07 19:00,mtl,tor,Consensus,secondperiod,spread,away,-0.5,160,normal
+2026-11-06 20:34:48,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Consensus,secondperiod,total,under,1.5,127,normal
+2026-11-06 20:34:48,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Consensus,secondperiod,total,over,1.5,-167,normal
