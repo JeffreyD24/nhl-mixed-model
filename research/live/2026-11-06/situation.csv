@@ -310,3 +310,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 22:25:06,401892661,2026-11-06,ana,cgy,in,10:15 - 3rd,3,10:15,3.0,3.0,16.0,21.0,Hit,Judd Caulfield hit Yan Kuznetsov
 2026-11-06 22:26:05,401892660,2026-11-06,sj,min,in,7:34 - 3rd,3,7:34,1.0,3.0,23.0,22.0,Face Off,Danila Yurov faceoff won against Collin Graf
 2026-11-06 22:26:05,401892661,2026-11-06,ana,cgy,in,9:26 - 3rd,3,9:26,3.0,3.0,16.0,21.0,Blocked,Pavel Mintyukov shot blocked by Aydar Suniev
+2026-11-06 22:27:05,401892660,2026-11-06,sj,min,in,6:22 - 3rd,3,6:22,1.0,3.0,24.0,23.0,Blocked,Eric Pohlkamp shot blocked by Michael McCarron
+2026-11-06 22:27:05,401892661,2026-11-06,ana,cgy,in,8:59 - 3rd,3,8:59,3.0,3.0,16.0,21.0,Stoppage,TV Timeout
+2026-11-06 22:28:06,401892660,2026-11-06,sj,min,in,6:01 - 3rd,3,6:01,1.0,3.0,24.0,23.0,Missed,Zach Bogosian Missed Shot Hit Left Post
+2026-11-06 22:29:05,401892660,2026-11-06,sj,min,in,6:00 - 3rd,3,6:00,1.0,4.0,25.0,23.0,Goal,"Zach Bogosian Goal (1) Slap Shot, assists: Joel Eriksson Ek (10), Kirill Kaprizov (14)"
+2026-11-06 22:29:05,401892661,2026-11-06,ana,cgy,in,8:24 - 3rd,3,8:24,3.0,3.0,16.0,21.0,Face Off,Mikael Backlund faceoff won against Mikael Granlund
+2026-11-06 22:30:06,401892660,2026-11-06,sj,min,in,5:01 - 3rd,3,5:01,1.0,4.0,25.0,23.0,Missed,Ty Dellandrea Tip-In Wide Right
+2026-11-06 22:30:06,401892661,2026-11-06,ana,cgy,in,7:53 - 3rd,3,7:53,3.0,3.0,18.0,21.0,Stoppage,Goalie Stopped
+2026-11-06 22:31:05,401892660,2026-11-06,sj,min,in,4:18 - 3rd,3,4:18,1.0,4.0,25.0,23.0,Missed,Maxim Shabanov Wrist Shot Wide Right
+2026-11-06 22:31:05,401892661,2026-11-06,ana,cgy,in,7:15 - 3rd,3,7:15,3.0,3.0,18.0,21.0,Face Off,Tim Washe faceoff won against Jonathan Castagna
+2026-11-06 22:32:06,401892660,2026-11-06,sj,min,in,3:40 - 3rd,3,3:40,1.0,4.0,25.0,23.0,Stoppage,
+2026-11-06 22:32:06,401892661,2026-11-06,ana,cgy,in,5:54 - 3rd,3,5:54,3.0,3.0,18.0,21.0,Missed,Cutter Gauthier Backhand Wide Right
