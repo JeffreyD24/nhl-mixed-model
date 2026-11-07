@@ -228,3 +228,19 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 21:33:06,401892659,2026-11-06,cbj,buf,in,7:04 - 3rd,3,7:04,1.0,5.0,32.0,21.0,Face Off,Adam Fantilli faceoff won against Peyton Krebs
 2026-11-06 21:33:06,401892660,2026-11-06,sj,min,in,5:55 - 2nd,2,5:55,1.0,1.0,17.0,13.0,Face Off,Joel Eriksson Ek faceoff won against Zack Ostapchuk
 2026-11-06 21:33:06,401892661,2026-11-06,ana,cgy,in,7:38 - 2nd,2,7:38,2.0,3.0,13.0,14.0,Goal,"Tristan Luneau Goal (3) Wrist Shot, assists: Jackson LaCombe (18), Leo Carlsson (20)"
+2026-11-06 21:34:06,401892659,2026-11-06,cbj,buf,in,6:41 - 3rd,3,6:41,1.0,5.0,32.0,21.0,Stoppage,Goalie Stopped
+2026-11-06 21:34:06,401892660,2026-11-06,sj,min,in,5:42 - 2nd,2,5:42,1.0,2.0,18.0,13.0,Goal,"Maxim Shabanov Goal (6) Tip-In, assists: Kirill Kaprizov (12), Quinn Hughes (19)"
+2026-11-06 21:34:06,401892661,2026-11-06,ana,cgy,in,6:49 - 2nd,2,6:49,2.0,3.0,13.0,14.0,Stoppage,Icing
+2026-11-06 21:35:05,401892659,2026-11-06,cbj,buf,in,5:40 - 3rd,3,5:40,1.0,5.0,32.0,21.0,Face Off,Charlie Coyle faceoff won against Tyson Kozak
+2026-11-06 21:35:05,401892660,2026-11-06,sj,min,in,5:39 - 2nd,2,5:39,1.0,2.0,18.0,13.0,Stoppage,TV Timeout
+2026-11-06 21:35:05,401892661,2026-11-06,ana,cgy,in,6:14 - 2nd,2,6:14,2.0,3.0,13.0,14.0,Face Off,Jonathan Castagna faceoff won against Leo Carlsson
+2026-11-06 21:36:05,401892659,2026-11-06,cbj,buf,in,5:03 - 3rd,3,5:03,1.0,5.0,32.0,21.0,Face Off,Charlie Coyle faceoff won against Tyson Kozak
+2026-11-06 21:36:05,401892661,2026-11-06,ana,cgy,in,6:14 - 2nd,2,6:14,2.0,3.0,13.0,14.0,Stoppage,TV Timeout
+2026-11-06 21:37:06,401892659,2026-11-06,cbj,buf,in,5:03 - 3rd,3,5:03,1.0,5.0,32.0,21.0,Stoppage,Puck in Crowd
+2026-11-06 21:37:06,401892660,2026-11-06,sj,min,in,5:08 - 2nd,2,5:08,1.0,2.0,18.0,13.0,Face Off,Michael McCarron faceoff won against Macklin Celebrini
+2026-11-06 21:38:05,401892659,2026-11-06,cbj,buf,in,5:03 - 3rd,3,5:03,1.0,5.0,32.0,22.0,Face Off,Tage Thompson faceoff won against Cole Sillinger
+2026-11-06 21:38:05,401892660,2026-11-06,sj,min,in,4:54 - 2nd,2,4:54,1.0,2.0,18.0,13.0,Face Off,Collin Graf faceoff won against Bobby Brink
+2026-11-06 21:38:05,401892661,2026-11-06,ana,cgy,in,5:26 - 2nd,2,5:26,2.0,3.0,13.0,14.0,Hit,Roger McQueen hit Matvei Gridin
+2026-11-06 21:39:05,401892659,2026-11-06,cbj,buf,in,4:06 - 3rd,3,4:06,1.0,5.0,32.0,22.0,Missed,Tage Thompson Missed Shot Wide Left
+2026-11-06 21:39:05,401892660,2026-11-06,sj,min,in,4:33 - 2nd,2,4:33,1.0,2.0,18.0,14.0,Stoppage,Icing
+2026-11-06 21:39:05,401892661,2026-11-06,ana,cgy,in,5:08 - 2nd,2,5:08,2.0,3.0,13.0,14.0,Face Off,Mikael Granlund faceoff won against Mikael Backlund
