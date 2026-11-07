@@ -1,6 +1,6 @@
 game_id,logged_at_et,date,home,away,tip_et,side,team,b2b_team,price,open_fair,current_price,verdict,result,profit,clv,move
 401892650,2026-11-04 15:07,2026-11-05,tb,chi,2026-11-05 19:00:00,home,tb,chi,-395.0,0.7659,-380.0,TEST: rested team vs back-to-back (not a bet),W,0.25316455696202533,-0.0028,0.0299
-401892659,2026-11-05 11:42,2026-11-06,buf,cbj,2026-11-06 19:00:00,home,buf,cbj,-175.0,0.6092,-175.0,TEST: rested team vs back-to-back (not a bet),,,,
+401892659,2026-11-05 11:42,2026-11-06,buf,cbj,2026-11-06 19:00:00,home,buf,cbj,-175.0,0.6092,-175.0,TEST: rested team vs back-to-back (not a bet),W,0.5714285714285714,-0.0313,0.0072
 401892661,2026-11-05 11:42,2026-11-06,cgy,ana,2026-11-06 20:00:00,home,cgy,ana,-115.0,0.5108,-115.0,TEST: rested team vs back-to-back (not a bet),,,,
 401892669,2026-11-06 11:27,2026-11-07,dal,sj,2026-11-07 20:00:00,home,dal,sj,-290.0,0.7136,-290.0,TEST: rested team vs back-to-back (not a bet),,,,
 401892670,2026-11-06 11:27,2026-11-07,min,tb,2026-11-07 20:00:00,away,tb,min,-122.0,0.5261,-122.0,TEST: rested team vs back-to-back (not a bet),,,,
