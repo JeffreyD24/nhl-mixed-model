@@ -321,3 +321,12 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 22:31:05,401892661,2026-11-06,ana,cgy,in,7:15 - 3rd,3,7:15,3.0,3.0,18.0,21.0,Face Off,Tim Washe faceoff won against Jonathan Castagna
 2026-11-06 22:32:06,401892660,2026-11-06,sj,min,in,3:40 - 3rd,3,3:40,1.0,4.0,25.0,23.0,Stoppage,
 2026-11-06 22:32:06,401892661,2026-11-06,ana,cgy,in,5:54 - 3rd,3,5:54,3.0,3.0,18.0,21.0,Missed,Cutter Gauthier Backhand Wide Right
+2026-11-06 22:33:05,401892660,2026-11-06,sj,min,in,3:40 - 3rd,3,3:40,1.0,4.0,25.0,23.0,Stoppage,Puck in Netting
+2026-11-06 22:33:05,401892661,2026-11-06,ana,cgy,in,4:59 - 3rd,3,4:59,3.0,3.0,18.0,22.0,Shot,Judd Caulfield Tip-In saved by Dustin Wolf
+2026-11-06 22:34:06,401892661,2026-11-06,ana,cgy,in,4:59 - 3rd,3,4:59,3.0,3.0,18.0,23.0,Stoppage,TV Timeout
+2026-11-06 22:35:06,401892660,2026-11-06,sj,min,in,3:17 - 3rd,3,3:17,1.0,4.0,25.0,23.0,Penalty Shot Infraction,Jacob Trouba Minor
+2026-11-06 22:36:05,401892660,2026-11-06,sj,min,in,3:01 - 3rd,3,3:01,1.0,4.0,25.0,23.0,Tripping,Jacob Trouba Tripping against Matt Boldy
+2026-11-06 22:37:06,401892660,2026-11-06,sj,min,in,2:01 - 3rd,3,2:01,1.0,4.0,25.0,23.0,Face Off,Ty Dellandrea faceoff won against Matt Boldy
+2026-11-06 22:37:06,401892661,2026-11-06,ana,cgy,in,4:10 - 3rd,3,4:10,3.0,3.0,18.0,23.0,Missed,Tristan Luneau Wrist Shot High and Wide Right
+2026-11-06 22:38:05,401892660,2026-11-06,sj,min,in,1:18 - 3rd,3,1:18,1.0,4.0,25.0,23.0,Missed,Blake Coleman Wrist Shot Wide Left
+2026-11-06 22:38:05,401892661,2026-11-06,ana,cgy,in,3:21 - 3rd,3,3:21,3.0,3.0,18.0,24.0,Blocked,Blocked Shot
