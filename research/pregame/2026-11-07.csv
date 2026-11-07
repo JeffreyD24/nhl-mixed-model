@@ -7834,3 +7834,12 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 19:10:22,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Fanatics,thirdperiod,team_total,away_over,0.5,-215,normal
 2026-11-06 19:10:22,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Fanatics,thirdperiod,team_total,home_over,0.5,-230,normal
 2026-11-06 19:10:22,293563,2026-11-07,2026-11-07 12:30,fla,wsh,Fanatics,thirdperiod,team_total,home_under,0.5,170,normal
+2026-11-06 19:12:28,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,firstperiod,spread,away,-1.0,277,normal
+2026-11-06 19:12:28,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,firstperiod,spread,home,1.0,-430,normal
+2026-11-06 19:12:28,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,secondperiod,spread,home,0.5,-205,normal
+2026-11-06 19:12:28,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,secondperiod,spread,away,-0.5,150,normal
+2026-11-06 19:12:28,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,secondperiod,total,under,1.5,145,normal
+2026-11-06 19:12:28,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,secondperiod,total,over,1.5,-193,normal
+2026-11-06 19:12:28,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,thirdperiod,spread,away,-0.5,140,normal
+2026-11-06 19:12:28,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,thirdperiod,total,over,2.5,140,normal
+2026-11-06 19:12:28,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,thirdperiod,total,under,2.5,-182,normal
