@@ -37,3 +37,18 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 19:53:06,401892659,2026-11-06,cbj,buf,in,End of 1st,1,0:00,1.0,2.0,11.0,6.0,Period End,End of 1st Period
 2026-11-06 20:00:06,401892659,2026-11-06,cbj,buf,in,End of 1st,1,0:00,1.0,2.0,12.0,6.0,Period End,End of 1st Period
 2026-11-06 20:09:05,401892660,2026-11-06,sj,min,in,20:00 - 1st,1,20:00,0.0,0.0,,,Period Start,Start of 1st Period
+2026-11-06 20:10:06,401892659,2026-11-06,cbj,buf,in,20:00 - 2nd,2,20:00,1.0,2.0,12.0,6.0,Period End,End of 1st Period
+2026-11-06 20:10:06,401892660,2026-11-06,sj,min,in,19:08 - 1st,1,19:08,0.0,0.0,1.0,0.0,Blocked,Kirill Kaprizov shot blocked by Sam Dickinson
+2026-11-06 20:11:05,401892660,2026-11-06,sj,min,in,18:26 - 1st,1,18:26,0.0,0.0,1.0,1.0,Blocked,Will Smith shot blocked by Zach Bogosian
+2026-11-06 20:12:05,401892659,2026-11-06,cbj,buf,in,19:10 - 2nd,2,19:10,1.0,2.0,12.0,6.0,Face Off,Charlie Coyle faceoff won against Tage Thompson
+2026-11-06 20:12:05,401892660,2026-11-06,sj,min,in,18:04 - 1st,1,18:04,0.0,0.0,1.0,1.0,Stoppage,Off-side
+2026-11-06 20:12:05,401892661,2026-11-06,ana,cgy,in,20:00 - 1st,1,20:00,0.0,0.0,,,,
+2026-11-06 20:13:05,401892659,2026-11-06,cbj,buf,in,18:26 - 2nd,2,18:26,1.0,2.0,14.0,6.0,Shot,Rasmus Dahlin Snap Shot saved by Jet Greaves
+2026-11-06 20:13:05,401892660,2026-11-06,sj,min,in,17:21 - 1st,1,17:21,0.0,0.0,1.0,1.0,Face Off,Collin Graf faceoff won against Danila Yurov
+2026-11-06 20:13:05,401892661,2026-11-06,ana,cgy,in,19:41 - 1st,1,19:41,0.0,0.0,,,Face Off,Leo Carlsson faceoff won against Martin Pospisil
+2026-11-06 20:14:05,401892659,2026-11-06,cbj,buf,in,17:56 - 2nd,2,17:56,1.0,2.0,14.0,6.0,Face Off,Sean Monahan faceoff won against Sam Carrick
+2026-11-06 20:14:05,401892660,2026-11-06,sj,min,in,16:21 - 1st,1,16:21,0.0,0.0,1.0,1.0,Blocked,Sam Dickinson shot blocked by Ryan Hartman
+2026-11-06 20:14:05,401892661,2026-11-06,ana,cgy,in,19:10 - 1st,1,19:10,0.0,0.0,0.0,0.0,Face Off,Mikael Backlund faceoff won against Leo Carlsson
+2026-11-06 20:15:05,401892659,2026-11-06,cbj,buf,in,17:43 - 2nd,2,17:43,1.0,2.0,16.0,7.0,Stoppage,Goalie Stopped
+2026-11-06 20:15:05,401892660,2026-11-06,sj,min,in,15:11 - 1st,1,15:11,0.0,0.0,1.0,1.0,Missed,Olli Maatta Tip-In Wide Right
+2026-11-06 20:15:05,401892661,2026-11-06,ana,cgy,in,18:10 - 1st,1,18:10,0.0,0.0,1.0,0.0,Shot,Mikael Backlund Slap Shot saved by Lukas Dostal
