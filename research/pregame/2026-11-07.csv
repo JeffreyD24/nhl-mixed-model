@@ -13314,3 +13314,4 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-07 04:22:15,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Consensus,thirdperiod,team_total,home_over,0.5,-180,normal
 2026-11-07 04:22:15,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Consensus,thirdperiod,total,over,2.0,-112,normal
 2026-11-07 04:22:15,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Consensus,thirdperiod,total,under,2.0,-117,normal
+2026-11-07 04:23:51,293566,2026-11-07,2026-11-07 19:00,uta,ott,DraftKings,firstperiod,moneyline,away,0.0,-115,normal
