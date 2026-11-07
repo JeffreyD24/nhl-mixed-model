@@ -16235,3 +16235,13 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-07 06:19:22,293565,2026-11-07,2026-11-07 17:00,nyr,sea,Consensus,thirdperiod,team_total,away_over,1.5,122,normal
 2026-11-07 06:19:22,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,thirdperiod,total,over,2.5,135,normal
 2026-11-07 06:19:22,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,thirdperiod,total,under,2.5,-175,normal
+2026-11-07 06:20:45,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,event,spread,home,-1.5,-152,normal
+2026-11-07 06:20:45,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,event,spread,away,1.5,124,normal
+2026-11-07 06:20:45,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,event,total,over,6.5,-152,normal
+2026-11-07 06:20:45,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,event,total,under,6.5,124,normal
+2026-11-07 06:20:45,293574,2026-11-07,2026-11-07 22:00,van,edm,bet365,event,moneyline,home,0.0,-360,normal
+2026-11-07 06:20:45,293574,2026-11-07,2026-11-07 22:00,van,edm,bet365,event,moneyline,away,0.0,280,normal
+2026-11-07 06:20:45,293574,2026-11-07,2026-11-07 22:00,van,edm,bet365,event,spread,home,-1.5,-146,normal
+2026-11-07 06:20:45,293574,2026-11-07,2026-11-07 22:00,van,edm,bet365,event,spread,away,1.5,123,normal
+2026-11-07 06:20:45,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,secondperiod,spread,home,-0.5,-120,normal
+2026-11-07 06:20:45,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,secondperiod,spread,away,0.5,-106,normal
