@@ -276,3 +276,14 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 22:07:05,401892661,2026-11-06,ana,cgy,in,20:00 - 3rd,3,20:00,2.0,3.0,14.0,18.0,Period Start,Start of 3rd Period
 2026-11-06 22:08:05,401892660,2026-11-06,sj,min,in,16:10 - 3rd,3,16:10,1.0,2.0,19.0,19.0,Shot,Quinn Hughes Backhand saved by Yaroslav Askarov
 2026-11-06 22:08:05,401892661,2026-11-06,ana,cgy,in,19:43 - 3rd,3,19:43,2.0,3.0,14.0,18.0,Elbowing,Matt Coronato Elbowing
+2026-11-06 22:09:05,401892660,2026-11-06,sj,min,in,15:54 - 3rd,3,15:54,1.0,2.0,20.0,19.0,Face Off,Macklin Celebrini faceoff won against Joel Eriksson Ek
+2026-11-06 22:09:05,401892661,2026-11-06,ana,cgy,in,19:16 - 3rd,3,19:16,2.0,3.0,14.0,18.0,Stoppage,Puck in Netting
+2026-11-06 22:10:05,401892660,2026-11-06,sj,min,in,14:59 - 3rd,3,14:59,1.0,2.0,20.0,19.0,Stoppage,Icing
+2026-11-06 22:10:05,401892661,2026-11-06,ana,cgy,in,19:05 - 3rd,3,19:05,2.0,3.0,14.0,18.0,Goal,"Leo Carlsson Goal (6) Snap Shot, assists: Beckett Sennecke (10), Mikael Granlund (11)"
+2026-11-06 22:11:05,401892660,2026-11-06,sj,min,in,14:03 - 3rd,3,14:03,1.0,2.0,20.0,19.0,Face Off,Michael McCarron faceoff won against Collin Graf
+2026-11-06 22:11:05,401892661,2026-11-06,ana,cgy,in,18:28 - 3rd,3,18:28,3.0,3.0,14.0,18.0,Stoppage,Icing
+2026-11-06 22:12:05,401892660,2026-11-06,sj,min,in,13:35 - 3rd,3,13:35,1.0,2.0,20.0,20.0,Stoppage,Goalie Stopped
+2026-11-06 22:12:05,401892661,2026-11-06,ana,cgy,in,18:22 - 3rd,3,18:22,3.0,3.0,14.0,18.0,Penalty Shot Infraction,Drew Helleson Minor
+2026-11-06 22:13:06,401892661,2026-11-06,ana,cgy,in,17:37 - 3rd,3,17:37,3.0,3.0,15.0,18.0,Shot,Zayne Parekh Wrist Shot saved by Ville Husso
+2026-11-06 22:14:05,401892660,2026-11-06,sj,min,in,13:21 - 3rd,3,13:21,1.0,2.0,20.0,20.0,Missed,Will Smith Deflected Wide Left
+2026-11-06 22:14:05,401892661,2026-11-06,ana,cgy,in,16:17 - 3rd,3,16:17,3.0,3.0,15.0,18.0,Shot,Tim Washe Wrist Shot saved by Dustin Wolf
