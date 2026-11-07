@@ -31,3 +31,16 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-06 12:27,goals,401892666,2026-11-07,uta,ott,0.5128,3.328,3.19,6.68,Karel Vejmelka (expected),Samuel Ersson (expected),"UTA: Schmidt? | OTT: Greig, Kleven"
 2026-11-06 14:02,xg,401892669,2026-11-07,sj,dal,0.7174,3.567,2.262,5.98,Alex Nedeljkovic (expected),Jake Oettinger (expected),"SJ: Gaudette, Allan | DAL: Heiskanen, Steel?"
 2026-11-06 14:02,goals,401892669,2026-11-07,sj,dal,0.6248,3.223,2.393,5.78,Alex Nedeljkovic (expected),Jake Oettinger (expected),"SJ: Gaudette, Allan | DAL: Heiskanen, Steel?"
+2026-11-06 22:16,goals,401892662,2026-11-07,fla,wsh,0.5185,3.325,3.15,6.64,Jacob Markstrom (expected),Logan Thompson (expected),FLA: Gudas | WSH: -
+2026-11-06 22:16,goals,401892664,2026-11-07,nyr,sea,0.5214,3.14,2.951,6.26,Dylan Garand (expected),Philipp Grubauer (expected),"NYR: Glendening, Raddysh | SEA: Wright, Fleury"
+2026-11-06 22:16,xg,401892666,2026-11-07,uta,ott,0.45,3.11,3.326,6.6,Karel Vejmelka (expected),Samuel Ersson (expected),"UTA: Schmidt? | OTT: Greig, Kleven"
+2026-11-06 22:16,goals,401892666,2026-11-07,uta,ott,0.517,3.327,3.162,6.65,Karel Vejmelka (expected),Samuel Ersson (expected),"UTA: Schmidt? | OTT: Greig, Kleven"
+2026-11-06 22:16,goals,401892668,2026-11-07,chi,car,0.7346,3.775,2.155,6.07,Spencer Knight (expected),Pyotr Kochetkov (expected),"CHI: Greenway, Kane | CAR: Deslauriers"
+2026-11-06 22:16,goals,401892669,2026-11-07,sj,dal,0.6247,3.223,2.394,5.78,Alex Nedeljkovic (expected),Jake Oettinger (expected),"SJ: Gaudette, Allan | DAL: Heiskanen, Steel?"
+2026-11-06 22:16,xg,401892670,2026-11-07,tb,min,0.4595,3.485,3.293,6.93,Andrei Vasilevskiy (expected),Calvin Pickard (confirmed),TB: James | MIN: -
+2026-11-06 22:16,goals,401892670,2026-11-07,tb,min,0.5187,3.214,3.041,6.42,Andrei Vasilevskiy (expected),Calvin Pickard (confirmed),TB: James | MIN: -
+2026-11-06 22:16,xg,401892671,2026-11-07,det,col,0.5434,3.592,2.915,6.66,John Gibson (expected),Mackenzie Blackwood (expected),DET: - | COL: -
+2026-11-06 22:16,goals,401892671,2026-11-07,det,col,0.6019,3.58,2.849,6.58,John Gibson (expected),Mackenzie Blackwood (expected),DET: - | COL: -
+2026-11-06 22:16,goals,401892672,2026-11-07,pit,la,0.4996,3.158,3.109,6.43,Arturs Silovs (expected),Anton Forsberg (expected),"PIT: Kuzmenko | LA: Helenius, Ward"
+2026-11-06 22:16,xg,401892673,2026-11-07,van,edm,0.7089,4.007,2.358,6.5,Leevi Merilainen (expected),Tristan Jarry (expected),"VAN: Willander? | EDM: Frederic, Emberson"
+2026-11-06 22:16,goals,401892673,2026-11-07,van,edm,0.7045,4.218,2.704,7.06,Leevi Merilainen (expected),Tristan Jarry (expected),"VAN: Willander? | EDM: Frederic, Emberson"
