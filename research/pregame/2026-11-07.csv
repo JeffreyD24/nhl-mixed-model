@@ -7895,3 +7895,4 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 19:32:21,293563,2026-11-07,2026-11-07 12:30,fla,wsh,BetRivers,thirdperiod,total,over,1.5,-195,normal
 2026-11-06 19:32:21,293563,2026-11-07,2026-11-07 12:30,fla,wsh,BetRivers,thirdperiod,total,under,1.5,135,normal
 2026-11-06 19:32:21,293565,2026-11-07,2026-11-07 17:00,nyr,sea,DraftKings,thirdperiod,team_total,away_under,1.5,-238,normal
+2026-11-06 19:34:25,293565,2026-11-07,2026-11-07 17:00,nyr,sea,Consensus,thirdperiod,team_total,away_under,1.5,-238,normal
