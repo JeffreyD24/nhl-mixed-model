@@ -44,3 +44,5 @@ seen_at_et,model,game_id,date,away,home,model_home_win,lam_home,lam_away,model_t
 2026-11-06 22:16,goals,401892672,2026-11-07,pit,la,0.4996,3.158,3.109,6.43,Arturs Silovs (expected),Anton Forsberg (expected),"PIT: Kuzmenko | LA: Helenius, Ward"
 2026-11-06 22:16,xg,401892673,2026-11-07,van,edm,0.7089,4.007,2.358,6.5,Leevi Merilainen (expected),Tristan Jarry (expected),"VAN: Willander? | EDM: Frederic, Emberson"
 2026-11-06 22:16,goals,401892673,2026-11-07,van,edm,0.7045,4.218,2.704,7.06,Leevi Merilainen (expected),Tristan Jarry (expected),"VAN: Willander? | EDM: Frederic, Emberson"
+2026-11-06 23:55,xg,401892670,2026-11-07,tb,min,0.4603,3.49,3.293,6.94,Andrei Vasilevskiy (expected),Calvin Pickard (confirmed),TB: James | MIN: McCarron?
+2026-11-06 23:55,goals,401892670,2026-11-07,tb,min,0.5194,3.219,3.041,6.42,Andrei Vasilevskiy (expected),Calvin Pickard (confirmed),TB: James | MIN: McCarron?
