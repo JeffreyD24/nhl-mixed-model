@@ -136,3 +136,18 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 20:45:05,401892659,2026-11-06,cbj,buf,in,4:05 - 2nd,2,4:05,1.0,5.0,28.0,17.0,Stoppage,TV Timeout
 2026-11-06 20:45:05,401892660,2026-11-06,sj,min,in,1:36 - 1st,1,1:36,0.0,1.0,10.0,8.0,Face Off,Ryan Hartman faceoff won against Ivar Stenberg
 2026-11-06 20:45:05,401892661,2026-11-06,ana,cgy,in,1:36 - 1st,1,1:36,1.0,2.0,8.0,4.0,Blocked,Noah Warren shot blocked by Jonathan Castagna
+2026-11-06 20:46:06,401892659,2026-11-06,cbj,buf,in,3:04 - 2nd,2,3:04,1.0,5.0,28.0,17.0,Face Off,Tyson Kozak faceoff won against Adam Fantilli
+2026-11-06 20:46:06,401892660,2026-11-06,sj,min,in,0:34 - 1st,1,0:34,0.0,1.0,10.0,8.0,Blocked,David Spacek shot blocked by Ty Dellandrea
+2026-11-06 20:46:06,401892661,2026-11-06,ana,cgy,in,1:24 - 1st,1,1:24,1.0,2.0,8.0,4.0,Hooking,Beckett Sennecke Hooking against Matt Coronato
+2026-11-06 20:47:05,401892659,2026-11-06,cbj,buf,in,2:02 - 2nd,2,2:02,1.0,5.0,28.0,17.0,Face Off,Tyson Kozak faceoff won against Adam Fantilli
+2026-11-06 20:47:05,401892660,2026-11-06,sj,min,in,0:03 - 1st,1,0:03,0.0,1.0,10.0,9.0,Stoppage,Goalie Stopped
+2026-11-06 20:47:05,401892661,2026-11-06,ana,cgy,in,1:24 - 1st,1,1:24,1.0,2.0,8.0,4.0,Stoppage,TV Timeout
+2026-11-06 20:48:06,401892659,2026-11-06,cbj,buf,in,1:03 - 2nd,2,1:03,1.0,5.0,28.0,17.0,Face Off,Tyson Kozak faceoff won against Adam Fantilli
+2026-11-06 20:48:06,401892660,2026-11-06,sj,min,in,End of 1st,1,0:00,0.0,1.0,10.0,9.0,Period End,End of 1st Period
+2026-11-06 20:48:06,401892661,2026-11-06,ana,cgy,in,1:08 - 1st,1,1:08,1.0,2.0,8.0,4.0,Face Off,Morgan Frost faceoff won against Tim Washe
+2026-11-06 20:49:05,401892659,2026-11-06,cbj,buf,in,0:56 - 2nd,2,0:56,1.0,5.0,28.0,17.0,Stoppage,Icing
+2026-11-06 20:49:05,401892661,2026-11-06,ana,cgy,in,0:57 - 1st,1,0:57,1.0,3.0,8.0,4.0,Goal,"Joel Farabee Goal (6) Snap Shot, assists: Zayne Parekh (6), Morgan Frost (8)"
+2026-11-06 20:50:05,401892659,2026-11-06,cbj,buf,in,0:05 - 2nd,2,0:05,1.0,5.0,28.0,17.0,Face Off,Adam Fantilli faceoff won against Josh Norris
+2026-11-06 20:50:05,401892661,2026-11-06,ana,cgy,in,0:26 - 1st,1,0:26,1.0,3.0,8.0,4.0,Shot,Cutter Gauthier Snap Shot saved by Dustin Wolf
+2026-11-06 20:51:05,401892659,2026-11-06,cbj,buf,in,End of 2nd,2,0:00,1.0,5.0,28.0,17.0,Missed,Owen Power Missed Shot Wide Right
+2026-11-06 20:51:05,401892661,2026-11-06,ana,cgy,in,End of 1st,1,0:00,1.0,3.0,8.0,6.0,Period End,End of 1st Period
