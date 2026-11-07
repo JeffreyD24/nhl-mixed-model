@@ -9021,3 +9021,13 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 21:29:38,293571,2026-11-07,2026-11-07 20:00,chi,car,bet365,event,moneyline,home,0.0,-460,normal
 2026-11-06 21:29:38,293571,2026-11-07,2026-11-07 20:00,chi,car,bet365,event,total,over,6.5,105,normal
 2026-11-06 21:29:38,293571,2026-11-07,2026-11-07 20:00,chi,car,bet365,event,total,under,6.5,-125,normal
+2026-11-06 21:31:10,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,event,spread,home,-1.5,220,normal
+2026-11-06 21:31:10,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,event,spread,away,1.5,-275,normal
+2026-11-06 21:31:10,293572,2026-11-07,2026-11-07 21:00,det,col,bet365,event,moneyline,home,0.0,-220,normal
+2026-11-06 21:31:10,293572,2026-11-07,2026-11-07 21:00,det,col,bet365,event,moneyline,away,0.0,180,normal
+2026-11-06 21:31:10,293572,2026-11-07,2026-11-07 21:00,det,col,bet365,event,spread,home,-1.5,114,normal
+2026-11-06 21:31:10,293572,2026-11-07,2026-11-07 21:00,det,col,bet365,event,spread,away,1.5,-134,normal
+2026-11-06 21:31:10,293572,2026-11-07,2026-11-07 21:00,det,col,bet365,event,total,under,6.5,-113,normal
+2026-11-06 21:31:10,293572,2026-11-07,2026-11-07 21:00,det,col,bet365,event,total,over,6.5,-107,normal
+2026-11-06 21:31:10,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,thirdperiod,spread,home,-0.5,145,normal
+2026-11-06 21:31:10,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,thirdperiod,spread,away,0.5,-210,normal
