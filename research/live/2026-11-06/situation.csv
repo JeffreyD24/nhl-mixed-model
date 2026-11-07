@@ -13,3 +13,8 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 19:25:05,401892659,2026-11-06,cbj,buf,in,13:10 - 1st,1,13:10,0.0,0.0,5.0,0.0,Shot,Jack Quinn Backhand saved by Jet Greaves
 2026-11-06 19:26:06,401892659,2026-11-06,cbj,buf,in,12:39 - 1st,1,12:39,0.0,1.0,5.0,0.0,Face Off,Adam Fantilli faceoff won against Jiri Kulich
 2026-11-06 19:27:05,401892659,2026-11-06,cbj,buf,in,12:39 - 1st,1,12:39,0.0,1.0,6.0,0.0,Stoppage,Goalie Stopped
+2026-11-06 19:29:05,401892659,2026-11-06,cbj,buf,in,11:57 - 1st,1,11:57,0.0,1.0,6.0,0.0,Missed,Mattias Samuelsson Missed Shot Hit Left Post
+2026-11-06 19:30:06,401892659,2026-11-06,cbj,buf,in,10:57 - 1st,1,10:57,0.0,1.0,6.0,0.0,Missed,Olen Zellweger Missed Shot Wide Right
+2026-11-06 19:31:05,401892659,2026-11-06,cbj,buf,in,10:27 - 1st,1,10:27,0.0,1.0,7.0,0.0,Stoppage,Goalie Stopped
+2026-11-06 19:32:05,401892659,2026-11-06,cbj,buf,in,9:56 - 1st,1,9:56,0.0,1.0,8.0,1.0,Shot,Conor Garland saved by Ukko-Pekka Luukkonen
+2026-11-06 19:33:06,401892659,2026-11-06,cbj,buf,in,9:06 - 1st,1,9:06,0.0,1.0,8.0,3.0,Stoppage,Puck in Netting
