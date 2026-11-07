@@ -1,0 +1,274 @@
+{
+ "marketData": {
+  "marketSlug": "aec-nhl-mon-tor-2026-11-07",
+  "bids": [
+   {
+    "px": {
+     "value": "0.5200",
+     "currency": "USD"
+    },
+    "qty": "1071.1700"
+   },
+   {
+    "px": {
+     "value": "0.5100",
+     "currency": "USD"
+    },
+    "qty": "14005.0400"
+   },
+   {
+    "px": {
+     "value": "0.5000",
+     "currency": "USD"
+    },
+    "qty": "29827.9000"
+   },
+   {
+    "px": {
+     "value": "0.4900",
+     "currency": "USD"
+    },
+    "qty": "16281.0000"
+   },
+   {
+    "px": {
+     "value": "0.4700",
+     "currency": "USD"
+    },
+    "qty": "2160.4200"
+   },
+   {
+    "px": {
+     "value": "0.4600",
+     "currency": "USD"
+    },
+    "qty": "20.0000"
+   },
+   {
+    "px": {
+     "value": "0.4500",
+     "currency": "USD"
+    },
+    "qty": "1137.7700"
+   },
+   {
+    "px": {
+     "value": "0.3700",
+     "currency": "USD"
+    },
+    "qty": "10.0600"
+   },
+   {
+    "px": {
+     "value": "0.1000",
+     "currency": "USD"
+    },
+    "qty": "50.0000"
+   },
+   {
+    "px": {
+     "value": "0.0600",
+     "currency": "USD"
+    },
+    "qty": "30.0000"
+   },
+   {
+    "px": {
+     "value": "0.0500",
+     "currency": "USD"
+    },
+    "qty": "2000.0000"
+   },
+   {
+    "px": {
+     "value": "0.0400",
+     "currency": "USD"
+    },
+    "qty": "2030.0000"
+   },
+   {
+    "px": {
+     "value": "0.0300",
+     "currency": "USD"
+    },
+    "qty": "6000.0000"
+   },
+   {
+    "px": {
+     "value": "0.0200",
+     "currency": "USD"
+    },
+    "qty": "7000.0000"
+   },
+   {
+    "px": {
+     "value": "0.0100",
+     "currency": "USD"
+    },
+    "qty": "10052.0000"
+   }
+  ],
+  "offers": [
+   {
+    "px": {
+     "value": "0.5300",
+     "currency": "USD"
+    },
+    "qty": "17196.1600"
+   },
+   {
+    "px": {
+     "value": "0.5400",
+     "currency": "USD"
+    },
+    "qty": "16638.0000"
+   },
+   {
+    "px": {
+     "value": "0.5500",
+     "currency": "USD"
+    },
+    "qty": "33088.1000"
+   },
+   {
+    "px": {
+     "value": "0.5600",
+     "currency": "USD"
+    },
+    "qty": "26788.0000"
+   },
+   {
+    "px": {
+     "value": "0.5700",
+     "currency": "USD"
+    },
+    "qty": "2406.9700"
+   },
+   {
+    "px": {
+     "value": "0.5800",
+     "currency": "USD"
+    },
+    "qty": "1232.1400"
+   },
+   {
+    "px": {
+     "value": "0.7100",
+     "currency": "USD"
+    },
+    "qty": "250.0000"
+   },
+   {
+    "px": {
+     "value": "0.7600",
+     "currency": "USD"
+    },
+    "qty": "250.0000"
+   },
+   {
+    "px": {
+     "value": "0.8300",
+     "currency": "USD"
+    },
+    "qty": "250.0000"
+   },
+   {
+    "px": {
+     "value": "0.9000",
+     "currency": "USD"
+    },
+    "qty": "50.0000"
+   },
+   {
+    "px": {
+     "value": "0.9400",
+     "currency": "USD"
+    },
+    "qty": "30.0000"
+   },
+   {
+    "px": {
+     "value": "0.9500",
+     "currency": "USD"
+    },
+    "qty": "2000.0000"
+   },
+   {
+    "px": {
+     "value": "0.9600",
+     "currency": "USD"
+    },
+    "qty": "2000.0000"
+   },
+   {
+    "px": {
+     "value": "0.9700",
+     "currency": "USD"
+    },
+    "qty": "6030.0000"
+   },
+   {
+    "px": {
+     "value": "0.9800",
+     "currency": "USD"
+    },
+    "qty": "7000.0000"
+   },
+   {
+    "px": {
+     "value": "0.9900",
+     "currency": "USD"
+    },
+    "qty": "10053.0000"
+   }
+  ],
+  "state": "MARKET_STATE_OPEN",
+  "stats": {
+   "openPx": {
+    "value": "0.5100",
+    "currency": "USD"
+   },
+   "lowPx": {
+    "value": "0.5100",
+    "currency": "USD"
+   },
+   "highPx": {
+    "value": "0.5300",
+    "currency": "USD"
+   },
+   "lastTradePx": {
+    "value": "0.5200",
+    "currency": "USD"
+   },
+   "sharesTraded": "271.4200",
+   "notionalTraded": {
+    "value": "143.9804",
+    "currency": "USD"
+   },
+   "lastTradeQty": "0.0300",
+   "openInterest": "153.3900",
+   "openSetTime": "2026-11-06T03:00:44.159220318Z",
+   "highSetTime": "2026-11-06T15:10:44.170510083Z",
+   "lowSetTime": "2026-11-06T03:00:44.159220318Z",
+   "lastTradeSetTime": "2026-11-07T04:04:40.268200465Z",
+   "openInterestSetTime": "2026-11-07T04:03:40.918996747Z",
+   "notionalSetTime": "2026-11-07T04:04:40.268200465Z",
+   "currentPx": {
+    "value": "0.5250",
+    "currency": "USD"
+   },
+   "lastPriceSample": {
+    "longPx": {
+     "value": "0.5200",
+     "currency": "USD"
+    },
+    "shortPx": {
+     "value": "0.48",
+     "currency": "USD"
+    },
+    "ts": "2026-11-07T05:00:09.202507431Z"
+   }
+  },
+  "transactTime": "2026-11-07T05:00:09.202507431Z"
+ }
+}

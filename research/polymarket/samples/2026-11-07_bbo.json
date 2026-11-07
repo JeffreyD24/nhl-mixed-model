@@ -1,0 +1,48 @@
+{
+ "marketData": {
+  "marketSlug": "aec-nhl-chi-car-2026-11-07",
+  "currentPx": {
+   "value": "0.2050",
+   "currency": "USD"
+  },
+  "lastTradePx": {
+   "value": "0.2100",
+   "currency": "USD"
+  },
+  "settlementPx": null,
+  "sharesTraded": "2862.9900",
+  "openInterest": "1090.6800",
+  "bestAsk": {
+   "value": "0.2100",
+   "currency": "USD"
+  },
+  "bestBid": {
+   "value": "0.2000",
+   "currency": "USD"
+  },
+  "askDepth": 18,
+  "bidDepth": 14,
+  "lastPriceSample": {
+   "longPx": {
+    "value": "0.2100",
+    "currency": "USD"
+   },
+   "shortPx": {
+    "value": "0.79",
+    "currency": "USD"
+   },
+   "ts": "2026-11-07T04:59:48.671785210Z"
+  },
+  "longQuote": {
+   "value": "0.2100",
+   "currency": "USD"
+  },
+  "shortQuote": {
+   "value": "0.8",
+   "currency": "USD"
+  },
+  "state": "MARKET_STATE_OPEN",
+  "bidShares": "140000",
+  "askShares": "110000"
+ }
+}

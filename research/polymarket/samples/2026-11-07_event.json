@@ -1,0 +1,567 @@
+{
+ "id": "224614",
+ "chatChannel": {
+  "id": "nhl-fla-was-2026-11-07",
+  "type": "CHAT_CHANNEL_TYPE_MESSAGING",
+  "chatMemberCount": 300
+ },
+ "ticker": "nhl-fla-was-2026-11-07",
+ "slug": "nhl-fla-was-2026-11-07",
+ "title": "FLA Panthers vs. WSH Capitals",
+ "description": "FLA Panthers vs. WSH Capitals",
+ "startDate": "2026-11-07T17:30:00Z",
+ "endDate": "2026-11-08T04:59:00Z",
+ "active": true,
+ "closed": false,
+ "archived": false,
+ "category": "sports",
+ "createdAt": "2026-11-03T05:00:43Z",
+ "updatedAt": "2026-11-07T04:57:26Z",
+ "startTime": "2026-11-07T17:30:00Z",
+ "seriesSlug": "nhl-2025",
+ "period": "NS",
+ "markets": [
+  {
+   "id": "2119588",
+   "question": "Who will win in the upcoming hockey event FLA Panthers vs WSH Capitals scheduled for November 7, 2026 at 5:30 PM UTC?",
+   "slug": "aec-nhl-fla-was-2026-11-07",
+   "endDate": "2026-11-21T22:30:00Z",
+   "category": "sports",
+   "startDate": "2026-11-03T05:00:43Z",
+   "description": "This market will settle to the winner of the FLA Panthers vs WSH Capitals NHL game scheduled for November 7, 2026 at 12:30PM ET (as of the listing of the event's first instrument). Overtime and any shootout are included if played. If the game is delayed, postponed, suspended or otherwise rescheduled to a date and time not within two days of the originally scheduled date and time, the market will settle to the last fair market price. Outcome sourced from NHL.",
+   "active": true,
+   "marketType": "moneyline",
+   "closed": false,
+   "createdAt": "2026-11-03T05:00:43Z",
+   "updatedAt": "2026-11-07T04:55:40Z",
+   "archived": false,
+   "orderPriceMinTickSize": 0.01,
+   "gameStartTime": "2026-11-07T17:30:00Z",
+   "manualActivation": false,
+   "sportsMarketType": "hockey_team_full_game_winner",
+   "marketSides": [
+    {
+     "id": "4238634",
+     "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+     "identifier": "aec-nhl-fla-was-2026-11-07",
+     "createdAt": "2026-11-03T05:00:43Z",
+     "updatedAt": "2026-11-03T05:00:43Z",
+     "description": "Panthers",
+     "price": "0.4600",
+     "marketId": 2119588,
+     "long": true,
+     "teamId": 1491,
+     "team": {
+      "id": 1491,
+      "name": "Panthers",
+      "abbreviation": "fla",
+      "league": "nhl",
+      "record": "40-38-4",
+      "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_dark.png",
+      "alias": "Panthers",
+      "safeName": "Florida Panthers",
+      "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_dark.png",
+      "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_dark.png",
+      "colorPrimary": "#bc9562",
+      "providerId": 8,
+      "ordering": "away",
+      "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_light.png",
+      "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_light.png",
+      "displayAbbreviation": "FLA",
+      "providerIds": [
+       {
+        "provider": "PROVIDER_SPORTSDATAIO",
+        "providerId": "8"
+       },
+       {
+        "provider": "PROVIDER_SPORTRADAR",
+        "providerId": "4418464d-0f24-11e2-8525-18a905767e44"
+       },
+       {
+        "provider": "PROVIDER_OPTICODDS",
+        "providerId": "7EF1D5EF169A"
+       }
+      ],
+      "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_dark.png",
+      "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_dark.png",
+      "color": {
+       "light": "#AE8855",
+       "dark": "#B9975B"
+      },
+      "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+     },
+     "quote": {
+      "value": "0.4700",
+      "currency": "USD"
+     },
+     "tradable": true
+    },
+    {
+     "id": "4238635",
+     "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+     "identifier": "aec-nhl-fla-was-2026-11-07",
+     "createdAt": "2026-11-03T05:00:43Z",
+     "updatedAt": "2026-11-03T05:00:43Z",
+     "description": "Capitals",
+     "price": "0.4700",
+     "marketId": 2119588,
+     "long": false,
+     "teamId": 1498,
+     "team": {
+      "id": 1498,
+      "name": "Capitals",
+      "abbreviation": "was",
+      "league": "nhl",
+      "record": "43-30-9",
+      "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_dark.png",
+      "alias": "Capitals",
+      "safeName": "Washington Capitals",
+      "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_dark.png",
+      "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_dark.png",
+      "colorPrimary": "#041e42",
+      "providerId": 15,
+      "ordering": "home",
+      "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_light.png",
+      "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_light.png",
+      "displayAbbreviation": "WSH",
+      "providerIds": [
+       {
+        "provider": "PROVIDER_SPORTSDATAIO",
+        "providerId": "15"
+       },
+       {
+        "provider": "PROVIDER_SPORTRADAR",
+        "providerId": "4417eede-0f24-11e2-8525-18a905767e44"
+       },
+       {
+        "provider": "PROVIDER_OPTICODDS",
+        "providerId": "EEB0E7F5C10F"
+       }
+      ],
+      "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_dark.png",
+      "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_dark.png",
+      "color": {
+       "light": "#041E42",
+       "dark": "#606060"
+      },
+      "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+     },
+     "quote": {
+      "value": "0.54",
+      "currency": "USD"
+     },
+     "tradable": true
+    }
+   ],
+   "outcomes": "[\"Panthers\",\"Capitals\"]",
+   "outcomePrices": "[\"0.4600\",\"0.4700\"]",
+   "ep3Status": "OPEN",
+   "status": "MARKET_STATUS_OPEN",
+   "assetPriceTerms": null,
+   "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_MONEYLINE",
+   "hidden": false,
+   "tags": [],
+   "title": "Panthers vs Capitals",
+   "feeCoefficient": 0.095,
+   "bestBidQuote": {
+    "value": "0.4600",
+    "currency": "USD"
+   },
+   "bestAskQuote": {
+    "value": "0.4700",
+    "currency": "USD"
+   },
+   "titleShort": "FLA vs WSH",
+   "ep3SyncedAt": "2026-11-05T12:37:37Z",
+   "minimumTradeQty": 0.01,
+   "comboEnabled": true,
+   "politics": null,
+   "eventSubcategory": "HOCKEY"
+  }
+ ],
+ "sportradarGameId": "718a4f2b-faff-477d-a25a-e0717cafcbdc",
+ "participants": [],
+ "hidden": false,
+ "tags": [
+  {
+   "id": "2",
+   "label": "Sports",
+   "slug": "sports",
+   "createdAt": "2025-09-25T16:13:27Z",
+   "updatedAt": "2026-11-07T04:57:32Z",
+   "subtags": [],
+   "hub": null,
+   "featuredEventIds": []
+  },
+  {
+   "id": "3",
+   "label": "Games",
+   "slug": "games",
+   "createdAt": "2025-09-25T16:13:27Z",
+   "updatedAt": "2026-11-07T04:57:32Z",
+   "subtags": [],
+   "hub": null,
+   "featuredEventIds": []
+  },
+  {
+   "id": "7",
+   "label": "NHL",
+   "slug": "nhl",
+   "createdAt": "2025-12-02T21:54:38Z",
+   "updatedAt": "2026-11-07T04:57:32Z",
+   "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+   "tradable": false,
+   "league": {
+    "id": 3,
+    "name": "NHL",
+    "sportId": 4,
+    "tagId": 7,
+    "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+    "resolution": "https://www.nhl.com/",
+    "ordering": "away",
+    "activeSeriesId": 6,
+    "isOperational": true,
+    "automaticResolution": false,
+    "createdAt": "2026-03-05T18:30:42Z",
+    "slug": "nhl",
+    "abbreviation": "NHL"
+   },
+   "parentId": 14,
+   "subtags": [],
+   "hub": null,
+   "featuredEventIds": []
+  },
+  {
+   "id": "14",
+   "label": "Hockey",
+   "slug": "ice-hockey",
+   "createdAt": "2026-03-05T18:30:42Z",
+   "updatedAt": "2026-11-07T04:57:32Z",
+   "tradable": false,
+   "sport": {
+    "id": 4,
+    "name": "Hockey",
+    "tagId": 14,
+    "createdAt": "2026-03-05T18:30:42Z",
+    "slug": "ice-hockey",
+    "image": "https://static.polymarket.us/images/category-icons/hockey-stick.png"
+   },
+   "subtags": [
+    {
+     "id": "7",
+     "label": "NHL",
+     "slug": "nhl",
+     "createdAt": "2025-12-02T21:54:38Z",
+     "updatedAt": "2026-11-07T04:57:32Z",
+     "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+     "tradable": false,
+     "league": {
+      "id": 3,
+      "name": "NHL",
+      "sportId": 4,
+      "tagId": 7,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+      "resolution": "https://www.nhl.com/",
+      "ordering": "away",
+      "activeSeriesId": 6,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-03-05T18:30:42Z",
+      "slug": "nhl",
+      "abbreviation": "NHL"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1551",
+     "label": "Liiga",
+     "slug": "liiga",
+     "updatedAt": "2026-10-21T18:32:16Z",
+     "image": "https://static.polymarket.us/images/Random/Liiga_logo.png",
+     "tradable": false,
+     "league": {
+      "id": 334,
+      "name": "Liiga",
+      "sportId": 4,
+      "tagId": 1551,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/liiga.png",
+      "ordering": "home",
+      "activeSeriesId": 453,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-29T00:39:42Z",
+      "slug": "liiga"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1357",
+     "label": "KHL",
+     "slug": "khl",
+     "updatedAt": "2026-11-07T02:58:23Z",
+     "image": "https://static.polymarket.us/images/sports/pbp/hockey/khl2.png",
+     "tradable": false,
+     "league": {
+      "id": 258,
+      "name": "KHL",
+      "sportId": 4,
+      "tagId": 1357,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/khl.png",
+      "ordering": "home",
+      "activeSeriesId": 338,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-17T23:32:56Z",
+      "slug": "khl"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1463",
+     "label": "SHL",
+     "slug": "shl",
+     "updatedAt": "2026-10-31T19:48:48Z",
+     "image": "https://static.polymarket.us/images/Random/SHL-logo-black-1028.png",
+     "tradable": false,
+     "league": {
+      "id": 288,
+      "name": "SHL",
+      "sportId": 4,
+      "tagId": 1463,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/shl.png",
+      "ordering": "home",
+      "activeSeriesId": 390,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-23T16:42:23Z",
+      "slug": "shl"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1465",
+     "label": "National League",
+     "slug": "snhl",
+     "updatedAt": "2026-10-31T21:33:29Z",
+     "image": "https://static.polymarket.us/images/Random/e79d8317-3869-4a45-a209-007abccd917e.png",
+     "tradable": false,
+     "league": {
+      "id": 289,
+      "name": "National League",
+      "sportId": 4,
+      "tagId": 1465,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/snhl.png",
+      "ordering": "home",
+      "activeSeriesId": 391,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-23T19:07:16Z",
+      "slug": "snhl"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1468",
+     "label": "Czech Extraliga",
+     "slug": "cehl",
+     "updatedAt": "2026-10-30T19:44:53Z",
+     "image": "https://static.polymarket.us/images/Random/Hokejove-karty-z-ceskych-lig-540x540.png",
+     "tradable": false,
+     "league": {
+      "id": 290,
+      "name": "Czech Extraliga",
+      "sportId": 4,
+      "tagId": 1468,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/cehl.png",
+      "ordering": "home",
+      "activeSeriesId": 392,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-23T20:55:53Z",
+      "slug": "cehl"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1456",
+     "label": "DEL",
+     "slug": "del",
+     "updatedAt": "2026-10-30T21:15:27Z",
+     "image": "https://static.polymarket.us/images/7a364eba-97f8-42e5-bfeb-c909d957e995.png",
+     "tradable": false,
+     "league": {
+      "id": 286,
+      "name": "DEL",
+      "sportId": 4,
+      "tagId": 1456,
+      "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/del.png",
+      "ordering": "home",
+      "activeSeriesId": 386,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-09-23T02:26:55Z",
+      "slug": "del"
+     },
+     "parentId": 14,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    }
+   ],
+   "hub": null,
+   "featuredEventIds": []
+  }
+ ],
+ "teams": [
+  {
+   "id": 1491,
+   "name": "Panthers",
+   "abbreviation": "fla",
+   "league": "nhl",
+   "record": "40-38-4",
+   "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_dark.png",
+   "alias": "Panthers",
+   "safeName": "Florida Panthers",
+   "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_dark.png",
+   "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_dark.png",
+   "colorPrimary": "#bc9562",
+   "providerId": 8,
+   "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_light.png",
+   "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_light.png",
+   "displayAbbreviation": "FLA",
+   "providerIds": [
+    {
+     "provider": "PROVIDER_SPORTSDATAIO",
+     "providerId": "8"
+    },
+    {
+     "provider": "PROVIDER_SPORTRADAR",
+     "providerId": "4418464d-0f24-11e2-8525-18a905767e44"
+    },
+    {
+     "provider": "PROVIDER_OPTICODDS",
+     "providerId": "7EF1D5EF169A"
+    }
+   ],
+   "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_dark.png",
+   "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/FLA_dark.png",
+   "color": {
+    "light": "#AE8855",
+    "dark": "#B9975B"
+   },
+   "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+  },
+  {
+   "id": 1498,
+   "name": "Capitals",
+   "abbreviation": "was",
+   "league": "nhl",
+   "record": "43-30-9",
+   "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_dark.png",
+   "alias": "Capitals",
+   "safeName": "Washington Capitals",
+   "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_dark.png",
+   "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_dark.png",
+   "colorPrimary": "#041e42",
+   "providerId": 15,
+   "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_light.png",
+   "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_light.png",
+   "displayAbbreviation": "WSH",
+   "providerIds": [
+    {
+     "provider": "PROVIDER_SPORTSDATAIO",
+     "providerId": "15"
+    },
+    {
+     "provider": "PROVIDER_SPORTRADAR",
+     "providerId": "4417eede-0f24-11e2-8525-18a905767e44"
+    },
+    {
+     "provider": "PROVIDER_OPTICODDS",
+     "providerId": "EEB0E7F5C10F"
+    }
+   ],
+   "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_dark.png",
+   "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NHL/variant/WAS_dark.png",
+   "color": {
+    "light": "#041E42",
+    "dark": "#606060"
+   },
+   "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+  }
+ ],
+ "sortType": "price",
+ "marketGroups": [
+  {
+   "id": "PRIMARY",
+   "title": "Primary",
+   "order": 0,
+   "marketIds": [
+    "2119588"
+   ],
+   "initialCollapsed": false,
+   "live": false
+  }
+ ],
+ "primaryTag": {
+  "id": "7",
+  "label": "NHL",
+  "slug": "nhl",
+  "createdAt": "2025-12-02T21:54:38Z",
+  "updatedAt": "2026-11-07T04:57:32Z",
+  "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+  "tradable": false,
+  "league": {
+   "id": 3,
+   "name": "NHL",
+   "sportId": 4,
+   "tagId": 7,
+   "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-images/nhl-new.png",
+   "resolution": "https://www.nhl.com/",
+   "ordering": "away",
+   "activeSeriesId": 6,
+   "isOperational": true,
+   "automaticResolution": false,
+   "createdAt": "2026-03-05T18:30:42Z",
+   "slug": "nhl",
+   "abbreviation": "NHL"
+  },
+  "parentId": 14,
+  "subtags": [],
+  "hub": null,
+  "featuredEventIds": []
+ },
+ "streamProvider": "",
+ "streamRequiresAuth": false,
+ "combos": {
+  "enabled": true,
+  "numMarkets": 156,
+  "numSpreadsAndTotalsMarkets": 32
+ },
+ "marketCounts": {
+  "numMarkets": 156,
+  "numSpreadsAndTotalsMarkets": 32
+ },
+ "fixtureId": "",
+ "insiderTradingRules": null,
+ "payoutEstimateMessage": "",
+ "payoutEstimateTime": ""
+}
