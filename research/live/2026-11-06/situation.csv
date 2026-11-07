@@ -195,3 +195,19 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 21:21:06,401892659,2026-11-06,cbj,buf,in,13:02 - 3rd,3,13:02,1.0,5.0,30.0,21.0,Face Off,Adam Fantilli faceoff won against Josh Norris
 2026-11-06 21:21:06,401892660,2026-11-06,sj,min,in,11:07 - 2nd,2,11:07,0.0,1.0,11.0,13.0,Face Off,Macklin Celebrini faceoff won against Nico Sturm
 2026-11-06 21:21:06,401892661,2026-11-06,ana,cgy,in,13:25 - 2nd,2,13:25,1.0,3.0,10.0,9.0,Shot,Beckett Sennecke Wrist Shot saved by Dustin Wolf
+2026-11-06 21:22:06,401892659,2026-11-06,cbj,buf,in,12:02 - 3rd,3,12:02,1.0,5.0,30.0,21.0,Hit,Cole Sillinger hit Owen Power
+2026-11-06 21:22:06,401892660,2026-11-06,sj,min,in,10:55 - 2nd,2,10:55,0.0,1.0,11.0,13.0,Stoppage,Puck in Netting
+2026-11-06 21:22:06,401892661,2026-11-06,ana,cgy,in,12:31 - 2nd,2,12:31,1.0,3.0,10.0,11.0,Shot,Mikael Granlund Wrist Shot saved by Dustin Wolf
+2026-11-06 21:23:05,401892659,2026-11-06,cbj,buf,in,11:58 - 3rd,3,11:58,1.0,5.0,30.0,21.0,Stoppage,Off-side
+2026-11-06 21:23:05,401892660,2026-11-06,sj,min,in,10:24 - 2nd,2,10:24,0.0,1.0,11.0,13.0,Missed,Macklin Celebrini Slap Shot Hit Right Post
+2026-11-06 21:23:05,401892661,2026-11-06,ana,cgy,in,12:14 - 2nd,2,12:14,1.0,3.0,10.0,11.0,Stoppage,Puck in Crowd
+2026-11-06 21:24:05,401892660,2026-11-06,sj,min,in,9:23 - 2nd,2,9:23,0.0,1.0,12.0,13.0,Shot,Matt Boldy Wrist Shot saved by Yaroslav Askarov
+2026-11-06 21:24:05,401892661,2026-11-06,ana,cgy,in,11:30 - 2nd,2,11:30,1.0,3.0,10.0,12.0,Stoppage,TV Timeout
+2026-11-06 21:25:05,401892659,2026-11-06,cbj,buf,in,11:48 - 3rd,3,11:48,1.0,5.0,30.0,21.0,Face Off,Charlie Coyle faceoff won against Noah Ostlund
+2026-11-06 21:25:05,401892660,2026-11-06,sj,min,in,9:01 - 2nd,2,9:01,0.0,1.0,12.0,13.0,Stoppage,Off-side
+2026-11-06 21:25:05,401892661,2026-11-06,ana,cgy,in,11:30 - 2nd,2,11:30,1.0,3.0,10.0,13.0,Stoppage,TV Timeout
+2026-11-06 21:26:05,401892659,2026-11-06,cbj,buf,in,10:44 - 3rd,3,10:44,1.0,5.0,30.0,21.0,Shot,Jiri Kulich saved by Jet Greaves
+2026-11-06 21:26:05,401892661,2026-11-06,ana,cgy,in,11:16 - 2nd,2,11:16,1.0,3.0,10.0,13.0,Face Off,Mikael Backlund faceoff won against Mikael Granlund
+2026-11-06 21:27:05,401892659,2026-11-06,cbj,buf,in,9:53 - 3rd,3,9:53,1.0,5.0,31.0,21.0,Face Off,Peyton Krebs faceoff won against Jack Williams
+2026-11-06 21:27:05,401892660,2026-11-06,sj,min,in,8:28 - 2nd,2,8:28,0.0,1.0,12.0,13.0,Missed,Quinn Hughes Wrist Shot Wide Left
+2026-11-06 21:27:05,401892661,2026-11-06,ana,cgy,in,10:49 - 2nd,2,10:49,1.0,3.0,10.0,13.0,Stoppage,Puck Frozen - Goalie
