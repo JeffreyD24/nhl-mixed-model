@@ -9822,3 +9822,5 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 22:54:49,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,event,moneyline,away,0.0,-115,normal
 2026-11-06 22:54:49,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,event,spread,away,-1.5,212,normal
 2026-11-06 22:54:49,293569,2026-11-07,2026-11-07 20:00,sj,dal,FanDuel,event,moneyline,away,0.0,235,normal
+2026-11-06 22:55:55,293566,2026-11-07,2026-11-07 19:00,uta,ott,bet365,event,total,over,6.5,-109,normal
+2026-11-06 22:55:55,293566,2026-11-07,2026-11-07 19:00,uta,ott,bet365,event,total,under,6.5,-111,normal
