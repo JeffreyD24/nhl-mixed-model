@@ -102,3 +102,12 @@ the three models are combined. Stay on Sonnet for: data downloads, cleaning, run
 - Consensus-price strategy: Kaunitz, Zhong, Kreiner, arXiv 1710.02824; github.com/Lisandro79/BeatTheBookie
 - nfelo market regression: nfeloapp.com
 - Data: github.com/FinnedAI/sportsbookreview-scraper
+
+## NHL player props (Nov 7, 2026)
+- [x] BettingPros prop history Apr 2022 on (props_bettingpros_nhl.py) - backfill running
+- [x] ESPN BET own opener + close Feb 2024-Nov 2025 (props_espn_nhl.py) - backfill running
+- [ ] Wayback snapshot counts of NHL prop pages (tools/probe_props_wayback.py on a runner) - read the output
+- [ ] Kalshi NHL player markets history (runner -> JeffreyD24/private)
+- [ ] The Odds API historical NHL props May 2023 on (paid credits: ask Jeffrey)
+- [ ] Snapshot PrizePicks/Underdog NHL boards going forward
+- [ ] Projection models (shots first) + pre-registration, walk-forward at the opener
