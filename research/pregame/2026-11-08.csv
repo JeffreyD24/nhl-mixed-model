@@ -194,3 +194,7 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-07 03:39:24,293577,2026-11-08,2026-11-08 18:00,tb,wpg,Consensus,event,spread,home,1.5,-222,normal
 2026-11-07 03:39:24,293577,2026-11-08,2026-11-08 18:00,tb,wpg,Consensus,event,total,under,6.5,105,normal
 2026-11-07 03:39:24,293577,2026-11-08,2026-11-08 18:00,tb,wpg,Consensus,event,total,over,6.5,-125,normal
+2026-11-07 03:42:37,293578,2026-11-08,2026-11-08 19:00,nj,tor,Consensus,event,moneyline,home,0.0,-105,normal
+2026-11-07 03:42:37,293578,2026-11-08,2026-11-08 19:00,nj,tor,Consensus,event,moneyline,away,0.0,-116,normal
+2026-11-07 03:42:37,293578,2026-11-08,2026-11-08 19:00,nj,tor,Consensus,event,total,over,6.5,-125,normal
+2026-11-07 03:42:37,293578,2026-11-08,2026-11-08 19:00,nj,tor,Consensus,event,total,under,6.5,105,normal
