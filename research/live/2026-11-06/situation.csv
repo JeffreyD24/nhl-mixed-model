@@ -69,3 +69,20 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 20:21:05,401892659,2026-11-06,cbj,buf,in,13:55 - 2nd,2,13:55,1.0,3.0,17.0,12.0,Shot,Zach Werenski saved by Ukko-Pekka Luukkonen
 2026-11-06 20:21:05,401892660,2026-11-06,sj,min,in,12:32 - 1st,1,12:32,0.0,0.0,5.0,1.0,Tripping,Collin Graf Tripping
 2026-11-06 20:21:05,401892661,2026-11-06,ana,cgy,in,14:12 - 1st,1,14:12,1.0,1.0,2.0,2.0,Blocked,Zach Whitecloud shot blocked by Noah Warren
+2026-11-06 20:22:05,401892659,2026-11-06,cbj,buf,in,12:54 - 2nd,2,12:54,1.0,3.0,17.0,14.0,Blocked,Kent Johnson shot blocked by Sean Monahan
+2026-11-06 20:22:05,401892660,2026-11-06,sj,min,in,12:21 - 1st,1,12:21,0.0,0.0,6.0,1.0,Stoppage,Goalie Stopped
+2026-11-06 20:22:05,401892661,2026-11-06,ana,cgy,in,13:33 - 1st,1,13:33,1.0,1.0,2.0,2.0,Stoppage,Puck in Netting
+2026-11-06 20:23:06,401892659,2026-11-06,cbj,buf,in,11:52 - 2nd,2,11:52,1.0,3.0,18.0,14.0,Missed,Noah Ostlund Missed Shot Above Crossbar
+2026-11-06 20:23:06,401892660,2026-11-06,sj,min,in,12:04 - 1st,1,12:04,0.0,1.0,6.0,1.0,Goal,"Kirill Kaprizov Goal (16) Snap Shot, assists: Quinn Hughes (18), Matt Boldy (10)"
+2026-11-06 20:23:06,401892661,2026-11-06,ana,cgy,in,13:26 - 1st,1,13:26,1.0,1.0,2.0,2.0,Stoppage,Puck in Netting
+2026-11-06 20:24:05,401892659,2026-11-06,cbj,buf,in,10:51 - 2nd,2,10:51,1.0,3.0,18.0,14.0,Missed,Noah Ostlund Missed Shot Above Crossbar
+2026-11-06 20:24:05,401892660,2026-11-06,sj,min,in,11:32 - 1st,1,11:32,0.0,1.0,7.0,1.0,Face Off,Zack Ostapchuk faceoff won against Joel Eriksson Ek
+2026-11-06 20:25:05,401892659,2026-11-06,cbj,buf,in,10:14 - 2nd,2,10:14,1.0,3.0,20.0,14.0,Missed,Missed Shot
+2026-11-06 20:25:05,401892660,2026-11-06,sj,min,in,10:32 - 1st,1,10:32,0.0,1.0,8.0,2.0,Shot,Maxim Shabanov Wrist Shot saved by Yaroslav Askarov
+2026-11-06 20:25:05,401892661,2026-11-06,ana,cgy,in,13:13 - 1st,1,13:13,1.0,1.0,2.0,2.0,Stoppage,Puck in Netting
+2026-11-06 20:26:06,401892659,2026-11-06,cbj,buf,in,10:13 - 2nd,2,10:13,1.0,4.0,20.0,14.0,Face Off,Josh Norris faceoff won against Valeri Nichushkin
+2026-11-06 20:26:06,401892660,2026-11-06,sj,min,in,10:06 - 1st,1,10:06,0.0,1.0,9.0,2.0,Missed,Zach Bogosian Slap Shot Wide Right
+2026-11-06 20:26:06,401892661,2026-11-06,ana,cgy,in,12:50 - 1st,1,12:50,1.0,1.0,3.0,3.0,Stoppage,Goalie Stopped
+2026-11-06 20:27:05,401892659,2026-11-06,cbj,buf,in,10:05 - 2nd,2,10:05,1.0,4.0,21.0,14.0,Stoppage,Goalie Stopped
+2026-11-06 20:27:05,401892660,2026-11-06,sj,min,in,9:45 - 1st,1,9:45,0.0,1.0,9.0,3.0,Face Off,Ty Dellandrea faceoff won against Michael McCarron
+2026-11-06 20:27:05,401892661,2026-11-06,ana,cgy,in,12:21 - 1st,1,12:21,1.0,1.0,4.0,3.0,Stoppage,Puck in Netting
