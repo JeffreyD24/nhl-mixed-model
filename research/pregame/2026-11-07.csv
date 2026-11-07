@@ -15223,3 +15223,8 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-07 05:09:09,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,thirdperiod,total,over,2.0,-118,normal
 2026-11-07 05:09:09,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,thirdperiod,team_total,home_under,0.5,170,normal
 2026-11-07 05:09:09,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,thirdperiod,spread,home,-0.5,145,normal
+2026-11-07 05:10:53,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,event,spread,home,-1.5,200,normal
+2026-11-07 05:10:53,293564,2026-11-07,2026-11-07 13:00,stl,nsh,bet365,event,spread,away,-1.5,220,normal
+2026-11-07 05:10:53,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,firstperiod,total,over,1.5,-122,normal
+2026-11-07 05:10:53,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,firstperiod,total,under,1.5,-105,normal
+2026-11-07 05:10:53,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,secondperiod,total,under,1.5,128,normal
