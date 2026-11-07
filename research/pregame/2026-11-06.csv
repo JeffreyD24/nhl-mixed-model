@@ -9006,3 +9006,17 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 19:48:06,293562,2026-11-06,2026-11-06 20:00,ana,cgy,Consensus,thirdperiod,total,under,2.5,-150,normal
 2026-11-06 19:48:06,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,thirdperiod,total,under,2.5,-154,normal
 2026-11-06 19:48:06,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,thirdperiod,total,over,2.5,120,normal
+2026-11-06 19:50:11,293561,2026-11-06,2026-11-06 20:00,sj,min,BetMGM,event,moneyline,away,0.0,230,normal
+2026-11-06 19:50:11,293561,2026-11-06,2026-11-06 20:00,sj,min,BetMGM,event,moneyline,home,0.0,-285,normal
+2026-11-06 19:50:11,293561,2026-11-06,2026-11-06 20:00,sj,min,bet365,event,spread,away,1.5,-105,normal
+2026-11-06 19:50:11,293561,2026-11-06,2026-11-06 20:00,sj,min,bet365,event,spread,home,-1.5,-115,normal
+2026-11-06 19:50:11,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,event,team_total,away_over,3.5,130,normal
+2026-11-06 19:50:11,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,event,team_total,away_under,3.5,-170,normal
+2026-11-06 19:50:11,293561,2026-11-06,2026-11-06 20:00,sj,min,bet365,firstperiod,total,under,1.5,117,normal
+2026-11-06 19:50:11,293561,2026-11-06,2026-11-06 20:00,sj,min,bet365,firstperiod,total,over,1.5,-137,normal
+2026-11-06 19:50:11,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,secondperiod,team_total,home_under,1.5,-245,normal
+2026-11-06 19:50:11,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,secondperiod,team_total,home_over,1.5,180,normal
+2026-11-06 19:50:11,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,secondperiod,total,over,2.5,145,normal
+2026-11-06 19:50:11,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,secondperiod,total,under,2.5,-188,normal
+2026-11-06 19:50:11,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,thirdperiod,team_total,away_over,0.5,-230,normal
+2026-11-06 19:50:11,293562,2026-11-06,2026-11-06 20:00,ana,cgy,DraftKings,thirdperiod,team_total,away_under,0.5,175,normal
