@@ -1,3 +1,9 @@
 seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,home_score,away_saves,home_saves,last_play_type,last_play
 2026-11-06 19:14:06,401892659,2026-11-06,cbj,buf,in,19:55 - 1st,1,19:55,0.0,0.0,,,Stoppage,Puck in Crowd
 2026-11-06 19:15:06,401892659,2026-11-06,cbj,buf,in,19:20 - 1st,1,19:20,0.0,0.0,0.0,0.0,Stoppage,Icing
+2026-11-06 19:16:05,401892659,2026-11-06,cbj,buf,in,18:55 - 1st,1,18:55,0.0,0.0,0.0,0.0,Stoppage,Goalie Stopped
+2026-11-06 19:17:05,401892659,2026-11-06,cbj,buf,in,18:15 - 1st,1,18:15,0.0,0.0,1.0,0.0,Missed,Missed Shot
+2026-11-06 19:18:05,401892659,2026-11-06,cbj,buf,in,17:51 - 1st,1,17:51,0.0,0.0,1.0,0.0,Stoppage,Goalie Stopped
+2026-11-06 19:19:05,401892659,2026-11-06,cbj,buf,in,17:32 - 1st,1,17:32,0.0,0.0,3.0,0.0,Stoppage,On-Ice Official
+2026-11-06 19:20:05,401892659,2026-11-06,cbj,buf,in,17:13 - 1st,1,17:13,0.0,0.0,3.0,0.0,Stoppage,On-Ice Official
+2026-11-06 19:21:05,401892659,2026-11-06,cbj,buf,in,16:31 - 1st,1,16:31,0.0,0.0,3.0,0.0,Face Off,Noah Ostlund faceoff won against Cole Sillinger
