@@ -10391,3 +10391,10 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 23:34:23,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,secondperiod,team_total,home_under,0.5,150,normal
 2026-11-06 23:34:23,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,thirdperiod,spread,away,0.5,-205,normal
 2026-11-06 23:34:23,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,thirdperiod,spread,home,-0.5,149,normal
+2026-11-06 23:37:31,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,event,spread,away,-1.5,220,normal
+2026-11-06 23:37:31,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,thirdperiod,spread,away,-0.5,149,normal
+2026-11-06 23:37:31,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,thirdperiod,spread,home,0.5,-210,normal
+2026-11-06 23:37:31,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,thirdperiod,total,under,2.0,-120,normal
+2026-11-06 23:37:31,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,thirdperiod,total,over,2.0,-108,normal
+2026-11-06 23:37:31,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,thirdperiod,total,under,2.5,-200,normal
+2026-11-06 23:37:31,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,thirdperiod,total,over,2.5,154,normal
