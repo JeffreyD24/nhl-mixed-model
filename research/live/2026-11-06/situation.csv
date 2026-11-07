@@ -52,3 +52,20 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 20:15:05,401892659,2026-11-06,cbj,buf,in,17:43 - 2nd,2,17:43,1.0,2.0,16.0,7.0,Stoppage,Goalie Stopped
 2026-11-06 20:15:05,401892660,2026-11-06,sj,min,in,15:11 - 1st,1,15:11,0.0,0.0,1.0,1.0,Missed,Olli Maatta Tip-In Wide Right
 2026-11-06 20:15:05,401892661,2026-11-06,ana,cgy,in,18:10 - 1st,1,18:10,0.0,0.0,1.0,0.0,Shot,Mikael Backlund Slap Shot saved by Lukas Dostal
+2026-11-06 20:16:05,401892659,2026-11-06,cbj,buf,in,16:59 - 2nd,2,16:59,1.0,2.0,16.0,8.0,Missed,Missed Shot
+2026-11-06 20:16:05,401892660,2026-11-06,sj,min,in,14:24 - 1st,1,14:24,0.0,0.0,1.0,1.0,Stoppage,Goalie Stopped
+2026-11-06 20:16:05,401892661,2026-11-06,ana,cgy,in,17:37 - 1st,1,17:37,0.0,1.0,1.0,0.0,Goal,"William Stromgren Goal (2), assists: none"
+2026-11-06 20:17:06,401892659,2026-11-06,cbj,buf,in,16:16 - 2nd,2,16:16,1.0,2.0,16.0,10.0,Shot,Conor Garland saved by Ukko-Pekka Luukkonen
+2026-11-06 20:17:06,401892660,2026-11-06,sj,min,in,13:37 - 1st,1,13:37,0.0,0.0,2.0,1.0,Shot,David Spacek Wrist Shot saved by Yaroslav Askarov
+2026-11-06 20:17:06,401892661,2026-11-06,ana,cgy,in,17:10 - 1st,1,17:10,1.0,1.0,1.0,2.0,Goal,"Jeff Malott Goal (3) Wrist Shot, assists: none"
+2026-11-06 20:18:05,401892659,2026-11-06,cbj,buf,in,15:37 - 2nd,2,15:37,1.0,2.0,16.0,11.0,Shot,Conor Garland saved by Ukko-Pekka Luukkonen
+2026-11-06 20:18:05,401892660,2026-11-06,sj,min,in,13:00 - 1st,1,13:00,0.0,0.0,4.0,1.0,Shot,David Spacek Wrist Shot saved by Yaroslav Askarov
+2026-11-06 20:18:05,401892661,2026-11-06,ana,cgy,in,16:35 - 1st,1,16:35,1.0,1.0,1.0,1.0,Face Off,Leo Carlsson faceoff won against Martin Pospisil
+2026-11-06 20:19:05,401892659,2026-11-06,cbj,buf,in,15:23 - 2nd,2,15:23,1.0,3.0,16.0,11.0,Face Off,Sean Monahan faceoff won against Noah Ostlund
+2026-11-06 20:19:05,401892660,2026-11-06,sj,min,in,13:00 - 1st,1,13:00,0.0,0.0,4.0,1.0,Stoppage,TV Timeout
+2026-11-06 20:19:05,401892661,2026-11-06,ana,cgy,in,15:37 - 1st,1,15:37,1.0,1.0,1.0,1.0,Shot,Joel Farabee Tip-In saved by Lukas Dostal
+2026-11-06 20:20:05,401892659,2026-11-06,cbj,buf,in,15:05 - 2nd,2,15:05,1.0,3.0,17.0,12.0,Face Off,Matthew Knies faceoff won against Josh Norris
+2026-11-06 20:20:05,401892661,2026-11-06,ana,cgy,in,15:13 - 1st,1,15:13,1.0,1.0,2.0,2.0,Face Off,Jonathan Castagna faceoff won against Roger McQueen
+2026-11-06 20:21:05,401892659,2026-11-06,cbj,buf,in,13:55 - 2nd,2,13:55,1.0,3.0,17.0,12.0,Shot,Zach Werenski saved by Ukko-Pekka Luukkonen
+2026-11-06 20:21:05,401892660,2026-11-06,sj,min,in,12:32 - 1st,1,12:32,0.0,0.0,5.0,1.0,Tripping,Collin Graf Tripping
+2026-11-06 20:21:05,401892661,2026-11-06,ana,cgy,in,14:12 - 1st,1,14:12,1.0,1.0,2.0,2.0,Blocked,Zach Whitecloud shot blocked by Noah Warren
