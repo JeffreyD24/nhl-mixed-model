@@ -153,3 +153,10 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 20:51:05,401892661,2026-11-06,ana,cgy,in,End of 1st,1,0:00,1.0,3.0,8.0,6.0,Period End,End of 1st Period
 2026-11-06 20:52:06,401892659,2026-11-06,cbj,buf,in,End of 2nd,2,0:00,1.0,5.0,28.0,17.0,Period End,End of 2nd Period
 2026-11-06 20:53:05,401892661,2026-11-06,ana,cgy,in,End of 1st,1,0:00,1.0,3.0,8.0,5.0,Period End,End of 1st Period
+2026-11-06 21:05:06,401892660,2026-11-06,sj,min,in,20:00 - 2nd,2,20:00,0.0,1.0,10.0,9.0,Period End,End of 1st Period
+2026-11-06 21:06:06,401892660,2026-11-06,sj,min,in,19:55 - 2nd,2,19:55,0.0,1.0,10.0,9.0,Period End,End of 1st Period
+2026-11-06 21:07:05,401892660,2026-11-06,sj,min,in,19:23 - 2nd,2,19:23,0.0,1.0,10.0,9.0,Face Off,Collin Graf faceoff won against Michael McCarron
+2026-11-06 21:07:05,401892661,2026-11-06,ana,cgy,in,20:00 - 2nd,2,20:00,1.0,3.0,8.0,5.0,Period End,End of 1st Period
+2026-11-06 21:08:05,401892659,2026-11-06,cbj,buf,in,20:00 - 3rd,3,20:00,1.0,5.0,28.0,17.0,Period End,End of 2nd Period
+2026-11-06 21:08:05,401892660,2026-11-06,sj,min,in,18:27 - 2nd,2,18:27,0.0,1.0,10.0,9.0,Stoppage,Off-side
+2026-11-06 21:09:05,401892660,2026-11-06,sj,min,in,17:55 - 2nd,2,17:55,0.0,1.0,10.0,9.0,Face Off,Ty Dellandrea faceoff won against Yakov Trenin
