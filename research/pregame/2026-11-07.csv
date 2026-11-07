@@ -11345,3 +11345,11 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-07 00:58:59,293566,2026-11-07,2026-11-07 19:00,uta,ott,Fanatics,thirdperiod,spread,away,-0.5,145,normal
 2026-11-07 00:58:59,293566,2026-11-07,2026-11-07 19:00,uta,ott,Fanatics,thirdperiod,total,over,2.5,130,normal
 2026-11-07 00:58:59,293566,2026-11-07,2026-11-07 19:00,uta,ott,Fanatics,thirdperiod,total,under,2.5,-175,normal
+2026-11-07 01:00:39,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,event,spread,home,-1.5,220,normal
+2026-11-07 01:00:39,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,event,spread,away,1.5,-275,normal
+2026-11-07 01:00:39,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,secondperiod,spread,home,-0.5,165,normal
+2026-11-07 01:00:39,293564,2026-11-07,2026-11-07 13:00,stl,nsh,DraftKings,secondperiod,spread,home,-0.5,165,normal
+2026-11-07 01:00:39,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,thirdperiod,spread,away,0.5,-202,normal
+2026-11-07 01:00:39,293564,2026-11-07,2026-11-07 13:00,stl,nsh,Consensus,thirdperiod,spread,home,-0.5,147,normal
+2026-11-07 01:00:39,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,thirdperiod,spread,home,-0.5,145,normal
+2026-11-07 01:00:39,293564,2026-11-07,2026-11-07 13:00,stl,nsh,BetMGM,thirdperiod,spread,away,0.5,-210,normal
