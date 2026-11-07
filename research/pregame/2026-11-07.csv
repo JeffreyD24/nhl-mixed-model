@@ -8495,3 +8495,4 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-06 20:34:48,293567,2026-11-07,2026-11-07 19:00,mtl,tor,Consensus,secondperiod,spread,away,-0.5,160,normal
 2026-11-06 20:34:48,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Consensus,secondperiod,total,under,1.5,127,normal
 2026-11-06 20:34:48,293568,2026-11-07,2026-11-07 19:00,nj,nyi,Consensus,secondperiod,total,over,1.5,-167,normal
+2026-11-06 20:36:00,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,event,moneyline,away,0.0,322,normal
