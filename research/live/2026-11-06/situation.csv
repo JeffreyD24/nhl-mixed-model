@@ -330,3 +330,11 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 22:37:06,401892661,2026-11-06,ana,cgy,in,4:10 - 3rd,3,4:10,3.0,3.0,18.0,23.0,Missed,Tristan Luneau Wrist Shot High and Wide Right
 2026-11-06 22:38:05,401892660,2026-11-06,sj,min,in,1:18 - 3rd,3,1:18,1.0,4.0,25.0,23.0,Missed,Blake Coleman Wrist Shot Wide Left
 2026-11-06 22:38:05,401892661,2026-11-06,ana,cgy,in,3:21 - 3rd,3,3:21,3.0,3.0,18.0,24.0,Blocked,Blocked Shot
+2026-11-06 22:39:06,401892660,2026-11-06,sj,min,in,0:18 - 3rd,3,0:18,1.0,4.0,25.0,23.0,Missed,Matt Kiersted Wrist Shot High and Wide Right
+2026-11-06 22:39:06,401892661,2026-11-06,ana,cgy,in,2:36 - 3rd,3,2:36,3.0,3.0,18.0,24.0,Blocked,Tim Washe shot blocked by Simon Nemec
+2026-11-06 22:40:06,401892661,2026-11-06,ana,cgy,in,1:47 - 3rd,3,1:47,3.0,3.0,18.0,24.0,Blocked,Tim Washe shot blocked by Simon Nemec
+2026-11-06 22:41:05,401892661,2026-11-06,ana,cgy,in,1:33 - 3rd,3,1:33,4.0,3.0,18.0,24.0,Goal,"Cutter Gauthier Goal (12) Slap Shot, assists: Mikael Granlund (12), Beckett Sennecke (11)"
+2026-11-06 22:42:05,401892659,2026-11-06,cbj,buf,in,End of 3rd,3,0:00,2.0,5.0,32.0,24.0,End of Game,Game End
+2026-11-06 22:42:05,401892661,2026-11-06,ana,cgy,in,1:13 - 3rd,3,1:13,4.0,3.0,18.0,24.0,Stoppage,Off-side
+2026-11-06 22:43:06,401892661,2026-11-06,ana,cgy,in,0:18 - 3rd,3,0:18,4.0,3.0,18.0,24.0,Blocked,Leo Carlsson shot blocked by Zayne Parekh
+2026-11-06 22:44:05,401892661,2026-11-06,ana,cgy,in,End of 3rd,3,0:00,5.0,3.0,18.0,24.0,Period End,End of 3rd Period
