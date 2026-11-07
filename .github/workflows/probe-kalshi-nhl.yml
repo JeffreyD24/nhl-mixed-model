@@ -1,0 +1,16 @@
+name: Probe Kalshi NHL series (counts only)
+# Nov 7, 2026 (NHL props model): find Kalshi's NHL player-prop series from a runner; log shows tickers/titles/counts, no prices (RULE 8).
+on:
+  push:
+    branches: [claude/nhl-player-props-model-owr4ts]
+    paths: [".github/workflows/probe-kalshi-nhl.yml", "tools/probe_kalshi_nhl_series.py"]
+  workflow_dispatch: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python tools/probe_kalshi_nhl_series.py
