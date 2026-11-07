@@ -16302,3 +16302,11 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-07 06:22:33,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,thirdperiod,spread,away,0.5,106,normal
 2026-11-07 06:22:33,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,thirdperiod,total,over,2.5,108,normal
 2026-11-07 06:22:33,293574,2026-11-07,2026-11-07 22:00,van,edm,FanDuel,thirdperiod,total,under,2.5,-136,normal
+2026-11-07 06:24:20,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,moneyline,away,0.0,280,normal
+2026-11-07 06:24:20,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,spread,home,-1.5,-145,normal
+2026-11-07 06:24:20,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,total,over,6.5,-152,normal
+2026-11-07 06:24:20,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,secondperiod,moneyline,away,0.0,205,normal
+2026-11-07 06:24:20,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,secondperiod,moneyline,home,0.0,-280,normal
+2026-11-07 06:24:20,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,secondperiod,spread,away,0.5,-110,normal
+2026-11-07 06:24:20,293566,2026-11-07,2026-11-07 19:00,uta,ott,DraftKings,thirdperiod,spread,away,0.5,-195,normal
+2026-11-07 06:24:20,293566,2026-11-07,2026-11-07 19:00,uta,ott,DraftKings,thirdperiod,spread,home,-0.5,150,normal
