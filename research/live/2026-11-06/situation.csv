@@ -211,3 +211,20 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 21:27:05,401892659,2026-11-06,cbj,buf,in,9:53 - 3rd,3,9:53,1.0,5.0,31.0,21.0,Face Off,Peyton Krebs faceoff won against Jack Williams
 2026-11-06 21:27:05,401892660,2026-11-06,sj,min,in,8:28 - 2nd,2,8:28,0.0,1.0,12.0,13.0,Missed,Quinn Hughes Wrist Shot Wide Left
 2026-11-06 21:27:05,401892661,2026-11-06,ana,cgy,in,10:49 - 2nd,2,10:49,1.0,3.0,10.0,13.0,Stoppage,Puck Frozen - Goalie
+2026-11-06 21:28:05,401892659,2026-11-06,cbj,buf,in,9:14 - 3rd,3,9:14,1.0,5.0,31.0,21.0,Face Off,Peyton Krebs faceoff won against Jack Williams
+2026-11-06 21:28:05,401892660,2026-11-06,sj,min,in,7:53 - 2nd,2,7:53,0.0,1.0,12.0,13.0,Stoppage,Icing
+2026-11-06 21:28:05,401892661,2026-11-06,ana,cgy,in,10:11 - 2nd,2,10:11,1.0,3.0,10.0,13.0,Face Off,Martin Pospisil faceoff won against Leo Carlsson
+2026-11-06 21:29:05,401892659,2026-11-06,cbj,buf,in,9:14 - 3rd,3,9:14,1.0,5.0,31.0,21.0,Stoppage,Puck in Benches
+2026-11-06 21:29:05,401892660,2026-11-06,sj,min,in,7:37 - 2nd,2,7:37,1.0,1.0,12.0,13.0,Face Off,Macklin Celebrini faceoff won against Joel Eriksson Ek
+2026-11-06 21:29:05,401892661,2026-11-06,ana,cgy,in,10:02 - 2nd,2,10:02,1.0,3.0,11.0,13.0,Stoppage,Goalie Stopped
+2026-11-06 21:30:05,401892660,2026-11-06,sj,min,in,7:15 - 2nd,2,7:15,1.0,1.0,12.0,13.0,Stoppage,Puck in Netting
+2026-11-06 21:30:05,401892661,2026-11-06,ana,cgy,in,9:31 - 2nd,2,9:31,1.0,3.0,11.0,14.0,Stoppage,Goalie Stopped
+2026-11-06 21:31:05,401892659,2026-11-06,cbj,buf,in,8:11 - 3rd,3,8:11,1.0,5.0,32.0,21.0,Shot,Jason Zucker saved by Jet Greaves
+2026-11-06 21:31:05,401892660,2026-11-06,sj,min,in,7:01 - 2nd,2,7:01,1.0,1.0,15.0,13.0,Penalty Shot Infraction,Jacob Trouba Minor
+2026-11-06 21:31:05,401892661,2026-11-06,ana,cgy,in,8:49 - 2nd,2,8:49,1.0,3.0,13.0,14.0,Face Off,Morgan Frost faceoff won against Leo Carlsson
+2026-11-06 21:32:05,401892659,2026-11-06,cbj,buf,in,7:47 - 3rd,3,7:47,1.0,5.0,32.0,21.0,Stoppage,Icing
+2026-11-06 21:32:05,401892660,2026-11-06,sj,min,in,6:34 - 2nd,2,6:34,1.0,1.0,15.0,13.0,Missed,Maxim Shabanov Missed Shot High and Wide Right
+2026-11-06 21:32:05,401892661,2026-11-06,ana,cgy,in,7:58 - 2nd,2,7:58,1.0,3.0,13.0,14.0,Missed,Missed Shot
+2026-11-06 21:33:06,401892659,2026-11-06,cbj,buf,in,7:04 - 3rd,3,7:04,1.0,5.0,32.0,21.0,Face Off,Adam Fantilli faceoff won against Peyton Krebs
+2026-11-06 21:33:06,401892660,2026-11-06,sj,min,in,5:55 - 2nd,2,5:55,1.0,1.0,17.0,13.0,Face Off,Joel Eriksson Ek faceoff won against Zack Ostapchuk
+2026-11-06 21:33:06,401892661,2026-11-06,ana,cgy,in,7:38 - 2nd,2,7:38,2.0,3.0,13.0,14.0,Goal,"Tristan Luneau Goal (3) Wrist Shot, assists: Jackson LaCombe (18), Leo Carlsson (20)"
