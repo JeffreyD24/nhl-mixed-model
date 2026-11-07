@@ -1,0 +1,41 @@
+name: NHL props history - ESPN BET backfill + Wayback probe
+
+# Nov 7, 2026 (NHL player props model, RULE 12): ESPN core API propBets (ESPN BET own opener + close, Feb 2024 - Nov 2025;
+# also checks DraftKings provider 100) and a Wayback Machine snapshot count for NHL prop pages (blocked in the Claude workspace).
+on:
+  push:
+    branches: [claude/nhl-player-props-model-owr4ts]
+    paths: [".github/workflows/props-history-nhl-extra.yml", "props_espn_nhl.py", "tools/probe_props_wayback.py"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    strategy:
+      fail-fast: false
+      matrix:
+        job:
+          - "python props_espn_nhl.py . --from 2023-10-01 --to 2024-06-30"
+          - "python props_espn_nhl.py . --from 2024-10-01 --to 2025-06-30"
+          - "python props_espn_nhl.py . --from 2025-10-01 --to 2026-06-30"
+          - "python props_espn_nhl.py . --from 2026-10-01 --to 2027-06-30"
+          - "python tools/probe_props_wayback.py research/probes/nhl_props_wayback.txt"
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: claude/nhl-player-props-model-owr4ts }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q pandas
+      - name: Run and save
+        run: |
+          git config user.name "nhl-tracker-bot"; git config user.email "actions@users.noreply.github.com"
+          ${{ matrix.job }} 2>&1 | tail -40
+          git add data/props_history/espn_nhl research/probes 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -q -m "NHL props history extra: $(echo '${{ matrix.job }}' | cut -c1-60)"
+            for i in 1 2 3 4 5 6 7 8 9 10; do git pull --rebase --autostash -q origin claude/nhl-player-props-model-owr4ts && git push -q origin HEAD:claude/nhl-player-props-model-owr4ts && break; sleep $((5 + RANDOM % 25)); done
+          fi
