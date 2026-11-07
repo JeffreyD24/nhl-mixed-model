@@ -261,3 +261,10 @@ seen_at_et,espn_event_id,date,away,home,state,detail,period,clock,away_score,hom
 2026-11-06 21:45:05,401892659,2026-11-06,cbj,buf,in,0:44 - 3rd,3,0:44,2.0,5.0,32.0,24.0,Face Off,Adam Fantilli faceoff won against Noah Ostlund
 2026-11-06 21:45:05,401892660,2026-11-06,sj,min,in,0:21 - 2nd,2,0:21,1.0,2.0,19.0,17.0,Face Off,Michael McCarron faceoff won against Macklin Celebrini
 2026-11-06 21:45:05,401892661,2026-11-06,ana,cgy,in,2:21 - 2nd,2,2:21,2.0,3.0,13.0,18.0,Blocked,Cutter Gauthier shot blocked by Yan Kuznetsov
+2026-11-06 21:46:05,401892659,2026-11-06,cbj,buf,in,End of 3rd,3,0:00,2.0,5.0,32.0,24.0,Period End,End of 3rd Period
+2026-11-06 21:46:05,401892660,2026-11-06,sj,min,in,End of 2nd,2,0:00,1.0,2.0,19.0,18.0,Period End,End of 2nd Period
+2026-11-06 21:46:05,401892661,2026-11-06,ana,cgy,in,2:05 - 2nd,2,2:05,2.0,3.0,13.0,18.0,Face Off,Roger McQueen faceoff won against Jonathan Castagna
+2026-11-06 21:47:06,401892661,2026-11-06,ana,cgy,in,1:04 - 2nd,2,1:04,2.0,3.0,13.0,18.0,Blocked,Joel Hanley shot blocked by Aydar Suniev
+2026-11-06 21:48:05,401892661,2026-11-06,ana,cgy,in,0:23 - 2nd,2,0:23,2.0,3.0,13.0,18.0,Blocked,Cutter Gauthier shot blocked by Zayne Parekh
+2026-11-06 21:49:05,401892661,2026-11-06,ana,cgy,in,End of 2nd,2,0:00,2.0,3.0,13.0,18.0,Period End,End of 2nd Period
+2026-11-06 21:50:05,401892661,2026-11-06,ana,cgy,in,End of 2nd,2,0:00,2.0,3.0,14.0,18.0,Period End,End of 2nd Period
