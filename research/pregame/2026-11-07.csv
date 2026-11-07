@@ -15773,3 +15773,12 @@ seen_at_et,an_game_id,date,start_et,away,home,book,period,market,side,value,odds
 2026-11-07 05:42:37,293567,2026-11-07,2026-11-07 19:00,mtl,tor,BetMGM,thirdperiod,moneyline,home,0.0,-110,normal
 2026-11-07 05:42:37,293567,2026-11-07,2026-11-07 19:00,mtl,tor,BetMGM,thirdperiod,total,under,2.0,105,normal
 2026-11-07 05:42:37,293567,2026-11-07,2026-11-07 19:00,mtl,tor,BetMGM,thirdperiod,total,over,2.0,-145,normal
+2026-11-07 05:44:18,293569,2026-11-07,2026-11-07 20:00,sj,dal,Consensus,event,moneyline,home,0.0,-292,normal
+2026-11-07 05:44:18,293570,2026-11-07,2026-11-07 20:00,tb,min,Consensus,event,moneyline,away,0.0,-134,normal
+2026-11-07 05:44:18,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,event,moneyline,home,0.0,-445,normal
+2026-11-07 05:44:18,293571,2026-11-07,2026-11-07 20:00,chi,car,Consensus,event,moneyline,away,0.0,345,normal
+2026-11-07 05:44:18,293573,2026-11-07,2026-11-07 21:00,pit,la,Consensus,event,moneyline,home,0.0,-125,normal
+2026-11-07 05:44:18,293574,2026-11-07,2026-11-07 22:00,van,edm,Consensus,event,moneyline,home,0.0,-345,normal
+2026-11-07 05:44:18,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,firstperiod,moneyline,home,0.0,-112,normal
+2026-11-07 05:44:18,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,firstperiod,moneyline,away,0.0,-116,normal
+2026-11-07 05:44:18,293566,2026-11-07,2026-11-07 19:00,uta,ott,Consensus,secondperiod,moneyline,away,0.0,-116,normal
